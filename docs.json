@@ -64,6 +64,13 @@
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
             ]
+          },
+          {
+            "group": "Appointment",
+            "openapi": {
+              "source": "/appointment/appointment.yaml",
+              "directory": "api-reference"
+            }
           }
         ]
       }

@@ -1,0 +1,2939 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "SuperOffice REST API v1",
+    "description": "SuperOffice REST API - TicketMessage",
+    "contact": {
+      "name": "SuperOffice DevNet",
+      "url": "https://docs.superoffice.com/en/api/index.html",
+      "email": "sdk@superoffice.com"
+    },
+    "version": "v1-REST"
+  },
+  "externalDocs": {
+    "description": "The SuperOffice DevNet Community has more documentation, examples, and discussion forums.",
+    "url": "https://community.superoffice.com/en/developer/"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:60684/"
+    },
+    {
+      "url": "https://localhost:60684/"
+    }
+  ],
+  "tags": [],
+  "paths": {
+    "/api/v1/TicketMessage/default": {
+      "get": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Set default values into a new TicketMessageEntity.",
+        "description": "NetServer calculates default values on the entity, which is required when creating/storing a new instance Calls the Ticket agent service CreateDefaultTicketMessageEntity.\r\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1TicketMessageEntity_DefaultTicketMessageEntity",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/TicketMessage": {
+      "get": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "OData list of all TicketMessageEntity.",
+        "description": "Can be sorted and further filtered using OData conventions:\r\n\r\n* TicketMessage?$select=col1,col2,abc/col3\r\n* TicketMessage?$filter=col1 eq 'foo' and startswith(col2, 'baz')\r\n* TicketMessage?$orderby=abc/col3,col1\r\n* TicketMessage?$top=1000\r\n* TicketMessage?$mode=full\r\n\r\n\r\nOData returns XML or JSON carriers depending on the Accept headers.\r\n\r\n\r\nCalls the Archive service using the \"TicketMessage\" archive.\r\n\r\n\r\n## Filter Operators: ##\r\n\r\nints: eq =, ne, le, lt, gt, ge, set, equals, greater, less, unequals, between\r\n\r\nstrings: contains, is, notBegins, notContains, isNot\r\n\r\nassociate: associateIsOneOf, associateIsNotOneOf,  \r\n\r\nlist ids: oneOf, NotOneOf, \r\n\r\ndates: before, date, after, dateBetween, beforeToday\r\n\r\nUnary ops: currentAssociate, beforeToday, today, afterToday, lastWeek, thisWeek, nextWeek, lastMonth, thisMonth, nextMonth, lastQuarter, thisQuarter, nextQuarter, thisHalf, thisYear\r\n\r\nFuncs: substringof(a,b), startswith(a,b), endswith(a,b), this(f,period), next(f,n,period), previous(f,n,period), thisAndNext(f,n,period), thisAndPrevious(f,n,period), thisAndPreviousAndNext(f,period)\r\n",
+        "operationId": "v1TicketMessageEntity_GetAll",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Comma separated list of column names to return. \"nameDepartment,fullname,category\". Can also use aggregation functions and modifiers: \"Count(category):Footer\"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "Expression to restrict the results. e.g.: \"name begins 'foo' and category gt 1\"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderBy",
+            "in": "query",
+            "description": "Comma separated list of column names to sort by, with optional direction. \"name asc,fullname,category desc\"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$entities",
+            "in": "query",
+            "description": "Comma separated list of entity names to use. Default = \"\". \"contact, person\"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "Number of rows to return in results",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "Number of rows from database to skip before returning results",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$mode",
+            "in": "query",
+            "description": "FULL (with raw values and hints for each value) or SLIM (just the display values)",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Slim",
+                "Wide",
+                "Full"
+              ]
+            }
+          },
+          {
+            "name": "$options",
+            "in": "query",
+            "description": "Provider specific options. e.g: \"GrandTotal=true\"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$context",
+            "in": "query",
+            "description": "Provider specific context parameter.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$format",
+            "in": "query",
+            "description": "Set XML or JSON output format; override the format determined from Accept header.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$jsonSafe",
+            "in": "query",
+            "description": "Make output names into JSON safe property names. Replace all unsafe characters with _ underscore.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "$output",
+            "in": "query",
+            "description": "Return Logical or Display values in SLIM mode. Logical returns true/false for booleans, Display returns icon hints. Dates are always returned as ISO strings.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Logical",
+                "Display"
+              ]
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Saves a ticket message and performs any user notifications",
+        "operationId": "v1TicketMessageEntity_HttpPostSaveTicketMessageEntityWithNotify",
+        "parameters": [
+          {
+            "name": "notify",
+            "in": "query",
+            "description": "If true, then the notification will be sent along with the save",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The ticket message to save",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "newEntity"
+      }
+    },
+    "/api/v1/TicketMessage/{id}": {
+      "get": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Get a ticket message entity with posibillity to change embedded images to be represented with inline data within the HTML body.",
+        "description": "If using inline data, be sure not to save this back to the database.",
+        "operationId": "v1TicketMessageEntity_HttpGetGetTicketMessageWithEmbeddedData",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the ticket message entity",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "embedImages",
+            "in": "query",
+            "description": "If set to Inline, then use inline base64 data to represent the images in the HTML body. Default: Link will use link to the image.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Link",
+                "Inline"
+              ]
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Saves a ticket message and performs any user notifications",
+        "operationId": "v1TicketMessageEntity_HttpPutSaveTicketMessageEntityWithNotify",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The TicketMessageEntity id to update",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "notify",
+            "in": "query",
+            "description": "If true, then the notification will be sent along with the save",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The ticket message to save",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageEntity"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request. Entity to save is not in request body.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "entity"
+      },
+      "delete": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Deletes the TicketMessageEntity",
+        "description": "Calls the Ticket agent service DeleteTicketMessageEntity.\r\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1TicketMessageEntity_DeleteTicketMessageEntity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The TicketMessageEntity to be deleted.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "TicketMessageEntity deleted.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/TicketMessage/{ticketMessageEntityId}/Attachment": {
+      "get": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Get a list with meta data for all attached attachments",
+        "operationId": "v1TicketMessageEntity_GetAttachmentInfo",
+        "parameters": [
+          {
+            "name": "ticketMessageEntityId",
+            "in": "path",
+            "description": "The id of the ticket message to get attachment infos for",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Connect existing attachments with this TicketMessage.",
+        "description": "Can connect multiple attachments",
+        "operationId": "v1TicketMessageEntity_AddAttachments",
+        "parameters": [
+          {
+            "name": "ticketMessageEntityId",
+            "in": "path",
+            "description": "The id of the ticket message to connect the attachments to",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "An array of attachments to connect to this TicketMessage",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "attachmentIds"
+      }
+    },
+    "/api/v1/TicketMessage/{ticketMessageEntityId}/Attachment/Noninline": {
+      "get": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Get a list with meta data for all attached attachments, EXCEPT those marked as inline",
+        "operationId": "v1TicketMessageEntity_GetAttachmentInfoNonInline",
+        "parameters": [
+          {
+            "name": "ticketMessageEntityId",
+            "in": "path",
+            "description": "The id of the ticket message to get attachment infos for",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/TicketMessage/RfcAttachment/{attachmentId}/{position}": {
+      "get": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Get the content of an attachment which is part of RFC822 email attachment",
+        "operationId": "v1TicketMessageEntity_GetRfcAttachmentStream",
+        "parameters": [
+          {
+            "name": "attachmentId",
+            "in": "path",
+            "description": "The id of the root attachment",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "position",
+            "in": "path",
+            "description": "The position (index) of the attachment within the root attachment. Numbering starts from 0",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "image/jpeg": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "image/jpg": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "image/png": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "image/gif": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "image/bmp": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "image/tiff": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/msword": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/rtf": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/vnd.openxmlformats-officedocument.wordprocessingml.document": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/vnd.ms-excel": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/vnd.ms-powerpoint": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/vnd.openxmlformats-officedocument.presentationml.presentation": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "application/pdf": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "text/html": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "multipart/related": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/TicketMessage/{ticketMessageEntityId}/Send": {
+      "post": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Send a message to recipients by email",
+        "operationId": "v1TicketMessageEntity_SendTicketMessage",
+        "parameters": [
+          {
+            "name": "ticketMessageEntityId",
+            "in": "path",
+            "description": "The id of the ticket message to send",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "description": "The To-recipients. Each recipient must be in correct format",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "cc",
+            "in": "query",
+            "description": "The Cc-recipients. Each recipient must be in correct format",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "bcc",
+            "in": "query",
+            "description": "The Bcc-recipients. Each recipient must be in correct format",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "description": "The subject",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "replyTemplateId",
+            "in": "query",
+            "description": "Optional ID of reply template to merge message with. &lt;= 0 to skip.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "gdprSource",
+            "in": "query",
+            "description": "Obsolete",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/TicketMessage/{ticketMessageEntityId}/SendSms": {
+      "post": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Send a message to recipients by sms",
+        "operationId": "v1TicketMessageEntity_SendTicketMessageSms",
+        "parameters": [
+          {
+            "name": "ticketMessageEntityId",
+            "in": "path",
+            "description": "The id of the ticket message to send",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "sms",
+            "in": "query",
+            "description": "The Sms-recipients. Each recipient must be in correct format",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "replyTemplateId",
+            "in": "query",
+            "description": "Optional ID of reply template to merge message with. &lt;= 0 to skip.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/TicketMessage/CustomField": {
+      "get": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Custom fields meta-data (published user defined + extra fields) on TicketMessageEntity.",
+        "description": "Excludes standard fields.",
+        "operationId": "v1TicketMessageEntity_GetCustomFieldInfoList",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/TicketMessage/CustomField/{fieldName}": {
+      "get": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Custom field meta-data (published user defined + extra fields) on TicketMessageEntity.",
+        "description": "Excludes standard fields.",
+        "operationId": "v1TicketMessageEntity_GetCustomFieldInfo",
+        "parameters": [
+          {
+            "name": "fieldName",
+            "in": "path",
+            "description": "The name of the custom field to return: 'x_foo' or 'SuperOffice:3'",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.FieldInfoBase"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/TicketMessage/{id}/ForeignKey": {
+      "get": {
+        "tags": [
+          "TicketMessage"
+        ],
+        "summary": "Foreign keys on the TicketMessageEntity.",
+        "operationId": "v1TicketMessageEntity_GetAllForeignKeysOnEntity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "TicketMessageEntity id/primary key.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SuperOffice.CRM.Services.TicketMessageEntity": {
+        "type": "object",
+        "properties": {
+          "EjMessageId": {
+            "type": "integer",
+            "description": "The primary key (auto-incremented)",
+            "format": "int32"
+          },
+          "Ticket": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.Ticket"
+          },
+          "CreatedAt": {
+            "type": "string",
+            "description": "When the message was posted.",
+            "format": "date-time"
+          },
+          "CreatedBy": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+          },
+          "Author": {
+            "type": "string",
+            "description": "A string representing the author of the message. Could be a user&amp;apos;s name, or a persons email address."
+          },
+          "Slevel": {
+            "type": "string",
+            "description": "The securitylevel of the message.",
+            "enum": [
+              "Unknown",
+              "Internal",
+              "External"
+            ]
+          },
+          "Type": {
+            "type": "string",
+            "description": "The type of the message (plaintext/html).",
+            "enum": [
+              "Unknown",
+              "Plain",
+              "Html"
+            ]
+          },
+          "MessageId": {
+            "type": "string",
+            "description": "The Message-Id header value from the email. Used for threading, i.e. connecting messages to existing tickets."
+          },
+          "TimeSpent": {
+            "type": "integer",
+            "description": "The time spent (minutes) for this message.",
+            "format": "int32"
+          },
+          "Body": {
+            "type": "string",
+            "description": "The textbody for the message."
+          },
+          "HtmlBody": {
+            "type": "string",
+            "description": "The html body for the message (if any)."
+          },
+          "EmailHeader": {
+            "type": "string",
+            "description": "The email header is saved in this field as raw text"
+          },
+          "DebugInfo": {
+            "type": "string",
+            "description": "The debug info for the message."
+          },
+          "MailSorter": {
+            "type": "string",
+            "description": "The name of the mail sorter used when the email was imported. Note: We must use name instead of id since the id&amp;apos;s change every time one changes the mail sorter. :-0"
+          },
+          "MessageCategory": {
+            "type": "string",
+            "description": "Defines what kind of message this is.",
+            "enum": [
+              "Message",
+              "Bounce",
+              "OutboxFailed"
+            ]
+          },
+          "Person": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.Person"
+          },
+          "SearchTitle": {
+            "type": "string",
+            "description": "A copy of the title of the ticket, for search optimisation and simpler reporting."
+          },
+          "MessageHeaders": {
+            "type": "array",
+            "description": "Contains the message headers, like To, Cc, Bcc information, or custom headers",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketMessageHeader"
+            }
+          },
+          "Important": {
+            "type": "boolean",
+            "description": "If this message is important or not."
+          },
+          "Language": {
+            "type": "string",
+            "description": "The language this message is in, based on some kind of analysis"
+          },
+          "Sentiment": {
+            "type": "integer",
+            "description": "Sentiment index, 100 = completely happy; -100 = suicidally unhappy; 0 = no idea",
+            "format": "int32"
+          },
+          "SentimentConfidence": {
+            "type": "integer",
+            "description": "Confidence of sentiment index, 0 = no idea, 100 = completely sure",
+            "format": "int32"
+          },
+          "Badge": {
+            "type": "string",
+            "description": "Badge to explicitly determine how a message was generated",
+            "enum": [
+              "Unknown",
+              "Reply",
+              "Forward",
+              "Comment",
+              "Incoming",
+              "Outgoing"
+            ]
+          },
+          "AttachmentsInfo": {
+            "type": "array",
+            "description": "Message attachments information",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.AttachmentEntity"
+            }
+          },
+          "ExtraFields": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Deprecated: Use {SuperOffice.CRM.Services.TicketMessageEntity.CustomFields} instead.\r\nExtra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc."
+          },
+          "CustomFields": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.\r\nCustom fields combines user defined fields and extra fields into one bucket. \r\nThe individual {SuperOffice.CRM.Services.TicketMessageEntity.ExtraFields} and <see cref=\"!:UserDefinedFields\">UserDefinedFields</see> properties are deprecated in favor of this\r\ncombined collection."
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "The ticket messages are e-mails, SMS or other messages attached to a ticket (aka request).\r\n<para />\r\nCarrier object for TicketMessageEntity.\r\nServices for the TicketMessageEntity Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ITicketAgent\">Ticket Agent</see>."
+      },
+      "SuperOffice.CRM.Services.Ticket": {
+        "type": "object",
+        "properties": {
+          "TicketId": {
+            "type": "integer",
+            "description": "The primary key (auto-incremented)",
+            "format": "int32"
+          },
+          "Title": {
+            "type": "string",
+            "description": "The title of the ticket."
+          },
+          "CreatedAt": {
+            "type": "string",
+            "description": "When the ticket was created.",
+            "format": "date-time"
+          },
+          "LastChanged": {
+            "type": "string",
+            "description": "The last time the ticket was modified.",
+            "format": "date-time"
+          },
+          "ReadByOwner": {
+            "type": "string",
+            "description": "The datetime for when the ticket last was read by the owner.",
+            "format": "date-time"
+          },
+          "ReadByCustomer": {
+            "type": "string",
+            "description": "The datetime for when the ticket was read by the customer.",
+            "format": "date-time"
+          },
+          "FirstReadByUser": {
+            "type": "string",
+            "description": "The datetime for when the ticket first was read by a user.",
+            "format": "date-time"
+          },
+          "Activate": {
+            "type": "string",
+            "description": "When the ticket should be activated, if it is postponed.",
+            "format": "date-time"
+          },
+          "ClosedAt": {
+            "type": "string",
+            "description": "When the ticket was closed.",
+            "format": "date-time"
+          },
+          "RepliedAt": {
+            "type": "string",
+            "description": "The datetime for when the ticket was replied to. I.e. the first external message added to the ticket.",
+            "format": "date-time"
+          },
+          "AlertTimeout": {
+            "type": "string",
+            "description": "The datetime for when the ticket should jump to the next alert_level.",
+            "format": "date-time"
+          },
+          "Deadline": {
+            "type": "string",
+            "description": "Deadline for ticket.",
+            "format": "date-time"
+          },
+          "CreatedBy": {
+            "type": "integer",
+            "description": "The id of the user who created the ticket. 1 (system user) if the ticket was created externally",
+            "format": "int32"
+          },
+          "CreatedByName": {
+            "type": "string",
+            "description": "Initials, also login name, possibly database user name"
+          },
+          "Author": {
+            "type": "string",
+            "description": "A string representing the author of the ticket (same as author of first message)."
+          },
+          "OwnedBy": {
+            "type": "integer",
+            "description": "The id of the user who owns the ticket. 1 (system user) if the ticket is unassigned.",
+            "format": "int32"
+          },
+          "OwnedByName": {
+            "type": "string",
+            "description": "Initials, also login name, possibly database user name"
+          },
+          "Category": {
+            "type": "integer",
+            "description": "The id of the category a ticket is in.",
+            "format": "int32"
+          },
+          "CategoryName": {
+            "type": "string",
+            "description": "The (short) name of this category. E.g. &amp;apos;support&amp;apos;."
+          },
+          "CategoryFullname": {
+            "type": "string",
+            "description": "The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;."
+          },
+          "Slevel": {
+            "type": "string",
+            "description": "The securitylevel of the ticket.",
+            "enum": [
+              "Unknown",
+              "Internal",
+              "External"
+            ]
+          },
+          "Priority": {
+            "type": "integer",
+            "description": "The reference to the ticket_priority table.",
+            "format": "int32"
+          },
+          "PriorityName": {
+            "type": "string",
+            "description": "The name of the priority."
+          },
+          "BaseStatus": {
+            "type": "string",
+            "description": "The status of the ticket. I.e. active/closed/postponed/deleted",
+            "enum": [
+              "Unknown",
+              "Active",
+              "Closed",
+              "Postponed",
+              "Deleted",
+              "Merged",
+              "PostponedSpecific",
+              "Postponed1Hour",
+              "Postponed2Hours",
+              "Postponed3Hours",
+              "Postponed4Hours",
+              "PostponedDay",
+              "PostponedWeek",
+              "PostponedMonth"
+            ]
+          },
+          "TicketStatus": {
+            "type": "integer",
+            "description": "User defined ticket status",
+            "format": "int32"
+          },
+          "TicketStatusDisplayValue": {
+            "type": "string",
+            "description": "Get the display name of the ticket status."
+          },
+          "Origin": {
+            "type": "string",
+            "description": "What is the origin of this ticket",
+            "enum": [
+              "Unknown",
+              "Email",
+              "SMS",
+              "Fax",
+              "Phone",
+              "Facebook",
+              "Twitter",
+              "Internal",
+              "CustomerCentre",
+              "EMarketing",
+              "AutoGenerated",
+              "Chat",
+              "Form"
+            ]
+          },
+          "CustId": {
+            "type": "integer",
+            "description": "The reference to the customer. NULL or -1 if ticket is not connected to customer.",
+            "format": "int32"
+          },
+          "PersonFirstname": {
+            "type": "string",
+            "description": "First name"
+          },
+          "PersonMiddleName": {
+            "type": "string",
+            "description": "Middle name or 'van' etc."
+          },
+          "PersonLastname": {
+            "type": "string",
+            "description": "Last name"
+          },
+          "PersonFullname": {
+            "type": "string",
+            "description": "Get the full name for the primary person (customer)"
+          },
+          "AlertLevel": {
+            "type": "integer",
+            "description": "The alert level for the ticket. Matches the level value of the ticket_alert table.",
+            "format": "int32"
+          },
+          "ConnectId": {
+            "type": "integer",
+            "description": "If a ticket is connected to another ticket, this field is set to the id of the &amp;apos;master&amp;apos; ticket.",
+            "format": "int32"
+          },
+          "ReadStatus": {
+            "type": "string",
+            "description": "Whether the owner has read the ticket or not (red, yellow, green).",
+            "enum": [
+              "Unknown",
+              "Green",
+              "Yellow",
+              "Red"
+            ]
+          },
+          "TimeToReply": {
+            "type": "integer",
+            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&amp;apos;s timeframe.",
+            "format": "int32"
+          },
+          "RealTimeToReply": {
+            "type": "integer",
+            "description": "Same as time_to_reply, but not calculated based on priority.",
+            "format": "int32"
+          },
+          "TimeToClose": {
+            "type": "integer",
+            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&amp;apos;s timeframe.",
+            "format": "int32"
+          },
+          "RealTimeToClose": {
+            "type": "integer",
+            "description": "Same as time_to_close, but not calculated based on priority.",
+            "format": "int32"
+          },
+          "TimeSpentInternally": {
+            "type": "integer",
+            "description": "The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state",
+            "format": "int32"
+          },
+          "TimeSpentExternally": {
+            "type": "integer",
+            "description": "The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state",
+            "format": "int32"
+          },
+          "TimeSpentQueue": {
+            "type": "integer",
+            "description": "The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state",
+            "format": "int32"
+          },
+          "RealTimeSpentInternally": {
+            "type": "integer",
+            "description": "The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state",
+            "format": "int32"
+          },
+          "RealTimeSpentExternally": {
+            "type": "integer",
+            "description": "The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state",
+            "format": "int32"
+          },
+          "RealTimeSpentQueue": {
+            "type": "integer",
+            "description": "The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state",
+            "format": "int32"
+          },
+          "TimeSpent": {
+            "type": "integer",
+            "description": "The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.",
+            "format": "int32"
+          },
+          "HasAttachment": {
+            "type": "boolean",
+            "description": "Boolean indicating if this ticket has one or more attachments."
+          },
+          "NumReplies": {
+            "type": "integer",
+            "description": "The number of replies (messages) to the customer for this request.",
+            "format": "int32"
+          },
+          "NumMessages": {
+            "type": "integer",
+            "description": "The total number of messages for this request.",
+            "format": "int32"
+          },
+          "FromAddress": {
+            "type": "string",
+            "description": "The from-address used when this ticket got created, e.g. by email"
+          },
+          "ContactId": {
+            "type": "integer",
+            "description": "The company of the person in the cust_id field, if that person belongs to a company",
+            "format": "int32"
+          },
+          "ContactName": {
+            "type": "string",
+            "description": "The name of the connected contact"
+          },
+          "OwnedByAssociateId": {
+            "type": "integer",
+            "description": "The associate id of the owner of the ticket.",
+            "format": "int32"
+          },
+          "Language": {
+            "type": "string",
+            "description": "The language of the first external message"
+          },
+          "Sentiment": {
+            "type": "integer",
+            "description": "The sentiment index of the last external message",
+            "format": "int32"
+          },
+          "SentimentConfidence": {
+            "type": "integer",
+            "description": "The sentiment confidence of the last external message",
+            "format": "int32"
+          },
+          "SaleId": {
+            "type": "integer",
+            "description": "Reference to sale table",
+            "format": "int32"
+          },
+          "ProjectId": {
+            "type": "integer",
+            "description": "Reference to project table",
+            "format": "int32"
+          },
+          "SaleHeading": {
+            "type": "string",
+            "description": "The heading of the connected sale"
+          },
+          "ProjectName": {
+            "type": "string",
+            "description": "The name of the connected project"
+          },
+          "FormSubmissionId": {
+            "type": "integer",
+            "description": "If this ticket was created from a form submission, this field will point to that record",
+            "format": "int32"
+          },
+          "TicketTypeId": {
+            "type": "integer",
+            "description": "The id of the Request Type",
+            "format": "int32"
+          },
+          "TicketTypeName": {
+            "type": "string",
+            "description": "The name of the Request Type"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "The ticket carrier is used for representing a service request.\r\n<para />\r\nCarrier object for Ticket.\r\nServices for the Ticket Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ITicketAgent\">Ticket Agent</see>."
+      },
+      "SuperOffice.CRM.Security.TableRight": {
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        },
+        "description": "Wraps a table right together with an explanatory reason.\r\nCode can indicate why access is restricted."
+      },
+      "SuperOffice.CRM.Security.FieldProperty": {
+        "type": "object",
+        "properties": {
+          "FieldRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldRight"
+          },
+          "FieldType": {
+            "type": "string"
+          },
+          "FieldLength": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          }
+        },
+        "description": "Class holding properties like field length, field type about a field in the carrier."
+      },
+      "SuperOffice.CRM.Security.FieldRight": {
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        },
+        "description": "Wraps the field right together with an explanatory reason.\r\nAlso adds logical operators to the field rights so that they can be easily combined."
+      },
+      "SuperOffice.CRM.Services.Associate": {
+        "type": "object",
+        "properties": {
+          "AssociateId": {
+            "type": "integer",
+            "description": "Primary key",
+            "format": "int32"
+          },
+          "Name": {
+            "type": "string",
+            "description": "Initials, also login name, possibly database user name"
+          },
+          "PersonId": {
+            "type": "integer",
+            "description": "Owning person record \r\n<para>Use MDO List name \"person\" to get list items.</para>",
+            "format": "int32"
+          },
+          "Rank": {
+            "type": "integer",
+            "description": "Rank order",
+            "format": "int32"
+          },
+          "Tooltip": {
+            "type": "string",
+            "description": "Tooltip or other description"
+          },
+          "Type": {
+            "type": "string",
+            "description": "User type - 1 = internal user, 2 = resource, 3 = external user, 4 = anonymous, 5 = system",
+            "enum": [
+              "Unknown",
+              "InternalAssociate",
+              "ResourceAssociate",
+              "ExternalAssociate",
+              "AnonymousAssociate",
+              "SystemAssociate"
+            ]
+          },
+          "GroupIdx": {
+            "type": "integer",
+            "description": "Primary group membership, see UserGroupLink for secondary memberships",
+            "format": "int32"
+          },
+          "FullName": {
+            "type": "string",
+            "description": "The associate's culture formatted fullname (firstname, middleName and lastname)"
+          },
+          "FormalName": {
+            "type": "string",
+            "description": "The associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)"
+          },
+          "Deleted": {
+            "type": "boolean",
+            "description": "If true, the user is retired and should have no rights, not appear in lists, etc."
+          },
+          "EjUserId": {
+            "type": "integer",
+            "description": "ID of the ej user record corresponding to this associate; 0 for associates that are not ej users",
+            "format": "int32"
+          },
+          "UserName": {
+            "type": "string",
+            "description": "User name"
+          },
+          "ExtraFields": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Deprecated: Use {SuperOffice.CRM.Services.Associate.CustomFields} instead.\r\nExtra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc."
+          },
+          "CustomFields": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.\r\nCustom fields combines user defined fields and extra fields into one bucket. \r\nThe individual {SuperOffice.CRM.Services.Associate.ExtraFields} and <see cref=\"!:UserDefinedFields\">UserDefinedFields</see> properties are deprecated in favor of this\r\ncombined collection."
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "Carrier object for Associate.\r\nServices for the Associate Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IAssociateAgent\">Associate Agent</see>."
+      },
+      "SuperOffice.CRM.Services.Person": {
+        "type": "object",
+        "properties": {
+          "Position": {
+            "type": "string",
+            "description": "The position. This is a predefined SuperOffice value, different from Title"
+          },
+          "PersonId": {
+            "type": "integer",
+            "description": "Primary key",
+            "format": "int32"
+          },
+          "Mrmrs": {
+            "type": "string",
+            "description": "e.g. Mrs   sex_title"
+          },
+          "Firstname": {
+            "type": "string",
+            "description": "First name"
+          },
+          "Lastname": {
+            "type": "string",
+            "description": "Last name"
+          },
+          "MiddleName": {
+            "type": "string",
+            "description": "Middle name or 'van' etc."
+          },
+          "Title": {
+            "type": "string",
+            "description": "Title"
+          },
+          "Description": {
+            "type": "string",
+            "description": "Info text/description on person."
+          },
+          "Email": {
+            "type": "string",
+            "description": "First email on contact person."
+          },
+          "FullName": {
+            "type": "string",
+            "description": "Get the persons full name (internal name used in clients for employees)."
+          },
+          "DirectPhone": {
+            "type": "string",
+            "description": "Returns the direct phone that belong to the contact person."
+          },
+          "FormalName": {
+            "type": "string",
+            "description": "Get formal name for a person, as used in labels. (Full name + person title + academic title)"
+          },
+          "CountryId": {
+            "type": "integer",
+            "description": "Country",
+            "format": "int32"
+          },
+          "ContactId": {
+            "type": "integer",
+            "description": "Owning contact ID",
+            "format": "int32"
+          },
+          "ContactName": {
+            "type": "string",
+            "description": "The persons company name"
+          },
+          "Retired": {
+            "type": "integer",
+            "description": "1 = the user is retired and should have no rights, not appear in lists, etc.",
+            "format": "int32"
+          },
+          "Rank": {
+            "type": "integer",
+            "description": "Display sort sequence for default sort order",
+            "format": "int32"
+          },
+          "ActiveInterests": {
+            "type": "integer",
+            "description": "Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true",
+            "format": "int32"
+          },
+          "ContactDepartment": {
+            "type": "string",
+            "description": "The persons contact department"
+          },
+          "ContactCountryId": {
+            "type": "integer",
+            "description": "The persons contact country id",
+            "format": "int32"
+          },
+          "ContactOrgNr": {
+            "type": "string",
+            "description": "The persons contact organization number"
+          },
+          "FaxPhone": {
+            "type": "string",
+            "description": "Returns the fax phone that belong to the contact person."
+          },
+          "MobilePhone": {
+            "type": "string",
+            "description": "Returns the mobile phone that belong to the contact person."
+          },
+          "ContactPhone": {
+            "type": "string",
+            "description": "Returns the direct phone that belong to the persons contact."
+          },
+          "AssociateName": {
+            "type": "string",
+            "description": "Name of the person's owner"
+          },
+          "AssociateId": {
+            "type": "integer",
+            "description": "Id of the item's owner (Associate id)",
+            "format": "int32"
+          },
+          "UsePersonAddress": {
+            "type": "boolean",
+            "description": "If 1, use person's address for mailing instead of company address"
+          },
+          "ContactFax": {
+            "type": "string",
+            "description": "Actual phone number as eneterd by the user"
+          },
+          "Kanafname": {
+            "type": "string",
+            "description": "Kana first name, used in Japanese versions only"
+          },
+          "Kanalname": {
+            "type": "string",
+            "description": "Kana last name, used in Japanese versions only"
+          },
+          "Post1": {
+            "type": "string",
+            "description": "Postal address, used in Japanese versions only"
+          },
+          "Post2": {
+            "type": "string",
+            "description": "Postal address, used in Japanese versions only"
+          },
+          "Post3": {
+            "type": "string",
+            "description": "Postal address, used in Japanese versions only"
+          },
+          "EmailName": {
+            "type": "string",
+            "description": "E-mail description"
+          },
+          "ContactFullName": {
+            "type": "string",
+            "description": "Company full name + department"
+          },
+          "ActiveErpLinks": {
+            "type": "integer",
+            "description": "How many active ERP links are there for this person?",
+            "format": "int32"
+          },
+          "TicketPriorityId": {
+            "type": "integer",
+            "description": "Ticket priority ID",
+            "format": "int32"
+          },
+          "SupportLanguageId": {
+            "type": "integer",
+            "description": "Support priority ID",
+            "format": "int32"
+          },
+          "SupportAssociateId": {
+            "type": "integer",
+            "description": "Our support contact for this person",
+            "format": "int32"
+          },
+          "CategoryName": {
+            "type": "string",
+            "description": "The category list item name"
+          },
+          "PersonNumber": {
+            "type": "string",
+            "description": "Alphanumeric user field"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "Carrier object for Person.\r\nServices for the Person Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IPersonAgent\">Person Agent</see>."
+      },
+      "SuperOffice.CRM.Services.TicketMessageHeader": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "description": "Id",
+            "format": "int32"
+          },
+          "Name": {
+            "type": "string",
+            "description": "The name of the header. This can for example be To, Cc or other custom headers that is set up in Service"
+          },
+          "Value": {
+            "type": "string",
+            "description": "The value of the header. Can for example be an email address, or a custom header extracted from emails"
+          },
+          "StdItem": {
+            "type": "string",
+            "description": "If this has a value, it indicates that a standard header text from the language database should be used - and witch one to use",
+            "enum": [
+              "None",
+              "Forward",
+              "UnnamedAttachmentBlocked",
+              "NoAutoReply",
+              "SentAutoReplyToCustomersA",
+              "SentAutoReplyToCustomersB",
+              "CustomerReadFAQ",
+              "ReplyTemplate"
+            ]
+          },
+          "StdItemCol": {
+            "type": "string",
+            "description": "If this is 1, concatenate the standard item text with header name field, if 2 use header value field instead. If this col is 0, use the empty field - preferably the value column.",
+            "enum": [
+              "None",
+              "Name",
+              "Value"
+            ]
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "Contains information about a header connected to a ticket message\r\n<para />\r\nCarrier object for TicketMessageHeader."
+      },
+      "SuperOffice.CRM.Services.AttachmentEntity": {
+        "type": "object",
+        "properties": {
+          "AttachmentId": {
+            "type": "integer",
+            "description": "The primary key (auto-incremented)",
+            "format": "int32"
+          },
+          "Name": {
+            "type": "string",
+            "description": "The filename for the attachment."
+          },
+          "ContentType": {
+            "type": "string",
+            "description": "The content type for the attachment (e.g. &amp;apos;applaction/octet-stream&amp;apos; or &amp;apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&amp;apos;)."
+          },
+          "AttSize": {
+            "type": "integer",
+            "description": "The size (in bytes) for the attachment.",
+            "format": "int32"
+          },
+          "InlineImage": {
+            "type": "boolean",
+            "description": "True if this attachment is inlined in the html_body."
+          },
+          "ContentId": {
+            "type": "string",
+            "description": "The content_id of this attachment, used for inline images"
+          },
+          "AuthKey": {
+            "type": "string",
+            "description": "The key used for authenticating access to this attachment."
+          },
+          "IsSafeFileExtension": {
+            "type": "boolean",
+            "description": "Is file considered to be safe (based on extension and settings)"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "The Attachment carrier represent meta data for a Service attachment\r\n<para />\r\nCarrier object for AttachmentEntity.\r\nServices for the AttachmentEntity Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ITicketAgent\">Ticket Agent</see>."
+      },
+      "SuperOffice.Services.WebApi.OData.ODataSlimResponse": {
+        "type": "object",
+        "properties": {
+          "odata.metadata": {
+            "type": "string"
+          },
+          "odata.nextLink": {
+            "type": "string"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        },
+        "description": "Easy to use archive results - just a flat list of values."
+      },
+      "SuperOffice.CRM.Services.FieldInfoBase": {
+        "type": "object",
+        "properties": {
+          "FieldType": {
+            "type": "string",
+            "description": "What sort of data does this field contain. 1 = int, 2 = short text, ...",
+            "enum": [
+              "Unknown",
+              "Integer",
+              "ShortText",
+              "LongText",
+              "Date",
+              "Blob",
+              "Checkbox",
+              "MdoList",
+              "Decimal",
+              "DateTime",
+              "Time",
+              "TimeSpan",
+              "RelationTo",
+              "Attachment",
+              "DynamicLink",
+              "ListText"
+            ]
+          },
+          "FieldName": {
+            "type": "string",
+            "description": "Database name or prog-id: 'x_foobar' or 'SuperOffice:2'."
+          },
+          "DisplayName": {
+            "type": "string",
+            "description": "Label for field. May be multi-lang string encoded."
+          },
+          "Description": {
+            "type": "string",
+            "description": "Optional tooltip text for this field"
+          },
+          "ShortLabel": {
+            "type": "string",
+            "description": "Short name to be used in Archive headings and on page 1. If blank, the fieldLabel will be used everywhere."
+          },
+          "HideLabel": {
+            "type": "boolean",
+            "description": "Hide the label if 1"
+          },
+          "HideField": {
+            "type": "boolean",
+            "description": "Hide the field from the UI. Only allow API access."
+          },
+          "IsIndexed": {
+            "type": "boolean",
+            "description": "Is this field indexed? 0 if no, index no. if yes"
+          },
+          "IsMandatory": {
+            "type": "boolean",
+            "description": "0 = no, 1 = yes (field must be filled out)"
+          },
+          "IsReadOnly": {
+            "type": "boolean",
+            "description": "0 = read/write, 1 = readonly (don't combine with mandatory  8-) )"
+          },
+          "IsExternal": {
+            "type": "boolean",
+            "description": "Should this field be shown to external users via customer center?"
+          },
+          "IsDisplayField": {
+            "type": "boolean",
+            "description": "Flag indicating that this field is chosen as DisplayField for a table it belongs"
+          },
+          "Rank": {
+            "type": "integer",
+            "description": "Tab order, ranking within the custom fields.",
+            "format": "int32"
+          },
+          "TemplateVariableName": {
+            "type": "string",
+            "description": "Template variable name: 'cs01', 'cl02' etc. Null for extra fields."
+          }
+        },
+        "description": "Abstract basic information about database fields. May be custom or user-defined fields. The information can be used to build a user interface.\r\n<para />\r\nCarrier object for FieldInfoBase.\r\nServices for the FieldInfoBase Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IUserDefinedFieldInfoAgent\">UserDefinedFieldInfo Agent</see>."
+      }
+    },
+    "securitySchemes": {
+      "SuperOffice Password": {
+        "type": "http",
+        "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
+        "scheme": "basic"
+      },
+      "SuperId Authentication": {
+        "type": "oauth2",
+        "description": "SuperOffice SuperId OAuth implicit flow. \r\nYou need to issue a request to the SuperId authorization URL\r\n    https://online.superoffice.com/login/common/oauth/authorize?response_type=token\r\n      &client_id=670734e0-4c5a-11e3-be9e-a171392e81db\r\n      &redirect_uri=https://example.com/spa/\r\n\r\npassing in the application id and redirect URL.\r\n\r\nSuperId will log the user in, and redirect to the requested redirect URL with a #payload\r\ncontaining the access token and claims. (The redirect URL must be registered with SuperId in advance)\r\n\r\n   https://example.com/spa#access_token=8A%3aCust12227.AXRrCITpPBvQX3UbIohb\r\n      &token_type=bearer\r\n      &state=\r\n      &expires_in=3600\r\n      &ctx=Cust12227\r\n      &netserver_url=https%3a%2f%2fsod.superoffice.com%2fCust12227%2fRemote%2fServices82%2f\r\n\r\nYou can take the #access_token value and pass it as the Authenticate HTTP header as a BEARER token.\r\n",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://online.superoffice.com/login/common/oauth/authorize",
+            "scopes": {}
+          }
+        }
+      }
+    }
+  },
+  "x-original-swagger-version": "2.0"
+}

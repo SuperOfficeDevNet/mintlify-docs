@@ -1,97 +1,439 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+mode: "custom"
+title: "SuperOffice Docs"
 ---
 
-## Setting up
+<div className="relative w-full flex items-center justify-center" style={{ height: '20rem', overflow: 'hidden'}}>
 
-Get your documentation site up and running in minutes.
+<div id="background-div" className="absolute inset-0 h-full bg-[#06423E] bg-cover bg-center"></div>
+
+<div
+  id="background-div"
+  className="absolute inset-0 h-full bg-cover bg-center"
+>
+</div>
+
+<div style={{ position: 'absolute', textAlign: 'center', padding: '0 1rem', width: '100%', maxWidth: '70rem' }}>
+  <div
+    className="text-5xl text-white font-bold w-full mt- leading-[1.2] tracking-tight"
+  >
+   docs.superoffice.com
+  </div>
+
+    <p className="text-lg text-white" style={{  fontWeight: '500' , maxWidth: '40rem', margin: '0 auto', marginTop: '0.5rem'}}>
+    The official documentation site for the SuperOffice Platform - the leading CRM & Customer Service available.
+    </p>
+
+    <div className="flex items-center justify-center" style={{ maxWidth: '40rem', margin: '0 auto' }}>
+      <button
+        type="button"
+        className="hidden w-full lg:flex items-center text-sm leading-6 py-4 pl-4 pr-4 text-gray-500 rounded-xl"
+        id="home-search-entry"
+        style={{
+          marginTop: '2rem',
+          maxWidth: '70rem',
+          background: '#FFF',
+          boxShadow: '0px 1px 4px 0px rgba(8, 9, 10, 0.25), 0px 0px 0px 4px rgba(255, 255, 255, 0.20)',
+          cursor: 'pointer',
+          textAlign: 'left',
+        }}
+        onClick={()=> document.getElementById('search-bar-entry-mobile').click()}
+      >
+        <svg
+          className="h-4 w-4 ml-1.5 flex-none bg-[#06423E] hover:bg-gray-600 #06423E dark:hover:bg-white/70"
+          style={{
+          marginRight: '0.5rem',
+          maskImage:
+            'url("https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg")',
+          maskRepeat: 'no-repeat',
+          maskPosition: 'center center',
+          }}
+        />
+        Search or ask...
+      </button>
+    </div>
+  </div>
+</div>
+
+<div
+  style={{marginTop: '2rem', marginBottom: '8rem', maxWidth: '80rem', marginLeft: 'auto',
+  marginRight: 'auto', paddingLeft: '1.25rem',
+  paddingRight: '1.25rem' }}
+>
+<CardGroup cols={4}>
+<Card title="Learn" href="https://docs.superoffice.com/en/learn" icon="graduation-cap" >
+Product knowledge-base to learn concepts, features and solve issues.
+</Card>
+<Card
+  title="CRM Online"
+  href="https://docs.superoffice.com/en/online/"
+  icon="cloud"
+>
+  Learn all about SuperOffice CRM offering for the cloud.
+</Card>
 
 <Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
+  title="CRM Onsite"
+  href="https://docs.superoffice.com/en/onsite/"
+  icon="building"
+>
+  Learn how to install SuperOffice in your on-premise organization.
+</Card>
+
+<Card
+  title="Release Notes"
+  href="https://docs.superoffice.com/release-notes/"
+  icon="clipboard-list"
+>
+  Contains the history of product and API changes.
+</Card>
+
+<Card
+  title="SuperOffice APIs"
+  href="https://docs.superoffice.com/en/api/"
+  icon="code"
+>
+  Introduction to all extensibility and integration points.
+</Card>
+
+<Card
+  title="Developer Portal"
+  href="https://docs.superoffice.com/en/developer-portal/index.html"
+  icon="laptop"
+>
+  Learn how to create online applications.
+</Card>
+
+<Card
+  title="Customer Service"
+  href="https://docs.superoffice.com/en/service/"
+  icon="headphones"
+>
+  Learn all about SuperOffice Service.
+</Card>
+
+<Card
+  title="Email and communication"
+  href="https://docs.superoffice.com/en/email/"
+  icon="message"
+>
+  Great customer relations start with great communication.
+</Card>
+
+</CardGroup>
+
+<div className='my-12'>
+<h2 className='text-4xl font-bold text-black dark:text-white'>Popular areas of interest</h2>
+</div>
+<CardGroup cols={3}>
+<Card title="Admin" icon="user" horizontal href="https://docs.superoffice.com/en/admin/index.html"/>
+
+<Card
+  title="Artificial Intelligence"
+  icon="brain"
   horizontal
->
-  Follow our three step quickstart guide.
-</Card>
-
-## Make it yours
-
-Design a docs site that looks great and empowers your users.
-
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
-
-## Create beautiful pages
-
-Everything you need to create world-class documentation.
-
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
-
-## Need inspiration?
+  href="https://docs.superoffice.com/en/ai/learn/index.html"
+/>
 
 <Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
+  title="Automation"
+  icon="microchip"
+  horizontal
+  href="https://docs.superoffice.com/en/automation/index.html"
+/>
+
+<Card
+  title="Company"
+  icon="building"
+  horizontal
+  href="https://docs.superoffice.com/en/company/"
+/>
+
+<Card
+  title="Contact"
+  icon="user"
+  horizontal
+  href="https://docs.superoffice.com/en/contact/"
+/>
+
+<Card
+  title="CRMScript"
+  icon="terminal"
+  horizontal
+  href="https://docs.superoffice.com/en/automation/crmscript/"
+/>
+
+<Card
+  title="Customer Service"
+  icon="headphones"
+  horizontal
+  href="https://docs.superoffice.com/en/service/"
+/>
+
+<Card
+  title="Database Mirroring"
+  icon="database"
+  horizontal
+  href="https://docs.superoffice.com/en/online/mirroring/overview.html"
+/>
+
+<Card
+  title="Diary"
+  icon="calendar"
+  horizontal
+  href="https://docs.superoffice.com/en/diary"
+/>
+
+<Card
+  title="Document"
+  icon="file-text"
+  horizontal
+  href="https://docs.superoffice.com/en/document/"
+/>
+
+<Card
+  title="Localization"
+  icon="terminal"
+  horizontal
+  href="https://docs.superoffice.com/en/api/localization/index.html"
+/>
+
+<Card
+  title="Mobile"
+  icon="mobile"
+  horizontal
+  href="https://docs.superoffice.com/en/mobile"
+/>
+
+<Card
+  title="Project"
+  icon="folder-tree"
+  horizontal
+  href="https://docs.superoffice.com/en/project/"
+/>
+
+<Card
+  title="Request Management"
+  icon="circle-question"
+  horizontal
+  href="https://docs.superoffice.com/en/request/"
+/>
+
+<Card
+  title="Sale"
+  icon="shopping-cart"
+  horizontal
+  href="https://docs.superoffice.com/en/sale/"
+/>
+
+<Card
+  title="Security"
+  icon="shield"
+  horizontal
+  href="https://docs.superoffice.com/en/security/"
+/>
+
+<Card
+  title="Video Meetings"
+  icon="video"
+  horizontal
+  href="https://docs.superoffice.com/integrations/video-meetings/"
+/>
+
+<Card
+  title="WebTools"
+  icon="globe"
+  horizontal
+  href="https://docs.superoffice.com/integrations/webtools/"
+/>
+
+</CardGroup>
+
+<div className='my-12'>
+<h2 className='text-4xl font-bold text-black dark:text-white'>What type of user are you?</h2>
+</div>
+
+<CardGroup cols={4}>
+<Card title="SuperUser" href="https://docs.superoffice.com/en/customization/index.html" cta="LEARN MORE" icon="circle-user">
+A person who has system administrative privilege's and special functional and data access rights for managing how SuperOffice behaves. The friend you need to tweak the system!
+
 </Card>
+
+<Card 
+  title="Administrator" 
+  href="https://docs.superoffice.com/en/onsite/" 
+  cta="LEARN MORE" 
+  icon="shield"
+>
+  A person who is primarily responsible for the setup, configuration, and maintenance of SuperOffice in an organization.  
+  The guy you call when shit hits the fan!
+</Card>
+
+<Card 
+  title="Consultant" 
+  href="https://docs.superoffice.com/en/automation/" 
+  cta="LEARN MORE" 
+  icon="briefcase"
+>
+  A person who works with companies to improve their use of SuperOffice to achieve business goals.  
+  An expert in all technical aspects of SuperOffice—hired to provide advice, solve problems, and increase efficiency.
+</Card>
+
+<Card 
+  title="Developer" 
+  href="https://docs.superoffice.com/en/api/" 
+  cta="LEARN MORE" 
+  icon="code"
+>
+  A software engineer responsible for implementing application or integration requirements,  
+  or providing consultancy on how integrations should be built using current industry trends.
+</Card>
+
+</CardGroup>
+
+<div className='p-20 bg-[#b7dea9] dark:bg-[#05423e] my-12 rounded-xl'>
+<div className='mb-12'>
+<h2 className='text-4xl text-black dark:text-white font-bold'>Quick access shortcuts</h2>
+</div>
+<CardGroup cols={4}>
+<Card title="Getting Started" icon="rocket">
+<p className='mt-8 mb-4'><a className='hover:underline text-[#06423E] hover:opacity-80' href="https://docs.superoffice.com/en/onsite/requirements">System requirements</a></p>
+<p className='my-4'>
+  <a className='hover:underline text-[#06423E] hover:opacity-80' href="https://docs.superoffice.com/en/onsite/security/">
+    - Security concerns
+  </a>
+</p>
+
+<p className='my-4'>
+  <a className='hover:underline text-[#06423E] hover:opacity-80' href="https://docs.superoffice.com/en/onsite/">
+    - Onsite topics
+  </a>
+</p>
+
+<p className='my-4'>
+  <a className='hover:underline text-[#06423E] hover:opacity-80' href="https://docs.superoffice.com/en/online/migrate/">
+    - Online migration
+  </a>
+</p>
+
+</Card>
+
+
+<Card title="Installation" icon="download">
+
+  <p className='mt-8 mb-4'>
+    <a
+      className='hover:underline text-[#06423E] hover:opacity-80'
+      href="https://docs.superoffice.com/en/onsite/install/server/"
+    >
+      - CRM Server
+    </a>
+  </p>
+
+  <p className='my-4'>
+    <a
+      className='hover:underline text-[#06423E] hover:opacity-80'
+      href="https://docs.superoffice.com/en/onsite/install/web-client/"
+    >
+      - Web applications
+    </a>
+  </p>
+
+  <p className='my-4'>
+    <a
+      className='hover:underline text-[#06423E] hover:opacity-80'
+      href="https://docs.superoffice.com/integrations/webtools/"
+    >
+      - Web tools
+    </a>
+  </p>
+
+  <p className='my-4'>
+    <a
+      className='hover:underline text-[#06423E] hover:opacity-80'
+      href="https://docs.superoffice.com/en/mobile/overview.html"
+    >
+      - Mobile application
+    </a>
+  </p>
+
+</Card>
+
+
+<Card title="Configuration" icon="gear">
+
+  <p className='mt-8 mb-4'>
+    <a
+      className='hover:underline text-[#06423E] hover:opacity-80'
+      href="https://docs.superoffice.com/en/api/netserver/config/"
+    >
+      - NetServer Configuration
+    </a>
+  </p>
+
+  <p className='my-4'>
+    <a
+      className='hover:underline text-[#06423E] hover:opacity-80'
+      href="https://docs.superoffice.com/en/document/templates/variables/index.html"
+    >
+      - Document template variables
+    </a>
+  </p>
+
+  <p className='my-4'>
+    <a
+      className='hover:underline text-[#06423E] hover:opacity-80'
+      href="https://docs.superoffice.com/en/knowledge-base/learn/reply-templates/index.html"
+    >
+      - Service reply templates
+    </a>
+  </p>
+
+  <p className='my-4'>
+    <a
+      className='hover:underline text-[#06423E] hover:opacity-80'
+      href="https://docs.superoffice.com/en/onsite/batch-task-server.html"
+    >
+      - Batch task service
+    </a>
+  </p>
+
+  <p className='my-4'>
+    <a
+      className='hover:underline text-[#06423E] hover:opacity-80'
+      href="https://docs.superoffice.com/en/onsite/config/"
+    >
+      - INI files
+    </a>
+  </p>
+
+</Card>
+
+<Card title="Online Development" icon="cloud">
+
+  <p className='mt-8 mb-4'>
+    <a
+      className='hover:underline text-[#06423E] hover:opacity-80'
+      href="https://docs.superoffice.com/en/developer-portal/getting-started/get-access-to-sod.html"
+    >
+      - Register online developer account
+    </a>
+  </p>
+
+  <p className='my-4'>
+    <a
+      className='hover:underline text-[#06423E] hover:opacity-80'
+      href="https://dev.superoffice.com/"
+    >
+      - Developer portal
+    </a>
+  </p>
+
+</Card>
+
+</CardGroup>
+</div>
+
+</div>
+
+

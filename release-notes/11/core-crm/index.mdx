@@ -1,0 +1,534 @@
+---
+title: "What's new in SuperOffice 11"
+rss: true
+---
+
+
+
+<Update label="06.11.2025" description="11.6">
+## Core CRM and Sales 11.6 update
+
+### Selection - Board view for company and contact
+
+Get a clear overview of your companies or contacts grouped by **Lead status**, **Category**, or **Our contact**. Create a company or contact selection and open it in [Board view](https://docs.superoffice.com/en/search-options/selection/learn/board-view.html) to visualise and manage your data more effectively.
+
+Use the board view for **company selections** to see your customer portfolio at a glance, or use **contact selections** to follow up on leads and track progress.
+<Frame>
+![Board view for company and contact with group by settings -screenshot](https://docs.superoffice.com/media/loc/en/search-options/board-view-company-contact-settings-group-by.png)
+</Frame>
+<Tip>
+**Tip**
+
+Switch between company and contact boards in the **View entity** setting to find the overview that that suits your workflow best.
+</Tip>
+### Contact - Lead status list connected to the category
+
+When [working with leads](https://docs.superoffice.com/en/lead/learn/work-with-leads.html), the **Lead status** field is a valuable tool for organising and tracking progress. It becomes especially useful in the **Board view** of a contact selection, where you can easily drag and drop contacts between columns to update their status.
+
+Make sure your Lead status list includes the correct values. You can edit the list items in **Settings and maintenance**.
+<Frame>
+![Contact edit mode with Lead status list -screenshot](https://docs.superoffice.com/media/loc/en/contact/contact-edit-category-lead-status.png)
+</Frame>
+Read more about using [board view on a contact selection](https://docs.superoffice.com/release-notes/11/marketing/11.6-update.html) Marketing 11.6 update.
+
+### Search criteria - Lead creation and first touch on companies and contacts
+
+You can access lead-related criteria under **Lead** in both the Company and Contact groupings. The **lead source** and **first touch** data help you analyse lead origins and are especially useful when creating **Dashboard tiles**.
+
+This data is stored under the **Legal basis** section on the contact card.
+<Note>
+**Note**
+
+First touch source, lead creation source, and company source are tracked only for new contacts and companies that do not already exist in your SuperOffice CRM.
+</Note>
+### Dashboard - Tiles for lead information
+
+To understand where your leads come from, use the dedicated **Lead** tiles available under **Contact**:
+
+- Funnel - Lead qualification funnel
+- Pie - New leads by campaign YTD
+- Pie - New leads by first touch source YTD
+- Pie - New leads by lead creation source YTD
+- Pie - New leads from chats YTD
+- Big number - New leads from chats YTD
+- Big number - New leads from forms YTD
+- List - Top 10 lead capturing forms YTD
+<Frame>
+![Dashboard with lead management tiles -screenshot](https://docs.superoffice.com/media/loc/en/dashboard/dashboard-lead-managment-tiles.png)
+</Frame>
+Read more about using contact lead tiles in [Marketing 11.6 update](https://docs.superoffice.com/release-notes/11/marketing/11.6-update.html).
+
+
+
+## Settings and maintenance 11.6 update
+### Marketing - Conversion tracking with UTM data
+
+In Settings and maintenance in the Marketing section, you can [enable conversion tracking](https://docs.superoffice.com/en/marketing/utm/admin/set-up.html) for all form submissions to SuperOffice CRM.
+
+Turn on **Enable UTM data transfer on form submissions**, and add the UTM tracking script to your website(s) and include UTM parameters to your campaign links.
+
+Read more about this feature in [Marketing - Lead source tracking](https://docs.superoffice.com/release-notes/11/marketing/11.6-update.html) under Marketing 11.6 update.
+
+### Lists - Company category with category group
+
+In the [**Company - Category** list](https://docs.superoffice.com/en/lead/admin/add-company-category.html), set the appropriate **Category group** and define whether the list item should be included in **lead status** tracking.
+
+The **default category groups** are:
+
+- Customer
+- Potential Customer
+- Partner
+- Lost
+- Other
+
+To enable the option **Enable lead status for this category**, the category group must be set to **Potential customer**.
+<Frame>
+![Admin Lists - Company Category with category group and enable lead status -screenshot](https://docs.superoffice.com/media/loc/en/admin/admin-list-category-category-group-enable-lead-status.png)
+</Frame>
+### Lists - Contact - Lead status
+
+In the [**Contact - Lead status** list](https://docs.superoffice.com/en/lead/admin/add-lead-status.html), add the lead status values you wish to use (for example, stages in lead nurturing). These statuses are visible and actionable in the board view for contact selections.
+
+Read more in [Contact selection with board view](https://docs.superoffice.com/release-notes/11/marketing/11.6-update.html) under Marketing 11.6 update.
+<Frame>
+![Admin Lists - Contact Lead status list overview -screenshot](https://docs.superoffice.com/media/loc/en/admin/admin-lists-contact-lead-status.png)
+</Frame>
+### Lists - GUI Web panel - Option for always reload content on tab navigation
+
+Creating web panels in the UI is a great way to bring external information directly into SuperOffice CRM. You can also link the panel content to SuperOffice data by using **template variables**.
+
+To ensure the content stays up to date, enable the option **Always reload content on tab navigation**.
+<Frame>
+![Admin Lists - GUI Web panel lists with option to reload content -screenshot](https://docs.superoffice.com/media/loc/en/admin/admin-lists-gui-web-panel-reload.png)
+</Frame>
+### CRMScript - Trigger for "Load request message" with message creation logic
+
+The **Load request message** trigger allows you to identify and filter events based on how a message was created, using the same actions available in the **After saving request MessageAction** trigger.
+
+The **MessageAction** value can include:
+
+- Forward
+- Internal Comment
+- Reply
+- Reply All
+
+By recognising which button was pressed, you can apply specific logic for each type of message event - for example, running a script only when the **Add comment** button is used.
+
+This provides great control and flexibility when working with the **Load request message** trigger.
+
+### Preferences - Set Request preferences for system, group, or user
+
+To ensure users have the most efficient experience in SuperOffice CRM, you can configure **Request preferences** with specific settings for different user groups, the entire system, or individual users.
+<Frame>
+![Admin Preferences - Set a request preference to apply for a group, the whole system or a user -screenshot](https://docs.superoffice.com/media/loc/en/admin/admin-pref-request-group-setting.png)
+</Frame>
+
+## Marketing 11.6 update
+
+### Lead source tracking
+<Frame>
+[Lead source tracking](https://docs.superoffice.com/en/marketing/utm/learn/index.html) helps marketers understand exactly where leads originate, which channels perform best, and how to focus time and budget for maximum impact.
+</Frame>
+#### Settings and maintenance – Marketing screen with conversion tracking (UTM)
+
+Enable [UTM tracking](https://docs.superoffice.com/en/lead/learn/index.html) in Settings and Maintenance in the **Marketing** section's **Conversion tracking** tab.
+
+Turn on **Enable UTM data transfer on form submissions**, and add the UTM tracking script to your website and include UTM parameters in your campaign links.
+<Frame>
+![ Marketing screen in Settings and maintenance with Conversion tracking (UTM) -screenshot](https://docs.superoffice.com/media/loc/en/admin/admin-marketing-conversion-tracking.png)
+</Frame>
+#### Marketing Form - Add UTM parameters to your campaign links
+
+To identify where leads are coming from, publish your forms using URLs that include UTM parameters. Extend a direct link or extend the links taking leads to your embedded forms. Ensure the UTM tracking script is added to your website(s) to capture source data correctly for embedded forms.
+<Frame>
+![Marketing Forms view screen and Publish where you add UTM sources -screenshot](https://docs.superoffice.com/media/loc/en/marketing/marketing-form-publish-utm-tracking.png)
+</Frame>
+Example on how the UTM tracking will be stored in your SuperOffice CRM solution. The lead status is stored on a contact under their legal basis.
+<Frame>
+![The path on how lead source is captured -screenshot](https://docs.superoffice.com/media/loc/en/marketing/marketing-how-lead-source-is-captured.png)
+</Frame>
+**The 5 standard UTM parameters:**
+
+There are five standard UTM parameters that you can add to the end of your campaign links:
+<Steps>
+<Step>
+**utm\_source**: Identifies the source of the traffic, such as a search engine like Google, newsletters, or social media platforms.
+</Step>
+<Step>
+**utm\_medium**: Specifies the medium of the traffic, like e-mail, CPC (cost-per-click), or banner.
+</Step>
+<Step>
+**utm\_campaign**: Indicates the specific campaign name, such as spring\_sale or black\_friday.
+</Step>
+<Step>
+**utm\_term**: Used for paid search keywords to identify the keyword that triggered the ad.
+</Step>
+<Step>
+**utm\_content**: Differentiates similar content or links within the same ad, such as different call-to-action buttons.
+</Step>
+</Steps>
+Example: `https://yourcompany.com/signup?utm_source=linkedin&utm_medium=social&utm_campaign=webinar_sept​`
+<Note>
+**Note**
+
+First touch source, lead creation source, and company source are tracked only for new contact persons and companies that do not already exist in your SuperOffice CRM.
+</Note>
+### Dashboard – Lead management tiles
+
+Dashboards provide a clear overview of where leads come from, grouped by source, medium, campaign, term, or content.
+
+Use **lead tiles** available under contact to visualise performance, or add them to existing dashboards.
+
+You can further refine dashboards using **criteria** under **Contact – Lead** or **Company – Lead**, such as *First touch...* or *Lead creation...*, to analyse performance at different tiles.
+<Frame>
+![Dashboard for Lead management and different tiles -screenshot](https://docs.superoffice.com/media/loc/en/dashboard/dashboard-lead-managment-tiles.png)
+</Frame>
+### Contact selections - Use board view to get overview of leads
+
+Create a **contact selection** and switch to **board view** to manage and track leads visually.
+
+Group the view by **lead status** and use drag-and-drop to move contacts between statuses as they progress through the qualification process.
+<Frame>
+![Contact selection with board view for lead status -screenshot](https://docs.superoffice.com/media/loc/en/search-options/selection-board-view-contact-lead-status-setting.png)
+</Frame>
+### Company - Category list
+
+In the company screen, the category shows the **Lead stage**, which describes where in the buying journey a lead is. It is used to understand how close a company is to becoming a customer. Category is set at the company level, meaning it applies to the entire company, not just one contact person.
+
+### Contact - Lead status list
+
+The list **Lead status** in the contact screen describes what is happening in the qualification process. It is used by BDR teams or sales reps to keep track on whether a lead has been contacted or not, and the result of the call. Lead status is set at the contact person level.
+
+</Update>
+
+
+
+
+
+<Update label="16.10.2025" description="11.5">
+## Service 11.5 update
+
+### Request - Differentiate request types with icons
+
+When you're working with multiple request types, it can be time-consuming to keep track of them all, especially when you have a lot of requests opened. To make the differential easier, the request type icon appears in front of the request ID in the tab, helping you quickly see what type of request it is. You also see the icon in front of the **request type** list menu in the Properties sidebar.
+<Frame>
+![The request type drop-down shows an icon in front –screenshot](https://docs.superoffice.com/media/loc/en/request/requests-request-type-icon.png)
+</Frame>
+To use this feature, remember to [select icons for your request types](https://docs.superoffice.com/en/request/admin/type/create.html) in Settings and maintenance.
+
+### Reply Tools - Button for FAQ/Reply template in the editor
+
+Using pre-made FAQ and reply templates is a great way to work more efficiently when responding to incoming requests.
+
+You can access this content by clicking the button in the editor footer or the tab in the right and get the overview in the request properties sidebar.
+<Frame>
+![Click the FAQ/Reply template to get the overview of content in the request properties side bar –screenshot](https://docs.superoffice.com/media/loc/en/request/request-message-button-faq-reply-templates-side-bar.png)
+
+</Frame>
+
+## Marketing 11.5 update
+
+### Marketing Form – Pre-populate fields linked from a mailing
+
+With **pre-populate fields**, you can select the fields from the drop-down menu, and when contact data is already known from a mailing, those fields will be filled in **automatically**. This saves your recipients time, reduces friction, and increases the likelihood they'll complete the form.
+
+**Submissions** are also easier to process, as responses can be linked directly to existing contacts in your SuperOffice solution, ensuring better data quality with less duplicates.
+<Frame>
+![Marketing Form shows the direct link for Publish -screenshot](https://docs.superoffice.com/media/loc/en/marketing/form-publish.png)
+</Frame>
+</Update>
+
+
+
+
+
+
+<Update label="22.09.2025" description="11.4">
+## Core CRM and Sales 11.4 update
+
+### Selection - Board view for requests
+
+Using **Board view** for **requests** gives you a clear visual overview grouped by status, request type, priority, or owner. You can organise your work the way you prefer - **drag and drop** requests between columns and see progress at a glance, in a way a list view cannot provide.
+<Frame>
+![Board view showing request in a visual pipeline -screenshot](https://docs.superoffice.com/media/loc/en/search-options/selection-board-view-request.png)
+</Frame>
+You can also **preview** and **edit requests** directly in the [Board view](https://docs.superoffice.com/en/search-options/selection/learn/board-view.html), making it easy to send an internal message or reply to the customer without leaving the view.
+<Frame>
+![Edit request inside the board view -screenshot](https://docs.superoffice.com/media/loc/en/search-options/selection-board-view-request-edit.png)
+</Frame>
+### Production sandbox badge (Test environment)
+
+Working in a **Production sandbox** (test environment) or in systems under construction can sometimes be confusing. Because they often look almost identical to your live environment, it's easy to lose track of where you are and accidentally start using the wrong system.
+
+When an environment is set up as a production sandbox, a **Test environment badge** and a highlighted **line** appear in the top bar. This makes it clear which environment you are working in – no more confusion.
+
+You'll also see a **Test environment** badge on the login page, making it easier to distinguish between the available tenants.
+<Frame>
+![Test environment badge in CRM showing for production sandbox –screenshot](https://docs.superoffice.com/media/loc/en/ui/test-environment-crm.png)
+</Frame>
+<Frame>
+![Test environment badge in Settings and maintenance –screenshot](https://docs.superoffice.com/media/loc/en/ui/test-environment-admin.png)
+</Frame>
+Read more about the [Production sandbox](https://docs.superoffice.com/en/online/sandbox/index.html) in Docs.
+
+
+## Service 11.4 update
+
+### Lists of contacts - Create request from a contact's context menu
+
+When working with customers and contacts, you often need to act quickly. For example, if a customer raises an issue during a conversation, you can create a request straight away.
+
+Simply right-click on the contact, choose **Create request** from the context menu, describe the issue, and save it. Your support team will then be notified and can follow up as soon as they are available.
+
+The **Create request** option is available in the context menu on all tabs that display a list of contacts, like Sale stakeholder, Project member and Company/contact section tab on Selection.
+<Frame>
+![Right click on a contact on a company card to create a new request -screenshot](https://docs.superoffice.com/media/loc/en/company/company-contact-context-menu-new-request.png)
+</Frame>
+
+
+</Update>
+
+
+
+
+
+<Update label="02.09.2025" description="11.3">
+
+## Core CRM and Sales 11.3 update
+
+### Selection - Board view for projects
+
+The board view is a **visual layout for selections** that gives you a clear, process overview. Available for both projects and sales, it lets you drag and drop cards between stages, quickly edit records, and track progress at a glance - whether you're working on your own or as part of a team.
+
+This view helps improve project visibility, saves time spent searching for information, and streamlines decision-making by keeping all the key details in one place.
+<Frame>
+![Board view showing grouped project in a visual pipeline -screenshot](https://docs.superoffice.com/media/loc/en/search-options/selection-board-view-project.png)
+</Frame>
+Read more about [board view](https://docs.superoffice.com/en/search-options/selection/learn/board-view.html) in Learn | Docs.
+
+### Selection - Preview card in board view
+
+When working with board view in a selection, you often need a bit more detail. The **Preview** in the side panel makes this quick and easy.
+
+Simply click on any card in your board view, and all information about that sale or project will be displayed in the side panel.
+<Frame>
+![Selection preview in side panel shows information of the item in our board view -screenshot](https://docs.superoffice.com/media/loc/en/search-options/selection-board-view-project-preview.png)
+</Frame>
+### Notification - New company/contact assigned
+
+Keeping track of new customers and contacts is easy with notifications for newly assigned companies or contacts. You'll be instantly alerted whenever ownership changes, so you can follow up without delay.
+<Frame>
+![Notification settings for ownerships of assigned companies and contacts -screenshot](https://docs.superoffice.com/media/loc/en/diary/notifications-new-company-assigned.png)
+</Frame>
+Make sure your notification settings are up to date so you never miss an important update.
+<Frame>
+![Notification settings for ownerships of assigned companies and contacts -screenshot](https://docs.superoffice.com/media/loc/en/diary/notification-settings-ownership-assigned.png)
+</Frame>
+### Company/Contact - Keep Our contact empty
+
+When working with new leads, it's not always obvious who to select as the "Our contact" user. You can create a new company or contact with this field left empty, while still being able to add all other relevant details. This makes lead management much easier.
+<Frame>
+![Companies and contacts with No selection in the field for Our contact -screenshot](https://docs.superoffice.com/media/loc/en/contact/person-our-contact-no-selection.png)
+</Frame>
+You can also search for all companies and contacts where no **Our contact** has been selected.
+<Frame>
+![Search for companies and contacts with No selection in the field for Our contact -screenshot](https://docs.superoffice.com/media/loc/en/search-options/find-our-contact-no-selection.png)
+</Frame>
+<Note>
+**Note**
+
+When **Our contact** are empty the companies and contacts are shown as data owned by **Other associates**. Make sure the correct **data rights** are set for these sections/data objects in [Settings and maintenance > Roles](https://docs.superoffice.com/en/admin/user-management/role/index.html).
+</Note>
+### Dashboard - Copy dashboard link
+
+When you find a dashboard that really works, you may want to share it with a colleague. To do this, simply open the **Task** menu, select **Copy dashboard link**, and send the link to your colleague.
+
+Just remember: your colleague must also have access to the dashboard. You can check the owner and visible for in the dashboard details.
+<Frame>
+![Dashboard – Task button that includes the Copy dashboard link –screenshot](https://docs.superoffice.com/media/loc/en/dashboard/dashboard-task-copy-dashboard-link.png)
+</Frame>
+### Side panel - Preview email with attachments, recipients and reply/forward
+
+Working with emails is part of everyday work. With the Preview option in the side panel, you can quickly access attachments, see the recipients and perform key tasks such as reply and forward - all directly from the preview panel.
+
+To use it, simply select **Preview** in the side panel, click on an email, and choose the action you need.
+<Frame>
+![Side panel preview of email with tasks like reply and forward -screenshot](https://docs.superoffice.com/media/loc/en/learn/side-panel-preview-email-tasks.png)
+</Frame>
+## Settings and maintenance 11.3 update
+### CRMScript - Trigger for Load request and message
+
+Working with requests and CRMScript, you may want to add a trigger that runs when a request or message is loaded. This ensures all necessary information is in place before it is shown. For example:
+
+- **Load Request:** Validate request data on load to ensure all required fields are filled in before proceeding.
+- **Load Message:** Load predefined response templates based on the message content to streamline the response process.
+<Frame>
+![Admin CRMScript - Trigger Load request and message -screenshot](https://docs.superoffice.com/media/loc/en/admin/admin-crmscript-trigger-load-request.png)
+</Frame>
+### Preferences - Global preference to anonymise user on reply
+
+**Anonymising a support agent's** identifying information is important when handling **sensitive data**. It protects both the agent and the customer by:
+
+- Preventing accidental or malicious data breaches
+- Supporting compliance with privacy regulations
+- Reducing the risk of identity theft and fraud
+
+If data is ever compromised, anonymisation ensures it **cannot be traced back** to a specific individual, thereby safeguarding privacy and maintaining trust.
+
+In **Global preferences** under Settings and maintenance, you'll find an option to **anonymise user on reply** in the section for **SuperOffice Service system settings**. When enabled, the agent's actual name and email address is removed from the email details sent to the contact.
+<Frame>
+![Admin Preferences - Global preference for Anonymise user reply -screenshot](https://docs.superoffice.com/media/loc/en/admin/admin-pref-global-anonymise-user.png)
+</Frame>
+For more details, see [Anonymise support agent on reply on requests](https://docs.superoffice.com/release-notes/11/service/11.3-update.html) in the Service release.
+
+
+## Service and Request 11.3 update
+
+### Request - Anonymise support agent on reply on requests
+
+Some customers work with sensitive information or for some other reasons need to hide the full name of the support agent from the customers they are supporting.
+
+In your global preferences, you can select the **Anonymise users on reply**. When enabled, the agent's actual name and email address is removed from the email details sent to the contact.
+<Frame>
+![Request - The reply message depending on setting for global filter -screenshot](https://docs.superoffice.com/media/loc/en/request/request-reply-anonymise-user.png)
+</Frame>
+## Marketing 11.3 update
+
+### Marketing Flow – distribute to owner step
+
+When working with workflows that generate new companies and contacts, it’s important to **automate** how these **leads** are assigned, to ensure that they are followed up by the appropriate person or team. The **Distribute to owner** step lets you do exactly that by setting the **Our contact** field to different colleagues in your company.
+<Frame>
+![Marketing flow - Drag and drop the step for distribute to owner -screenshot](https://docs.superoffice.com/media/loc/en/marketing/marketing-flow-step-distribute-to-owner-drag-drop.png)
+</Frame>
+Use the step **Distribute to owner** in the flow to select an evenly distribution of ownerships of the new companies and contacts to **specific users or user groups**. Each new lead will be assigned automatically, and users will receive **notifications** about their new ownerships.
+<Frame>
+![Marketing flow - Settings on the step for distribute to owner -screenshot](https://docs.superoffice.com/media/loc/en/marketing/marketing-flow-step-distribute-to-owner-settings.png)
+</Frame>
+<Tip>
+**Tip**
+
+To be included in lead distribution, make sure **your availability status** is set to **Normal** in your Personal settings.
+</Tip>
+#### Lead distribution
+
+Lead distribution is the process of automatically assigning new leads to the right sales reps or teams. Using **Flow**, you can route leads fairly or by rules such as region, industry, or product interest. This ensures faster follow-up, balanced workloads, and better customer experiences.
+
+Common use cases:
+
+- Assign leads to reps based on industry, customer segment, or expertise.
+- Distribute leads evenly across a team to balance workloads.
+- Match leads with reps by language or location.
+
+Read more in [Flow control – split](https://docs.superoffice.com/en/marketing/flows/learn/split.html) in Learn | Docs.
+
+</Update>
+
+
+
+
+
+<Update label="17.06.2025" description="11.2">
+## Core CRM and Sales 11.2 update
+
+### Selection - Board view for sales
+<Frame>
+![Board view showing grouped sales in a visual pipeline -screenshot](https://docs.superoffice.com/media/loc/en/search-options/selection-board-view-sales.png)
+</Frame>
+Board view is a **visual layout for selections** that provides a pipeline-style overview. Currently available for sales, it lets you to drag and drop items between stages, quickly edit records, and track progress at a glance — whether you work individually or in a team.
+
+It helps improve sales visibility, reduce time spent searching for information, and streamline decision-making by keeping all relevant details in view.
+<Frame>
+![Drag and drop interaction moving a sale between board columns -screenshot](https://docs.superoffice.com/media/loc/en/search-options/selection-board-view-drag-drop.png)
+</Frame>
+#### Filters and different settings
+
+You can set up the board view for sales to serve your needs the best. Here are some of the settings:
+
+- **Group by**: Select between Stage, Sale type and Owner.
+- **Subgroup by**: Select the subgroup for your board to be Sale type, Project and Owner.
+- **Sort by**: Amount, Sale date, Next activity.
+- **Summarize by**: Amount and Weighted amount.
+- **Filter toolbar**: Next activity, Owner, Owner group, Sale date, Stage, Sales type.
+<Frame>
+![Settings panel showing board grouping and sorting options -screenshot](https://docs.superoffice.com/media/loc/en/search-options/selection-board-view-settings.png)
+</Frame>
+<Frame>
+
+![Filter toolbar options for refining the board view display -screenshot](https://docs.superoffice.com/media/loc/en/search-options/selection-board-view-filter-settings.png)
+</Frame>
+#### Edit sales directly from the board
+
+To update a sale directly from the board, such as when you notice incorrect details, hover over the card and select either the **Edit** or **Task** button. The **Task** menu includes actions such as marking the sale as **sold** or **lost**.
+<Frame>
+![Hover menu with task and edit options for a sale card on the board -screenshot](https://docs.superoffice.com/media/loc/en/search-options/selection-board-view-sale-quick-edit.png)
+</Frame>
+When you click the **Edit** button, you have access to the same content of fields as on the **main card of the sale**. Change the different fields, save and the sale is updated with new information.
+<Frame>
+![Edit form showing sale details and fields directly from the board -screenshot](https://docs.superoffice.com/media/loc/en/search-options/selection-board-view-edit-sale.png)
+</Frame>
+Read more about [Board view in our Community](https://community.superoffice.com/en/product-releases/whats-new/product/introducing-board-view/?utm_medium=docs&utm_source=release%20notes&utm_campaign=board-view&utm_content=11.2).
+
+
+## Service 11.2 update
+
+### Request - Reply tools in Request properties
+
+(*Available ca 01.07.2025.*)
+
+When replying to a request, you may have access to a selection of FAQs and reply templates. These can be found in the sidebar, alongside the request properties.
+
+By clicking the **Reply Templates and FAQs** button, you can preview the content before inserting it into your message. You’ll also find buttons for **Messages** and **Attachments**, allowing you to include previous messages from the request, as well as any related attachments.
+
+These tools help you respond more efficiently when handling a request.
+<Frame>
+![Reply tools in the properties sidebar showing templates, FAQs, messages, and attachments -screenshot](https://docs.superoffice.com/media/loc/en/request/request-reply-tools.png)
+</Frame>
+### Request - Pin request lists to the tab bar
+
+When working with many different request lists and individual requests, you often end up with multiple open tabs. While the **Close all tabs** functions are helpful, you may want to keep certain request lists - default or request selections - easily accessible at all times.
+
+To do this, simply right-click on the tab and select **Pin tab**. The tab will then remain visible in the tab bar whenever you need it. To remove it, just **Unpin the tab** when you’re ready to focus on other lists.
+<Frame>
+![Context menu with pin tab option for request list in the tab bar -screenshot](https://docs.superoffice.com/media/loc/en/request/request-pin-list.png)
+</Frame>
+### Request - Show all linked contacts
+
+Working with a request gives you the option to add multiple contacts to a request. This request will then show on all the linked contacts and companies, so status and answers are available from "all corners" of SuperOffice.
+
+To view all linked contacts, click the **+2** (or similar) indicator to open the contact pop-out.
+<Frame>
+![Linked contacts shown in a request with a +2 button to view all associated contacts -screenshot](https://docs.superoffice.com/media/loc/en/request/request-show-linked-contacts.png)
+</Frame>
+
+</Update>
+
+
+
+
+<Update label="09.06.2025" description="11.1">
+
+
+## Settings and maintenance 11.1 update
+
+## System design - Setting a field as read-only
+
+To tailor your SuperOffice CRM solution to your needs, you may need to create several custom fields to store customer-related data. You might also want to integrate SuperOffice CRM with other key systems used within your organisation, such as an ERP system.
+
+To ensure seamless **synchroniation** between systems and to prevent duplicate records, it's important to have unique customer numbers in both. This **unique identifier** should be visible and searchable for users, but not editable.
+
+To achieve this, simply enable the **Show as read-only** option when creating the field. Once this setting is applied, the field will be visible but protected from user edits — and you're ready to go.
+<Frame>
+![Admin System design - Field set as read-only -screenshot](https://docs.superoffice.com/media/loc/en/admin/admin-system-design-field-properties-read-only.png)
+</Frame>
+
+## Service 11.1 update
+
+## Request - Search returns the same result as the navigator search
+
+When creating a **new request**, you'll likely want to link it to a contact, or when replying on a request, you might want to add multiple contacts. Use the search function to get the same results as you would when using the **contact navigator**.
+
+Only remember the company name? No problem - just search for the **company**, and you'll see **all contacts** associated with it. You can then preview the contact to view further details before making your selection.
+<Frame>
+![Request - Search with preview same as navigator search -screenshot](https://docs.superoffice.com/media/loc/en/request/requests-add-contact.png)
+</Frame>
+</Update>

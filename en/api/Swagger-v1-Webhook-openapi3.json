@@ -1,0 +1,1428 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "SuperOffice REST API v1",
+    "description": "SuperOffice REST API - Webhook",
+    "contact": {
+      "name": "SuperOffice DevNet",
+      "url": "https://docs.superoffice.com/en/api/index.html",
+      "email": "sdk@superoffice.com"
+    },
+    "version": "v1-REST"
+  },
+  "externalDocs": {
+    "description": "The SuperOffice DevNet Community has more documentation, examples, and discussion forums.",
+    "url": "https://community.superoffice.com/en/developer/"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:60684/"
+    },
+    {
+      "url": "https://localhost:60684/"
+    }
+  ],
+  "tags": [],
+  "paths": {
+    "/api/v1/Webhook/default": {
+      "get": {
+        "tags": [
+          "Webhook"
+        ],
+        "summary": "Set default values into a new Webhook.",
+        "description": "NetServer calculates default values on the entity, which is required when creating/storing a new instance\r\n<para />## Online Restricted: ## The Webhook agent is not available in Online by default. Access must be requested specifically when app is registered. Calls the Webhook agent service CreateDefaultWebhook.\r\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1Webhook_DefaultWebhook",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Webhook": {
+      "get": {
+        "tags": [
+          "Webhook"
+        ],
+        "summary": "Returns all webhooks, according to filter criteria",
+        "description": "<para />## Online Restricted: ## The Webhook agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1Webhook_GetAllWebhooks",
+        "parameters": [
+          {
+            "name": "nameFilter",
+            "in": "query",
+            "description": "Only return hooks with this name. Default NULL = no filter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "eventFilter",
+            "in": "query",
+            "description": "Only return hooks responding to this event name. Default NULL = no filter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "statusFilter",
+            "in": "query",
+            "description": "Only return hooks with this status. Default Unknown = no filter, returns all.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Unknown",
+                "Active",
+                "Stopped",
+                "TooManyErrors"
+              ]
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Webhook"
+        ],
+        "summary": "Creates a new Webhook",
+        "description": "Calls the Webhook agent service SaveWebhook.\r\nNsApiSlow threshold: 2000 ms.\r\n<para />## Online Restricted: ## The Webhook agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1Webhook_PostWebhook",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\" Default = show all fields.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The Webhook to be saved.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "newEntity"
+      }
+    },
+    "/api/v1/Webhook/{id}": {
+      "get": {
+        "tags": [
+          "Webhook"
+        ],
+        "summary": "Gets a Webhook object.",
+        "description": "Calls the Webhook agent service GetWebhook.\r\nNsApiSlow threshold: 2000 ms.\r\n<para />## Online Restricted: ## The Webhook agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1Webhook_GetWebhook",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the Webhook to return.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\" Default = show all fields.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Webhook found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Webhook"
+        ],
+        "summary": "Updates the existing Webhook",
+        "description": "NsApiSlow threshold: 2000 ms.\r\n<para />## Online Restricted: ## The Webhook agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1Webhook_PutWebhook",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The Webhook id to update.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\" Default = show all fields.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The Webhook to be saved.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Webhook updated.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request. Entity to save is not in request body.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "entity"
+      },
+      "delete": {
+        "tags": [
+          "Webhook"
+        ],
+        "summary": "Deletes the Webhook",
+        "description": "<para />## Online Restricted: ## The Webhook agent is not available in Online by default. Access must be requested specifically when app is registered. Calls the Webhook agent service DeleteWebhook.\r\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1Webhook_DeleteWebhook",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The Webhook to be deleted.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Webhook deleted.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Webhook/Test": {
+      "post": {
+        "tags": [
+          "Webhook"
+        ],
+        "summary": "Pings a webhook with a 'test' event, returns SUCCESS(true) or FAILURE(false) + the response from the webhook target.",
+        "description": "<para />## Online Restricted: ## The Webhook agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1Webhook_TestWebhook",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Webhook definition to ping. Must contain a valid TargetUrl.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Webhook"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.WebhookResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.WebhookResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.WebhookResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.WebhookResult"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.WebhookResult"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.WebhookResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "webhook"
+      }
+    },
+    "/api/v1/Webhook/{eventName}/{primaryKey}": {
+      "post": {
+        "tags": [
+          "Webhook"
+        ],
+        "summary": "Signal webhooks that an event has occurred.",
+        "description": "All webhooks listening for the event will be notified.\r\n<para />## Online Restricted: ## The Webhook agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1Webhook_SignalEvent",
+        "parameters": [
+          {
+            "name": "eventName",
+            "in": "path",
+            "description": "Name of event to fire. 'entity.verb' For example: 'window.closed', 'button.clicked'.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "primaryKey",
+            "in": "path",
+            "description": "(Optional) Id of entity that is firing event. Can be 0 if not used.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Event data. Not all the data values may be posted to the webhook, depending in webhook type: { 'windowName': 'foo', 'widgets': 123 }",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "data"
+      }
+    },
+    "/api/v1/Webhook/{webhookId}/LastError": {
+      "get": {
+        "tags": [
+          "Webhook"
+        ],
+        "summary": "Return the most recent error message received when calling this webhook.",
+        "description": "<para />## Online Restricted: ## The Webhook agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1Webhook_GetLastError",
+        "parameters": [
+          {
+            "name": "webhookId",
+            "in": "path",
+            "description": "Webhook to get error message for.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SuperOffice.CRM.Services.Webhook": {
+        "type": "object",
+        "properties": {
+          "WebhookId": {
+            "type": "integer",
+            "description": "Primary Key. Unique id for this webhook.",
+            "format": "int32"
+          },
+          "Name": {
+            "type": "string",
+            "description": "Name to identify this webhook. Does not have to be unique."
+          },
+          "Events": {
+            "type": "array",
+            "description": "Array of event names that trigger this webhook: ['contact.created', 'sale.changed']",
+            "items": {
+              "type": "string"
+            }
+          },
+          "TargetUrl": {
+            "type": "string",
+            "description": "Destination to POST event info to. URL for webhooks. Id for CRM scripts"
+          },
+          "Secret": {
+            "type": "string",
+            "description": "Shared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server"
+          },
+          "State": {
+            "type": "string",
+            "description": "Webhook status - should we post events to the URL? 1=Active, 2=Stopped or 3=TooManyErrors",
+            "enum": [
+              "Unknown",
+              "Active",
+              "Stopped",
+              "TooManyErrors"
+            ]
+          },
+          "Type": {
+            "type": "string",
+            "description": "Name of plugin that handles this webhook. 'webhook' for HTTP POST notifications, 'crmscript' for script invocations."
+          },
+          "Headers": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Custom HTTP Headers to add to webhook requests."
+          },
+          "Properties": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {}
+            },
+            "description": "Custom values to inject into JSON body of webhook call."
+          },
+          "Registered": {
+            "type": "string",
+            "description": "Registered when  in UTC.",
+            "format": "date-time"
+          },
+          "RegisteredAssociate": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+          },
+          "Updated": {
+            "type": "string",
+            "description": "Last updated when  in UTC.",
+            "format": "date-time"
+          },
+          "UpdatedAssociate": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+          },
+          "ErrorsEmail": {
+            "type": "string",
+            "description": "Email address to send error message to when this webhook state changes to too-many errors."
+          }
+        },
+        "description": "Webhook definitions. Webhooks broadcast events from NetServer to remote servers.\r\n<para />\r\nCarrier object for Webhook.\r\nServices for the Webhook Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IWebhookAgent\">Webhook Agent</see>."
+      },
+      "SuperOffice.CRM.Services.Associate": {
+        "type": "object",
+        "properties": {
+          "AssociateId": {
+            "type": "integer",
+            "description": "Primary key",
+            "format": "int32"
+          },
+          "Name": {
+            "type": "string",
+            "description": "Initials, also login name, possibly database user name"
+          },
+          "PersonId": {
+            "type": "integer",
+            "description": "Owning person record \r\n<para>Use MDO List name \"person\" to get list items.</para>",
+            "format": "int32"
+          },
+          "Rank": {
+            "type": "integer",
+            "description": "Rank order",
+            "format": "int32"
+          },
+          "Tooltip": {
+            "type": "string",
+            "description": "Tooltip or other description"
+          },
+          "Type": {
+            "type": "string",
+            "description": "User type - 1 = internal user, 2 = resource, 3 = external user, 4 = anonymous, 5 = system",
+            "enum": [
+              "Unknown",
+              "InternalAssociate",
+              "ResourceAssociate",
+              "ExternalAssociate",
+              "AnonymousAssociate",
+              "SystemAssociate"
+            ]
+          },
+          "GroupIdx": {
+            "type": "integer",
+            "description": "Primary group membership, see UserGroupLink for secondary memberships",
+            "format": "int32"
+          },
+          "FullName": {
+            "type": "string",
+            "description": "The associate's culture formatted fullname (firstname, middleName and lastname)"
+          },
+          "FormalName": {
+            "type": "string",
+            "description": "The associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)"
+          },
+          "Deleted": {
+            "type": "boolean",
+            "description": "If true, the user is retired and should have no rights, not appear in lists, etc."
+          },
+          "EjUserId": {
+            "type": "integer",
+            "description": "ID of the ej user record corresponding to this associate; 0 for associates that are not ej users",
+            "format": "int32"
+          },
+          "UserName": {
+            "type": "string",
+            "description": "User name"
+          },
+          "ExtraFields": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Deprecated: Use {SuperOffice.CRM.Services.Associate.CustomFields} instead.\r\nExtra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc."
+          },
+          "CustomFields": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.\r\nCustom fields combines user defined fields and extra fields into one bucket. \r\nThe individual {SuperOffice.CRM.Services.Associate.ExtraFields} and <see cref=\"!:UserDefinedFields\">UserDefinedFields</see> properties are deprecated in favor of this\r\ncombined collection."
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "Carrier object for Associate.\r\nServices for the Associate Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IAssociateAgent\">Associate Agent</see>."
+      },
+      "SuperOffice.CRM.Security.TableRight": {
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        },
+        "description": "Wraps a table right together with an explanatory reason.\r\nCode can indicate why access is restricted."
+      },
+      "SuperOffice.CRM.Security.FieldProperty": {
+        "type": "object",
+        "properties": {
+          "FieldRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldRight"
+          },
+          "FieldType": {
+            "type": "string"
+          },
+          "FieldLength": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          }
+        },
+        "description": "Class holding properties like field length, field type about a field in the carrier."
+      },
+      "SuperOffice.CRM.Security.FieldRight": {
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        },
+        "description": "Wraps the field right together with an explanatory reason.\r\nAlso adds logical operators to the field rights so that they can be easily combined."
+      },
+      "SuperOffice.WebApi.v1.Carriers.WebhookCarriers.WebhookWithLinks": {
+        "type": "object",
+        "properties": {
+          "WebhookId": {
+            "type": "integer",
+            "description": "Primary Key. Unique id for this webhook.",
+            "format": "int32"
+          },
+          "Name": {
+            "type": "string",
+            "description": "Name to identify this webhook. Does not have to be unique."
+          },
+          "Events": {
+            "type": "array",
+            "description": "Array of event names that trigger this webhook: ['contact.created', 'sale.changed']",
+            "items": {
+              "type": "string"
+            }
+          },
+          "TargetUrl": {
+            "type": "string",
+            "description": "Destination to POST event info to. URL for webhooks. Id for CRM scripts"
+          },
+          "Secret": {
+            "type": "string",
+            "description": "Shared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server"
+          },
+          "State": {
+            "type": "string",
+            "description": "Webhook status - should we post events to the URL? 1=Active, 2=Stopped or 3=TooManyErrors",
+            "enum": [
+              "Unknown",
+              "Active",
+              "Stopped",
+              "TooManyErrors"
+            ]
+          },
+          "Type": {
+            "type": "string",
+            "description": "Name of plugin that handles this webhook. 'webhook' for HTTP POST notifications, 'crmscript' for script invocations."
+          },
+          "Headers": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Custom HTTP Headers to add to webhook requests."
+          },
+          "Properties": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {}
+            },
+            "description": "Custom values to inject into JSON body of webhook call."
+          },
+          "Registered": {
+            "type": "string",
+            "description": "Registered when  in UTC.",
+            "format": "date-time"
+          },
+          "RegisteredAssociate": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+          },
+          "Updated": {
+            "type": "string",
+            "description": "Last updated when  in UTC.",
+            "format": "date-time"
+          },
+          "UpdatedAssociate": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+          },
+          "ErrorsEmail": {
+            "type": "string",
+            "description": "Email address to send error message to when this webhook state changes to too-many errors."
+          },
+          "_Links": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        },
+        "description": "Webhook definitions. Webhooks broadcast events from NetServer to remote servers.\r\n<para />\r\nWebhook entity with API _Links added."
+      },
+      "SuperOffice.CRM.Services.WebhookResult": {
+        "type": "object",
+        "properties": {
+          "Success": {
+            "type": "boolean",
+            "description": "Was call to webhook successful? (200 OK)"
+          },
+          "Message": {
+            "type": "string",
+            "description": "Headers and body of response from webhook"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "Result of calling a webhook\r\n<para />\r\nCarrier object for WebhookResult.\r\nServices for the WebhookResult Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IWebhookAgent\">Webhook Agent</see>."
+      }
+    },
+    "securitySchemes": {
+      "SuperOffice Password": {
+        "type": "http",
+        "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
+        "scheme": "basic"
+      },
+      "SuperId Authentication": {
+        "type": "oauth2",
+        "description": "SuperOffice SuperId OAuth implicit flow. \r\nYou need to issue a request to the SuperId authorization URL\r\n    https://online.superoffice.com/login/common/oauth/authorize?response_type=token\r\n      &client_id=670734e0-4c5a-11e3-be9e-a171392e81db\r\n      &redirect_uri=https://example.com/spa/\r\n\r\npassing in the application id and redirect URL.\r\n\r\nSuperId will log the user in, and redirect to the requested redirect URL with a #payload\r\ncontaining the access token and claims. (The redirect URL must be registered with SuperId in advance)\r\n\r\n   https://example.com/spa#access_token=8A%3aCust12227.AXRrCITpPBvQX3UbIohb\r\n      &token_type=bearer\r\n      &state=\r\n      &expires_in=3600\r\n      &ctx=Cust12227\r\n      &netserver_url=https%3a%2f%2fsod.superoffice.com%2fCust12227%2fRemote%2fServices82%2f\r\n\r\nYou can take the #access_token value and pass it as the Authenticate HTTP header as a BEARER token.\r\n",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://online.superoffice.com/login/common/oauth/authorize",
+            "scopes": {}
+          }
+        }
+      }
+    }
+  },
+  "x-original-swagger-version": "2.0"
+}

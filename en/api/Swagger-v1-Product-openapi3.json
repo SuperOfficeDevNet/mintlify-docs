@@ -1,0 +1,2033 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "SuperOffice REST API v1",
+    "description": "SuperOffice REST API - Product",
+    "contact": {
+      "name": "SuperOffice DevNet",
+      "url": "https://docs.superoffice.com/en/api/index.html",
+      "email": "sdk@superoffice.com"
+    },
+    "version": "v1-REST"
+  },
+  "externalDocs": {
+    "description": "The SuperOffice DevNet Community has more documentation, examples, and discussion forums.",
+    "url": "https://community.superoffice.com/en/developer/"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:60684/"
+    },
+    {
+      "url": "https://localhost:60684/"
+    }
+  ],
+  "tags": [],
+  "paths": {
+    "/api/v1/Product/default": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Set default values into a new Product.",
+        "description": "NetServer calculates default values on the entity, which is required when creating/storing a new instance Calls the Quote agent service CreateDefaultProduct.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1Product_DefaultProduct",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Product": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "OData list of all Product.",
+        "description": "Can be sorted and further filtered using OData conventions:\r\n\r\n* Product?$select=col1,col2,abc/col3\r\n* Product?$filter=col1 eq 'foo' and startswith(col2, 'baz')\r\n* Product?$orderby=abc/col3,col1\r\n* Product?$top=1000\r\n* Product?$mode=full\r\n\r\n\r\nOData returns XML or JSON carriers depending on the Accept headers.\r\n\r\n\r\nCalls the Archive service using the \"Product\" archive.\r\n\r\n\r\n## Filter Operators: ##\r\n\r\nints: eq =, ne, le, lt, gt, ge, set, equals, greater, less, unequals, between\r\n\r\nstrings: contains, is, notBegins, notContains, isNot\r\n\r\nassociate: associateIsOneOf, associateIsNotOneOf,  \r\n\r\nlist ids: oneOf, NotOneOf, \r\n\r\ndates: before, date, after, dateBetween, beforeToday\r\n\r\nUnary ops: currentAssociate, beforeToday, today, afterToday, lastWeek, thisWeek, nextWeek, lastMonth, thisMonth, nextMonth, lastQuarter, thisQuarter, nextQuarter, thisHalf, thisYear\r\n\r\nFuncs: substringof(a,b), startswith(a,b), endswith(a,b), this(f,period), next(f,n,period), previous(f,n,period), thisAndNext(f,n,period), thisAndPrevious(f,n,period), thisAndPreviousAndNext(f,period)\r\n",
+        "operationId": "v1Product_GetAll",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Comma separated list of column names to return. \"nameDepartment,fullname,category\". Can also use aggregation functions and modifiers: \"Count(category):Footer\"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "Expression to restrict the results. e.g.: \"name begins 'foo' and category gt 1\"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderBy",
+            "in": "query",
+            "description": "Comma separated list of column names to sort by, with optional direction. \"name asc,fullname,category desc\"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$entities",
+            "in": "query",
+            "description": "Comma separated list of entity names to use. Default = \"\". \"contact, person\"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "Number of rows to return in results",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "Number of rows from database to skip before returning results",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$mode",
+            "in": "query",
+            "description": "FULL (with raw values and hints for each value) or SLIM (just the display values)",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Slim",
+                "Wide",
+                "Full"
+              ]
+            }
+          },
+          {
+            "name": "$options",
+            "in": "query",
+            "description": "Provider specific options. e.g: \"GrandTotal=true\"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$context",
+            "in": "query",
+            "description": "Provider specific context parameter.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$format",
+            "in": "query",
+            "description": "Set XML or JSON output format; override the format determined from Accept header.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$jsonSafe",
+            "in": "query",
+            "description": "Make output names into JSON safe property names. Replace all unsafe characters with _ underscore.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "$output",
+            "in": "query",
+            "description": "Return Logical or Display values in SLIM mode. Logical returns true/false for booleans, Display returns icon hints. Dates are always returned as ISO strings.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Logical",
+                "Display"
+              ]
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Creates a new Product",
+        "description": "Calls the Quote agent service SaveProduct.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1Product_PostProduct",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\" Default = show all fields.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The Product to be saved.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "newEntity"
+      }
+    },
+    "/api/v1/Product/{id}": {
+      "put": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Updates the existing Product",
+        "description": "NsApiSlow threshold: 5000 ms.",
+        "operationId": "v1Product_PutProduct",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The Product id to update.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\" Default = show all fields.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The Product to be saved.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Product updated.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request. Entity to save is not in request body.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "entity"
+      },
+      "delete": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Deletes the Product",
+        "description": "Calls the Quote agent service DeleteProduct.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1Product_DeleteProduct",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The Product to be deleted.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Product deleted.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Product/{productId}": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get a product with the given database id",
+        "operationId": "v1Product_GetProductFromDbId",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "description": "The database id of the product",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Product"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Product/{productId}/ImageInfo": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get the Blob that describes the given products picture.",
+        "description": "The actual bitmap is accessible via /api/Services80/pricelist/1/product/123/image.",
+        "operationId": "v1Product_GetImageInfo",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "description": "Product id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Update the Blob that describes the given person's picture.",
+        "description": "The actual bitmap is accessible via /api/Services80/person/123/image.",
+        "operationId": "v1Product_PutImageInfo",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "description": "Product id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "New or Updated information about the product image.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.BlobEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "imageInfo"
+      }
+    },
+    "/api/v1/Product/{productId}/Image": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "The product's picture.",
+        "description": "The image is returned as stored. If width/height or format is specified, then the image is \r\nscaled and converted to the requested type.",
+        "operationId": "v1Product_GetImage",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "description": "Product id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "w",
+            "in": "query",
+            "description": "Optional Width of bitmap.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "h",
+            "in": "query",
+            "description": "Optional Height of bitmap.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Optional type of bitmap: JPEG or PNG or GIF",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ifBlank",
+            "in": "query",
+            "description": "What to return if there is no picture (default = Null = 404 Error) (Default, ClearPixel, SrNoPhoto, SrNoPhotoWithBorder)",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Default",
+                "ClearPixel",
+                "SrNoPhoto",
+                "SrNoPhotoWithBorder",
+                "Null",
+                "GenericFileIcon"
+              ]
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "An image",
+            "content": {
+              "image/png": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "image/jpeg": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "image/gif": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              },
+              "image/tiff": {
+                "schema": {
+                  "type": "string",
+                  "format": "byte"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No image on this product (when ifBlank not defined)",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Save an image to a product",
+        "description": "Updating the image will update the ImageInfo automatically.",
+        "operationId": "v1Product_SaveImage",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "description": "Product id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "image/png": {
+              "schema": {
+                "required": [
+                  "image"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "description": "Bitmap for the product (PNG, JPEG, GIF or TIFF format)",
+                    "format": "binary"
+                  }
+                }
+              }
+            },
+            "image/jpeg": {
+              "schema": {
+                "required": [
+                  "image"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "description": "Bitmap for the product (PNG, JPEG, GIF or TIFF format)",
+                    "format": "binary"
+                  }
+                }
+              }
+            },
+            "image/gif": {
+              "schema": {
+                "required": [
+                  "image"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "description": "Bitmap for the product (PNG, JPEG, GIF or TIFF format)",
+                    "format": "binary"
+                  }
+                }
+              }
+            },
+            "image/tiff": {
+              "schema": {
+                "required": [
+                  "image"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "description": "Bitmap for the product (PNG, JPEG, GIF or TIFF format)",
+                    "format": "binary"
+                  }
+                }
+              }
+            },
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "image"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "description": "Bitmap for the product (PNG, JPEG, GIF or TIFF format)",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The blob id",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Image bitmap is missing from body.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Save an image to a product",
+        "description": "Updating the image will update the ImageInfo automatically.",
+        "operationId": "v1Product_SaveImage_POST",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "description": "Product id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "image/png": {
+              "schema": {
+                "required": [
+                  "image"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "description": "Bitmap for the product (PNG, JPEG, GIF or TIFF format)",
+                    "format": "binary"
+                  }
+                }
+              }
+            },
+            "image/jpeg": {
+              "schema": {
+                "required": [
+                  "image"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "description": "Bitmap for the product (PNG, JPEG, GIF or TIFF format)",
+                    "format": "binary"
+                  }
+                }
+              }
+            },
+            "image/gif": {
+              "schema": {
+                "required": [
+                  "image"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "description": "Bitmap for the product (PNG, JPEG, GIF or TIFF format)",
+                    "format": "binary"
+                  }
+                }
+              }
+            },
+            "image/tiff": {
+              "schema": {
+                "required": [
+                  "image"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "description": "Bitmap for the product (PNG, JPEG, GIF or TIFF format)",
+                    "format": "binary"
+                  }
+                }
+              }
+            },
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "image"
+                ],
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "description": "Bitmap for the product (PNG, JPEG, GIF or TIFF format)",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The blob id",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Image bitmap is missing from body.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Delete image on a product.",
+        "operationId": "v1Product_DeleteImageContent",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "description": "Product id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SuperOffice.CRM.Services.Product": {
+        "type": "object",
+        "properties": {
+          "ProductId": {
+            "type": "integer",
+            "description": "Primary key",
+            "format": "int32"
+          },
+          "ERPProductKey": {
+            "type": "string",
+            "description": "Reference/foreign key to the product in the given pricelist in the product supplier system, if it exists there."
+          },
+          "ERPPriceListKey": {
+            "type": "string",
+            "description": "Foreign key to the price list that this product is a part of, or the primary key of the pricelist if this is a built-in pricelist."
+          },
+          "Name": {
+            "type": "string",
+            "description": "The name to use in the user interface."
+          },
+          "Description": {
+            "type": "string",
+            "description": "The description to use, with potentially several lines. Will be used as tool-tip to use in the list user interface too."
+          },
+          "Code": {
+            "type": "string",
+            "description": "The product code / article number in the product supplier system."
+          },
+          "PriceUnit": {
+            "type": "string",
+            "description": "What is the unit (meter, ton, bushel, microsecond, gradus, \u03c4\u03c1\u03c5\u03b2\u03bb\u03af\u03bf\u03bd, \u4e94\u5408\u67a1, \u062f\u0648\u0646\u0645 or whatever); read-only for lines that originate in defined products"
+          },
+          "QuantityUnit": {
+            "type": "string",
+            "description": "What is the unit (meter, ton, bushel, microsecond, gradus, \u03c4\u03c1\u03c5\u03b2\u03bb\u03af\u03bf\u03bd, \u4e94\u5408\u67a1, \u062f\u0648\u0646\u0645 or whatever); Connector handles conversion relative to PriceUnit if they are different"
+          },
+          "IsSubscription": {
+            "type": "boolean",
+            "description": "Is this a subscription product, sold in repeating intervals/amounts?"
+          },
+          "SubscriptionUnit": {
+            "type": "string",
+            "description": "Either a List id to an id from a connector provided list, or, if the connection doesn\u2019t support lists, a text with the actual subscription unit."
+          },
+          "DefaultSubscriptionQuantity": {
+            "type": "number",
+            "description": "The default number of SubscriptionUnits to suggest when creating quote lines from this product",
+            "format": "double"
+          },
+          "ItemNumber": {
+            "type": "string",
+            "description": "Line item number, NOR: \u00abPostnummer\u00bb. Specific numbers from some hierarchy, for instance \u201c1.4.3.2P\u201d. Typically used to sort the items in the quote by some standard way."
+          },
+          "Url": {
+            "type": "string",
+            "description": "URL to product information web page."
+          },
+          "ProductCategoryKey": {
+            "type": "string",
+            "description": "Either a List id to an id from a connector provided list, or, if the connection doesn\u2019t support lists, a text with the actual product category."
+          },
+          "ProductFamilyKey": {
+            "type": "string",
+            "description": "Either a List id to an id from a connector provided list, or, if the connection doesn't support lists, a text with the actual product family."
+          },
+          "ProductTypeKey": {
+            "type": "string",
+            "description": "Either a List id to an id from a connector provided list, or, if the connection doesn\u2019t support lists, a text with the actual product type."
+          },
+          "VAT": {
+            "type": "number",
+            "description": "Tax/VAT if available from ERP system. THIS IS A PERCENTAGE. In the Superoffice product register, this field is available in the product admin GUI.",
+            "format": "double"
+          },
+          "VATInfo": {
+            "type": "string",
+            "description": "A field for putting VATInfo you need to show in the final quoteDocument, like the VAT type that is used. Not used in any business logic in SuperOffice; available to document templates."
+          },
+          "UnitCost": {
+            "type": "number",
+            "description": "The cost price. Might not be given, use Decimal.MinValue to signal this.",
+            "format": "double"
+          },
+          "UnitMinimumPrice": {
+            "type": "number",
+            "description": "The minimum price this salesman can offer to his customer. This might be cost price if there is no policy. Might not be given, use Decimal.MinValue to signal this.",
+            "format": "double"
+          },
+          "UnitListPrice": {
+            "type": "number",
+            "description": "(Basic Price, normal price, standard price.) This is the basic price from which the discount is computed from. The ListPrice will stay the same even when a larger amount is ordered.",
+            "format": "double"
+          },
+          "InAssortment": {
+            "type": "boolean",
+            "description": "True for products that should currently be offered, false when the product is discontinued and should not ordinarily be offered. When false the product no longer appears in search results."
+          },
+          "Supplier": {
+            "type": "string",
+            "description": "In SuperOffice, an id from the contact table, when saved as an ERP cache, the name of the supplier"
+          },
+          "SupplierCode": {
+            "type": "string",
+            "description": "Suppliers part code/number or other key-like field"
+          },
+          "Rights": {
+            "type": "string",
+            "description": "Field1=right&amp;Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of: N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quoteline, like Image will also be possibly to set rights on. Will be used by SuperOffice to control the user interface when showing the record."
+          },
+          "Rule": {
+            "type": "string",
+            "description": "The names of one or more calculation rules that are in effect for this line, comma-separated case-insensitive. Will NOT be used by SuperOffice."
+          },
+          "ExtraInfo": {
+            "type": "array",
+            "description": "Extra information, supplied by QuoteConnector, used by a future dynamic GUI extension",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.ProductExtraDataField"
+            }
+          },
+          "RawExtraInfo": {
+            "type": "string",
+            "description": "Read-only extra information in plain text, supplied by QuoteConnector, used by a future dynamic GUI extension"
+          },
+          "ExtraField1": {
+            "type": "string",
+            "description": "This a simple field for adding information that the Connector can provide, and that the qoute document need to display."
+          },
+          "ExtraField2": {
+            "type": "string",
+            "description": "This a simple field for adding information that the Connector can provide, and that the qoute document need to display."
+          },
+          "ExtraField3": {
+            "type": "string",
+            "description": "This a simple field for adding information that the Connector can provide, and that the qoute document need to display."
+          },
+          "ExtraField4": {
+            "type": "string",
+            "description": "This a simple field for adding information that the Connector can provide, and that the qoute document need to display."
+          },
+          "ExtraField5": {
+            "type": "string",
+            "description": "This a simple field for adding information that the Connector can provide, and that the qoute document need to display."
+          },
+          "InStock": {
+            "type": "number",
+            "description": "Negative numbers will be interpreted as how many is ordered. Might not be available.",
+            "format": "double"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "Information about a Product from the ERP system. This may be fetched from SuperOffice Product table through the SO Connector\r\n<para />\r\nCarrier object for Product.\r\nServices for the Product Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IQuoteAgent\">Quote Agent</see>."
+      },
+      "SuperOffice.CRM.Services.ProductExtraDataField": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "Label for the field"
+          },
+          "Value": {
+            "type": "string",
+            "description": "Value for the field. If type is string, it can contain formatspecifiers (use this for displaying numbers correctly as the user's computer is set up)."
+          },
+          "Type": {
+            "type": "string",
+            "description": "String, url, image. How the value should be interpreted.",
+            "enum": [
+              "String",
+              "Url",
+              "Image"
+            ]
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "A way to show some simple extra data on a product, typically to hep the user to identify the correct product. Basically a bucket of additional info that the ERP system would like to store and show in the user interface. Information placed here is shown in the GUI if the \u201cprovide-extra-data\u201d capability is true.\r\n<para />\r\nCarrier object for ProductExtraDataField.\r\nServices for the ProductExtraDataField Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IQuoteAgent\">Quote Agent</see>."
+      },
+      "SuperOffice.CRM.Security.TableRight": {
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        },
+        "description": "Wraps a table right together with an explanatory reason.\r\nCode can indicate why access is restricted."
+      },
+      "SuperOffice.CRM.Security.FieldProperty": {
+        "type": "object",
+        "properties": {
+          "FieldRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldRight"
+          },
+          "FieldType": {
+            "type": "string"
+          },
+          "FieldLength": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          }
+        },
+        "description": "Class holding properties like field length, field type about a field in the carrier."
+      },
+      "SuperOffice.CRM.Security.FieldRight": {
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        },
+        "description": "Wraps the field right together with an explanatory reason.\r\nAlso adds logical operators to the field rights so that they can be easily combined."
+      },
+      "SuperOffice.Services.WebApi.OData.ODataSlimResponse": {
+        "type": "object",
+        "properties": {
+          "odata.metadata": {
+            "type": "string"
+          },
+          "odata.nextLink": {
+            "type": "string"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        },
+        "description": "Easy to use archive results - just a flat list of values."
+      },
+      "SuperOffice.CRM.Services.BlobEntity": {
+        "type": "object",
+        "properties": {
+          "BlobId": {
+            "type": "integer",
+            "description": "Primary key",
+            "format": "int32"
+          },
+          "BlobSize": {
+            "type": "integer",
+            "description": "The length, in bytes, of the binary data AS STORED after any encryption and/or zipping. Important to get right, since some databases will not tell us just based on the blob itself!",
+            "format": "int32"
+          },
+          "Description": {
+            "type": "string",
+            "description": "A description that is entered by the user, and visible to the user"
+          },
+          "ExtraInfo": {
+            "type": "string",
+            "description": "Extra information, spare field, can be used for anything that makes sense. Should not refer to any particular context, that is something for the BinaryObjectLInk"
+          },
+          "IsEncrypted": {
+            "type": "boolean",
+            "description": "Has the data been encrypted."
+          },
+          "IsZipped": {
+            "type": "boolean",
+            "description": "Has the data been zipped."
+          },
+          "MimeType": {
+            "type": "string",
+            "description": "Mime type, describing the technical type (image/jpeg) of the data"
+          },
+          "OriginalSize": {
+            "type": "integer",
+            "description": "Original size of the binary data, before encryption and/or zipping. This is what the ultimate client will get",
+            "format": "int32"
+          },
+          "CreatedDate": {
+            "type": "string",
+            "description": "Registered when  in UTC.",
+            "format": "date-time"
+          },
+          "UpdatedDate": {
+            "type": "string",
+            "description": "Last updated when  in UTC.",
+            "format": "date-time"
+          },
+          "CreatedBy": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+          },
+          "UpdatedBy": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+          },
+          "ConceptualType": {
+            "type": "string",
+            "description": "The type, for instance PHOTO, PERSONPHOTO, or whatever, that is descriptive of what kind of image or data this is"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "Carrier object for BlobEntity.\r\nServices for the BlobEntity Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IBLOBAgent\">BLOB Agent</see>."
+      },
+      "SuperOffice.CRM.Services.Associate": {
+        "type": "object",
+        "properties": {
+          "AssociateId": {
+            "type": "integer",
+            "description": "Primary key",
+            "format": "int32"
+          },
+          "Name": {
+            "type": "string",
+            "description": "Initials, also login name, possibly database user name"
+          },
+          "PersonId": {
+            "type": "integer",
+            "description": "Owning person record \r\n<para>Use MDO List name \"person\" to get list items.</para>",
+            "format": "int32"
+          },
+          "Rank": {
+            "type": "integer",
+            "description": "Rank order",
+            "format": "int32"
+          },
+          "Tooltip": {
+            "type": "string",
+            "description": "Tooltip or other description"
+          },
+          "Type": {
+            "type": "string",
+            "description": "User type - 1 = internal user, 2 = resource, 3 = external user, 4 = anonymous, 5 = system",
+            "enum": [
+              "Unknown",
+              "InternalAssociate",
+              "ResourceAssociate",
+              "ExternalAssociate",
+              "AnonymousAssociate",
+              "SystemAssociate"
+            ]
+          },
+          "GroupIdx": {
+            "type": "integer",
+            "description": "Primary group membership, see UserGroupLink for secondary memberships",
+            "format": "int32"
+          },
+          "FullName": {
+            "type": "string",
+            "description": "The associate's culture formatted fullname (firstname, middleName and lastname)"
+          },
+          "FormalName": {
+            "type": "string",
+            "description": "The associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)"
+          },
+          "Deleted": {
+            "type": "boolean",
+            "description": "If true, the user is retired and should have no rights, not appear in lists, etc."
+          },
+          "EjUserId": {
+            "type": "integer",
+            "description": "ID of the ej user record corresponding to this associate; 0 for associates that are not ej users",
+            "format": "int32"
+          },
+          "UserName": {
+            "type": "string",
+            "description": "User name"
+          },
+          "ExtraFields": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Deprecated: Use {SuperOffice.CRM.Services.Associate.CustomFields} instead.\r\nExtra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc."
+          },
+          "CustomFields": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.\r\nCustom fields combines user defined fields and extra fields into one bucket. \r\nThe individual {SuperOffice.CRM.Services.Associate.ExtraFields} and <see cref=\"!:UserDefinedFields\">UserDefinedFields</see> properties are deprecated in favor of this\r\ncombined collection."
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "Carrier object for Associate.\r\nServices for the Associate Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IAssociateAgent\">Associate Agent</see>."
+      }
+    },
+    "securitySchemes": {
+      "SuperOffice Password": {
+        "type": "http",
+        "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
+        "scheme": "basic"
+      },
+      "SuperId Authentication": {
+        "type": "oauth2",
+        "description": "SuperOffice SuperId OAuth implicit flow. \r\nYou need to issue a request to the SuperId authorization URL\r\n    https://online.superoffice.com/login/common/oauth/authorize?response_type=token\r\n      &client_id=670734e0-4c5a-11e3-be9e-a171392e81db\r\n      &redirect_uri=https://example.com/spa/\r\n\r\npassing in the application id and redirect URL.\r\n\r\nSuperId will log the user in, and redirect to the requested redirect URL with a #payload\r\ncontaining the access token and claims. (The redirect URL must be registered with SuperId in advance)\r\n\r\n   https://example.com/spa#access_token=8A%3aCust12227.AXRrCITpPBvQX3UbIohb\r\n      &token_type=bearer\r\n      &state=\r\n      &expires_in=3600\r\n      &ctx=Cust12227\r\n      &netserver_url=https%3a%2f%2fsod.superoffice.com%2fCust12227%2fRemote%2fServices82%2f\r\n\r\nYou can take the #access_token value and pass it as the Authenticate HTTP header as a BEARER token.\r\n",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://online.superoffice.com/login/common/oauth/authorize",
+            "scopes": {}
+          }
+        }
+      }
+    }
+  },
+  "x-original-swagger-version": "2.0"
+}

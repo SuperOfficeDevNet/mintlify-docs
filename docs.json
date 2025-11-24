@@ -1,76 +1,130 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "linden",
+  "name": "SuperOffice",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#06423E",
+    "light": "#136C60",
+    "dark": "#F48A6D"
   },
-  "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "light"
+  },
+  "background": {
+    "decoration": "gradient",
+    "color": {
+      "light": "#F2EFEA"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Super Office Sans Bold",
+      "source": "https://mintlify-assets.b-cdn.net/fonts/SuperOfficeSans-Bold.woff2",
+      "format": "woff2",
+      "weight": 700
+    },
+    "body": {
+      "family": "Super Office Sans",
+      "source": "https://mintlify-assets.b-cdn.net/fonts/SuperOfficeSans-Regular.woff2",
+      "format": "woff2",
+      "weight": 400
+    }
+  },
+  "favicon": "/favicon.ico",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "Getting started",
+            "tab": "Home",
+            "icon": "house",
+            "pages": ["index"]
+          },
+          {
+            "tab": "Guides",
+            "icon": "book-open",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "en/learn/intro",
+              {
+                "group": "Get started",
+                "pages": [
+                  "en/learn/getting-started/index",
+                  {
+                    "group": "The layout elements",
+                    "pages": [
+                      "en/learn/getting-started/main-screen/index",
+                      "en/learn/getting-started/main-screen/navigator",
+                      "en/learn/getting-started/main-screen/side-panel"
+                    ]
+                  },
+                  "en/learn/getting-started/edit-email-signature"
+                ]
+              },
+              {
+                "group": "Learn the basics",
+                "pages": [
+                  "en/learn/basics/notifications",
+                  "en/learn/basics/history"
+                ]
+              },
+              {
+                "group": "Search options",
+                "pages": ["en/search-options/learn/index"]
+              },
+              {
+                "group": "Dashboards",
+                "pages": ["en/dashboard/learn/index"]
+              }
             ]
           },
           {
-            "group": "Customization",
+            "tab": "API Reference",
+            "icon": "code-simple",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              {
+                "group": "API Endpoints",
+                "openapi": "openapi-consolidated.json"
+              }
             ]
           },
           {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+            "tab": "Release Notes",
+            "icon": "bullhorn",
+            "groups": [
+              {
+                "group": "SuperOffice 11",
+                "pages": ["release-notes/11/core-crm/index"]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
+        "language": "de",
+        "tabs": [
           {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "tab": "Home",
+            "icon": "house",
+            "pages": ["index"]
           },
           {
-            "group": "Endpoint examples",
+            "tab": "Guides",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "de/learn/intro",
+              {
+                "group": "Erste Schritte",
+                "pages": [
+                  {
+                    "group": "Die Layout-Elemente",
+                    "pages": [
+                      "de/learn/getting-started/main-screen/index",
+                      "de/learn/getting-started/main-screen/navigator"
+                    ]
+                  }
+                ]
+              }
             ]
-          },
-          {
-            "group": "Appointment",
-            "openapi": {
-              "source": "/appointment/appointment.yaml",
-              "directory": "api-reference"
-            }
           }
         ]
       }
@@ -78,13 +132,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Contact us",
+          "href": "https://www.superoffice.com/company/contact",
+          "icon": "headset"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://www.superoffice.com/blog",
           "icon": "newspaper"
         }
       ]
@@ -92,38 +146,41 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://www.superoffice.com"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Log in",
+        "href": "https://online.superoffice.com/login"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Talk to a CRM expert",
+      "href": "https://www.superoffice.com/crm/demo"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "youtube": "https://www.youtube.com/user/SuperOfficeNetwork",
+      "facebook": "https://www.facebook.com/SuperOfficeCRM",
+      "x": "https://x.com/SuperOffice",
+      "instagram": "https://www.instagram.com/superofficecrm",
+      "linkedin": "https://www.linkedin.com/company/superoffice-as"
     }
   }
 }

@@ -1,0 +1,1467 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "SuperOffice REST API v1",
+    "description": "SuperOffice REST API - PreferenceDescription",
+    "contact": {
+      "name": "SuperOffice DevNet",
+      "url": "https://docs.superoffice.com/en/api/index.html",
+      "email": "sdk@superoffice.com"
+    },
+    "version": "v1-REST"
+  },
+  "externalDocs": {
+    "description": "The SuperOffice DevNet Community has more documentation, examples, and discussion forums.",
+    "url": "https://community.superoffice.com/en/developer/"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:60684/"
+    },
+    {
+      "url": "https://localhost:60684/"
+    }
+  ],
+  "tags": [],
+  "paths": {
+    "/api/v1/PreferenceDescription/default": {
+      "get": {
+        "tags": [
+          "PreferenceDescription"
+        ],
+        "summary": "Set default values into a new PreferenceDescription.",
+        "description": "NetServer calculates default values on the entity, which is required when creating/storing a new instance Calls the Preference agent service CreateDefaultPreferenceDescription.\r\nNsApiSlow threshold: 1000 ms.",
+        "operationId": "v1PreferenceDescription_DefaultPreferenceDescription",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/PreferenceDescription": {
+      "get": {
+        "tags": [
+          "PreferenceDescription"
+        ],
+        "summary": "Gets a list of all PreferenceDescriptions in the system.",
+        "operationId": "v1PreferenceDescription_GetAll",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "PreferenceDescription"
+        ],
+        "summary": "Creates a new PreferenceDescription",
+        "description": "Calls the Preference agent service SavePreferenceDescription.\r\nNsApiSlow threshold: 1000 ms.",
+        "operationId": "v1PreferenceDescription_PostPreferenceDescription",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\" Default = show all fields.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The PreferenceDescription to be saved.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "newEntity"
+      }
+    },
+    "/api/v1/PreferenceDescription/{id}": {
+      "get": {
+        "tags": [
+          "PreferenceDescription"
+        ],
+        "summary": "Gets a PreferenceDescription object.",
+        "description": "Calls the Preference agent service GetPreferenceDescription.\r\nNsApiSlow threshold: 1000 ms.",
+        "operationId": "v1PreferenceDescription_GetPreferenceDescription",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the PreferenceDescription to return.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\" Default = show all fields.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "PreferenceDescription found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "PreferenceDescription"
+        ],
+        "summary": "Updates the existing PreferenceDescription",
+        "description": "NsApiSlow threshold: 1000 ms.",
+        "operationId": "v1PreferenceDescription_PutPreferenceDescription",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The PreferenceDescription id to update.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\" Default = show all fields.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The PreferenceDescription to be saved.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "PreferenceDescription updated.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request. Entity to save is not in request body.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "entity"
+      },
+      "delete": {
+        "tags": [
+          "PreferenceDescription"
+        ],
+        "summary": "Deletes the PreferenceDescription",
+        "description": "Calls the Preference agent service DeletePreferenceDescription.\r\nNsApiSlow threshold: 1000 ms.",
+        "operationId": "v1PreferenceDescription_DeletePreferenceDescription",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The PreferenceDescription to be deleted.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "PreferenceDescription deleted.",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/PreferenceDescription/{section}/{key}": {
+      "get": {
+        "tags": [
+          "PreferenceDescription"
+        ],
+        "summary": "Gets a PreferenceDescription based on the section and key",
+        "operationId": "v1PreferenceDescription_GetFromSectionAndKey",
+        "parameters": [
+          {
+            "name": "section",
+            "in": "path",
+            "description": "The PreferenceDescription-section",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "key",
+            "in": "path",
+            "description": "The PreferenceDescription-key",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "PreferenceDescription"
+        ],
+        "summary": "Update a PreferenceDescription based on the section and key",
+        "operationId": "v1PreferenceDescription_SaveFromSectionAndKey",
+        "parameters": [
+          {
+            "name": "section",
+            "in": "path",
+            "description": "The PreferenceDescription-section",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "key",
+            "in": "path",
+            "description": "The PreferenceDescription-key",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The PreferenceDescription to save.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ],
+        "x-codegen-request-body-name": "preferenceDescription"
+      },
+      "delete": {
+        "tags": [
+          "PreferenceDescription"
+        ],
+        "summary": "Gets a PreferenceDescription based on the section and key",
+        "operationId": "v1PreferenceDescription_DeleteFromSectionAndKey",
+        "parameters": [
+          {
+            "name": "section",
+            "in": "path",
+            "description": "The PreferenceDescription-section",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "key",
+            "in": "path",
+            "description": "The PreferenceDescription-key",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/PreferenceDescription/{section}": {
+      "get": {
+        "tags": [
+          "PreferenceDescription"
+        ],
+        "summary": "Gets all PreferenceDescription-items in the specified section",
+        "operationId": "v1PreferenceDescription_GetAllFromSection",
+        "parameters": [
+          {
+            "name": "section",
+            "in": "path",
+            "description": "The PreferenceDescription-section",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.PreferenceDescription"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice Password": [],
+            "SuperId Authentication": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SuperOffice.CRM.Services.PreferenceDescription": {
+        "type": "object",
+        "properties": {
+          "PrefDescId": {
+            "type": "integer",
+            "description": "Primary key",
+            "format": "int32"
+          },
+          "Section": {
+            "type": "string",
+            "description": "Preference section name"
+          },
+          "Key": {
+            "type": "string",
+            "description": "Preference key name"
+          },
+          "Name": {
+            "type": "string",
+            "description": "Multi-language name"
+          },
+          "ValueType": {
+            "type": "string",
+            "description": "1=number, 2=text, 3=bool, 4=list of values; 5=list table ref; 6=contact ID, 7=Person ID, 8=Project ID, 9=Selection ID",
+            "enum": [
+              "Unknown",
+              "Number",
+              "Text",
+              "Bool",
+              "ListOfValues",
+              "ListTableRef",
+              "TimeList",
+              "ContactID",
+              "PersonID",
+              "ProjectID",
+              "SelectionID",
+              "PosSize",
+              "TimeZone",
+              "Time",
+              "Password",
+              "MultiLineText"
+            ]
+          },
+          "MaxLevel": {
+            "type": "string",
+            "description": "Lowest allowed setting level, set by user, but not lower than sysMaxLevel",
+            "enum": [
+              "Undefined",
+              "HardDefault",
+              "SystemWide",
+              "Database",
+              "Group",
+              "Individual",
+              "PC"
+            ]
+          },
+          "SysMaxLevel": {
+            "type": "string",
+            "description": "Lowest allowed setting level, set by SuperOffice",
+            "enum": [
+              "Undefined",
+              "HardDefault",
+              "SystemWide",
+              "Database",
+              "Group",
+              "Individual",
+              "PC"
+            ]
+          },
+          "AccessFlags": {
+            "type": "string",
+            "description": "1=wizard mode, 2=level 0, 4=admin gui, 8=crm gui",
+            "enum": [
+              "Unknown",
+              "WizardMode",
+              "Level0",
+              "adminGUI",
+              "CRMGUI"
+            ]
+          },
+          "Description": {
+            "type": "string",
+            "description": "Description of preference, multi-language parsed"
+          },
+          "IsBuiltin": {
+            "type": "boolean",
+            "description": "1 = This row populated and maintained by SuperOffice"
+          },
+          "TableName": {
+            "type": "string",
+            "description": "If valueType = 5, then TableName contains the table referenced by the preference"
+          },
+          "UserDefinedListId": {
+            "type": "integer",
+            "description": "Read-only field, If valueType = 5, and TableName is UDList, then UserdefinedLIstId contains the id of the list referenced by the preference",
+            "format": "int32"
+          },
+          "Rank": {
+            "type": "integer",
+            "description": "Rank field for ordering sections, and keys within sections",
+            "format": "int32"
+          },
+          "SubGroup": {
+            "type": "string",
+            "description": "Keys that share a value (including NULL) in this field are shown together; a visual spacer is shown between groups"
+          },
+          "MinLevel": {
+            "type": "integer",
+            "description": "The minimum (furthest away from User) level this preference can be set for",
+            "format": "int32"
+          },
+          "MaxValue": {
+            "type": "integer",
+            "description": "Max value (if type 1); list table ID (if type 5)",
+            "format": "int32"
+          },
+          "MinValue": {
+            "type": "integer",
+            "description": "Min value (if type 1); list extra id (if type 5)",
+            "format": "int32"
+          },
+          "RequiredLicense": {
+            "type": "string",
+            "description": "Licenses the user/installation must have if this reference is to be shown. Comma-separated list of owner.module pairs"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          }
+        },
+        "description": "Preference description, drives the Preference GUI. Maintenance client - controls all preferences in SuperOffice.\r\n<para />\r\nCarrier object for PreferenceDescription.\r\nServices for the PreferenceDescription Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IPreferenceAgent\">Preference Agent</see>."
+      },
+      "SuperOffice.CRM.Security.TableRight": {
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        },
+        "description": "Wraps a table right together with an explanatory reason.\r\nCode can indicate why access is restricted."
+      },
+      "SuperOffice.CRM.Security.FieldProperty": {
+        "type": "object",
+        "properties": {
+          "FieldRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldRight"
+          },
+          "FieldType": {
+            "type": "string"
+          },
+          "FieldLength": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          }
+        },
+        "description": "Class holding properties like field length, field type about a field in the carrier."
+      },
+      "SuperOffice.CRM.Security.FieldRight": {
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        },
+        "description": "Wraps the field right together with an explanatory reason.\r\nAlso adds logical operators to the field rights so that they can be easily combined."
+      },
+      "SuperOffice.WebApi.v1.Carriers.PreferenceCarriers.PreferenceDescriptionWithLinks": {
+        "type": "object",
+        "properties": {
+          "PrefDescId": {
+            "type": "integer",
+            "description": "Primary key",
+            "format": "int32"
+          },
+          "Section": {
+            "type": "string",
+            "description": "Preference section name"
+          },
+          "Key": {
+            "type": "string",
+            "description": "Preference key name"
+          },
+          "Name": {
+            "type": "string",
+            "description": "Multi-language name"
+          },
+          "ValueType": {
+            "type": "string",
+            "description": "1=number, 2=text, 3=bool, 4=list of values; 5=list table ref; 6=contact ID, 7=Person ID, 8=Project ID, 9=Selection ID",
+            "enum": [
+              "Unknown",
+              "Number",
+              "Text",
+              "Bool",
+              "ListOfValues",
+              "ListTableRef",
+              "TimeList",
+              "ContactID",
+              "PersonID",
+              "ProjectID",
+              "SelectionID",
+              "PosSize",
+              "TimeZone",
+              "Time",
+              "Password",
+              "MultiLineText"
+            ]
+          },
+          "MaxLevel": {
+            "type": "string",
+            "description": "Lowest allowed setting level, set by user, but not lower than sysMaxLevel",
+            "enum": [
+              "Undefined",
+              "HardDefault",
+              "SystemWide",
+              "Database",
+              "Group",
+              "Individual",
+              "PC"
+            ]
+          },
+          "SysMaxLevel": {
+            "type": "string",
+            "description": "Lowest allowed setting level, set by SuperOffice",
+            "enum": [
+              "Undefined",
+              "HardDefault",
+              "SystemWide",
+              "Database",
+              "Group",
+              "Individual",
+              "PC"
+            ]
+          },
+          "AccessFlags": {
+            "type": "string",
+            "description": "1=wizard mode, 2=level 0, 4=admin gui, 8=crm gui",
+            "enum": [
+              "Unknown",
+              "WizardMode",
+              "Level0",
+              "adminGUI",
+              "CRMGUI"
+            ]
+          },
+          "Description": {
+            "type": "string",
+            "description": "Description of preference, multi-language parsed"
+          },
+          "IsBuiltin": {
+            "type": "boolean",
+            "description": "1 = This row populated and maintained by SuperOffice"
+          },
+          "TableName": {
+            "type": "string",
+            "description": "If valueType = 5, then TableName contains the table referenced by the preference"
+          },
+          "UserDefinedListId": {
+            "type": "integer",
+            "description": "Read-only field, If valueType = 5, and TableName is UDList, then UserdefinedLIstId contains the id of the list referenced by the preference",
+            "format": "int32"
+          },
+          "Rank": {
+            "type": "integer",
+            "description": "Rank field for ordering sections, and keys within sections",
+            "format": "int32"
+          },
+          "SubGroup": {
+            "type": "string",
+            "description": "Keys that share a value (including NULL) in this field are shown together; a visual spacer is shown between groups"
+          },
+          "MinLevel": {
+            "type": "integer",
+            "description": "The minimum (furthest away from User) level this preference can be set for",
+            "format": "int32"
+          },
+          "MaxValue": {
+            "type": "integer",
+            "description": "Max value (if type 1); list table ID (if type 5)",
+            "format": "int32"
+          },
+          "MinValue": {
+            "type": "integer",
+            "description": "Min value (if type 1); list extra id (if type 5)",
+            "format": "int32"
+          },
+          "RequiredLicense": {
+            "type": "string",
+            "description": "Licenses the user/installation must have if this reference is to be shown. Comma-separated list of owner.module pairs"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            },
+            "description": "Field property dictionary mapping field names to field access rights."
+          },
+          "_Links": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        },
+        "description": "Preference description, drives the Preference GUI. Maintenance client - controls all preferences in SuperOffice.\r\n<para />\r\nPreferenceDescription entity with API _Links added."
+      }
+    },
+    "securitySchemes": {
+      "SuperOffice Password": {
+        "type": "http",
+        "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
+        "scheme": "basic"
+      },
+      "SuperId Authentication": {
+        "type": "oauth2",
+        "description": "SuperOffice SuperId OAuth implicit flow. \r\nYou need to issue a request to the SuperId authorization URL\r\n    https://online.superoffice.com/login/common/oauth/authorize?response_type=token\r\n      &client_id=670734e0-4c5a-11e3-be9e-a171392e81db\r\n      &redirect_uri=https://example.com/spa/\r\n\r\npassing in the application id and redirect URL.\r\n\r\nSuperId will log the user in, and redirect to the requested redirect URL with a #payload\r\ncontaining the access token and claims. (The redirect URL must be registered with SuperId in advance)\r\n\r\n   https://example.com/spa#access_token=8A%3aCust12227.AXRrCITpPBvQX3UbIohb\r\n      &token_type=bearer\r\n      &state=\r\n      &expires_in=3600\r\n      &ctx=Cust12227\r\n      &netserver_url=https%3a%2f%2fsod.superoffice.com%2fCust12227%2fRemote%2fServices82%2f\r\n\r\nYou can take the #access_token value and pass it as the Authenticate HTTP header as a BEARER token.\r\n",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://online.superoffice.com/login/common/oauth/authorize",
+            "scopes": {}
+          }
+        }
+      }
+    }
+  },
+  "x-original-swagger-version": "2.0"
+}

@@ -1,0 +1,85 @@
+---
+title: "Edit signatures"
+sidebarTitle: "Edit email signature"
+description: "The default templates contain template variables that are replaced with data from SuperOffice, ensuring your signatures are always updated with the correct information."
+---
+
+- **Email signature:** The template contains variables for your name, company, address, phone numbers, email address, website, and so on [from your contact card](https://docs.superoffice.com/en/document/templates/variables/for-selected-contact.html).
+- **Request signature:** The template contains variables for your name, company, email address, and so on specific to [reply templates](https://docs.superoffice.com/en/knowledge-base/learn/reply-templates/template-variables.html).
+
+<Note>
+**Note**
+
+You cannot mix these two sets of template variables. Additionally, personal signatures cannot be overridden by admins.
+
+</Note>
+
+## Steps
+<Steps>
+<Step>
+ Click the **Personal settings** button () in the top bar.
+</Step>
+<Step>
+ Select **Edit personal signature**.
+</Step>
+<Step>
+ In the dialog, select either the **Email signature** tab or the **Request signature** tab.
+</Step>
+<Step>
+ Edit text and add additional content.
+	- Click **\[v\]** in the toolbar to add variables, or go to the above-linked references for the complete list of available variables.
+	- Add images and links using the buttons in the toolbar. You can also drag and drop links and images. Select **Insert link** to add links to relevant resources or social media.
+	<Frame>
+	  ![Edit personal email signature -screenshot](https://docs.superoffice.com/media/loc/en/learn/getstarted-preferences-email-signature.png)
+	</Frame>
+</Step>
+<Step>
+ Click **Save** when you are done.
+</Step>
+<Step>
+ Optional: Test the signature by sending an email to yourself (for email signatures) or by creating a new request (for request signatures). Check that all information is displayed correctly, and the links work and images are displayed as intended.
+</Step>
+</Steps>
+## Example
+
+This is an example of a signature that can be used by anyone in your company.
+
+**Template:**
+
+```text
+Best Regards,
+{auth}
+{atit}
+{onam}
+Address: {opad}, {ozip} {ocit}
+Phone: {audp}
+Mobile phone: {aupc}
+{auem}
+{owww}
+```
+
+**Result:**
+
+```text
+Best Regards,
+John Jones
+Sales Manager
+SuperShop
+Address: High Street 12, 223-344, Springfield
+Phone: 22334455
+Mobile phone: 99887766
+jj@supershop.com
+supershop.com
+```
+
+## Related topics
+
+<CardGroup>
+<Card
+  title="Change default mail client in SuperOffice"
+  icon="message"
+  href="https://docs.superoffice.com/en/email/learn/change-default-mail-client.html"
+  horizontal
+/>
+
+</CardGroup>

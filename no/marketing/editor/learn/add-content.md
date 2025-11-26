@@ -64,7 +64,7 @@ Du kan også **legge til spesielle koblinger** til utsendelsen din. Avhengig av 
 * [Avmelding][4]
 * [Sporede koblinger][5]
 
-<!-- Referenced links -->
+
 [1]: insert-images-in-message.md
 [2]: edit-paragraph.md
 [3]: add-link-to-display-message-in-browser.md
@@ -72,7 +72,7 @@ Du kan også **legge til spesielle koblinger** til utsendelsen din. Avhengig av 
 [5]: add-tracked-link-to-msg.md
 [6]: ../../recipients/learn/manage-email-subscriptions.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/icons/marketing-and-forms/side-panel-content.png
 [img2]: ../../../../media/icons/marketing-and-forms/side-panel-content-columns.png
 [img3]: ../../../../media/icons/marketing-and-forms/side-panel-content-button.png

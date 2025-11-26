@@ -57,7 +57,7 @@ Innboks-skjermbildet er delt inn i to ruter:
 * [Arkiver e-poster og vedlegg][4]
 * [Opprett oppfølginger fra e-post][5]
 
-<!-- Refererte lenker -->
+
 [1]: setup.md
 [2]: preview.md
 [3]: compose.md
@@ -65,5 +65,5 @@ Innboks-skjermbildet er delt inn i to ruter:
 [5]: create-task.md
 [8]: ../../learn/index.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../../media/loc/en/email/inbox-preview-message.png

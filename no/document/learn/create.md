@@ -27,7 +27,7 @@ Følg instruksjonene nedenfor, avhengig av hvordan dokumenter håndteres i Super
 
 [!include[How to check document library](includes/webtools-or-sharepoint.md)]
 
-<!-- markdownlint-disable-file MD051 -->
+
 ## Trinn
 
 ### [Med SuperOffice WebTools](#tab/webtools)
@@ -152,7 +152,7 @@ Hvis du ikke har installert SuperOffice WebTools, må du laste ned dokumenter ma
 * [Sende e-postvedlegg fra SuperOffice][4]
 * [Behandle dokumentmaler i Innstillinger og vedlikehold][6]
 
-<!-- Referenced links -->
+
 [1]: edit.md
 [3]: lock.md
 [4]: send-as-email.md
@@ -163,5 +163,5 @@ Hvis du ikke har installert SuperOffice WebTools, må du laste ned dokumenter ma
 [9]: ../../learn/basics/links.md
 [10]: ../../custom-objects/learn/udef.md
 
-<!-- Referenced images -->
+
 [img4]: ../../../media/loc/en/document/create-document.png

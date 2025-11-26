@@ -105,7 +105,7 @@ For mer informasjon om oppsett av salgsmuligheter, se [veiledningen for salgspro
 * [Leadhåndtering][8]
 * [Skriv ut informasjon om et salg][11]
 
-<!-- Refererte lenker -->
+
 [1]: quote/create.md
 [2]: update.md#stalled
 [3]: ../../learn/section-tabs/index.md
@@ -127,7 +127,7 @@ For mer informasjon om oppsett av salgsmuligheter, se [veiledningen for salgspro
 [19]: ../../learn/basics/notes.md
 [20]: ../../learn/getting-started/main-screen/side-panel.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/sale/sales-screen.png
 [img2]: ../../../media/loc/en/sale/getstarted-sidepanel-saleselection.png
 [img3]: ../../../media/loc/en/sale/user-diary-sales.png

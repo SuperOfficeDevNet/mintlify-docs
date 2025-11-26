@@ -50,13 +50,13 @@ For å gruppere kolleger sammen og gi dem tilgang til CRM-data basert på denne 
 * [Importere brukere][2] (onsite)
 * [Konfigurere hvilken informasjon brukerne i firmaet ditt kan få tilgang til i SuperOffice CRM.][3]
 
-<!-- Referenced links -->
+
 [1]: add-associate.md
 [2]: onsite/import-users.md
 [3]: role/index.md
 [4]: ../../request/admin/category/index.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../media/loc/en/admin/add-user-group.png
 [img4]: ../../../media/loc/en/admin/edit-list-item.png
 [img5]: ../../../media/loc/en/admin/user-dialog.png

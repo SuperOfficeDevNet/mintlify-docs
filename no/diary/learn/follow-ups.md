@@ -108,7 +108,7 @@ Standard varighet er **1 time for møter** og **15 minutter for telefonsamtaler*
 * [Opprett en oppfølging][2]
 * [Lær mer om aktiviteter][4]
 
-<!-- Referenced links -->
+
 [2]: create-follow-up.md
 [4]: ../../learn/basics/activity.md
 [5]: invitation/index.md

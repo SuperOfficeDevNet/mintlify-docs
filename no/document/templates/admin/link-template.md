@@ -22,7 +22,7 @@ Maler vises som forekomster på listen **Dokument - mal**, og du knytter en mal 
 
 Se denne videoen, eller følg fremgangsmåten nedenfor for å finne ut hvordan du kan legge til en dokumentmal:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/FnhcmjP-TgE]
 
 (videolengde – 2.30)
@@ -125,12 +125,12 @@ Her kan du legge til oversatte versjoner av dokumentmalen.
 
 * [Erstatte eksisterende mal][1]
 
-<!-- Referenced links -->
+
 [1]: update-template.md
 [2]: ../learn/quote-templates.md
 [4]: ../../../saint/learn/index.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../../media/loc/en/document/edit-list-item.png
 [img3]: ../../../../media/loc/en/document/lists-add.png
 [img4]: ../../../../media/loc/en/document/imagedmnmi.png

@@ -52,7 +52,7 @@ Hvis knappen **Ny språkversjon** ikke er synlig, betyr det at ingen kundespråk
 
 Hvis et bestemt språk mangler i nedtrekksmenyen **Språk**, er det ikke lagt til i listen over kundespråk. Be administratoren din om å inkludere det manglende språket i **Innstillinger og vedlikehold**.
 
-<!-- Referenced links -->
+
 [1]: create.md
 [2]: ../../../localization/learn/customer-languages.md
 [3]: ../../../localization/admin/add-customer-language.md

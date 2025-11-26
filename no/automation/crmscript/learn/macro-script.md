@@ -45,10 +45,10 @@ Et skript er et lite program som er skrevet for å utføre bestemte oppgaver, og
 * [Opprette en makro][3]
 * [Opprette mappe][4]
 
-<!-- Referenced links -->
+
 [1]: screen/index.md
 [2]: create-script.md
 [3]: create-macro.md
 [4]: create-folder.md
 
-<!-- Referenced images -->
+

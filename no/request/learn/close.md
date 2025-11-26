@@ -64,7 +64,7 @@ Du kan raskt avslutte flere saker samtidig ved å sette **Status**-feltet til *A
 * [Saker-fanen][2]
 * [Finn saker][4]
 
-<!-- Refererte lenker -->
+
 [1]: ../../learn/basics/bulk-update.md
 [2]: ../../learn/section-tabs/requests-tab.md
 [3]: reply.md
@@ -72,6 +72,6 @@ Du kan raskt avslutte flere saker samtidig ved å sette **Status**-feltet til *A
 [5]: ../admin/status/index.md
 [6]: ../../search-options/selection/learn/create.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/request/bulk-update-requests.png
 [img2]: ../../../media/loc/en/request/bulk-update-confirm.png

@@ -103,7 +103,7 @@ Ved å redigere dokumentegenskapene kan du f.eks. justere hvem som skal ha tilga
 
 * [Opprette og slette mapper][2]
 
-<!-- Referenced links -->
+
 [1]: ../../request/learn/reply.md
 [2]: manage-folders.md
 [9]: ../../../../release-notes/10.3/service/10.3.11-update.md

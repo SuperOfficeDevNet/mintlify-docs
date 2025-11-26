@@ -30,5 +30,5 @@ Slik legger du til en makro på **Oppgave**-knappen i skjermbildet Firma, Person
 > [!NOTE]
 > Du kan også legge til en makro på **Oppgave**-knappen når du [oppretter eller redigerer en makro][1].
 
-<!-- Referenced links -->
+
 [1]: ../../../../automation/crmscript/learn/create-macro.md

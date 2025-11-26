@@ -34,9 +34,9 @@ I bildet Kundesenter definerer du innstillinger for kundesenteret og administrer
 
 * [Kundespråk][1]
 
-<!-- Referenced links -->
+
 [1]: ../../localization/learn/customer-languages.md
 [2]: config.md
 [3]: edit.md
 
-<!-- Referenced images -->
+

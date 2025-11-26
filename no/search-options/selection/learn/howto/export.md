@@ -41,6 +41,6 @@ Ved hjelp av denne oppgaven kan du opprette en tekstfil med informasjon om utval
 > [!NOTE]
 > Tekstfilen kan se litt uryddig ut hvis du åpner den i Notisblokk. Dette er normalt for filer der informasjonen er delt ved hjelp av skilletegn, for eksempel tabulatorer eller semikolon.
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+

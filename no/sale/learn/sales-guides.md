@@ -50,7 +50,7 @@ Salgsguider settes opp i Innstillinger og vedlikehold og kan tilpasses etter org
 
 Se denne videoen for å lære hvor enkelt det er å bruke salgsguiden:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/IyETjAtn3po]
 
 (videolengde – 1:24)
@@ -175,7 +175,7 @@ Alternativt:
 * [Opprette en ny salgsguide][4]
 * [Redigere eller deaktivere en salgsguide][5]
 
-<!-- Refererte lenker -->
+
 [1]: index.md
 [2]: create.md
 [3]: tutorial.md
@@ -184,7 +184,7 @@ Alternativt:
 [6]: ../../diary/learn/create-follow-up.md
 [7]: ../../document/learn/edit.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/sale/sales-guide-tab.png
 [img2]: ../../../media/loc/en/sale/guide-stages.png
 [img3]: ../../../media/loc/en/sale/goto-next-stage.png

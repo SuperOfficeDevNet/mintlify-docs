@@ -78,10 +78,10 @@ Gruppering og filtrering etter brukergruppe er ikke tilgjengelig for denne liste
 * [Firmakategori og kategorigruppe][2]
 * [Oversikt over leadhåndtering][3]
 
-<!-- Referenced links -->
+
 [1]: index.md
 [2]: add-company-category.md
 [3]: ../learn/index.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/lead/add-lead-status.png

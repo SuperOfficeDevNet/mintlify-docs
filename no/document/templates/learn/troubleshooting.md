@@ -139,10 +139,10 @@ Excel .xlsx (sheet1.xml er det faktiske ark 1):
 
 ![Excel -screenshot][img6]
 
-<!-- Referenced links -->
+
 [1]: ../variables/index.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/document/troubleshoot-tempvar.png
 [img2]: ../../../../media/loc/en/document/troubleshoot-tempvar-1.png
 [img4]: ../../../../media/loc/en/document/troubleshoot-tempvar-2.png

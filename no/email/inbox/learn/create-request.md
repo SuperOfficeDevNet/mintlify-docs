@@ -41,11 +41,11 @@ Du kan opprette en ny sak i SuperOffice Service basert på avsender og innhold i
 * [Opprett oppgave][2]
 * [Om saker][3]
 
-<!-- Refererte lenker -->
+
 [1]: archive.md
 [2]: create-task.md
 [3]: ../../../request/learn/index.md
 [4]: ../../../request/learn/create.md#fields
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../../media/loc/en/email/inbox-create-request.png

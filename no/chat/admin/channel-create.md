@@ -148,5 +148,5 @@ Forhåndsvisningen til høyre viser chatvinduet med de gjeldende innstillingene.
 
 Ja, men sørg for at chatkanalen ikke brukes på en webside. Ellers er chattevinduet synlig, men ikke funksjonelt.
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/chat/admin-chat-channels.png

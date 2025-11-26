@@ -96,12 +96,12 @@ For å angre disse endringene klikker du på **Gjenopprett faner**.
 
 * [Opprett ny layout][4]
 
-<!-- Referenced links -->
+
 [1]: ../../../localization/learn/translate-fields.md
 [2]: ../../../search-options/learn/search-criteria.md
 [4]: add-layout.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/customization/admin-screendesigner-edit-archive.png
 [img5]: ../../../../media/loc/en/customization/admin-screendesigner-edit-archive-add-tab.png
 [img6]: ../../../../media/loc/en/customization/admin-screendesigner-add-archive-layout.png

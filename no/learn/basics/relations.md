@@ -87,12 +87,12 @@ For 책 se flere detaljer eller for 책 redigere, dobbeltklikk p책 en rad for 책 �
 * [Legge til forekomster p책 listen Generelt - Relasjon][3]
 * [Tilpassede felt i relasjoner][4]
 
-<!-- Referenced links -->
+
 [1]: ../section-tabs/index.md
 [2]: deleting-elements.md
 [3]: ../../admin/lists/specialized-lists.md#relation
 [4]: ../../custom-objects/learn/extra-field.md#relation
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/company/relation.png
 [img2]: ../../../media/loc/en/company/relations-detail.png

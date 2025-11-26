@@ -117,13 +117,13 @@ Eksempelet dekker ikke alle felt og alternativer, men du finner omfattende instr
 > [!TIP]
 > Du kan også være interessert i vår veiledning for [nyhetsbrev påmelding][7]. La kundene dine melde seg på ett eller flere av dine nyhetsbrev.
 
-<!-- Referenced links -->
+
 [1]: create.md
 [2]: ../../mailing/learn/create/tutorial-form-mailing.md
 [6]: ../../recipients/learn/manage-email-subscriptions.md
 [7]: tutorial-sign-up.md
 
-<!-- Referenced images -->
+
 [img5]: ../../../../media/loc/en/marketing/contact-me-form-properties.png
 [img6]: ../../../../media/loc/en/marketing/contact-me-form-fields.png
 [img7]: ../../../../media/loc/en/marketing/contact-me-form-actions.png

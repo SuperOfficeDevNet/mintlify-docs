@@ -215,7 +215,7 @@ Etter å ha designet en flyt og lagret den, lukkes **Dialogvindu for å redigere
 * [Del flyt][1]
 * [Start flyt][6]
 
-<!-- Referenced links -->
+
 [1]: split.md
 [2]: update.md
 [3]: define-flow-actions.md
@@ -230,7 +230,7 @@ Etter å ha designet en flyt og lagret den, lukkes **Dialogvindu for å redigere
 [13]: ../../../search-options/learn/search-criteria.md
 [14]: ../../../search-options/selection/learn/index.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/flow-settings.png
 [img2]: ../../../../media/loc/en/marketing/flow-email-settings.png
 [img3]: ../../../../media/loc/en/marketing/flow-success-form-submission.png

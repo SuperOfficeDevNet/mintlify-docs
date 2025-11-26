@@ -22,5 +22,5 @@ På denne siden vil vi dele alle SuperOffice-malvariablene som er tilgjengelige 
 
 Hvis du støter på et problem med maler, sjekk [Feilsøking av dokumentmaler][2].
 
-<!-- Referenced links -->
+
 [2]: ../learn/troubleshooting.md

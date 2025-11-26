@@ -91,7 +91,7 @@ Sync Connectoren vises nå i listen.
 * [Angi synkroniseringsprioritet][5]
 * [Importer data fra ERP][6]
 
-<!-- Referenced links -->
+
 [1]: configure.md
 [3]: configure.md#defaults
 [4]: configure.md#rank
@@ -100,7 +100,7 @@ Sync Connectoren vises nå i listen.
 [7]: https://online.superoffice.com/appstore/app/search?phrase=sync
 [8]: ../../../en/developer-portal/custom-app/index.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/erp/sync-connectors-list.png
 [img2]: ../../../media/loc/en/erp/define-erp-connection.png
 [img3]: ../../../media/loc/en/erp/configure-scope.png

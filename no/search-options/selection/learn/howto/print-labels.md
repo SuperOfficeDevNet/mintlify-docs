@@ -47,7 +47,7 @@ Etikettskriving kan være nyttig når du trenger å sende brev til flere mottake
 
 1. Klikk på **Skriv ut**.
 
-<!-- Referenced links -->
-<!-- Referenced images -->
+
+
 [img1]: ../../../../../media/loc/en/search-options/choose-label-layout-dialog.png
 [img3]: ../../../../../media/loc/en/search-options/selection-task-print-labels-print-settings.png

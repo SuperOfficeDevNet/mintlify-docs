@@ -109,7 +109,7 @@ Klikk på utsendelsen i listen for å [vise sendestatus og statistikk][2].
 1. Klikk på knappen under **Last ned generert dokument**. Dokumentet lastes ned til nettleseren din.
 1. Åpne og skriv ut dokumentet.
 
-<!-- Referenced links -->
+
 [2]: ../view-statistics.md
 [1]: ../../../editor/learn/index.md#variables
 [3]: ../../../learn/create-folder.md

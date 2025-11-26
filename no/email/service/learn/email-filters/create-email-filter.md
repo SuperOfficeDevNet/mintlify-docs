@@ -64,7 +64,7 @@ language: no
 
 1. Klikk på **OK**. E-postfilteret opprettes.
 
-<!-- Referenced links -->
+
 [1]: ../../../../automation/crmscript/learn/index.md
 [2]: ../../../../knowledge-base/learn/reply-templates/index.md
 [3]: ../../../../knowledge-base/learn/reply-templates/create.md#faq

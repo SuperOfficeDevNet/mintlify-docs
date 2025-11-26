@@ -104,12 +104,12 @@ Variabler tilgjengelige i skriptet inkluderer custId, linkId, shipmentId, linkUr
 
 [Hvordan opprette eller redigere et CRMScript][6]
 
-<!-- Referenced links -->
+
 [1]: ../../forms/learn/tutorial-sign-up.md
 [3]: ../../../request/learn/create.md
 [4]: ../../../diary/learn/create-follow-up.md
 [5]: ../../../custom-objects/learn/extra-field.md
 [6]: ../../../automation/crmscript/learn/create-script.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../../media/loc/en/marketing/link-properties-follow-up.png

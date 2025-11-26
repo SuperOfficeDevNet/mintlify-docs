@@ -178,7 +178,7 @@ Importkilden kan for eksempel inneholde produktkategorier som ikke er registrert
 * **Legg til nytt element i listen**: Nye verdier blir lagt til i SuperOffice.
 * **Ignorer - sett til tomt**: Ingen nye verdier blir lagt til i SuperOffice.
 
-<!-- Referenced links -->
+
 [1]: ../../security/privacy/learn/index.md
 
-<!-- Referenced images -->
+

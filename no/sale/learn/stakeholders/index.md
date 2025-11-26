@@ -42,7 +42,7 @@ Du må også angi preferansen **Vis interessenter** for preferansegruppen **Salg
 * [Legge til eller oppdater interessentroller][6]
 * [Legge til preferanseinnstillinger][7]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [3]: edit.md
 [2]: ../../../project/learn/project-members/add.md#from-section-tab
@@ -51,5 +51,5 @@ Du må også angi preferansen **Vis interessenter** for preferansegruppen **Salg
 [6]: ../../../admin/lists/add-items.md
 [7]: ../../../admin/preferences/update.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/sale/stakeholders-section-tab.png

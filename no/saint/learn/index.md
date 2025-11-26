@@ -137,12 +137,12 @@ Dialogboksen **Vis statuser** vises når du klikker på et statusbilde på et fi
 * [Hvordan SAINT lagrer tellere og statuser][4]
 * [Bruk statusovervåking i dynamiske utvalg][2]
 
-<!-- Referenced links -->
+
 [1]: ../../diary/learn/create-follow-up.md
 [2]: ../../search-options/selection/learn/create.md
 [5]: ../admin/index.md
 [4]: ../admin/index.md#database
 
-<!-- Referenced images -->
+
 [img2]: ../../../media/loc/en/saint/find-company-saint-criteria.png
 [img3]: ../../../media/loc/en/saint/visualize-neglected-company.png

@@ -87,7 +87,7 @@ Interesser hjelper deg med å lage målrettede utvalg. Du kan for eksempel defin
 * [Legge til oppføring som favoritt][4]
 * [Dialogboksen Preferanser][3] – standardverdier for felt og lister
 
-<!-- Referenced links -->
+
 [1]: https://community.superoffice.com/globalassets/user--admin/learning/user-guide/company--contact/add-company.mp4
 [2]: ../../learn/basics/duplicates.md
 [3]: ../../learn/getting-started/preferences.md
@@ -96,6 +96,6 @@ Interesser hjelper deg med å lage målrettede utvalg. Du kan for eksempel defin
 [9]: ../../customization/screen-designer/admin/index.md
 [12]: ../../custom-objects/learn/more-tab.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/company/new-company.png
 [img2]: ../../../media/loc/en/company/interests.png

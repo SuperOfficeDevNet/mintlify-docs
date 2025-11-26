@@ -112,7 +112,7 @@ Mappelisten kommer fra e-postleverandøren din (for eksempel Outlook eller Gmail
 * [Opprett oppgave][4]
 * [Opprett sak][5]
 
-<!-- Refererte lenker -->
+
 [1]: manage-senders.md
 [2]: archive.md#attachment
 [3]: invitations.md
@@ -120,7 +120,7 @@ Mappelisten kommer fra e-postleverandøren din (for eksempel Outlook eller Gmail
 [5]: create-request.md
 [9]: ../../../contact/learn/index.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../../media/loc/en/email/inbox-preview-message.png
 [img2]: ../../../../media/loc/en/email/email-options-general.png
 [img3]: ../../../../media/loc/en/email/inbox-message-task-menu.png

@@ -150,7 +150,7 @@ Tidlig i 2021 la SuperOffice til et nytt redigeringsprogram for meldinger ("Dra 
 * [Bruke flettefelt i meldinger][7]
 * [Sette inn bilder i meldingen][6]
 
-<!-- Referenced links -->
+
 [3]: ../../learn/best-practices.md#mobile
 [9]: ../../learn/message-templates.md
 [1]: add-content.md
@@ -160,7 +160,7 @@ Tidlig i 2021 la SuperOffice til et nytt redigeringsprogram for meldinger ("Dra 
 [8]: add-tracked-link-to-msg.md
 [2]: https://help.superoffice.com/Documentation/Help/NO/CRM/UserHelp/index.htm#t=Mailing%2FHelptopics%2Foldeditor%2FStep_3__Content_-_Formatted_e-mail.htm
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/edit-template.png
 
 [img21]: ../../../../media/icons/marketing-and-forms/side-panel-content.png

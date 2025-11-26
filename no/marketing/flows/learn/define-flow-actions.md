@@ -221,7 +221,7 @@ En [koblingshandling][7] kan inkludere:
 * Opprette en sak
 * Opprette en oppfølging
 
-<!-- Referenced links -->
+
 [1]: step-settings.md
 [6]: ../../forms/learn/define-form-actions.md
 [7]: ../../tracked-links/learn/define-link-actions.md
@@ -237,6 +237,6 @@ En [koblingshandling][7] kan inkludere:
 [19]: ../../../custom-objects/learn/extra-field.md
 [20]: ../../../automation/crmscript/learn/create-script.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/flow-send-email-new.png
 [img2]: ../../../../media/loc/en/marketing/flow-update-contact.png

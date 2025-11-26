@@ -77,7 +77,7 @@ For å [legge til prosjektmedlemmer][4] direkte fra **Prosjekter**-fanen:
 * [Filtrer prosjekter][8]
 * [Grupper kolonner og summer opp beløp][5]
 
-<!-- Referenced links -->
+
 [1]: ../../project/learn/index.md
 [2]: ../../project/learn/create.md
 [4]: ../../project/learn/project-members/add.md
@@ -87,5 +87,5 @@ For å [legge til prosjektmedlemmer][4] direkte fra **Prosjekter**-fanen:
 [9]: ../../company/learn/index.md#section-tabs
 [10]: ../../contact/learn/index.md#section-tabs
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/company/projects-detail.png

@@ -82,10 +82,10 @@ Slik gjenoppretter du en slettet kobling:
 1. Velg ønsket kobling.
 1. Klikk på **Gjenopprett**.
 
-<!-- Referenced links -->
+
 [2]: https://online.superoffice.com/appstore/app/search?phrase=sync
 [3]: https://online.superoffice.com/appstore/app/search?phrase=quote
 [4]: https://online.superoffice.com/appstore
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/sale/quote-erp-connection.png

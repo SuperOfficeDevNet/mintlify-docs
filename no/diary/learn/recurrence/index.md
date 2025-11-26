@@ -64,9 +64,9 @@ Velger du **Årlig**, kan du angi dag og måned som oppfølgingen skal gjentas h
 * [Redigere en gjentakende oppfølging][1]
 * [Stoppe en gjentakende oppfølging][3]
 
-<!-- Referenced links -->
+
 [1]: ../edit-follow-up.md#repeat
 [3]: stop.md
 [4]: create.md
 
-<!-- Referenced images -->
+

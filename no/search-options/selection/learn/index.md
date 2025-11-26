@@ -171,7 +171,7 @@ Et utvalg av alle salg du har gjennomført i første kvartal, eller alle salg me
 * [Utfør oppgaver ved å bruke utvalg][1]
 * [Vis utvalg som diagrammer][3]
 
-<!-- Referenced links -->
+
 [1]: howto/index.md
 [3]: howto/display-as-charts.md
 [6]: howto/export.md
@@ -186,5 +186,5 @@ Et utvalg av alle salg du har gjennomført i første kvartal, eller alle salg me
 [12]: ../../../learn/section-tabs/filter.md
 [16]: ../../../dashboard/learn/create.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../../media/loc/en/sale/selection-sales-column-calculation-grouping.png

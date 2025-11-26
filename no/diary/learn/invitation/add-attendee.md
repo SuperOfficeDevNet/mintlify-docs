@@ -112,13 +112,13 @@ Bruke innboksen i SuperOffice: Hvis du ikke har angitt nødvendig informasjon i 
 * [Opprett avtaler][3]
 * [Bli med i et videomøte][4]
 
-<!-- Referenced links -->
+
 [1]: index.md#status
 [3]: ../create-follow-up.md
 [4]: ../video-meetings.md
 [5]: accept-decline.md
 
-<!-- Referenced images -->
+
 [img13]: ../../../../media/loc/en/diary/preview-invitation.png
 [img14]: ../../../../media/loc/en/diary/invite.png
 [img15]: ../../../../media/loc/en/diary/large-follow-up-dialog.png

@@ -73,7 +73,7 @@ Hvis det er mange FAQ-oppføringer i en mappe, kan det være vanskelig å finne 
 * [Publisere FAQ-oppføringer][8]
 * [Jobbe med arbeidsflyt][9]
 
-<!-- Referenced links -->
+
 [2]: create.md
 [3]: edit.md
 [6]: ../manage-folders.md
@@ -81,4 +81,4 @@ Hvis det er mange FAQ-oppføringer i en mappe, kan det være vanskelig å finne 
 [8]: publish.md
 [9]: workflow.md
 
-<!-- Referenced images -->
+

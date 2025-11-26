@@ -88,7 +88,7 @@ For å redigere en sak direkte fra Saksfanen:
 * [Administrere kundesaker i SuperOffice CRM][3]
 * [Grupper kolonner og oppsummer beløp][5]
 
-<!-- Referenced links -->
+
 [1]: ../../request/learn/index.md
 [2]: ../../request/learn/create.md
 [3]: ../../request/learn/reply.md
@@ -96,5 +96,5 @@ For å redigere en sak direkte fra Saksfanen:
 [9]: ../../company/learn/index.md#section-tabs
 [10]: ../../contact/learn/index.md#section-tabs
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/company/requests-detail.png

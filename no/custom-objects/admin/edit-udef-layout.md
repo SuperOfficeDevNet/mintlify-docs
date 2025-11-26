@@ -97,6 +97,6 @@ Hvis du velger **(alle brukergrupper)** på listen **Brukergruppe**, velger felt
 > [!NOTE]
 > Du må publisere en overstyring for en enkelt brukergruppe *etter* at du har angitt oppsett for alle brukergrupper. Ellers vil den ikke tre i kraft.
 
-<!-- Referenced links -->
+
 [1]: ../../customization/screen-designer/admin/index.md
 [2]: add-udef.md

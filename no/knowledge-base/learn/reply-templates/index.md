@@ -58,7 +58,7 @@ I oversikten over svarmaler kan du klikke på **Søk**-knappen for å finne en b
 * [Organisere svarmaler i mapper][1]
 * [Legge til svarmaler i meldinger][11]
 
-<!-- Referenced links -->
+
 [3]: create.md
 [4]: new-language.md
 [6]: edit.md

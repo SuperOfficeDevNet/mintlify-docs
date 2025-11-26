@@ -53,7 +53,7 @@ For å fjerne en prosjektguide fra en [prosjekttype][4], gjør følgende:
 > [!NOTE]
 > Hvis du senere vil bruke prosjektguiden igjen, kan du merke av for dette alternativet på nytt. Eventuelle oppfølginger og dokumenter som tidligere var lagt til i prosjektguidens statuser, blir automatisk hentet inn igjen ved reaktivering. Du kan også legge til nye oppfølginger og dokumenter eller fjerne de som ikke lenger er relevante.
 
-<!-- Refererte lenker -->
+
 [1]: create-project-guide.md#add-doc-status
 [2]: create-project-guide.md#add-fo-status
 [3]: project-status.md

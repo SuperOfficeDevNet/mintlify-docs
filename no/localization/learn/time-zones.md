@@ -68,7 +68,7 @@ Ved å søke på antall timer for å finne riktig tidssone. Hvis du for eksempel
 * [Aktivere tidssoner][4]
 * [Velge tidssoner][5]
 
-<!-- Referenced links -->
+
 [1]: ../../diary/learn/index.md
 [3]: ../../diary/learn/follow-ups.md
 [4]: ../admin/enable-time-zones.md

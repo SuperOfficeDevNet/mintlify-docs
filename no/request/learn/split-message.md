@@ -50,7 +50,7 @@ Hvis en melding inneholder to spørsmål som må behandles separat, kan du dele 
 * [Dele en sak][2]
 * [Slå sammen saker][3]
 
-<!-- Referenced links -->
+
 [1]: index.md#open
 [2]: split-request.md
 [3]: merge.md

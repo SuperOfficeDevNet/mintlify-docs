@@ -55,8 +55,8 @@ Du kan flytte en oppfølging fra aktivitetslisten til dagboken. Dette kan være 
 
 Hvis du har registrert en oppfølging i dagboken, men likevel ikke er sikker på hvilket klokkeslett eller hvilken dato du vil gi den, kan du legge den i aktivitetslisten så lenge. Flytt oppfølgingen fra dagboken til aktivitetslisten ved å bruke dra og slipp-metoden.
 
-<!-- Referenced links -->
+
 [1]: change-completed-status.md
 [2]: ../../learn/section-tabs/activities-tab.md
 
-<!-- Referenced images -->
+

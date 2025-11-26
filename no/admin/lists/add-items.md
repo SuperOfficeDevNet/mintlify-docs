@@ -39,7 +39,7 @@ Forekomstene vises i den rekkefølgen de blir lagt inn. Hvis du vil endre rekkef
 
 Når du har lagt til forekomster, kan du angi detaljer for hver forekomst. Du kan angi [brukergruppene elementet skal vises for][2], og [overskriftene][3] det skal vises under.
 
-<!-- Referenced links -->
+
 [1]: specialized-lists.md
 [2]: user-group-filtering.md
 [3]: headings.md

@@ -161,13 +161,13 @@ Eksempelet dekker ikke alle felt og alternativer, men du finner omfattende instr
 > [!TIP]
 > Du kan også være interessert i vår veiledning for [kontakt-meg skjema][7].
 
-<!-- Referenced links -->
+
 [1]: create.md
 [2]: ../../mailing/learn/create/tutorial-form-mailing.md
 [6]: ../../recipients/learn/manage-email-subscriptions.md
 [7]: ../../../search-options/selection/learn/create.md
 
-<!-- Referenced images -->
+
 [img6]: ../../../../media/loc/en/marketing/sign-up-form-actions.png
 [img7]: ../../../../media/loc/en/marketing/sign-up-form-fields.png
 [img8]: ../../../../media/loc/en/marketing/sign-up-form-style.png

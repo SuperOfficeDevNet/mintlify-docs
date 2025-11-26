@@ -81,12 +81,12 @@ Du kan legge til prosjektdeltakere og interessenter fra personoversiktene i ulik
 
     Hvis en kommentar er lagt til, vises en binders (<i class="ph ph-paperclip" aria-hidden="true"></i>) ved siden av kolonnen **Informasjon om prosjektdeltaker** i detaljkortet **Prosjektdeltakere**. Hold musepekeren over bindersen for å se kommentartipset.
 
-<!-- Referenced links -->
+
 [1]: ../../../search-options/learn/find-screen.md
 [3]: ../../../contact/learn/create.md
 [5]: ../../../admin/lists/update-items.md
 
-<!-- Referenced images -->
+
 [img5]: ../../../../media/loc/en/project/add-project-member-from-history.png
 [img6]: ../../../../media/loc/en/project/add-project-member-from-group.png
 [img7]: ../../../../media/loc/en/project/add-project-member-from-company.png

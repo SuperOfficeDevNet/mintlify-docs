@@ -158,12 +158,12 @@ Planleggingsmøte:
 
 * [Redigere eller deaktivere en prosjektguide][5]
 
-<!-- Refererte lenker -->
+
 [1]: ../../document/templates/variables/from-project-card.md
 [2]: project-status.md
 [3]: project-type.md
 [4]: ../../document/templates/learn/index.md
 [5]: edit-project-guide.md
 
-<!-- Refererte bilder -->
+
 [img2]: ../../../media/loc/en/project/create-project-guide.png

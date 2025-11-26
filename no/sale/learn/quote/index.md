@@ -100,7 +100,7 @@ For å sikre konsistens, bruk en godt utformet mal for tilbudsdokumenter. Admini
 * [Legge til alternativer i et tilbud][7]
 * [Sett opp produktene og prisene dine i Innstillinger og vedlikehold][11]
 
-<!-- Refererte lenker -->
+
 [1]: create.md
 [2]: create.md#add-products
 [6]: create.md#copy

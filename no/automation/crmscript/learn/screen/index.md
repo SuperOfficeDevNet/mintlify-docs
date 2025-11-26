@@ -42,10 +42,10 @@ Når du klikker på et skript eller en makro i fanen **Makroer og skript**, åpn
 | <i class="ph ph-bug" aria-label="Bug"></i> | Feilsøke skript | Brukes til å åpne skjermbildet **Feilsøking** og kjøre det valgte skriptet eller makroen i feilsøkingsmodus. Skriptet stopper på første linje. Du kan åpne en [feilsøkingssesjon][2] fra fanen **Feilsøkingssesjoner**. |
 | | Spor skript | Brukes til å begynne å [spore skriptet eller makroen][3]. |
 
-<!-- Referenced links -->
+
 [1]: ../create-script.md
 [2]: ../debug.md
 [3]: ../tracing.md
 [4]: ../create-folder.md
 
-<!-- Referenced images -->
+

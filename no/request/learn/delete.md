@@ -38,7 +38,7 @@ Generelt anbefales det ikke å slette en sak. Det kan imidlertid være nødvendi
 * [Svare kunde][5]
 * [Redigere melding][6]
 
-<!-- Refererte lenker -->
+
 [1]: index.md
 [2]: create.md
 [3]: ../../learn/basics/deleting-elements.md

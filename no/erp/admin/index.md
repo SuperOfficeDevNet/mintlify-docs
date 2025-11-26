@@ -54,7 +54,7 @@ Dette bidrar til å redusere dobbeltregistrering og gir bedre datakvalitet på t
 * [Angi synkroniseringsprioritet][3]
 * [Importere fra ERP][9]
 
-<!-- Referenced links -->
+
 [1]: add-connection.md
 [3]: configure.md#priority
 [4]: configure.md

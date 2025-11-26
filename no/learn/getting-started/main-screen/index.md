@@ -77,7 +77,7 @@ Du kan endre rekkefølgen på fanene eller detaljkortene etter dine preferanser.
 
 For å endre skriftstørrelsen kan du bruke zoom-funksjonen i nettleseren (Ctrl + "+" eller Ctrl + "-") for å forstørre eller forminske teksten.
 
-<!-- Refererte lenker -->
+
 [1]: navigator.md
 [2]: buttons-in-menu-bar.md
 [3]: side-panel.md

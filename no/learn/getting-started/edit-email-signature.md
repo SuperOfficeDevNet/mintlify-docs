@@ -79,10 +79,10 @@ supershop.com
 
 * [Endre standard e-postklient i SuperOffice][1]
 
-<!-- Referenced links -->
+
 [1]: ../../email/learn/change-default-mail-client.md
 [2]: ../../knowledge-base/learn/reply-templates/template-variables.md
 [3]: ../../document/templates/variables/for-selected-contact.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/learn/getstarted-preferences-email-signature.png

@@ -33,6 +33,6 @@ SuperOffice kan importere SMS-meldinger. For at dette skal fungere må du konfig
 * [Innboks for SMS][2]
 * [Utboks for SMS][3]
 
-<!-- Referenced links -->
+
 [2]: index.md#sms-in
 [3]: index.md#sms-out

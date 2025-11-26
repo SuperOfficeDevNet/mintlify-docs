@@ -108,7 +108,7 @@ For å gjenopprette en slettet sak er det tilstrekkelig å ha den funksjonelle r
 * [Masseslette personer og firma fra utvalg][7]
 * [Finn og utvalg][8]
 
-<!-- Referenced links -->
+
 [1]: ../../company/learn/merge-companies.md
 [2]: ../../company/learn/delete.md
 [3]: ../../contact/learn/delete.md
@@ -120,6 +120,6 @@ For å gjenopprette en slettet sak er det tilstrekkelig å ha den funksjonelle r
 [8]: ../../search-options/selection/learn/index.md
 [9]: ../../request/learn/delete.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../media/loc/en/learn/recycle-bin.png
 [img3]: ../../../media/loc/en/learn/recycle-bin-personal-settings.png

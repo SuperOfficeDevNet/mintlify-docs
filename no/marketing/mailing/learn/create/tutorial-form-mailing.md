@@ -60,6 +60,6 @@ Det første trinnet når du skal lage et skjemasvar, kalles **Oppsett**. Her kan
 
 [!include[Trinn 3 e-post](includes/step-3-content-email.md)]
 
-<!-- Referenced links -->
+
 [1]: ../../admin/add-domain.md
 [2]: ../../../learn/create-folder.md

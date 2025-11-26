@@ -40,7 +40,7 @@ Integrasjonene du trenger avhenger av operativsystemet, e-postklienten og dokume
 
 ## Eksempler
 
-<!-- markdownlint-disable-file MD036 -->
+
 ### Kalender med innkommende invitasjoner
 
 ![Varsler med innkommende invitasjoner via Inbox SuperOffice -screenshot][img1]
@@ -59,7 +59,7 @@ Integrasjonene du trenger avhenger av operativsystemet, e-postklienten og dokume
 
 *Bruk applikasjonen SuperOffice for Outlook til å arkivere e-poster til SuperOffice*
 
-<!-- Referenced links -->
+
 [1]: default-win.md
 [2]: microsoft-365.md
 [3]: google-workspace.md
@@ -70,7 +70,7 @@ Integrasjonene du trenger avhenger av operativsystemet, e-postklienten og dokume
 [9]: ../../../../../integrations/gmail-link/index.md
 [10]: default-mac.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/learn/diary-notification.png
 [img2]: ../../../../media/loc/en/learn/inbox-invitation.png
 [img3]: ../../../../media/loc/en/learn/outlook-archive-mail-superoffice-for-outlook.png

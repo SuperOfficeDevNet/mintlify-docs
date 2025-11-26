@@ -52,8 +52,8 @@ Mange av elementene inneholder prøvedata når de settes inn, for å vise hvorda
 * **Elementer**: Elementene i bildet.
 * **Knapper**: Viser knappene som er koblet til handlinger i bildet.
 
-<!-- Referenced links -->
+
 [1]: screen-properties.md
 [5]: ../../../automation/crmscript/learn/create-macro.md
 
-<!-- Referenced images -->
+

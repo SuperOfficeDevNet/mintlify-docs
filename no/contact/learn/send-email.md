@@ -56,10 +56,10 @@ Du kan sende e-post til personer fra både Person-bildet og Firma-bildet. Proses
 * [Arkiver e-post i SuperOffice Inbox][2]
 * [SuperOffice for Outlook][3]
 
-<!-- Referenced links -->
+
 [1]: ../../document/learn/create.md#fields
 [2]: ../../email/inbox/learn/archive.md
 [3]: ../../../../integrations/superoffice-for-outlook/save-to-superoffice.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../media/loc/en/contact/send-email.png

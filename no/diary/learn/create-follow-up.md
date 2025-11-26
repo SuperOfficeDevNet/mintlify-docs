@@ -129,7 +129,7 @@ Du kan også lage en oppfølging ved å kopiere en eksistterende oppfølging til
 * [Aktiviteter][7]
 * [Opprette et videomøte fra SuperOffice-dagboken][2]
 
-<!-- Referenced links -->
+
 [1]: follow-ups.md
 [2]: video-meetings.md
 [3]: set-alarm.md
@@ -139,6 +139,6 @@ Du kan også lage en oppfølging ved å kopiere en eksistterende oppfølging til
 [8]: ../../learn/getting-started/preferences.md
 [9]: ../../localization/learn/time-zones.md
 
-<!-- Referenced images -->
+
 [img7]: ../../../media/loc/en/diary/follow-up-dialog.png
 [img8]: ../../../media/loc/en/diary/follow-up-attendees.png

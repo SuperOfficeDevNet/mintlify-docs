@@ -74,7 +74,7 @@ Nedenfor finner du en oversikt over feltene i personkortet. Enkelte felt fylles 
 > [!NOTE]
 > Felter og layout kan variere avhengig av [Skjermdesigner][9]-konfigurasjon eller andre tilpasninger.
 
-<!-- markdownlint-disable-file MD051 -->
+
 ### [Person-fanen](#tab/person)
 
 **Grunnleggende informasjon:**
@@ -186,7 +186,7 @@ Interesser er nyttige for å opprette målrettede utvalg, for eksempel markedsf�
 * [Skann et visittkort][1] med SuperOffice Mobile CRM-appen
 * [Legg til som favoritt][4]
 
-<!-- Referenced links -->
+
 [1]: ../../../en/mobile/superoffice-mobile/contact/scan-business-card.md
 [2]: ../../admin/import/index.md
 [4]: ../../learn/basics/fav.md
@@ -196,6 +196,6 @@ Interesser er nyttige for å opprette målrettede utvalg, for eksempel markedsf�
 [9]: ../../customization/screen-designer/admin/index.md
 [12]: ../../custom-objects/learn/more-tab.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/contact/new-contact.png
 [img2]: ../../../media/loc/en/contact/contact-details.png

@@ -34,7 +34,7 @@ SuperOffice-videomøtene lar deg planlegge og opprette videomøter direkte fra d
 
 Du kan enkelt konfigurere et videomøte når du oppretter en oppfølging. Se denne videoen for å lære hvordan du oppretter et videomøte, eller følg trinnene nedenfor:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/WuTqnDPx17Q]
 
 (videolengde - 1:09)
@@ -74,7 +74,7 @@ Du kan bli med på et videomøte i SuperOffice på flere måter:
 
 Se denne videoen eller følg trinnene nedenfor:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/uee_XO1kwTc]
 
 (videolengde - 1:11)
@@ -98,7 +98,7 @@ Klikk på avtalen i SuperOffice-dagboken for å se detaljene i sidepanelet. (Akt
 
 For å bli med i videomøtet via forhåndsvisningsskjermen, klikker du bare på **Bli med i møte**-knappen. Etter at du har klikket på den, starter videomøtet automatisk.
 
-<!-- Referenced links -->
+
 [1]: ../../../../integrations/video-meetings/howto/connect-provider.md
 [2]: invitation/add-attendee.md
 [3]: ../../../../integrations/video-meetings/index.md
@@ -108,5 +108,5 @@ For å bli med i videomøtet via forhåndsvisningsskjermen, klikker du bare på 
 [7]: ../../../../integrations/video-meetings/webex/index.md
 [8]: ../../../../integrations/video-meetings/jitsi/index.md
 
-<!-- Referenced images -->
+
 [img5]: ../../../media/loc/en/diary/follow-up-video-meeting.png

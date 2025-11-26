@@ -44,11 +44,11 @@ Som saksbehandler kan du ikke alltid besvare en sak alene. Noen ganger trenger d
 
 * [Videresend en sak til eksterne parter][4]
 
-<!-- Referenced links -->
+
 [1]: index.md#open
 [2]: ../../learn/basics/fav.md
 [3]: ../admin/category/index.md
 [4]: forward.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/request/reassign-a-request.png

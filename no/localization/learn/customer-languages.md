@@ -58,7 +58,7 @@ Når en ny person sender inn en sak, prøver SuperOffice å finne ut hvilket kun
 
 Ved installasjon blir det lagt inn 6 kundespråkmapper (DE, DK, EN, NL, NO og SE) i mappen **\\templates** på serveren. Du må konfigurere disse kundespråkene selv.
 
-<!-- Referenced links -->
+
 [1]: ../admin/add-customer-language.md
 
-<!-- Referenced images -->
+

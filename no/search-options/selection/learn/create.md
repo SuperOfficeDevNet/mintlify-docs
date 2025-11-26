@@ -89,7 +89,7 @@ Når du klikker på denne knappen, opprettes en kopi av utvalget med teksten (ko
 * [Oppdater et utvalg][6]
 * [Utfør oppgaver ved å bruke utvalg][5]
 
-<!-- Referenced links -->
+
 [3]: combine.md
 [7]: ../../../learn/basics/fav.md
 [8]: ../../../learn/basics/duplicates.md
@@ -98,4 +98,4 @@ Når du klikker på denne knappen, opprettes en kopi av utvalget med teksten (ko
 [9]: ../../learn/search-criteria.md
 [14]: ../../../saint/learn/index.md
 
-<!-- Referenced images -->
+

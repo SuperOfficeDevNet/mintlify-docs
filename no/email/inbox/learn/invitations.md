@@ -42,6 +42,6 @@ Oppfølgingen legges til i dagboken din, og meldingen fjernes fra innboksen.
 * [Arkivere e-postmeldinger][1]
 * [Om invitasjoner][2]
 
-<!-- Refererte lenker -->
+
 [1]: archive.md#attachment
 [2]: ../../../diary/learn/invitation/index.md

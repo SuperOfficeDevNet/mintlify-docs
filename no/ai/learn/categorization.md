@@ -34,10 +34,10 @@ Denne funksjonen bruker maskinlæring, som betyr at [systemet må trenes][1] fø
 * [Sakshåndtering][2]
 * [Sakskategorier][3]
 
-<!-- Referenced links -->
+
 [1]: ../admin/set-up-categorization.md
 [2]: ../../request/learn/index.md
 [3]: ../../request/admin/category/index.md
 
-<!-- Referenced image -->
+
 [img1]: ../../../media/loc/en/ai/suggested-category-demo.png

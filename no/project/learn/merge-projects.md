@@ -50,10 +50,10 @@ Hvis du har to nesten identiske prosjekter, kan du slå dem sammen, inkludert pr
 * [Redigere prosjekter][3]
 * [Slå sammen firmaer][2]
 
-<!-- Refererte lenker -->
+
 [1]: ../../search-options/learn/find-screen.md
 [2]: ../../company/learn/merge-companies.md
 [3]: edit.md
 
-<!-- Refererte bilder -->
+
 [img2]: ../../../media/loc/en/project/merge-projects.png

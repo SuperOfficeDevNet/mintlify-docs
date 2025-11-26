@@ -30,11 +30,11 @@ En lead beveger seg vanligvis gjennom flere stadier før den blir en salgs­muli
 
 ```mermaid
 flowchart LR
-    A[Første interesse<br>Lead] --> B[MQL<br>Marketingkvalifisert lead]
-    B --> C[SQL / Kvalifisert<br>Salgsklar lead]
-    C --> D[Salgsmulighet<br>Aktiv salgsprosess]
-    C --> E[Diskvalifisert<br>Passer ikke]
-    B --> F[Varmes opp igjen<br>Følg opp senere]
+    A[Første interesse<br/>Lead] --> B[MQL<br/>Marketingkvalifisert lead]
+    B --> C[SQL / Kvalifisert<br/>Salgsklar lead]
+    C --> D[Salgsmulighet<br/>Aktiv salgsprosess]
+    C --> E[Diskvalifisert<br/>Passer ikke]
+    B --> F[Varmes opp igjen<br/>Følg opp senere]
     D --> G[Salg]
 ```
 
@@ -112,13 +112,13 @@ Leadinformasjon vises flere steder i SuperOffice CRM, slik at det er enkelt å s
 * [Konfigurer firmakategorier][1]
 * [Administrer leadstatuser][2]
 
-<!-- Referenced links -->
+
 [1]: ../admin/add-company-category.md
 [2]: ../admin/add-lead-status.md
 [3]: ../admin/index.md
 [4]: work-with-leads.md
 [5]: ../../marketing/utm/learn/index.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/lead/company-lead-with-contacts-section-tab.png
 [img2]: ../../../media/loc/en/lead/contact-card-open-lead.png

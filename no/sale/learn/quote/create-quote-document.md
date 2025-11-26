@@ -100,7 +100,7 @@ Maler for tilbudsdokumenter, tilbudsdetaljer og ordrebekreftelser fungerer litt 
 * [Maler for tilbudsdokumenter][6]
 * [Malvariabler og flettefelt][3]
 
-<!-- Referenced links -->
+
 [1]: send.md#versions
 [2]: ../../../document/learn/edit.md
 [3]: ../../../document/templates/merge-fields/quote.md

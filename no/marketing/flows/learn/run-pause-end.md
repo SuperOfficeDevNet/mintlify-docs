@@ -95,8 +95,8 @@ Du kan ikke slette en kjørende flyt. Først må du sette flyten på pause. Dere
 
 * [Oppdater flyt][1]
 
-<!-- Referenced links -->
+
 [1]: update.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/flow-status.png

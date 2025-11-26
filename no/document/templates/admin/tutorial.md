@@ -148,13 +148,13 @@ Etter å ha definert grupperingsområdet, vil produktene også bli sortert innen
 * [Lag et maldokument][2]
 * [Malvariabelreferanse][3]
 
-<!-- Referenced links -->
+
 [1]: link-template.md
 [2]: ../learn/create.md
 [3]: ../variables/index.md
 [4]: ../../../sale/admin/quote/configure-product-fields.md
 [5]: ../../../sale/learn/create.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/document/tutorial-insert-fields.png
 [img2]: ../../../../media/loc/en/document/tutorial-grouped.png

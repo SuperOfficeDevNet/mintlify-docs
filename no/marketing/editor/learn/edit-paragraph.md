@@ -75,7 +75,7 @@ Klikk på **Neste** hvis du er ferdig med å redigere.
 * [Sette inn påmeldingskoblinger][7]
 * [Legge til en kobling for å vise meldingen i en nettleser][3]
 
-<!-- Referenced links -->
+
 [2]: add-merge-tag.md
 [3]: add-link-to-display-message-in-browser.md
 [4]: insert-images-in-message.md
@@ -83,5 +83,5 @@ Klikk på **Neste** hvis du er ferdig med å redigere.
 [7]: add-unsubscribe-link.md
 [8]: add-tracked-link-to-msg.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/edit-section.png

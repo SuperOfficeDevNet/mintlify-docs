@@ -76,7 +76,7 @@ I **Skjemainnlevering**-vinduet:
 Se denne demoen for å se hvordan du behandler et innsendt webskjema manuelt.
 (Denne videoen viser en tidligere versjon av SuperOffice, så designet kan se annerledes ut. Trinnene er de samme.)
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/XtdkUwIXkww]
 
 (videolengde - 4:30)
@@ -86,9 +86,9 @@ Se denne demoen for å se hvordan du behandler et innsendt webskjema manuelt.
 * [Spore skjemainnsendinger og vise statistikk][1]
 * [Vise statistikk for utsendelse][4]
 
-<!-- Referenced links -->
+
 [1]: view-statistics.md
 [2]: define-form-actions.md
 [4]: ../../mailing/learn/view-statistics.md
 
-<!-- Referenced images -->
+

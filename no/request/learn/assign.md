@@ -86,7 +86,7 @@ En saksbehandler med administrasjonsrettigheter for kategorier kan angi fordelin
 
 ## Eksempel
 
-<!-- markdownlint-disable-next-line MD034 -->
+
 La oss si at firmaet ditt har opprettet én kategori for hver avdeling i firmaet: Brukerstøtte, Salg, Kontoer osv. Videre har du bestemt at alle e-postmeldinger som sendes til support@company.com, automatisk skal havne i kategorien Brukerstøtte. Alle de ansatte ved brukerstøtteavdelingen er medlemmer av denne kategorien. For denne kategorien har de valgt metoden **Jevn fordeling**. Dette innebærer at alle medlemmene av kategorien får like mange saker, og at hvert av medlemmene fortløpende får nye saker inn i bildet **Egne aktive saker**. Hvis de i stedet hadde valgt metoden **Ikke fordel**, måtte medlemmene selv ha gått inn i bildet **Ufordelte saker** for å [ta eierskap til nye saker][4].
 
 ## Hva vil du gjøre nå?
@@ -97,7 +97,7 @@ La oss si at firmaet ditt har opprettet én kategori for hver avdeling i firmaet
 * [Be en annen saksbehandler om hjelp (overføring)][5]
 * [Hvordan sette opp 'Hent neste sak i køen'][6]
 
-<!-- Referenced links -->
+
 [1]: index.md
 [2]: create.md
 [4]: accept.md
@@ -105,7 +105,7 @@ La oss si at firmaet ditt har opprettet én kategori for hver avdeling i firmaet
 [6]: ../admin/next-in-queue.md
 [3]: ../admin/category/create.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/request/assign-requests.png
 [img2]: ../../../media/loc/en/request/assign-requests-even.png
 [img3]: ../../../media/loc/en/request/assign-requests-weighted-diagram.png

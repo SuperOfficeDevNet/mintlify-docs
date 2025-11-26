@@ -102,13 +102,13 @@ For å gjenopprette et rutenett:
 * Hvis du arbeider med et utkast, kan du ganske enkelt forkaste utkastet for å angre alle endringene dine.
 * Hvis du har publisert layouten etter fjerning, må du gjenskape rutenettet.
 
-<!-- Referenced links -->
+
 [1]: edit-layout.md
 [2]: working-with-fields.md
 [3]: working-with-tabs.md#label
 [4]: add-button.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/customization/new-grid.png
 [img2]: ../../../../media/loc/en/customization/grid-settings.png
 [img3]: ../../../../media/loc/en/customization/hover-grid.png

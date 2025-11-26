@@ -43,7 +43,7 @@ Hvis du vil endre dokumentegenskaper, for eksempel prosjektet som dokumentet er 
 
 Følg instruksjonene nedenfor, avhengig av hvordan dokumenter håndteres i SuperOffice-installasjonen.
 
-<!-- markdownlint-disable-file MD051 -->
+
 ### [Med SuperOffice WebTools](#tab/webtools)
 
 1. Dobbeltklikk på det nødvendige dokumentet.
@@ -140,13 +140,13 @@ Hvis du dobbeltklikker på et dokument og ingenting skjer, kan du prøve å høy
 
 * [Slik endrer du Fullført-statusen for en aktivitet][4]
 
-<!-- Referenced links -->
+
 [1]: lock.md
 [2]: create.md
 [3]: create.md#fields
 [4]: ../../diary/learn/change-completed-status.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../media/loc/en/webtools/webtools-edge-security-question.png
 [img3]: ../../../media/loc/en/webtools/webtools-firefox-security-question.png
 [img4]: ../../../media/loc/en/webtools/webtools-safari-security-question.png

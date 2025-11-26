@@ -149,7 +149,7 @@ Agenda for første møte:
 **Mal**: E-post
 **Standardoverskrift**: Møtebekreftelse (første møte)
 
-<!-- Refererte lenker -->
+
 [1]: ../../document/templates/variables/for-sales.md
 [2]: sale-stage.md
 [3]: sale-type.md

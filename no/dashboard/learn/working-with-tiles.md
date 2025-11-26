@@ -226,7 +226,7 @@ Klikk på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> i ove
 * [Legge til et nytt dashbord][1]
 * [Bruke dashbord til å administrere salgspipelinen din][2]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [2]: show-sales-targets.md
 [3]: index.md#charts
@@ -235,7 +235,7 @@ Klikk på <i class="ph ph-dots-three-vertical" aria-label="Task menu"></i> i ove
 [6]: ../../search-options/selection/learn/howto/display-as-charts.md
 [7]: ../../localization/learn/translate-fields.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/dashboard/edit-dashboard-tiles-sidebar.png
 [img2]: ../../../media/loc/en/dashboard/edit-tile-dataset.png
 [img3]: ../../../media/loc/en/dashboard/edit-tile-layout.png

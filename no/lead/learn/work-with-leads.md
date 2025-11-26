@@ -116,7 +116,7 @@ Dynamiske utvalg av firmaer eller personer kan også åpnes i [Tavlevisning][6] 
 * [Bruk dashbord for å følge opp leads][4]
 * [Masseoppdater personinformasjon][9]
 
-<!-- Referenced links -->
+
 [1]: index.md
 [4]: ../../dashboard/learn/show-leads.md
 [5]: ../../marketing/utm/learn/index.md
@@ -125,7 +125,7 @@ Dynamiske utvalg av firmaer eller personer kan også åpnes i [Tavlevisning][6] 
 [8]: ../../learn/section-tabs/filter.md
 [9]: ../../learn/basics/bulk-update.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/lead/contact-card-open-lead.png
 [img2]: ../../../media/loc/en/lead/contact-section-tab-with-lead-info.png
 [img3]: ../../../media/loc/en/lead/find-leads.png

@@ -74,10 +74,10 @@ Hver gang en person registreres i SuperOffice CRM-databasen din, registreres ogs
 
 * [Lær mer om GDPR, personvern- og samtykkehåndtering i SuperOffice][1]
 
-<!-- Referenced links -->
+
 [1]: ../../../../en/security/privacy/index.md
 [2]: ../../../learn/basics/bulk-update.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/security/legal-basisi.png
 [img2]: ../../../../media/loc/en/security/legal-bases-registered-consent.png

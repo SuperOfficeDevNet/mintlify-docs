@@ -64,7 +64,7 @@ I fanen **Sporing** finner du en oversikt over alle sporinger. Klikk på en spor
 | E-post varsling | Hvor man skal sende varsler. |
 | Kun lagre hvis det er et ubehandlet unntak | Begrenser spor til unntak. |
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+
 [img4]: ../../../../media/loc/en/automation/trace.png

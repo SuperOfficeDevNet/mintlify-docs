@@ -144,7 +144,7 @@ Tilgang til flyter og flytinnhold kontrolleres av en brukers rolle og [funksjone
 * [Hvordan kjøre, pause og avslutte en flyt][2]
 * [Se statistikk][3]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [2]: run-pause-end.md
 [3]: view-statistics.md
@@ -156,6 +156,6 @@ Tilgang til flyter og flytinnhold kontrolleres av en brukers rolle og [funksjone
 [11]: ../../../admin/user-management/role/functional-rights.md
 [12]: ../../../learn/section-tabs/index.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/flows-panel.png
 [img2]: ../../../../media/loc/en/marketing/flow-editor-with-step-menu.png

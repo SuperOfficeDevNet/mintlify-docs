@@ -124,14 +124,14 @@ Ved å tilpasse layout med Skjermdesigneren kan du eliminere unødvendig informa
 * [Arbeide med felt][4]
 * [Arbeide med arkiver (detaljkort)][3]
 
-<!-- Referenced links -->
+
 [1]: edit-layout.md
 [2]: add-layout.md
 [3]: working-with-archives.md
 [4]: working-with-fields.md
 [9]: ../../../../en/ui/web-app/pagebuilder/index.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../../media/loc/en/customization/status-draft.png
 [img4]: ../../../../media/loc/en/customization/status-published.png
 [img5]: ../../../../media/loc/en/customization/edit-card-layout-fields.png

@@ -79,7 +79,7 @@ redirect_from: /no/admin/preferences/learn/update-preferences
 
 1. Velg én eller flere innstillinger du vil slette, og klikk deretter på **Slett** nederst i vinduet. Alle merkede innstillinger forsvinner fra listen.
 
-<!-- Referenced links -->
+
 [2]: index.md#levels
 
-<!-- Referenced images -->
+

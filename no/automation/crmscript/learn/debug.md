@@ -41,5 +41,5 @@ Du kan feilsøke et skript eller en makro ved å åpne det/den i fanen **Makroer
 
 Du kan også klikke på **Spor skript** for å begynne å [spore et skript][2].
 
-<!-- Referenced links -->
+
 [2]: tracing.md

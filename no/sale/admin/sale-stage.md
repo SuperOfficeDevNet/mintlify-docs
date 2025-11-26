@@ -72,7 +72,7 @@ Fremgangsmåten ligner på [gjenoppretting av en slettet salgstype][2].
 * [Redigere en salgsguide][4]
 * [Følge opp salgsprosessen][5]
 
-<!-- Refererte lenker -->
+
 [1]: sale-type.md
 [2]: sale-type.md#restore
 [3]: create-sales-guide.md

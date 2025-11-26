@@ -58,7 +58,7 @@ Nederst i **Person**-bildet gir [detaljkort][16] rask tilgang til informasjon so
 * [Slette personer][6]
 * [Sende e-post til en person][7]
 
-<!-- Referenced links -->
+
 [2]: create.md
 [3]: ../../security/privacy/learn/edit-legal-base.md
 [4]: move.md
@@ -78,5 +78,5 @@ Nederst i **Person**-bildet gir [detaljkort][16] rask tilgang til informasjon so
 [21]: ../../customization/web-panels/admin/index.md#www
 [22]: ../../erp/learn/index.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../media/loc/en/contact/contact-screen.png

@@ -49,7 +49,7 @@ Du kan lage en oppfølging som for eksempel vises på aktivitetslisten til alle 
 
 ![Utvalgsoppgave: Lag oppfølginger -screenshot][img1]
 
-<!-- Refererte lenker -->
 
-<!-- Refererte bilder -->
+
+
 [img1]: ../../../../../media/loc/en/search-options/generate-follow-ups-from-selection.png

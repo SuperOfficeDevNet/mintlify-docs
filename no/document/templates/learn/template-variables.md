@@ -111,7 +111,7 @@ Når du genererer e-postmaler for forespørsler og utsendelser (og meldingsmaler
 
 Referansen er gruppert etter område. [Gå til referanse][1]
 
-<!-- Referenced links -->
+
 [1]: ../variables/index.md
 
-<!-- Referenced images -->
+

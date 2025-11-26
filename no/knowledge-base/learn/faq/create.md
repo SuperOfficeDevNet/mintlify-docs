@@ -112,7 +112,7 @@ Fordi alternativet for å opprette FAQ-oppføringer på denne måten bare er til
 * [Legge til FAQ i en melding][5]
 * [Konfigurere flere språk][6]
 
-<!-- Referenced links -->
+
 [1]: ../../../request/learn/index.md#open
 [2]: ../manage-folders.md
 [3]: publish.md
@@ -120,6 +120,6 @@ Fordi alternativet for å opprette FAQ-oppføringer på denne måten bare er til
 [5]: ../../../request/learn/reply.md#faq
 [6]: ../../../localization/learn/customer-languages.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../../media/loc/en/faq/create-publish-faq.png
 [img5]: ../../../../media/loc/en/faq/faq-create.png

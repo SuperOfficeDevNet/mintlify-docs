@@ -19,5 +19,5 @@ language: no
 3. Høyreklikk og velg **Be om møte**.
 4. [Fyll ut de andre feltene med ønsket informasjon][1].
 
-<!-- Referenced links -->
+
 [1]: ../../../diary/learn/create-follow-up.md#fields

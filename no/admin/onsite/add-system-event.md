@@ -72,7 +72,7 @@ Du kan starte følgende hendelsestyper fra Lisenser-bildet på **Status**-fanen:
 * **No Travel**: Velg denne operasjonen for å deaktivere Travel. Dette kan være nyttig rett før store systemoppgraderinger, for å unngå synkroniseringsproblemer for returnerende Travel-brukere.
 * **Dagens melding**: Velg denne hendelsen for å opprette viktige meldinger som vises til alle som logger på SuperOffice CRM (og etter noen minutter vises meldingen også til alle som allerede er pålogget).
 
-<!-- Referenced links -->
+
 [2]: ../../../en/admin/license/index.md
 
-<!-- Referenced images -->
+

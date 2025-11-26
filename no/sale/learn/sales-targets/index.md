@@ -71,9 +71,9 @@ Bare brukere med funksjonell rettighet **Kan låse og låse opp mål** kan låse
 * [Dashbord][1]
 * [Bruke salgsmål i figurer][2]
 
-<!-- Referenced links -->
+
 [1]: ../../../dashboard/learn/index.md
 [2]: ../../../dashboard/learn/show-sales-targets.md
 
-<!-- Referenced images -->
+
 [img6]: ../../../../media/loc/en/sale/targets-dialog.png

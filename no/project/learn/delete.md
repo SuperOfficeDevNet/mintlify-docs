@@ -30,5 +30,5 @@ language: no
 
 * [Slå sammen prosjekter][1]
 
-<!-- Refererte lenker -->
+
 [1]: merge-projects.md

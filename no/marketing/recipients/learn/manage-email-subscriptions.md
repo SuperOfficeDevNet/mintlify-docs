@@ -72,14 +72,14 @@ Med SuperOffice CRM respekterer du personenes kommunikasjonspreferanser og sikre
 * [GDPR og personvern][2]
 * [Personvernerklæring for SuperOffice][4]
 
-<!-- Referenced links -->
+
 [1]: index.md
 [2]: ../../../security/privacy/learn/index.md
 [3]: ../../../security/privacy/learn/send-privacy-confirmation-email.md
 [4]: https://www.superoffice.com/company/privacy/
 [5]: ../../tracked-links/learn/define-link-actions.md#interests
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/setup-type-drop-down.png
 [img2]: ../../../../media/loc/en/marketing/recipients-content-status.png
 [img3]: ../../../../media/loc/en/marketing/e-marketing-privacy-feature.png

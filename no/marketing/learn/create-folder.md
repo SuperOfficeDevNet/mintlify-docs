@@ -38,4 +38,4 @@ Gjør ett av følgende:
 
 * Klikk først på **Legg til mappe** og velg deretter en overordnet mappe fra **Opprett som undermappe i**-listen.
 
-<!-- Referenced images -->
+

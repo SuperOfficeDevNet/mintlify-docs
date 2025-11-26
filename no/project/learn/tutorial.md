@@ -106,7 +106,7 @@ Du oppretter et nytt prosjekt og velger prosjekttypen **Konferanse**, som har en
 
 Når alle nødvendige oppfølginger og dokumenter for prosjektet er ferdige, kan du sette prosjektstatus til **Fullført**.
 
-<!-- Referenced links -->
+
 [1]: ../../diary/learn/invitation/add-attendee.md
 [2]: project-guides.md#change-status
 [3]: ../../document/learn/edit.md

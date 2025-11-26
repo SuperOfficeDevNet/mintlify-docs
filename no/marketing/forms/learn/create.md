@@ -181,12 +181,12 @@ Her kan du [definere hva som skjer når noen sender inn et skjemasvar][3].
 
 * [Publisere skjemaer][2]
 
-<!-- Referenced links -->
+
 [1]: ../../tracked-links/learn/ga-tutorial.md
 [2]: publish.md
 [3]: define-form-actions.md
 [4]: field-options.md
 [8]: ../../learn/create-folder.md
 
-<!-- Referenced images -->
+
 [img15]: ../../../../media/loc/en/marketing/contact-me-form-properties.png

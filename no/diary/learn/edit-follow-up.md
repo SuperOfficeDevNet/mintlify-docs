@@ -81,11 +81,11 @@ Hvis du endrer starttidspunktet for ett møte, påvirkes ikke regelen. Møtet be
 * [Stoppe repeterende oppfølginger][5]
 * [Legg til kobling til dokument, salg, prosjekt eller nettsted][6]
 
-<!-- Refererte lenker -->
+
 [2]: change-completed-status.md
 [3]: create-follow-up.md#fields
 [5]: recurrence/stop.md
 [6]: ../../learn/basics/links.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/diary/change-repeating-fo.png

@@ -134,13 +134,13 @@ Noen innstillinger avhenger av valgt handling.
 
 [Lær mer om SoProtocol][3]
 
-<!-- Referenced links -->
+
 [1]: ../../../document/templates/variables/from-company-card.md
 [2]: ../../../../en/automation/crmscript/overview/index.md
 [3]: ../../../../en/customization/soprotocol/index.md
 [4]: edit-layout.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/customization/new-button.png
 [img2]: ../../../../media/loc/en/customization/translate-button-label.png
 [img3]: ../../../../media/loc/en/customization/button-script.png

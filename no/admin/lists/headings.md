@@ -105,6 +105,6 @@ Du sletter overskrifter ved å merke ønsket overskrift og klikke på **Slett**.
 > [!NOTE]
 > Å slette en overskrift fjerner **ikke** forekomstene som er tilknyttet. Du kan [gjenopprette slettede overskrifter][2].
 
-<!-- Refererte lenker -->
+
 [2]: restore.md
 [3]: ../preferences/index.md

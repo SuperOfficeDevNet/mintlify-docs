@@ -39,7 +39,7 @@ Før du tilpasser en layout, bør du fastsette hvem de tiltenkte brukerne er.
 
 Se denne videoen og finn ut hvordan du bruker skjermdesigneren til å konfigurere skjermbildene i SuperOffice CRM, eller følg trinn-for-trinn-guiden nedenfor (videolengde - 6:41):
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/EcL4TEXXvmU]
 
 ## <a id="edit"></a>Rediger kortlayout
@@ -92,7 +92,7 @@ For å slette en layout:
 
 * [Arbeide med detaljkort (arkiv)][7]
 
-<!-- Referenced links -->
+
 [1]: working-with-fields.md
 [2]: add-button.md
 [3]: working-with-tabs.md
@@ -101,5 +101,5 @@ For å slette en layout:
 [6]: add-layout.md
 [7]: working-with-archives.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../../media/loc/en/customization/edit-the-screen-layout-of-companies-and-contacts.png

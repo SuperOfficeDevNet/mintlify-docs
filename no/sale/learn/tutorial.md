@@ -115,7 +115,7 @@ Når alle nødvendige oppfølginger og dokumenter for salget er utført, kan du 
 
 * [Sett opp en salgsguide i Innstillinger og vedlikehold][4]
 
-<!-- Refererte lenker -->
+
 [1]: ../../diary/learn/invitation/add-attendee.md
 [3]: ../../document/learn/edit.md
 [4]: ../admin/create-sales-guide.md

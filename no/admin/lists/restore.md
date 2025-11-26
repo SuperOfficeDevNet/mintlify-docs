@@ -41,6 +41,6 @@ Hvis du har slettet en forekomst eller overskrift og ikke vil at den skal være 
 
     Hvis du lagrer endringene, vil forekomsten eller overskriften også vises i den aktuelle listen i SuperOffice CRM igjen.
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+

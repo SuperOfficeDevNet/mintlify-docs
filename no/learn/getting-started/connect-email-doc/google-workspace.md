@@ -47,7 +47,7 @@ Velg et av følgende alternativer:
 
 * [!include[Synchronizer](includes/why-synchronizer.md)]
 
-<!-- Referenced links -->
+
 [1]: ../../../email/inbox/learn/setup.md
 [2]: ../../../../../integrations/gmail-link/index.md
 [3]: ../../../../../integrations/g-suite/index.md

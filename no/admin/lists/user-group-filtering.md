@@ -62,6 +62,6 @@ Du kan også angi tilgjengelige forekomster for en brukergruppe:
 
 * [Overskrifter][1]
 
-<!-- Referenced links -->
+
 [1]: headings.md
 [2]: ../user-management/index.md

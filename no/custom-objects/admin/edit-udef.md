@@ -49,8 +49,8 @@ Ikke alle konverteringer er mulige fordi forskjellige typer brukerdefinerte felt
 
 Felttypene i venstre kolonne er kompatible med og kan konverteres til typene som er merket med en x. For eksempel kan et nummer konverteres til en desimal og en kort tekst. (Og det er åpenbart kompatibelt med seg selv.)
 
-<!-- Referenced links -->
+
 [1]: add-udef.md#properties
 [2]: edit-udef-layout.md#page-1
 
-<!-- Referenced images -->
+

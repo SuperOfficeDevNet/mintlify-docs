@@ -50,7 +50,7 @@ Hvis du ikke har en Development Tools-lisens, bruk rangeringen av de forskjellig
 * [Ekstrafelt][2]
 * [Ekstratabeller][3]
 
-<!-- Referenced links -->
+
 [1]: udef.md
 [2]: extra-field.md
 [3]: extra-table.md
@@ -58,4 +58,4 @@ Hvis du ikke har en Development Tools-lisens, bruk rangeringen av de forskjellig
 [6]: ../../../en/ui/blogic/custom-screens/index.md
 [12]: more-tab.md
 
-<!-- Referenced images -->
+

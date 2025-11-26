@@ -61,8 +61,8 @@ Over hver liste er det en kobling til utvalget med de nye/endrede aktørene.
 > [!TIP]
 > Hvis du vil slette importerte aktører fra SuperOffice, bruker du utvalget.
 
-<!-- Referenced links -->
+
 [1]: ../../search-options/learn/search-criteria.md
 [2]: ../../erp/admin/add-connection.md
 
-<!-- Referenced images -->
+

@@ -44,7 +44,7 @@ Saks-ID-ene som er overskrevet, er ikke lenger tilgjengelige i favoritt- og hist
 * [Videresende meldinger til eksterne parter][5]
 * [Redigere melding][2]
 
-<!-- Referenced links -->
+
 [1]: index.md#open
 [2]: edit-message.md
 [3]: reply.md

@@ -47,10 +47,10 @@ Bruk dette alternativet når en person bytter avdeling eller firma, eller hvis d
 * [Slett person][2]
 * [Gjenopprett slettede firmaer og personer][3]
 
-<!-- Referenced links -->
+
 [1]: merge-contacts.md
 [2]: delete.md
 [3]: ../../learn/basics/deleting-elements.md#restore
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/contact/move-contact.png

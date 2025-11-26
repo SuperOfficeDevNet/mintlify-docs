@@ -128,8 +128,8 @@ Bruk dette alternativet for å angi en person som tidligere ansatt.
 2. Velg **Handlinger** > **Sett som tidligere ansatt** .
 3. Klikk på **OK** for å bekrefte.
 
-<!-- Referenced links -->
+
 [1]: look-at-recipient-list.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../../media/loc/en/marketing/filter-recipients.png

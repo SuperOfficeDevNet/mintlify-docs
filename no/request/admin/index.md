@@ -37,7 +37,7 @@ I denne delen kan du konfigurere innstillingene for Service for å skreddersy sy
 * [Systemdesign][15]
 * [Profil][16] – endringer her vises ikke noe sted i SuperOffice CRM-modulen (kun i Service-modulen)
 
-<!-- Referenced links -->
+
 [4]: category/index.md
 [5]: priority/index.md
 [6]: status/index.md
@@ -55,4 +55,4 @@ I denne delen kan du konfigurere innstillingene for Service for å skreddersy sy
 [22]: ../../email/service/learn/index.md
 [23]: ../../chat/admin/index.md
 
-<!-- Referenced images -->
+

@@ -60,7 +60,6 @@ I tillegg til å angi navn på og gi en beskrivelse av listen må du [legge til 
 
     Listen slettes.
 
-<!-- Referenced links -->
+
 [1]: add-items.md
 
-<!-- Referenced images -->

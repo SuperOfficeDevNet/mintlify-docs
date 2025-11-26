@@ -38,7 +38,7 @@ language: no
 > [!NOTE]
 > Du kan også sende e-post til en interessent/prosjektdeltaker ved å klikke direkte på vedkommendes e-postadresse på detaljkortet **Interessenter** eller **Prosjektdeltakere**.
 
-<!-- Referenced links -->
+
 [1]: ../../../document/learn/create.md#fields
 
-<!-- Referenced images -->
+

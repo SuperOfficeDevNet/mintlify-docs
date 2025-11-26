@@ -83,9 +83,9 @@ Du kan i utgangspunktet legge til seks forskjellige språk. Hvis språket du vil
 
 * [Slik velger SuperOffice kundespråket for nye personer][2]
 
-<!-- Referenced links -->
+
 [1]: ../../request/admin/category/external-categories.md
 [2]: ../learn/customer-languages.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/admin/customer-centre-language.png

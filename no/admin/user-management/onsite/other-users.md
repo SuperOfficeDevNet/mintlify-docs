@@ -88,6 +88,6 @@ Hvis en anonym bruker eller en systembruker ikke lenger skal ha mulighet til å 
 1. Merk brukeren du vil slette.
 1. Klikk på **Slett**-knappen. Brukeren fjernes fra listen.
 
-<!-- Referenced links -->
+
 [1]: ../../license/expander-services.md
 [2]: ../role/set-data-rights-for-role.md

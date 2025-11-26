@@ -39,7 +39,7 @@ For eksempel kan du opprette en ny status kalt "Venter på svar" som en mer deta
 * [Slette saksstatus][2]
 * [Sett opp Hent neste sak i køen][3]
 
-<!-- Refererte lenker -->
+
 [1]: create.md
 [2]: delete.md
 [3]: ../next-in-queue.md

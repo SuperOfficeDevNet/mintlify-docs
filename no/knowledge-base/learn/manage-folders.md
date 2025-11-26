@@ -73,7 +73,7 @@ Når du er klar til å slette selve mappen:
 * [Legge til eller redigere e-postadresser][5]
 * [Legge til eller redigere eksterne dokumenter][7]
 
-<!-- Refererte lenker -->
+
 [1]: reply-templates/create.md
 [2]: reply-templates/edit.md
 [3]: faq/create.md

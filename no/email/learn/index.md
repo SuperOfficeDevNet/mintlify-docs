@@ -71,7 +71,7 @@ Klikk på en e-post i [detaljkortet Aktiviteter][14] for å se detaljene i [side
 
 ![E-post forhåndsvisning med uthevede oppgavemenyalternativer -screenshot][img1]
 
-<!-- Referenced links -->
+
 [1]: ../inbox/learn/index.md
 [2]: ../../../../integrations/gmail-link/index.md
 [3]: ../../../../integrations/gmail-link/email-archive-incoming.md
@@ -87,5 +87,5 @@ Klikk på en e-post i [detaljkortet Aktiviteter][14] for å se detaljene i [side
 [14]: ../../learn/section-tabs/activities-tab.md
 [15]: ../../learn/getting-started/main-screen/side-panel.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/learn/side-panel-preview-email-tasks.png

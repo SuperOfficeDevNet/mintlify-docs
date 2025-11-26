@@ -100,11 +100,11 @@ Kategorigrupper gir en måte å klassifisere kategorier etter formål og forhind
 * [Administrer lead-statuser][3]
 * [Brukergruppefiltrering][4]
 
-<!-- Referenced links -->
+
 [1]: index.md
 [2]: ../learn/index.md
 [3]: add-lead-status.md
 [4]: ../../admin/lists/user-group-filtering.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/lead/add-company-category.png

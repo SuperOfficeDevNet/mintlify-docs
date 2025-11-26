@@ -75,7 +75,7 @@ SAINT-**verdier** er enkle binære verdier (på eller av) som bestemmer utseende
 * [Oppdater, slett og gjenopprett statusovervåkinger][7]
 * [Regenerer statusovervåkinger og tellere][8]
 
-<!-- Referenced links -->
+
 [1]: set-up.md
 [2]: set-up.md#image
 [5]: counter-settings.md
@@ -84,5 +84,5 @@ SAINT-**verdier** er enkle binære verdier (på eller av) som bestemmer utseende
 [13]: ../../../en/database/tables/countervalue.md
 [14]: ../../../en/database/tables/statusvalue.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/saint/status-monitors-company-tab.png

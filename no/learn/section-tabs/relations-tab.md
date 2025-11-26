@@ -54,10 +54,10 @@ For detaljerte trinn om hvordan du legger til eller sletter en relasjon, se [rel
 
 * [Legge til eller slette en relasjon][1]
 
-<!-- Referenced links -->
+
 [1]: ../basics/relations.md
 [9]: ../../company/learn/index.md#section-tabs
 [10]: ../../contact/learn/index.md#section-tabs
 
-<!-- Referenced images -->
+
 [img2]: ../../../media/loc/en/company/relations-detail.png

@@ -89,11 +89,11 @@ For å redusere rot, skjul felt som aldri brukes. Fjernede felt påvirker kun de
 > [!NOTE]
 > Obligatoriske felt kan ikke slettes. Du kan imidlertid flytte et obligatorisk felt til en annen fane.
 
-<!-- Referenced links -->
+
 [1]: edit-layout.md
 [2]: working-with-tabs.md
 [3]: working-with-tabs.md#label
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/customization/edit-card-layout-fields.png
 [img6]: ../../../../media/loc/en/customization/screendesigner-field-place.png

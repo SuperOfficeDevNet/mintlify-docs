@@ -74,13 +74,13 @@ Den kan for eksempel inneholde disse datakolonnene: I sortiment, produktkode, na
 * [Importere personer til SuperOffice CRM][4]
 * [Importere produkter til en prisliste][5]
 
-<!-- Referenced links -->
+
 [1]: ../../../assets/downloads/import-template-for-contacts.xlsx
 [2]: ../../../assets/downloads/import-template-products.xlsx
 [3]: settings.md
 [4]: from-excel.md
 [5]: products-from-excel.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../media/loc/en/admin/import-with-excel.jpg
 [img5]: ../../../media/loc/en/admin/preview-of-an-import-file.png

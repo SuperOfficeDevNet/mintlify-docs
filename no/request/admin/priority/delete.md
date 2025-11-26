@@ -37,6 +37,6 @@ Du kan ikke slette en prioritet, men du kan sette statusen til **Slettet**, slik
 * [Opprett prioritet][1]
 * [Opprett eskaleringsnivåer][2]
 
-<!-- Refererte lenker -->
+
 [1]: create.md
 [2]: escalation-levels.md

@@ -91,12 +91,12 @@ Hvis en prosjekttype har blitt slettet, kan du gjenopprette den fra listen **Pro
 * [Opprette en prosjektguide][2]
 * [Redigere en prosjektguide][3]
 
-<!-- Refererte lenker -->
+
 [1]: project-status.md
 [2]: create-project-guide.md
 [3]: edit-project-guide.md
 [4]: ../learn/project-guides.md
 [5]: ../learn/project-guides.md#change-status
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/project/edit-project-type.png

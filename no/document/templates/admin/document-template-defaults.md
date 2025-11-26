@@ -47,7 +47,7 @@ Hvis du vil, kan du angi [standardverdier][1] for nye dokumentmaler. Dette betyr
 
 1. Klikk på **Lagre**.
 
-<!-- Referenced links -->
+
 [1]: ../../../admin/options/configure-number-allocation.md
 
-<!-- Referenced images -->
+

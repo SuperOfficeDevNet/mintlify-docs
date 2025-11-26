@@ -59,5 +59,5 @@ Hvis du vil ha detaljer om de registrerte e-postadressene, går du til <i class=
 
 * [Administrere e-postadressemapper][3]
 
-<!-- Referenced links -->
+
 [3]: manage-folders.md

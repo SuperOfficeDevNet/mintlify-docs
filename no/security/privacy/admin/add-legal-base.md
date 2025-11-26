@@ -22,7 +22,7 @@ Listen **Personvern - Hjemmel** inneholder alternativer som brukere velger for �
 
 Se videoen for å finne ut hvordan du endrer personvern lister:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/h1q6QX62ASk]
 (videolengde – 3.57)
 
@@ -43,7 +43,7 @@ Se videoen for å finne ut hvordan du endrer personvern lister:
 
 * [Legge til forekomster i listen Personvern - Kilde][1]
 
-<!-- Referenced links -->
+
 [1]: add-source.md
 
-<!-- Referenced images -->
+

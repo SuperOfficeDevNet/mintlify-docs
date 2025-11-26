@@ -34,6 +34,6 @@ Personlige profiler gjelder bare én enkelt bruker. Du konfigurerer personlige p
 * [Felles profiler][3]
 * [Globale profiler][4]
 
-<!-- Referenced links -->
+
 [3]: common.md
 [4]: global.md

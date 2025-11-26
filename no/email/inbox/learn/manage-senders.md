@@ -50,10 +50,10 @@ Når avsenderen ikke gjenkjennes, vises en gul linje over forhåndsvisningen av 
 * [Arkivere e-postmeldinger][2]
 * [Om personer][3]
 
-<!-- Refererte lenker -->
+
 [2]: archive.md
 [3]: ../../../contact/learn/index.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../../media/loc/en/email/inbox-unknown-sender.png
 [img2]: ../../../../media/loc/en/email/inbox-add-contact.png

@@ -62,9 +62,9 @@ Hvis kundesenteret ditt er flerspråklig, kan du angi valg (for eksempel velkoms
 | Chatkanal | Velg chatkanalen du vil bruke. Hvis ingen chatkanal er valgt, vil ikke chatvinduet være tilgjengelig. |
 | Bruk egendefinert "kontakt oss"-skjema | Velg dette alternativet for å bruke et egendefinert skjema i stedet for standardskjemaet. Velg et skjema fra listen.|
 
-<!-- Referenced links -->
+
 [1]: edit.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../media/loc/en/customer-center/customer-centre-chat-with-agents.jpg
 [img3]: ../../../media/loc/en/customer-center/config-cust-centre.png

@@ -110,7 +110,7 @@ Dette alternativet legger til et ekstra sikkerhetslag i skjemaet. Hvis du aktive
 
 Dette betyr at adresselisten din vil være mer pålitelig, noe som vil bidra til å øke åpningsfrekvensen for utsendelsene dine. Som en ekstra bonus trenger du ikke å bruke tid på å rette stavefeil i e-postadresser eller slette e-postadresser som ikke eksisterer. Og det vil også hjelpe deg i din innsats for å holde deg GDPR-kompatibel.
 
-<!-- Referenced links -->
+
 [1]: tutorial-sign-up.md
 [2]: create.md
 [8]: define-form-actions.md
@@ -121,7 +121,7 @@ Dette betyr at adresselisten din vil være mer pålitelig, noe som vil bidra til
 [7]: form-templates.md
 [11]: ../../../learn/basics/fav.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/edit-form.png
 [img2]: ../../../../media/loc/en/marketing/find-forms.png
 [img4]: ../../../../media/loc/en/marketing/view-form-screen.png

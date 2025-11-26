@@ -46,7 +46,7 @@ Spar tid ved å la systemet kategorisere saker for deg. Hvis denne funksjonen er
 * [Tekstanalyse av saker][2]
 * [Kategorisering av saker][3]
 
-<!-- Referenced links -->
+
 [1]: ../../ai/learn/index.md
 [2]: ../../ai/learn/text-analysis.md
 [3]: ../../ai/learn/categorization.md

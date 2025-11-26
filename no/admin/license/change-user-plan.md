@@ -46,8 +46,8 @@ Brukerinnstillinger i SuperOffice CRM, der du endrer brukerplaner
 * [Oversikt over roller][2]
 * [Legge til ny bruker][1]
 
-<!-- Referenced links -->
+
 [1]: ../user-management/add-associate.md
 [2]: ../user-management/role/index.md
 
-<!-- Referenced images -->
+

@@ -63,7 +63,7 @@ Når du sletter en rolle, må du flytte brukerne som har rollen du sletter, til 
 
     * Rollen fjernes fra listen.
 
-<!-- Referenced links -->
+
 [1]: ../onsite/other-users.md#rights
 [3]: index.md
 [4]: set-data-rights-for-role.md

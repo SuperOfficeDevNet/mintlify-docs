@@ -46,6 +46,6 @@ Klikk på feltet **Tilordne til**, og velg en gruppe, type, eller mal. Dine alte
 * En brukergruppe kan kun tilordnes en layout per skjerm.
 * Hvis du sletter en layout, vil de som er tilordnet den, gå tilbake til standardlayouten.
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+

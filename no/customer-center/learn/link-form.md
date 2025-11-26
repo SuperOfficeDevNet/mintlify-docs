@@ -49,12 +49,12 @@ Når en kunde fyller ut dette skjemaet, blir informasjonen og detaljene automati
 * [Konfigurere kundesenter][2]
 * [Arbeide med skjemaer][1]
 
-<!-- Referenced links -->
+
 [1]: ../../marketing/forms/learn/index.md
 [3]: ../../marketing/forms/learn/create.md
 [2]: config.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/customer-center/form-element.png
 [img2]: ../../../media/loc/en/customer-center/custom-form.png
 [img3]: ../../../media/loc/en/customer-center/custcenter-choose-form.png

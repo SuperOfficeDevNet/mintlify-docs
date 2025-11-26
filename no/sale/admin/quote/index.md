@@ -131,7 +131,7 @@ Brukes til å [legge til Sync Connectors og konfigurere ERP-koblinger][4] for sy
 * [Tilpasse tilbudsbildet][3]
 * [Administrere ERP-synkronisering][4]
 
-<!-- Referenced links -->
+
 [1]: set-up-quote-connector.md
 [2]: price-list-and-products.md
 [3]: configure-product-fields.md

@@ -43,8 +43,8 @@ Malen for e-postbekreftelse for personvern er en **e-postmal**, som opprettes og
 * [Slik legger du til en e-postmal][1]
 * [Send en personvern-e-post for dine personers rett til å bli informert][2]
 
-<!-- Referenced links -->
+
 [1]: ../../../email/admin/add-email-template.md
 [2]: ../learn/send-privacy-confirmation-email.md
 
-<!-- Referenced images -->
+

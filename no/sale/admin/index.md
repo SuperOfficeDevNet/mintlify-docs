@@ -52,7 +52,7 @@ Ta en titt på disse listene for å se om du vil endre dem:
 
 Disse verktøyene gir administratorer muligheten til å skreddersy salgsprosessene for å sikre effektivitet og enhetlighet i hele organisasjonen.
 
-<!-- Refererte lenker -->
+
 [1]: create-sales-guide.md
 [2]: edit-sales-guide.md
 [3]: sale-stage.md

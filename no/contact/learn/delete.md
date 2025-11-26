@@ -51,7 +51,7 @@ Noen ganger trenger du å slette personer i SuperOffice CRM — for eksempel dup
 * [Massesletting av personer og firmaer fra et utvalg][9]
 * [Gjenopprette slettede firmaer og personer][5]
 
-<!-- Referenced links -->
+
 [2]: merge-contacts.md
 [3]: ../../learn/basics/bulk-update.md
 [5]: ../../learn/basics/deleting-elements.md#restore

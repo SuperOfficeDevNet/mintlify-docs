@@ -38,8 +38,8 @@ Du kan kopiere et eksisterende firma for å opprette et nytt. For eksempel kan d
 
 ![Dialogboksen Kopier firma som viser alternativer for å gi nytt navn til firmaet, legge til en avdeling og velge om kontakter skal kopieres -screenshot][img3]
 
-<!-- Referenced links -->
+
 [2]: edit.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../media/loc/en/company/copy-company.png

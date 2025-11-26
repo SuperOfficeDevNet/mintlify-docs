@@ -61,7 +61,7 @@ Hensikten med å slette stoppord er å inkludere dem i fritekstsøk likevel, ett
 
 1. Klikk på **Slett**-knappen under stoppordlisten.
 
-<!-- Referenced links -->
+
 [3]: regenerate-index.md
 
-<!-- Referenced images -->
+

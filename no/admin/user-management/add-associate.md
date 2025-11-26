@@ -46,7 +46,7 @@ Administratorer har ansvaret for å gi nye brukere en brukerplan, et brukernavn,
 
 ## <a id="fields"></a>Viktige felt forklart
 
-<!-- markdownlint-disable-file MD051 -->
+
 ### [Fanen Detaljer](#tab/details)
 
 I fanen **Detaljer** finner du følgende alternativer:
@@ -95,7 +95,7 @@ I **Lisenser**-fanen kan du velge lisenser i tillegg til de som er definert av d
 Se denne demoen for å se hvordan du legger til en ny bruker i SuperOffice CRM.
 (Denne videoen viser en tidligere versjon av SuperOffice, så designet kan se annerledes ut. Trinnene er de samme.)
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/oLlfTrCAqCU]
 
 (videolengde – 1.46)
@@ -105,7 +105,7 @@ Se denne demoen for å se hvordan du legger til en ny bruker i SuperOffice CRM.
 * [Legge til anonym bruker eller systembruker (onsite)][5]
 * [Rediger bruker/medarbeider][6]
 
-<!-- Referenced links -->
+
 [1]: onsite/import-users.md
 [2]: index.md#visible
 [3]: role/index.md
@@ -114,5 +114,5 @@ Se denne demoen for å se hvordan du legger til en ny bruker i SuperOffice CRM.
 [6]: update-user.md
 [8]: role/set-data-rights-for-role.md
 
-<!-- Referenced images -->
+
 [img7]: ../../../media/loc/en/admin/selected-user-plan.png

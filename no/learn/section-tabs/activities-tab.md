@@ -99,7 +99,7 @@ For å inkludere utførte aktiviteter i listen, må du forsikre deg om at boksen
 * [Filtrer aktiviteter][8]
 * [Grupper kolonner og oppsummer][5]
 
-<!-- Referenced links -->
+
 [1]: ../basics/activity.md
 [2]: ../getting-started/main-screen/side-panel.md
 [3]: send-email.md
@@ -114,5 +114,5 @@ For å inkludere utførte aktiviteter i listen, må du forsikre deg om at boksen
 [12]: ../../sale/learn/index.md#section-tabs
 [13]: ../../project/learn/index.md#section-tabs
 
-<!-- Referenced images -->
+
 [img2]: ../../../media/loc/en/diary/activities-detail.png

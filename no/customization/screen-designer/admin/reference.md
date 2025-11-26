@@ -317,7 +317,7 @@ For detaljer om verdien av hvert felt, se [databasereferansen][23].
 * [Lær mer om avtaler][16]
 * [Lær mer om dokument][21]
 
-<!-- Referenced links -->
+
 [1]: working-with-fields.md
 [2]: ../../../../en/database/tables/contact.md
 [3]: ../../../../en/database/tables/person.md

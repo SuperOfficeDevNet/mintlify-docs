@@ -46,5 +46,5 @@ For å illustrere denne funksjonaliteten legger vi til en ny navigatorgruppe i n
 
 14. Klikk på navigatorgruppen og den nye ekstramenyen, og kontroller at nettstedet åpnes riktig.
 
-<!-- Referenced links -->
+
 [1]: properties.md

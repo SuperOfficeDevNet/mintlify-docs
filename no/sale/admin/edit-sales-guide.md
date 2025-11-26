@@ -49,7 +49,7 @@ Hvis du vil fjerne en salgsguide fra en [salgstype][5], gjør du følgende:
 > [!NOTE]
 > Hvis du senere ønsker å bruke salgsguiden igjen, kan du merke av for dette alternativet på nytt. Eventuelle oppfølginger og dokumenter som tidligere var lagt til i fasene i salgsguiden, blir automatisk hentet inn igjen ved reaktivering. Du kan også legge til nye oppfølginger og dokumenter eller fjerne de som ikke lenger er relevante.
 
-<!-- Refererte lenker -->
+
 [1]: create-sales-guide.md#add-fo-stage
 [2]: create-sales-guide.md#add-doc-stage
 [3]: sale-stage.md

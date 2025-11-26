@@ -55,7 +55,7 @@ Hovedfordelen med sakstyper er effektiv kundestøtte. En spesifikk sakstype tilp
 * [Legg til sakstype][1]
 * [Slett sakstype][2]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [2]: delete.md
 [3]: ../priority/index.md

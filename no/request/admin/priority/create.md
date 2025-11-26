@@ -91,5 +91,5 @@ Standardprioritetene som følger med systemet, er **Høy**, **Medium** og **Lav*
 
 * [Opprett eskaleringsnivå][1]
 
-<!-- Refererte lenker -->
+
 [1]: escalation-levels.md

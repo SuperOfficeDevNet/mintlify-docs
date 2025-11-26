@@ -105,10 +105,10 @@ Bruk dette alternativet til å legge til de valgte postene i et eksisterende sta
 * [Kopiere inn i utvalg][3]
 * [Utfør oppgaver ved å bruke utvalg][4]
 
-<!-- Referenced links -->
+
 [2]: ../../learn/find-screen.md
 [5]: ../../learn/search-criteria.md
 [3]: copy-members-to.md
 [4]: ../../../learn/getting-started/index.md
 
-<!-- Referenced images -->
+

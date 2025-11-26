@@ -27,9 +27,9 @@ Prosjektdeltakere er deltakerne i et prosjekt. For hver deltaker kan du få tilg
 * [Redigere eller slette prosjektdeltaker][3]
 * [Sende e-post til prosjektdeltakere][4]
 
-<!-- Referenced links -->
+
 [1]: add.md
 [3]: edit.md
 [4]: send-email-to.md
 
-<!-- Referenced images -->
+

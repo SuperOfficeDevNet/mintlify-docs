@@ -48,7 +48,7 @@ language: no
 
 [!include[Step: complete the import](includes/import-complete.md)]
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+
 [img2]: ../../../media/icons/admin/import-gmail-small.png

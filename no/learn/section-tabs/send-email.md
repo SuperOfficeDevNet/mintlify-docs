@@ -38,7 +38,7 @@ E-postmeldinger som er lagret som dokumenter for et bestemt firma, vises i detal
 
     * Hvis du vil sende meldingen og [arkivere den som et dokument][1] i SuperOffice CRM, klikker du på **Send og arkiver**. Dialogboksen **Dokument** åpnes.
 
-<!-- Referenced links -->
+
 [1]: ../../document/learn/create.md
 
-<!-- Referenced images -->
+

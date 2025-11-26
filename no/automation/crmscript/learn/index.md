@@ -37,7 +37,7 @@ Triggere er skript som kjøres for bestemte hendelser i systemet, for eksempel n
 * [Lær CRMScript-språket][6]
 * [CRMScript API-referanse][7]
 
-<!-- Referenced links -->
+
 [1]: macro-script.md
 [2]: trigger.md
 [3]: schedule-task.md

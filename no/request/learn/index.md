@@ -158,7 +158,7 @@ Ulike firmaer har ulike rutiner for saksbehandling og kan bruke SuperOffice Serv
 
 ### Scenario 1: Personen sender inn saken via e-post
 
-<!-- markdownlint-disable-next-line MD034 -->
+
 1. Personen skriver en e-post til support@company.com eller fyller ut et skjema i en brukerstøtteportal.
 1. Personen mottar et [automatisk svar][23] om at henvendelsen er mottatt.
 1. Henvendelsen fra personen blir automatisk registrert som en sak i SuperOffice CRM.
@@ -227,7 +227,7 @@ Noen innstillinger som påvirker kundestøtteagenter inkluderer:
 * [7 tips for å tilby kundeservice i verdensklasse med SuperOffice Service][20] - blogg
 * [Hvorfor masseoppdatering bør være din favorittfunksjon][21] - blogg
 
-<!-- Referenced links -->
+
 [1]: accept.md
 [2]: reply.md
 [3]: close.md
@@ -255,7 +255,7 @@ Noen innstillinger som påvirker kundestøtteagenter inkluderer:
 [21]: https://community.superoffice.com/en/learning/best-practices-tips/service/7-reasons-why-batch-management-should-be-your-favorite-feature-in-superoffice-service/
 [26]: ../../admin/preferences/service-settings.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/request/request-list-preview.png
 [img2]: ../../../media/loc/en/request/request-change-log.png
 [img3]: ../../../media/loc/en/request//service-dashboard.png

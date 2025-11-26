@@ -77,7 +77,7 @@ I [fanen **Mer**][12] finner du brukerdefinerte felt for dokumentet.
 * [Sjekke inn/ut dokumenter][7]
 * [Sende dokumenter][5]
 
-<!-- Referenced links -->
+
 [3]: create.md
 [4]: edit.md
 [5]: send-as-email.md
@@ -86,4 +86,4 @@ I [fanen **Mer**][12] finner du brukerdefinerte felt for dokumentet.
 [11]: ../templates/learn/index.md
 [12]: ../../custom-objects/learn/more-tab.md
 
-<!-- Referenced images -->
+

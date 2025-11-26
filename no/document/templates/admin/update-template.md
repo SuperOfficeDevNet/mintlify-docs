@@ -50,9 +50,9 @@ Du kan redigere standardmalene som følger med SuperOffice CRM, og lagre dem med
 * [Opprette et maldokument][2]
 * [Malvariabelreferanse][3]
 
-<!-- Referenced links -->
+
 [1]: link-template.md
 [2]: ../learn/create.md
 [3]: ../variables/index.md
 
-<!-- Referenced images -->
+

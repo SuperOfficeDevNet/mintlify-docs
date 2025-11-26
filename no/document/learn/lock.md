@@ -57,7 +57,7 @@ Hvis du eller noen andre har sjekket ut et dokument og vil redigere dokumentet, 
 1. Høyreklikk på dokumentet og velg **Dokument**.
 2. I **Dokument**-dialogen, klikk på <i class="ph ph-dots-three-circle-vertical" aria-label="Oppgave-knappen"></i> og velg **Hent lagret versjon**.
 
-<!-- Referenced links -->
+
 [1]: edit.md
 
-<!-- Referenced images -->
+

@@ -65,7 +65,7 @@ language: no
 * [Legge til brukere][5]
 * [Redigere roller][4]
 
-<!-- Referenced links -->
+
 [4]: update-role.md
 [5]: ../add-associate.md
 [6]: functional-rights.md

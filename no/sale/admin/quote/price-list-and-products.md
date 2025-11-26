@@ -136,7 +136,7 @@ Sjekk om brukeren har [tilgangsrettigheter][7] og at eksport [preferansen][8] er
 * [Importere produkter fra Excel][5]
 * [Sette opp ERP-tilkobling][1]
 
-<!-- Referenced links -->
+
 [1]: set-up-quote-connector.md
 [3]: configure-product-fields.md
 [4]: ../../../learn/section-tabs/configure-columns.md
@@ -144,6 +144,6 @@ Sjekk om brukeren har [tilgangsrettigheter][7] og at eksport [preferansen][8] er
 [7]: ../../../admin/user-management/role/index.md
 [8]: ../../../admin/preferences/index.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../../media/loc/en/sale/add-products-to-price-list.png
 [img1]: ../../../../media/loc/en/sale/add-edit-product.png

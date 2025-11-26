@@ -92,7 +92,7 @@ Dynamiske utvalg er spesielt nyttige når du trenger **de mest oppdaterte dataen
 * [Arbeide med sporede koblinger i etterkant av utsendelsen][9]
 * [Spore utsendelsen og vise statistikk][7]
 
-<!-- Referenced links -->
+
 [1]: https://www.superoffice.com/blog/email-marketing-segmentation-mistake/
 [2]: ../../../search-options/selection/learn/create.md
 [3]: ../../../search-options/selection/learn/index.md
@@ -101,4 +101,4 @@ Dynamiske utvalg er spesielt nyttige når du trenger **de mest oppdaterte dataen
 [9]: ../../tracked-links/learn/explore-clicks.md
 [8]: look-at-recipient-list.md
 
-<!-- Referenced images -->
+

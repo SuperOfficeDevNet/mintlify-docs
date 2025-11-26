@@ -96,11 +96,11 @@ Ved å bruke menyknappen **Handlinger** kan du legge til mottakere eller klikker
 
 * [Arbeide med sporede koblinger i etterkant av utsendelsen][1]
 
-<!-- Referenced links -->
+
 [1]: ../../tracked-links/learn/explore-clicks.md
 [3]: manage-bounces.md
 [4]: spam-complaints.md
 [5]: manage-email-subscriptions.md
 
-<!-- Referenced images -->
+
 [img4]: ../../../../media/loc/en/marketing/recipients-tab-status.png

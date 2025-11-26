@@ -29,7 +29,7 @@ Med tilpassede skjermlayouts for hvert av teamene dine vil det bli enklere enn n
 
 Se denne videoen og finn ut hvordan du legger til en ny layout, eller følg trinn-for-trinn-guiden nedenfor (videoen starter på 5:37):
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/EcL4TEXXvmU?t=337]
 
 ## Opprett ny layout
@@ -82,7 +82,7 @@ Se denne videoen og finn ut hvordan du legger til en ny layout, eller følg trin
 * [Hvordan oppretter jeg en ny brukergruppe i SuperOffice CRM?][16]
 * [Slett layout][4]
 
-<!-- Referenced links -->
+
 [1]: working-with-fields.md
 [2]: working-with-archives.md
 [3]: working-with-tabs.md
@@ -92,6 +92,6 @@ Se denne videoen og finn ut hvordan du legger til en ny layout, eller følg trin
 [15]: ../../../admin/user-management/role/index.md
 [16]: ../../../admin/user-management/user-groups.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/customization/add-button-for-new-screen-layout.png
 [img2]: ../../../../media/loc/en/customization/add-new-screen-layout.png

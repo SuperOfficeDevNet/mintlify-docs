@@ -87,6 +87,6 @@ I dette bildet kan du redigere egenskapene til et felt knyttet til en agent. Fel
 |---|---|
 | Feltnavn | En liste over databasefeltnavn som er skrivebeskyttet i grensesnittet, for eksempel 'cust-company.name'. |
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+

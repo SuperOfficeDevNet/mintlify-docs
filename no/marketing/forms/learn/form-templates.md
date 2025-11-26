@@ -49,9 +49,9 @@ language: no
 
 ![Opprett en mal basert på et eksisterende skjema -screenshot][img3]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [19]: ../../learn/create-folder.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../../media/loc/en/marketing/form-template-edit-overview.png

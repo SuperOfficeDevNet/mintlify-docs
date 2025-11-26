@@ -97,10 +97,10 @@ For å slette en måltype:
 * [Legg til grupper og brukere i salgsmålet ditt][3]
 * [Bruke salgsmål i dashboard-figurer][2]
 
-<!-- Referenced links -->
+
 [2]: ../../../dashboard/learn/show-sales-targets.md
 [3]: create.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/sale/target-settings.png
 [img4]: ../../../../media/loc/en/sale/add-new-target-type-button.png

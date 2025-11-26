@@ -127,7 +127,7 @@ Dette adresseformatet brukes for Japan.
 | Sted/postnr | Poststed og postnummer |
 | Land | Land |
 
-<!-- Referenced links -->
+
 [1]: create.md
 
-<!-- Referenced images -->
+

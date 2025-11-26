@@ -102,7 +102,7 @@ Hvis forhåndsvisningen ikke er synlig, klikk **Vis forhåndsvisning** nederst i
 * [Bruke navigatørsøk][19]
 * [Opprette utvalg][13]
 
-<!-- Refererte lenker -->
+
 [1]: tags.md
 [6]: accept.md
 [9]: ../admin/next-in-queue.md
@@ -114,6 +114,6 @@ Hvis forhåndsvisningen ikke er synlig, klikk **Vis forhåndsvisning** nederst i
 [18]: ../../dashboard/learn/index.md
 [19]: ../../learn/getting-started/main-screen/navigator.md#navigator
 
-<!-- Refererte bilder -->
+
 [img2]: ../../../media/loc/en/request/find-request-criteria.png
 [img3]: ../../../media/loc/en/request/find-request-dropdown.png

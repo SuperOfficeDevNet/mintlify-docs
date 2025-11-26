@@ -85,7 +85,7 @@ Hvis du holder musepekeren over en post i en liste, vises en infoboks med ekstra
 
 ![Alternativer i navigatoren i SuperOffice -screenshot][img2]
 
-<!-- Referenced links -->
+
 [1]: ../../../dashboard/learn/index.md
 [2]: ../../../company/learn/index.md
 [3]: ../../../contact/learn/index.md
@@ -123,6 +123,6 @@ Hvis du holder musepekeren over en post i en liste, vises en infoboks med ekstra
 [30]: https://community.superoffice.com
 [31]: ../preferences.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../../media/loc/en/learn/navigator-options.png
 [img1]: ../../../../../common/icons/hugo-green.png

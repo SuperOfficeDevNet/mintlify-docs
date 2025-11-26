@@ -71,7 +71,7 @@ Hvis dataobjekter (firmaer, prosjekter, dokumenter og så videre) skal gjøres t
 
 * [Datarettigheter][3]
 
-<!-- Referenced links -->
+
 [1]: ../onsite/other-users.md#rights
 [2]: index.md
 [3]: functional-rights.md

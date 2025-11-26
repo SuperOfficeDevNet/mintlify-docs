@@ -62,7 +62,7 @@ Hvis mer enn to prioriteter er eksternt tilgjengelige, kan kunden velge hvilken 
 * [Slett prioritet][2]
 * [Opprett eskaleringsnivåer][3]
 
-<!-- Refererte lenker -->
+
 [1]: create.md
 [2]: delete.md
 [3]: escalation-levels.md

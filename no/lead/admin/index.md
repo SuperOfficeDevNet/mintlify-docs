@@ -63,11 +63,11 @@ Hvis du bruker Marketing Premium, kan du dra nytte av ekstra sporings- og automa
 * [Firmakategori og kategorigruppe][1]
 * [Administrer leadstatuser][2]
 
-<!-- Referenced links -->
+
 [1]: add-company-category.md
 [2]: add-lead-status.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/lead/enable-lead-status.png
 [3]: ../learn/index.md
 [5]: ../../marketing/utm/admin/set-up.md

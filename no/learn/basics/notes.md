@@ -32,5 +32,5 @@ En prikk på fanen **Notat** indikerer at et notat er lagt til.
 
 For å slette et notat, slett all tekst i feltet. Prikken vil forsvinne fra fanen **Notat**.
 
-<!-- Referenced links -->
+
 [1]: ../../search-options/learn/freetext-search.md

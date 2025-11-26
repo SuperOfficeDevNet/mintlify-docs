@@ -57,7 +57,7 @@ La oss ta en titt på noen praktiske eksempler på hvordan du kan bruke ELLER-fu
 
 Se denne videoen for å lære hvordan du oppretter et søk ved hjelp av ELLER-funksjonen:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/Z-fSLJSdp2k]
 
 (videolengde - 4:08)
@@ -259,7 +259,7 @@ La oss si at du er leder for en markedsavdeling, og at dere skal ha en idédugna
 * [Bruke historikklisten][6]
 * [Bruk søkekriterier][3]
 
-<!-- Referenced links -->
+
 [1]: ../../learn/getting-started/main-screen/buttons-in-menu-bar.md
 [4]: ../../learn/getting-started/main-screen/side-panel.md
 [2]: index.md#fastsearcher
@@ -270,6 +270,6 @@ La oss si at du er leder for en markedsavdeling, og at dere skal ha en idédugna
 [8]: ../selection/learn/create.md
 [9]: ../selection/learn/add-remove-members-static.md
 
-<!-- Referenced images -->
+
 
 [img10]: ../../../media/loc/en/search-options/task-menu.png

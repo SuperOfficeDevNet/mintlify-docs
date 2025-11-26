@@ -55,11 +55,11 @@ Hvis du ikke får treff på et søkeord som ligger i SuperOffice-databasen, kan 
 * [Hurtigsøk][3]
 * [Historikklisten][4]
 
-<!-- Referenced links -->
+
 [1]: ../../learn/getting-started/main-screen/side-panel.md
 [2]: find-screen.md
 [3]: index.md#fastsearcher
 [4]: ../../learn/basics/history.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/search-options/freetext-search-box.png

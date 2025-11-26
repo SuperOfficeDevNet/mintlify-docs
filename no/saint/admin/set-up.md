@@ -116,14 +116,14 @@ I dette eksemplet brukes følgende malvariabler:
 * [Tellere og tellerinnstillinger (periode)][7]
 * [Regenerer statusovervåkning og tellere][4]
 
-<!-- Referenced links -->
+
 [2]: update.md
 [4]: update.md#regen
 [7]: counter-settings.md
 [8]: ../../localization/learn/translate-fields.md
 [9]: ../../document/templates/variables/index.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/saint/new-status-monitor.png
 [img2]: ../../../media/loc/en/saint/status-list-priority.png
 [img3]: ../../../media/loc/en/saint/criteria.png

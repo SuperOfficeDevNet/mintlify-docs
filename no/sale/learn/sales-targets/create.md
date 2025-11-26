@@ -141,10 +141,10 @@ For å vise revisjonshistorikken for et salgsmål (rad), klikk <i class="ph ph-l
 
 * [Bruke salgsmål i figurer][2]
 
-<!-- Referenced links -->
+
 [2]: ../../../dashboard/learn/show-sales-targets.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: ../../../../media/loc/en/sale/target-line-menu.png
 [img3]: ../../../../media/loc/en/sale/target-adjust-number.png

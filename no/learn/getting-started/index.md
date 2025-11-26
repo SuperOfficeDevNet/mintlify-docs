@@ -67,7 +67,7 @@ Oppdag hele potensialet til SuperOffice CRM. Bruk våre veiledninger for å komm
 * [Lær om aktiviteter (oppfølginger, dokumenter og e-poster)][13]
 * [Mobil CRM: Tilgang til CRM på farten][9]
 
-<!-- Refererte lenker -->
+
 [1]: main-screen/navigator.md
 [2]: main-screen/index.md
 [6]: login.md
@@ -82,5 +82,5 @@ Oppdag hele potensialet til SuperOffice CRM. Bruk våre veiledninger for å komm
 [20]: https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/index.html
 [21]: ../../../en/onsite/requirements/index.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/learn/getstarted-personalsettings.png

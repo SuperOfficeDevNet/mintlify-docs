@@ -80,13 +80,13 @@ For å vise hvordan du kan bruke Finn-funksjonen til salgsprognoser, er her et e
 * [Vis et utvalg som et diagram][6]
 * [Bruke Finn-skjermen][5]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [5]: ../../search-options/learn/find-screen.md
 [6]: ../../search-options/selection/learn/howto/display-as-charts.md
 [7]: ../../dashboard/learn/show-sales-targets.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/sale/forecasting.png
 [img7]: ../../../media/loc/en/search-options/typical-sale-searches.png
 [img8]: ../../../media/loc/en/search-options/find-screen.png

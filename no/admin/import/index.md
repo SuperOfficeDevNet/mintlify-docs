@@ -57,7 +57,7 @@ Hvis SuperOffice inneholder utdatert informasjon, og du vil oppdatere disse felt
 
 Hvis du mangler mye informasjon om kunder og personer i SuperOffice, bruker du handlingen **Flett - oppdater tomme felt** når du importerer firmaer og personer. Dette oppdaterer bare tomme felt uten å overskrive eksisterende informasjon.
 
-<!-- Referenced links -->
+
 [1]: from-excel.md
 [2]: from-outlook.md
 [3]: from-gmail.md
@@ -66,4 +66,4 @@ Hvis du mangler mye informasjon om kunder og personer i SuperOffice, bruker du h
 [6]: settings.md
 [7]: https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/index.html
 
-<!-- Referenced images -->
+

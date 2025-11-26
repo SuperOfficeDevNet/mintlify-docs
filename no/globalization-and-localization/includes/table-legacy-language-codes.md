@@ -1,4 +1,4 @@
-<!-- markdownlint-disable-file MD041 -->
+
 | ID | Språk |
 |:-:|---|
 | NO | Norsk |

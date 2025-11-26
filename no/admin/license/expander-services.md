@@ -161,7 +161,7 @@ SuperOffice-partnere bruker vanligvis SDK-et når de utvikler standardapplikasjo
 
 Etter hvert som behovene dine vokser, kan også mulighetene i CRM-løsningen din vokse.
 
-<!-- Referenced links -->
+
 [1]: user-plans.md
 [2]: ../../../en/automation/crmscript/overview/index.md
 [3]: ../../../en/automation/trigger/create-trigger-macro.md

@@ -89,7 +89,7 @@ Flere steder i SuperOffice CRM kan du velge ønsket land fra en valgliste. Liste
 
 * [Legge til og fjerne firma- og personrelasjoner][1]
 
-<!-- Referenced links -->
+
 [1]: ../../document/templates/learn/index.md
 [2]: ../../email/admin/add-email-template.md
 [3]: ../../diary/admin/add-follow-up-type.md

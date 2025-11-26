@@ -91,7 +91,7 @@ Hvis denne preferansen er aktivert, vil den første delen av etternavnet brukes 
 * [Slett person][6]
 * [Konfigurer kolonner i detaljkort][8]
 
-<!-- Referenced links -->
+
 [1]: ../../contact/learn/index.md
 [2]: ../../contact/learn/create.md
 [3]: ../../contact/learn/edit.md
@@ -102,5 +102,5 @@ Hvis denne preferansen er aktivert, vil den første delen av etternavnet brukes 
 [8]: configure-columns.md
 [9]: ../../company/learn/index.md#section-tabs
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/company/contacts-detail.png

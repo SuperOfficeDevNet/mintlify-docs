@@ -26,7 +26,7 @@ Flere filtre kan være aktive samtidig. Hvis et detaljkort ikke viser de forvent
 
 Lær hvordan du tilpasser visninger ved å konfigurere kolonner med denne korte videoen, eller les instruksjonene nedenfor:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/HYYI4ZCl4S4]
 
 (videolengde - 2:10)
@@ -128,10 +128,10 @@ Klikk på <i class="ph ph-funnel" aria-label="Filter icon"></i> og **Tilbakestil
 * [Grupperingslister][1]
 * [Filtrere listen over utvalgsmedlemmer][2]
 
-<!-- Referenced links -->
+
 [1]: group.md
 [2]: ../../search-options/selection/learn/index.md#filter
 
-<!-- Referenced images -->
+
 [img11]: ../../../media/loc/en/learn/archives-enable-filter.png
 [img12]: ../../../media/loc/en/learn/getstarted-archives-filteron.png

@@ -117,7 +117,7 @@ SuperOffice Marketing tilbys som et nettbasert program (skybasert) og som et lok
 * [Vise utsendelser og skjemaer i dashboard][4]
 * [Se produktomvisningsvideoen for SuperOffice Marketing][21]
 
-<!-- Referenced links -->
+
 [1]: ../forms/learn/create.md
 [2]: ../editor/learn/index.md#variables
 [11]: ../tracked-links/learn/index.md

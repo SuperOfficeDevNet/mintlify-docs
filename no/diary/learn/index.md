@@ -65,7 +65,7 @@ Du kan enkelt bevege deg mellom datoer og tidsperioder i dagboken:
 
 Dagboken har fire hovedkalendervisninger. Bruk disse fanene for å bytte mellom ulike perspektiver:
 
-<!-- markdownlint-disable MD051 -->
+
 ### [Fanen Dag](#tab/day)
 
 **Dag-fanen** viser én dag om gangen med timeintervaller langs venstre kant. Denne visningen er ideell for å administrere timeplanen din time for time.
@@ -121,7 +121,7 @@ For detaljerte trinn om hvordan du oppretter og administrerer gruppeoversikter, 
 > Når du er i en gruppeoversikt, kan du opprette oppfølginger for andre direkte i kalenderen.
 
 ***
-<!-- markdownlint-enable MD051 -->
+
 
 Nederst til venstre i kalenderen finner du et felt for å velge en [tidssone][20], hvis tidssoner er aktivert.
 
@@ -204,7 +204,7 @@ Du kan tilpasse dagboken slik at den passer din arbeidsflyt:
 * [Legge til kobling til dokument, salg, prosjekt eller nettsted][15]
 * [Håndtere oppfølginger via API][50]
 
-<!-- Refererte lenker -->
+
 [1]: follow-ups.md
 [2]: group-view.md
 [3]: edit-follow-up.md
@@ -224,7 +224,7 @@ Du kan tilpasse dagboken slik at den passer din arbeidsflyt:
 [20]: ../../localization/learn/time-zones.md
 [50]: ../../../en/diary/reference/index.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/diary/diary.png
 [img2]: ../../../media/loc/en/diary/day-plan.png
 [img3]: ../../../media/loc/en/diary/week-plan.png

@@ -108,13 +108,13 @@ Du kan bytte mellom versjoner ved hjelp av rullegardinmenyen **Versjon** øverst
 * [Registrere ordre][3]
 * [Konfigurere regler for tilbudsgodkjenning][5] i Innstillinger og vedlikehold
 
-<!-- Referenced links -->
+
 [1]: create-quote-document.md
 [2]: create-quote-document.md#replace
 [3]: place-order.md
 [4]: create.md#warning
 [5]: ../../admin/sale-type.md#quote-fields
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/sale/send-quote-dialog.png
 [img2]: ../../../../media/loc/en/sale/sent-quote.png

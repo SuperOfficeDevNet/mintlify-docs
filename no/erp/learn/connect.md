@@ -57,8 +57,8 @@ Hvis en kunde for eksempel ikke finnes i ERP-systemet, kan du opprette kunden i 
 
 * [Deaktiver synkronisering][3]
 
-<!-- Referenced links -->
+
 [1]: ../../search-options/learn/find-screen.md
 [3]: disconnect.md
 
-<!-- Referenced images -->
+

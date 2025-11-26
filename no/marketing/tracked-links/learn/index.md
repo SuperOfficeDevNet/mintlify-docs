@@ -102,7 +102,7 @@ Google Analytics-funksjonen i SuperOffice Marketing identifiserer utsendelsene d
 * [Legge til påmeldingskoblinger][4]
 * [Enkel Google Analytics e-postsporing][6]
 
-<!-- Referenced links -->
+
 [1]: create-links.md
 [2]: explore-clicks.md
 [7]: define-link-actions.md
@@ -114,5 +114,5 @@ Google Analytics-funksjonen i SuperOffice Marketing identifiserer utsendelsene d
 [8]: ../../../request/learn/index.md
 [9]: ../../../search-options/selection/learn/index.md
 
-<!-- Referenced images -->
+
 [img4]: ../../../../media/loc/en/marketing/link-properties.png

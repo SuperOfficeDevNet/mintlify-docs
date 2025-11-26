@@ -39,6 +39,6 @@ Disse funksjonene er synlige direkte i saksvisningen og krever ingen konfigurasj
 * [Effektiv håndtering av saker ved hjelp av AI][1]
 * [Andre AI-tjenester][2]
 
-<!-- Referenced links -->
+
 [1]: ../../request/learn/handle-request-ai.md
 [2]: index.md

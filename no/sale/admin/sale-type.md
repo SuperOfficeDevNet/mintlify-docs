@@ -69,7 +69,7 @@ Alle salg m√• ha en salgstype, og disse typene kan knyttes til spesifikke [salgs
 
 Et tilbud tilh√∏rer et salg, og alle salg har en salgstype. I hver salgstype kan du definere flere egenskaper for tilbud, slik som vedlegg, godkjenningsregler, bruk av alternativer og maler.
 
-<!-- markdownlint-disable MD051 -->
+
 ### [Fanen  Vedlegg](#tab/quote-attachment)
 
 I fanen **Vedlegg** kan du legge til dokumenter som skal sendes til kunden sammen med et tilbud, for eksempel produktspesifikasjoner eller brosjyrer.
@@ -104,7 +104,7 @@ I fanen **Godkjenning** kan du angi om tilbud m√• godkjennes under visse betinge
 * **Total fortjeneste er under grensen:** Angi en prosentgrense for fortjeneste som krever godkjenning.
 
 ***
-<!-- markdownlint-enable MD051 -->
+
 
 ## Redigere eller slette en salgstype
 
@@ -141,7 +141,7 @@ Hvis en salgstype har blitt slettet, kan du gjenopprette den fra listen **Salg ‚
 * [Redigere en salgsguide][3]
 * [Tilbudsmaler][6]
 
-<!-- Refererte lenker -->
+
 [1]: sale-stage.md
 [2]: create-sales-guide.md
 [3]: edit-sales-guide.md
@@ -150,5 +150,5 @@ Hvis en salgstype har blitt slettet, kan du gjenopprette den fra listen **Salg ‚
 [6]: ../../document/templates/learn/quote-templates.md
 [7]: ../../search-options/learn/find-screen.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/sale/edit-sale-type.png

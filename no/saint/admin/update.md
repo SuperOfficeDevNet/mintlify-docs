@@ -118,11 +118,11 @@ Statuser og tellere som ikke er oppdaterte forblir synlige i SuperOffice CRM, me
 |---|---|
 | Regenerer alle tellere | Oppdaterer alle tellere |
 
-<!-- Referenced links -->
+
 [1]: set-up.md
 [2]: ../../search-options/learn/search-criteria.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/saint/saint-create-follow-up-tab.png
 [img2]: ../../../media/loc/en/saint/delete-restore-status-monitor.png
 [img3]: ../../../media/loc/en/saint/criteria.png

@@ -17,5 +17,5 @@ index: true
 
 Se også [flettefelt][1].
 
-<!-- Referenced links -->
+
 [1]: ../merge-fields/index.md

@@ -53,9 +53,9 @@ Du kan angi innstillinger for ulike deler av SuperOffice CRM, for eksempel antal
 * [Malvariabler][1]
 * [Globale preferanser][2] - i Innstillinger og vedlikehold
 
-<!-- Referenced links -->
+
 [1]: ../../document/templates/variables/index.md
 [2]: ../../admin/preferences/learn/index.md
 
-<!-- Referenced images -->
+
 [img13]: ../../../media/loc/en/learn/getstarted-personalsettings.png

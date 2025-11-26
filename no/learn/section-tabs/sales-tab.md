@@ -106,7 +106,7 @@ For å legge til et nytt salg direkte fra detaljkortet **Salg**:
 * [Filtrer aktiviteter og salg][8]
 * [Grupper kolonner og oppsummer beløp][5]
 
-<!-- Referenced links -->
+
 [1]: ../../sale/learn/index.md
 [2]: ../../sale/learn/create.md
 [3]: ../../sale/learn/stakeholders/index.md
@@ -119,5 +119,5 @@ For å legge til et nytt salg direkte fra detaljkortet **Salg**:
 [11]: ../../diary/learn/index.md#section-tabs
 [13]: ../../project/learn/index.md#section-tabs
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/company/sale-detail.png

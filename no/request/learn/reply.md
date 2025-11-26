@@ -149,7 +149,7 @@ Tidsbruken vises i meldingsoverskriften, og svartiden er tilgjengelig i fanen **
 * [Opprette ny språkversjon av svarmal][5]
 * [Redigere e-postsignatur][7]
 
-<!-- Refererte lenker -->
+
 [1]: index.md#open
 [2]: create.md#fields
 [3]: close.md
@@ -161,7 +161,7 @@ Tidsbruken vises i meldingsoverskriften, og svartiden er tilgjengelig i fanen **
 [10]: forward.md
 [11]: ../../admin/preferences/service-settings.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/request/insert-reply-template.png
 [img3]: ../../../media/loc/en/request/message-to-external.png
 [img4]: ../../../media/loc/en/request/reply-to-a-customer.png

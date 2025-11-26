@@ -93,11 +93,11 @@ Ekstrafelt kan for eksempel brukes som søkekriterier og kolonner i salg i Super
 * [Vis ekstrafelt på detaljfanen][1]
 * [Opprett ekstrafelt][2]
 
-<!-- Referenced links -->
+
 [1]: ../admin/show-extra-field-on-request-details.md
 [2]: ../admin/create-extra-field.md
 [6]: extra-table.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
 [img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png

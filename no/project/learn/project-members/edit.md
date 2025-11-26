@@ -40,7 +40,7 @@ Du kan oppdatere feltene **Funksjon** og **Kommentar** for prosjektdeltakere, el
 
 1. I bekreftelsesdialogen som vises, klikk **Ja** for å bekrefte fjerningen.
 
-<!-- Referenced links -->
+
 [1]: ../../../search-options/learn/find-screen.md
 
-<!-- Referenced images -->
+

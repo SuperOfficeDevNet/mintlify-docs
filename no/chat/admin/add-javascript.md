@@ -44,7 +44,7 @@ Chatvinduet er nå tilgjengelig og live. Besøkende på websiden din kan begynne
 Se denne demoen for å se hvordan du legger til chatwidgeten på websiden din.
 (Denne videoen viser en tidligere versjon av SuperOffice, så designet kan se annerledes ut. Trinnene er de samme.)
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/Q-i8nxHqAPc]
 
 (videolengde – 2.04)
@@ -54,9 +54,9 @@ Se denne demoen for å se hvordan du legger til chatwidgeten på websiden din.
 * [Koble chatten til Kundesenter][3]
 * [Tjenester for kunstig intelligens][2]
 
-<!-- Referenced links -->
+
 [1]: channel-create.md
 [2]: ../../ai/learn/index.md
 [3]: ../../customer-center/learn/enable-chat.md
 
-<!-- Referenced images -->
+

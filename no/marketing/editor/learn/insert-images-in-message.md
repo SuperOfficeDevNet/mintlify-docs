@@ -92,11 +92,11 @@ Når du har lastet opp bildet, kan du se hvordan det ser ut i e-postmalen. Hvis 
 
 1. Når du er fornøyd med den nye størrelsen på bildet ditt, eller du vil sjekke hvordan det ser ut i e-postmalen din etter at du har gjort endringene, kan du klikke på **Lagre**.
 
-<!-- Referenced links -->
+
 [1]: ../../learn/add-images.md
 [2]: add-tracked-link-to-msg.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/icons/marketing-and-forms/side-panel-content-small.png
 [img2]: ../../../../media/icons/marketing-and-forms/side-panel-images-small.png
 [img3]: ../../../../media/loc/en/marketing/mailing-image-add-from-onlinelibrary.png

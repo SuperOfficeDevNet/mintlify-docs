@@ -39,11 +39,11 @@ Du kan redigere prosjektinformasjon direkte fra fanene i **Prosjekt**-bildet.
 * [Legg til kobling til dokument, oppfølging, salg eller nettsted][6]
 * [Legg til prosjektbilde][1]
 
-<!-- Refererte lenker -->
+
 [1]: add-image.md
 [4]: project-guides.md
 [5]: ../../search-options/learn/find-screen.md
 [6]: ../../learn/basics/links.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/project/edit-project.png

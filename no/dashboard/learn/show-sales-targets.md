@@ -89,7 +89,7 @@ Hvis Sammenlign med mål ikke er synlig, må du kontrollere at du har valgt rikt
 * [Definere salgsmål][7]
 * [Forutsi salget ditt][8]
 
-<!-- Referenced links -->
+
 [2]: ../../search-options/learn/search-criteria.md
 [3]: ../../localization/learn/translate-fields.md
 [4]: ../../sale/learn/sales-targets/index.md
@@ -99,5 +99,5 @@ Hvis Sammenlign med mål ikke er synlig, må du kontrollere at du har valgt rikt
 [8]: ../../sale/learn/forecasting.md
 [9]: show-leads.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/dashboard/team-forecast-vs-target.png

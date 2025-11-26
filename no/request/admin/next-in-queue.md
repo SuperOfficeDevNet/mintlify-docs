@@ -101,5 +101,5 @@ Når en sak hentes fra køen, må statusen endres fra **I kø** til **Åpen** (e
 
 Opprett en ny sak, sett **Eier** til **Uten tildeling**, velg en kategori du er medlem av, og sett **Status** til **I kø**. Klikk deretter på **Saker** > **Hent neste sak i køen**.
 
-<!-- Referenced links -->
+
 [2]: category/index.md

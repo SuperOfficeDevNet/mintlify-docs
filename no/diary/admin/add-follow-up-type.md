@@ -53,7 +53,7 @@ Oppfølgingstyper defineres i **Lister**-bildet i Innstillinger og vedlikehold. 
 > [!TIP]
 > Du kan opprette nye alternativer i tillegg til de forhåndsdefinerte ved å legge til forekomster på listen **Oppfølging - Hensikt** i Innstillinger og vedlikehold.
 
-<!-- Referenced links -->
+
 [2]: ../../saint/learn/index.md
 
-<!-- Referenced images -->
+

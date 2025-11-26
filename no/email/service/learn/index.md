@@ -128,9 +128,9 @@ Hvis du klikker på en av meldingene i denne fanen, vil **Utgående SMS** vises.
 * [Slette e-postkasser][2]
 * [E-postfiltre][3]
 
-<!-- Referenced links -->
+
 [1]: create-mailbox.md
 [2]: delete-mailbox.md
 [3]: email-filters/index.md
 
-<!-- Referenced images -->
+

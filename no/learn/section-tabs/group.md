@@ -22,7 +22,7 @@ Gruppering er personlig. Kolonnene du bruker til å gruppere informasjonen din, 
 
 Lær hvordan du tilpasser visninger ved å konfigurere kolonner med denne korte videoen, eller les instruksjonene nedenfor:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/a3AC64pheok]
 
 (videolengde - 1:43)
@@ -57,9 +57,9 @@ Nå vises en ny rad over kolonneoverskriftene.
 
 1. Hvis du vil fjerne en grupperingskolonne du har valgt, klikker du X bak kolonnen. Listen over poster i arkivet oppdateres umiddelbart.
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+
 [img5]: ../../../media/loc/en/learn/archive-enable-grouping.png
 [img6]: ../../../media/loc/en/learn/getstarted-archives-groupingon.png
 [img7]: ../../../media/loc/en/learn/getstarted-archives-selectgroup.png

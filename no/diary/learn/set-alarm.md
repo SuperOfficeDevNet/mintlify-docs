@@ -34,10 +34,10 @@ For videomøter vises en varsling fra møtesystemleverandøren (som Microsoft Te
 > [!NOTE]
 > Oppfølgingspåminnelser (alarmer) er ikke det samme som [aktivitetsvarsler][2], som gjelder nye eller oppdaterte møteinvitasjoner som vises i varslingsruten inne i SuperOffice.
 
-<!-- Referenced links -->
+
 [1]: create-follow-up.md
 [2]: ../../learn/basics/notifications.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../media/loc/en/diary/set-alarm-in-header.png
 [img4]: ../../../media/loc/en/diary/edge-meeting-alarm.png

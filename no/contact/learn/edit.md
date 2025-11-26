@@ -34,8 +34,8 @@ language: no
 
 * [Masseredigering av personopplysninger][8]
 
-<!-- Referenced links -->
+
 [8]: ../../learn/basics/bulk-update.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/contact/edit-person.png

@@ -126,7 +126,7 @@ Det finnes tre måter å lagre søkeresultatene på som utvalg:
 
 Se denne videoen, eller følg trinnene nedenfor for å lære hvordan du kan opprette et søk og lagre det som et dynamisk utvalg:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/b1YsCcHwz-o]
 
 (videolengde - 1:26)
@@ -138,7 +138,7 @@ Se denne videoen, eller følg trinnene nedenfor for å lære hvordan du kan oppr
 * [Opprette et søk og lagre det som et utvalg][7]
 * [Utvide søket ved hjelp av ELLER-funksjonen][1]
 
-<!-- Referenced links -->
+
 [1]: find-screen.md
 [2]: freetext-search.md
 [3]: in-navigator.md
@@ -148,7 +148,7 @@ Se denne videoen, eller følg trinnene nedenfor for å lære hvordan du kan oppr
 [7]: ../selection/learn/create.md
 [8]: in-dialogs.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png
 [img2]: ../../../media/loc/en/search-options/find-screen.png
 [img3]: ../../../media/loc/en/search-options/freetext-search-box.png

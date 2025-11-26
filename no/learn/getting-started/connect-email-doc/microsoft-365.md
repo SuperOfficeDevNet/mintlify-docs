@@ -43,6 +43,6 @@ Velg et av følgende alternativer:
 
 * [!include[Synchronizer](includes/why-synchronizer.md)]
 
-<!-- Referenced links -->
+
 [1]: ../../../email/inbox/learn/setup.md
 [3]: ../../../../../integrations/sharepoint-documents/set-up.md

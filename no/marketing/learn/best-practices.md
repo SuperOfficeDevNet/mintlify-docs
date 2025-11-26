@@ -96,7 +96,7 @@ Klikk på **Mobil** (<i class="ph ph-device-mobile" aria-hidden="true"></i>) i d
 
 Hvis du vil justere mobilspesifikke innstillinger for en melding, velger du en seksjon i meldingen og klikker **Mobil** i sidepanelet. Du kan nå definere formateringen for visning av meldingen på mobile enheter, og velge hvilke elementer (for eksempel bilder) som skal utelates fra mobile enheter.
 
-<!-- Referenced links -->
+
 [1]: ../recipients/learn/index.md#selections
 [2]: ../recipients/learn/manage-bounces.md
 [3]: ../editor/learn/add-unsubscribe-link.md
@@ -107,4 +107,4 @@ Hvis du vil justere mobilspesifikke innstillinger for en melding, velger du en s
 [10]: https://mailtrap.io/
 [11]: https://putsmail.com/
 
-<!-- Referenced images -->
+

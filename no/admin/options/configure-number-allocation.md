@@ -87,5 +87,5 @@ Tabellen nedenfor viser hvilke konsekvenser ulike kombinasjoner av verdiene **Ti
 
 * [Angi standardverdier for nye dokumentmaler][3]
 
-<!-- Referenced links -->
+
 [3]: ../../document/templates/admin/document-template-defaults.md

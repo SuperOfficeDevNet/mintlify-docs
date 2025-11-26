@@ -24,6 +24,6 @@ language: no
 
 1. Klikk på **OK** for å bekrefte. E-postfilteret fjernes fra SuperOffice Service.
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+

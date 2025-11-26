@@ -102,8 +102,8 @@ Feltene nedenfor tilsvarer feltene på firmakortet.
 * E-post: Skriv inn hele eller deler av en e-postadresse til firmaet.
 * Tilfredsstill også: Her kan du angi ytterligere [søkekriterier][1].
 
-<!-- Referenced links -->
+
 [1]: ../../search-options/learn/search-criteria.md
 [2]: update-user.md#delete
 
-<!-- Referenced images -->
+

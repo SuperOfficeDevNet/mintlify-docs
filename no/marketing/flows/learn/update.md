@@ -106,7 +106,7 @@ Gå til fanen **Flyt** for å sjekke om det er noen på grenen. Hvis ja, gå til
 * Fjern deltakere fra flyten ved å bruke **Oppgave**-menyen.
 * Vent til grenen "tømmes". Du må kanskje oppdatere betingelsen til grenen for å hindre at nye deltakere kommer inn.
 
-<!-- Referenced links -->
+
 [1]: run-pause-end.md
 [2]: create.md
 [3]: create.md#add-step

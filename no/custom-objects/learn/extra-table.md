@@ -23,7 +23,7 @@ SuperOffice Development Tools-lisensen gir deg muligheten til å opprette ekstra
 
 ## Slik får du tilgang
 
-<!-- markdownlint-disable MD051 -->
+
 ### [Klassisk](#tab/extra-table-old)
 
 Tredjepartstabeller er umiddelbart tilgjengelige for standard CRUD-operasjoner i SuperOffice Service. Du må sette opp et webpanel for å få tilgang til dem fra Salgsklienten.
@@ -71,7 +71,7 @@ Når du ser resultatene for et spesifikt element i oversikten **Tilpassede objek
 Den nye [SalesLoadCustomObject][6]-triggeren blir kalt før et tilpasset objekt-skjermbilde lastes. Bruk den til å sette standardverdier i felter og definere forretningsregler.
 
 ***
-<!-- markdownlint-restore -->
+
 
 ## Tabeller-bilde
 
@@ -112,7 +112,7 @@ Prefikser sikrer at det du oppretter ikke skaper konflikt med fremtidige SuperOf
 * [Egendefinerte skjermer][1]
 * [Legge til trigger][5]
 
-<!-- Referenced links -->
+
 [1]: ../../ui/blogic/learn/index.md
 [2]: ../admin/create-extra-table.md
 [3]: ../admin/create-extra-field.md
@@ -120,7 +120,7 @@ Prefikser sikrer at det du oppretter ikke skaper konflikt med fremtidige SuperOf
 [5]: ../../../en/automation/trigger/create-trigger-script.md
 [6]: ../../../en/automation/trigger/reference/CRMScript.Event.Trigger.yml#CRMScript_Event_Trigger_SalesLoadCustomObject
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/automation/custom-object-dashboard.png
 [img2]: ../../../media/loc/en/automation/find-custom-object-relation.png
 [img3]: ../../../media/loc/en/automation/find-screen-with-custom-objects.png
@@ -129,4 +129,4 @@ Prefikser sikrer at det du oppretter ikke skaper konflikt med fremtidige SuperOf
 [img6]: ../../../media/loc/en/automation/search-inventory.png
 [img7]: ../../../media/loc/en/automation/preview-inventory-results.png
 
-<!-- Referenced images -->
+

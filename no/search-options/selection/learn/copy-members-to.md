@@ -39,8 +39,8 @@ siden et dynamisk utvalg ikke inneholder noen fysiske personer, men bare et sett
 
 Hvis du vil [opprette en kopi][3] av et dynamisk utvalg, kan du bruke funksjonen **Kopier utvalget** i fanen **Oppgave**.
 
-<!-- Referenced links -->
+
 [2]: create.md
 [3]: create.md#copy
 
-<!-- Referenced images -->
+

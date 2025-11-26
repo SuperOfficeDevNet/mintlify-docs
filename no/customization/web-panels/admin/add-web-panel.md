@@ -104,7 +104,7 @@ I Service kalles webpaneler for **ekstra nettleserfaner**. Du kan legge til samm
 * [Legg til et oppgavemenyvalg][1]
 * [Grunnprogrammer og URL-parametere][5]
 
-<!-- Referenced links -->
+
 [1]: ../../admin/add-items-to-task-menu.md
 [2]: url-encoding.md
 [3]: ../../../localization/learn/translate-fields.md
@@ -114,4 +114,3 @@ I Service kalles webpaneler for **ekstra nettleserfaner**. Du kan legge til samm
 [7]: ../../../admin/lists/user-group-filtering.md
 [8]: index.md
 
-<!-- Referenced images -->

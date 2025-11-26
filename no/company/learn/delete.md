@@ -28,7 +28,7 @@ language: no
 * [Slå sammen firmaer][4]
 * [Slett oppføringer permanent][3]
 
-<!-- Referenced links -->
+
 [2]: ../../learn/basics/deleting-elements.md#restore
 [3]: ../../security/privacy/learn/mass-delete.md
 [4]: merge-companies.md

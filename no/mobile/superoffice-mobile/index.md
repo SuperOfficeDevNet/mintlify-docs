@@ -88,7 +88,7 @@ Allerede logget inn? [Utforsk grensesnittet][4] eller [tilpass innstillingene di
 > [!NOTE]
 > Denne siden er oversatt til norsk, men hele brukerhåndboken er kun tilgjengelig på engelsk.
 
-<!-- Refererte lenker -->
+
 [1]: ../../../en/mobile/superoffice-mobile/login.md
 [2]: ../../../en/mobile/superoffice-mobile/set-up-email.md
 [3]: ../../../en/mobile/superoffice-mobile/caller-id.md
@@ -97,5 +97,5 @@ Allerede logget inn? [Utforsk grensesnittet][4] eller [tilpass innstillingene di
 [16]: https://apps.apple.com/us/app/superoffice-mobile-crm/id1516435957
 [17]: https://play.google.com/store/apps/details?id=no.superoffice.mobile&hl=no&gl=US&pli=1
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/mobile/3-screens.png

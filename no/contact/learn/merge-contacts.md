@@ -54,9 +54,9 @@ Hvis samme person er registrert under forskjellige navn eller firmaer i SuperOff
 * [Slå sammen firmaer][1]
 * [Gjenopprett slettede firmaer og personer][2]
 
-<!-- Referenced links -->
+
 [1]: ../../company/learn/merge-companies.md
 [2]: ../../learn/basics/deleting-elements.md#restore
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/contact/merge-contacts.png

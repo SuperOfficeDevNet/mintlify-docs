@@ -192,7 +192,7 @@ Disse meldingene kan vises på følgende steder:
 * [Lage ordre][8]
 * [Sett opp produktene og prisene dine i Innstillinger og vedlikehold][9]
 
-<!-- Refererte lenker -->
+
 [1]: ../create.md
 [5]: add-alternative.md
 [6]: create-quote-document.md
@@ -200,6 +200,6 @@ Disse meldingene kan vises på følgende steder:
 [8]: place-order.md
 [9]: ../../admin/quote/price-list-and-products.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../../media/loc/en/sale/edit-quote-dialog-empty.png
 [img2]: ../../../../media/loc/en/sale/add-edit-product-dialog.png

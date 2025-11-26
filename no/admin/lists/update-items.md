@@ -50,7 +50,7 @@ Du kan endre navnet på eller beskrivelsen av en tidligere opprettet forekomst i
 
 Se denne videoen for å finne ut hvordan du kan redigere listeforekomster i SuperOffice CRM (videolengde – 2.05):
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/2fIAT0-EjX0]
 
 ### Eksempel – tilpasse abonnementstyper
@@ -63,7 +63,7 @@ Når en person registreres i SuperOffice CRM, kan vedkommende abonnere på marke
 
 Se denne videoen for å finne ut hvordan du legger til og redigerer abonnementstyper (videolengde – 2.00):
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/tBtLjFKnBj4]
 
 ## <a id="delete"></a>Slette forhåndsdefinerte og brukerdefinerte forekomster
@@ -84,10 +84,10 @@ Se denne videoen for å finne ut hvordan du legger til og redigerer abonnementst
 * [Tilpasse personvernlister][3]
 * [Tilpasse salgslistene dine][4]
 
-<!-- Referenced links -->
+
 [2]: specialized-lists.md
 [3]: ../../security/privacy/admin/add-source.md
 [4]: ../../sale/admin/sale-type.md
 [5]: restore.md
 
-<!-- Referenced images -->
+

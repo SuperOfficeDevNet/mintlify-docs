@@ -156,9 +156,9 @@ Hvis retningspilene forblir nedtonet etter at du har valgt et SuperOffice-felt, 
 
 Hold musepekeren over pilen for å vise en forklaring.
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+
 [img1]: ../../../media/loc/en/erp/erp-connection-settings.png
 [img2]: ../../../media/loc/en/erp/configure-field-mapping.png
 [img3]: ../../../media/loc/en/erp/list-of-default-values.png

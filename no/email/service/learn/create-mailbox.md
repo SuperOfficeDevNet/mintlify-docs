@@ -90,7 +90,7 @@ Du kan opprette en postkasse som skal brukes til å importere e-post til SuperOf
 
 * [Slette e-postkasser][1]
 
-<!-- Referenced links -->
+
 [1]: delete-mailbox.md
 [2]: ../../../ai/learn/text-analysis.md
 [3]: ../../../ai/learn/categorization.md

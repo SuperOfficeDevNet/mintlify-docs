@@ -74,7 +74,7 @@ Når du har lagret utvalget, kan du [redigere det][3] for å endre både kombina
 > [!NOTE]
 > Dersom du bare vil sammenligne firmaer som er knyttet mot disse to utvalgene, merker du av for **Sammenligne bare firmaer**.
 
-<!-- Referenced links -->
+
 [1]: create.md
 [3]: update/index.md
 [2]: ../../../learn/basics/fav.md

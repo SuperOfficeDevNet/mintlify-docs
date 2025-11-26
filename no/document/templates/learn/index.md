@@ -60,7 +60,7 @@ For å sikre at du kan kommunisere med kundene dine på deres eget språk (der d
 * [Malvariabler (Service)][8]
 * [Tilbudsmaler][7]
 
-<!-- Referenced links -->
+
 [1]: template-variables.md
 [4]: create.md
 [2]: ../admin/update-template.md
@@ -69,4 +69,4 @@ For å sikre at du kan kommunisere med kundene dine på deres eget språk (der d
 [7]: quote-templates.md
 [8]: ../../../knowledge-base/learn/reply-templates/template-variables.md
 
-<!-- Referenced images -->
+

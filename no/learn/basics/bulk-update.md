@@ -101,6 +101,6 @@ Du ønsker å rydde opp i alle de "gamle" prosjektene som ikke er satt til å fu
 * [Hvordan fyller jeg ut feltene "Hjemmel", "Samtykkekilde" og "Formål" for mange personer i SuperOffice CRM samtidig?][3]
 * [Massesletting av personer og firmaer fra utvalg][1]
 
-<!-- Referenced links -->
+
 [1]: ../../security/privacy/learn/mass-delete.md
 [3]: ../../../en/security/privacy/learn/edit-legal-base.md#bulk

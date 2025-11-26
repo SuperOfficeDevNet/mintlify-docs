@@ -128,7 +128,7 @@ I tillegg til malene som er opprettet av deg og kollegene dine, har du tilgang t
 3. Velg filen du vil importere.
 4. Klikk på **OK**. Meldingsmalen er lagt til.
 
-<!-- Referenced links -->
+
 [1]: ../mailing/learn/create/index.md
 [2]: ../editor/learn/edit-paragraph.md
 [3]: ../editor/learn/add-merge-tag.md
@@ -136,5 +136,5 @@ I tillegg til malene som er opprettet av deg og kollegene dine, har du tilgang t
 [5]: ../editor/learn/index.md#old
 [6]: ../editor/learn/add-unsubscribe-link.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../media/loc/en/marketing/work-with-templates.png

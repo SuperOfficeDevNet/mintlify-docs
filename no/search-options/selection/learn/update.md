@@ -60,8 +60,8 @@ Når du har lagt til medlemmer i et utvalg, gjelder følgende:
 
 * [Legge til og fjerne medlemmer i et statisk utvalg][2]
 
-<!-- Referenced links -->
+
 [1]: ../../learn/find-screen.md
 [2]: add-remove-members-static.md
 
-<!-- Referenced images -->
+

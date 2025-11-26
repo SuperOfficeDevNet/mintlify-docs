@@ -80,6 +80,6 @@ Forsøk på å sende fra et domene som ikke har en gyldig SPF-oppføring, vil ut
 
 [!include[Hvordan bekrefte og sende en utsendelse](includes/step-5-confirm-and-send-mailing.md)]
 
-<!-- Referenced links -->
+
 [2]: ../../admin/add-domain.md
 [4]: ../../../learn/create-folder.md

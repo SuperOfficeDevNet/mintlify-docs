@@ -37,9 +37,9 @@ Flettefelt kommer i mange former: de kan være kundens fornavn, firmanavn, hilse
 > [!TIP]
 > Før du sender ut en utsendelse, bør du [teste at kundedataene er riktig satt inn i meldingen][1].
 
-<!-- Referenced links -->
+
 [1]: ../../mailing/learn/create/send-test-email.md
 [2]: ../../../knowledge-base/learn/reply-templates/template-variables.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../../media/loc/en/marketing/merge-tags.png

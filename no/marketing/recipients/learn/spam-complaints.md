@@ -45,6 +45,6 @@ Du kan eksportere listen for videre behandling.
 2. Velg **Handlinger** > **Eksporter**.
 3. Velg et eksportformat. Eksportfilen vises nederst i nettleseren. Den finnes også i nedlastingsmappen.
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+

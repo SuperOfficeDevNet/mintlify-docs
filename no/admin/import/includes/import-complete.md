@@ -1,4 +1,4 @@
-<!-- markdownlint-disable-file MD041 -->
+
 When the import finishes, two lists are displayed:
 
 * New companies and contacts that were imported.

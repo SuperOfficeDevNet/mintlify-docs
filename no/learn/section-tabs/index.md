@@ -55,7 +55,7 @@ For å redusere innlastingstiden vises bare et angitt antall oppføringer når d
 * [Detaljkortet Salg][16]
 * [Detaljkort basert på ekstrafeltrelasjoner][20]
 
-<!-- Referenced links -->
+
 [1]: ../getting-started/preferences.md
 [3]: group.md
 [4]: filter.md
@@ -69,4 +69,4 @@ For å redusere innlastingstiden vises bare et angitt antall oppføringer når d
 [16]: sales-tab.md
 [20]: ../../custom-objects/learn/extra-field.md#relation
 
-<!-- Referenced images -->
+

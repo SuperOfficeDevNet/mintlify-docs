@@ -166,7 +166,7 @@ Dette fungerer på samme måte som [masseoppdatering][10].
 
 * [Lær om aktiviteter][11]
 
-<!-- Referenced links -->
+
 [1]: content.md
 [10]: ../../../learn/basics/bulk-update.md
 [11]: ../../../learn/basics/activity.md

@@ -79,7 +79,7 @@ language: no
 | **Hjelpefiler (F1)** | Få direkte tilgang til brukerveiledninger. |
 | **Om** | Vis programvareinformasjon, inkludert versjon, brukerinformasjon og kunde-ID. |
 
-<!-- Referenced links -->
+
 [1]: ../../basics/external-applications-and-url-addresses.md
 [3]: ../../basics/deleting-elements.md#restore
 [8]: ../../basics/duplicates.md
@@ -92,4 +92,4 @@ language: no
 [15]: ../../basics/creating-shortcuts-to-entries-in-crm.md
 [17]: ../../../sale/learn/sales-targets/index.md
 
-<!-- Referenced images -->
+

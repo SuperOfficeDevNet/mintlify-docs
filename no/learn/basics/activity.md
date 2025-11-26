@@ -102,7 +102,7 @@ Hvis en aktivitet er markert med rød skrift, betyr det at den planlagte datoen 
 * [Skrive en e-post][5]
 * [Detaljkortet Aktiviteter][18] (Aktivitetsfanen)
 
-<!-- Referenced links -->
+
 [1]: ../../diary/learn/follow-ups.md
 [2]: ../getting-started/preferences.md
 [3]: ../../marketing/mailing/learn/index.md
@@ -116,6 +116,6 @@ Hvis en aktivitet er markert med rød skrift, betyr det at den planlagte datoen 
 [17]: ../section-tabs/filter.md
 [18]: ../section-tabs/activities-tab.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../media/loc/en/diary/activities-detail.png
 [img4]: ../../../media/loc/en/learn/activities-filter.png

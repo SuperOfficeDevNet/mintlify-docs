@@ -42,5 +42,5 @@ redirect_from:
 1. I skjermbildet **Egenskaper for FAQ-oppføring** klikker du på **Slett**-knappen nederst på skjermen.
 1. Klikk på **OK** for å bekrefte. FAQ-oppføringen er fjernet fra SuperOffice.
 
-<!-- Referenced links -->
+
 [1]: create.md

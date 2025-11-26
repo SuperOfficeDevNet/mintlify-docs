@@ -34,7 +34,6 @@ index: true
 
 * [Velg hvilke tidssoner som skal vises][1]
 
-<!-- Referenced links -->
+
 [1]: select-time-zones.md
 
-<!-- Referenced images -->

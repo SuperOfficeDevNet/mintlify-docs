@@ -118,9 +118,9 @@ Klikk på hengelåsikonet foran URL-en og fjern den blokkerte tillatelsen.
 
 ***
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+
 [img5]: ../../../media/loc/en/learn/core-notifications.png
 [img11]: ../../../media/loc/en/learn/system-notification-chrome.png
 [img12]: ../../../media/loc/en/learn/system-notification-edge.png

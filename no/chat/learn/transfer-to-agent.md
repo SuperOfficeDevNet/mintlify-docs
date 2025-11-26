@@ -47,8 +47,8 @@ Hvis en agent overfører en chatsamtale til deg, vises samtalen automatisk i cha
 
 * [Svare på en chatsamtale og koble den til en person][2]
 
-<!-- Referenced links -->
+
 [1]: create-request.md
 [2]: respond.md
 
-<!-- Referenced images -->
+

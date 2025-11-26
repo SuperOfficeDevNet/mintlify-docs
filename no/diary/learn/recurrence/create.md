@@ -48,11 +48,11 @@ language: no
 * [Redigere repeterende oppfølginger][1]
 * [Stoppe repeterende oppfølginger][3]
 
-<!-- Referenced links -->
+
 [1]: ../edit-follow-up.md#repeat
 [2]: ../create-follow-up.md
 [3]: stop.md
 
-<!-- Referenced images -->
+
 [img7]: ../../../../media/loc/en/diary/recurrence-selected-dates.png
 [img8]: ../../../../media/loc/en/diary/suggested-pattern.png

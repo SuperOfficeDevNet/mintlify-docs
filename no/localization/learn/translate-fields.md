@@ -35,5 +35,5 @@ Ikonet **Oversett** (<i class="ph ph-translate" aria-hidden="true"></i>) ved sid
 
 [Endre språkinnstillingene][1] under <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** og kontroller at oversettelsen vises for de relevante språkene.
 
-<!-- Referenced links -->
+
 [1]: ../../learn/getting-started/change-language.md

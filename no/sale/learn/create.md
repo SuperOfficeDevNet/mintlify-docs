@@ -55,7 +55,7 @@ Følgende felter er tilgjengelige i salgskortet. Noen fylles inn automatisk, men
 > [!NOTE]
 > Felt og oppsett kan variere basert på **Skjermdesigner**-konfigurasjoner og andre UI-tilpasninger.
 
-<!-- markdownlint-disable MD051 -->
+
 ### [Salg-fanen](#tab/sale)
 
 * **Tittel:** Obligatorisk felt for å identifisere salget.
@@ -93,7 +93,7 @@ Verdier for *Konkurrent* og *Kreditert* defineres i Innstillinger og vedlikehold
 * **Notat-fanen:** Legg til fritekstnotater for å spore ekstra informasjon.
 
 ***
-<!-- markdownlint-enable MD051 -->
+
 
 ## Relatert innhold
 
@@ -101,7 +101,7 @@ Verdier for *Konkurrent* og *Kreditert* defineres i Innstillinger og vedlikehold
 * [Oppdater et salg][1]
 * [Arbeide med salgsguider][2]
 
-<!-- Refererte lenker -->
+
 [1]: update.md
 [2]: sales-guides.md
 [4]: quote/create.md
@@ -109,5 +109,5 @@ Verdier for *Konkurrent* og *Kreditert* defineres i Innstillinger og vedlikehold
 [11]: ../../learn/basics/notes.md
 [12]: ../../custom-objects/learn/more-tab.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/sale/create-sale.png

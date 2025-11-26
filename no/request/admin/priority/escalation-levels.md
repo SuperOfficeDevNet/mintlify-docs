@@ -81,6 +81,6 @@ For hver **prioritet** kan du definere ett eller flere eskaleringsnivåer, slik 
 * [Opprett prioritet][1]
 * [Slett prioritet][2]
 
-<!-- Refererte lenker -->
+
 [1]: create.md
 [2]: delete.md

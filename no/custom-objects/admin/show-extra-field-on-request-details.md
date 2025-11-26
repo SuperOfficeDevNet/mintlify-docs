@@ -16,7 +16,7 @@ index: true
 
 Scenario: Du har lagt til et ekstrafelt for firma (`contact` tabellen) som indikerer om et firma har en støtteavtale, og du ønsker å vise denne informasjonen når du ser på en sak.
 
-<!-- markdownlint-disable-file MD051 -->
+
 ## Trinn
 
 ### [I den nye skjermen for saker med Skjermdesigner](#tab/screen-designer)
@@ -64,5 +64,5 @@ Alle brukere som har denne rollen, vil nå kunne se det ekstra feltet i fanen **
 
 ***
 
-<!-- Referenced links -->
+
 [1]: ../../../en/ui/screen-designer/configurable-screens/working-with-fields.md

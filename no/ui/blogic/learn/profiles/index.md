@@ -40,9 +40,9 @@ Ved hjelp av profiler kan SuperOffice Service tilpasses etter behovene til enkel
 * [Felles profiler][2]
 * [Globale profiler][3]
 
-<!-- Referenced links -->
+
 [1]: personal.md
 [2]: common.md
 [3]: global.md
 
-<!-- Referenced images -->
+

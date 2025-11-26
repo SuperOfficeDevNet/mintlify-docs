@@ -70,5 +70,5 @@ Er du klar til å oppdage kraften i SuperOffice CRM og lære mer? Start fra begy
 > [!NOTE]
 > Har du en annen CRM-versjon enn det som beskrives i denne guiden? Velg **F1** i CRM-systemet for hjelpeemner tilpasset din SuperOffice-versjon og språk.
 
-<!-- Refererte lenker -->
+
 [1]: ../customization/screen-designer/admin/index.md

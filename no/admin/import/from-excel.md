@@ -45,7 +45,7 @@ Før du starter importen, må du [klargjøre Excel-filen][1]. Sjekkliste:
 
 Se denne videoen, eller følg trinnene nedenfor for å finne ut hvordan du importerer personene dine til SuperOffice CRM ved hjelp av importmalen vår (videolengde – 4.02):
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/dVkCfpOkNl8]
 
 ### Trinn
@@ -103,7 +103,7 @@ Du må koble alle de påkrevde SuperOffice-feltene til hver sin kolonne for å g
 * [Importere fra Gmail][5]
 * [Importere fra ERP][6]
 
-<!-- Referenced links -->
+
 [1]: create-spreadsheet.md
 [2]: index.md
 [3]: settings.md
@@ -111,5 +111,5 @@ Du må koble alle de påkrevde SuperOffice-feltene til hver sin kolonne for å g
 [5]: from-gmail.md
 [6]: from-erp.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/icons/admin/import-excel-small.png

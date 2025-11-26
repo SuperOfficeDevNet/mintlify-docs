@@ -86,8 +86,7 @@ Webpaneler laster innhold dynamisk basert på CRM-kontekst og URL-en som er defi
 * [Legg til webpanel][1]
 * [Bygge webpaneler][2]
 
-<!-- Referenced links -->
+
 [1]: add-web-panel.md
 [2]: ../../../../en/customization/web-panels/dev/index.md
 
-<!-- Referenced images -->

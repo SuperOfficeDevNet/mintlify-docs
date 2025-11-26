@@ -86,7 +86,7 @@ Etter at utsendelsen er sendt, er det alltid spennende å se hvor godt den har g
 * Se [hvem som har klikket på de sporbare koblingene][14] du satte inn i meldingen.
 * Administrere e-postadresser som ble returnert på grunn av permanente feil, eller som har blitt [returnert][13] flere ganger.
 
-<!-- Referenced links -->
+
 [1]: create/index.md
 [3]: create/send-test-email.md
 [2]: view-statistics.md
@@ -102,4 +102,4 @@ Etter at utsendelsen er sendt, er det alltid spennende å se hvor godt den har g
 [5]: https://www.superoffice.co.uk/resources/articles/integrated-web-forms/
 [20]: https://www.superoffice.com/blog/email-marketing-strategy/
 
-<!-- Referenced images -->
+

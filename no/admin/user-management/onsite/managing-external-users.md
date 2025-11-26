@@ -59,5 +59,5 @@ Merk personen du vil fjerne påloggingen for, og klikk på **Fjern pålogging**.
 
 Med listeboksen **Vis** nede til høyre i dialogboksen kan du filtrere listen over personer etter brukerstatus.
 
-<!-- Referenced links -->
+
 [1]: ../../../learn/basics/history.md

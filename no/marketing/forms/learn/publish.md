@@ -123,7 +123,7 @@ Skjemaer kan deaktiveres manuelt, eller deaktiveres automatisk på en bestemt da
 * [Oversikt over konverteringssporing][5]
 * [Konfigurer UTM-sporing][6] - i Innstillinger og vedlikehold
 
-<!-- Referenced links -->
+
 [2]: view-statistics.md
 [3]: process-submissions.md
 [4]: ../../utm/learn/parameters.md
@@ -131,6 +131,6 @@ Skjemaer kan deaktiveres manuelt, eller deaktiveres automatisk på en bestemt da
 [6]: ../../utm/admin/set-up.md
 [7]: ../../../knowledge-base/learn/reply-templates/template-variables.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../../media/loc/en/marketing/form-publish.png
 [img4]: ../../../../media/loc/en/marketing/utm-builder.png

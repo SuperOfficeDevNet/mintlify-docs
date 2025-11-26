@@ -122,7 +122,7 @@ Du kan selv velge graden av samsvar mellom saken fra kunden og FAQ-oppføringene
 * [Opprette ny språkversjon av svarmal][5]
 * [Rediger svarmaler][6]
 
-<!-- Referenced links -->
+
 [1]: ../../../request/admin/category/index.md
 [4]: ../../../request/learn/reply.md
 [2]: ../manage-folders.md

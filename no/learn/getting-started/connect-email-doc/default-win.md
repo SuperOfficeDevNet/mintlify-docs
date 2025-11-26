@@ -43,7 +43,7 @@ Velg et av følgende alternativer:
 
 * [!include[Synchronizer](includes/why-synchronizer.md)]
 
-<!-- Referenced links -->
+
 [1]: ../../../email/inbox/learn/setup.md
 [2]: ../../../../../integrations/webtools/install.md
 [9]: default-mac.md

@@ -60,7 +60,7 @@ Funksjonaliteten er lik på tvers av støttede posttyper: Du kan dra kort, åpne
 
   ![Åpen oppgavemeny for et salg i tavlevisning som viser tilgjengelige alternativer -screenshot][img5]
 
-<!-- markdownlint-disable-next-line MD013 -->
+
 ## Tilpass tavleoppsett <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
 
 ### Grupper og undergrupper
@@ -239,7 +239,7 @@ Bruk gruppering kreativt for å organisere og handle effektivt på data.
 * [Konfigurer prosjektstatus][18]
 * [Konfigurer prosjekttyper][19]
 
-<!-- Refererte lenker -->
+
 [1]: create.md
 [2]: index.md
 [11]: ../../../learn/getting-started/main-screen/side-panel.md
@@ -252,7 +252,7 @@ Bruk gruppering kreativt for å organisere og handle effektivt på data.
 [18]: ../../../project/admin/project-status.md
 [19]: ../../../project/admin/project-type.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png
 [img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png

@@ -22,7 +22,7 @@ Vanlige søk hjelper deg å komme i gang og opprette ditt eget søk etter CRM-da
 
 Se denne videoen for å lære hvordan du gjør et vanlig søk og endrer det ved å legge til nye søkekriterier, eller følg den trinn-for-trinn-veiledningen nedenfor:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/gx-vXm-b_7g]
 
 (videolengde – 3:01)
@@ -165,7 +165,7 @@ Når du åpner skjermbildet **Finn**, inneholder den standard søkekriterier ell
 * [Finn-skjermbildet][1]
 * [Utvalg][4]
 
-<!-- Referenced links -->
+
 [1]: find-screen.md
 [2]: in-navigator.md
 [3]: ../../saint/learn/index.md

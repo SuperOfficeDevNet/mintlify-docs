@@ -57,7 +57,7 @@ I trinnet **Innhold** skriver du innholdet i SMS-en.
 
 [!include[Hvordan bekrefte og sende en utsendelse](includes/step-5-confirm-and-send-mailing.md)]
 
-<!-- Referenced links -->
+
 [1]: ../../../../document/templates/variables/for-selected-contact.md
 [2]: ../../../editor/learn/index.md#variables
 [9]: ../../../learn/create-folder.md

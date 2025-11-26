@@ -18,7 +18,7 @@ Du kan tilpasse kolonnene i detaljkortene for å vise nøyaktig den informasjone
 
 Ved å konfigurere kolonner kan du tilpasse vist informasjon og arbeide med CRM-data slik du trenger. Lær hvordan du konfigurerer kolonner med denne videoen, eller følg trinnene nedenfor:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/IjlPSN-u0MA]
 
 (videolengde - 1:44)
@@ -83,12 +83,12 @@ Du kan angi at kolonnebredder skal justeres automatisk i henhold til innholdet i
 * [Filtrer detaljkort][1]
 * [Eksporter data fra detaljkort][2]
 
-<!-- Referenced links -->
+
 [1]: filter.md
 [2]: export-archives.md
 [3]: group.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../media/loc/en/learn/section-tab-sum-amount.png
 [img3]: ../../../media/loc/en/learn/group-sales-by-status.png
 [img5]: ../../../media/loc/en/sale/currency-adjusted-sale-amount-calculation.png

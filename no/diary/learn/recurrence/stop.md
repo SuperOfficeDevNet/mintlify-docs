@@ -46,9 +46,9 @@ Du kan også stoppe en gjentakende oppfølging ved å velge den i dagboken og sl
 * [Opprette repeterende oppfølging][1]
 * [Redigere repeterende oppfølging][2]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [2]: ../edit-follow-up.md#repeat
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png

@@ -132,14 +132,14 @@ Kontakt SuperOffice-administratoren for å få et nytt passord.
 * [Alternativer på menyen Personlige innstillinger][6]
 * [Hva gjør jeg når en nyopprettet bruker ikke kan logge på SuperOffice CRM?][3]
 
-<!-- Referenced links -->
+
 [1]: https://community.superoffice.com/en/support-faqs/
 [2]: ../../admin/user-management/index.md
 [3]: ../../admin/user-management/add-associate.md
 [6]: preferences.md#options
 [7]: ../../../en/online/identity/single-sign-on/index.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../media/loc/en/learn/create-password-strenght-indicator.png
 [img4]: ../../../media/loc/en/learn/login-screen.png
 [img5]: ../../../media/loc/en/learn/activate-now-email.png

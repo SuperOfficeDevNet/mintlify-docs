@@ -67,8 +67,8 @@ Du kan nå åpne tabellen i brukergrensesnittet for å legge til innhold i den *
 
 I SuperOffice CRM kan du opprette nettleserfaner som kan inneholde tabellinformasjon. For å angi de relevante tilgangsrettighetene må brukeren tilhøre en rolle som har de funksjonelle rettighetene **Liste opp tabeller** og **Rediger tabeller**.
 
-<!-- Referenced links -->
+
 [1]: create-extra-field.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png

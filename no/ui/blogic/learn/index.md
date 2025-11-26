@@ -48,7 +48,7 @@ Her finner du de avanserte alternativene i SuperOffice.
 
 Ved å [legge til ekstra tabeller og felt][1] i SuperOffice kan du lagre en mengde informasjon som er viktig for firmaet ditt. Du kan legge til ekstra tabeller og felt i Saker, Personkort og Firmakort.
 
-<!-- Referenced links -->
+
 [1]: ../../../custom-objects/learn/extra-table.md
 [2]: ../../../automation/crmscript/learn/index.md
 [3]: ../../../automation/crmscript/learn/macro-script.md
@@ -63,4 +63,4 @@ Ved å [legge til ekstra tabeller og felt][1] i SuperOffice kan du lagre en meng
 [13]: ../../../customization/admin/package-properties.md
 [14]: ../../../admin/onsite/data-exchange.md
 
-<!-- Referenced images -->
+

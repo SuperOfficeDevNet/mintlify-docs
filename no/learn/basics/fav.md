@@ -66,7 +66,7 @@ Nå kan du raskt få tilgang til oppføringen ved å klikke på <i class="ph ph-
 * [Historikkliste][1]
 * [Sidepaneler][4]
 
-<!-- Referenced links -->
+
 [1]: history.md
 [2]: ../getting-started/main-screen/navigator.md
 [4]: ../getting-started/main-screen/side-panel.md

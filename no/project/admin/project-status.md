@@ -67,7 +67,7 @@ Prosedyren er lik den for [gjenoppretting av en slettet prosjekttype][2].
 * [Redigere en prosjektguide][4]
 * [Flytte prosjekt til neste status][5]
 
-<!-- Refererte lenker -->
+
 [1]: project-type.md
 [2]: project-type.md#restore
 [3]: create-project-guide.md

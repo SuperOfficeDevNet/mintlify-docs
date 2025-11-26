@@ -38,5 +38,5 @@ Historikklisten kan brukes på ulike måter:
 > [!NOTE]
 > Du kan øke eller begrense antall linjer i historikklisten ved å gå til <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** > **Innstillinger** > **Visuelle effekter** > **Historikklistens størrelse** og angi nummeret du trenger (maks 15).
 
-<!-- Referenced links -->
+
 [1]: ../getting-started/preferences.md

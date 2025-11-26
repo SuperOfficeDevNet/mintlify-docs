@@ -114,11 +114,11 @@ Tilsvarende som for oppdeling basert på prosjektmedlemskap.
 
 Suksesskriterier kan også brukes som en tidlig avslutningsbetingelse i flyten, noe som eliminerer behovet for forgrening. Før noen handling utføres på en deltaker i et flyttrinn, blir deltakerens status evaluert på nytt. Denne re-evalueringen tar hensyn til suksesskriteriene. Hvis en deltaker oppfyller suksesskriteriene, oppdateres statusen deres til *Fullført med suksess*, eller de fortsetter som *Aktiv* hvis de skal fullføre flyten. På avslutningstrinnet får deltakere som har oppfylt suksesskriteriene statusen *Fullført med suksess*.
 
-<!-- Referenced links -->
+
 [7]: ../../tracked-links/learn/index.md
 [11]: ../../../search-options/learn/search-criteria.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/split-flow-contact-data-no-exit.png
 [img2]: ../../../../media/loc/en/marketing/split-flow-contact-data-yes-exit.png
 [img3]: ../../../../media/loc/en/marketing/split-flow-company-data-dropdown.png

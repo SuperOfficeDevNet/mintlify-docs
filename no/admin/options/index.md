@@ -33,7 +33,7 @@ I **Systemvalg**-bildet definerer du innstillinger som gjelder for hele systemet
 > [!NOTE]
 > Hvis din organisasjon har lisens for [SAINT][7], inneholder **Systemvalg**-bildet også fanen **Statusovervåking**.
 
-<!-- Referenced links -->
+
 [1]: configure-number-allocation.md
 [2]: change-ui-labels.md
 [3]: ../../search-options/admin/configure-free-text-search.md

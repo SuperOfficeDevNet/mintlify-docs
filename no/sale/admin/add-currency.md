@@ -51,5 +51,5 @@ For å endre standardvalutaen, åpne skjermbildet **Preferanser** og gå til **F
 
 For å tillate registrering av salg i en annen valuta, åpne skjermbildet **Preferanser** og gå til **Fanen Preferanser** > **System** > **Aktiver bruk av valuta**.
 
-<!-- Referenced links -->
+
 [2]: ../../admin/preferences/index.md

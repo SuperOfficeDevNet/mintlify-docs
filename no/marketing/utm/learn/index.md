@@ -73,7 +73,7 @@ flowchart TD
     style Journey fill:#f5faff,stroke:#c0d9f1,stroke-width:1px
     style CRM fill:#f2fff8,stroke:#a8e0c0,stroke-width:1px
 ```
-<!--Alt-tekst: Flyt som viser hvordan første interaksjon og leadsgenerering lagres i SuperOffice CRM etter en skjemainnsending.-->
+
 
 ## Vis registrerte UTM-data i SuperOffice CRM
 
@@ -168,7 +168,7 @@ Bruk UTM-byggeren for SuperOffice-skjemaer for å opprette kampanjekoblinger med
 [7]: ../../../learn/section-tabs/contacts-tab.md
 [8]: ../../../lead/learn/index.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/contact-privacy-utm-data.png
 [img2]: ../../../../media/loc/en/search-options/lead-utm-criteria.png
 [img3]: ../../../../media/loc/en/marketing/lead-in-contact-section-tab.png

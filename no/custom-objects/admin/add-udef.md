@@ -18,7 +18,7 @@ index: true
 
 Se denne videoen for å finne ut hvordan du kan opprette dine egne ekstra felt i SuperOffice CRM (videolengde – 2.51):
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/SpeZVxpxeMM]
 
 ## Trinn
@@ -80,7 +80,7 @@ Fire av hver felttype (Kort tekst, Lang tekst, Nummer, Desimaltall) er søkbare.
 * [Rediger feltegenskaper][4]
 * [Skjermdesigner][11]
 
-<!-- Referenced links -->
+
 [1]: ../learn/udef.md#limit
 [2]: ../learn/udef.md#field-types
 [3]: edit-udef-layout.md
@@ -89,5 +89,5 @@ Fire av hver felttype (Kort tekst, Lang tekst, Nummer, Desimaltall) er søkbare.
 [11]: ../../customization/screen-designer/admin/index.md
 [12]: ../../document/templates/learn/template-variables.md
 
-<!-- Referenced links -->
+
 [img3]: ../../../media/loc/en/custom-objects/add-udef-multi-languages.png

@@ -33,7 +33,7 @@ Før du starter importen, må du [klargjøre Excel-filen][1]. Sjekkliste:
 
 Se denne videoen, eller følg trinnene for å finne ut hvordan du importerer produktene dine til SuperOffice CRM ved hjelp av importmalen vår (videolengde – 4.22):
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/xOTB6j2zzNo]
 
 1. [!include[Open Import](includes/open-import.md)]
@@ -92,13 +92,13 @@ Når importen er fullført, vises en liste over de importerte produktene. Over l
 * [Konfigurere importinnstillinger][3]
 * [Importere fra ERP][6]
 
-<!-- Referenced links -->
+
 [1]: create-spreadsheet.md
 [2]: index.md
 [3]: settings.md
 [6]: from-erp.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/icons/admin/import-excel-small.png
 [img3]: ../../../media/icons/admin/import-preview-icon-product-new.png
 [img4]: ../../../media/icons/admin/import-preview-icon-product-changed.png

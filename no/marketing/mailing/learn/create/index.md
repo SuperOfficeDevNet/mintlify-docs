@@ -80,7 +80,7 @@ I det femte og siste trinnet bekrefter du og sender eller planlegger utsendelsen
 * [Arbeide med mottakerlisten i etterkant av utsendelsen][8]
 * [Arbeide med sporede koblinger i etterkant av utsendelsen][9]
 
-<!-- Referenced links -->
+
 [1]: tutorial-email-mailing.md
 [2]: tutorial-sms-mailing.md
 [3]: tutorial-document-mailing.md
@@ -92,5 +92,5 @@ I det femte og siste trinnet bekrefter du og sender eller planlegger utsendelsen
 [11]: ../../../recipients/learn/index.md
 [8]: ../../../recipients/learn/look-at-recipient-list.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../../media/loc/en/marketing/mailing-workflow-all.png

@@ -94,7 +94,7 @@ For å overholde GDPR må du slette personopplysninger når du ikke lenger har e
 1. Klikk på **Oppgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) og velg **Slett alle personer** eller **Slett alle firmaer og personer**.
 1. Bekreft slettingen når du blir bedt om det.
 
-<!-- Referenced links -->
+
 [9]: ../../../search-options/learn/search-criteria.md
 [8]: ../../../search-options/selection/learn/create.md
 [5]: ../../../learn/basics/bulk-update.md

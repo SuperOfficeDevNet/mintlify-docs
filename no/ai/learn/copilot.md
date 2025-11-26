@@ -108,13 +108,13 @@ Prompts kan endres uten forhåndsvarsel under piloten!
 * [Andre AI-tjenester][2]
 * [Trust center | GDPR & SuperOffice-produkter][8]
 
-<!-- Referenced links -->
+
 [1]: ../../learn/getting-started/main-screen/side-panel.md
 [2]: index.md
 [8]: https://www.superoffice.com/trust-center/gdpr-and-crm/
 [9]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/
 
-<!-- Referenced image -->
+
 [img2]: ../../../media/loc/en/ai/copilot-in-sidepanel-list.png
 [img3]: ../../../media/loc/en/ai/copilot-on-sale.png
 [img4]: ../../../media/loc/en/ai/copilot-about-superoffice.png

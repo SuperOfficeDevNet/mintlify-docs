@@ -19,7 +19,7 @@ Dashbord lar deg visualisere viktige nøkkeltall på tvers av ulike deler av CRM
 
 Se denne videoen, eller følg trinnene nedenfor for å lære hvordan du oppretter dashbord i SuperOffice CRM:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/W68M1IOke0Y]
 
 (videolengde – 4:29)
@@ -85,13 +85,13 @@ Du kan duplisere et eksisterende dashbord for å gjenbruke innhold eller utformi
 * [Rediger dashbordfigurer][2]
 * [Opprett et utvalg][6]
 
-<!-- Referenced links -->
+
 [1]: working-with-tiles.md#copy
 [2]: working-with-tiles.md
 [3]: update.md
 [5]: ../../localization/learn/translate-fields.md
 [6]: ../../search-options/selection/learn/create.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/dashboard/create-dashboard-dialog.png
 [img2]: ../../../media/loc/en/dashboard/pin-dashboard.png

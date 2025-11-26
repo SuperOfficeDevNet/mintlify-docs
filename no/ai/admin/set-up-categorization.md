@@ -106,12 +106,12 @@ Du kan analysere et nytt eller oppdatert utvalg på nytt når som helst:
 * [Sakkategorisering][2]
 * [Andre AI-tjenester][3]
 
-<!-- Referenced links -->
+
 [1]: ../../search-options/selection/learn/create.md
 [2]: ../learn/categorization.md
 [3]: ../learn/index.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/search-options/choose-new-selection.png
 [img2]: ../../../media/loc/en/search-options/typical-request-searches.png
 [img3]: ../../../media/loc/en/ai/find-request-search-criteria.png

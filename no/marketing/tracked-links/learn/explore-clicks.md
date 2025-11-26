@@ -54,10 +54,10 @@ Du kan sjekke resultatene for utsendelsene dine ved å logge inn på Google Anal
 > [!NOTE]
 > Gi Google Analytics litt tid til å behandle sporingsinformasjonen din. Det kan ta mellom 1 og 24 timer før kilden til utsendelsen registreres i rapportene dine.
 
-<!-- Referenced links -->
+
 [1]: ../../recipients/learn/look-at-recipient-list.md
 [3]: ../../recipients/learn/look-at-recipient-list.md#add-recipients
 [2]: create-links.md
 [4]: define-link-actions.md
 
-<!-- Referenced images -->
+

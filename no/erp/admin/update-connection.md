@@ -56,7 +56,7 @@ Hvis **OK**-knappen er nedtonet når du legger til eller redigerer en kobling:
 * [Legg til en Sync Connector og ERP-kobling][2]
 * [Knytt firmaer, personer og prosjekter til ERP-aktører][3]
 
-<!-- Referenced links -->
+
 [1]: configure.md
 [2]: add-connection.md
 [3]: ../learn/connect.md

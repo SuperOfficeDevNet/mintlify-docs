@@ -100,7 +100,7 @@ For å opprette et skjema, gå til **Markedsføring** > **Skjemaer**. For detalj
     * Velg **Oppgave** > **Gi nytt navn** for å endre e-postens navn.
     * Klikk på den røde X-en for å fjerne e-posten (slik at du kan erstatte den med en annen).
 
-<!-- Referenced links -->
+
 [1]: ../../forms/learn/create.md
 [2]: ../../editor/learn/insert-images-in-message.md
 [3]: ../../editor/learn/add-content.md
@@ -109,7 +109,7 @@ For å opprette et skjema, gå til **Markedsføring** > **Skjemaer**. For detalj
 [6]: ../../editor/learn/add-tracked-link-to-msg.md
 [8]: ../../editor/learn/add-unsubscribe-link.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/view-flow-contents.png
 [img2]: ../../../../media/loc/en/marketing/send-email-welcome-with-attachment.png
 [img3]: ../../../../media/loc/en/marketing/create-new-email-in-flow.png

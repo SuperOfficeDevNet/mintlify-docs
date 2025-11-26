@@ -56,5 +56,5 @@ For å oppdatere, flytte eller slette en bruker (assosiert), må du først velge
 
 * [Redigere eller slette anonym bruker eller systembruker (onsite)][1]
 
-<!-- Referenced links -->
+
 [1]: onsite/other-users.md

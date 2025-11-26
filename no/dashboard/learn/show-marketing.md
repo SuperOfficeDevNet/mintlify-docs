@@ -18,7 +18,7 @@ Opprett dashbord for markedsføringsoppgavene dine, for eksempel skjemainnsendin
 
 Når dashbordet er opprettet, må du legge til og redigere figurer.
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/lz9rEZI_2SY]
 
 Studer eksemplene nedenfor for å få ideer til figurer som du kan legge til i dashbordet for utsendelse eller skjemainnsending.
@@ -49,13 +49,13 @@ Studer eksemplene nedenfor for å få ideer til figurer som du kan legge til i d
 * [Figurer med leads og UTM-data][7]
 * [Les mer om kriterier][2]
 
-<!-- Referenced links -->
+
 [1]: https://www.superoffice.com/blog/email-open-rates/
 [2]: ../../search-options/learn/search-criteria.md
 [5]: create.md
 [6]: working-with-tiles.md
 [7]: show-leads.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/dashboard/user-mailing-dashboard.png
 [img2]: ../../../media/loc/en/dashboard/user-mailing-dashboard-forms.png

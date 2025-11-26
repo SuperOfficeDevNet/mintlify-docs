@@ -144,7 +144,7 @@ Ved å følge disse retningslinjene, kan du effektivt bruke flettefelt for å la
 * [System.Globalization.CultureInfo][11]
 * [Aspose][13] (håndterer dokumentgenerering)
 
-<!-- Referenced links -->
+
 [1]: template-variables.md
 [2]: ../merge-fields/line.md
 [3]: ../merge-fields/index.md
@@ -156,7 +156,7 @@ Ved å følge disse retningslinjene, kan du effektivt bruke flettefelt for å la
 [12]: https://docs.microsoft.com/en-us/previous-versions/commerce-server/ee825488(v=cs.20)
 [13]: http://www.aspose.com
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/document/quote-list-document-template.png
 [img2]: ../../../../media/loc/en/document/quote-list-email-template.png
 [img3]: ../../../../media/loc/en/document/quote-layout.png

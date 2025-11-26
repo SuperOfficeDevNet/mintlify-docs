@@ -49,7 +49,7 @@ Redigering av en svarmal kan bety to forskjellige ting:
 * [Opprette ny språkversjon av svarmal][3]
 * [Kopiere svarmaler][4]
 
-<!-- Referenced links -->
+
 [1]: ../../../request/learn/reply.md
 [2]: create.md
 [4]: create.md#copy

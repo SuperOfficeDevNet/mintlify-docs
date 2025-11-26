@@ -62,8 +62,8 @@ Du kan angi søkekriterier for både enkeltord (for eksempel *Petter*) og fraser
 * [Legge til stoppord][3]
 * [Bygge fritekstindeks][4]
 
-<!-- Referenced links -->
+
 [3]: stopwords.md
 [4]: regenerate-index.md
 
-<!-- Referenced images -->
+

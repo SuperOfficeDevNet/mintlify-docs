@@ -50,7 +50,7 @@ Hvis du trenger mer informasjon før du overtar, eller bruker [Hent neste sak i 
 * [Videresende meldinger til eksterne parter][4]
 * [Avslutte en sak][5]
 
-<!-- Refererte lenker -->
+
 [1]: index.md#open
 [2]: reply.md
 [3]: transfer.md
@@ -58,5 +58,5 @@ Hvis du trenger mer informasjon før du overtar, eller bruker [Hent neste sak i 
 [5]: close.md
 [6]: ../admin/next-in-queue.md
 
-<!-- Refererte bilder -->
+
 [img2]: ../../../media/loc/en/request/requests-accept.png

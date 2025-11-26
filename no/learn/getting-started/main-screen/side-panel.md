@@ -127,7 +127,7 @@ Administratorer kan [definere egendefinerte visninger][7] for sidepanelet i **In
 
   Bruk det til å holde oversikt over muligheter, overvåke forfalte aktiviteter og følge opp salgsforslag uten å forlate hovedskjermbildet. For detaljerte trinn, se [Bruk av sidepanelet for salg][10].
 
-<!-- Referenced links -->
+
 [1]: ../../basics/history.md
 [2]: ../../../contact/learn/create.md
 [4]: ../../../diary/learn/index.md
@@ -139,6 +139,6 @@ Administratorer kan [definere egendefinerte visninger][7] for sidepanelet i **In
 [11]: https://community.superoffice.com/en/support-faqs/faq/what-to-do-when-i-get-document-closed-in-the-side-panel-of-superoffice-crm-when-document-viewer-is-used/
 [10]: ../../../sale/learn/index.md#side-panel
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/learn/pin-side-panel-favs.png
 [img10]: ../../../../media/loc/en/learn/getstarted-sidepanel-companypreview.png

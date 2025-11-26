@@ -61,7 +61,7 @@ Dette skriptet muliggjør vedvarende sporing. Det lytter etter UTM-parametere i 
 1. Publiser den oppdaterte siden.
 
 ```html
-<!-- SuperOffice UTM tag -->
+
 <script src="https://sod2.superoffice.com/CustXXXXX/cs/javascript/utm.js"></script>
 ```
 

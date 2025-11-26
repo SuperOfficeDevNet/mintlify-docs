@@ -35,10 +35,10 @@ Denne integrasjonen lar deg lagre alle dokumenter og e-poster i SharePoint Onlin
 
 ### Kom i gang
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/8mIo3Yac2QI?t=672]
 
-<!-- markdownlint-disable-next-line MD028 -->
+
 > [!NOTE]
 > Før du kan starte denne konfigurasjonen, må du sette opp tillatelser for områder og bibliotek i SharePoint. Alle brukere må autentisere seg med Microsoft 365.
 
@@ -49,11 +49,11 @@ Denne integrasjonen lar deg lagre alle dokumenter og e-poster i SharePoint Onlin
 * [Hvordan sette opp Microsoft 365 SharePoint][4]
 * [Konfigurer SharePoint dokumentbibliotek (5-trinns veiviser)][5]
 
-<!-- Referenced links -->
+
 [2]: ../../../../en/document/library/it/index.md
 [3]: ../../../../../integrations/sharepoint-documents/requirements.md
 [4]: ../../../../../integrations/sharepoint-documents/set-up.md
 [5]: ../../../../../integrations/sharepoint-documents/configure-superoffice.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/document/admin-preferences-documentlibrary.png

@@ -119,9 +119,9 @@ Du kan slette gruppeoversikter som du har opprettet. Forhåndsdefinerte gruppeov
 * [Lær mer om Vis-fanen][2]
 * [Opprett avtale for en medarbeider][4]
 
-<!-- Refererte lenker -->
+
 [2]: index.md#tabs
 [4]: create-follow-up.md#associate
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/diary/new-group-view.png

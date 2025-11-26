@@ -94,9 +94,9 @@ Når du har opprettet en [ekstratabell][1], må du definere felt i tabellen, sli
 
 For eksempel, for å koble alle innkommende saker til et bestemt salg, kan du legge til et ekstrafelt av typen salgsrelasjon til Sak ([ticket tabellen][4]). For å liste opp tilknyttede saker når du ser på et salg i SuperOffice CRM, må du bygge et webpanel.
 
-<!-- Referenced links -->
+
 [1]: create-extra-table.md
 [4]: ../../../en/database/tables/ticket.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/custom-objects/create-extra-tables-and-fields.png

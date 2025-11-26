@@ -65,7 +65,7 @@ Nederst i bildet finner du følgende [standard detaljkort][18]:
 * [Massesletting av personer og firmaer fra utvalg][10]
 * [Bruke papirkurven til å gjenopprette firmaer og personer][8]
 
-<!-- Referenced links -->
+
 [1]: ../../contact/learn/index.md
 [2]: create.md
 [3]: edit.md
@@ -87,5 +87,5 @@ Nederst i bildet finner du følgende [standard detaljkort][18]:
 [21]: ../../customization/web-panels/admin/index.md#www
 [22]: ../../erp/learn/index.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../media/loc/en/company/company-screen.png

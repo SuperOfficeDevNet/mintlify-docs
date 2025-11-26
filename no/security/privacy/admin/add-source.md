@@ -48,8 +48,8 @@ Listen **Personvern - Kilde** inneholder alternativer som brukere velger for å 
 
 * [Slik legger du til forekomster i listen Personvern - Hjemmel][2]
 
-<!-- Referenced links -->
+
 [1]: ../../../document/templates/admin/link-template.md
 [2]: add-legal-base.md
 
-<!-- Referenced images -->
+

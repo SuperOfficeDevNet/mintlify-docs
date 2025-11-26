@@ -109,13 +109,13 @@ Filen sendes umiddelbart.
 * [Bruke chatfunksjonen fra kundens perspektiv][6]
 * [Opprette eller laste opp et dokument][7]
 
-<!-- Referenced links -->
+
 [1]: link-to-person.md
 [2]: transfer-to-agent.md
 [3]: create-request.md
 [6]: as-customer.md
 [7]: ../../document/learn/create.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../media/loc/en/chat/chat-status-present.png
 [img6]: ../../../media/loc/en/chat/chat-quickreply.png

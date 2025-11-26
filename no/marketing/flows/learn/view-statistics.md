@@ -83,11 +83,11 @@ Gå til **Markedsføring** > **Flyter** > **Rapporter**.
 
 Gå til **Markedsføring** > **Sporede lenker**. Se [Utforsk lenkeklikk][11].
 
-<!-- Referenced links -->
+
 [1]: participants.md
 [11]: ../../tracked-links/learn/explore-clicks.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/marketing/view-status-all-flows.png
 [img2]: ../../../../media/loc/en/marketing/check-flow-status.png
 [img3]: ../../../../media/loc/en/marketing/compare-flow-success.png

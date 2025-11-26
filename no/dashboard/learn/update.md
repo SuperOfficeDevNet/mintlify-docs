@@ -66,6 +66,6 @@ Bare **eieren** av et dashbord kan slette det. Selv administratorer kan ikke sle
 * [Opprett et nytt dashbord][1]
 * [Legg til, rediger og fjern figurer][2]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [2]: working-with-tiles.md

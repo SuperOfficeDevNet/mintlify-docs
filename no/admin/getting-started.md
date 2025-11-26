@@ -135,7 +135,7 @@ Når du installerer WebTools, blir e-post og dokumenter integrert i SuperOffice.
 * [Importere firmaer, personer, og produkter][3]
 * [Les mer om integrasjon av e-post og dokumenter][13]
 
-<!-- Referenced links -->
+
 [1]: user-management/index.md
 [2]: ../../assets/downloads/configuration-preparation-document.pdf
 [3]: import/index.md
@@ -148,5 +148,5 @@ Når du installerer WebTools, blir e-post og dokumenter integrert i SuperOffice.
 [12]: ../../../integrations/webtools/install.md
 [13]: https://community.superoffice.com/en/learning/best-practices-tips/standard-crm/web-tools-work-faster-with-email-and-documents/
 
-<!-- Referenced images -->
+
 [img1]: ../../media/loc/en/admin/project-guide.png

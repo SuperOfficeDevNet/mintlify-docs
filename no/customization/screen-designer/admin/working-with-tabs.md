@@ -111,7 +111,7 @@ Hvis du har en bred skjerm, kan du bruke flere kolonner for å vise mer data sam
 
 * [Arbeide med felt][1]
 
-<!-- Referenced links -->
+
 [1]: working-with-fields.md
 [2]: edit-layout.md
 [3]: ../../../custom-objects/learn/index.md
@@ -119,5 +119,5 @@ Hvis du har en bred skjerm, kan du bruke flere kolonner for å vise mer data sam
 [5]: ../../../custom-objects/admin/add-udef.md
 [9]: ../../../localization/learn/translate-fields.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../../media/loc/en/customization/field-settings.png

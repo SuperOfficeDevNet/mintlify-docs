@@ -50,7 +50,7 @@ Vi skal nå opprette en makro basert på eksemplet ovenfor.
 
 * [Lær mer om avanserte makrofunksjoner og triggere][1]
 
-<!-- Referenced links -->
+
 [1]: trigger.md
 
-<!-- Referenced images -->
+

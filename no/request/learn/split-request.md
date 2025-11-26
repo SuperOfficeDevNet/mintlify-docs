@@ -58,7 +58,7 @@ Hvis en sak inneholder flere spørsmål, for eksempel hvis kunden først stiller
 * [Dele en melding][1]
 * [Slå sammen saker][7]
 
-<!-- Referenced links -->
+
 [1]: split-message.md
 [2]: index.md#open
 [3]: ../admin/priority/escalation-levels.md

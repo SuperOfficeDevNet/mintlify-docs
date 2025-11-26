@@ -24,9 +24,9 @@ Hvis du vil opprette en global profil, følger du instruksjonene for å [opprett
 * [Personlige profiler][2]
 * [Felles profiler][3]
 
-<!-- Referenced links -->
+
 [1]: common.md#create
 [2]: personal.md
 [3]: common.md
 
-<!-- Referenced images -->
+

@@ -56,11 +56,11 @@ Du kan videresende en kompleks eller problematisk sak til en ekstern person via 
 
 ![Massevideresendelse av saker til en ekstern kontakt -screenshot][img1]
 
-<!-- Refererte lenker -->
+
 [1]: index.md#open
 [2]: create.md#fields
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/request/forward-multiple-requests.png
 [img2]: ../../../media/loc/en/request/forward-add-recipient.png
 [img3]: ../../../media/loc/en/request/forward-a-request.png

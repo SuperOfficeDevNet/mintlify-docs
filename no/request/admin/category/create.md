@@ -82,8 +82,8 @@ index: true
 
 * [Slik setter du opp Hent neste sak i køen][3]
 
-<!-- Referenced links -->
+
 [1]: ../../../admin/preferences/index.md
 [3]: ../next-in-queue.md
 
-<!-- Referenced images -->
+

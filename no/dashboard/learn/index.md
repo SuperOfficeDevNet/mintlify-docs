@@ -184,12 +184,12 @@ Bare **eieren** av et dashbord kan slette det.
 * [Redigere et dashbord][3]
 * [Rediger dashbordfigurer][6]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [3]: update.md
 [6]: working-with-tiles.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/dashboard/tile-task-menu.png
 [img2]: ../../../media/loc/en/dashboard/show-dataset.png
 [img3]: ../../../media/loc/en/dashboard/quick-filter-dropdown.png

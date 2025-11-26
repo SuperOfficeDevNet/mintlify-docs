@@ -90,7 +90,7 @@ Dette er en oversikt over spesialalternativer i noen av de tilgjengelige feltene
 
 * **Seksjon:** Legg til en seksjon mellom feltene for å [opprette et skjema med flere sider][2]. Nyttig hvis skjemaet inneholder mange felt og du vil unngå å rulle.
 
-<!-- Referenced links -->
+
 [1]: recaptcha.md
 [2]: create.md#multi-page
 [3]: ../../recipients/learn/manage-email-subscriptions.md

@@ -31,7 +31,7 @@ Når en oppfølging regnes som avsluttet, kan du merke den som utført.
 > [!NOTE]
 > Hvis du vil redigere en fullført aktivitet, må du først fjerne merket for **Utført**-statusen.
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+
 [img4]: ../../../media/loc/en/diary/completed.png

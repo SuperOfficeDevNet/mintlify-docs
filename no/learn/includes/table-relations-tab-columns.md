@@ -1,4 +1,4 @@
-<!-- markdownlint-disable-file MD041 -->
+
 | Kolonne| Beskrivelse|
 |---|---|
 | Fra - fullt navn | Viser navnet på firmaet eller personen som er den aktive parten i relasjonen. |

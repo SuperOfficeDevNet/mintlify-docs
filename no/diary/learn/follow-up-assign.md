@@ -47,7 +47,7 @@ Hvis den andre personen avslår invitasjonen, får du en Invitasjon avslått-mel
 
 2. Valgfritt, gjenta trinnene for å tildele oppfølgingen til noen andre.
 
-<!-- Referenced links -->
+
 [1]: create-follow-up.md
 [2]: create-follow-up.md#associate
 [3]: invitation/accept-decline.md

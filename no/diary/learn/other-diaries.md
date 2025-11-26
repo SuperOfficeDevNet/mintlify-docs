@@ -52,10 +52,10 @@ Disse indikatorene gjør det enkelt å se hvilken dagbok du for øyeblikket admi
 * [Tilordne oppfølging][1]
 * [Gruppeoversikt – se flere dagbøker][3]
 
-<!-- Refererte lenker -->
+
 [1]: follow-up-assign.md
 [2]: create-follow-up.md#associate
 [3]: group-view.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/diary/change-diary-owner.png

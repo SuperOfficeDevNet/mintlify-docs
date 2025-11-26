@@ -38,7 +38,7 @@ language: no
 
 * [Om CRMScript][1]
 
-<!-- Referenced links -->
+
 [1]: ../../../../en/automation/crmscript/index.yml
 
-<!-- Referenced images -->
+

@@ -81,12 +81,12 @@ Du kan for eksempel bestemme om en person skal kunne slette, oppdatere, opprette
 * [Redigere eller slette en rolle][2]
 * [Angi datarettigheter for rolle][3]
 
-<!-- Referenced links -->
+
 [1]: create-role.md
 [2]: update-role.md
 [3]: set-data-rights-for-role.md
 [6]: functional-rights.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/admin/manage-user-levels.png
 [img4]: ../../../../media/loc/en/admin/functional-rights.png

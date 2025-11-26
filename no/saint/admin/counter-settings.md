@@ -45,8 +45,8 @@ Du kan angi inntil tre ulike perioder. Dette lar deg opprette SAINT-kriterier fo
 > [!NOTE]
 > En periode beregnes alltid fra siste gang tellerne ble regenerert. For å holde resultatene nøyaktige, [regenerer tellere ofte][2] (helst hver natt).
 
-<!-- Referenced links -->
+
 [2]: update.md#regen
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/saint/counter-settings.png

@@ -58,7 +58,7 @@ Fremgangsmåten nedenfor viser et eksempel på hvordan du legger til et felt i s
 * [Personlige profiler][4]
 * [Globale profiler][5]
 
-<!-- Referenced links -->
+
 [1]: ../screen-properties.md
 [2]: ../../../../admin/user-management/role/index.md
 [3]: ../../../../admin/user-management/role/create-role.md

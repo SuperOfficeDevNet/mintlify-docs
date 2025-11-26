@@ -60,7 +60,7 @@ Du kan lage et nytt alternativ fra bunnen av eller kopiere et eksisterende.
 > [!NOTE]
 > Ikonet <i class="ph ph-trash" aria-hidden="true"></i> under produktlisten sletter bare valgte **produktlinjer**, ikke hele alternativer.
 
-<!-- Referenced links -->
+
 [1]: send.md#versions
 [2]: create.md#add-products
 [3]: ../../admin/sale-type.md#quote-fields

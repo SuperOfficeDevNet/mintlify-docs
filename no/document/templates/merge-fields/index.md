@@ -30,5 +30,5 @@ Disse verdiene summeres i alternativets VATAmount-felt.
 
 Til slutt legges alternativets TotalPrice og alternativets VATAmount sammen i feltet vi kaller **TotalPriceIncVAT**.
 
-<!-- Referenced links -->
+
 [2]: ../learn/quote-templates.md#culture

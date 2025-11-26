@@ -168,13 +168,13 @@ Du kan manuelt flytte prosjektet til neste status uten å fullføre alle oppføl
 * [Opprette et prosjekt][4]
 * [Redigere eller deaktivere en prosjektguide][5]
 
-<!-- Referenced links -->
+
 [2]: index.md
 [4]: create.md
 [5]: edit.md
 [7]: ../../diary/learn/create-follow-up.md
 [8]: ../../document/learn/edit.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/project/project-guide-tab.png
 [img2]: ../../../media/loc/en/project/guide-statuses.png

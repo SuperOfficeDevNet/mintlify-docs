@@ -194,7 +194,7 @@ Kunder kan kombinere planene som passer best for deres behov. De kan også legge
 
 Du bør ta høyde for denne fleksibiliteten når du integrerer funksjoner og definerer prismodellen din.
 
-<!-- Referenced links -->
+
 [2]: https://www.superoffice.com/crm/marketing-features/
 [3]: https://www.superoffice.com/crm/sales-features/
 [4]: https://www.superoffice.com/crm/service-features/

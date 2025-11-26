@@ -59,7 +59,7 @@ Følgende felt er tilgjengelige i Saks-bildet. Noen fylles ut automatisk, mens a
 > [!NOTE]
 > Felt og oppsett kan variere basert på [Skjermdesigner][10]-konfigurasjoner og andre UI-tilpasninger.
 
-<!-- markdownlint-disable-file MD051 -->
+
 ### [Meldinger-fanen](#tab/messages)
 
 Her skriver og håndterer du saksmeldingen.
@@ -155,7 +155,7 @@ Autolagringsfunksjonen aktiveres som standard når du viser og redigerer saker o
 * [Malvariabler][18]
 * [Opprette svarmal][19]
 
-<!-- Refererte lenker -->
+
 [2]: reply.md#reply-templ
 [3]: reply.md#time-spent
 [4]: tags.md
@@ -166,5 +166,5 @@ Autolagringsfunksjonen aktiveres som standard når du viser og redigerer saker o
 [18]: ../../knowledge-base/learn/reply-templates/template-variables.md
 [19]: ../../knowledge-base/learn/reply-templates/index.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/request/create-request.png

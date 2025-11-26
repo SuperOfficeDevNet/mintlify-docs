@@ -6,4 +6,4 @@ redirect_url: https://docs.superoffice.com/no/project/admin/project-status.html
 
 
 
-<!-- Referenced images -->
+

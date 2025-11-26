@@ -73,10 +73,10 @@ Når utsendelsen er avsluttet, kan du se ytelsen til utsendelsen i fanen **Samme
 > [!NOTE]
 > Fanene **Rapporter** og **Sporede koblinger** krever Marketing User-lisensen. Noen faner er ikke tilgjengelige for utsendelse av SMS og dokumenter.
 
-<!-- Referenced links -->
+
 [1]: ../../recipients/learn/manage-bounces.md
 [2]: ../../recipients/learn/look-at-recipient-list.md
 [3]: ../../tracked-links/learn/explore-clicks.md
 
-<!-- Referenced images -->
+
 [img2]: ../../../../media/loc/en/marketing/summary-tab.png

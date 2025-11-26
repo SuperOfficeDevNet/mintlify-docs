@@ -110,7 +110,7 @@ Her kan du legge til oversatte versjoner av dokumentmalen.
 
 * [Tilbudsmaler][6]
 
-<!-- Referenced links -->
+
 [1]: ../../localization/learn/translate-fields.md
 [2]: ../../document/templates/learn/template-variables.md
 [3]: ../../sale/admin/sale-type.md

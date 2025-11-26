@@ -74,13 +74,13 @@ Du kan også velge **Last ned** for å lagre filen lokalt på enheten.
 * [Opprett sak][5]
 * [Administrere avsendere][2]
 
-<!-- Refererte lenker -->
+
 [1]: ../../../document/learn/create.md#fields
 [2]: manage-senders.md
 [3]: preview.md
 [4]: create-task.md
 [5]: create-request.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../../media/loc/en/email/inbox-archive-button.png
 [img2]: ../../../../media/loc/en/email/document-dialog-somail.png

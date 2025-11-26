@@ -82,7 +82,7 @@ Når du oppretter eller redigerer en oppfølging eller et dokument, kan du legge
 * [Saksfanen][6]
 * [Personfanen][7]
 
-<!-- Referenced links -->
+
 [1]: ../../project/learn/index.md
 [2]: ../../sale/learn/index.md
 [3]: ../../diary/learn/create-follow-up.md
@@ -92,5 +92,5 @@ Når du oppretter eller redigerer en oppfølging eller et dokument, kan du legge
 [7]: ../section-tabs/contacts-tab.md
 [8]: ../../search-options/learn/find-screen.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/diary/links.png

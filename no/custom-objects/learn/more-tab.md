@@ -61,12 +61,12 @@ Klikk <i class="ph ph-pencil-simple" aria-label="Edit"></i> for å redigere info
 * [Legg til ekstra felt][3]
 * [Administrer tilpassede oppsett med Skjermdesigner][4]
 
-<!-- Referenced links -->
+
 [1]: index.md
 [2]: ../admin/add-udef.md
 [3]: ../admin/create-extra-field.md
 [4]: ../../customization/screen-designer/admin/add-layout.md
 
-<!-- Referenced images -->
+
 [img6]: ../../../media/loc/en/sale/sale-more.png
 [img4]: ../../../media/loc/en/project/project-more.png

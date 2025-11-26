@@ -35,7 +35,7 @@ Hvis organisasjonen din bruker Active Directory eller en annen autentiseringstyp
 1. Klikk på **OK**. Navnet på de nye brukerne vises i listen.
 1. [Skriv inn informasjon om brukeren][1].
 
-<!-- Referenced links -->
+
 [1]: ../add-associate.md
 
-<!-- Referenced images -->
+

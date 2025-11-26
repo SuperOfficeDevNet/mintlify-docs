@@ -60,7 +60,7 @@ Et av formålene med å definere utvalg er å utføre ulike oppgaver for medlemm
 * [Slett utvalg][7]
 * [Slett poster permanent][13]
 
-<!-- Referenced links -->
+
 [1]: ../../../learn/find-screen.md
 [2]: create-mailings.md
 [3]: send-email.md
@@ -74,5 +74,5 @@ Et av formålene med å definere utvalg er å utføre ulike oppgaver for medlemm
 [12]: export.md
 [13]: ../../../../security/privacy/learn/mass-delete.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../../../media/loc/en/search-options/selection-task.png

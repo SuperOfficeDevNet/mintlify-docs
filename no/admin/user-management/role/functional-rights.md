@@ -20,7 +20,7 @@ language: no
 
 Using [role-based security][3], we can [customize roles][2] to give access to different functions of SuperOffice CRM.
 
-<!-- Sort alphabetical -->
+
 | Functional right | Description | Comment |
 |---|---|---|
 | Administrate FAQ | The user may publish FAQ entries. | They will also be notified of unpublished and expired FAQ entries. |
@@ -93,7 +93,7 @@ Using [role-based security][3], we can [customize roles][2] to give access to di
 * [Opprett rolle][1]
 * [Angi datarettigheter for rolle][2]
 
-<!-- Referenced links -->
+
 [1]: create-role.md
 [2]: set-data-rights-for-role.md
 [3]: index.md

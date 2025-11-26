@@ -56,7 +56,7 @@ Du kan teste innstillingene ved å skrive inn et mobiltelefonnummer og noe tekst
 
 Du kan lese mer om tilleggsmoduler under [SMS][1].
 
-<!-- Referenced links -->
+
 [1]: ../../../../en/marketing/sms/it/set-up.md
 
-<!-- Referenced images -->
+

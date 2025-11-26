@@ -42,7 +42,7 @@ Du kan oppdatere **salgsrollen** og **kommentar**-feltene for interessenter, ell
 
 1. Klikk **Fjern**. I bekreftelsesdialogen som vises, klikk **Ja**.
 
-<!-- Referenced links -->
+
 [1]: ../../../search-options/learn/find-screen.md
 
-<!-- Referenced images -->
+

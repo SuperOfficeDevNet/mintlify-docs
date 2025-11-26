@@ -209,7 +209,7 @@ På fanen **Brukergrupper** i Brukere-bildet kan du få en oversikt over brukere
 * [Opprette brukergrupper][3]
 * [Endre brukerplaner for aktive brukere][17]
 
-<!-- Referenced links -->
+
 [2]: add-associate.md
 [3]: user-groups.md
 [4]: onsite/other-users.md#rights
@@ -220,7 +220,7 @@ På fanen **Brukergrupper** i Brukere-bildet kan du få en oversikt over brukere
 [16]: ../license/activate.md
 [17]: ../license/change-user-plan.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/admin/access-right-system.png
 [img2]: ../../../media/loc/en/admin/user-access-level.png
 [img3]: ../../../media/loc/en/admin/admin-users-overview.png

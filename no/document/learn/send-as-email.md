@@ -49,7 +49,7 @@ language: no
 
 3. Klikk på **Send** for å sende meldingen.
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+
 [img1]: ../../../media/loc/en/document/email-document-send-as-email.png

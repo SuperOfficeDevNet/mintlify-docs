@@ -39,6 +39,6 @@ index: true
 * [Opprette saksstatus][1]
 * [Sett opp Hent neste sak i køen][2]
 
-<!-- Refererte lenker -->
+
 [1]: create.md
 [2]: ../next-in-queue.md

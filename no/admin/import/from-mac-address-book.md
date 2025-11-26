@@ -22,7 +22,7 @@ language: no
 
 ## Importere firmaer/personer fra Mac-adressebok
 
-<!-- NEED complete rewrite to get correct behavior, need more info from Max/Office integration team.  -->
+
 
 Ikonet i Importer vises hvis brukeren har WebTools for Mac installert og åpner Innstillinger og vedlikehold.
 
@@ -51,7 +51,7 @@ Ikonet i Importer vises hvis brukeren har WebTools for Mac installert og åpner 
 
 [!include[Step: complete the import](includes/import-complete.md)]
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+
 [img2]: ../../../media/icons/admin/import-outlook-small.png

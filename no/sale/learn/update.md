@@ -102,13 +102,13 @@ Hvis salget har status **Vunnet** eller **Tapt**, kan du merke av for **Fullfør
 * [Salgsguider][1]
 * [Forklaring av feltene][3]
 
-<!-- Refererte lenker -->
+
 [1]: sales-guides.md
 [2]: create.md
 [3]: create.md#fields
 [5]: ../../search-options/learn/find-screen.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/sale/stalled-sale.png
 [img2]: ../../../media/loc/en/sale/won-sale.png
 [img3]: ../../../media/loc/en/sale/lost-sale.png

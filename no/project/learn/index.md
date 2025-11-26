@@ -65,7 +65,7 @@ Den nederste delen av Prosjekt-bildet består av flere detaljkort:
 * [Skrive ut prosjektinformasjon][11]
 * [Se hva våre kunder innen ulike bransjer bruker Prosjekt til][20] – blogg
 
-<!-- Refererte koblinger -->
+
 [1]: project-guides.md
 [2]: create.md
 [3]: edit.md
@@ -83,5 +83,5 @@ Den nederste delen av Prosjekt-bildet består av flere detaljkort:
 [19]: ../../custom-objects/learn/more-tab.md
 [20]: https://www.superoffice.com/blog/guest-blog-use-your-crm-to-manage-projects-for-all-industries/
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/project/projects.png

@@ -37,5 +37,5 @@ Når kunden har akseptert tilbudet, kan du registrere ordren slik at den sendes 
 
 Hvis SuperOffice CRM er koblet til et ERP-system (enten via innebygd løsning eller tredjepartskonnektor), registreres ordren automatisk og behandles der. Hvis ikke, må ordren registreres manuelt i det eksterne systemet.
 
-<!-- Referenced links -->
+
 [2]: create.md#warning

@@ -51,7 +51,7 @@ Eksempel: Den interne kategorien "Support" kan da ha en ekstern kategori for all
 
     * Koblingen til den eksterne kategorien fra dette kundespråket slettes, men ikke selve kategorien.
 
-<!-- Referenced links -->
+
 [1]: ../../../localization/admin/add-customer-language.md
 
-<!-- Referenced images -->
+

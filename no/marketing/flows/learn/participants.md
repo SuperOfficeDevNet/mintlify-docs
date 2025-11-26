@@ -81,8 +81,8 @@ I et grensesnitt følger deltakerne den første (venstre) grenen der de oppfylle
 * Legg til i flyt: Indikerer at denne personen er foreslått for påmelding i en annen flyt.
 * Fjern fra flyt: Fjerner all registrering av deltakelsen til personen i gjeldende flyt.
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+
 [img1]: ../../../../media/loc/en/marketing/flow-participants.png
 [img2]: ../../../../media/loc/en/marketing/flow-participant-columns.png

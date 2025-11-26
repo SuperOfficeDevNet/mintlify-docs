@@ -75,7 +75,7 @@ I Innstillinger og vedlikehold kan du for de fleste forhåndsdefinerte lister og
 * [Legge til en forekomst][6]
 * [Redigere eller slette en forekomst][8]
 
-<!-- Referenced links -->
+
 [1]: headings.md
 [4]: specialized-lists.md
 [5]: user-defined-lists.md
@@ -85,4 +85,4 @@ I Innstillinger og vedlikehold kan du for de fleste forhåndsdefinerte lister og
 [9]: restore.md
 [10]: ../../custom-objects/admin/edit-udef-layout.md
 
-<!-- Referenced images -->
+

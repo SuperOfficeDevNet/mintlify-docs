@@ -40,8 +40,8 @@ Når koblingen er opprettet, synkroniseres data automatisk eller ved behov.
 * [Koble firmaer, personer og prosjekter til ERP-aktører][1]
 * [Deaktiver synkronisering][3]
 
-<!-- Referenced links -->
+
 [1]: connect.md
 [3]: disconnect.md
 
-<!-- Referenced images -->
+

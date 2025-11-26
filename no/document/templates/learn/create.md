@@ -99,7 +99,7 @@ For å vise prisen per enhet etter rabatter, kan du legge til et flettefelt som 
 * [Flettefeltreferanse][3]
 * [Malvariabelreferanse][6]
 
-<!-- Referenced links -->
+
 [1]: template-variables.md
 [4]: quote-templates.md
 [2]: ../admin/link-template.md
@@ -107,7 +107,7 @@ For å vise prisen per enhet etter rabatter, kan du legge til et flettefelt som 
 [6]: ../variables/for-quote-line.md
 [9]: https://docs.aspose.com/words/net/fields-overview/
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/document/word-insert-quick-parts.png
 [img2]: ../../../../media/loc/en/document/word-field-dialog.png
 [img3]: ../../../../media/loc/en/document/6764-11541.jpg

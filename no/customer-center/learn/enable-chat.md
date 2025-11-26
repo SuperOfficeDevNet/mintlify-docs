@@ -40,10 +40,10 @@ Du må [konfigurere chatwidgeten][3] før den kan legges til i kundesenteret.
 * [Konfigurere kundesenter][2]
 * [Kundespråk][1]
 
-<!-- Referenced links -->
+
 [1]: ../../localization/learn/customer-languages.md
 [3]: ../../chat/admin/channel-create.md
 [2]: config.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/customer-center/connecting-widget.png

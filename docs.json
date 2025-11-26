@@ -44,15 +44,113 @@
           {
             "tab": "Guides",
             "icon": "book-open",
+            "pages": [
+              "en/learn/intro",
+              {
+                "group": "Get started",
+                "pages": [
+                  "en/learn/getting-started/index",
+                  {
+                    "group": "The layout elements",
+                    "pages": [
+                      "en/learn/getting-started/main-screen/index",
+                      "en/learn/getting-started/main-screen/navigator",
+                      "en/learn/getting-started/main-screen/side-panel"
+                    ]
+                  },
+                  "en/learn/getting-started/edit-email-signature"
+                ]
+              },
+              {
+                "group": "Learn the basics",
+                "pages": [
+                  "en/learn/basics/notifications",
+                  "en/learn/basics/history"
+                ]
+              },
+              {
+                "group": "Search options",
+                "pages": ["en/search-options/learn/index"]
+              },
+              {
+                "group": "Dashboards",
+                "pages": ["en/dashboard/learn/index"]
+              }
+            ]
+          },
+          {
+            "tab": "API Reference",
+            "icon": "code-simple",
+            "pages": [
+              {
+                "group": "NetServer",
+                "pages": ["api/overview/index"]
+              }
+            ]
+          },
+          {
+            "tab": "Release Notes",
+            "icon": "bullhorn",
+            "groups": [
+              {
+                "group": "SuperOffice 11",
+                "pages": ["release-notes/11/core-crm/index"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "de",
+        "tabs": [
+          {
+            "tab": "Home",
+            "icon": "house",
+            "pages": ["index"]
+          },
+          {
+            "tab": "Guides",
+            "pages": [
+              "de/learn/intro",
+              {
+                "group": "Erste Schritte",
+                "pages": [
+                  {
+                    "group": "Die Layout-Elemente",
+                    "pages": [
+                      "de/learn/getting-started/main-screen/index",
+                      "de/learn/getting-started/main-screen/navigator"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "no",
+        "tabs": [
+          {
+            "tab": "Hjemme",
+            "icon": "house",
+            "pages": ["index"]
+          },
+          {
+            "tab": "Komme i gang",
             "groups": [
               {
                 "group": "Oversikt",
                 "icon": "house",
-                "pages": ["no/learn/index"]
+                "pages": [
+                  "no/learn/index"
+                ]
               },
               {
                 "group": "Introduksjon",
-                "pages": ["no/learn/intro"]
+                "pages": [
+                  "no/learn/intro"
+                ]
               },
               {
                 "group": "Komme i gang",
@@ -89,92 +187,92 @@
                 "group": "Lær det grunnleggende",
                 "icon": "book-open",
                 "pages": [
-                  "no/learn/basics/index",
-                  "no/learn/basics/notifications",
-                  "no/learn/basics/fav",
-                  "no/learn/basics/history",
-                  "no/learn/basics/links",
-                  "no/learn/basics/notes",
-                  "no/learn/basics/print",
-                  "no/learn/basics/duplicates",
-                  "no/learn/basics/deleting-elements",
-                  "no/learn/basics/bulk-update",
-                  "no/section-tabs/index",
-                  "no/learn/basics/activity",
-                  "no/learn/basics/relations",
-                  "no/learn/basics/external-applications-and-url-addresses",
-                  "no/learn/basics/creating-shortcuts-to-entries-in-crm"
+                "no/learn/basics/index",
+                "no/learn/basics/notifications",
+                "no/learn/basics/fav",
+                "no/learn/basics/history",
+                "no/learn/basics/links",
+                "no/learn/basics/notes",
+                "no/learn/basics/print",
+                "no/learn/basics/duplicates",
+                "no/learn/basics/deleting-elements",
+                "no/learn/basics/bulk-update",
+                "no/section-tabs/index",
+                "no/learn/basics/activity",
+                "no/learn/basics/relations",
+                "no/learn/basics/external-applications-and-url-addresses",
+                "no/learn/basics/creating-shortcuts-to-entries-in-crm"
                 ]
               },
               {
                 "group": "Søkealternativer",
                 "icon": "search",
                 "pages": [
-                  "no/search-options/learn/index",
-                  "no/search-options/learn/find-screen",
-                  "no/search-options/learn/search-criteria",
-                  "no/search-options/learn/freetext-search",
-                  "no/search-options/learn/in-navigator",
-                  "no/search-options/learn/in-dialogs"
+                "no/search-options/learn/index",
+                "no/search-options/learn/find-screen",
+                "no/search-options/learn/search-criteria",
+                "no/search-options/learn/freetext-search",
+                "no/search-options/learn/in-navigator",
+                "no/search-options/learn/in-dialogs"
                 ]
               },
               {
                 "group": "Dashbord",
                 "icon": "chart-line",
                 "pages": [
-                  "no/dashboard/learn/index",
-                  "no/dashboard/learn/create",
-                  "no/dashboard/learn/update",
-                  "no/dashboard/learn/working-with-tiles",
-                  "no/dashboard/learn/show-leads",
-                  "no/dashboard/learn/show-sales-targets",
-                  "no/dashboard/learn/show-marketing",
-                  "no/dashboard/learn/show-requests"
+                "no/dashboard/learn/index",
+                "no/dashboard/learn/create",
+                "no/dashboard/learn/update",
+                "no/dashboard/learn/working-with-tiles",
+                "no/dashboard/learn/show-leads",
+                "no/dashboard/learn/show-sales-targets",
+                "no/dashboard/learn/show-marketing",
+                "no/dashboard/learn/show-requests"
                 ]
               },
               {
                 "group": "Firma",
                 "icon": "building",
                 "pages": [
-                  "no/company/learn/index",
-                  "no/company/learn/create",
-                  "no/company/learn/edit",
-                  "no/company/learn/copy",
-                  "no/company/learn/merge-companies",
-                  "no/company/learn/delete",
-                  "no/company/learn/address-formats"
+                "no/company/learn/index",
+                "no/company/learn/create",
+                "no/company/learn/edit",
+                "no/company/learn/copy",
+                "no/company/learn/merge-companies",
+                "no/company/learn/delete",
+                "no/company/learn/address-formats"
                 ]
               },
               {
                 "group": "Person",
                 "icon": "user",
                 "pages": [
-                  "no/contact/learn/index",
-                  "no/contact/learn/create",
-                  "no/contact/learn/edit",
-                  "no/contact/learn/move",
-                  "no/contact/learn/merge-contacts",
-                  "no/contact/learn/delete",
-                  "no/contact/learn/send-email",
-                  "no/contact/learn/dial"
+                "no/contact/learn/index",
+                "no/contact/learn/create",
+                "no/contact/learn/edit",
+                "no/contact/learn/move",
+                "no/contact/learn/merge-contacts",
+                "no/contact/learn/delete",
+                "no/contact/learn/send-email",
+                "no/contact/learn/dial"
                 ]
               },
               {
                 "group": "Dagbok",
                 "icon": "calendar",
                 "pages": [
-                  "no/diary/learn/index",
-                  "no/diary/learn/follow-ups",
-                  "no/diary/learn/video-meetings",
-                  "no/diary/learn/create-follow-up",
-                  "no/diary/learn/edit-follow-up",
-                  "no/diary/learn/move-follow-up",
-                  "no/diary/learn/change-completed-status",
-                  "no/diary/learn/other-diaries",
-                  "no/diary/learn/group-view",
-                  "no/diary/learn/follow-up-assign",
-                  "no/diary/learn/set-alarm",
-                  "no/diary/learn/send-as-email"
+                "no/diary/learn/index",
+                "no/diary/learn/follow-ups",
+                "no/diary/learn/video-meetings",
+                "no/diary/learn/create-follow-up",
+                "no/diary/learn/edit-follow-up",
+                "no/diary/learn/move-follow-up",
+                "no/diary/learn/change-completed-status",
+                "no/diary/learn/other-diaries",
+                "no/diary/learn/group-view",
+                "no/diary/learn/follow-up-assign",
+                "no/diary/learn/set-alarm",
+                "no/diary/learn/send-as-email"
                 ]
               },
               {
@@ -197,131 +295,128 @@
                 "group": "E-post",
                 "icon": "mail",
                 "pages": [
-                  "no/email/learn/index",
-                  "no/email/learn/change-default-mail-client"
+                "no/email/learn/index",
+                "no/email/learn/change-default-mail-client"
                 ]
               },
               {
                 "group": "Salg",
                 "icon": "badge-dollar-sign",
                 "pages": [
-                  "no/sale/learn/index",
-                  "no/sale/learn/create",
-                  "no/sale/learn/update",
-                  "no/sale/learn/sales-guides",
-                  "no/sale/learn/tutorial",
-                  {
-                    "group": "Interessenter",
-                    "pages": [
-                      "no/sale/learn/stakeholders/index",
-                      "no/sale/learn/stakeholders/create",
-                      "no/sale/learn/stakeholders/edit"
-                    ]
-                  },
-                  "no/sale/learn/forecasting"
+                "no/sale/learn/index",
+                "no/sale/learn/create",
+                "no/sale/learn/update",
+                "no/sale/learn/sales-guides",
+                "no/sale/learn/tutorial",
+                {
+                  "group": "Interessenter",
+                  "pages": [
+                    "no/sale/learn/stakeholders/index",
+                    "no/sale/learn/stakeholders/create",
+                    "no/sale/learn/stakeholders/edit"
+                  ]
+                },
+                "no/sale/learn/forecasting"
                 ]
               },
               {
                 "group": "Prosjekt",
                 "icon": "folder-kanban",
                 "pages": [
-                  "no/project/learn/index",
-                  "no/project/learn/create",
-                  "no/project/learn/add-image",
-                  "no/project/learn/edit",
-                  "no/project/learn/merge-projects",
-                  "no/project/learn/delete",
-                  "no/project/learn/project-guides",
-                  "no/project/learn/tutorial"
+                "no/project/learn/index",
+                "no/project/learn/create",
+                "no/project/learn/add-image",
+                "no/project/learn/edit",
+                "no/project/learn/merge-projects",
+                "no/project/learn/delete",
+                "no/project/learn/project-guides",
+                "no/project/learn/tutorial"
                 ]
               },
               {
                 "group": "Saksbehandling",
                 "icon": "ticket",
                 "pages": [
-                  "no/request/learn/index",
-                  "no/request/learn/handle-request-ai",
-                  "no/request/learn/find",
-                  "no/request/learn/create",
-                  "no/request/learn/edit-message",
-                  "no/request/learn/assign",
-                  "no/request/learn/accept",
-                  "no/request/learn/transfer",
-                  "no/request/learn/forward",
-                  "no/request/learn/reply",
-                  "no/request/learn/tags",
-                  "no/request/learn/flag-message",
-                  "no/request/learn/split-request",
-                  "no/request/learn/merge",
-                  "no/request/learn/split-message",
-                  "no/request/learn/close",
-                  "no/request/learn/delete"
+                "no/request/learn/index",
+                "no/request/learn/handle-request-ai",
+                "no/request/learn/find",
+                "no/request/learn/create",
+                "no/request/learn/edit-message",
+                "no/request/learn/assign",
+                "no/request/learn/accept",
+                "no/request/learn/transfer",
+                "no/request/learn/forward",
+                "no/request/learn/reply",
+                "no/request/learn/tags",
+                "no/request/learn/flag-message",
+                "no/request/learn/split-request",
+                "no/request/learn/merge",
+                "no/request/learn/split-message",
+                "no/request/learn/close",
+                "no/request/learn/delete"
                 ]
               },
               {
                 "group": "Egendefinerte objekter",
                 "icon": "puzzle",
                 "pages": [
-                  "no/custom-objects/learn/index",
-                  "no/custom-objects/learn/more-tab",
-                  {
-                    "group": "Brukerdefinerte felt",
-                    "pages": ["no/custom-objects/learn/udef"]
-                  },
-                  {
-                    "group": "Ekstratabeller",
-                    "pages": ["no/custom-objects/learn/extra-table"]
-                  },
-                  {
-                    "group": "Ekstrafelt",
-                    "pages": ["no/custom-objects/learn/extra-field"]
-                  }
+                "no/custom-objects/learn/index",
+                "no/custom-objects/learn/more-tab",
+                {
+                  "group": "Brukerdefinerte felt",
+                  "pages": ["no/custom-objects/learn/udef"]
+                },
+                {
+                  "group": "Ekstratabeller",
+                  "pages": ["no/custom-objects/learn/extra-table"]
+                },
+                {
+                  "group": "Ekstrafelt",
+                  "pages": ["no/custom-objects/learn/extra-field"]
+                }
                 ]
               },
               {
                 "group": "Utvalg",
                 "icon": "filter",
                 "pages": [
-                  "no/search-options/selection/learn/index",
-                  "no/search-options/selection/learn/create",
-                  "no/search-options/selection/learn/update",
-                  "no/search-options/selection/learn/combine",
-                  "no/search-options/selection/learn/add-remove-members-static",
-                  "no/search-options/selection/learn/copy-members-to",
-                  "no/search-options/selection/learn/board-view"
+                "no/search-options/selection/learn/index",
+                "no/search-options/selection/learn/create",
+                "no/search-options/selection/learn/update",
+                "no/search-options/selection/learn/combine",
+                "no/search-options/selection/learn/add-remove-members-static",
+                "no/search-options/selection/learn/copy-members-to",
+                "no/search-options/selection/learn/board-view"
                 ]
               },
               {
                 "group": "Chat",
                 "icon": "message-circle",
                 "pages": [
-                  "no/chat/learn/index",
-                  "no/chat/learn/statistics",
-                  "no/chat/learn/respond",
-                  "no/chat/learn/link-to-person",
-                  "no/chat/learn/create-request",
-                  "no/chat/learn/transfer-to-agent",
-                  "no/chat/learn/as-customer"
+                "no/chat/learn/index",
+                "no/chat/learn/statistics",
+                "no/chat/learn/respond",
+                "no/chat/learn/link-to-person",
+                "no/chat/learn/create-request",
+                "no/chat/learn/transfer-to-agent",
+                "no/chat/learn/as-customer"
                 ]
               },
               {
                 "group": "Markedsføring",
                 "icon": "megaphone",
                 "pages": [
-                  "no/marketing/learn/index",
-                  "no/marketing/learn/create-folder",
-                  "no/marketing/learn/message-templates",
-                  "no/marketing/learn/add-images",
-                  "no/marketing/learn/best-practices"
+                "no/marketing/learn/index",
+                "no/marketing/learn/create-folder",
+                "no/marketing/learn/message-templates",
+                "no/marketing/learn/add-images",
+                "no/marketing/learn/best-practices"
                 ]
               },
               {
                 "group": "Lead-administrasjon",
                 "icon": "target",
-                "pages": [
-                  "no/lead/learn/index",
-                  "no/lead/learn/work-with-leads"
-                ]
+                "pages": ["no/lead/learn/index", "no/lead/learn/work-with-leads"]
               },
               {
                 "group": "Mobile CRM",
@@ -332,31 +427,31 @@
                 "group": "Kunnskapsbase",
                 "icon": "graduation-cap",
                 "pages": [
-                  "no/knowledge-base/learn/index",
-                  "no/knowledge-base/learn/manage-folders",
-                  "no/knowledge-base/learn/email-addresses",
-                  "no/knowledge-base/learn/external-document"
+                "no/knowledge-base/learn/index",
+                "no/knowledge-base/learn/manage-folders",
+                "no/knowledge-base/learn/email-addresses",
+                "no/knowledge-base/learn/external-document"
                 ]
               },
               {
                 "group": "Personverninnstillinger og GDPR",
                 "icon": "shield",
                 "pages": [
-                  "no/security/privacy/learn/index",
-                  "no/security/privacy/learn/edit-legal-base",
-                  "no/security/privacy/learn/send-privacy-confirmation-email",
-                  "no/security/privacy/learn/generate-personal-data-report",
-                  "no/security/privacy/learn/mass-delete"
+                "no/security/privacy/learn/index",
+                "no/security/privacy/learn/edit-legal-base",
+                "no/security/privacy/learn/send-privacy-confirmation-email",
+                "no/security/privacy/learn/generate-personal-data-report",
+                "no/security/privacy/learn/mass-delete"
                 ]
               },
               {
                 "group": "AI-tjenester",
                 "icon": "sparkles",
                 "pages": [
-                  "no/ai/learn/index",
-                  "no/ai/learn/text-analysis",
-                  "no/ai/learn/categorization",
-                  "no/ai/learn/copilot"
+                "no/ai/learn/index",
+                "no/ai/learn/text-analysis",
+                "no/ai/learn/categorization",
+                "no/ai/learn/copilot"
                 ]
               },
               {
@@ -396,21 +491,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Contact us",
-          "href": "https://www.superoffice.com/company/contact",
-          "icon": "headset"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://www.superoffice.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",

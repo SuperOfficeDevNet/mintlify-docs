@@ -46,7 +46,7 @@ Velg et av følgende alternativer:
     > [!NOTE]
     > Dette er **kun énveis** import, fra SuperOffice til din iCalendar, ikke en synkronisering!
 
-<!-- Referenced links -->
+
 [1]: ../../../email/inbox/learn/setup.md
 [2]: ../../../../../integrations/webtools/install.md
 [9]: default-win.md

@@ -31,9 +31,9 @@ Hvis du ikke kan løse spørsmålet via chatsamtalen, kan du opprette en sak som
 * [Svare på en chat][3]
 * [Finn ut mer om saker][4]
 
-<!-- Referenced links -->
+
 [1]: link-to-person.md
 [3]: respond.md
 [4]: ../../request/learn/index.md
 
-<!-- Referenced images -->
+

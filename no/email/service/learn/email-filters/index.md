@@ -77,9 +77,9 @@ Fanen **E-postfiltre** inneholder en liste over eksisterende e-postfiltre. Denne
 * [Opprette e-postfiltre][1]
 * [Slette e-postfiltre][2]
 
-<!-- Referenced links -->
+
 [1]: create-email-filter.md
 [2]: delete-email-filter.md
 [3]: ../../../../request/admin/type/index.md
 
-<!-- Referenced images -->
+

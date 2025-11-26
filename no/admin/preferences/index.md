@@ -125,7 +125,7 @@ Innholdet i disse kolonnene defineres i dialogboksen **Innstilling**. [Slik legg
 
 Du kan sortere radene i kolonnene ved å klikke på ønsket kolonneoverskrift. Klikk på kolonneoverskriften én gang hvis du vil sortere i omvendt rekkefølge.
 
-<!-- Referenced links -->
+
 [1]: service-settings.md
 [2]: smtp.md
 [3]: update.md
@@ -136,4 +136,4 @@ Du kan sortere radene i kolonnene ved å klikke på ønsket kolonneoverskrift. K
 [9]: ../../document/library/learn/index.md
 [15]: ../../../en/online/mirroring/mirroring-task.md#options
 
-<!-- Referenced images -->
+

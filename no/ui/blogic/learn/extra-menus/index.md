@@ -45,7 +45,7 @@ I skjermbildet **Ekstramenyer** kan du legge til ekstra menyer (knapper, menyer,
 * [Legg til funksjon på menyknapp (Oppgave)][2]
 * [Legg til en ekstra nettleserfane (webpanel)][3]
 
-<!-- Referenced links -->
+
 [1]: properties.md
 [2]: actions.md
 [3]: ../../../web-panels/learn/index.md

@@ -16,7 +16,7 @@ language: no
 
 Du kan opprette et prosjekt i SuperOffice CRM ved å bruke knappen **Ny** i toppraden. Se denne videoen, eller følg trinnene nedenfor:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/zLJwNll223w]
 
 (videolengde – 2:49)
@@ -82,7 +82,7 @@ Hvis prosjektnavnet ligner på et eksisterende prosjekt, vil dialogboksen **Dupl
 * [Prosjektguider][1]
 * [Aktiviteter][3]
 
-<!-- Refererte koblinger -->
+
 [5]: project-members/add.md
 [2]: add-image.md
 [7]: edit.md
@@ -96,5 +96,5 @@ Hvis prosjektnavnet ligner på et eksisterende prosjekt, vil dialogboksen **Dupl
 [12]: ../../custom-objects/learn/more-tab.md
 [13]: ../../customization/screen-designer/admin/index.md
 
-<!-- Refererte bilder -->
+
 [img1]: ../../../media/loc/en/project/create-project.png

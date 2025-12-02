@@ -47,70 +47,34 @@
             "pages": [
               "en/learn/intro",
               {
-                "group": "Getting Started",
+                "group": "Get started",
                 "pages": [
                   "en/learn/getting-started/index",
                   {
-                    "group": "The Layout Elements",
+                    "group": "The layout elements",
                     "pages": [
                       "en/learn/getting-started/main-screen/index",
                       "en/learn/getting-started/main-screen/navigator",
-                      "en/learn/getting-started/main-screen/buttons-in-menu-bar",
-                      "en/learn/getting-started/main-screen/side-panel",
-                      "en/learn/getting-started/main-screen/in-app-help"
+                      "en/learn/getting-started/main-screen/side-panel"
                     ]
                   },
-                  "en/learn/getting-started/login",
-                  "en/learn/getting-started/preferences",
-                  {
-                    "group": "Connect email, documents and diary",
-                    "pages": [
-                      "en/learn/getting-started/connect-email-doc/index",
-                      "en/learn/getting-started/connect-email-doc/default-win",
-                      "en/learn/getting-started/connect-email-doc/default-mac",
-                      "en/learn/getting-started/connect-email-doc/microsoft-365",
-                      "en/learn/getting-started/connect-email-doc/google-workspace"
-                    ]
-                  },
-                  "en/learn/getting-started/edit-email-signature",
-                  "en/learn/getting-started/change-language"
+                  "en/learn/getting-started/edit-email-signature"
                 ]
               },
               {
-                "group": "Learn the Basics",
+                "group": "Learn the basics",
                 "pages": [
-                  "en/learn/basics/index",
                   "en/learn/basics/notifications",
-                  "en/learn/basics/fav",
-                  "en/learn/basics/history",
-                  "en/learn/basics/links",
-                  "en/learn/basics/notes",
-                  "en/learn/basics/print",
-                  "en/learn/basics/duplicates",
-                  "en/learn/basics/deleting-elements",
-                  "en/learn/basics/bulk-update",
-                  {
-                    "group": "Working with Section Tabs",
-                    "pages": [
-                      "en/learn/section-tabs/index",
-                      "en/learn/section-tabs/activities-tab",
-                      "en/learn/section-tabs/contacts-tab",
-                      "en/learn/section-tabs/relations-tab",
-                      "en/learn/section-tabs/sales-tab",
-                      "en/learn/section-tabs/projects-tab",
-                      "en/learn/section-tabs/requests-tab",
-                      "en/learn/section-tabs/configure-columns",
-                      "en/learn/section-tabs/filter",
-                      "en/learn/section-tabs/group",
-                      "en/learn/section-tabs/export-archives",
-                      "en/learn/section-tabs/send-email"
-                    ]
-                  },
-                  "en/learn/basics/activity",
-                  "en/learn/basics/relations",
-                  "en/learn/basics/external-applications-and-url-addresses",
-                  "en/learn/basics/creating-shortcuts-to-entries-in-crm"
+                  "en/learn/basics/history"
                 ]
+              },
+              {
+                "group": "Search options",
+                "pages": ["en/search-options/learn/index"]
+              },
+              {
+                "group": "Dashboards",
+                "pages": ["en/dashboard/learn/index"]
               }
             ]
           },

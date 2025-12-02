@@ -1,0 +1,83 @@
+---
+uid: ticketagent-script-events
+title: TicketAgent script event methods
+description: NetServer script event methods.
+generated: true
+keywords: netserver scripting
+content_type: reference
+envir: onsite
+---
+
+# TicketAgent method listing
+
+Service methods defined on <see cref='T:ITicketAgent'>TicketAgent</see> that can trigger server-side event scripts.
+
+* [AcceptTicketsAsync](acceptticketsasync.md)
+* [AddAttachmentsAsync](addattachmentsasync.md)
+* [BatchForwardAsync](batchforwardasync.md)
+* [BatchReplyAsync](batchreplyasync.md)
+* [CalculateMessageRecipientsAsync](calculatemessagerecipientsasync.md)
+* [ClearNotifyAsync](clearnotifyasync.md)
+* [CopyFromCRMDocumentAsync](copyfromcrmdocumentasync.md)
+* [CopyToTempFileAsync](copytotempfileasync.md)
+* [CreateDefaultAttachmentEntityAsync](createdefaultattachmententityasync.md)
+* [CreateDefaultForTicketTypeAsync](createdefaultfortickettypeasync.md)
+* [CreateDefaultTicketEntityAsync](createdefaultticketentityasync.md)
+* [CreateDefaultTicketMessageEntityAsync](createdefaultticketmessageentityasync.md)
+* [DeleteMessageHeadersAsync](deletemessageheadersasync.md)
+* [DeleteTicketEntityAsync](deleteticketentityasync.md)
+* [DeleteTicketMessageEntityAsync](deleteticketmessageentityasync.md)
+* [DoEscalatingAsync](doescalatingasync.md)
+* [GetAttachmentEntityAsync](getattachmententityasync.md)
+* [GetAttachmentInfoAsync](getattachmentinfoasync.md)
+* [GetAttachmentInfoNonInlineAsync](getattachmentinfononinlineasync.md)
+* [GetAttachmentPreviewAsync](getattachmentpreviewasync.md)
+* [GetAttachmentStreamAsync](getattachmentstreamasync.md)
+* [GetDefaultMessageContentAsync](getdefaultmessagecontentasync.md)
+* [GetDefaultMessageContentFullAsync](getdefaultmessagecontentfullasync.md)
+* [GetDefaultMessageContentWithOptionsAsync](getdefaultmessagecontentwithoptionsasync.md)
+* [GetForRmUiAsync](getforrmuiasync.md)
+* [GetHotlistEjUsersAsync](gethotlistejusersasync.md)
+* [GetNextInQueueAsync](getnextinqueueasync.md)
+* [GetPreviewAttachmentStreamAsync](getpreviewattachmentstreamasync.md)
+* [GetRfcAttachmentStreamAsync](getrfcattachmentstreamasync.md)
+* [GetTicketAsync](getticketasync.md)
+* [GetTicketAttachmentsAsync](getticketattachmentsasync.md)
+* [GetTicketEntityAsync](getticketentityasync.md)
+* [GetTicketMessageAsync](getticketmessageasync.md)
+* [GetTicketMessageEntitiesAsync](getticketmessageentitiesasync.md)
+* [GetTicketMessageEntityAsync](getticketmessageentityasync.md)
+* [GetTicketMessageWithEmbeddedDataAsync](getticketmessagewithembeddeddataasync.md)
+* [GetTicketMessageWithOptionsAsync](getticketmessagewithoptionsasync.md)
+* [GetTicketsAsync](getticketsasync.md)
+* [GetTicketSummariesAsync](getticketsummariesasync.md)
+* [Html2TextAsync](html2textasync.md)
+* [MergeTicketsAsync](mergeticketsasync.md)
+* [NotifyNewTicketAsync](notifynewticketasync.md)
+* [NotifyNewTicketMessageAsync](notifynewticketmessageasync.md)
+* [ProcessTicketWhenReadAsync](processticketwhenreadasync.md)
+* [RemoveMessageAttachmentsAsync](removemessageattachmentsasync.md)
+* [ResolveTicketIdAsync](resolveticketidasync.md)
+* [SanitizeMailContentAsync](sanitizemailcontentasync.md)
+* [SanitizeMailContentsAsync](sanitizemailcontentsasync.md)
+* [SanitizeMailContentWithOptionsAsync](sanitizemailcontentwithoptionsasync.md)
+* [SaveAttachmentEntityAsync](saveattachmententityasync.md)
+* [SaveTicketEntityAsync](saveticketentityasync.md)
+* [SaveTicketEntityWithNotifyAsync](saveticketentitywithnotifyasync.md)
+* [SaveTicketMessageEntityAsync](saveticketmessageentityasync.md)
+* [SaveTicketMessageEntityWithNotifyAsync](saveticketmessageentitywithnotifyasync.md)
+* [SaveTicketMessageEntityWithOptionsAsync](saveticketmessageentitywithoptionsasync.md)
+* [SendTicketMessageAsync](sendticketmessageasync.md)
+* [SendTicketMessageSmsAsync](sendticketmessagesmsasync.md)
+* [SetDeletedStatusByIdsAsync](setdeletedstatusbyidsasync.md)
+* [SetDeletedStatusByProviderAsync](setdeletedstatusbyproviderasync.md)
+* [SetTicketMessageImportantAsync](setticketmessageimportantasync.md)
+* [SetTicketReadByOwnerAsync](setticketreadbyownerasync.md)
+* [SplitTicketAsync](splitticketasync.md)
+* [SplitTicketMessageAsync](splitticketmessageasync.md)
+* [UndeleteByIdsAsync](undeletebyidsasync.md)
+* [UpdateTicketsReadStatusAsync](updateticketsreadstatusasync.md)
+* [UpdateTicketsReadStatusByProviderAsync](updateticketsreadstatusbyproviderasync.md)
+* [UploadAttachmentAsync](uploadattachmentasync.md)
+* [ValidateAttachmentsAsync](validateattachmentsasync.md)
+

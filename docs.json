@@ -18,13 +18,13 @@
   },
   "fonts": {
     "heading": {
-      "family": "SuperOfficeSans-Bold",
+      "family": "Super Office Sans Bold",
       "source": "https://mintlify-assets.b-cdn.net/fonts/SuperOfficeSans-Bold.woff2",
       "format": "woff2",
       "weight": 700
     },
     "body": {
-      "family": "SuperOfficeSans",
+      "family": "Super Office Sans",
       "source": "https://mintlify-assets.b-cdn.net/fonts/SuperOfficeSans-Regular.woff2",
       "format": "woff2",
       "weight": 400
@@ -47,102 +47,34 @@
             "pages": [
               "en/learn/intro",
               {
-                "group": "Getting Started",
+                "group": "Get started",
                 "pages": [
                   "en/learn/getting-started/index",
                   {
-                    "group": "The Layout Elements",
+                    "group": "The layout elements",
                     "pages": [
                       "en/learn/getting-started/main-screen/index",
                       "en/learn/getting-started/main-screen/navigator",
-                      "en/learn/getting-started/main-screen/buttons-in-menu-bar",
-                      "en/learn/getting-started/main-screen/side-panel",
-                      "en/learn/getting-started/main-screen/in-app-help"
+                      "en/learn/getting-started/main-screen/side-panel"
                     ]
                   },
-                  "en/learn/getting-started/login",
-                  "en/learn/getting-started/preferences",
-                  {
-                    "group": "Connect email, documents and diary",
-                    "pages": [
-                      "en/learn/getting-started/connect-email-doc/index",
-                      "en/learn/getting-started/connect-email-doc/default-win",
-                      "en/learn/getting-started/connect-email-doc/default-mac",
-                      "en/learn/getting-started/connect-email-doc/microsoft-365",
-                      "en/learn/getting-started/connect-email-doc/google-workspace"
-                    ]
-                  },
-                  "en/learn/getting-started/edit-email-signature",
-                  "en/learn/getting-started/change-language"
+                  "en/learn/getting-started/edit-email-signature"
                 ]
               },
               {
-                "group": "Learn the Basics",
+                "group": "Learn the basics",
                 "pages": [
-                  "en/learn/basics/index",
                   "en/learn/basics/notifications",
-                  "en/learn/basics/fav",
-                  "en/learn/basics/history",
-                  "en/learn/basics/links",
-                  "en/learn/basics/notes",
-                  "en/learn/basics/print",
-                  "en/learn/basics/duplicates",
-                  "en/learn/basics/deleting-elements",
-                  "en/learn/basics/bulk-update",
-                  {
-                    "group": "Working with Section Tabs",
-                    "pages": [
-                      "en/learn/section-tabs/index",
-                      "en/learn/section-tabs/activities-tab",
-                      "en/learn/section-tabs/contacts-tab",
-                      "en/learn/section-tabs/relations-tab",
-                      "en/learn/section-tabs/sales-tab",
-                      "en/learn/section-tabs/projects-tab",
-                      "en/learn/section-tabs/requests-tab",
-                      "en/learn/section-tabs/configure-columns",
-                      "en/learn/section-tabs/filter",
-                      "en/learn/section-tabs/group",
-                      "en/learn/section-tabs/export-archives",
-                      "en/learn/section-tabs/send-email"
-                    ]
-                  },
-                  "en/learn/basics/activity",
-                  "en/learn/basics/relations",
-                  "en/learn/basics/external-applications-and-url-addresses",
-                  "en/learn/basics/creating-shortcuts-to-entries-in-crm"
+                  "en/learn/basics/history"
                 ]
               },
               {
-                "group": "Search Options",
-                "pages": [
-                  "en/search-options/learn/index",
-                  "en/search-options/learn/find-screen",
-                  "en/search-options/learn/search-criteria",
-                  "en/search-options/learn/freetext-search",
-                  "en/search-options/learn/in-navigator",
-                  "en/search-options/learn/in-dialogs",
-                  {
-                    "group": "For administrators",
-                    "pages": [
-                      "en/search-options/admin/configure-free-text-search",
-                      "en/search-options/admin/stop-words",
-                      "en/search-options/admin/regenerate-index"
-                    ]
-                  }
-                ]
+                "group": "Search options",
+                "pages": ["en/search-options/learn/index"]
               },
               {
-                "group": "Dashboard",
-                "pages": [
-                  "en/dashboard/learn/index",
-                  "en/dashboard/learn/create",
-                  "en/dashboard/learn/update",
-                  "en/dashboard/learn/working-with-tiles",
-                  "en/dashboard/learn/show-leads",
-                  "en/dashboard/learn/show-sales-targets",
-                  "en/dashboard/learn/show-marketing",
-                  "en/dashboard/learn/show-requests"
-                ]
+                "group": "Dashboards",
+                "pages": ["en/dashboard/learn/index"]
               }
             ]
           },
@@ -151,8 +83,8 @@
             "icon": "code-simple",
             "pages": [
               {
-                "group": "NetServer",
-                "pages": ["api/overview/index"]
+                "group": "API Endpoints",
+                "openapi": "openapi-consolidated.json"
               }
             ]
           },
@@ -195,65 +127,22 @@
             ]
           }
         ]
-      },
-      {
-        "language": "no",
-        "tabs": [
-          {
-            "tab": "Hjemme",
-            "icon": "house",
-            "pages": ["index"]
-          },
-          {
-            "tab": "Komme i gang",
-            "groups": [
-              {
-                "group": "Introduksjon",
-                "pages": ["no/learn/intro"]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "language": "sv",
-        "tabs": [
-          {
-            "tab": "Hem",
-            "icon": "house",
-            "pages": ["index"]
-          },
-          {
-            "tab": "Kom igång",
-            "groups": [
-              {
-                "group": "Introduktion",
-                "pages": ["sv/learn/intro"]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "language": "nl",
-        "tabs": [
-          {
-            "tab": "Home",
-            "icon": "house",
-            "pages": ["index"]
-          },
-          {
-            "tab": "Aan de slag",
-            "groups": [
-              {
-                "group": "Inleiding",
-                "pages": ["nl/learn/intro"]
-              }
-            ]
-          }
-        ]
       }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Contact us",
+          "href": "https://www.superoffice.com/company/contact",
+          "icon": "headset"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://www.superoffice.com/blog",
+          "icon": "newspaper"
+        }
+      ]
+    }
   },
   "logo": {
     "light": "/logo/light.svg",

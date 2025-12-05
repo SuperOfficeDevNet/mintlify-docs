@@ -18,13 +18,13 @@
   },
   "fonts": {
     "heading": {
-      "family": "Super Office Sans Bold",
+      "family": "SuperOfficeSans Bold",
       "source": "https://mintlify-assets.b-cdn.net/fonts/SuperOfficeSans-Bold.woff2",
       "format": "woff2",
       "weight": 700
     },
     "body": {
-      "family": "Super Office Sans",
+      "family": "SuperOffice Sans",
       "source": "https://mintlify-assets.b-cdn.net/fonts/SuperOfficeSans-Regular.woff2",
       "format": "woff2",
       "weight": 400
@@ -55,10 +55,25 @@
                     "pages": [
                       "en/learn/getting-started/main-screen/index",
                       "en/learn/getting-started/main-screen/navigator",
-                      "en/learn/getting-started/main-screen/side-panel"
+                      "en/learn/getting-started/main-screen/buttons-in-menu-bar",
+                      "en/learn/getting-started/main-screen/side-panel",
+                      "en/learn/getting-started/main-screen/in-app-help"
                     ]
                   },
-                  "en/learn/getting-started/edit-email-signature"
+                  "en/learn/getting-started/login",
+                  "en/learn/getting-started/preferences",
+                  {
+                    "group": "Email, documents, and diary",
+                    "pages": [
+                      "en/learn/getting-started/connect-email-doc/index",
+                      "en/learn/getting-started/connect-email-doc/default-win",
+                      "en/learn/getting-started/connect-email-doc/default-mac",
+                      "en/learn/getting-started/connect-email-doc/microsoft-365",
+                      "en/learn/getting-started/connect-email-doc/google-workspace"
+                    ]
+                  },
+                  "en/learn/getting-started/edit-email-signature",
+                  "en/learn/getting-started/change-language"
                 ]
               },
               {
@@ -119,10 +134,42 @@
                     "group": "Die Layout-Elemente",
                     "pages": [
                       "de/learn/getting-started/main-screen/index",
-                      "de/learn/getting-started/main-screen/navigator"
+                      "de/learn/getting-started/main-screen/navigator",
+                      "de/learn/getting-started/main-screen/buttons-in-menu-bar",
+                      "de/learn/getting-started/main-screen/side-panel",
+                      "de/learn/getting-started/main-screen/in-app-help"
                     ]
-                  }
+                  },
+                  "de/learn/getting-started/login",
+                  "de/learn/getting-started/preferences",
+                  {
+                    "group": "Email, documents, and diary",
+                    "pages": [
+                      "de/learn/getting-started/connect-email-doc/index",
+                      "de/learn/getting-started/connect-email-doc/default-win",
+                      "de/learn/getting-started/connect-email-doc/default-mac",
+                      "de/learn/getting-started/connect-email-doc/microsoft-365",
+                      "de/learn/getting-started/connect-email-doc/google-workspace"
+                    ]
+                  },
+                  "de/learn/getting-started/edit-email-signature",
+                  "de/learn/getting-started/change-language"
                 ]
+              },
+              {
+                "group": "Learn the basics",
+                "pages": [
+                  "de/learn/basics/notifications",
+                  "de/learn/basics/history"
+                ]
+              },
+              {
+                "group": "Search options",
+                "pages": ["de/search-options/learn/index"]
+              },
+              {
+                "group": "Dashboards",
+                "pages": ["de/dashboard/learn/index"]
               }
             ]
           }

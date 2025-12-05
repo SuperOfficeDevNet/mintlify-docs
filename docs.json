@@ -94,16 +94,6 @@
             ]
           },
           {
-            "tab": "API Reference",
-            "icon": "code-simple",
-            "pages": [
-              {
-                "group": "API Endpoints",
-                "openapi": "openapi-consolidated.json"
-              }
-            ]
-          },
-          {
             "tab": "Release Notes",
             "icon": "bullhorn",
             "groups": [

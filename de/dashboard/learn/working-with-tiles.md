@@ -226,7 +226,7 @@ Klicken Sie im Kopfbereich einer Kachel auf <i class="ph ph-dots-three-vertical"
 * [Neues Dashboard hinzufügen][1]
 * [Verwenden Sie Dashboards, um Ihre Vertriebspipeline zu verwalten][2]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [2]: show-sales-targets.md
 [3]: index.md#charts
@@ -235,7 +235,7 @@ Klicken Sie im Kopfbereich einer Kachel auf <i class="ph ph-dots-three-vertical"
 [6]: ../../search-options/selection/learn/howto/display-as-charts.md
 [7]: ../../localization/learn/translate-fields.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/dashboard/edit-dashboard-tiles-sidebar.png
 [img2]: ../../../media/loc/en/dashboard/edit-tile-dataset.png
 [img3]: ../../../media/loc/en/dashboard/edit-tile-layout.png

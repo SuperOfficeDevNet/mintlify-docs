@@ -89,7 +89,7 @@ Wenn Sie auf diese Schaltfläche klicken, wird eine Kopie der Selektion erstellt
 * [Selektion aktualisieren][6]
 * [Aufgaben in der Ansicht Selektion ausführen][5]
 
-<!-- Referenced links -->
+
 [3]: combine.md
 [7]: ../../../learn/basics/fav.md
 [8]: ../../../learn/basics/duplicates.md

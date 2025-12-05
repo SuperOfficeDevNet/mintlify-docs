@@ -75,9 +75,9 @@ Nur der **Eigentümer** eines Dashboards, ein allgemeiner Administrator oder ein
 * [Neues Dashboard erstellen][1]
 * [Kacheln hinzufügen, bearbeiten oder entfernen][2]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [2]: working-with-tiles.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/dashboard/transfer-dashboard-to-new-owner.png

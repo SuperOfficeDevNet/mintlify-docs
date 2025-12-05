@@ -56,10 +56,10 @@ Wenn ein Diagramm die Meldung **Keine Daten verfügbar** anzeigt, bedeutet das, 
 
 * [Arbeiten mit Dashboard-Kacheln][2]
 
-<!-- Referenced links -->
+
 [1]: ../../../../dashboard/learn/index.md
 [2]: ../../../../dashboard/learn/working-with-tiles.md
 
-<!-- Referenzierte Bilder -->
+
 [img1]: ../../../../../media/loc/en/search-options/selection-chart.png
 [img2]: ../../../../../media/loc/en/search-options/drill-down-selection-chart.png

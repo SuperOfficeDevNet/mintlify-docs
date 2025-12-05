@@ -60,7 +60,7 @@ Die Funktionalität ist für alle unterstützten Selektionstypen gleich: Sie kö
 
   ![Geöffnetes Aufgabenmenü für einen Verkauf in der Board-Ansicht mit verfügbaren Optionen -screenshot][img5]
 
-<!-- markdownlint-disable-next-line MD013 -->
+
 ## Board-Layout anpassen <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
 
 ### Gruppieren und untergruppieren
@@ -239,7 +239,7 @@ Nutzen Sie Gruppierung kreativ, um Daten effizient zu organisieren und zu nutzen
 * [Projektstatus konfigurieren][18]
 * [Projekttypen konfigurieren][19]
 
-<!-- Referenzierte Links -->
+
 [1]: create.md
 [2]: index.md
 [11]: ../../../learn/getting-started/main-screen/side-panel.md
@@ -252,7 +252,7 @@ Nutzen Sie Gruppierung kreativ, um Daten effizient zu organisieren und zu nutzen
 [18]: ../../../project/admin/project-status.md
 [19]: ../../../project/admin/project-type.md
 
-<!-- Referenzierte Bilder -->
+
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png
 [img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png

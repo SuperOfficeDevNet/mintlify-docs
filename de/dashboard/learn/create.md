@@ -19,7 +19,7 @@ Dashboards bieten eine visuelle Übersicht über wichtige Kennzahlen in Ihrem CR
 
 Sehen Sie sich dieses Video an oder folgen Sie den untenstehenden Schritten, um Dashboards in SuperOffice CRM zu erstellen:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/W68M1IOke0Y]
 
 (Videolänge – 4:29)
@@ -85,12 +85,12 @@ Sie können ein vorhandenes Dashboard duplizieren, um Layout oder Inhalt wiederz
 * [Dashboard-Kacheln bearbeiten][2]
 * [Selektion erstellen][6]
 
-<!-- Referenced links -->
+
 [1]: ../../localization/learn/translate-fields.md
 [2]: add-tile.md
 [3]: update.md
 [6]: ../../search-options/selection/learn/create.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/dashboard/create-dashboard-dialog.png
 [img2]: ../../../media/loc/en/dashboard/pin-dashboard.png

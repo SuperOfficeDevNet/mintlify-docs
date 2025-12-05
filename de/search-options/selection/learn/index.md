@@ -171,7 +171,7 @@ Eine Selektion mit allen Verkäufen, die Sie im ersten Quartal abgeschlossen hab
 * [Aufgaben in der Ansicht Selektion ausführen][1]
 * [Selektionen als Diagramme anzeigen][3]
 
-<!-- Referenced links -->
+
 [1]: howto/index.md
 [3]: howto/display-as-charts.md
 [6]: howto/export.md
@@ -186,5 +186,5 @@ Eine Selektion mit allen Verkäufen, die Sie im ersten Quartal abgeschlossen hab
 [12]: ../../../learn/section-tabs/filter.md
 [16]: ../../../dashboard/learn/create.md
 
-<!-- Referenced images -->
+
 [img3]: ../../../../media/loc/en/sale/selection-sales-column-calculation-grouping.png

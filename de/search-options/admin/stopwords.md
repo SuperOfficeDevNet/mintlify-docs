@@ -61,7 +61,7 @@ Stoppwörter werden gelöscht, damit sie nach dem Ausschließen doch in die Voll
 
 1. Klicken Sie unter der Firmenliste auf die Schaltfläche **Löschen**.
 
-<!-- Referenced links -->
+
 [3]: regenerate-index.md
 
-<!-- Referenced images -->
+

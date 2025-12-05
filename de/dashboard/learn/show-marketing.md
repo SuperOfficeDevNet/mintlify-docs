@@ -18,7 +18,7 @@ Erstellen Sie Dashboards für Ihre Marketingaufgaben, wie zum Beispiel Formular�
 
 Wenn das Dashboard erstellt wurde, können Sie Kacheln hinzufügen und bearbeiten.
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/lz9rEZI_2SY]
 
 Sehen Sie sich die folgenden Beispiele an, um Ideen für Kacheln zu erhalten, die Sie Ihrem Kampagnen- oder Formularübermittlungs-Dashboard hinzufügen können.
@@ -49,13 +49,13 @@ Sehen Sie sich die folgenden Beispiele an, um Ideen für Kacheln zu erhalten, di
 * [Kacheln mit Leads und UTM-Daten][7]
 * [Weitere Infos über Kriterien][2]
 
-<!-- Referenced links -->
+
 [1]: https://www.superoffice.com/blog/email-open-rates/
 [2]: ../../search-options/learn/search-criteria.md
 [5]: create.md
 [6]: working-with-tiles.md
 [7]: show-leads.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/dashboard/user-mailing-dashboard.png
 [img2]: ../../../media/loc/en/dashboard/user-mailing-dashboard-forms.png

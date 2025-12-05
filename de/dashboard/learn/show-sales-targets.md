@@ -89,7 +89,7 @@ Wenn Mit Ziel vergleichen überhaupt nicht sichtbar, müssen Sie sicherstellen, 
 * [Verkaufsziele festlegen][7]
 * [Verkäufe prognostizieren][8]
 
-<!-- Referenced links -->
+
 [2]: ../../search-options/learn/search-criteria.md
 [3]: ../../localization/learn/translate-fields.md
 [4]: ../../sale/learn/sales-targets/index.md
@@ -99,5 +99,5 @@ Wenn Mit Ziel vergleichen überhaupt nicht sichtbar, müssen Sie sicherstellen, 
 [8]: ../../sale/learn/forecasting.md
 [9]: show-leads.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/dashboard/team-forecast-vs-target.png

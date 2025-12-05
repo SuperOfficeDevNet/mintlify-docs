@@ -39,8 +39,8 @@ Weil eine dynamische Selektion keine physischen Personen, sondern nur eine Reihe
 
 Um eine [Kopie einer dynamischen Selektion][3] zu erstellen, können Sie auf der Registerkarte **Aufgabe** die Funktion **Selektion kopieren** verwenden.
 
-<!-- Referenced links -->
+
 [2]: create.md
 [3]: create.md#copy
 
-<!-- Referenced images -->
+

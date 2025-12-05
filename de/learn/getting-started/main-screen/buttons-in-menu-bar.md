@@ -81,7 +81,7 @@ Die **obere Leiste** bietet grundlegende Tools zur Navigation in SuperOffice CRM
 | **Hilfedateien (F1)** | Direkter Zugriff auf Benutzerhandbücher. |
 | **Über** | Anzeigen von Softwaredetails wie Version, Benutzerinformationen und Kunden-ID. |
 
-<!-- Referenced links -->
+
 [1]: ../../basics/external-applications-and-url-addresses.md
 [3]: ../../basics/deleting-elements.md#restore
 [8]: ../../basics/duplicates.md
@@ -94,4 +94,4 @@ Die **obere Leiste** bietet grundlegende Tools zur Navigation in SuperOffice CRM
 [15]: ../../basics/creating-shortcuts-to-entries-in-crm.md
 [17]: ../../../sale/learn/sales-targets/index.md
 
-<!-- Referenced images -->
+

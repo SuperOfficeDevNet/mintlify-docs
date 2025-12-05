@@ -22,7 +22,7 @@ Typische Suchanfragen sollen Ihnen den Einstieg und die Erstellung Ihrer eigenen
 
 Sehen Sie sich dieses Video an, um zu lernen, wie Sie eine typische Suchanfrage durchführen und ändern können, indem Sie neue Suchkriterien hinzufügen oder der folgenden Schritt-für-Schritt-Anleitung folgen:
 
-<!-- markdownlint-disable-next-line MD034 DOCSMD007 -->
+
 > [!Video https://www.youtube.com/embed/gx-vXm-b_7g]
 
 (Videolänge – 3:01)
@@ -165,7 +165,7 @@ Wenn Sie die Ansicht **Suchen** öffnen, enthält diese die Standardsuchkriterie
 * [Suchansicht verwenden][1]
 * [Selektionen][4]
 
-<!-- Referenced links -->
+
 [1]: find-screen.md
 [2]: in-navigator.md
 [3]: ../../saint/learn/index.md

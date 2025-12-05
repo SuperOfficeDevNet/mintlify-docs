@@ -128,7 +128,7 @@ Administratoren können [benutzerdefinierte Ansichten][7] für die Seitenleiste 
 
   Verwenden Sie sie, um Chancen zu verfolgen, überfällige Aufgaben zu überwachen und Verkaufsvorschläge nahtlos zu verfolgen, ohne die Hauptansicht zu verlassen. Detaillierte Schritte finden Sie unter [Seitenleiste für den Verkauf nutzen][10].
 
-<!-- Referenced links -->
+
 [1]: ../../basics/history.md
 [2]: ../../../contact/learn/create.md
 [4]: ../../../diary/learn/index.md
@@ -140,6 +140,6 @@ Administratoren können [benutzerdefinierte Ansichten][7] für die Seitenleiste 
 [11]: https://community.superoffice.com/en/support-faqs/faq/what-to-do-when-i-get-document-closed-in-the-side-panel-of-superoffice-crm-when-document-viewer-is-used/
 [10]: ../../../sale/learn/index.md#side-panel
 
-<!-- Referenced images -->
+
 [img1]: ../../../../media/loc/en/learn/pin-side-panel-favs.png
 [img10]: ../../../../media/loc/en/learn/getstarted-sidepanel-companypreview.png

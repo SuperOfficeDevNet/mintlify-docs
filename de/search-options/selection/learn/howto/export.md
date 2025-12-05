@@ -41,6 +41,6 @@ Mit dieser Aufgabe können Sie eine Textdatei mit Informationen über die Selekt
 > [!NOTE]
 > Die Textdatei kann etwas unübersichtlich erscheinen, wenn Sie sie in Notepad öffnen. Dies ist normal für Dateien, in denen Informationen mit Trennzeichen wie Tabstopps oder Semikolons getrennt sind.
 
-<!-- Referenced links -->
 
-<!-- Referenced images -->
+
+

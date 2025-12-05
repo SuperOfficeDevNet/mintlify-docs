@@ -66,7 +66,7 @@ Listet Anfragen auf, die noch niemandem zugeordnet sind. Wenn Sie die [Verantwor
 * [Anfragenmanagement][6]
 * [Anfragen suchen][5]
 
-<!-- Referenced links -->
+
 [1]: create.md
 [2]: ../../request/learn/accept.md
 [4]: ../../request/learn/create.md
@@ -74,5 +74,5 @@ Listet Anfragen auf, die noch niemandem zugeordnet sind. Wenn Sie die [Verantwor
 [6]: ../../request/learn/index.md#request-mgt
 [7]: add-tile.md
 
-<!-- Referenced images -->
+
 [img1]: ../../../media/loc/en/request/service-dashboard.png

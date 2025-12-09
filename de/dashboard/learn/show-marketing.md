@@ -49,13 +49,11 @@ Sehen Sie sich die folgenden Beispiele an, um Ideen für Kacheln zu erhalten, di
 * [Kacheln mit Leads und UTM-Daten][7]
 * [Weitere Infos über Kriterien][2]
 
-
 [1]: https://www.superoffice.com/blog/email-open-rates/
 [2]: ../../search-options/learn/search-criteria.md
 [5]: create.md
 [6]: working-with-tiles.md
 [7]: show-leads.md
 
-
-[img1]: ../../../media/loc/en/dashboard/user-mailing-dashboard.png
-[img2]: ../../../media/loc/en/dashboard/user-mailing-dashboard-forms.png
+[img1]: ../../../media/en/dashboard/user-mailing-dashboard.png
+[img2]: ../../../media/en/dashboard/user-mailing-dashboard-forms.png

@@ -89,7 +89,15 @@
               },
               {
                 "group": "Dashboards",
-                "pages": ["en/dashboard/learn/index"]
+                "pages": [
+                  "en/dashboard/learn/index",
+                  "en/dashboard/learn/create",
+                  "en/dashboard/learn/show-leads",
+                  "en/dashboard/learn/show-sales-targets",
+                  "en/dashboard/learn/show-requests",
+                  "en/dashboard/learn/working-with-tiles",
+                  "en/dashboard/learn/update"
+                ]
               }
             ]
           },
@@ -159,7 +167,15 @@
               },
               {
                 "group": "Dashboards",
-                "pages": ["de/dashboard/learn/index"]
+                "pages": [
+                  "de/dashboard/learn/index",
+                  "de/dashboard/learn/create",
+                  "de/dashboard/learn/show-leads",
+                  "de/dashboard/learn/show-sales-targets",
+                  "de/dashboard/learn/show-requests",
+                  "de/dashboard/learn/working-with-tiles",
+                  "de/dashboard/learn/update"
+                ]
               }
             ]
           }

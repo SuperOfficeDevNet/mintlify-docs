@@ -180,6 +180,87 @@
             ]
           }
         ]
+      },
+      {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Home",
+            "icon": "house",
+            "pages": ["index"]
+          },
+          {
+            "tab": "Gidsen",
+            "icon": "book-open",
+            "pages": [
+              "nl/learn/intro",
+              {
+                "group": "Aan de slag",
+                "pages": [
+                  "nl/learn/getting-started/index",
+                  {
+                    "group": "De opmaakelementen",
+                    "pages": [
+                      "nl/learn/getting-started/main-screen/index",
+                      "nl/learn/getting-started/main-screen/navigator",
+                      "nl/learn/getting-started/main-screen/buttons-in-menu-bar",
+                      "nl/learn/getting-started/main-screen/side-panel",
+                      "nl/learn/getting-started/main-screen/in-app-help"
+                    ]
+                  },
+                  "nl/learn/getting-started/login",
+                  "nl/learn/getting-started/preferences",
+                  {
+                    "group": "E-mail, document en agenda koppelen",
+                    "pages": [
+                      "nl/learn/getting-started/connect-email-doc/index",
+                      "nl/learn/getting-started/connect-email-doc/default-win",
+                      "nl/learn/getting-started/connect-email-doc/default-mac",
+                      "nl/learn/getting-started/connect-email-doc/microsoft-365",
+                      "nl/learn/getting-started/connect-email-doc/google-workspace"
+                    ]
+                  },
+                  "nl/learn/getting-started/edit-email-signature",
+                  "nl/learn/getting-started/change-language"
+                ]
+              },
+              {
+                "group": "De basis leren",
+                "pages": [
+                  "nl/learn/basics/index",
+                  "nl/learn/basics/notifications",
+                  "nl/learn/basics/history"
+                ]
+              },
+              {
+                "group": "Zoekopties",
+                "pages": ["nl/search-options/learn/index"]
+              },
+              {
+                "group": "Dashboards",
+                "pages": [
+                  "nl/dashboard/learn/index",
+                  "nl/dashboard/learn/create",
+                  "nl/dashboard/learn/show-leads",
+                  "nl/dashboard/learn/show-sales-targets",
+                  "nl/dashboard/learn/show-requests",
+                  "nl/dashboard/learn/working-with-tiles",
+                  "nl/dashboard/learn/update"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Release Notes",
+            "icon": "bullhorn",
+            "groups": [
+              {
+                "group": "SuperOffice 11",
+                "pages": ["release-notes/11/core-crm/index"]
+              }
+            ]
+          }
+        ]
       }
     ],
     "global": {

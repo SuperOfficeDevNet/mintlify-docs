@@ -31,6 +31,9 @@
     }
   },
   "favicon": "/favicon.ico",
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
   "navigation": {
     "languages": [
       {

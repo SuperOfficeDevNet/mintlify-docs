@@ -52,6 +52,7 @@
                   "en/learn/getting-started/index",
                   {
                     "group": "The layout elements",
+                    "expanded": false,
                     "pages": [
                       "en/learn/getting-started/main-screen/index",
                       "en/learn/getting-started/main-screen/navigator",
@@ -64,6 +65,7 @@
                   "en/learn/getting-started/preferences",
                   {
                     "group": "Email, documents, and diary",
+                    "expanded": false,
                     "pages": [
                       "en/learn/getting-started/connect-email-doc/index",
                       "en/learn/getting-started/connect-email-doc/default-win",
@@ -78,6 +80,7 @@
               },
               {
                 "group": "Learn the basics",
+                "expanded": false,
                 "pages": [
                   "en/learn/basics/notifications",
                   "en/learn/basics/history"
@@ -85,10 +88,12 @@
               },
               {
                 "group": "Search options",
+                "expanded": false,
                 "pages": ["en/search-options/learn/index"]
               },
               {
                 "group": "Dashboards",
+                "expanded": false,
                 "pages": [
                   "en/dashboard/learn/index",
                   "en/dashboard/learn/create",

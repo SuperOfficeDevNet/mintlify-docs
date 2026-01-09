@@ -1,0 +1,17 @@
+# Exclude draft documents
+drafts/
+*.draft.mdx
+
+# Exclude internal documentation
+internal/
+
+# Exclude all API source files (used for generation)
+api-sources/
+
+# Exclude transformation scripts
+tools/
+transform-*.ps1
+
+# Exclude specific files
+private-notes.md
+bergfrid-tmp/

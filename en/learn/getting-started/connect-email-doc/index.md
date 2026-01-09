@@ -1,5 +1,6 @@
 ---
 title: Connect email, document, and calendar
+sidebarTitle: Connect email, document, and calendar
 description: Learn which integration options you need based on your operating system, email client, and the document programs you use in this how-to guide.
 keywords: ["email", "document", "diary", "invitation"]
 ---

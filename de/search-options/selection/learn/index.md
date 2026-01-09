@@ -1,6 +1,7 @@
 ---
 uid: help-de-selection
 title: Selektion
+sidebarTitle: Selektion
 description: Selektion
 keywords: Selektion
 author: Bergfrid Dias
@@ -171,7 +172,6 @@ Eine Selektion mit allen Verkäufen, die Sie im ersten Quartal abgeschlossen hab
 * [Aufgaben in der Ansicht Selektion ausführen][1]
 * [Selektionen als Diagramme anzeigen][3]
 
-
 [1]: howto/index.md
 [3]: howto/display-as-charts.md
 [6]: howto/export.md
@@ -185,6 +185,5 @@ Eine Selektion mit allen Verkäufen, die Sie im ersten Quartal abgeschlossen hab
 [10]: ../../../learn/section-tabs/configure-columns.md#calculate
 [12]: ../../../learn/section-tabs/filter.md
 [16]: ../../../dashboard/learn/create.md
-
 
 [img3]: ../../../../media/loc/en/sale/selection-sales-column-calculation-grouping.png

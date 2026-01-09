@@ -1,6 +1,7 @@
 ---
 uid: help-nl-selection-user
 title: Taken uitvoeren met selecties
+sidebarTitle: Taken uitvoeren met selecties
 description: Taken uitvoeren met selecties
 author: SuperOffice RnD
 date: 02.15.2023
@@ -11,7 +12,7 @@ language: nl
 
 # Taken uitvoeren met selecties
 
-Selectie, dynamisch danwel statisch, is een goed startpunt om een deel van uw werkbelasting te verlichten. U kunt de selecties op verschillende manieren gebruiken, zoals het versturen naar ontvangers, de weergave in het zijpaneel en het maken van grafieken in Dashboards. Maar u kunt ook veel verschillende taken uitvoeren met selecties en de categorieën Mailing / Activiteiten, Beheren, Afdrukken / Exporteren en Verwijderen.
+Selectie, dynamisch danwel statisch, is een goed startpunt om een deel van uw werkbelasting te verlichten. U kunt de selecties op verschillende manieren gebruiken, zoals het versturen naar ontvangers, de weergave in het zijpaneel en het maken van grafieken in Dashboards. Maar u kunt ook veel verschillende taken uitvoeren met selecties en de categorieÃƒÂ«n Mailing / Activiteiten, Beheren, Afdrukken / Exporteren en Verwijderen.
 
 Afhankelijk van het archief dat u ziet, Bedrijf/Persoon of de andere verschillende typen, staan er verschillende opties in het menu Taak. Op een selectie van personen kunt u vervolgactiviteiten genereren, op een projectselectie kunt u de bulksgewijs bijwerken gebruiken om het project als voltooid te markeren of exporteren van elk gewenst archief naar Excel.
 

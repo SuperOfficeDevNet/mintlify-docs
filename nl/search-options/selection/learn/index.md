@@ -1,6 +1,7 @@
 ---
 uid: help-nl-selection
 title: Selectie
+sidebarTitle: Selectie
 description: Selectie
 keywords: statische selectie, dynamische selectie, gecombineerde selecties, scherm Selectie, selectieleden, selectie
 author: Bergfrid Dias
@@ -171,7 +172,6 @@ Een selectie met alle verkopen die u in het eerste kwartaal hebt afgerond, of al
 * [Taken uitvoeren met selecties][1]
 * [Selecties weergeven als grafieken][3]
 
-
 [1]: howto/index.md
 [3]: howto/display-as-charts.md
 [6]: howto/export.md
@@ -185,6 +185,5 @@ Een selectie met alle verkopen die u in het eerste kwartaal hebt afgerond, of al
 [10]: ../../../learn/section-tabs/configure-columns.md#calculate
 [12]: ../../../learn/section-tabs/filter.md
 [16]: ../../../dashboard/learn/create.md
-
 
 [img3]: ../../../../media/en/sale/selection-sales-column-calculation-grouping.png

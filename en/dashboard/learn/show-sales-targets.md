@@ -98,4 +98,4 @@ Is the Compare to target not visible at all, make sure that you have selected th
 [8]: ../../sale/learn/forecasting.md
 [9]: show-leads.md
 
-[img1]: ../../../media/en/dashboard/team-forecast-vs-target.png
+[img1]: ../../../media/loc/en/dashboard/team-forecast-vs-target.png

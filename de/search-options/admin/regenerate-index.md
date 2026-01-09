@@ -34,7 +34,4 @@ Wenn Sie [neue Stoppwörter hinzufügen oder löschen][1], haben Ihre Änderunge
 
 1. Sie erhalten nun die Mitteilung, dass es einige Zeit dauern kann, einen neuen Index zu erstellen, und dass die Benutzer in diesem Zeitraum nicht auf die Volltextsuchfunktion zugreifen können. Klicken Sie auf **OK**. Daraufhin wird ein Fenster geöffnet, das den Status der Generierung anzeigt. Wenn dieses Fenster verschwindet, ist der neue Volltextindex erstellt.
 
-
 [1]: stopwords.md
-
-

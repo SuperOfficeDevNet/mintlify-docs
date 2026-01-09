@@ -18,7 +18,6 @@ Erstellen Sie Dashboards für Ihre Marketingaufgaben, wie zum Beispiel Formular�
 
 Wenn das Dashboard erstellt wurde, können Sie Kacheln hinzufügen und bearbeiten.
 
-
 > [!Video https://www.youtube.com/embed/lz9rEZI_2SY]
 
 Sehen Sie sich die folgenden Beispiele an, um Ideen für Kacheln zu erhalten, die Sie Ihrem Kampagnen- oder Formularübermittlungs-Dashboard hinzufügen können.
@@ -55,5 +54,5 @@ Sehen Sie sich die folgenden Beispiele an, um Ideen für Kacheln zu erhalten, di
 [6]: working-with-tiles.md
 [7]: show-leads.md
 
-[img1]: ../../../media/en/dashboard/user-mailing-dashboard.png
-[img2]: ../../../media/en/dashboard/user-mailing-dashboard-forms.png
+[img1]: ../../../media/loc/en/dashboard/user-mailing-dashboard.png
+[img2]: ../../../media/loc/en/dashboard/user-mailing-dashboard-forms.png

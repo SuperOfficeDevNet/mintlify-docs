@@ -102,7 +102,6 @@ Wanneer een activiteit in rode tekst wordt weergegeven, betekent dit dat de gepl
 * [Een e-mailbericht opstellen][5]
 * [Het sectietabblad Activiteiten][18]
 
-
 [1]: ../../diary/learn/follow-ups.md
 [2]: ../getting-started/preferences.md
 [3]: ../../marketing/mailing/learn/index.md
@@ -116,6 +115,5 @@ Wanneer een activiteit in rode tekst wordt weergegeven, betekent dit dat de gepl
 [17]: ../section-tabs/filter.md
 [18]: ../section-tabs/activities-tab.md
 
-
-[img3]: ../../../media/en/diary/activities-detail.png
-[img4]: ../../../media/en/learn/activities-filter.png
+[img3]: ../../../media/loc/en/diary/activities-detail.png
+[img4]: ../../../media/loc/en/learn/activities-filter.png

@@ -73,4 +73,4 @@ Listet Anfragen auf, die noch niemandem zugeordnet sind. Wenn Sie die [Verantwor
 [6]: ../../request/learn/index.md#request-mgt
 [7]: add-tile.md
 
-[img1]: ../../../media/en/request/service-dashboard.png
+[img1]: ../../../media/loc/en/request/service-dashboard.png

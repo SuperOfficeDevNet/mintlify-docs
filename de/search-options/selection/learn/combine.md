@@ -74,7 +74,6 @@ Nachdem Sie die Selektion gespeichert haben, können Sie diese [bearbeiten][3], 
 > [!NOTE]
 > Wenn Sie die Firmen vergleichen möchten, die mit diesen beiden Selektionen verknüpft sind, wählen Sie **Nur Firmen vergleichen**.
 
-
 [1]: create.md
 [3]: update/index.md
 [2]: ../../../learn/basics/fav.md

@@ -57,7 +57,6 @@ Schauen wir uns einige praktische Beispiele an, wie Sie die ODER-Funktion verwen
 
 Sehen Sie sich dieses Video an, um zu lernen, wie Sie eine Suche mit der ODER-Funktion erstellen:
 
-
 > [!Video https://www.youtube.com/embed/Z-fSLJSdp2k]
 
 (Videolänge - 4:08)
@@ -259,7 +258,6 @@ Angenommen, Sie arbeiten als Geschäftsführer der Marketing-Abteilung, und Sie 
 * [Verlaufsliste verwenden][6]
 * [Suchkriterien verwenden][3]
 
-
 [1]: ../../learn/getting-started/main-screen/buttons-in-menu-bar.md
 [4]: ../../learn/getting-started/main-screen/side-panel.md
 [2]: in-navigator.md
@@ -269,6 +267,5 @@ Angenommen, Sie arbeiten als Geschäftsführer der Marketing-Abteilung, und Sie 
 [7]: ../selection/learn/howto/index.md
 [8]: ../selection/learn/create.md
 [9]: ../selection/learn/add-remove-members-static.md
-
 
 [img10]: ../../../media/loc/en/search-options/task-menu.png

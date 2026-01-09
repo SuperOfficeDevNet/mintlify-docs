@@ -45,7 +45,6 @@ Sie können im Dialogfeld **Dokument** nach Text suchen, aber nicht den tatsäch
 
 Bestimmte Wörter werden bei der Volltextsuche ignoriert. Diese wurden in Einstellungen und Verwaltung definiert.
 
-
 ## Warum erhalte ich keine Treffer für ein Suchwort, von dem ich weiß, dass es in der Datenbank enthalten ist?
 
 Falls für ein Suchwort in der SuperOffice-Datenbank keine Treffer zurückgegeben werden, kann dies daran liegen, dass Sie den Index für die Volltextsuche in Einstellungen und Verwaltung noch nicht generiert haben.
@@ -56,11 +55,9 @@ Falls für ein Suchwort in der SuperOffice-Datenbank keine Treffer zurückgegebe
 * [Schnellsuche][3]
 * [Verlaufsliste][4]
 
-
 [1]: ../../learn/getting-started/main-screen/side-panel.md
 [2]: find-screen.md
 [3]: index.md#fastsearcher
 [4]: ../../learn/basics/history.md
-
 
 [img1]: ../../../media/loc/en/search-options/freetext-search-box.png

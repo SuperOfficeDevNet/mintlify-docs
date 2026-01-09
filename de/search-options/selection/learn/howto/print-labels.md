@@ -47,7 +47,5 @@ Das Drucken von Etiketten kann nützlich sein, wenn Sie Briefe an mehrere Empfä
 
 1. Klicken Sie auf **Drucken**.
 
-
-
 [img1]: ../../../../../media/loc/en/search-options/choose-label-layout-dialog.png
 [img3]: ../../../../../media/loc/en/search-options/selection-task-print-labels-print-settings.png

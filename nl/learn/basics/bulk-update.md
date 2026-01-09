@@ -101,6 +101,5 @@ U wilt alle "oude" projecten opschonen die niet zijn ingesteld als voltooid. Maa
 * [Hoe vul ik voor veel personen in één keer de velden "Juridische basis", "Toestemmingsbron" en "Doel" in in SuperOffice CRM?][3]
 * [Massaal personen en bedrijven uit selectie verwijderen][1]
 
-
 [1]: ../../security/privacy/learn/mass-delete.md
 [3]: ../../../en/security/privacy/learn/edit-legal-base.md#bulk

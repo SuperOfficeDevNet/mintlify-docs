@@ -87,12 +87,10 @@ Om meer details te bekijken of om te bewerken, dubbelklik op een rij om het **Re
 * [Items toevoegen aan de lijst Algemeen - Relatie][3]
 * [Aangepaste velden in relaties][4]
 
-
 [1]: ../section-tabs/index.md
 [2]: deleting-elements.md
 [3]: ../../admin/lists/specialized-lists.md#relation
 [4]: ../../custom-objects/learn/extra-field.md#relation
 
-
-[img1]: ../../../media/en/company/relation.png
-[img2]: ../../../media/en/company/relations-detail.png
+[img1]: ../../../media/loc/en/company/relation.png
+[img2]: ../../../media/loc/en/company/relations-detail.png

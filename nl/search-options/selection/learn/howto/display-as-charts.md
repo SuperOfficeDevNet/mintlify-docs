@@ -56,10 +56,8 @@ Als een grafiek de melding **Geen gegevens beschikbaar** toont, betekent dit dat
 
 * [Werken met dashboardtegels][2]
 
-
 [1]: ../../../../dashboard/learn/index.md
 [2]: ../../../../dashboard/learn/working-with-tiles.md
 
-
-[img1]: ../../../../../media/en/search-options/selection-chart.png
-[img2]: ../../../../../media/en/search-options/drill-down-selection-chart.png
+[img1]: ../../../../../media/loc/en/search-options/selection-chart.png
+[img2]: ../../../../../media/loc/en/search-options/drill-down-selection-chart.png

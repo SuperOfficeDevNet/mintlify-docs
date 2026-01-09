@@ -22,7 +22,6 @@ Frequente zoekacties zijn er om u te helpen aan de slag te gaan en uw eigen zoek
 
 Bekijk deze video om te leren hoe u een frequente zoekactie uitvoert en deze wijzigt door nieuwe zoekcriteria toe te voegen of volg de stapsgewijze handleiding hieronder:
 
-
 > [!Video https://www.youtube.com/embed/gx-vXm-b_7g]
 
 (duur van de video - 3:01)
@@ -166,7 +165,6 @@ Wanneer u het scherm **Zoeken** opent, bevat het de standaardzoekcriteria of de 
 
 * [Het scherm Zoeken gebruiken][1]
 * [Selecties][4]
-
 
 [1]: find-screen.md
 [2]: in-navigator.md

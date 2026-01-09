@@ -74,7 +74,6 @@ Na het opslaan van de selectie, kunt u [deze bewerken][3] door het combinatietyp
 > [!NOTE]
 > als u de bedrijven die aan deze twee selecties zijn gekoppeld slechts wilt vergelijken, schakelt u het selectievakje **Alleen bedrijven vergelijken** in.
 
-
 [1]: create.md
 [3]: update/index.md
 [2]: ../../../learn/basics/fav.md

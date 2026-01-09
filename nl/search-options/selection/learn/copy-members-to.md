@@ -39,8 +39,5 @@ Omdat een dynamische selectie geen fysieke personen bevat, maar alleen een set z
 
 Om [een kopie te maken][3] van een dynamische selectie, kunt u de functie **Selectie kopiëren** gebruiken op het tabblad **Taak**.
 
-
 [2]: create.md
 [3]: create.md#copy
-
-

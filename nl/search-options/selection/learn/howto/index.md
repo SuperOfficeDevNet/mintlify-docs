@@ -61,7 +61,6 @@ De knop **Taak** bevat taken, zoals de verzending van e-mail, massabewerking en 
 * [Selectie verwijderen][7]
 * [Records permanent verwijderen][13]
 
-
 [1]: ../../../learn/find-screen.md
 [2]: create-mailings.md
 [3]: send-email.md
@@ -75,5 +74,4 @@ De knop **Taak** bevat taken, zoals de verzending van e-mail, massabewerking en 
 [12]: export.md
 [13]: ../../../../security/privacy/learn/mass-delete.md
 
-
-[img1]: ../../../../../media/en/search-options/selection-task.png
+[img1]: ../../../../../media/loc/en/search-options/selection-task.png

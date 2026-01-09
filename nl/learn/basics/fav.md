@@ -68,7 +68,6 @@ Nu hebt u een snelle toegang tot de record door te klikken op <i class="ph ph-st
 * [Historielijst][1]
 * [Zijpanelen][4]
 
-
 [1]: history.md
 [2]: ../getting-started/main-screen/navigator.md
 [4]: ../getting-started/main-screen/side-panel.md

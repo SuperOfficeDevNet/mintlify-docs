@@ -66,7 +66,6 @@ Toont verzoeken die aan niemand zijn toegewezen. Om [verantwoordelijkheid voor e
 * [Verzoekbeheer][6]
 * [Verzoeken zoeken][5]
 
-
 [1]: create.md
 [2]: ../../request/learn/accept.md
 [4]: ../../request/learn/create.md
@@ -74,5 +73,4 @@ Toont verzoeken die aan niemand zijn toegewezen. Om [verantwoordelijkheid voor e
 [6]: ../../request/learn/index.md#request-mgt
 [7]: working-with-tiles.md
 
-
-[img1]: ../../../media/en/request/service-dashboard.png
+[img1]: ../../../media/loc/en/request/service-dashboard.png

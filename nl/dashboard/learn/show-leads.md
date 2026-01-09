@@ -79,14 +79,12 @@ Als u UTM-tracking gebruikt (vereist Marketing Premium), helpen extra tegels u b
 * [Conversietracking (UTM-gegevens)][8]
 * [Meer informatie over criteria][2]
 
-
 [2]: ../../search-options/learn/search-criteria.md
 [5]: create.md
 [6]: working-with-tiles.md
 [7]: ../../lead/learn/index.md
 [8]: ../../marketing/utm/learn/index.md
 
-
-[img1]: ../../../media/en/dashboard/lead-qualification.png
-[img2]: ../../../media/en/dashboard/conversion-dashboard.png
-[img3]: ../../../media/en/dashboard/new-leads-ytd.png
+[img1]: ../../../media/loc/en/dashboard/lead-qualification.png
+[img2]: ../../../media/loc/en/dashboard/conversion-dashboard.png
+[img3]: ../../../media/loc/en/dashboard/new-leads-ytd.png

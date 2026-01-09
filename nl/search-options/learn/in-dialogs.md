@@ -34,8 +34,5 @@ Als u bijvoorbeeld alle documentsjablonen wilt zien die beschikbaar zijn in Supe
 
 ![Typ twee percentagetekens in de Snel zoeken om alle records te bekijken -screenshot][img4]
 
-
-
-
-[img3]: ../../../media/en/search-options/quicksearch-dialog.png
-[img4]: ../../../media/en/search-options/getstarted-document-fastsearcher.png
+[img3]: ../../../media/loc/en/search-options/quicksearch-dialog.png
+[img4]: ../../../media/loc/en/search-options/getstarted-document-fastsearcher.png

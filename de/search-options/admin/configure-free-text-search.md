@@ -62,8 +62,5 @@ Sie können Suchkriterien für Einzelwörter (zum Beispiel *Peter*) und Phrasen 
 * [Stoppwörter hinzufügen][3]
 * [Volltextindex neu generieren][4]
 
-
 [3]: stopwords.md
 [4]: regenerate-index.md
-
-

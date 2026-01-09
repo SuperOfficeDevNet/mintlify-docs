@@ -108,7 +108,6 @@ Om een verwijderd verzoek te herstellen, is het voldoende om het functionele rec
 * [Massaal personen en bedrijven uit selectie verwijderen][7]
 * [Zoeken en selecties][8]
 
-
 [1]: ../../company/learn/merge-companies.md
 [2]: ../../company/learn/delete.md
 [3]: ../../contact/learn/delete.md
@@ -120,6 +119,5 @@ Om een verwijderd verzoek te herstellen, is het voldoende om het functionele rec
 [8]: ../../search-options/selection/learn/index.md
 [9]: ../../request/learn/delete.md
 
-
-[img2]: ../../../media/en/learn/recycle-bin.png
-[img3]: ../../../media/en/learn/recycle-bin-personal-settings.png
+[img2]: ../../../media/loc/en/learn/recycle-bin.png
+[img3]: ../../../media/loc/en/learn/recycle-bin-personal-settings.png

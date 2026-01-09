@@ -61,6 +61,6 @@ The integrations you need depend on your operating system, your email client, an
 [9]: ../../../../../integrations/gmail-link/index.md
 [10]: default-mac.md
 
-[img1]: ../../../../media/en/learn/diary-notification.png
-[img2]: ../../../../media/en/learn/inbox-invitation.png
-[img3]: ../../../../media/en/learn/outlook-archive-mail-superoffice-for-outlook.png
+[img1]: ../../../../media/loc/en/learn/diary-notification.png
+[img2]: ../../../../media/loc/en/learn/inbox-invitation.png
+[img3]: ../../../../media/loc/en/learn/outlook-archive-mail-superoffice-for-outlook.png

@@ -98,4 +98,4 @@ Wenn Mit Ziel vergleichen überhaupt nicht sichtbar, müssen Sie sicherstellen, 
 [8]: ../../sale/learn/forecasting.md
 [9]: show-leads.md
 
-[img1]: ../../../media/en/dashboard/team-forecast-vs-target.png
+[img1]: ../../../media/loc/en/dashboard/team-forecast-vs-target.png

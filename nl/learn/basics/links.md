@@ -82,7 +82,6 @@ Bij het maken of bewerken van een taak of document kunt u koppelingen toevoegen 
 * [Tabblad Verzoeken][6]
 * [Tabblad Personen][7]
 
-
 [1]: ../../project/learn/index.md
 [2]: ../../sale/learn/index.md
 [3]: ../../diary/learn/create-follow-up.md
@@ -92,5 +91,4 @@ Bij het maken of bewerken van een taak of document kunt u koppelingen toevoegen 
 [7]: ../section-tabs/contacts-tab.md
 [8]: ../../search-options/learn/find-screen.md
 
-
-[img1]: ../../../media/en/diary/links.png
+[img1]: ../../../media/loc/en/diary/links.png

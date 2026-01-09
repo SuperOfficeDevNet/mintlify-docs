@@ -34,7 +34,4 @@ Wanneer u [nieuwe stopwoorden toevoegt of verwijdert][1], hebben uw wijzigingen 
 
 1. Vervolgens wordt het bericht weergegeven dat het enige tijd kan duren om de index opnieuw te genereren en dat gebruikers in die tijd geen toegang hebben tot de functie voor zoeken aan de hand van vrije tekst. Klik op **OK**. Er wordt een venster geopend waarin wordt aangegeven hoever het regenereerproces gevorderd is. Wanneer dit venster weer wordt gesloten, is de nieuwe vrije-tekstindex klaar.
 
-
 [1]: stopwords.md
-
-

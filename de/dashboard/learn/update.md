@@ -78,4 +78,4 @@ Nur der **Eigentümer** eines Dashboards, ein allgemeiner Administrator oder ein
 [1]: create.md
 [2]: working-with-tiles.md
 
-[img1]: ../../../media/en/dashboard/transfer-dashboard-to-new-owner.png
+[img1]: ../../../media/loc/en/dashboard/transfer-dashboard-to-new-owner.png

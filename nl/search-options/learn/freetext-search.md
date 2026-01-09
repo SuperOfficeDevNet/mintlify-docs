@@ -47,7 +47,6 @@ U kunt zoeken naar tekst in het dialoogvenster **Document**, maar u kunt de werk
 > [!NOTE]
 > U kunt afzonderlijke woorden opgeven die moeten worden genegeerd bij een vrije-tekstzoekbewerking. Deze zijn gedefinieerd in Instellingen en onderhoud.
 
-
 ## Waarom vind ik geen treffers voor een zoekwoord waarvan ik zeker weet dat het in de database voorkomt?
 
 Wanneer u voor een zoekwoord dat in de SuperOffice-database voorkomt, geen treffers vindt, moet u mogelijk de index voor vrije-tekstzoekbewerking in Instellingen en onderhoud opnieuw opbouwen.
@@ -58,11 +57,9 @@ Wanneer u voor een zoekwoord dat in de SuperOffice-database voorkomt, geen treff
 * [Snel zoeken][3]
 * [De historielijst][4]
 
-
 [1]: ../../learn/getting-started/main-screen/side-panel.md
 [2]: find-screen.md
 [3]: index.md#fastsearcher
 [4]: ../../learn/basics/history.md
 
-
-[img1]: ../../../media/en/search-options/freetext-search-box.png
+[img1]: ../../../media/loc/en/search-options/freetext-search-box.png

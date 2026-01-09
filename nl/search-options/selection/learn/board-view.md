@@ -60,7 +60,6 @@ De functionaliteit is identiek voor alle ondersteunde entiteiten: je kunt kaarte
 
   ![Geopend taakmenu op een verkoop in boardweergave met beschikbare acties -screenshot][img5]
 
-
 ## Boardindeling aanpassen <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
 
 ### Groeperen en subgroeperen
@@ -239,7 +238,6 @@ Gebruik groepering creatief om efficiënt met gegevens te werken.
 * [Projectstatus configureren][18]
 * [Projecttypen configureren][19]
 
-
 [1]: create.md
 [2]: index.md
 [11]: ../../../learn/getting-started/main-screen/side-panel.md
@@ -252,18 +250,17 @@ Gebruik groepering creatief om efficiënt met gegevens te werken.
 [18]: ../../../project/admin/project-status.md
 [19]: ../../../project/admin/project-type.md
 
-
-[img1]: ../../../../media/en/search-options/board-view-toggle.png
-[img2]: ../../../../media/en/search-options/board-view.png
-[img3]: ../../../../media/en/search-options/board-view-preview-contact-on-hover.png
-[img4]: ../../../../media/en/search-options/board-view-card-edit-icon.png
-[img5]: ../../../../media/en/search-options/board-view-card-task-menu.png
-[img6]: ../../../../media/en/search-options/board-view-settings.png
-[img7]: ../../../../media/en/search-options/board-view-settings-group-by.png
-[img8]: ../../../../media/en/search-options/board-view-settings-filter.png
-[img9]: ../../../../media/en/search-options/board-view-filter-toolbar.png
-[img10]: ../../../../media/en/search-options/board-view-filter-on-sale-type.png
-[img11]: ../../../../media/en/search-options/board-view-summarized-sale-amount-per-column.png
-[img12]: ../../../../media/en/search-options/selection-board-view-project-preview.png
-[img13]: ../../../../media/en/search-options/board-view-settings-for-sales.png
-[img14]: ../../../../media/en/search-options/sale-date-badge-setting.png
+[img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
+[img2]: ../../../../media/loc/en/search-options/board-view.png
+[img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png
+[img4]: ../../../../media/loc/en/search-options/board-view-card-edit-icon.png
+[img5]: ../../../../media/loc/en/search-options/board-view-card-task-menu.png
+[img6]: ../../../../media/loc/en/search-options/board-view-settings.png
+[img7]: ../../../../media/loc/en/search-options/board-view-settings-group-by.png
+[img8]: ../../../../media/loc/en/search-options/board-view-settings-filter.png
+[img9]: ../../../../media/loc/en/search-options/board-view-filter-toolbar.png
+[img10]: ../../../../media/loc/en/search-options/board-view-filter-on-sale-type.png
+[img11]: ../../../../media/loc/en/search-options/board-view-summarized-sale-amount-per-column.png
+[img12]: ../../../../media/loc/en/search-options/selection-board-view-project-preview.png
+[img13]: ../../../../media/loc/en/search-options/board-view-settings-for-sales.png
+[img14]: ../../../../media/loc/en/search-options/sale-date-badge-setting.png

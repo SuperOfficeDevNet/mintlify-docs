@@ -18,7 +18,6 @@ Maak dashboards voor uw marketingtaken, zoals formulierverzendingen en mailings,
 
 Wanneer het dashboard is gemaakt, wilt u tegels toevoegen en bewerken.
 
-
 > [!Video https://www.youtube.com/embed/lz9rEZI_2SY]
 
 Bestudeer de onderstaande voorbeelden om ideeën op te doen voor tegels die u kunt toevoegen aan uw mailing- of formulierverzendingsdashboard.
@@ -49,13 +48,11 @@ Bestudeer de onderstaande voorbeelden om ideeën op te doen voor tegels die u ku
 * [Tegels met leads en UTM-gegevens][7]
 * [Lees meer over criteria][2]
 
-
 [1]: https://www.superoffice.com/blog/email-open-rates/
 [2]: ../../search-options/learn/search-criteria.md
 [5]: create.md
 [6]: working-with-tiles.md
 [7]: show-leads.md
 
-
-[img1]: ../../../media/en/dashboard/user-mailing-dashboard.png
-[img2]: ../../../media/en/dashboard/user-mailing-dashboard-forms.png
+[img1]: ../../../media/loc/en/dashboard/user-mailing-dashboard.png
+[img2]: ../../../media/loc/en/dashboard/user-mailing-dashboard-forms.png

@@ -47,7 +47,5 @@ Het afdrukken van etiketten kan handig zijn wanneer u brieven naar meerdere ontv
 
 1. Klik op **Afdrukken**.
 
-
-
-[img1]: ../../../../../media/en/search-options/choose-label-layout-dialog.png
-[img3]: ../../../../../media/en/search-options/selection-task-print-labels-print-settings.png
+[img1]: ../../../../../media/loc/en/search-options/choose-label-layout-dialog.png
+[img3]: ../../../../../media/loc/en/search-options/selection-task-print-labels-print-settings.png

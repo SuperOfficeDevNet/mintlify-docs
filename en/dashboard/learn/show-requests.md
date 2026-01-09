@@ -73,4 +73,4 @@ Lists requests that no-one is assigned responsibility for. To [take responsibili
 [6]: ../../request/learn/index.md#request-mgt
 [7]: working-with-tiles.md
 
-[img1]: ../../../media/en/request/service-dashboard.png
+[img1]: ../../../media/loc/en/request/service-dashboard.png

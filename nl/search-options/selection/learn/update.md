@@ -60,8 +60,5 @@ Nadat u de leden aan een selectie hebt toegevoegd, geldt het volgende:
 
 * [Leden toevoegen en verwijderen in een statische selectie][2]
 
-
 [1]: ../../learn/find-screen.md
 [2]: add-remove-members-static.md
-
-

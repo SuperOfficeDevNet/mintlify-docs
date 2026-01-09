@@ -89,7 +89,6 @@ Wanneer u op deze knop klinkt, wordt een kopie van de selectie gemaakt met de te
 * [Selectie bijwerken][6]
 * [Taken uitvoeren met selecties][5]
 
-
 [3]: combine.md
 [7]: ../../../learn/basics/fav.md
 [8]: ../../../learn/basics/duplicates.md

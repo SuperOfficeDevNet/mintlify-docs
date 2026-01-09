@@ -105,10 +105,7 @@ Verwenden Sie diese Option, um einer vorhandenen statischen Selektion ausgewähl
 * [In Selektionen kopieren][3]
 * [Aufgaben in der Ansicht Selektion ausführen][4]
 
-
 [2]: ../../learn/find-screen.md
 [5]: ../../learn/search-criteria.md
 [3]: copy-members-to.md
 [4]: ../../../learn/getting-started/index.md
-
-

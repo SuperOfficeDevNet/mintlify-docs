@@ -60,8 +60,5 @@ Nachdem Mitglieder zu einer Selektion hinzugefügt wurden, gilt Folgendes:
 
 * [Mitglieder zu/von einer statischen Selektion hinzufügen und entfernen][2]
 
-
 [1]: ../../learn/find-screen.md
 [2]: add-remove-members-static.md
-
-

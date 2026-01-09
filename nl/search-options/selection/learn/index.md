@@ -186,4 +186,4 @@ Een selectie met alle verkopen die u in het eerste kwartaal hebt afgerond, of al
 [12]: ../../../learn/section-tabs/filter.md
 [16]: ../../../dashboard/learn/create.md
 
-[img3]: ../../../../media/en/sale/selection-sales-column-calculation-grouping.png
+[img3]: ../../../../media/loc/en/sale/selection-sales-column-calculation-grouping.png

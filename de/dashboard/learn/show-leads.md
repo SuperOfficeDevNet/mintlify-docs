@@ -85,6 +85,6 @@ Wenn Sie UTM-Tracking (erfordert Marketing Premium) verwenden, helfen zusätzlic
 [7]: ../../lead/learn/index.md
 [8]: ../../marketing/utm/learn/index.md
 
-[img1]: ../../../media/en/dashboard/lead-qualification.png
-[img2]: ../../../media/en/dashboard/conversion-dashboard.png
-[img3]: ../../../media/en/dashboard/new-leads-ytd.png
+[img1]: ../../../media/loc/en/dashboard/lead-qualification.png
+[img2]: ../../../media/loc/en/dashboard/conversion-dashboard.png
+[img3]: ../../../media/loc/en/dashboard/new-leads-ytd.png

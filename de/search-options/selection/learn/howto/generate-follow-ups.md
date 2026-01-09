@@ -49,7 +49,4 @@ Sie können eine Folgeaufgabe erstellen, die beispielsweise in der Aktivitätenl
 
 ![Selektionsaufgabe: Folgeaufgaben erstellen -screenshot][img1]
 
-
-
-
 [img1]: ../../../../../media/loc/en/search-options/generate-follow-ups-from-selection.png

@@ -40,7 +40,3 @@ Met deze taak kunt u een tekstbestand maken met informatie van de selectieleden 
 
 > [!NOTE]
 > als u het tekstbestand opent in Kladblok, ziet dit er mogelijk wat rommelig uit. Dit is normaal bij bestanden waarin de informatie door middel van scheidingstekens zoals tabs of puntkomma's is ingedeeld.
-
-
-
-

@@ -57,7 +57,6 @@ Laten we eens kijken hoe u de OR-functie kunt gebruiken. U kunt zoeken naar alle
 
 Bekijk deze video om te zien hoe u een zoekopdracht maakt met de OF-functie:
 
-
 > [!Video https://www.youtube.com/embed/Z-fSLJSdp2k]
 
 (duur van de video - 4:08)
@@ -259,7 +258,6 @@ Stelt u zich voor dat u manager van een marketingafdeling bent en wilt brainstor
 * [De historielijst gebruiken][6]
 * [Zoekcriteria gebruiken][3]
 
-
 [1]: ../../learn/getting-started/main-screen/buttons-in-menu-bar.md
 [4]: ../../learn/getting-started/main-screen/side-panel.md
 [2]: in-navigator.md
@@ -270,5 +268,4 @@ Stelt u zich voor dat u manager van een marketingafdeling bent en wilt brainstor
 [8]: ../selection/learn/create.md
 [9]: ../selection/learn/add-remove-members-static.md
 
-
-[img10]: ../../../media/en/search-options/task-menu.png
+[img10]: ../../../media/loc/en/search-options/task-menu.png

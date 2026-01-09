@@ -105,10 +105,7 @@ Gebruik deze optie om de geselecteerde records toe te voegen aan een bestaande s
 * [Kopiëren naar selecties][3]
 * [Taken uitvoeren met selecties][4]
 
-
 [2]: ../../learn/find-screen.md
 [5]: ../../learn/search-criteria.md
 [3]: copy-members-to.md
 [4]: ../../../learn/getting-started/index.md
-
-

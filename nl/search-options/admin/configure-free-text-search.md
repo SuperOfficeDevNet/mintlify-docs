@@ -62,8 +62,5 @@ U kunt zoekcriteria opgeven voor zowel losse woorden (bijvoorbeeld *Peter*) als 
 * [Stopwoorden toevoegen][3]
 * [Een vrije-tekstindex opnieuw genereren][4]
 
-
 [3]: stopwords.md
 [4]: regenerate-index.md
-
-

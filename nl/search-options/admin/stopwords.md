@@ -61,7 +61,4 @@ U verwijdert stopwoorden als u ze bij nader inzien toch wilt gebruiken voor vrij
 
 1. Klik op de knop **Verwijderen** onder de lijst met stopwoorden.
 
-
 [3]: regenerate-index.md
-
-

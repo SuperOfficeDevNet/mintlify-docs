@@ -34,9 +34,7 @@ The Navigator FastSearcher runs two parallel searches:
 
 * U kunt zoeken naar een contactpersoon in het veld Snel zoeken voor **Bedrijven** in de navigator.
 
-
 [1]: ../../learn/basics/history.md
 [2]: ../../../en/api/osql/soundx.md
 
-
-[img1]: ../../../media/en/search-options/search-find-fastsearcher.png
+[img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

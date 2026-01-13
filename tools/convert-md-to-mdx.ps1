@@ -1,11 +1,11 @@
 #!/usr/bin/env pwsh
 <#
 .SYNOPSIS
-    Converts .md files containing Mintlify JSX components to .mdx format.
+    Converts .md files containing Mintlify JSX components or imports to .mdx format.
 
 .DESCRIPTION
-    Recursively scans for .md files containing Mintlify components (Note, Tip, Caution, Warning)
-    and renames them to .mdx since JSX components are only valid in .mdx files.
+    Recursively scans for .md files containing Mintlify components (Note, Tip, Caution, Warning, Frame)
+    or import statements and renames them to .mdx since JSX components and imports are only valid in .mdx files.
 
 .PARAMETER Path
     Path to the folder containing markdown files (relative to repo root or absolute).
@@ -17,7 +17,7 @@
 .NOTES
     - Renames files in place (no backup created - use git to revert if needed)
     - Does not update references or toc.yml files
-    - Only converts files that contain JSX components
+    - Only converts files that contain JSX components or import statements
 #>
 
 param(
@@ -48,8 +48,9 @@ $converted = 0
 foreach ($file in $mdFiles) {
     $content = Get-Content $file.FullName -Raw -Encoding UTF8
     
-    # Check if file contains JSX components (with or without attributes)
-    if ($content -match '<(Note|Tip|Caution|Warning|Frame)(\s|>)') {
+    # Check if file contains JSX components (with or without attributes) OR import statements
+    # Use multiline mode for import detection
+    if ($content -match '<(Note|Tip|Caution|Warning|Frame)(\s|>)' -or $content -match '(?m)^import\s+\w+\s+from\s+') {
         $newPath = $file.FullName -replace '\.md$', '.mdx'
         
         # Rename the file

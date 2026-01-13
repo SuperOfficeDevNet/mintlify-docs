@@ -1,0 +1,65 @@
+#!/usr/bin/env pwsh
+<#
+.SYNOPSIS
+    Converts .md files containing Mintlify JSX components to .mdx format.
+
+.DESCRIPTION
+    Recursively scans for .md files containing Mintlify components (Note, Tip, Caution, Warning)
+    and renames them to .mdx since JSX components are only valid in .mdx files.
+
+.PARAMETER Path
+    Path to the folder containing markdown files (relative to repo root or absolute).
+    This is a positional parameter - can be used without the -Path flag.
+
+.EXAMPLE
+    .\convert-md-to-mdx.ps1 en/developer-portal
+
+.NOTES
+    - Renames files in place (no backup created - use git to revert if needed)
+    - Does not update references or toc.yml files
+    - Only converts files that contain JSX components
+#>
+
+param(
+    [Parameter(Mandatory=$true, Position=0)]
+    [string]$Path
+)
+
+# Resolve path
+$repoRoot = Split-Path -Parent $PSScriptRoot
+if (-not [System.IO.Path]::IsPathRooted($Path)) {
+    $Path = Join-Path $repoRoot $Path
+}
+
+if (-not (Test-Path $Path)) {
+    Write-Error "Path not found: $Path"
+    exit 1
+}
+
+Write-Host "Processing: $Path" -ForegroundColor Cyan
+
+# Find all .md files
+$mdFiles = Get-ChildItem -Path $Path -Filter "*.md" -Recurse -File
+
+Write-Host "Found $($mdFiles.Count) .md file(s)" -ForegroundColor Cyan
+
+$converted = 0
+
+foreach ($file in $mdFiles) {
+    $content = Get-Content $file.FullName -Raw -Encoding UTF8
+    
+    # Check if file contains JSX components
+    if ($content -match '<(Note|Tip|Caution|Warning)>') {
+        $newPath = $file.FullName -replace '\.md$', '.mdx'
+        
+        # Rename the file
+        Rename-Item -Path $file.FullName -NewName $newPath -Force
+        
+        $converted++
+        Write-Host "  $($file.Name) -> $([System.IO.Path]::GetFileName($newPath))" -ForegroundColor Green
+    }
+}
+
+Write-Host "`nComplete!" -ForegroundColor Green
+Write-Host "  Files scanned: $($mdFiles.Count)" -ForegroundColor Cyan
+Write-Host "  Files converted to .mdx: $converted" -ForegroundColor Cyan

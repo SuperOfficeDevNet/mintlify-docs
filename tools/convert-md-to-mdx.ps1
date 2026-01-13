@@ -48,8 +48,8 @@ $converted = 0
 foreach ($file in $mdFiles) {
     $content = Get-Content $file.FullName -Raw -Encoding UTF8
     
-    # Check if file contains JSX components
-    if ($content -match '<(Note|Tip|Caution|Warning)>') {
+    # Check if file contains JSX components (with or without attributes)
+    if ($content -match '<(Note|Tip|Caution|Warning|Frame)(\s|>)') {
         $newPath = $file.FullName -replace '\.md$', '.mdx'
         
         # Rename the file

@@ -5,6 +5,10 @@ drafts/
 # Exclude internal documentation
 internal/
 
+# Exclude docfx assets
+**/toc.yml
+**/index.yml
+
 # Exclude all API source files (used for generation)
 api-sources/
 

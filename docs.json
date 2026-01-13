@@ -126,6 +126,126 @@
             ]
           },
           {
+            "tab": "Developer Portal",
+            "icon": "laptop-code",
+            "groups": [
+              {
+                "group": "Introduction to Developer Portal",
+                "pages": [
+                  "en/developer-portal/about"
+                ]
+              },
+              {
+                "group": "Dashboard and widgets",
+                "pages": [
+                  "en/developer-portal/widgets/index"
+                ]
+              },
+              {
+                "group": "Getting started",
+                "pages": [
+                  "en/developer-portal/getting-started/index",
+                  "en/developer-portal/getting-started/get-access-to-sod",
+                  "en/developer-portal/getting-started/quickstart",
+                  "en/developer-portal/getting-started/app-envir",
+                  "en/developer-portal/getting-started/user-contexts",
+                  "en/developer-portal/getting-started/what-api-to-use"
+                ]
+              },
+              {
+                "group": "Create a new app",
+                "pages": [
+                  "en/developer-portal/create-app/index"
+                ]
+              },
+              {
+                "group": "Custom app",
+                "pages": [
+                  "en/developer-portal/custom-app/index",
+                  "en/developer-portal/custom-app/checklist",
+                  "en/developer-portal/custom-app/validate",
+                  "en/developer-portal/custom-app/activate"
+                ]
+              },
+              {
+                "group": "Standard app",
+                "pages": [
+                  "en/developer-portal/standard-app/index"
+                ]
+              },
+              {
+                "group": "Best practices",
+                "pages": [
+                  "en/developer-portal/best-practices/index",
+                  {
+                    "group": "Tenant status",
+                    "pages": [
+                      "en/developer-portal/best-practices/tenant-status/index",
+                      "en/developer-portal/best-practices/tenant-status/check-status",
+                      "en/developer-portal/best-practices/tenant-status/get-notifications"
+                    ]
+                  },
+                  "en/developer-portal/best-practices/error-emails",
+                  "en/developer-portal/best-practices/system-messages"
+                ]
+              },
+              {
+                "group": "Partners and users",
+                "pages": [
+                  "en/developer-portal/partner/update-profile",
+                  "en/developer-portal/partner/update-partner-settings",
+                  "en/developer-portal/partner/manage-technical-contacts",
+                  "en/developer-portal/partner/partner-settings",
+                  "en/developer-portal/partner/add-user",
+                  "en/developer-portal/partner/edit-user",
+                  "en/developer-portal/partner/remove-user",
+                  "en/developer-portal/partner/user-settings",
+                  "en/developer-portal/partner/manage-permissions"
+                ]
+              },
+              {
+                "group": "Provisioning",
+                "pages": [
+                  "en/developer-portal/provisioning/index",
+                  "en/developer-portal/provisioning/consent",
+                  "en/developer-portal/provisioning/get-consent",
+                  "en/developer-portal/provisioning/revoke",
+                  "en/developer-portal/provisioning/update-consent-text"
+                ]
+              },
+              {
+                "group": "Tenant management",
+                "pages": [
+                  "en/developer-portal/tenants/index",
+                  "en/developer-portal/tenants/info",
+                  "en/developer-portal/tenants/authorization",
+                  "en/developer-portal/tenants/get"
+                ]
+              },
+              {
+                "group": "Analytics",
+                "pages": [
+                  "en/developer-portal/analytics/metered-services",
+                  "en/developer-portal/analytics/logs",
+                  "en/developer-portal/analytics/failures",
+                  "en/developer-portal/analytics/metrics-performance"
+                ]
+              },
+              {
+                "group": "FAQ",
+                "pages": [
+                  "en/developer-portal/faq/index",
+                  "en/developer-portal/faq/format-text",
+                  "en/developer-portal/faq/update-contact-person",
+                  "en/developer-portal/faq/update-app",
+                  "en/developer-portal/faq/turn-off-mirroring",
+                  "en/developer-portal/faq/run-website-on-iis-localhost",
+                  "en/developer-portal/faq/unable-to-approve-app"
+                ]
+              }
+            ]
+          },
+          {
             "tab": "CRMScript Reference",
             "icon": "code",
             "groups": [

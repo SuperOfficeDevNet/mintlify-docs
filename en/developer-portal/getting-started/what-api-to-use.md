@@ -121,10 +121,10 @@ SuperOffice does, however, issue refresh tokens, and in that way does support a 
 
 [Read more about user context][13]
 
-[13]: user-contexts.md
-[2]: ../../api/reference/restful/rest/index.md
-[3]: ../../api/reference/soap/index.md
-[6]: ../../api/authentication/online/index.md
+[13]: ./user-contexts
+[2]: ../../api/reference/restful/rest/index
+[3]: ../../api/reference/soap/index
+[6]: ../../api/authentication/online/index
 
 [1]: https://stackoverflow.com/questions/19884295/soap-vs-rest-differences
 [4]: https://www.nuget.org/packages/SuperOffice.NetServer.Services/

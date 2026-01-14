@@ -51,17 +51,17 @@ Before a new application gets listed in the App Store:
 * [Describe how to get started with the application][13]
 * [Add or update links][14]
 
-[1]: index.md
-[5]: ../certification/certify-app.md
-[7]: ../publish.md
-[9]: images-and-videos.md
-[11]: images-and-videos.md#screenshots
-[2]: update-partner-profile.md
-[3]: update-app-page.md
-[4]: seo.md
-[12]: prices-and-terms.md
-[13]: user-guide.md#how-to-install
-[14]: user-guide.md#links
-[10]: ../../create-app/versioning.md
-[8]: ../../faq/update-app.md
-[15]: ../../partner/manage-permissions.md
+[1]: ./index
+[5]: ../certification/certify-app
+[7]: ../publish
+[9]: ./images-and-videos
+[11]: ./images-and-videos#screenshots
+[2]: ./update-partner-profile
+[3]: ./update-app-page
+[4]: ./seo
+[12]: ./prices-and-terms
+[13]: ./user-guide#how-to-install
+[14]: ./user-guide#links
+[10]: ../../create-app/versioning
+[8]: ../../faq/update-app
+[15]: ../../partner/manage-permissions

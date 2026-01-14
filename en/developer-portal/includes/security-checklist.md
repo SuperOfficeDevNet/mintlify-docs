@@ -4,8 +4,8 @@
 * All data is [validated on input][3] and escaped on output
 * The application uses [federated authentication][4] and [validates all tokens][5] received from SuperOffice
 
-[1]: ../create-app/config/redirects.md
+[1]: ../create-app/config/redirects
 [2]: https://www.ssllabs.com/ssltest/analyze.html
 [3]: https://owasp.org/www-project-cheat-sheets/cheatsheets/Input_Validation_Cheat_Sheet
-[4]: ../../online/identity/federated-auth.md
-[5]: ../../api/authentication/online/validate-security-tokens.md
+[4]: ../../online/identity/federated-auth
+[5]: ../../api/authentication/online/validate-security-tokens

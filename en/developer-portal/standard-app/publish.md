@@ -61,9 +61,9 @@ Customers running the application must be informed about the beta status.
 * Terms and conditions apply
 * The application is free of charge
 
-[1]: certification/certify-app.md
-[2]: app-store/update-app-page.md
-[4]: requirements/index.md
-[3]: ../faq/update-app.md
-[5]: ../provisioning/consent.md
-[6]: ../custom-app/index.md
+[1]: ./certification/certify-app
+[2]: ./app-store/update-app-page
+[4]: ./requirements/index
+[3]: ../faq/update-app
+[5]: ../provisioning/consent
+[6]: ../custom-app/index

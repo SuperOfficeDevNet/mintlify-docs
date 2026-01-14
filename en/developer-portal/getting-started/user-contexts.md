@@ -138,10 +138,10 @@ Supported in version **Services86** and higher, when used in SOAP requests, the 
 </SOAP-ENV:Envelope>
 ```
 
-[6]: index.md#tenant
-[3]: what-api-to-use.md#authentication-scenarios
-[1]: ../../online/identity/federated-auth.md
-[2]: ../../api/authentication/online/auth-application/index.md
-[4]: ../../api/authentication/online/index.md
-[7]: ../../api/tutorials/minimal-csharp-app/overview.md
+[6]: ./index#tenant
+[3]: ./what-api-to-use#authentication-scenarios
+[1]: ../../online/identity/federated-auth
+[2]: ../../api/authentication/online/auth-application/index
+[4]: ../../api/authentication/online/index
+[7]: ../../api/tutorials/minimal-csharp-app/overview
 [10]: https://online.superoffice.com/login/

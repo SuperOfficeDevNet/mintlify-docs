@@ -76,6 +76,6 @@ These require different [installation URLs][1] and [client ID/secrets][3] (token
 
 You may continue to use web services from an earlier release until we announce EOL.
 
-[1]: ../../create-app/config/redirects.md
-[2]: ../../getting-started/app-envir.md
-[3]: ../../getting-started/index.md#terminology
+[1]: ../../create-app/config/redirects
+[2]: ../../getting-started/app-envir
+[3]: ../../getting-started/index#terminology

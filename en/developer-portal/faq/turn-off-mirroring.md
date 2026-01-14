@@ -27,8 +27,8 @@ platform: web
 
 1. [Request to publish the configuration][1]
 
-[1]: ../create-app/request-to-publish.md
-[2]: ../create-app/versioning.md
+[1]: ../create-app/request-to-publish
+[2]: ../create-app/versioning
 
 [img1]: ../media/integration-settings.png
 [img2]: ../../../media/loc/en/developer-portal/endpoint-toggle.png

@@ -57,11 +57,11 @@ The **partner page** provides an overview of how many tenants that have authoriz
 
 4. Optional, switch environments to explore further.
 
-[1]: info.md
-[2]: info.md#license
-[3]: info.md#state
-[4]: authorization.md
-[5]: get.md
-[9]: ../getting-started/app-envir.md
+[1]: ./info
+[2]: ./info#license
+[3]: ./info#state
+[4]: ./authorization
+[5]: ./get
+[9]: ../getting-started/app-envir
 
 [img1]: ../../../media/loc/en/developer-portal/tenants.png

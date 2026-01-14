@@ -63,10 +63,10 @@ We are checking logs in Application Insight and our Operation Center.
 
 Follow our [step-by-step guide][5], started by sending a request to publish in the Developer Portal.
 
-[2]: ../standard-app/index.md
-[1]: ../standard-app/requirements/index.md
-[3]: ../getting-started/index.md#tenant
-[4]: ../getting-started/app-envir.md
-[5]: validate.md
-[7]: ../../admin/license/expander-services.md
-[8]: ../../admin/license/user-plans.md
+[2]: ../standard-app/index
+[1]: ../standard-app/requirements/index
+[3]: ../getting-started/index#tenant
+[4]: ../getting-started/app-envir
+[5]: ./validate
+[7]: ../../admin/license/expander-services
+[8]: ../../admin/license/user-plans

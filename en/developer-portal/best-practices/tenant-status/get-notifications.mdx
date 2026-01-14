@@ -87,7 +87,7 @@ The JSON payload contains the following information:
 
 ### CustomerStateChangeNotificationType enumeration
 
-```csharp title="CS"
+```csharp CS
 public enum CustomerStateChangeNotificationType
 {
   Upgrade = 0,
@@ -101,7 +101,7 @@ public enum CustomerStateChangeNotificationType
 
 #### NotificationMessage
 
-```csharp title="CS"
+```csharp CS
 public class NotificationMessage
 {
   public CustomerStateChangeNotificationType ChangeType { get; set; }
@@ -115,7 +115,7 @@ public class NotificationMessage
 
 #### API Controller and JWT validation
 
-```csharp title="CS"
+```csharp CS
 public class NotifyCustomerStateChangeController : ApiController
 {
   public void Post([FromBody]NotificationMessage message)
@@ -158,7 +158,7 @@ The **change type** is a number value that corresponds to the operation performe
 | 4 | Delete | Occurs when a tenant installation is deleted. |
 | 5 | Move | Occurs when a tenant is moved to another public endpoint. Check the `PublicEndpoint` value. |
 
-[1]: ../../create-app/request-to-publish.md
+[1]: ../../create-app/request-to-publish
 
 [img1]: ../../media/integration-settings.png
 [img2]: ../media/endpoint-per-envir.png

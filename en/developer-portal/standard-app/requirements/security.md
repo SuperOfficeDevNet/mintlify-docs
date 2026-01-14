@@ -69,16 +69,16 @@ If needed, we may go back in time to see when and by whom an operation was perfo
 * Always keep in mind the [OWASP top ten list][13].
 * Center for Internet Security Controls [CIS controls list][14]
 
-[1]: ../index.md
-[2]: ../certification/certify-app.md
+[1]: ../index
+[2]: ../certification/certify-app
 [3]: ../certification/initial-security-eval
-[4]: ../publish.md#beta
-[5]: ../../custom-app/index.md
-[6]: ../../custom-app/validate.md
-[11]: ../../create-app/config/redirects.md
-[9]: ../../getting-started/index.md#client-secret
-[10]: ../../getting-started/user-contexts.md
-[12]: ../../getting-started/app-envir.md
-[17]: ../../../online/identity/federated-auth.md
+[4]: ../publish#beta
+[5]: ../../custom-app/index
+[6]: ../../custom-app/validate
+[11]: ../../create-app/config/redirects
+[9]: ../../getting-started/index#client-secret
+[10]: ../../getting-started/user-contexts
+[12]: ../../getting-started/app-envir
+[17]: ../../../online/identity/federated-auth
 [13]: https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
 [14]: https://www.cisecurity.org/controls/cis-controls-list/

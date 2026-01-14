@@ -35,15 +35,15 @@ As a partner, you may change the contact persons. Other settings may only be cha
 * [Application configuration][2]
 * [User settings][4]
 
-[4]: user-settings.md
-[2]: ../create-app/config/app-config.md
-[3]: ../faq/update-contact-person.md
-[11]: ../best-practices/tenant-status/index.md#notify
-[12]: ../best-practices/error-emails.md
-[5]: ../standard-app/requirements/marketing.md
-[1]: ../standard-app/app-store/app-settings.md
-[6]: ../standard-app/app-store/update-partner-profile.md
-[9]: ../standard-app/app-store/update-app-page.md
-[10]: ../standard-app/app-store/seo.md
+[4]: ./user-settings
+[2]: ../create-app/config/app-config
+[3]: ../faq/update-contact-person
+[11]: ../best-practices/tenant-status/index#notify
+[12]: ../best-practices/error-emails
+[5]: ../standard-app/requirements/marketing
+[1]: ../standard-app/app-store/app-settings
+[6]: ../standard-app/app-store/update-partner-profile
+[9]: ../standard-app/app-store/update-app-page
+[10]: ../standard-app/app-store/seo
 
 [img1]: ../../../media/loc/en/developer-portal/partner-settings.png

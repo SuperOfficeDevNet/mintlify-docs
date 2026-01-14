@@ -57,8 +57,8 @@ Customers can get help from someone who can fix the problem.
 
 We recommend using tracking software, for example, Customer Service, Trac, or Bugzilla, but it is not required.
 
-[4]: ../index.md
-[1]: ../../getting-started/index.md
-[2]: ../../getting-started/app-envir.md
-[5]: ../../provisioning/index.md
+[4]: ../index
+[1]: ../../getting-started/index
+[2]: ../../getting-started/app-envir
+[5]: ../../provisioning/index
 [3]: https://www.superoffice.com/trust-center/agreements/dpa/

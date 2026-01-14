@@ -87,15 +87,63 @@ The JSON payload contains the following information:
 
 ### CustomerStateChangeNotificationType enumeration
 
-[!code-csharp[CS](includes/CustomerStateChangeNotificationType.cs)]
+```csharp title="CS"
+public enum CustomerStateChangeNotificationType
+{
+  Upgrade = 0,
+  BackupRestored = 1,
+  Suspend = 2,
+  Resume = 3,
+  Delete = 4,
+  Move = 5
+}
+```
 
 #### NotificationMessage
 
-[!code-csharp[CS](includes/NotificationMessage.cs)]
+```csharp title="CS"
+public class NotificationMessage 
+{ 
+  public CustomerStateChangeNotificationType ChangeType { get; set; } 
+  public string ContextIdentifier { get; set; } 
+  public string VersionName { get; set; } 
+  public string FileVersion { get; set; } 
+  public string Token { get; set; } 
+  public string PublicEndpoint { get; set; }
+}
+```
 
 #### API Controller and JWT validation
 
-[!code-csharp[CS](includes/ApiController.cs)]
+```csharp title="CS"
+public class NotifyCustomerStateChangeController : ApiController 
+{
+  public void Post([FromBody]NotificationMessage message) 
+  {
+    try
+    {
+      // SuperIdTokenHandler is available in NuGet package: SuperOffice.Crm.Online.Core
+      SuperIdToken validated = ValidateToken(message.Token);
+      // process accordingly...
+    }
+    catch (Exception ex)
+    {
+      // handle invalid token...
+      throw;
+    }
+  }
+  public static SuperIdToken ValidateToken(string token)
+  {
+    var path = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/") + "SOD_SuperOfficeFederatedLogin.crt";
+    var tokenHandler = new SuperIdTokenHandler();
+    tokenHandler.JwtIssuerSigningCertificate = new X509Certificate2(path);
+    tokenHandler.CertificateValidator = X509CertificateValidator.ChainTrust;
+    tokenHandler.ValidIssuer = "https://sod.superoffice.com";
+
+    return tokenHandler.ValidateToken(token, TokenType.Jwt);
+  }
+}
+```
 
 ### Change type
 

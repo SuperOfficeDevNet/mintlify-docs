@@ -6,6 +6,9 @@
 .DESCRIPTION
     This script reads a DocFx-style toc.yml file and converts it to Mintlify's
     navigation structure, outputting JSON that can be inserted into docs.json.
+    
+    Supports recursive expansion of nested toc.yml files and creates nested
+    group structures in Mintlify format.
 
 .PARAMETER TocPath
     Path to the source toc.yml file to convert.
@@ -27,6 +30,12 @@
 
 .PARAMETER OutputFile
     Path to write the JSON output (optional, outputs to console if not specified).
+
+.NOTES
+    Known Issues:
+    - May generate duplicate entries when topicHref matches child hrefs. Review and deduplicate manually if needed.
+    - Complex nesting with variable indentation (2-space and 4-space mixed) may have edge cases in parent-finding.
+      The script handles most cases by finding the closest ancestor at lower indent.
 
 .EXAMPLE
     .\convert-toc-to-mintlify.ps1 -TocPath "en\developer-portal\toc.yml" -TabName "Developer Portal" -TabIcon "laptop-code" -BasePath "en/developer-portal"
@@ -144,9 +153,15 @@ function Expand-NestedToc {
     } else { '' }
     
     $expandedLines = @()
+    $skipUntilLine = -1  # Track lines to skip after processing nested toc.yml
     
     for ($i = 0; $i -lt $lines.Count; $i++) {
         $line = $lines[$i]
+        
+        # Skip lines that were already processed as part of nested toc expansion
+        if ($i -le $skipUntilLine) {
+            continue
+        }
         
         # Check for nested toc.yml reference
         if ($line -match '^\s*href:\s*(.+toc\.yml)\s*$') {
@@ -174,19 +189,34 @@ function Expand-NestedToc {
                 continue
             }
             
-            # Get the indentation of the href line
-            $hrefIndent = ''
-            if ($line -match '^(\s*)href:') {
-                $hrefIndent = $Matches[1]
-            }
-            
-            # Get the name from previous line(s)
+            # Get the name from previous line(s) and check for topicHref after
             $nameIndent = ''
             $itemName = ''
+            $topicHref = $null
             for ($j = $i - 1; $j -ge 0; $j--) {
                 if ($lines[$j] -match '^(\s*)- name:\s*(.+)$') {
                     $nameIndent = $Matches[1]
                     $itemName = $Matches[2].Trim()
+                    break
+                }
+            }
+            
+            # Check if there's a topicHref on the next line(s) after href: toc.yml
+            for ($j = $i + 1; $j -lt $lines.Count; $j++) {
+                $nextLine = $lines[$j]
+                if ([string]::IsNullOrWhiteSpace($nextLine)) {
+                    continue
+                }
+                # If we hit another item at same/lower indent, stop
+                if ($nextLine -match '^\s*- name:') {
+                    break
+                }
+                if ($nextLine -match '^\s*topicHref:\s*(.+)$') {
+                    $topicHref = $Matches[1].Trim()
+                    break
+                }
+                # If we hit items: or another property at the parent item level, stop
+                if ($nextLine -match '^\s*(items|href):') {
                     break
                 }
             }
@@ -200,8 +230,18 @@ function Expand-NestedToc {
                     $nestedLines = $nestedLines[1..($nestedLines.Count - 1)]
                 }
                 
+                # Add topicHref if found (before items:)
+                if ($topicHref) {
+                    $adjustedTopicHref = $relativePrefix + $topicHref
+                    $expandedLines += "$nameIndent  topicHref: $adjustedTopicHref"
+                }
+                
+                # Add items: marker (parent name line already exists)
+                $expandedLines += "$nameIndent  items:"
+                
                 # Adjust indentation and paths in nested content
-                $indentAdjust = $hrefIndent.Length - 2  # -2 because nested items start at indent 2
+                # Nested items should be indented 4 spaces more than the parent name
+                $indentAdjust = $nameIndent.Length + 4 - 2  # +4 for being children of parent, -2 because nested items start at indent 2
                 
                 foreach ($nestedLine in $nestedLines) {
                     if ([string]::IsNullOrWhiteSpace($nestedLine)) {
@@ -231,6 +271,21 @@ function Expand-NestedToc {
                     else {
                         # Non-href line, just adjust indentation
                         $expandedLines += "$newIndent$content"
+                    }
+                }
+                
+                # Mark the topicHref line (if found) to be skipped in the main loop
+                if ($topicHref) {
+                    # Find the topicHref line index
+                    for ($k = $i + 1; $k -lt $lines.Count; $k++) {
+                        if ($lines[$k] -match '^\s*topicHref:') {
+                            $skipUntilLine = $k
+                            break
+                        }
+                        # Stop if we hit another item
+                        if ($lines[$k] -match '^\s*- name:') {
+                            break
+                        }
                     }
                 }
                 
@@ -361,24 +416,39 @@ function Read-YamlFile {
                 $result += $item
             }
             else {
-                # Find the parent based on indentation
-                $parentIndent = $indent - 4
-                $parent = $null
-                
-                for ($k = $result.Count - 1; $k -ge 0; $k--) {
-                    if ($result[$k].indent -eq $parentIndent) {
-                        $parent = $result[$k]
-                        break
-                    }
-                    # Also check nested items
-                    foreach ($candidate in $result[$k].items) {
-                        if ($candidate.indent -eq $parentIndent) {
-                            $parent = $candidate
-                            break
+                # Find the parent - look for most recent item at lower indent (recursive search)
+                function Find-Recent-Parent {
+                    param($Items, $ChildIndent)
+                    
+                    $bestParent = $null
+                    $bestIndent = -1
+                    
+                    for ($k = $Items.Count - 1; $k -ge 0; $k--) {
+                        $candidateIndent = $Items[$k].indent
+                        
+                        # Parent must have lower indent than child
+                        if ($candidateIndent -lt $ChildIndent) {
+                            # Found a potential parent - prefer the one with highest indent (closest ancestor)
+                            if ($candidateIndent -gt $bestIndent) {
+                                $bestParent = $Items[$k]
+                                $bestIndent = $candidateIndent
+                            }
+                        }
+                        
+                        # Also search recursively in this item's children
+                        if ($Items[$k].items.Count -gt 0) {
+                            $nestedParent = Find-Recent-Parent -Items $Items[$k].items -ChildIndent $ChildIndent
+                            if ($nestedParent -and $nestedParent.indent -gt $bestIndent -and $nestedParent.indent -lt $ChildIndent) {
+                                $bestParent = $nestedParent
+                                $bestIndent = $nestedParent.indent
+                            }
                         }
                     }
-                    if ($parent) { break }
+                    
+                    return $bestParent
                 }
+                
+                $parent = Find-Recent-Parent -Items $result -ChildIndent $indent
                 
                 if ($parent) {
                     $parent.items += $item
@@ -439,7 +509,10 @@ function Convert-ToMintlifyGroup {
     
     # Add child items
     foreach ($child in $Item.items) {
-        if ($child.items.Count -gt 0) {
+        # Check if child has sub-items
+        $hasChildren = ($child.items -and $child.items.Count -gt 0)
+        
+        if ($hasChildren) {
             # Has sub-items, create nested group
             $nestedGroup = Convert-ToMintlifyGroup $child
             $group.pages += $nestedGroup
@@ -476,6 +549,20 @@ $tempTocPath = [System.IO.Path]::GetTempFileName()
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
 [System.IO.File]::WriteAllLines($tempTocPath, $expandedLines, $utf8NoBom)
 
+# Debug: Save expanded content for inspection
+if ($env:DEBUG_SAVE_EXPANDED) {
+    $debugPath = $OutputFile -replace '\.json$', '-expanded.yml'
+    [System.IO.File]::WriteAllLines($debugPath, $expandedLines, $utf8NoBom)
+    Write-Host "DEBUG: Saved expanded TOC to $debugPath" -ForegroundColor Magenta
+}
+
+# Debug: Show expanded content
+if ($env:DEBUG_TOC_EXPANDED) {
+    Write-Host "`nDEBUG: Expanded TOC content:" -ForegroundColor Magenta
+    Get-Content $tempTocPath | Select-Object -First 50 | ForEach-Object { Write-Host "  $_" -ForegroundColor DarkGray }
+    Write-Host "  ... (showing first 50 lines)" -ForegroundColor DarkGray
+}
+
 # Parse the expanded YAML
 $items = Read-YamlFile $tempTocPath
 
@@ -486,6 +573,8 @@ if ($items.Count -eq 0) {
     Write-Error "No items found in YAML file"
     exit 1
 }
+
+Write-Host "Found $($items.Count) top-level items" -ForegroundColor Cyan
 
 Write-Host "Found $($items.Count) top-level items" -ForegroundColor Cyan
 

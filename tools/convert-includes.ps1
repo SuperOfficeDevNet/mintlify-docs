@@ -149,6 +149,11 @@ function Convert-IncludesInFile {
             $extension = Get-IncludeExtension -IncludePath $fullIncludePath
             $includePath = $includePath -replace '\.md$', $extension
             
+            # Ensure relative paths start with ./ or ../
+            if ($includePath -notmatch '^\.\.?[/\\]') {
+                $includePath = "./$includePath"
+            }
+            
             # Generate import name
             $fileName = [System.IO.Path]::GetFileName($includePath)
             $importName = Get-ImportName -FileName $fileName

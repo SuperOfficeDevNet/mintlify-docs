@@ -237,3 +237,4 @@ foreach ($file in $files) {
 Write-Host "`nComplete!" -ForegroundColor Green
 Write-Host "  Files processed: $($files.Count)" -ForegroundColor Cyan
 Write-Host "  Files modified: $modifiedCount" -ForegroundColor Cyan
+exit 0

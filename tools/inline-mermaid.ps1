@@ -345,3 +345,5 @@ Write-Host "`nComplete!" -ForegroundColor Green
 Write-Host "  Mermaid includes processed: $processedFiles" -ForegroundColor Cyan
 Write-Host "  Files with inlined mermaid: $inlinedCount" -ForegroundColor Cyan
 Write-Host "  Include files deleted: $($deletedIncludes.Count)" -ForegroundColor Cyan
+
+exit 0

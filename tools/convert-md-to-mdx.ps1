@@ -64,3 +64,5 @@ foreach ($file in $mdFiles) {
 Write-Host "`nComplete!" -ForegroundColor Green
 Write-Host "  Files scanned: $($mdFiles.Count)" -ForegroundColor Cyan
 Write-Host "  Files converted to .mdx: $converted" -ForegroundColor Cyan
+
+exit 0

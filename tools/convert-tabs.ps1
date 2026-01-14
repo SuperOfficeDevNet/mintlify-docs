@@ -251,3 +251,5 @@ if ($processed -gt 0) {
         & $mdxScript $Path
     }
 }
+
+exit 0

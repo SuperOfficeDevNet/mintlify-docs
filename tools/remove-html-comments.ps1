@@ -144,3 +144,5 @@ Write-Host "`nComplete!" -ForegroundColor Green
 Write-Host "  Files processed: $($files.Count)" -ForegroundColor Cyan
 Write-Host "  Files modified: $filesModified" -ForegroundColor Cyan
 Write-Host "  Total comments removed: $totalRemoved" -ForegroundColor Cyan
+
+exit 0

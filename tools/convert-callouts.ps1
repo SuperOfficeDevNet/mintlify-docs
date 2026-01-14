@@ -226,3 +226,5 @@ if ($filesModified -gt 0) {
         Write-Warning "convert-md-to-mdx.ps1 not found in tools folder"
     }
 }
+
+exit 0

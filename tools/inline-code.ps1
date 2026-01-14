@@ -301,3 +301,5 @@ Write-Host "`nComplete!" -ForegroundColor Green
 Write-Host "  Code includes processed: $processedFiles" -ForegroundColor Cyan
 Write-Host "  Files with inlined code: $inlinedCount" -ForegroundColor Cyan
 Write-Host "  Include files deleted: $($deletedIncludes.Count)" -ForegroundColor Cyan
+
+exit 0

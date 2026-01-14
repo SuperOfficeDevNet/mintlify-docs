@@ -136,3 +136,5 @@ Write-Host "`nComplete!" -ForegroundColor Green
 Write-Host "  Files processed: $($files.Count)" -ForegroundColor Cyan
 Write-Host "  Files modified: $filesModified" -ForegroundColor Cyan
 Write-Host "  Files skipped: $filesSkipped" -ForegroundColor Cyan
+
+exit 0

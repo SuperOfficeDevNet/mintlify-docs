@@ -25,6 +25,13 @@
     - Updates both reference-style and inline markdown image links
     - Deletes empty media folders after moving files
     - Flattens any subfolders within media directories
+    
+    TODO: Handle edge case where files outside the processed folder reference 
+    images in the folder being processed. Example: join-video-meeting.md in 
+    mobile/superoffice-mobile/diary referencing images from a media folder 
+    in that directory. Currently only updates references within the processed 
+    folder. May need global reference update when migrating folders like 
+    release-notes that are referenced from many locations.
 #>
 
 param(
@@ -264,3 +271,4 @@ Write-Host "  Images moved: $totalMoved" -ForegroundColor Cyan
 Write-Host "  Markdown files updated: $filesUpdated" -ForegroundColor Cyan
 Write-Host "  References updated: $referencesUpdated" -ForegroundColor Cyan
 Write-Host "  Media folders deleted: $foldersDeleted" -ForegroundColor Cyan
+exit 0

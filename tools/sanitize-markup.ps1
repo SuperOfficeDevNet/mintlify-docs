@@ -227,6 +227,69 @@ function Remove-TrailingWhitespace {
     return $result
 }
 
+# Function to ensure exactly one blank line at end of file
+function Repair-FileEnding {
+    param([string[]]$Lines)
+    
+    if ($Lines.Count -eq 0) {
+        return $Lines
+    }
+    
+    # Check if this is a redirect-only file (frontmatter with only redirect_url)
+    if ($Lines.Count -le 5) {
+        $inFrontmatter = $false
+        $hasRedirectUrl = $false
+        $hasOtherContent = $false
+        
+        for ($i = 0; $i -lt $Lines.Count; $i++) {
+            $line = $Lines[$i]
+            
+            if ($i -eq 0 -and $line -eq '---') {
+                $inFrontmatter = $true
+                continue
+            }
+            
+            if ($inFrontmatter -and $line -eq '---') {
+                # End of frontmatter - if no other content after, it's redirect-only
+                if ($i -eq ($Lines.Count - 1)) {
+                    break
+                }
+                for ($j = $i + 1; $j -lt $Lines.Count; $j++) {
+                    if (-not [string]::IsNullOrWhiteSpace($Lines[$j])) {
+                        $hasOtherContent = $true
+                        break
+                    }
+                }
+                break
+            }
+            
+            if ($inFrontmatter -and $line -match '^\s*redirect_url:') {
+                $hasRedirectUrl = $true
+            }
+        }
+        
+        # Skip redirect-only files
+        if ($hasRedirectUrl -and -not $hasOtherContent) {
+            return $Lines
+        }
+    }
+    
+    # Remove all trailing blank lines
+    $lastIndex = $Lines.Count - 1
+    while ($lastIndex -ge 0 -and [string]::IsNullOrWhiteSpace($Lines[$lastIndex])) {
+        $lastIndex--
+    }
+    
+    # Keep content up to last non-blank line, then add exactly one blank line
+    if ($lastIndex -ge 0) {
+        $result = $Lines[0..$lastIndex]
+        $result += ''
+        return $result
+    }
+    
+    return $Lines
+}
+
 # Function to update import statements when renaming includes files
 function Update-ImportStatements {
     param(
@@ -279,6 +342,7 @@ $renamedFiles = 0
 $fixedBrTags = 0
 $fixedUnicode = 0
 $fixedWhitespace = 0
+$fixedEndings = 0
 
 foreach ($file in $files) {
     $content = [System.IO.File]::ReadAllLines($file.FullName)
@@ -314,6 +378,14 @@ foreach ($file in $files) {
         $content = $newContent
         $changes += "Removed trailing whitespace"
         $fixedWhitespace++
+    }
+    
+    # Ensure exactly one blank line at end of file
+    $newContent = Repair-FileEnding -Lines $content
+    if (($newContent -join "`n") -ne ($content -join "`n")) {
+        $content = $newContent
+        $changes += "Fixed file ending"
+        $fixedEndings++
     }
     
     # Save if modified
@@ -363,3 +435,8 @@ if ($fixedUnicode -gt 0) {
 if ($fixedWhitespace -gt 0) {
     Write-Host "  Files with fixed whitespace: $fixedWhitespace" -ForegroundColor Cyan
 }
+if ($fixedEndings -gt 0) {
+    Write-Host "  Files with fixed endings: $fixedEndings" -ForegroundColor Cyan
+}
+
+exit 0

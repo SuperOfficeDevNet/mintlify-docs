@@ -12,14 +12,14 @@ platform: web
 
 # Security requirements
 
-It is paramount that you keep data secure. Security is our topmost concern.
+It is paramount that you keep data secure. Security is our topmost concern.
 
 If needed, we may go back in time to see when and by whom an operation was performed.
 
 ## Requirements
 
 * [Standard applications][1] must pass [certification by SuperOffice][2].
-* Standard applications must pass a [security audit by Telenor Cyberdefense][3].
+* Standard applications must pass a [security audit by Telenor Cyberdefense][3].
 * All red flags reported by Telenor Cyberdefense must be fixed before the application is published as a [beta][4].
 * [Custom applications][5] must pass [validation by SuperOffice][6]
 
@@ -38,11 +38,11 @@ If needed, we may go back in time to see when and by whom an operation was perfo
 ### Data access
 
 * Use the SuperOffice APIs to read from and write to the database to ensure data consistency.
-* Ensure **role, group, and user permissions** are adhered to.
-  * Ensure that **sentry rules** are followed.
+* Ensure **role, group, and user permissions** are adhered to.
+  * Ensure that **sentry rules** are followed.
   * Give the user feedback when sentry denies access.
-  * Using the web services in the application user's context will ensure this happens automatically, however, be aware when running in [system user context][10].
-* Use the existing **Preference tables**, **ForeignKey, ForeignDevice, ForeignApp tables** to store extra information. If you need more tables, they must be hosted in your cloud.
+  * Using the web services in the application user's context will ensure this happens automatically, however, be aware when running in [system user context][10].
+* Use the existing **Preference tables**, **ForeignKey, ForeignDevice, ForeignApp tables** to store extra information. If you need more tables, they must be hosted in your cloud.
 
 ### Endpoints and application environment
 

@@ -12,7 +12,7 @@ date: 12.04.2025
 
 We require all standard applications to comply with our requirements before they are launched in the App Store.
 
-All [standard applications][3] have to go through certification and Telenor Cyberdefense security testing. If your application is one-off customization, we offer a simplified, lightweight testing program called [validation][2]. We run the initial certification tests in SOD before we move your application to Stage. In the [stage environment][1], we repeat the tests and also [bring in Telenor Cyberdefense to evaluate your security][8]. Only when your application is secure and conforms to our requirements is it transferred to the production environment and marketplace.
+All [standard applications][3] have to go through certification and Telenor Cyberdefense security testing. If your application is one-off customization, we offer a simplified, lightweight testing program called [validation][2]. We run the initial certification tests in SOD before we move your application to Stage. In the [stage environment][1], we repeat the tests and also [bring in Telenor Cyberdefense to evaluate your security][8]. Only when your application is secure and conforms to our requirements is it transferred to the production environment and marketplace.
 
 ## Why do you test my application?
 

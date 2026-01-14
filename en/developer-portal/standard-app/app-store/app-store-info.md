@@ -32,7 +32,7 @@ Before a new application gets listed in the App Store:
 
 **Relevant info:**
 
-* Link to the product page for the application on your website
+* Link to the product page for the application on your website
 * Link to your support page for application users
 * Which markets and languages your application is available in
 * Company logo and description for your vendor page in our App Store

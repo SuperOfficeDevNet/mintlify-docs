@@ -28,7 +28,7 @@ Your first step to building an application for SuperOffice CRM Online is to regi
 
 1. Submit the [developer account request](#register-now) (form).
     * You will get a confirmation that we have received your request.
-2. We create a new [tenant][2] for you in [SOD][1] and you will receive an email with your account details.
+2. We create a new [tenant][2] for you in [SOD][1] and you will receive an email with your account details.
     * This is normally handled within the next business day.
 3. Sign in to your new SOD account and start getting familiar. Please let us know if you experience any problems with the account.
 

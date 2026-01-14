@@ -10,7 +10,7 @@ version: 10
 content_type: howto
 deployment: online
 platform: web
-redirect_from: 
+redirect_from:
   - /en/ui/design/index
   - /en/ui/design/error-removal
   - /en/ui/design/info-hinting
@@ -75,11 +75,11 @@ Other common types of requested data that should be cached:
 | Agent         | Method          |
 |---------------|-----------------|
 | AssociateAgent | GetAssociateList |
-| SoPrincipalAgent | AuthenticateUsernamePassword<br>GetSystemInfo |
+| SoPrincipalAgent | AuthenticateUsernamePassword<br />GetSystemInfo |
 | ContactAgent | GetMyContact |
 | MDOAgent | GetList |
 | ArchiveAgent | GetProviderNames |
-| UserDefinedFieldInfoAgent |GetUserDefinedFieldList<br>FigureOutListIdFromListTableIDAndUDListDefinitionId |
+| UserDefinedFieldInfoAgent |GetUserDefinedFieldList<br />FigureOutListIdFromListTableIDAndUDListDefinitionId |
 
 Another big problem integrations make is not taking advantage of caching for authentication tokens. See the credentials management section above.
 
@@ -89,7 +89,7 @@ Think about the APIs you are using and ask yourself "How often does this data ch
 
 The entity lifecycle encapsulates the creation, modification, and deletion of all business objects. Each entity contains dependencies derived from preferences, and therefore it is important API consumers create entities using APIs that now about and leverage the preference system.
 
-Using `Default` will calculate some of the needed values for you, similar to clicking **New** inside the SuperOffice client. ​
+Using `Default` will calculate some of the needed values for you, similar to clicking **New** inside the SuperOffice client.
 
 For the REST APIs, that means sending a GET request to the appropriate entity to create a default endpoint. The following example demonstrates what you should do.
 
@@ -104,7 +104,7 @@ Proper creation invocation:
 The following example demonstrates how you should use the `default` endpoint. This ensures the returned entity contains all preference-derived data and default data structures.
 
 ```csharp
-PersonEntity person = GetRequest("/api/v1/Person/default​");
+PersonEntity person = GetRequest("/api/v1/Person/default");
 person.FirstName = "Jack";
 person.LastName = "Black";
 person.Contact = new Contact()
@@ -129,7 +129,7 @@ The following example demonstrates how to use the `CreateDefault` endpoint. This
 ```csharp
 // DO use the CreateDefault endpoint to properly create a person entity.
 
-PersonEntity person = PostRequest("/api/v1/Agent/Person/CreateDefaultPersonEntity​");
+PersonEntity person = PostRequest("/api/v1/Agent/Person/CreateDefaultPersonEntity");
 
 person.FirstName = "Jack";
 person.LastName = "Black";
@@ -138,7 +138,7 @@ person.Contact = new Contact()
   ContactId = 1234; // where 1234 is a real contact ID
 };
 
-PostRequest(person, "/api/v1/Agent/Person/SavePersonEntity​");
+PostRequest(person, "/api/v1/Agent/Person/SavePersonEntity");
 ...
 ```
 </Tab>
@@ -166,25 +166,25 @@ The integrity of SuperOffice must be paramount at all times. While we could list
 
 Web requests are stateless, and therefore every request must stand on its own feet and should not be dependent on the in-memory state left behind by an earlier request. Therefore, whenever you request a page from an archive provider, NetServer has to start from the bottom. An additional constraint comes from the [Sentry system][25], whose rules are too complex to be expressed in something the database can filter for us. We, therefore, have to fetch, evaluate, possibly discard, and go on fetching rows until we arrive at the start of the page you requested. The end result is that the repeated paging is required to fetch data scales like [O(N^2)][20].
 
-"It’s a feature" – you can call for any page at any time. But like much in the cloud, it leads to implementations that can scale out wonderfully, but still perform badly in some situations.
+"It's a feature" - you can call for any page at any time. But like much in the cloud, it leads to implementations that can scale out wonderfully, but still perform badly in some situations.
 
 A few things can improve the situation. But the first and most important question is this: **Why do you have to repeatedly read so much?** When working with a local database, reading a few hundred thousand rows is trivial and a completely valid way to structure your logic.
 
-A cloud service with lots of business logic is not the same as a nearby database table. It will never have the same performance, not even close. You must think differently about it and reflect that in your design. When working with a cloud service that’s logically and physically far away, and that by its nature has a different usage pattern, it’s no longer a good solution.
+A cloud service with lots of business logic is not the same as a nearby database table. It will never have the same performance, not even close. You must think differently about it and reflect that in your design. When working with a cloud service that's logically and physically far away, and that by its nature has a different usage pattern, it's no longer a good solution.
 
 <Note>
-Adapting to the cloud doesn’t mean switching from an IDataReader to an ArchiveProvider and keeping everything else the same. While the latter mimics the former, they are fundamentally different in their performance behavior.
+Adapting to the cloud doesn't mean switching from an IDataReader to an ArchiveProvider and keeping everything else the same. While the latter mimics the former, they are fundamentally different in their performance behavior.
 </Note>
 
 The difference cannot be hidden or optimized away, and that means your logic has to change in a significant way.
 
-A larger page size reduces the number of calls, so it pushes the curve down about. Note that you’re still in O(N^2), it’s just that the y-scale has been stretched a bit so that the number of rows you can have before things become unacceptable is higher.
+A larger page size reduces the number of calls, so it pushes the curve down about. Note that you're still in O(N^2), it's just that the y-scale has been stretched a bit so that the number of rows you can have before things become unacceptable is higher.
 
 Internally, NetServer takes the query generated by the provider and splits it into two passes. In pass 1 we eliminate as many joins and fields as possible, to narrow down the search to retrieve only the primary keys. Once we get our pageful of IDs, in Pass 2 we fetch from all tables and fields, but this time with a simplified restriction consisting only of the primary keys, thereby fetching only those specific rows.
 
 This usually works well. NetServer caches the Pass 1 query in the background, so that if someone later asks for another page, and everything except the page number is identical, then it goes straight to Pass 2. This cache dies 60 seconds after the last call.
 
-However, there are cases where such splitting doesn’t work. The caching works only if you give it time to run – and then there are lock concerns. If it works then you go from O(N^2) to O(N), but it can’t be guaranteed.
+However, there are cases where such splitting doesn't work. The caching works only if you give it time to run - and then there are lock concerns. If it works then you go from O(N^2) to O(N), but it can't be guaranteed.
 
 #### Count
 
@@ -238,17 +238,17 @@ Optimized searches means using smart restrictions that will translate to optimal
 
 While there may be scenarios where polling the `traveltransactionlog` (TTL) table is necessary, it is rarely a good idea and should be considered a last resort.
 
-There are cases where polling the TTL tables are useless. For example, MergeMoveLog records are not persisted in the `traveltransactionlog​`. Neither are SoftDeletes – where the API just sets the deletedDate timestamp on the entity. After 14 days, when they are HardDeleted, this operation is also not written to the `traveltransactionlog​`.
+There are cases where polling the TTL tables are useless. For example, MergeMoveLog records are not persisted in the `traveltransactionlog`. Neither are SoftDeletes - where the API just sets the deletedDate timestamp on the entity. After 14 days, when they are HardDeleted, this operation is also not written to the `traveltransactionlog`.
 
-Here is an example search query to fetch which companies have been merged into another company, and actually deleted. The source record is the `contact_id​` (company identity).
+Here is an example search query to fetch which companies have been merged into another company, and actually deleted. The source record is the `contact_id` (company identity).
 
 ```http
-.../api/v1/archive/dynamic?$select=mergemovelog.operation, mergemovelog.tableNumber, mergemovelog.sourceRecord&$filter=movemergelog.registered afterTime <LastSyncTime>​
+.../api/v1/archive/dynamic?$select=mergemovelog.operation, mergemovelog.tableNumber, mergemovelog.sourceRecord&$filter=movemergelog.registered afterTime <LastSyncTime>
 ```
 
 We recommend that you, instead of polling to the TTL table, use webhooks.
 
-### ​Webhooks
+### Webhooks
 
 [Webhooks][16] are notifications sent to your application whenever events happen in SuperOffice - regardless of the SuperOffice product used. They provide you an opportunity to react to many different types of changes, such as new companies created, sales marked as sold, and more.
 
@@ -281,7 +281,7 @@ Both you and SuperOffice are required to log network communications. Your applic
 
 ### Be consistent
 
-* Either use Microsoft Windows standard looks, or copy the SuperOffice CRM looks, but don’t mix the two.
+* Either use Microsoft Windows standard looks, or copy the SuperOffice CRM looks, but don't mix the two.
 
 * Avoid having different modes on the same display.
 
@@ -307,7 +307,7 @@ Both you and SuperOffice are required to log network communications. Your applic
 
 * Hide actions that are used infrequently behind a **TASK** menu button.
 
-* Avoid nesting tabs – multiple tab layers are confusing.
+* Avoid nesting tabs - multiple tab layers are confusing.
 
 Read about [effective visual design][6].
 
@@ -320,7 +320,7 @@ Read about [effective visual design][6].
 
 * Offer **easy access** to a knowledge base or to support pages from your application.
 
-* Provide SuperOffice with URLs to your application **documentation**. Links to the documentation will appear in the App Store.
+* Provide SuperOffice with URLs to your application **documentation**. Links to the documentation will appear in the App Store.
 
 [2]: ../../api/authentication/online/sign-in-user/index.md
 [5]: ../../api/authentication/online/auth-application/index.md

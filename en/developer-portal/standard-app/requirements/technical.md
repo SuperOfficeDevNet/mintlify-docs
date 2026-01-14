@@ -18,7 +18,7 @@ User experience must not degrade on large sites.
 
 Customers' data must be available when they need it, or they should be made aware when it will be expected available to the best of our capabilities.
 
-The setup is the first experience your customer has with your application. **Easy and robust** configuration will ensure customers are given a pleasant first impression.
+The setup is the first experience your customer has with your application. **Easy and robust** configuration will ensure customers are given a pleasant first impression.
 
 ## Requirements
 
@@ -49,7 +49,7 @@ The setup is the first experience your customer has with your application. **Ea
 
 ### Provisioning/de-provisioning (deployment)
 
-* You need to provide us with a **list of what is provisioned** for a customer when installed.
+* You need to provide us with a **list of what is provisioned** for a customer when installed.
 * The installation process must be straightforward and easy to perform by the customer administrator.
   * Once set up the application should be visible or the customer administrator should get information about what needs to be done to get it visible. (See grouping and filtering)
 * Create a complete **uninstall** feature that ensures complete removal of your application and all settings associated with it:

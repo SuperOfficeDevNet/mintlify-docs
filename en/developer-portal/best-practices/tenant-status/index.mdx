@@ -11,9 +11,6 @@ deployment: online
 platform: web
 ---
 
-import CheckStatusMermaid from 'includes/check-status-mermaid.mdx';
-import GetNotificationsMermaid from 'includes/get-notifications-mermaid.mdx';
-
 # Tenant status
 
 The state of the tenant indicates if a tenant is available to receive requests, and it is recommended you always know the state of the tenant before sending any requests to the API.
@@ -24,7 +21,16 @@ These options are fundamentally different, proactive vs reactive, and its up to 
 
 This is a proactive means to determine the current status of a tenant. Your application precedes each API request with a [call to the state endpoint][1] to ensure the tenant is in a **Running** state.
 
-<CheckStatusMermaid />
+```mermaid
+sequenceDiagram
+    participant Client
+    participant SuperOffice
+
+    Client->>SuperOffice: GET ../api/state/CONTEXTID
+    SuperOffice-->>Client: HTTP Response (200 OK, JSON)
+    Client-->>Client: Check state
+    Client->>SuperOffice: Business Logic
+```
 
 The [state][3] signals wether the tenant is available for handling API requests.
 
@@ -38,7 +44,14 @@ Notifications ensure that vendors are aware when the states of their customers c
 
 When SuperOffice upgrades a tenant, for example, SuperOffice looks at each application approved by the tenant and sends out a notification to each one to indicate that the tenant is about to be upgraded. This provides the application an opportunity to know when a tenant going to be unavailable and why communications with that tenant cease until further notice.
 
-<GetNotificationsMermaid />
+```mermaid
+sequenceDiagram
+    participant SuperOffice
+    participant Client
+
+    SuperOffice->>Client: POST (JSON)
+    Client-->>Client: Check state (Pause/Stop?)
+```
 
 Not only does that provide advanced notice when tenants are upgraded to new versions of SuperOffice, but it can signal whenever a customer has canceled a subscription (Delete).
 

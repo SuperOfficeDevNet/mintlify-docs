@@ -341,7 +341,8 @@ foreach ($file in $files) {
                 Update-ImportStatements -OldPath $file.FullName -NewPath $newPath | Out-Null
             }
             
-            Rename-Item -Path $file.FullName -NewName ([System.IO.Path]::GetFileName($newPath))
+            # Rename (moves the file)
+            Move-Item -Path $file.FullName -Destination $newPath -Force
             Write-Host "  - Converted to .mdx" -ForegroundColor Green
             $renamedFiles++
         }

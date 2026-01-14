@@ -93,8 +93,8 @@ Using `Default` will calculate some of the needed values for you, similar to cli
 
 For the REST APIs, that means sending a GET request to the appropriate entity to create a default endpoint. The following example demonstrates what you should do.
 
-#### [RESTful REST API](#tab/create-rest)
-
+<Tabs>
+<Tab title="RESTful REST API">
 Proper creation invocation:
 
 ```http
@@ -115,9 +115,9 @@ person.Contact = new Contact()
 PostRequest(person, "/api/v1/Agent/Person");
 ...
 ```
+</Tab>
 
-#### [AGENT REST API](#tab/create-soap)
-
+<Tab title="AGENT REST API">
 Proper creation invocation:
 
 ```http
@@ -141,8 +141,8 @@ person.Contact = new Contact()
 PostRequest(person, "/api/v1/Agent/Person/SavePersonEntity​");
 ...
 ```
-
-***
+</Tab>
+</Tabs>
 
 #### Handle duplicates
 

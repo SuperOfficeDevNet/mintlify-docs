@@ -50,7 +50,7 @@ foreach ($file in $mdFiles) {
     
     # Check if file contains JSX components (with or without attributes) OR import statements
     # Use multiline mode for import detection
-    if ($content -match '<(Note|Tip|Caution|Warning|Frame)(\s|>)' -or $content -match '(?m)^import\s+\w+\s+from\s+') {
+    if ($content -match '<(Note|Tip|Caution|Warning|Frame|Tabs?)(\s|>)' -or $content -match '(?m)^import\s+\w+\s+from\s+') {
         $newPath = $file.FullName -replace '\.md$', '.mdx'
         
         # Rename the file

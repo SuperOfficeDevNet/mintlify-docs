@@ -193,7 +193,7 @@ function Expand-CodeInclude {
             }
             
             # Add code block with title
-            $title = if ($Alt) { " title=`"$Alt`"" } else { "" }
+            $title = if ($Alt) { " $Alt" } else { "" }
             $newContent += "``````$Language$title"
             $newContent += $CodeBlock
             $newContent += "``````"

@@ -14,8 +14,10 @@
     7. Inline code snippets
     8. Inline mermaid diagrams
     9. Convert links (strip .md/.mdx extensions)
-    10. Sanitize markup (br tags, unicode, whitespace, .md→.mdx)
-    11. Add sidebar titles
+    10. Convert YAML landing pages to MDX with language-specific labels
+    11. Sanitize markup (br tags, unicode, whitespace, .md→.mdx)
+    12. Add sidebar titles
+    13. Process redirects (delete redirect_url files, update docs.json)
     (Future: Update TOC/navigation)
 
 .PARAMETER Path
@@ -69,8 +71,10 @@ $scripts = @(
     @{ Name = "inline-code.ps1"; Description = "Inlining code snippets" }
     @{ Name = "inline-mermaid.ps1"; Description = "Inlining mermaid diagrams" }
     @{ Name = "convert-links.ps1"; Description = "Converting links" }
+    @{ Name = "convert-landing-pages.ps1"; Description = "Converting YAML landing pages" }
     @{ Name = "sanitize-markup.ps1"; Description = "Sanitizing markup" }
     @{ Name = "add-sidebar-title.ps1"; Description = "Adding sidebar titles" }
+    @{ Name = "process-redirects.ps1"; Description = "Processing redirects and updating docs.json" }
     # TODO: Add TOC update step here once implemented
 )
 

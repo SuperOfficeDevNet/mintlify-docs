@@ -1342,5 +1342,115 @@
       "instagram": "https://www.instagram.com/superofficecrm",
       "linkedin": "https://www.linkedin.com/company/superoffice-as"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/en/mobile/pocket-crm/index",
+      "destination": "/en/mobile/pocket-crm/install"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/copy-contact-to-address-book",
+      "destination": "/en/mobile/superoffice-mobile/contact/copy-to-contact-list"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/create",
+      "destination": "/en/mobile/superoffice-mobile/contact/create"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/",
+      "destination": "/en/mobile/superoffice-mobile/contact/index"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/scan-business-card",
+      "destination": "/en/mobile/superoffice-mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/de/mobile/superoffice-mobile/scan-business-card",
+      "destination": "/en/mobile/superoffice-mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/da/mobile/superoffice-mobile/scan-business-card",
+      "destination": "/en/mobile/superoffice-mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/no/mobile/superoffice-mobile/scan-business-card",
+      "destination": "/en/mobile/superoffice-mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/sv/mobile/superoffice-mobile/scan-business-card",
+      "destination": "/en/mobile/superoffice-mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/nl/mobile/superoffice-mobile/scan-business-card",
+      "destination": "/en/mobile/superoffice-mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/show-address-in-map",
+      "destination": "/en/mobile/superoffice-mobile/contact/show-address-in-map"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/update",
+      "destination": "/en/mobile/superoffice-mobile/contact/update"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/dashboard/drill-down",
+      "destination": "/en/mobile/superoffice-mobile/dashboard/index"
+    },
+    {
+      "source": "/de/mobile/superoffice-mobile/reply-to-request",
+      "destination": "/en/mobile/superoffice-mobile/request/respond"
+    },
+    {
+      "source": "/da/mobile/superoffice-mobile/reply-to-request",
+      "destination": "/en/mobile/superoffice-mobile/request/respond"
+    },
+    {
+      "source": "/no/mobile/superoffice-mobile/reply-to-request",
+      "destination": "/en/mobile/superoffice-mobile/request/respond"
+    },
+    {
+      "source": "/sv/mobile/superoffice-mobile/reply-to-request",
+      "destination": "/en/mobile/superoffice-mobile/request/respond"
+    },
+    {
+      "source": "/nl/mobile/superoffice-mobile/reply-to-request",
+      "destination": "/en/mobile/superoffice-mobile/request/respond"
+    },
+    {
+      "source": "/en/ui/design/index",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/ui/design/error-removal",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/ui/design/info-hinting",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/ui/design/readiness-to-hand",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/ui/design/reading-list",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/ui/design/whitespace",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/security/manage-permissions",
+      "destination": "/en/developer-portal/partner/manage-permissions"
+    },
+    {
+      "source": "/en/developer-portal/standard-app/certification/initial-watchcom-eval",
+      "destination": "/en/developer-portal/standard-app/certification/initial-security-eval"
+    },
+    {
+      "source": "/en/developer-portal/analytics/customers",
+      "destination": "/en/developer-portal/tenants/index"
+    }
+  ]
 }

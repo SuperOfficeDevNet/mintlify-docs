@@ -1,0 +1,88 @@
+/* SubCategory landing pages */
+#subcategory {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+#subcategory h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#subcategory p.description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+#subcategory .linklist {
+  margin-top: 1rem;
+}
+
+#subcategory .linklist-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+#subcategory .linklist-header span {
+  font-weight: 600;
+}
+
+#subcategory .linklist ul {
+  list-style: none !important;
+  margin-top: 0.2rem;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+#subcategory .linklist ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 0 !important;
+  padding-inline-start: 0 !important; /* catches logical props */
+  margin-left: 0 !important;
+  text-indent: 0 !important;
+}
+
+#subcategory .linklist li::marker {
+  content: none !important;
+}
+
+#subcategory .linklist li::before {
+  content: none;
+}
+
+#subcategory .linklist a,
+#subcategory .linklist a:visited {
+  color: rgb(6, 66, 62);
+  text-decoration: none !important;  /* no underline at rest */
+  border-bottom: none !important;    /* kill fake underlines */
+  background-image: none !important; /* kill gradient underlines */
+}
+
+#subcategory .linklist a:hover,
+#subcategory .linklist a:focus-visible {
+  text-decoration-line: underline !important;
+  text-decoration-color: rgb(6, 66, 62);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+}
+
+#subcategory hr {
+  border: none;
+  border-top: 1px solid var(--border, rgba(127, 127, 127, 0.35));
+  margin: 1rem 0;
+}
+
+/* dark mode toggle hooks (common patterns) */
+.dark #subcategory hr {
+  border: none;
+  border-top: 1px solid var(--border, rgb(251, 237, 237));
+}

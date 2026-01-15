@@ -115,7 +115,7 @@
           },
           {
             "tab": "Mobile",
-            "icon": "device-mobile",
+            "icon": "mobile-screen",
             "groups": [
               {
                 "group": "Introduction",
@@ -468,9 +468,13 @@
             ]
           },
           {
-            "tab": "Developer Portal",
-            "icon": "laptop-code",
-            "groups": [
+            "tab": "Developer guide",
+            "icon": "square-terminal",
+            "menu": [
+              {
+                "item": "Developer Portal",
+                "icon": "laptop-code",
+                "groups": [
               {
                 "group": "Introduction to Developer Portal",
                 "pages": [
@@ -644,7 +648,7 @@
             ]
           },
           {
-            "tab": "CRMScript Reference",
+            "item": "CRMScript Reference",
             "icon": "code",
             "groups": [
               {
@@ -1329,6 +1333,8 @@
                 ]
               }
             ]
+          }
+        ]
           }
         ]
       },

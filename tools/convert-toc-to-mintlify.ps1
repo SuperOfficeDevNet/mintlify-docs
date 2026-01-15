@@ -9,6 +9,9 @@
     
     Supports recursive expansion of nested toc.yml files and creates nested
     group structures in Mintlify format.
+    
+    For more information about Mintlify navigation structure, see:
+    https://www.mintlify.com/docs/organize/navigation
 
 .PARAMETER TocPath
     Path to the source toc.yml file to convert.
@@ -68,6 +71,34 @@ param(
     [string]$OutputFile = ""
 )
 
+# Resolve TocPath - if it's a directory, append toc.yml
+if (Test-Path $TocPath -PathType Container) {
+    $TocPath = Join-Path $TocPath "toc.yml"
+    Write-Host "Resolved to: $TocPath" -ForegroundColor DarkGray
+}
+
+if (-not (Test-Path $TocPath)) {
+    Write-Error "TOC file not found: $TocPath"
+    exit 1
+}
+
+# Auto-generate OutputFile if not specified
+if ([string]::IsNullOrWhiteSpace($OutputFile)) {
+    # Get directory path and create hyphenated filename
+    $tocDir = Split-Path -Parent $TocPath
+    $relativePath = $tocDir -replace '\\', '-' -replace '/', '-' -replace '^\.?-?', ''
+    $OutputFile = "toc-$relativePath.json"
+    Write-Host "Output file: $OutputFile" -ForegroundColor DarkGray
+}
+
+# Auto-detect BasePath if not specified
+if ([string]::IsNullOrWhiteSpace($BasePath)) {
+    $tocDir = Split-Path -Parent $TocPath
+    $BasePath = $tocDir -replace '\\', '/'
+    Write-Host "Auto-detected BasePath: $BasePath" -ForegroundColor DarkGray
+}
+
+
 function Convert-YamlPath {
     param([string]$href)
     
@@ -100,9 +131,9 @@ function Expand-NestedToc {
     
     Write-Host "  Expanding: $TocPath" -ForegroundColor DarkGray
     
-    # Validate the path is actually a file path, not a directory
-    if (-not $TocPath.EndsWith('.yml')) {
-        Write-Warning "  Invalid TocPath (not a .yml file): $TocPath"
+    # Validate the path is actually a toc.yml file, not other .yml files (like landing pages)
+    if (-not $TocPath.EndsWith('toc.yml')) {
+        Write-Warning "  Skipping non-TOC file: $TocPath (only toc.yml files are expanded)"
         return @()
     }
     
@@ -469,7 +500,8 @@ function Read-YamlFile {
 function Convert-ToMintlifyGroup {
     param([hashtable]$Item)
     
-    $group = @{
+    # Use ordered hashtable to ensure group comes before pages (Mintlify convention)
+    $group = [ordered]@{
         group = $Item.name
         pages = @()
     }
@@ -544,6 +576,12 @@ Write-Host "Expanding nested toc.yml files..." -ForegroundColor Cyan
 $tocDir = Split-Path -Parent $TocPath
 $expandedLines = Expand-NestedToc -TocPath $TocPath -ParentDir $null
 
+# Check if expansion returned valid content
+if ($null -eq $expandedLines -or $expandedLines.Count -eq 0) {
+    Write-Error "No items found in YAML file"
+    exit 1
+}
+
 # Create a temporary expanded toc file
 $tempTocPath = [System.IO.Path]::GetTempFileName()
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
@@ -589,13 +627,20 @@ Write-Host "Created $($groups.Count) groups" -ForegroundColor Cyan
 
 # Create output based on type
 if ($OutputType -eq "Tab") {
-    # Validate required parameters for Tab output
+    # Auto-generate TabName from first item if not provided
     if ([string]::IsNullOrWhiteSpace($TabName)) {
-        Write-Error "TabName is required when OutputType is 'Tab'"
-        exit 1
+        if ($items.Count -gt 0 -and $items[0].name) {
+            $TabName = $items[0].name
+            Write-Host "Auto-detected TabName: $TabName" -ForegroundColor DarkGray
+        }
+        else {
+            Write-Error "TabName is required when OutputType is 'Tab' and could not be auto-detected"
+            exit 1
+        }
     }
     
-    $output = @{
+    # Use ordered hashtable to maintain property order (Mintlify convention)
+    $output = [ordered]@{
         tab = $TabName
         icon = $TabIcon
         groups = $groups
@@ -621,38 +666,85 @@ else {
         }
     }
     
-    $output = @{
+    # Use ordered hashtable to ensure group comes before pages (Mintlify convention)
+    $output = [ordered]@{
         group = $groupName
         pages = $allPages
     }
 }
 
+function Remove-DuplicatesFromStructure {
+    param($obj)
+    
+    if ($obj -is [System.Collections.IEnumerable] -and $obj -isnot [string]) {
+        # Handle arrays - remove duplicate strings, recursively process objects
+        $seen = @{}
+        $result = @()
+        
+        foreach ($item in $obj) {
+            if ($item -is [string]) {
+                # For strings, check if we've seen this exact value
+                if (-not $seen.ContainsKey($item)) {
+                    $seen[$item] = $true
+                    $result += $item
+                }
+            }
+            elseif ($item -is [hashtable] -or $item -is [System.Collections.Specialized.OrderedDictionary]) {
+                # Recursively clean hashtables/ordered dictionaries
+                $result += Remove-DuplicatesFromStructure $item
+            }
+            else {
+                # Keep other types as-is
+                $result += $item
+            }
+        }
+        
+        return $result
+    }
+    elseif ($obj -is [hashtable] -or $obj -is [System.Collections.Specialized.OrderedDictionary]) {
+        # Handle hashtables and ordered dictionaries
+        $result = if ($obj -is [System.Collections.Specialized.OrderedDictionary]) {
+            [ordered]@{}
+        } else {
+            @{}
+        }
+        
+        foreach ($key in $obj.Keys) {
+            $result[$key] = Remove-DuplicatesFromStructure $obj[$key]
+        }
+        
+        return $result
+    }
+    else {
+        # Return primitives as-is
+        return $obj
+    }
+}
+
+# Remove any duplicate entries from the output structure
+$output = Remove-DuplicatesFromStructure $output
+
 # Convert to JSON
 $json = $output | ConvertTo-Json -Depth 20
 
-# Output
-if ($OutputFile) {
-    # Use UTF8 without BOM for consistency (PS 5.1 adds BOM with -Encoding UTF8)
-    $utf8NoBom = New-Object System.Text.UTF8Encoding $false
-    [System.IO.File]::WriteAllText($OutputFile, $json, $utf8NoBom)
-    Write-Host "Converted to Mintlify format: $OutputFile" -ForegroundColor Green
-    
-    # Delete all toc.yml files in the processed directory tree after successful conversion
-    Write-Host "Cleaning up toc.yml files..." -ForegroundColor Cyan
-    $tocBaseDir = Split-Path -Parent $TocPath
-    $allTocFiles = Get-ChildItem -Path $tocBaseDir -Filter "toc.yml" -Recurse -File
-    
-    $deletedCount = 0
-    foreach ($tocFile in $allTocFiles) {
-        Remove-Item $tocFile.FullName -Force
-        Write-Host "  Deleted: $($tocFile.FullName -replace [regex]::Escape($tocBaseDir), '.')" -ForegroundColor DarkGray
-        $deletedCount++
-    }
-    
-    Write-Host "Deleted $deletedCount toc.yml file(s)" -ForegroundColor Green
+# Write to file (always write to file now, OutputFile is auto-generated if not specified)
+# Use UTF8 without BOM for consistency (PS 5.1 adds BOM with -Encoding UTF8)
+$utf8NoBom = New-Object System.Text.UTF8Encoding $false
+[System.IO.File]::WriteAllText($OutputFile, $json, $utf8NoBom)
+Write-Host "Converted to Mintlify format: $OutputFile" -ForegroundColor Green
+
+# Delete all toc.yml files in the processed directory tree after successful conversion
+Write-Host "Cleaning up toc.yml files..." -ForegroundColor Cyan
+$tocBaseDir = Split-Path -Parent $TocPath
+$allTocFiles = Get-ChildItem -Path $tocBaseDir -Filter "toc.yml" -Recurse -File
+
+$deletedCount = 0
+foreach ($tocFile in $allTocFiles) {
+    Remove-Item $tocFile.FullName -Force
+    Write-Host "  Deleted: $($tocFile.FullName -replace [regex]::Escape($tocBaseDir), '.')" -ForegroundColor DarkGray
+    $deletedCount++
 }
-else {
-    Write-Output $json
-}
+
+Write-Host "Deleted $deletedCount toc.yml file(s)" -ForegroundColor Green
 
 exit 0

@@ -253,6 +253,209 @@
             ]
           },
           {
+            "tab": "Online",
+            "icon": "book",
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "en/online/overview"
+                ]
+              },
+              {
+                "group": "System requirements",
+                "pages": [
+                  "en/online/system-requirements"
+                ]
+              },
+              {
+                "group": "Cookies",
+                "pages": [
+                  "en/online/cookies"
+                ]
+              },
+              {
+                "group": "Security",
+                "pages": [
+                  "en/online/security"
+                ]
+              },
+              {
+                "group": "Migrate to Online",
+                "pages": [
+                  "en/online/migrate/documents-migration"
+                ]
+              },
+              {
+                "group": "Troubleshooting migrations",
+                "pages": [
+                  "en/online/migrate/troubleshooting"
+                ]
+              },
+              {
+                "group": "Integrate with Online",
+                "pages": [
+                  "en/online/integrate/index"
+                ]
+              },
+              {
+                "group": "Production sandbox",
+                "pages": [
+                  "en/online/sandbox/clone-to",
+                  "en/online/sandbox/order-sandbox",
+                  "en/online/sandbox/replace"
+                ]
+              },
+              {
+                "group": "Identity Management",
+                "pages": [
+                  "en/online/identity/index.yml",
+                  "en/online/identity/overview",
+                  "en/online/identity/federated-auth",
+                  "en/online/identity/federated-id-and-identity-providers",
+                  "en/online/identity/id-transfer-tickets",
+                  "en/online/identity/multi-factor-authentication",
+                  {
+                    "group": "Single sign-on",
+                    "pages": [
+                      "en/online/identity/single-sign-on/onsite-sso"
+                    ]
+                  },
+                  {
+                    "group": "SuperID",
+                    "pages": [
+                      "en/online/identity/superid/sign-in-services",
+                      "en/online/identity/superid/user-accounts-and-passwords",
+                      "en/online/identity/superid/primary-tenant",
+                      "en/online/identity/superid/superid-webtools-maillink-pocket",
+                      "en/online/identity/superid/known-challenges",
+                      "en/online/identity/superid/terms-and-conditions",
+                      {
+                        "group": "How-to",
+                        "pages": [
+                          "en/online/identity/superid/howto/custom-domains-registration-form",
+                          "en/online/identity/superid/howto/federated-sign-in-guide",
+                          "en/online/identity/superid/howto/check-idp-domain",
+                          "en/online/identity/superid/howto/register-idp",
+                          "en/online/identity/superid/howto/map-idp-usernames",
+                          "en/online/identity/superid/howto/complete-user-transition"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "User",
+                    "pages": [
+                      "en/online/identity/user/send-welcome-emails",
+                      "en/online/identity/user/add-user-in-admin-client",
+                      "en/online/identity/user/enforce-password-policy",
+                      "en/online/identity/user/reset-password"
+                    ]
+                  },
+                  {
+                    "group": "Active Directory",
+                    "pages": [
+                      "en/online/identity/ad/mapping-so-user-to-ad-v-7-1",
+                      "en/online/identity/ad/set-up-ad-auth"
+                    ]
+                  },
+                  {
+                    "group": "SCIM",
+                    "pages": [
+                      "en/online/identity/scim/sign-in-to-scim",
+                      "en/online/identity/scim/identity-management-gw",
+                      "en/online/identity/scim/scim-rules",
+                      {
+                        "group": "User provisioning",
+                        "pages": [
+                          "en/online/identity/scim/provisioning/restart-sync",
+                          "en/online/identity/scim/provisioning/add-scim-rule",
+                          "en/online/identity/scim/provisioning/activate-deactivate-rules",
+                          "en/online/identity/scim/provisioning/preview-sync",
+                          "en/online/identity/scim/provisioning/sync-company",
+                          "en/online/identity/scim/provisioning/sync-user"
+                        ]
+                      },
+                      {
+                        "group": "Setup",
+                        "pages": [
+                          "en/online/identity/scim/setup/get-sync-error-messages",
+                          "en/online/identity/scim/setup/setup-guide",
+                          "en/online/identity/scim/setup/create-azure-enterprise-app",
+                          "en/online/identity/scim/setup/enable-auto-sync",
+                          "en/online/identity/scim/setup/get-scim-config"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Mirroring",
+                "pages": [
+                  "en/online/mirroring/index.yml",
+                  "en/online/mirroring/overview",
+                  "en/online/mirroring/scenarios",
+                  "en/online/mirroring/requirements",
+                  "en/online/mirroring/order-database-mirroring",
+                  "en/online/mirroring/conceptual-overview-2016",
+                  "en/online/mirroring/mirroring-task",
+                  "en/online/mirroring/change-tracking",
+                  "en/online/mirroring/blocked-tables",
+                  "en/online/mirroring/sql-server-schema",
+                  {
+                    "group": "Getting started",
+                    "pages": [
+                      "en/online/mirroring/getting-started/i-mirror-client-service",
+                      "en/online/mirroring/getting-started/create-wfc"
+                    ]
+                  },
+                  "en/online/mirroring/force-resync",
+                  "en/online/mirroring/troubleshooting",
+                  "en/online/mirroring/skip-tables"
+                ]
+              },
+              {
+                "group": "Mail services",
+                "pages": [
+                  "en/online/mail-services/mailgun/index",
+                  {
+                    "group": "Mailgun",
+                    "pages": [
+                      "en/online/mail-services/mailgun/index",
+                      "en/online/mail-services/mailgun/amount-speed",
+                      "en/online/mail-services/mailgun/reasons-to-customize",
+                      "en/online/mail-services/mailgun/security",
+                      "en/online/mail-services/mailgun/sub-processor-info",
+                      {
+                        "group": "DKIM",
+                        "pages": [
+                          "en/online/mail-services/mailgun/dkim/change-us-to-eu",
+                          "en/online/mail-services/mailgun/dkim/set-up",
+                          "en/online/mail-services/mailgun/dkim/order-key",
+                          "en/online/mail-services/mailgun/dkim/multiple-dkim-records"
+                        ]
+                      },
+                      {
+                        "group": "SPF",
+                        "pages": [
+                          "en/online/mail-services/mailgun/spf/set-up"
+                        ]
+                      }
+                    ]
+                  },
+                  "en/online/mail-services/../../email/inbox/it/index",
+                  {
+                    "group": "Service and Marketing (cUrl)",
+                    "pages": [
+                      "en/online/mail-services/curl/migrate"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "tab": "Release Notes",
             "icon": "bullhorn",
             "groups": [
@@ -1451,6 +1654,70 @@
     {
       "source": "/en/developer-portal/analytics/customers",
       "destination": "/en/developer-portal/tenants/index"
+    },
+    {
+      "source": "/en/email/service/index",
+      "destination": "/en/online/mail-services/curl/index"
+    },
+    {
+      "source": "/en/email/service/migrate",
+      "destination": "/en/online/mail-services/curl/migrate"
+    },
+    {
+      "source": "/en/email/mailgun/dkim/change-us-to-eu",
+      "destination": "/en/online/mail-services/mailgun/dkim/change-us-to-eu"
+    },
+    {
+      "source": "/en/email/mailgun/dkim/index",
+      "destination": "/en/online/mail-services/mailgun/dkim/index"
+    },
+    {
+      "source": "/en/email/mailgun/dkim/multiple-dkim-records",
+      "destination": "/en/online/mail-services/mailgun/dkim/multiple-dkim-records"
+    },
+    {
+      "source": "/en/email/mailgun/dkim/order-key",
+      "destination": "/en/online/mail-services/mailgun/dkim/order-key"
+    },
+    {
+      "source": "/en/email/mailgun/dkim/set-up",
+      "destination": "/en/online/mail-services/mailgun/dkim/set-up"
+    },
+    {
+      "source": "/en/email/mailgun/spf/index",
+      "destination": "/en/online/mail-services/mailgun/spf/index"
+    },
+    {
+      "source": "/en/email/mailgun/spf/set-up",
+      "destination": "/en/online/mail-services/mailgun/spf/set-up"
+    },
+    {
+      "source": "/en/email/mailgun/amount-speed",
+      "destination": "/en/online/mail-services/mailgun/amount-speed"
+    },
+    {
+      "source": "/en/email/mailgun/index",
+      "destination": "/en/online/mail-services/mailgun/index"
+    },
+    {
+      "source": "/en/email/mailgun/overview",
+      "destination": "/en/online/mail-services/mailgun/index"
+    },
+    {
+      "source": "/en/email/mailgun/reasons-to-customize",
+      "destination": "/en/online/mail-services/mailgun/reasons-to-customize"
+    },
+    {
+      "source": "/en/email/mailgun/security",
+      "destination": "/en/online/mail-services/mailgun/security"
+    },
+    {
+      "source": "/en/email/mailgun/sub-processor-info",
+      "destination": "/en/online/mail-services/mailgun/sub-processor-info"
+    },
+    {
+      "source": "/en/online/version-history",
+      "destination": "https://community.superoffice.com/en/product-releases/release-notes/"
     }
   ]
 }

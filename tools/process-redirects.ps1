@@ -142,7 +142,7 @@ function Test-RedirectExists {
 function Add-Redirect {
     param([string]$source, [string]$destination)
     
-    # Check if already exists
+    # Check if exact same redirect already exists
     if (Test-RedirectExists -source $source -destination $destination) {
         return $false
     }
@@ -151,6 +151,32 @@ function Add-Redirect {
     if ($source -eq $destination) {
         $script:warnings += "Loop detected: $source -> $destination (skipped)"
         return $false
+    }
+    
+    # Check if source already exists with different destination
+    $existingRedirect = $redirectsList | Where-Object { $_.source -eq $source } | Select-Object -First 1
+    if ($existingRedirect) {
+        $existingDest = $existingRedirect.destination
+        $isNewExternal = $destination -match '^https?://'
+        $isExistingExternal = $existingDest -match '^https?://'
+        
+        # Apply precedence rules
+        if ($isNewExternal -and -not $isExistingExternal) {
+            # New external URL overrides existing internal path
+            Write-Host "  Replacing redirect: $source -> $existingDest with $destination (external takes precedence)" -ForegroundColor Magenta
+            $existingRedirect.destination = $destination
+            return $true
+        }
+        elseif (-not $isNewExternal -and $isExistingExternal) {
+            # Keep existing external URL, skip new internal path
+            Write-Verbose "  Skipping duplicate source: $source (external redirect already exists)"
+            return $false
+        }
+        else {
+            # Both external or both internal - conflict
+            $script:warnings += "Duplicate source detected: $source -> [$existingDest] vs [$destination]"
+            return $false
+        }
     }
     
     # Check if source exists in navigation pages
@@ -239,7 +265,7 @@ foreach ($file in $files) {
             
             if (Add-Redirect -source $source -destination $destination) {
                 $redirectsAdded++
-                Write-Host "  External redirect: $source → $destination" -ForegroundColor Yellow
+                Write-Host "  External redirect: $source -> $destination" -ForegroundColor Yellow
             }
         }
         
@@ -294,6 +320,21 @@ foreach ($redirect in $redirectsList) {
         $nextDest = $redirectMap[$dest]
         $warnings += "Redirect chain detected: $source -> $dest -> $nextDest (consider simplifying)"
     }
+}
+
+# Final validation: Check for any remaining duplicate sources
+Write-Verbose "Validating for duplicate sources..."
+$sourceCounts = $redirectsList | Group-Object -Property source | Where-Object { $_.Count -gt 1 }
+if ($sourceCounts) {
+    Write-Host "`nERROR: Duplicate sources found in redirects array:" -ForegroundColor Red
+    foreach ($duplicate in $sourceCounts) {
+        Write-Host "  $($duplicate.Name) appears $($duplicate.Count) times:" -ForegroundColor Red
+        $redirectsList | Where-Object { $_.source -eq $duplicate.Name } | ForEach-Object {
+            Write-Host "    -> $($_.destination)" -ForegroundColor Yellow
+        }
+    }
+    Write-Host "`nPlease resolve duplicate sources before proceeding." -ForegroundColor Red
+    exit 1
 }
 
 # Update docs.json

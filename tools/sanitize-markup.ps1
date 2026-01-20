@@ -9,6 +9,7 @@
     - Fixes unclosed <br> tags (context-aware: quotes vs tables)
     - Replaces Unicode quotes, dashes, and invisible characters
     - Removes trailing whitespace
+    - Removes consecutive blank lines (keeps only one)
     - Cleans up frontmatter spacing
     - Updates import statements when renaming includes files
 
@@ -227,33 +228,54 @@ function Remove-TrailingWhitespace {
     return $result
 }
 
+# Function to remove consecutive blank lines (keep only one)
+function Remove-ConsecutiveBlankLines {
+    param([string[]]$Lines)
+    
+    $result = @()
+    $previousLineWasBlank = $false
+    
+    for ($i = 0; $i -lt $Lines.Count; $i++) {
+        $line = $Lines[$i]
+        $isBlank = [string]::IsNullOrWhiteSpace($line)
+        
+        if ($isBlank) {
+            # Only add blank line if previous wasn't blank
+            if (-not $previousLineWasBlank) {
+                $result += ''
+            }
+            $previousLineWasBlank = $true
+        }
+        else {
+            $result += $line
+            $previousLineWasBlank = $false
+        }
+    }
+    
+    return $result
+}
+
 # Function to ensure exactly one blank line at end of file
 function Repair-FileEnding {
     param([string[]]$Lines)
     
     if ($Lines.Count -eq 0) {
-        return $Lines
+        return @()
     }
     
-    # Check if this is a redirect-only file (frontmatter with only redirect_url)
-    if ($Lines.Count -le 5) {
+    # Check if this is a redirect-only file
+    $isRedirectOnly = $false
+    if ($Lines.Count -le 5 -and ($Lines -join "`n") -match 'redirect_url:') {
         $inFrontmatter = $false
-        $hasRedirectUrl = $false
         $hasOtherContent = $false
         
         for ($i = 0; $i -lt $Lines.Count; $i++) {
-            $line = $Lines[$i]
-            
-            if ($i -eq 0 -and $line -eq '---') {
+            if ($i -eq 0 -and $Lines[$i] -eq '---') {
                 $inFrontmatter = $true
-                continue
             }
-            
-            if ($inFrontmatter -and $line -eq '---') {
-                # End of frontmatter - if no other content after, it's redirect-only
-                if ($i -eq ($Lines.Count - 1)) {
-                    break
-                }
+            elseif ($inFrontmatter -and $Lines[$i] -eq '---') {
+                $inFrontmatter = $false
+                # Check remaining lines for content
                 for ($j = $i + 1; $j -lt $Lines.Count; $j++) {
                     if (-not [string]::IsNullOrWhiteSpace($Lines[$j])) {
                         $hasOtherContent = $true
@@ -262,32 +284,40 @@ function Repair-FileEnding {
                 }
                 break
             }
-            
-            if ($inFrontmatter -and $line -match '^\s*redirect_url:') {
-                $hasRedirectUrl = $true
-            }
         }
         
-        # Skip redirect-only files
-        if ($hasRedirectUrl -and -not $hasOtherContent) {
-            return $Lines
+        if (-not $hasOtherContent) {
+            $isRedirectOnly = $true
         }
+    }
+    
+    # Skip redirect-only files
+    if ($isRedirectOnly) {
+        return $Lines
     }
     
     # Remove all trailing blank lines
-    $lastIndex = $Lines.Count - 1
-    while ($lastIndex -ge 0 -and [string]::IsNullOrWhiteSpace($Lines[$lastIndex])) {
-        $lastIndex--
+    # WriteAllLines adds a final newline, so we don't include any blank lines at the end
+    $lastNonBlankIndex = -1
+    for ($i = $Lines.Count - 1; $i -ge 0; $i--) {
+        if (-not [string]::IsNullOrWhiteSpace($Lines[$i])) {
+            $lastNonBlankIndex = $i
+            break
+        }
     }
     
-    # Keep content up to last non-blank line, then add exactly one blank line
-    if ($lastIndex -ge 0) {
-        $result = $Lines[0..$lastIndex]
-        $result += ''
-        return $result
+    # If all lines are blank, return empty array
+    if ($lastNonBlankIndex -eq -1) {
+        return @()
     }
     
-    return $Lines
+    # Return content up to last non-blank line (WriteAllLines will add final newline)
+    $result = @()
+    for ($i = 0; $i -le $lastNonBlankIndex; $i++) {
+        $result += $Lines[$i]
+    }
+    
+    return $result
 }
 
 # Function to update import statements when renaming includes files
@@ -342,6 +372,7 @@ $renamedFiles = 0
 $fixedBrTags = 0
 $fixedUnicode = 0
 $fixedWhitespace = 0
+$fixedBlankLines = 0
 $fixedEndings = 0
 
 foreach ($file in $files) {
@@ -378,6 +409,14 @@ foreach ($file in $files) {
         $content = $newContent
         $changes += "Removed trailing whitespace"
         $fixedWhitespace++
+    }
+    
+    # Remove consecutive blank lines
+    $newContent = Remove-ConsecutiveBlankLines -Lines $content
+    if (($newContent -join "`n") -ne ($content -join "`n")) {
+        $content = $newContent
+        $changes += "Removed consecutive blank lines"
+        $fixedBlankLines++
     }
     
     # Ensure exactly one blank line at end of file
@@ -434,6 +473,9 @@ if ($fixedUnicode -gt 0) {
 }
 if ($fixedWhitespace -gt 0) {
     Write-Host "  Files with fixed whitespace: $fixedWhitespace" -ForegroundColor Cyan
+}
+if ($fixedBlankLines -gt 0) {
+    Write-Host "  Files with consecutive blank lines removed: $fixedBlankLines" -ForegroundColor Cyan
 }
 if ($fixedEndings -gt 0) {
     Write-Host "  Files with fixed endings: $fixedEndings" -ForegroundColor Cyan

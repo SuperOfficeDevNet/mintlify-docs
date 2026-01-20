@@ -674,9 +674,32 @@ else {
 }
 
 function Remove-DuplicatesFromStructure {
-    param($obj)
+    param(
+        $obj,
+        [int]$depth = 0,
+        [int]$maxDepth = 100,
+        [System.Collections.Generic.HashSet[object]]$visited = $null
+    )
+    
+    # Initialize visited set on first call
+    if ($null -eq $visited) {
+        $visited = [System.Collections.Generic.HashSet[object]]::new()
+    }
+    
+    # Prevent infinite recursion - bail out if we go too deep
+    if ($depth -ge $maxDepth) {
+        Write-Warning "Maximum recursion depth ($maxDepth) reached in Remove-DuplicatesFromStructure"
+        return $obj
+    }
     
     if ($obj -is [System.Collections.IEnumerable] -and $obj -isnot [string]) {
+        # Check if we've already visited this object (circular reference detection)
+        if ($visited.Contains($obj)) {
+            Write-Verbose "Circular reference detected at depth $depth"
+            return @()  # Return empty array to break the cycle
+        }
+        $visited.Add($obj) | Out-Null
+        
         # Handle arrays - remove duplicate strings, recursively process objects
         $seen = @{}
         $result = @()
@@ -691,7 +714,7 @@ function Remove-DuplicatesFromStructure {
             }
             elseif ($item -is [hashtable] -or $item -is [System.Collections.Specialized.OrderedDictionary]) {
                 # Recursively clean hashtables/ordered dictionaries
-                $result += Remove-DuplicatesFromStructure $item
+                $result += Remove-DuplicatesFromStructure -obj $item -depth ($depth + 1) -maxDepth $maxDepth -visited $visited
             }
             else {
                 # Keep other types as-is
@@ -702,6 +725,13 @@ function Remove-DuplicatesFromStructure {
         return $result
     }
     elseif ($obj -is [hashtable] -or $obj -is [System.Collections.Specialized.OrderedDictionary]) {
+        # Check if we've already visited this object (circular reference detection)
+        if ($visited.Contains($obj)) {
+            Write-Verbose "Circular reference detected at depth $depth"
+            return [ordered]@{}  # Return empty ordered dict to break the cycle
+        }
+        $visited.Add($obj) | Out-Null
+        
         # Handle hashtables and ordered dictionaries
         $result = if ($obj -is [System.Collections.Specialized.OrderedDictionary]) {
             [ordered]@{}
@@ -710,7 +740,7 @@ function Remove-DuplicatesFromStructure {
         }
         
         foreach ($key in $obj.Keys) {
-            $result[$key] = Remove-DuplicatesFromStructure $obj[$key]
+            $result[$key] = Remove-DuplicatesFromStructure -obj $obj[$key] -depth ($depth + 1) -maxDepth $maxDepth -visited $visited
         }
         
         return $result

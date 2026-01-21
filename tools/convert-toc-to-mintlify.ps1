@@ -216,6 +216,15 @@ function Expand-NestedToc {
     # Use ReadAllLines to preserve UTF-8 encoding (Norwegian characters)
     # Wrap in @() to convert to PowerShell array for proper .Count behavior
     $lines = @([System.IO.File]::ReadAllLines($TocPath))
+
+    if ($env:DEBUG_INDENT -and $TocPath -match 'admin') {
+        Write-Host "  Read $($lines.Count) lines from $TocPath" -ForegroundColor Magenta
+        $lines | Select-Object -First 5 | ForEach-Object {
+            $ind = if ($_ -match '^(\s*)') { $Matches[1].Length } else { 0 }
+            Write-Host "    [indent=$ind] '$_'" -ForegroundColor Magenta
+        }
+    }
+
     $tocDir = Split-Path -Parent $TocPath
     $relativePrefix = if ($ParentDir) {
         # Calculate relative path manually (PS 5.1 doesn't have GetRelativePath)
@@ -334,6 +343,15 @@ function Expand-NestedToc {
                     $nestedLines = $nestedLines[1..($nestedLines.Count - 1)]
                 }
 
+                # Detect the base indentation of the nested TOC (some use 0, some use 2)
+                $baseIndent = 0
+                foreach ($nestedLine in $nestedLines) {
+                    if ($nestedLine -match '^(\s*)- name:') {
+                        $baseIndent = $Matches[1].Length
+                        break
+                    }
+                }
+
                 # Add topicHref if found (before items:)
                 if ($topicHref) {
                     $adjustedTopicHref = $relativePrefix + $topicHref
@@ -343,9 +361,14 @@ function Expand-NestedToc {
                 # Add items: marker (parent name line already exists)
                 $expandedLines += "$nameIndent  items:"
 
-                # Adjust indentation and paths in nested content
-                # Nested items should be indented 4 spaces more than the parent name
-                $indentAdjust = $nameIndent.Length + 4 - 2  # +4 for being children of parent, -2 because nested items start at indent 2
+                # Adjust indentation: children should be at nameIndent + 2 (matching the items: indent)
+                # Formula: finalIndent = (sourceIndent - baseIndent) + (nameIndent + 2)
+                # Simplified: indentAdjust = nameIndent + 2 - baseIndent
+                $indentAdjust = $nameIndent.Length + 2 - $baseIndent
+
+                if ($env:DEBUG_INDENT) {
+                    Write-Host "    Processing nested TOC: $nestedTocRef for parent '$itemName' at nameIndent=$($nameIndent.Length), baseIndent=$baseIndent, indentAdjust=$indentAdjust" -ForegroundColor DarkGray
+                }
 
                 foreach ($nestedLine in $nestedLines) {
                     if ([string]::IsNullOrWhiteSpace($nestedLine)) {
@@ -359,6 +382,10 @@ function Expand-NestedToc {
                     }
                     $newIndent = ' ' * ($nestedIndent.Length + $indentAdjust)
                     $content = $nestedLine.Trim()
+
+                    if ($env:DEBUG_INDENT -and $itemName -eq 'Voor beheerders' -and $content -match '^- name:') {
+                        Write-Host "      Line: '$nestedLine' (nestedIndent=$($nestedIndent.Length), newIndent=$($newIndent.Length), content='$content')" -ForegroundColor Yellow
+                    }
 
                     # Adjust paths in href and topicHref
                     if ($content -match '^((?:topic)?href):\s*(.+)$') {
@@ -430,6 +457,15 @@ function Expand-NestedToc {
         else {
             # Non-href line, keep as-is
             $expandedLines += $line
+        }
+    }
+
+    if ($env:DEBUG_INDENT -and $expandedLines.Count -gt 0) {
+        $firstFewLines = $expandedLines | Select-Object -First 3
+        Write-Host "  Returning $($expandedLines.Count) lines from $TocPath, first few:" -ForegroundColor DarkCyan
+        foreach ($l in $firstFewLines) {
+            $indentCount = if ($l -match '^(\s*)') { $Matches[1].Length } else { 0 }
+            Write-Host "    [indent=$indentCount] '$l'" -ForegroundColor DarkCyan
         }
     }
 
@@ -844,7 +880,14 @@ else {
 }
 
 # Convert to JSON
-$json = $output | ConvertTo-Json -Depth 20 -Compress
+# Use -EscapeHandling EscapeNonAscii to prevent escaping apostrophes as \u0027
+if ($PSVersionTable.PSVersion.Major -ge 6) {
+    $json = $output | ConvertTo-Json -Depth 20 -Compress -EscapeHandling EscapeNonAscii
+} else {
+    $json = $output | ConvertTo-Json -Depth 20 -Compress
+    # PS 5.1 doesn't have -EscapeHandling, fix common escapes
+    $json = $json -replace '\\u0027', "'"
+}
 
 # Pretty-print with consistent 4-space indentation
 $indent = 0

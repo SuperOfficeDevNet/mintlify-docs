@@ -253,6 +253,204 @@
                         ]
                     },
                     {
+                        "tab": "Integrations",
+                        "icon": "book",
+                        "groups": [
+                            {
+                                "group": "Overview",
+                                "pages": [
+                                    "integrations/index"
+                                ]
+                            },
+                            {
+                                "group": "Gmail Link",
+                                "pages": [
+                                    "integrations/gmail-link/index",
+                                    "integrations/gmail-link/install",
+                                    "integrations/gmail-link/settings",
+                                    "integrations/gmail-link/manage-senders",
+                                    "integrations/gmail-link/email-archive-incoming",
+                                    "integrations/gmail-link/archive-attachments",
+                                    "integrations/gmail-link/archive-emails-as-activities",
+                                    "integrations/gmail-link/archive-emails-as-requests",
+                                    "integrations/gmail-link/email-archive-outgoing"
+                                ]
+                            },
+                            {
+                                "group": "Google Workspace document integration",
+                                "pages": [
+                                    "integrations/g-suite/index",
+                                    "integrations/g-suite/requirements",
+                                    "integrations/g-suite/security",
+                                    "integrations/g-suite/getting-started",
+                                    "integrations/g-suite/set-up"
+                                ]
+                            },
+                            {
+                                "group": "Mail Link",
+                                "pages": [
+                                    "integrations/mail-link/index",
+                                    "integrations/mail-link/install",
+                                    "integrations/mail-link/archive",
+                                    "integrations/mail-link/create-in-superoffice",
+                                    "integrations/mail-link/create-in-outlook",
+                                    "integrations/mail-link/select-recipients",
+                                    "integrations/mail-link/manage-senders",
+                                    "integrations/mail-link/add-attachment",
+                                    "integrations/mail-link/archive-on-contact",
+                                    "integrations/mail-link/archive-as-activity",
+                                    "integrations/mail-link/archive-as-request",
+                                    "integrations/mail-link/archive-attachment",
+                                    "integrations/mail-link/settings",
+                                    "integrations/mail-link/debug"
+                                ]
+                            },
+                            {
+                                "group": "SharePoint documents",
+                                "pages": [
+                                    "integrations/sharepoint-documents/index",
+                                    "integrations/sharepoint-documents/requirements",
+                                    {
+                                        "group": "Set up SharePoint",
+                                        "pages": [
+                                            "integrations/sharepoint-documents/permissions-in-sharepoint",
+                                            "integrations/sharepoint-documents/configure-permissions-documents",
+                                            "integrations/sharepoint-documents/configure-permissions-templates"
+                                        ]
+                                    },
+                                    "integrations/sharepoint-documents/configure-superoffice",
+                                    "integrations/sharepoint-documents/permissions-app",
+                                    "integrations/sharepoint-documents/troubleshooting",
+                                    {
+                                        "group": "Migration",
+                                        "pages": [
+                                            "integrations/sharepoint-documents/migrate/index",
+                                            "integrations/sharepoint-documents/migrate/best-practices",
+                                            "integrations/sharepoint-documents/migrate/steps",
+                                            "integrations/sharepoint-documents/migrate/troubleshooting",
+                                            "integrations/sharepoint-documents/migrate/reference"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "SuperOffice for Outlook",
+                                "pages": [
+                                    "integrations/superoffice-for-outlook/index",
+                                    "integrations/superoffice-for-outlook/get",
+                                    "integrations/superoffice-for-outlook/save-to-superoffice",
+                                    "integrations/superoffice-for-outlook/add-contact-to-superoffice",
+                                    "integrations/superoffice-for-outlook/create-follow-up",
+                                    "integrations/superoffice-for-outlook/create-sale",
+                                    "integrations/superoffice-for-outlook/create-request",
+                                    "integrations/superoffice-for-outlook/add-crm-data-to-event",
+                                    "integrations/superoffice-for-outlook/requirements",
+                                    "integrations/superoffice-for-outlook/deploy"
+                                ]
+                            },
+                            {
+                                "group": "Video meetings",
+                                "pages": [
+                                    "integrations/video-meetings/index",
+                                    "integrations/video-meetings/google-meet/index",
+                                    "integrations/video-meetings/jitsi/index",
+                                    "integrations/video-meetings/ms-teams/index",
+                                    "integrations/video-meetings/webex/index",
+                                    "integrations/video-meetings/zoom/index",
+                                    {
+                                        "group": "How to...",
+                                        "pages": [
+                                            "integrations/video-meetings/howto/create",
+                                            "integrations/video-meetings/howto/join",
+                                            "integrations/video-meetings/howto/configure-email-invitations",
+                                            "integrations/video-meetings/howto/connect-provider",
+                                            "integrations/video-meetings/howto/disconnect-provider",
+                                            "integrations/video-meetings/howto/disconnect-user"
+                                        ]
+                                    },
+                                    "integrations/video-meetings/troubleshooting"
+                                ]
+                            },
+                            {
+                                "group": "WebTools",
+                                "pages": [
+                                    "integrations/webtools/index",
+                                    "integrations/webtools/technical-overview",
+                                    "integrations/webtools/system-requirements",
+                                    {
+                                        "group": "Set up",
+                                        "pages": [
+                                            "integrations/webtools/install",
+                                            "integrations/webtools/deploy",
+                                            "integrations/webtools/config",
+                                            "integrations/webtools/upgrade"
+                                        ]
+                                    },
+                                    "integrations/webtools/troubleshooting",
+                                    "integrations/webtools/debug"
+                                ]
+                            },
+                            {
+                                "group": "Zapier",
+                                "pages": [
+                                    "integrations/zapier/index",
+                                    {
+                                        "group": "Get started",
+                                        "pages": [
+                                            "integrations/zapier/get-started/set-up-account",
+                                            "integrations/zapier/get-started/create-zap"
+                                        ]
+                                    },
+                                    {
+                                        "group": "How to...",
+                                        "pages": [
+                                            "integrations/zapier/howto/index",
+                                            "integrations/zapier/howto/gdpr",
+                                            "integrations/zapier/howto/listsource",
+                                            "integrations/zapier/howto/datetime",
+                                            {
+                                                "group": "Actions",
+                                                "pages": [
+                                                    "integrations/zapier/howto/actions/create-appointment",
+                                                    "integrations/zapier/howto/actions/create-company",
+                                                    "integrations/zapier/howto/actions/create-contact",
+                                                    "integrations/zapier/howto/actions/create-document",
+                                                    "integrations/zapier/howto/actions/create-project-member",
+                                                    "integrations/zapier/howto/actions/create-project",
+                                                    "integrations/zapier/howto/actions/create-request-message-attachment",
+                                                    "integrations/zapier/howto/actions/create-request-message",
+                                                    "integrations/zapier/howto/actions/create-request",
+                                                    "integrations/zapier/howto/actions/create-sale",
+                                                    "integrations/zapier/howto/actions/remove-project-member",
+                                                    "integrations/zapier/howto/actions/search-company",
+                                                    "integrations/zapier/howto/actions/search-contact",
+                                                    "integrations/zapier/howto/actions/search-project",
+                                                    "integrations/zapier/howto/actions/search-request",
+                                                    "integrations/zapier/howto/actions/search-sale",
+                                                    "integrations/zapier/howto/actions/update-appointment",
+                                                    "integrations/zapier/howto/actions/update-company",
+                                                    "integrations/zapier/howto/actions/update-contact",
+                                                    "integrations/zapier/howto/actions/update-document-content",
+                                                    "integrations/zapier/howto/actions/update-project",
+                                                    "integrations/zapier/howto/actions/update-request",
+                                                    "integrations/zapier/howto/actions/update-sale"
+                                                ]
+                                            },
+                                            {
+                                                "group": "Triggers",
+                                                "pages": [
+                                                    "integrations/zapier/howto/triggers/new",
+                                                    "integrations/zapier/howto/triggers/changed"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "integrations/zapier/reference"
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "tab": "Online",
                         "icon": "book",
                         "groups": [
@@ -1814,989 +2012,989 @@
                 ]
             },
             {
-        "language": "no",
-        "tabs": [
-            {
-                "tab": "Brukerveiledning",
-                "icon": "book",
-                "groups": [
+                "language": "no",
+                "tabs": [
                     {
-                        "group": "Oversikt",
-                        "pages": [
-                            "no/learn/index"
-                        ]
-                    },
-                    {
-                        "group": "Introduksjon",
-                        "pages": [
-                            "no/learn/intro"
-                        ]
-                    },
-                    {
-                        "group": "Komme i gang",
-                        "pages": [
-                            "no/learn/getting-started/index",
+                        "tab": "Brukerveiledning",
+                        "icon": "book",
+                        "groups": [
                             {
-                                "group": "Elementene i utseende",
+                                "group": "Oversikt",
                                 "pages": [
-                                    "no/learn/getting-started/main-screen/index",
-                                    "no/learn/getting-started/main-screen/navigator",
-                                    "no/learn/getting-started/main-screen/buttons-in-menu-bar",
-                                    "no/learn/getting-started/main-screen/side-panel",
-                                    "no/learn/getting-started/main-screen/in-app-help"
+                                    "no/learn/index"
                                 ]
                             },
-                            "no/learn/getting-started/login",
-                            "no/learn/getting-started/preferences",
                             {
-                                "group": "Koble sammen e-post og dokumenter",
+                                "group": "Introduksjon",
                                 "pages": [
-                                    "no/learn/getting-started/connect-email-doc/index",
-                                    "no/learn/getting-started/connect-email-doc/default-win",
-                                    "no/learn/getting-started/connect-email-doc/default-mac",
-                                    "no/learn/getting-started/connect-email-doc/microsoft-365",
-                                    "no/learn/getting-started/connect-email-doc/google-workspace",
-                                    "integrations/webtools/index"
+                                    "no/learn/intro"
                                 ]
                             },
-                            "no/learn/getting-started/edit-email-signature",
                             {
-                                "group": "Endre aktivt språk",
+                                "group": "Komme i gang",
                                 "pages": [
-                                    "no/learn/getting-started/change-language",
-                                    "no/learn/basics/index",
-                                    "no/learn/basics/notifications",
-                                    "no/learn/basics/fav",
-                                    "no/learn/basics/history",
-                                    "no/learn/basics/links",
-                                    "no/learn/basics/notes",
-                                    "no/learn/basics/print",
-                                    "no/learn/basics/duplicates",
-                                    "no/learn/basics/deleting-elements",
-                                    "no/learn/basics/bulk-update",
+                                    "no/learn/getting-started/index",
                                     {
-                                        "group": "Arbeide med detaljkort",
+                                        "group": "Elementene i utseende",
                                         "pages": [
-                                            "no/learn/section-tabs/index",
-                                            "no/learn/section-tabs/activities-tab",
-                                            "no/learn/section-tabs/contacts-tab",
-                                            "no/learn/section-tabs/relations-tab",
-                                            "no/learn/section-tabs/sales-tab",
-                                            "no/learn/section-tabs/projects-tab",
-                                            "no/learn/section-tabs/requests-tab",
-                                            "no/learn/section-tabs/configure-columns",
-                                            "no/learn/section-tabs/filter",
-                                            "no/learn/section-tabs/group",
-                                            "no/learn/section-tabs/export-archives",
-                                            "no/learn/section-tabs/send-email"
+                                            "no/learn/getting-started/main-screen/index",
+                                            "no/learn/getting-started/main-screen/navigator",
+                                            "no/learn/getting-started/main-screen/buttons-in-menu-bar",
+                                            "no/learn/getting-started/main-screen/side-panel",
+                                            "no/learn/getting-started/main-screen/in-app-help"
                                         ]
                                     },
-                                    "no/learn/basics/activity",
-                                    "no/learn/basics/relations",
-                                    "no/learn/basics/external-applications-and-url-addresses",
-                                    "no/learn/basics/creating-shortcuts-to-entries-in-crm"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Lær det grunnleggende",
-                        "pages": [
-                            "no/learn/section-tabs/index"
-                        ]
-                    },
-                    {
-                        "group": "Søkealternativer",
-                        "pages": [
-                            "no/search-options/learn/index",
-                            "no/search-options/learn/find-screen",
-                            "no/search-options/learn/search-criteria",
-                            "no/search-options/learn/freetext-search",
-                            "no/search-options/learn/in-navigator",
-                            "no/search-options/learn/in-dialogs",
-                            {
-                                "group": "For administratorer",
-                                "pages": [
-                                    "no/search-options/admin/configure-free-text-search",
-                                    "no/search-options/admin/stopwords",
+                                    "no/learn/getting-started/login",
+                                    "no/learn/getting-started/preferences",
                                     {
-                                        "group": "Bygge fritekstindeks på nytt",
+                                        "group": "Koble sammen e-post og dokumenter",
                                         "pages": [
-                                            "no/search-options/admin/regenerate-index",
-                                            "no/diary/learn/recurrence/index",
-                                            "no/diary/learn/recurrence/create",
-                                            "no/diary/learn/recurrence/stop",
-                                            "no/diary/learn/invitation/index",
-                                            "no/diary/learn/invitation/add-attendee",
-                                            "no/diary/learn/invitation/accept-decline"
+                                            "no/learn/getting-started/connect-email-doc/index",
+                                            "no/learn/getting-started/connect-email-doc/default-win",
+                                            "no/learn/getting-started/connect-email-doc/default-mac",
+                                            "no/learn/getting-started/connect-email-doc/microsoft-365",
+                                            "no/learn/getting-started/connect-email-doc/google-workspace",
+                                            "integrations/webtools/index"
+                                        ]
+                                    },
+                                    "no/learn/getting-started/edit-email-signature",
+                                    {
+                                        "group": "Endre aktivt språk",
+                                        "pages": [
+                                            "no/learn/getting-started/change-language",
+                                            "no/learn/basics/index",
+                                            "no/learn/basics/notifications",
+                                            "no/learn/basics/fav",
+                                            "no/learn/basics/history",
+                                            "no/learn/basics/links",
+                                            "no/learn/basics/notes",
+                                            "no/learn/basics/print",
+                                            "no/learn/basics/duplicates",
+                                            "no/learn/basics/deleting-elements",
+                                            "no/learn/basics/bulk-update",
+                                            {
+                                                "group": "Arbeide med detaljkort",
+                                                "pages": [
+                                                    "no/learn/section-tabs/index",
+                                                    "no/learn/section-tabs/activities-tab",
+                                                    "no/learn/section-tabs/contacts-tab",
+                                                    "no/learn/section-tabs/relations-tab",
+                                                    "no/learn/section-tabs/sales-tab",
+                                                    "no/learn/section-tabs/projects-tab",
+                                                    "no/learn/section-tabs/requests-tab",
+                                                    "no/learn/section-tabs/configure-columns",
+                                                    "no/learn/section-tabs/filter",
+                                                    "no/learn/section-tabs/group",
+                                                    "no/learn/section-tabs/export-archives",
+                                                    "no/learn/section-tabs/send-email"
+                                                ]
+                                            },
+                                            "no/learn/basics/activity",
+                                            "no/learn/basics/relations",
+                                            "no/learn/basics/external-applications-and-url-addresses",
+                                            "no/learn/basics/creating-shortcuts-to-entries-in-crm"
                                         ]
                                     }
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Dashbord",
-                        "pages": [
-                            "no/dashboard/learn/index",
-                            "no/dashboard/learn/create",
-                            "no/dashboard/learn/update",
-                            "no/dashboard/learn/working-with-tiles",
-                            "no/dashboard/learn/show-leads",
-                            "no/dashboard/learn/show-sales-targets",
-                            "no/dashboard/learn/show-marketing",
-                            "no/dashboard/learn/show-requests"
-                        ]
-                    },
-                    {
-                        "group": "Firma",
-                        "pages": [
-                            "no/company/learn/index",
-                            "no/company/learn/create",
-                            "no/company/learn/edit",
-                            "no/company/learn/copy",
-                            "no/company/learn/merge-companies",
-                            "no/company/learn/delete",
-                            "no/company/learn/address-formats"
-                        ]
-                    },
-                    {
-                        "group": "Person",
-                        "pages": [
-                            "no/contact/learn/index",
-                            "no/contact/learn/create",
-                            "no/contact/learn/edit",
-                            "no/contact/learn/move",
-                            "no/contact/learn/merge-contacts",
-                            "no/contact/learn/delete",
-                            "no/contact/learn/send-email",
-                            "no/contact/learn/dial"
-                        ]
-                    },
-                    {
-                        "group": "Dagbok",
-                        "pages": [
-                            "no/diary/admin/add-follow-up-type",
-                            "no/diary/index",
-                            "no/diary/learn/index",
-                            "no/diary/learn/follow-ups",
-                            "no/diary/learn/video-meetings",
-                            "no/diary/learn/create-follow-up",
-                            "no/diary/learn/edit-follow-up",
-                            "no/diary/learn/move-follow-up",
-                            "no/diary/learn/change-completed-status",
-                            "no/diary/learn/other-diaries",
-                            "no/diary/learn/group-view",
-                            "no/diary/learn/follow-up-assign",
-                            "no/diary/learn/set-alarm",
-                            "no/diary/learn/send-as-email",
-                            "no/diary/learn/recurrence/index",
-                            "no/diary/learn/invitation/index",
+                            },
                             {
-                                "group": "For administratorer",
+                                "group": "Lær det grunnleggende",
+                                "pages": [
+                                    "no/learn/section-tabs/index"
+                                ]
+                            },
+                            {
+                                "group": "Søkealternativer",
+                                "pages": [
+                                    "no/search-options/learn/index",
+                                    "no/search-options/learn/find-screen",
+                                    "no/search-options/learn/search-criteria",
+                                    "no/search-options/learn/freetext-search",
+                                    "no/search-options/learn/in-navigator",
+                                    "no/search-options/learn/in-dialogs",
+                                    {
+                                        "group": "For administratorer",
+                                        "pages": [
+                                            "no/search-options/admin/configure-free-text-search",
+                                            "no/search-options/admin/stopwords",
+                                            {
+                                                "group": "Bygge fritekstindeks på nytt",
+                                                "pages": [
+                                                    "no/search-options/admin/regenerate-index",
+                                                    "no/diary/learn/recurrence/index",
+                                                    "no/diary/learn/recurrence/create",
+                                                    "no/diary/learn/recurrence/stop",
+                                                    "no/diary/learn/invitation/index",
+                                                    "no/diary/learn/invitation/add-attendee",
+                                                    "no/diary/learn/invitation/accept-decline"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "Dashbord",
+                                "pages": [
+                                    "no/dashboard/learn/index",
+                                    "no/dashboard/learn/create",
+                                    "no/dashboard/learn/update",
+                                    "no/dashboard/learn/working-with-tiles",
+                                    "no/dashboard/learn/show-leads",
+                                    "no/dashboard/learn/show-sales-targets",
+                                    "no/dashboard/learn/show-marketing",
+                                    "no/dashboard/learn/show-requests"
+                                ]
+                            },
+                            {
+                                "group": "Firma",
+                                "pages": [
+                                    "no/company/learn/index",
+                                    "no/company/learn/create",
+                                    "no/company/learn/edit",
+                                    "no/company/learn/copy",
+                                    "no/company/learn/merge-companies",
+                                    "no/company/learn/delete",
+                                    "no/company/learn/address-formats"
+                                ]
+                            },
+                            {
+                                "group": "Person",
+                                "pages": [
+                                    "no/contact/learn/index",
+                                    "no/contact/learn/create",
+                                    "no/contact/learn/edit",
+                                    "no/contact/learn/move",
+                                    "no/contact/learn/merge-contacts",
+                                    "no/contact/learn/delete",
+                                    "no/contact/learn/send-email",
+                                    "no/contact/learn/dial"
+                                ]
+                            },
+                            {
+                                "group": "Dagbok",
                                 "pages": [
                                     "no/diary/admin/add-follow-up-type",
-                                    "no/diary/admin/add-resource"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Dokument",
-                        "pages": [
-                            "no/document/index",
-                            "no/document/learn/index",
-                            "no/document/library/learn/index",
-                            {
-                                "group": "Arbeide med dokument",
-                                "pages": [
-                                    "no/document/learn/create",
-                                    "no/document/learn/lock",
-                                    "no/document/learn/edit",
-                                    "no/document/learn/send-as-email"
-                                ]
-                            },
-                            {
-                                "group": "Dokumentmaler",
-                                "pages": [
-                                    "no/document/templates/learn/index",
-                                    "no/document/templates/learn/document-types",
+                                    "no/diary/index",
+                                    "no/diary/learn/index",
+                                    "no/diary/learn/follow-ups",
+                                    "no/diary/learn/video-meetings",
+                                    "no/diary/learn/create-follow-up",
+                                    "no/diary/learn/edit-follow-up",
+                                    "no/diary/learn/move-follow-up",
+                                    "no/diary/learn/change-completed-status",
+                                    "no/diary/learn/other-diaries",
+                                    "no/diary/learn/group-view",
+                                    "no/diary/learn/follow-up-assign",
+                                    "no/diary/learn/set-alarm",
+                                    "no/diary/learn/send-as-email",
+                                    "no/diary/learn/recurrence/index",
+                                    "no/diary/learn/invitation/index",
                                     {
-                                        "group": "Malvariabler",
+                                        "group": "For administratorer",
                                         "pages": [
-                                            "no/document/templates/variables/index",
-                                            {
-                                                "group": "Referanse",
-                                                "pages": [
-                                                    "no/document/templates/variables/index",
-                                                    "no/document/templates/variables/from-company-card",
-                                                    "no/document/templates/variables/from-senders-company-card",
-                                                    "no/document/templates/variables/for-selected-contact",
-                                                    "no/document/templates/variables/for-sender-contact-dialog",
-                                                    "no/document/templates/variables/from-doc-dialog-or-system",
-                                                    "no/document/templates/variables/for-appointments",
-                                                    "no/document/templates/variables/for-ical",
-                                                    "no/document/templates/variables/for-int-address",
-                                                    "no/document/templates/variables/for-mail-gateway",
-                                                    "no/document/templates/variables/for-pocket",
-                                                    "no/document/templates/variables/from-project-card",
-                                                    "no/document/templates/variables/for-quote-alternative",
-                                                    "no/document/templates/variables/for-quote-info",
-                                                    "no/document/templates/variables/for-quote-line",
-                                                    "no/document/templates/variables/for-quote-line-with-subscription",
-                                                    "no/document/templates/variables/for-request",
-                                                    "no/document/templates/variables/for-sales",
-                                                    "no/document/templates/variables/for-selections",
-                                                    "no/document/templates/variables/for-service",
-                                                    "no/document/templates/variables/for-web-app",
-                                                    "no/document/templates/variables/misc"
-                                                ]
-                                            },
-                                            "no/document/templates/learn/troubleshooting"
-                                        ]
-                                    },
-                                    {
-                                        "group": "Flettefelt (tilbudsmaler)",
-                                        "pages": [
-                                            "no/document/templates/merge-fields/index",
-                                            {
-                                                "group": "Referanse",
-                                                "pages": [
-                                                    "no/document/templates/merge-fields/index",
-                                                    "no/document/templates/merge-fields/quote",
-                                                    "no/document/templates/merge-fields/alternative",
-                                                    "no/document/templates/merge-fields/group",
-                                                    "no/document/templates/merge-fields/line"
-                                                ]
-                                            },
-                                            "no/document/templates/admin/tutorial"
-                                        ]
-                                    },
-                                    "no/document/templates/learn/create",
-                                    "no/document/templates/admin/link-template",
-                                    "no/document/templates/admin/update-template",
-                                    "no/document/templates/admin/using-document-templates-for-multiple-languages",
-                                    "no/document/templates/admin/document-template-defaults"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "E-post",
-                        "pages": [
-                            "no/email/index",
-                            "no/email/learn/index",
-                            "no/email/learn/change-default-mail-client",
-                            {
-                                "group": "Innboks",
-                                "pages": [
-                                    "no/email/inbox/learn/index",
-                                    "no/email/inbox/learn/setup",
-                                    "no/email/inbox/learn/preview",
-                                    "no/email/inbox/learn/compose",
-                                    "no/email/inbox/learn/manage-senders",
-                                    "no/email/inbox/learn/invitations",
-                                    "no/email/inbox/learn/archive",
-                                    "no/email/inbox/learn/create-task",
-                                    "no/email/inbox/learn/create-request"
-                                ]
-                            },
-                            {
-                                "group": "For administratorer",
-                                "pages": [
-                                    "no/email/admin/mailbox/index",
-                                    "no/email/admin/add-email-template",
-                                    {
-                                        "group": "Postkasseadministrasjon",
-                                        "pages": [
-                                            "no/email/admin/mailbox/index",
-                                            "no/email/admin/mailbox/create-mailbox",
-                                            "no/email/admin/mailbox/create-sms-mailbox",
-                                            "no/email/admin/mailbox/create-email-filter",
-                                            "no/email/admin/mailbox/delete-mailbox"
+                                            "no/diary/admin/add-follow-up-type",
+                                            "no/diary/admin/add-resource"
                                         ]
                                     }
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Salg",
-                        "pages": [
-                            "no/sale/admin/index",
-                            "no/sale/index",
-                            "no/sale/learn/index",
-                            "no/sale/learn/create",
-                            "no/sale/learn/update",
-                            "no/sale/learn/sales-guides",
-                            "no/sale/learn/tutorial",
-                            {
-                                "group": "Interessenter",
-                                "pages": [
-                                    "no/sale/learn/stakeholders/create",
-                                    "no/sale/learn/stakeholders/edit"
-                                ]
-                            },
-                            "no/sale/learn/forecasting",
-                            {
-                                "group": "Salgsmål",
-                                "pages": [
-                                    "no/sale/learn/sales-targets/index",
-                                    "no/sale/learn/sales-targets/create",
-                                    "no/sale/learn/sales-targets/target-types"
-                                ]
                             },
                             {
-                                "group": "Tilbud",
+                                "group": "Dokument",
                                 "pages": [
-                                    "no/sale/learn/quote/index",
-                                    "no/sale/learn/quote/create",
-                                    "no/sale/learn/quote/add-alternative",
-                                    "no/sale/learn/quote/create-quote-document",
-                                    "no/sale/learn/quote/send",
-                                    "no/sale/learn/quote/place-order"
+                                    "no/document/index",
+                                    "no/document/learn/index",
+                                    "no/document/library/learn/index",
+                                    {
+                                        "group": "Arbeide med dokument",
+                                        "pages": [
+                                            "no/document/learn/create",
+                                            "no/document/learn/lock",
+                                            "no/document/learn/edit",
+                                            "no/document/learn/send-as-email"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Dokumentmaler",
+                                        "pages": [
+                                            "no/document/templates/learn/index",
+                                            "no/document/templates/learn/document-types",
+                                            {
+                                                "group": "Malvariabler",
+                                                "pages": [
+                                                    "no/document/templates/variables/index",
+                                                    {
+                                                        "group": "Referanse",
+                                                        "pages": [
+                                                            "no/document/templates/variables/index",
+                                                            "no/document/templates/variables/from-company-card",
+                                                            "no/document/templates/variables/from-senders-company-card",
+                                                            "no/document/templates/variables/for-selected-contact",
+                                                            "no/document/templates/variables/for-sender-contact-dialog",
+                                                            "no/document/templates/variables/from-doc-dialog-or-system",
+                                                            "no/document/templates/variables/for-appointments",
+                                                            "no/document/templates/variables/for-ical",
+                                                            "no/document/templates/variables/for-int-address",
+                                                            "no/document/templates/variables/for-mail-gateway",
+                                                            "no/document/templates/variables/for-pocket",
+                                                            "no/document/templates/variables/from-project-card",
+                                                            "no/document/templates/variables/for-quote-alternative",
+                                                            "no/document/templates/variables/for-quote-info",
+                                                            "no/document/templates/variables/for-quote-line",
+                                                            "no/document/templates/variables/for-quote-line-with-subscription",
+                                                            "no/document/templates/variables/for-request",
+                                                            "no/document/templates/variables/for-sales",
+                                                            "no/document/templates/variables/for-selections",
+                                                            "no/document/templates/variables/for-service",
+                                                            "no/document/templates/variables/for-web-app",
+                                                            "no/document/templates/variables/misc"
+                                                        ]
+                                                    },
+                                                    "no/document/templates/learn/troubleshooting"
+                                                ]
+                                            },
+                                            {
+                                                "group": "Flettefelt (tilbudsmaler)",
+                                                "pages": [
+                                                    "no/document/templates/merge-fields/index",
+                                                    {
+                                                        "group": "Referanse",
+                                                        "pages": [
+                                                            "no/document/templates/merge-fields/index",
+                                                            "no/document/templates/merge-fields/quote",
+                                                            "no/document/templates/merge-fields/alternative",
+                                                            "no/document/templates/merge-fields/group",
+                                                            "no/document/templates/merge-fields/line"
+                                                        ]
+                                                    },
+                                                    "no/document/templates/admin/tutorial"
+                                                ]
+                                            },
+                                            "no/document/templates/learn/create",
+                                            "no/document/templates/admin/link-template",
+                                            "no/document/templates/admin/update-template",
+                                            "no/document/templates/admin/using-document-templates-for-multiple-languages",
+                                            "no/document/templates/admin/document-template-defaults"
+                                        ]
+                                    }
                                 ]
                             },
                             {
-                                "group": "For administratorer",
+                                "group": "E-post",
+                                "pages": [
+                                    "no/email/index",
+                                    "no/email/learn/index",
+                                    "no/email/learn/change-default-mail-client",
+                                    {
+                                        "group": "Innboks",
+                                        "pages": [
+                                            "no/email/inbox/learn/index",
+                                            "no/email/inbox/learn/setup",
+                                            "no/email/inbox/learn/preview",
+                                            "no/email/inbox/learn/compose",
+                                            "no/email/inbox/learn/manage-senders",
+                                            "no/email/inbox/learn/invitations",
+                                            "no/email/inbox/learn/archive",
+                                            "no/email/inbox/learn/create-task",
+                                            "no/email/inbox/learn/create-request"
+                                        ]
+                                    },
+                                    {
+                                        "group": "For administratorer",
+                                        "pages": [
+                                            "no/email/admin/mailbox/index",
+                                            "no/email/admin/add-email-template",
+                                            {
+                                                "group": "Postkasseadministrasjon",
+                                                "pages": [
+                                                    "no/email/admin/mailbox/index",
+                                                    "no/email/admin/mailbox/create-mailbox",
+                                                    "no/email/admin/mailbox/create-sms-mailbox",
+                                                    "no/email/admin/mailbox/create-email-filter",
+                                                    "no/email/admin/mailbox/delete-mailbox"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "Salg",
                                 "pages": [
                                     "no/sale/admin/index",
-                                    "no/sale/admin/sale-stage",
-                                    "no/sale/admin/sale-type",
-                                    "no/sale/admin/create-sales-guide",
-                                    "no/sale/admin/edit-sales-guide",
-                                    "no/sale/admin/add-currency",
+                                    "no/sale/index",
+                                    "no/sale/learn/index",
+                                    "no/sale/learn/create",
+                                    "no/sale/learn/update",
+                                    "no/sale/learn/sales-guides",
+                                    "no/sale/learn/tutorial",
+                                    {
+                                        "group": "Interessenter",
+                                        "pages": [
+                                            "no/sale/learn/stakeholders/create",
+                                            "no/sale/learn/stakeholders/edit"
+                                        ]
+                                    },
+                                    "no/sale/learn/forecasting",
+                                    {
+                                        "group": "Salgsmål",
+                                        "pages": [
+                                            "no/sale/learn/sales-targets/index",
+                                            "no/sale/learn/sales-targets/create",
+                                            "no/sale/learn/sales-targets/target-types"
+                                        ]
+                                    },
                                     {
                                         "group": "Tilbud",
                                         "pages": [
-                                            "no/sale/admin/quote/set-up-quote-connector",
-                                            "no/sale/admin/quote/price-list-and-products",
-                                            "no/sale/admin/quote/configure-product-fields"
+                                            "no/sale/learn/quote/index",
+                                            "no/sale/learn/quote/create",
+                                            "no/sale/learn/quote/add-alternative",
+                                            "no/sale/learn/quote/create-quote-document",
+                                            "no/sale/learn/quote/send",
+                                            "no/sale/learn/quote/place-order"
+                                        ]
+                                    },
+                                    {
+                                        "group": "For administratorer",
+                                        "pages": [
+                                            "no/sale/admin/index",
+                                            "no/sale/admin/sale-stage",
+                                            "no/sale/admin/sale-type",
+                                            "no/sale/admin/create-sales-guide",
+                                            "no/sale/admin/edit-sales-guide",
+                                            "no/sale/admin/add-currency",
+                                            {
+                                                "group": "Tilbud",
+                                                "pages": [
+                                                    "no/sale/admin/quote/set-up-quote-connector",
+                                                    "no/sale/admin/quote/price-list-and-products",
+                                                    "no/sale/admin/quote/configure-product-fields"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Prosjekt",
-                        "pages": [
-                            "no/project/admin/index",
-                            "no/project/index",
-                            "no/project/learn/index",
-                            "no/project/learn/create",
-                            "no/project/learn/add-image",
-                            "no/project/learn/edit",
-                            "no/project/learn/merge-projects",
-                            "no/project/learn/delete",
-                            "no/project/learn/project-members/index",
-                            "no/project/learn/project-guides",
-                            "no/project/learn/tutorial",
+                            },
                             {
-                                "group": "For administratorer",
+                                "group": "Prosjekt",
                                 "pages": [
                                     "no/project/admin/index",
-                                    "no/project/admin/project-status",
-                                    "no/project/admin/project-type",
-                                    "no/project/admin/create-project-guide",
-                                    "no/project/admin/edit-project-guide"
+                                    "no/project/index",
+                                    "no/project/learn/index",
+                                    "no/project/learn/create",
+                                    "no/project/learn/add-image",
+                                    "no/project/learn/edit",
+                                    "no/project/learn/merge-projects",
+                                    "no/project/learn/delete",
+                                    "no/project/learn/project-members/index",
+                                    "no/project/learn/project-guides",
+                                    "no/project/learn/tutorial",
+                                    {
+                                        "group": "For administratorer",
+                                        "pages": [
+                                            "no/project/admin/index",
+                                            "no/project/admin/project-status",
+                                            "no/project/admin/project-type",
+                                            "no/project/admin/create-project-guide",
+                                            "no/project/admin/edit-project-guide"
+                                        ]
+                                    }
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Saksbehandling",
-                        "pages": [
-                            "no/request/admin/status/index",
-                            "no/request/index",
-                            "no/request/learn/index",
-                            "no/request/learn/handle-request-ai",
-                            "no/request/learn/find",
-                            "no/request/learn/create",
-                            "no/request/learn/edit-message",
-                            "no/request/learn/assign",
-                            "no/request/learn/accept",
-                            "no/request/learn/transfer",
-                            "no/request/learn/forward",
-                            "no/request/learn/reply",
-                            "no/request/learn/tags",
-                            "no/request/learn/flag-message",
-                            "no/request/learn/split-request",
-                            "no/request/learn/merge",
-                            "no/request/learn/split-message",
-                            "no/request/learn/close",
-                            "no/request/learn/delete",
+                            },
                             {
-                                "group": "For administratorer",
+                                "group": "Saksbehandling",
                                 "pages": [
                                     "no/request/admin/status/index",
-                                    "no/request/admin/index",
+                                    "no/request/index",
+                                    "no/request/learn/index",
+                                    "no/request/learn/handle-request-ai",
+                                    "no/request/learn/find",
+                                    "no/request/learn/create",
+                                    "no/request/learn/edit-message",
+                                    "no/request/learn/assign",
+                                    "no/request/learn/accept",
+                                    "no/request/learn/transfer",
+                                    "no/request/learn/forward",
+                                    "no/request/learn/reply",
+                                    "no/request/learn/tags",
+                                    "no/request/learn/flag-message",
+                                    "no/request/learn/split-request",
+                                    "no/request/learn/merge",
+                                    "no/request/learn/split-message",
+                                    "no/request/learn/close",
+                                    "no/request/learn/delete",
                                     {
-                                        "group": "Sakstyper",
-                                        "pages": [
-                                            "no/request/admin/type/index",
-                                            "no/request/admin/type/create",
-                                            "no/request/admin/type/delete"
-                                        ]
-                                    },
-                                    {
-                                        "group": "Kategorier",
-                                        "pages": [
-                                            "no/request/admin/category/index",
-                                            "no/request/admin/category/create",
-                                            "no/request/admin/category/delete",
-                                            "no/request/admin/category/external-categories"
-                                        ]
-                                    },
-                                    {
-                                        "group": "Prioriteter",
-                                        "pages": [
-                                            "no/request/admin/priority/index",
-                                            "no/request/admin/priority/create",
-                                            "no/request/admin/priority/delete",
-                                            "no/request/admin/priority/escalation-levels"
-                                        ]
-                                    },
-                                    {
-                                        "group": "Saksstatus",
+                                        "group": "For administratorer",
                                         "pages": [
                                             "no/request/admin/status/index",
-                                            "no/request/admin/status/create",
-                                            "no/request/admin/status/delete"
+                                            "no/request/admin/index",
+                                            {
+                                                "group": "Sakstyper",
+                                                "pages": [
+                                                    "no/request/admin/type/index",
+                                                    "no/request/admin/type/create",
+                                                    "no/request/admin/type/delete"
+                                                ]
+                                            },
+                                            {
+                                                "group": "Kategorier",
+                                                "pages": [
+                                                    "no/request/admin/category/index",
+                                                    "no/request/admin/category/create",
+                                                    "no/request/admin/category/delete",
+                                                    "no/request/admin/category/external-categories"
+                                                ]
+                                            },
+                                            {
+                                                "group": "Prioriteter",
+                                                "pages": [
+                                                    "no/request/admin/priority/index",
+                                                    "no/request/admin/priority/create",
+                                                    "no/request/admin/priority/delete",
+                                                    "no/request/admin/priority/escalation-levels"
+                                                ]
+                                            },
+                                            {
+                                                "group": "Saksstatus",
+                                                "pages": [
+                                                    "no/request/admin/status/index",
+                                                    "no/request/admin/status/create",
+                                                    "no/request/admin/status/delete"
+                                                ]
+                                            },
+                                            "no/request/admin/next-in-queue",
+                                            "no/request/admin/system-templates"
                                         ]
-                                    },
-                                    "no/request/admin/next-in-queue",
-                                    "no/request/admin/system-templates"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Egendefinerte objekter",
-                        "pages": [
-                            "no/custom-objects/learn/extra-field",
-                            "no/custom-objects/learn/index",
-                            "no/custom-objects/learn/more-tab",
-                            {
-                                "group": "Brukerdefinerte felt",
-                                "pages": [
-                                    "no/custom-objects/learn/udef",
-                                    "no/custom-objects/admin/add-udef",
-                                    "no/custom-objects/admin/edit-udef",
-                                    "no/custom-objects/admin/edit-udef-layout"
+                                    }
                                 ]
                             },
                             {
-                                "group": "Ekstratabeller",
-                                "pages": [
-                                    "no/custom-objects/learn/extra-table",
-                                    "no/custom-objects/admin/create-extra-table"
-                                ]
-                            },
-                            {
-                                "group": "Ekstrafelt",
+                                "group": "Egendefinerte objekter",
                                 "pages": [
                                     "no/custom-objects/learn/extra-field",
-                                    "no/custom-objects/admin/create-extra-field",
+                                    "no/custom-objects/learn/index",
+                                    "no/custom-objects/learn/more-tab",
                                     {
-                                        "group": "Vis ekstrafelt i fanen Detaljer",
+                                        "group": "Brukerdefinerte felt",
                                         "pages": [
-                                            "no/custom-objects/admin/show-extra-field-on-request-details",
-                                            "no/search-options/selection/learn/howto/index",
-                                            "no/search-options/selection/learn/howto/create-mailings",
-                                            "no/search-options/selection/learn/howto/send-email",
-                                            "no/search-options/selection/learn/howto/generate-follow-ups",
-                                            "no/search-options/selection/learn/howto/display-as-charts",
-                                            "no/search-options/selection/learn/howto/print-labels",
-                                            "no/search-options/selection/learn/howto/print",
-                                            "no/search-options/selection/learn/howto/export"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Utvalg",
-                        "pages": [
-                            "no/search-options/selection/learn/howto/index",
-                            "no/search-options/selection/learn/index",
-                            "no/search-options/selection/learn/create",
-                            "no/search-options/selection/learn/update",
-                            "no/search-options/selection/learn/combine",
-                            "no/search-options/selection/learn/add-remove-members-static",
-                            "no/search-options/selection/learn/copy-members-to",
-                            "no/search-options/selection/learn/board-view",
-                            "no/search-options/selection/learn/howto/index"
-                        ]
-                    },
-                    {
-                        "group": "Chat",
-                        "pages": [
-                            "no/chat/admin/index",
-                            "no/chat/learn/index",
-                            "no/chat/learn/statistics",
-                            "no/chat/learn/respond",
-                            "no/chat/learn/link-to-person",
-                            "no/chat/learn/create-request",
-                            "no/chat/learn/transfer-to-agent",
-                            "no/chat/learn/as-customer",
-                            {
-                                "group": "For administratorer",
-                                "pages": [
-                                    "no/chat/admin/index",
-                                    "no/chat/admin/channel-create",
-                                    "no/chat/admin/add-javascript"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Markedsføring",
-                        "pages": [
-                            "no/marketing/utm/admin/set-up",
-                            "no/marketing/learn/index",
-                            "no/marketing/learn/create-folder",
-                            "no/marketing/learn/message-templates",
-                            "no/marketing/learn/add-images",
-                            "no/marketing/learn/best-practices",
-                            {
-                                "group": "Utsendelser",
-                                "pages": [
-                                    "no/marketing/mailing/learn/create/index",
-                                    "no/marketing/mailing/learn/index",
-                                    {
-                                        "group": "Opprette ny utsendelse",
-                                        "pages": [
-                                            "no/marketing/mailing/learn/create/index",
-                                            "no/marketing/mailing/learn/create/tutorial-email-mailing",
-                                            "no/marketing/mailing/learn/create/tutorial-sms-mailing",
-                                            "no/marketing/mailing/learn/create/tutorial-document-mailing",
-                                            "no/marketing/mailing/learn/create/tutorial-form-mailing",
-                                            "no/marketing/mailing/learn/create/send-test-email"
+                                            "no/custom-objects/learn/udef",
+                                            "no/custom-objects/admin/add-udef",
+                                            "no/custom-objects/admin/edit-udef",
+                                            "no/custom-objects/admin/edit-udef-layout"
                                         ]
                                     },
-                                    "no/marketing/mailing/learn/view-statistics",
-                                    "no/marketing/mailing/learn/resend",
-                                    "no/marketing/mailing/admin/define-settings-for-mailings",
-                                    "no/marketing/mailing/admin/add-domain"
-                                ]
-                            },
-                            {
-                                "group": "Dra og slipp editor",
-                                "pages": [
-                                    "no/marketing/editor/learn/index",
-                                    "no/marketing/editor/learn/add-content",
-                                    "no/marketing/editor/learn/edit-paragraph",
-                                    "no/marketing/editor/learn/insert-images-in-message",
-                                    "no/marketing/editor/learn/add-merge-tag",
-                                    "no/marketing/editor/learn/add-link-to-display-message-in-browser",
-                                    "no/marketing/editor/learn/add-unsubscribe-link",
                                     {
-                                        "group": "Legge til sporet kobling i en melding",
+                                        "group": "Ekstratabeller",
                                         "pages": [
-                                            "no/marketing/editor/learn/add-tracked-link-to-msg",
-                                            "no/marketing/recipients/learn/index",
-                                            "no/marketing/recipients/learn/manage-email-subscriptions",
-                                            "no/marketing/recipients/learn/look-at-recipient-list",
-                                            "no/marketing/recipients/learn/manage-bounces",
-                                            "no/marketing/recipients/learn/spam-complaints"
+                                            "no/custom-objects/learn/extra-table",
+                                            "no/custom-objects/admin/create-extra-table"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Ekstrafelt",
+                                        "pages": [
+                                            "no/custom-objects/learn/extra-field",
+                                            "no/custom-objects/admin/create-extra-field",
+                                            {
+                                                "group": "Vis ekstrafelt i fanen Detaljer",
+                                                "pages": [
+                                                    "no/custom-objects/admin/show-extra-field-on-request-details",
+                                                    "no/search-options/selection/learn/howto/index",
+                                                    "no/search-options/selection/learn/howto/create-mailings",
+                                                    "no/search-options/selection/learn/howto/send-email",
+                                                    "no/search-options/selection/learn/howto/generate-follow-ups",
+                                                    "no/search-options/selection/learn/howto/display-as-charts",
+                                                    "no/search-options/selection/learn/howto/print-labels",
+                                                    "no/search-options/selection/learn/howto/print",
+                                                    "no/search-options/selection/learn/howto/export"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
                             },
-                            "no/marketing/recipients/learn/index",
                             {
-                                "group": "Sporede lenker",
+                                "group": "Utvalg",
                                 "pages": [
-                                    "no/marketing/tracked-links/learn/index",
-                                    "no/marketing/tracked-links/learn/create-links",
-                                    "no/marketing/tracked-links/learn/define-link-actions",
-                                    "no/marketing/tracked-links/learn/add-google-analytics-tag",
-                                    "no/marketing/tracked-links/learn/explore-clicks",
-                                    "no/marketing/tracked-links/learn/reset-counter",
-                                    "no/marketing/tracked-links/learn/ga-tutorial"
+                                    "no/search-options/selection/learn/howto/index",
+                                    "no/search-options/selection/learn/index",
+                                    "no/search-options/selection/learn/create",
+                                    "no/search-options/selection/learn/update",
+                                    "no/search-options/selection/learn/combine",
+                                    "no/search-options/selection/learn/add-remove-members-static",
+                                    "no/search-options/selection/learn/copy-members-to",
+                                    "no/search-options/selection/learn/board-view",
+                                    "no/search-options/selection/learn/howto/index"
                                 ]
                             },
                             {
-                                "group": "Skjemaer",
+                                "group": "Chat",
                                 "pages": [
-                                    "no/marketing/forms/learn/index",
-                                    "no/marketing/forms/learn/create",
-                                    "no/marketing/forms/learn/field-options",
-                                    "no/marketing/forms/learn/define-form-actions",
-                                    "no/marketing/forms/learn/form-templates",
-                                    "no/marketing/forms/learn/publish",
-                                    "no/marketing/forms/learn/view-statistics",
-                                    "no/marketing/forms/learn/process-submissions",
-                                    "no/marketing/forms/learn/tutorial-contact-me",
-                                    "no/marketing/forms/learn/tutorial-sign-up"
+                                    "no/chat/admin/index",
+                                    "no/chat/learn/index",
+                                    "no/chat/learn/statistics",
+                                    "no/chat/learn/respond",
+                                    "no/chat/learn/link-to-person",
+                                    "no/chat/learn/create-request",
+                                    "no/chat/learn/transfer-to-agent",
+                                    "no/chat/learn/as-customer",
+                                    {
+                                        "group": "For administratorer",
+                                        "pages": [
+                                            "no/chat/admin/index",
+                                            "no/chat/admin/channel-create",
+                                            "no/chat/admin/add-javascript"
+                                        ]
+                                    }
                                 ]
                             },
                             {
-                                "group": "Flyter",
-                                "pages": [
-                                    "no/marketing/flows/learn/index",
-                                    "no/marketing/flows/learn/create",
-                                    "no/marketing/flows/learn/update",
-                                    "no/marketing/flows/learn/split",
-                                    "no/marketing/flows/learn/define-flow-actions",
-                                    "no/marketing/flows/learn/content",
-                                    "no/marketing/flows/learn/step-settings",
-                                    "no/marketing/flows/learn/run-pause-end",
-                                    "no/marketing/flows/learn/participants",
-                                    "no/marketing/flows/learn/view-statistics"
-                                ]
-                            },
-                            {
-                                "group": "Konverteringssporing",
+                                "group": "Markedsføring",
                                 "pages": [
                                     "no/marketing/utm/admin/set-up",
-                                    "no/marketing/utm/learn/index",
-                                    "no/marketing/utm/learn/parameters",
+                                    "no/marketing/learn/index",
+                                    "no/marketing/learn/create-folder",
+                                    "no/marketing/learn/message-templates",
+                                    "no/marketing/learn/add-images",
+                                    "no/marketing/learn/best-practices",
                                     {
-                                        "group": "For administratorer",
+                                        "group": "Utsendelser",
                                         "pages": [
-                                            "no/marketing/utm/admin/set-up"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Lead-administrasjon",
-                        "pages": [
-                            "no/lead/admin/index",
-                            "no/lead/learn/index",
-                            "no/lead/learn/work-with-leads",
-                            {
-                                "group": "For administratorer",
-                                "pages": [
-                                    "no/lead/admin/index",
-                                    "no/lead/admin/add-company-category",
-                                    "no/lead/admin/add-lead-status",
-                                    "no/lead/admin/category-automation"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Mobile CRM",
-                        "pages": [
-                            "no/mobile/superoffice-mobile/index"
-                        ]
-                    },
-                    {
-                        "group": "Kunnskapsbase",
-                        "pages": [
-                            "no/knowledge-base/learn/faq/index",
-                            "no/knowledge-base/learn/index",
-                            "no/knowledge-base/learn/manage-folders",
-                            {
-                                "group": "Svarmaler",
-                                "pages": [
-                                    "no/knowledge-base/learn/reply-templates/index",
-                                    "no/knowledge-base/learn/reply-templates/create",
-                                    "no/knowledge-base/learn/reply-templates/new-language",
-                                    "no/knowledge-base/learn/reply-templates/edit",
-                                    "no/knowledge-base/learn/reply-templates/template-variables"
-                                ]
-                            },
-                            {
-                                "group": "FAQ",
-                                "pages": [
-                                    "no/knowledge-base/learn/faq/index",
-                                    "no/knowledge-base/learn/faq/create",
-                                    "no/knowledge-base/learn/faq/edit",
-                                    "no/knowledge-base/learn/faq/publish",
-                                    "no/knowledge-base/learn/faq/workflow"
-                                ]
-                            },
-                            "no/knowledge-base/learn/email-addresses",
-                            {
-                                "group": "Eksterne dokumenter",
-                                "pages": [
-                                    "no/knowledge-base/learn/external-document",
-                                    "no/security/privacy/learn/index",
-                                    "no/security/privacy/learn/edit-legal-base",
-                                    "no/security/privacy/learn/send-privacy-confirmation-email",
-                                    "no/security/privacy/learn/generate-personal-data-report",
-                                    "no/security/privacy/learn/mass-delete",
-                                    {
-                                        "group": "For administratorer",
-                                        "pages": [
-                                            "no/security/privacy/admin/index",
-                                            "no/security/privacy/admin/add-purpose",
-                                            "no/security/privacy/admin/add-legal-base",
-                                            "no/security/privacy/admin/add-source",
+                                            "no/marketing/mailing/learn/create/index",
+                                            "no/marketing/mailing/learn/index",
                                             {
-                                                "group": "Rediger e-post med personvernbekreftelse",
+                                                "group": "Opprette ny utsendelse",
                                                 "pages": [
-                                                    "no/security/privacy/admin/edit-privacy-confirmation-email",
-                                                    {
-                                                        "group": "Sett opp kategorisering",
-                                                        "pages": [
-                                                            "no/ai/admin/set-up-categorization",
-                                                            "no/ui/blogic/learn/profiles/index",
-                                                            "no/ui/blogic/learn/profiles/personal",
-                                                            "no/ui/blogic/learn/profiles/common",
-                                                            "no/ui/blogic/learn/profiles/global",
-                                                            "no/ui/blogic/learn/extra-menus/index",
-                                                            "no/ui/blogic/learn/extra-menus/actions",
-                                                            "no/ui/blogic/learn/extra-menus/navigator",
-                                                            "no/ui/blogic/learn/extra-menus/properties"
-                                                        ]
-                                                    }
+                                                    "no/marketing/mailing/learn/create/index",
+                                                    "no/marketing/mailing/learn/create/tutorial-email-mailing",
+                                                    "no/marketing/mailing/learn/create/tutorial-sms-mailing",
+                                                    "no/marketing/mailing/learn/create/tutorial-document-mailing",
+                                                    "no/marketing/mailing/learn/create/tutorial-form-mailing",
+                                                    "no/marketing/mailing/learn/create/send-test-email"
+                                                ]
+                                            },
+                                            "no/marketing/mailing/learn/view-statistics",
+                                            "no/marketing/mailing/learn/resend",
+                                            "no/marketing/mailing/admin/define-settings-for-mailings",
+                                            "no/marketing/mailing/admin/add-domain"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Dra og slipp editor",
+                                        "pages": [
+                                            "no/marketing/editor/learn/index",
+                                            "no/marketing/editor/learn/add-content",
+                                            "no/marketing/editor/learn/edit-paragraph",
+                                            "no/marketing/editor/learn/insert-images-in-message",
+                                            "no/marketing/editor/learn/add-merge-tag",
+                                            "no/marketing/editor/learn/add-link-to-display-message-in-browser",
+                                            "no/marketing/editor/learn/add-unsubscribe-link",
+                                            {
+                                                "group": "Legge til sporet kobling i en melding",
+                                                "pages": [
+                                                    "no/marketing/editor/learn/add-tracked-link-to-msg",
+                                                    "no/marketing/recipients/learn/index",
+                                                    "no/marketing/recipients/learn/manage-email-subscriptions",
+                                                    "no/marketing/recipients/learn/look-at-recipient-list",
+                                                    "no/marketing/recipients/learn/manage-bounces",
+                                                    "no/marketing/recipients/learn/spam-complaints"
                                                 ]
                                             }
                                         ]
                                     },
-                                    "no/ai/learn/index",
-                                    "no/ai/learn/text-analysis",
-                                    "no/ai/learn/categorization",
-                                    "no/ai/learn/copilot",
-                                    "no/ai/admin/set-up-categorization"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Personverninnstillinger og GDPR",
-                        "pages": [
-                            "no/security/privacy/admin/index"
-                        ]
-                    },
-                    {
-                        "group": "AI-tjenester",
-                        "pages": [
-                            "no/ai/admin/set-up-categorization"
-                        ]
-                    },
-                    {
-                        "group": "SAINT (Sales intelligence)",
-                        "pages": [
-                            "no/saint/admin/index",
-                            "no/saint/learn/index",
-                            {
-                                "group": "For administratorer",
-                                "pages": [
-                                    "no/saint/admin/index",
-                                    "no/saint/admin/set-up",
-                                    "no/saint/admin/update",
-                                    "no/saint/admin/counter-settings",
-                                    "no/saint/admin/sale-amount-class"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "ERP",
-                        "pages": [
-                            "no/erp/admin/index",
-                            "no/erp/learn/index",
-                            "no/erp/learn/connect",
-                            "no/erp/learn/disconnect",
-                            {
-                                "group": "For administratorer",
-                                "pages": [
-                                    "no/erp/admin/index",
-                                    "no/erp/admin/add-connection",
-                                    "no/erp/admin/configure",
-                                    "no/erp/admin/update-connection",
-                                    "no/erp/admin/resync-from-crm"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Tilpasning",
-                        "pages": [
-                            "no/ui/blogic/learn/extra-menus/index",
-                            "no/customization/index",
-                            {
-                                "group": "Skjermdesigner",
-                                "pages": [
-                                    "no/customization/screen-designer/admin/index",
-                                    "no/customization/screen-designer/admin/add-layout",
-                                    "no/customization/screen-designer/admin/edit-layout",
-                                    "no/customization/screen-designer/admin/working-with-fields",
-                                    "no/customization/screen-designer/admin/working-with-grids",
-                                    "no/customization/screen-designer/admin/working-with-tabs",
-                                    "no/customization/screen-designer/admin/working-with-archives",
-                                    "no/customization/screen-designer/admin/add-button",
-                                    "no/customization/screen-designer/admin/assign-layout",
-                                    "no/customization/screen-designer/admin/reference",
-                                    "no/customization/screen-designer/admin/tutorial-move-country"
+                                    "no/marketing/recipients/learn/index",
+                                    {
+                                        "group": "Sporede lenker",
+                                        "pages": [
+                                            "no/marketing/tracked-links/learn/index",
+                                            "no/marketing/tracked-links/learn/create-links",
+                                            "no/marketing/tracked-links/learn/define-link-actions",
+                                            "no/marketing/tracked-links/learn/add-google-analytics-tag",
+                                            "no/marketing/tracked-links/learn/explore-clicks",
+                                            "no/marketing/tracked-links/learn/reset-counter",
+                                            "no/marketing/tracked-links/learn/ga-tutorial"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Skjemaer",
+                                        "pages": [
+                                            "no/marketing/forms/learn/index",
+                                            "no/marketing/forms/learn/create",
+                                            "no/marketing/forms/learn/field-options",
+                                            "no/marketing/forms/learn/define-form-actions",
+                                            "no/marketing/forms/learn/form-templates",
+                                            "no/marketing/forms/learn/publish",
+                                            "no/marketing/forms/learn/view-statistics",
+                                            "no/marketing/forms/learn/process-submissions",
+                                            "no/marketing/forms/learn/tutorial-contact-me",
+                                            "no/marketing/forms/learn/tutorial-sign-up"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Flyter",
+                                        "pages": [
+                                            "no/marketing/flows/learn/index",
+                                            "no/marketing/flows/learn/create",
+                                            "no/marketing/flows/learn/update",
+                                            "no/marketing/flows/learn/split",
+                                            "no/marketing/flows/learn/define-flow-actions",
+                                            "no/marketing/flows/learn/content",
+                                            "no/marketing/flows/learn/step-settings",
+                                            "no/marketing/flows/learn/run-pause-end",
+                                            "no/marketing/flows/learn/participants",
+                                            "no/marketing/flows/learn/view-statistics"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Konverteringssporing",
+                                        "pages": [
+                                            "no/marketing/utm/admin/set-up",
+                                            "no/marketing/utm/learn/index",
+                                            "no/marketing/utm/learn/parameters",
+                                            {
+                                                "group": "For administratorer",
+                                                "pages": [
+                                                    "no/marketing/utm/admin/set-up"
+                                                ]
+                                            }
+                                        ]
+                                    }
                                 ]
                             },
                             {
-                                "group": "Webpaneler",
+                                "group": "Lead-administrasjon",
                                 "pages": [
-                                    "no/customization/web-panels/admin/index",
-                                    "no/customization/web-panels/admin/add-web-panel",
-                                    "no/customization/web-panels/admin/url-encoding"
-                                ]
-                            },
-                            {
-                                "group": "Makroer og skript",
-                                "pages": [
-                                    "no/customization/macros-and-scripts/admin/index",
-                                    "no/customization/macros-and-scripts/admin/create-script",
-                                    "no/customization/macros-and-scripts/admin/create-macro",
-                                    "no/customization/macros-and-scripts/admin/trigger",
-                                    "no/customization/macros-and-scripts/admin/schedule-task"
-                                ]
-                            },
-                            {
-                                "group": "Kundesenter",
-                                "pages": [
-                                    "no/customer-center/admin/password-policy",
-                                    "no/customer-center/learn/index",
-                                    "no/customer-center/learn/config",
-                                    "no/customer-center/learn/edit",
-                                    "no/customer-center/learn/send-credentials",
-                                    "no/customer-center/learn/enable-chat",
-                                    "no/customer-center/learn/link-form",
+                                    "no/lead/admin/index",
+                                    "no/lead/learn/index",
+                                    "no/lead/learn/work-with-leads",
                                     {
                                         "group": "For administratorer",
                                         "pages": [
-                                            "no/customer-center/admin/password-policy",
-                                            "no/ui/blogic/learn/index",
-                                            "no/ui/blogic/learn/profiles/index",
-                                            "no/ui/blogic/learn/screen-chooser",
-                                            "no/ui/blogic/learn/screen-definition",
-                                            "no/ui/blogic/learn/screen-properties",
-                                            "no/ui/blogic/learn/extra-menus/index"
+                                            "no/lead/admin/index",
+                                            "no/lead/admin/add-company-category",
+                                            "no/lead/admin/add-lead-status",
+                                            "no/lead/admin/category-automation"
                                         ]
                                     }
                                 ]
                             },
-                            "no/ui/blogic/learn/extra-menus/index",
-                            "no/customization/admin/package-properties",
-                            "no/customization/admin/add-items-to-task-menu",
-                            "no/customization/admin/other-applications"
-                        ]
-                    },
-                    {
-                        "group": "Innstillinger og vedlikehold",
-                        "pages": [
-                            "no/admin/onsite/data-exchange",
-                            "no/admin/index",
-                            "no/admin/getting-started",
-                            "no/admin/adjusting-views",
                             {
-                                "group": "Lisenser",
+                                "group": "Mobile CRM",
                                 "pages": [
-                                    "no/admin/license/index",
-                                    "no/admin/license/activate",
-                                    "no/admin/license/user-plans",
-                                    "no/admin/license/change-user-plan",
-                                    "no/admin/license/expander-services"
+                                    "no/mobile/superoffice-mobile/index"
                                 ]
                             },
                             {
-                                "group": "Preferanser",
+                                "group": "Kunnskapsbase",
                                 "pages": [
-                                    "no/admin/preferences/index",
-                                    "no/admin/preferences/update",
-                                    "no/admin/preferences/service-settings",
-                                    "no/admin/preferences/sms",
-                                    "no/admin/preferences/smtp"
-                                ]
-                            },
-                            {
-                                "group": "Systemvalg",
-                                "pages": [
-                                    "no/admin/options/index",
-                                    "no/admin/options/configure-number-allocation",
-                                    "no/admin/options/change-ui-labels"
-                                ]
-                            },
-                            {
-                                "group": "Lister",
-                                "pages": [
-                                    "no/admin/lists/index",
-                                    "no/admin/lists/add-items",
-                                    "no/admin/lists/update-items",
-                                    "no/admin/lists/restore",
-                                    "no/admin/lists/headings",
-                                    "no/admin/lists/user-group-filtering",
-                                    "no/admin/lists/specialized-lists",
+                                    "no/knowledge-base/learn/faq/index",
+                                    "no/knowledge-base/learn/index",
+                                    "no/knowledge-base/learn/manage-folders",
                                     {
-                                        "group": "Brukerdefinerte lister",
+                                        "group": "Svarmaler",
                                         "pages": [
-                                            "no/admin/lists/user-defined-lists",
-                                            "no/admin/user-management/index",
-                                            "no/admin/user-management/add-associate",
-                                            "no/admin/user-management/update-user",
-                                            "no/admin/user-management/our-companies",
-                                            "no/admin/user-management/user-groups",
+                                            "no/knowledge-base/learn/reply-templates/index",
+                                            "no/knowledge-base/learn/reply-templates/create",
+                                            "no/knowledge-base/learn/reply-templates/new-language",
+                                            "no/knowledge-base/learn/reply-templates/edit",
+                                            "no/knowledge-base/learn/reply-templates/template-variables"
+                                        ]
+                                    },
+                                    {
+                                        "group": "FAQ",
+                                        "pages": [
+                                            "no/knowledge-base/learn/faq/index",
+                                            "no/knowledge-base/learn/faq/create",
+                                            "no/knowledge-base/learn/faq/edit",
+                                            "no/knowledge-base/learn/faq/publish",
+                                            "no/knowledge-base/learn/faq/workflow"
+                                        ]
+                                    },
+                                    "no/knowledge-base/learn/email-addresses",
+                                    {
+                                        "group": "Eksterne dokumenter",
+                                        "pages": [
+                                            "no/knowledge-base/learn/external-document",
+                                            "no/security/privacy/learn/index",
+                                            "no/security/privacy/learn/edit-legal-base",
+                                            "no/security/privacy/learn/send-privacy-confirmation-email",
+                                            "no/security/privacy/learn/generate-personal-data-report",
+                                            "no/security/privacy/learn/mass-delete",
                                             {
-                                                "group": "Rolle",
+                                                "group": "For administratorer",
                                                 "pages": [
-                                                    "no/admin/user-management/role/index",
-                                                    "no/admin/user-management/role/create-role",
-                                                    "no/admin/user-management/role/update-role",
-                                                    "no/admin/user-management/role/set-data-rights-for-role",
-                                                    "no/admin/user-management/role/functional-rights"
+                                                    "no/security/privacy/admin/index",
+                                                    "no/security/privacy/admin/add-purpose",
+                                                    "no/security/privacy/admin/add-legal-base",
+                                                    "no/security/privacy/admin/add-source",
+                                                    {
+                                                        "group": "Rediger e-post med personvernbekreftelse",
+                                                        "pages": [
+                                                            "no/security/privacy/admin/edit-privacy-confirmation-email",
+                                                            {
+                                                                "group": "Sett opp kategorisering",
+                                                                "pages": [
+                                                                    "no/ai/admin/set-up-categorization",
+                                                                    "no/ui/blogic/learn/profiles/index",
+                                                                    "no/ui/blogic/learn/profiles/personal",
+                                                                    "no/ui/blogic/learn/profiles/common",
+                                                                    "no/ui/blogic/learn/profiles/global",
+                                                                    "no/ui/blogic/learn/extra-menus/index",
+                                                                    "no/ui/blogic/learn/extra-menus/actions",
+                                                                    "no/ui/blogic/learn/extra-menus/navigator",
+                                                                    "no/ui/blogic/learn/extra-menus/properties"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
                                                 ]
                                             },
-                                            {
-                                                "group": "Lokale brukere",
-                                                "pages": [
-                                                    "no/admin/user-management/onsite/other-users",
-                                                    "no/admin/user-management/onsite/import-users",
-                                                    "no/admin/user-management/onsite/other-users",
-                                                    "no/admin/user-management/onsite/managing-external-users",
-                                                    "no/admin/user-management/onsite/logging-users-off"
-                                                ]
-                                            },
-                                            "no/admin/import/index",
-                                            "no/admin/import/create-spreadsheet",
-                                            "no/admin/import/from-excel",
-                                            "no/admin/import/from-outlook",
-                                            "no/admin/import/from-mac-address-book",
-                                            "no/admin/import/from-gmail",
-                                            "no/admin/import/from-erp",
-                                            "no/admin/import/products-from-excel",
-                                            "no/admin/import/settings"
+                                            "no/ai/learn/index",
+                                            "no/ai/learn/text-analysis",
+                                            "no/ai/learn/categorization",
+                                            "no/ai/learn/copilot",
+                                            "no/ai/admin/set-up-categorization"
                                         ]
                                     }
                                 ]
                             },
-                            "no/admin/user-management/onsite/other-users",
-                            "no/admin/import/index",
                             {
-                                "group": "Lokalt",
+                                "group": "Personverninnstillinger og GDPR",
+                                "pages": [
+                                    "no/security/privacy/admin/index"
+                                ]
+                            },
+                            {
+                                "group": "AI-tjenester",
+                                "pages": [
+                                    "no/ai/admin/set-up-categorization"
+                                ]
+                            },
+                            {
+                                "group": "SAINT (Sales intelligence)",
+                                "pages": [
+                                    "no/saint/admin/index",
+                                    "no/saint/learn/index",
+                                    {
+                                        "group": "For administratorer",
+                                        "pages": [
+                                            "no/saint/admin/index",
+                                            "no/saint/admin/set-up",
+                                            "no/saint/admin/update",
+                                            "no/saint/admin/counter-settings",
+                                            "no/saint/admin/sale-amount-class"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "ERP",
+                                "pages": [
+                                    "no/erp/admin/index",
+                                    "no/erp/learn/index",
+                                    "no/erp/learn/connect",
+                                    "no/erp/learn/disconnect",
+                                    {
+                                        "group": "For administratorer",
+                                        "pages": [
+                                            "no/erp/admin/index",
+                                            "no/erp/admin/add-connection",
+                                            "no/erp/admin/configure",
+                                            "no/erp/admin/update-connection",
+                                            "no/erp/admin/resync-from-crm"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "Tilpasning",
+                                "pages": [
+                                    "no/ui/blogic/learn/extra-menus/index",
+                                    "no/customization/index",
+                                    {
+                                        "group": "Skjermdesigner",
+                                        "pages": [
+                                            "no/customization/screen-designer/admin/index",
+                                            "no/customization/screen-designer/admin/add-layout",
+                                            "no/customization/screen-designer/admin/edit-layout",
+                                            "no/customization/screen-designer/admin/working-with-fields",
+                                            "no/customization/screen-designer/admin/working-with-grids",
+                                            "no/customization/screen-designer/admin/working-with-tabs",
+                                            "no/customization/screen-designer/admin/working-with-archives",
+                                            "no/customization/screen-designer/admin/add-button",
+                                            "no/customization/screen-designer/admin/assign-layout",
+                                            "no/customization/screen-designer/admin/reference",
+                                            "no/customization/screen-designer/admin/tutorial-move-country"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Webpaneler",
+                                        "pages": [
+                                            "no/customization/web-panels/admin/index",
+                                            "no/customization/web-panels/admin/add-web-panel",
+                                            "no/customization/web-panels/admin/url-encoding"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Makroer og skript",
+                                        "pages": [
+                                            "no/customization/macros-and-scripts/admin/index",
+                                            "no/customization/macros-and-scripts/admin/create-script",
+                                            "no/customization/macros-and-scripts/admin/create-macro",
+                                            "no/customization/macros-and-scripts/admin/trigger",
+                                            "no/customization/macros-and-scripts/admin/schedule-task"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Kundesenter",
+                                        "pages": [
+                                            "no/customer-center/admin/password-policy",
+                                            "no/customer-center/learn/index",
+                                            "no/customer-center/learn/config",
+                                            "no/customer-center/learn/edit",
+                                            "no/customer-center/learn/send-credentials",
+                                            "no/customer-center/learn/enable-chat",
+                                            "no/customer-center/learn/link-form",
+                                            {
+                                                "group": "For administratorer",
+                                                "pages": [
+                                                    "no/customer-center/admin/password-policy",
+                                                    "no/ui/blogic/learn/index",
+                                                    "no/ui/blogic/learn/profiles/index",
+                                                    "no/ui/blogic/learn/screen-chooser",
+                                                    "no/ui/blogic/learn/screen-definition",
+                                                    "no/ui/blogic/learn/screen-properties",
+                                                    "no/ui/blogic/learn/extra-menus/index"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "no/ui/blogic/learn/extra-menus/index",
+                                    "no/customization/admin/package-properties",
+                                    "no/customization/admin/add-items-to-task-menu",
+                                    "no/customization/admin/other-applications"
+                                ]
+                            },
+                            {
+                                "group": "Innstillinger og vedlikehold",
                                 "pages": [
                                     "no/admin/onsite/data-exchange",
-                                    "no/admin/onsite/configure-soap",
-                                    "no/admin/onsite/add-system-event"
+                                    "no/admin/index",
+                                    "no/admin/getting-started",
+                                    "no/admin/adjusting-views",
+                                    {
+                                        "group": "Lisenser",
+                                        "pages": [
+                                            "no/admin/license/index",
+                                            "no/admin/license/activate",
+                                            "no/admin/license/user-plans",
+                                            "no/admin/license/change-user-plan",
+                                            "no/admin/license/expander-services"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Preferanser",
+                                        "pages": [
+                                            "no/admin/preferences/index",
+                                            "no/admin/preferences/update",
+                                            "no/admin/preferences/service-settings",
+                                            "no/admin/preferences/sms",
+                                            "no/admin/preferences/smtp"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Systemvalg",
+                                        "pages": [
+                                            "no/admin/options/index",
+                                            "no/admin/options/configure-number-allocation",
+                                            "no/admin/options/change-ui-labels"
+                                        ]
+                                    },
+                                    {
+                                        "group": "Lister",
+                                        "pages": [
+                                            "no/admin/lists/index",
+                                            "no/admin/lists/add-items",
+                                            "no/admin/lists/update-items",
+                                            "no/admin/lists/restore",
+                                            "no/admin/lists/headings",
+                                            "no/admin/lists/user-group-filtering",
+                                            "no/admin/lists/specialized-lists",
+                                            {
+                                                "group": "Brukerdefinerte lister",
+                                                "pages": [
+                                                    "no/admin/lists/user-defined-lists",
+                                                    "no/admin/user-management/index",
+                                                    "no/admin/user-management/add-associate",
+                                                    "no/admin/user-management/update-user",
+                                                    "no/admin/user-management/our-companies",
+                                                    "no/admin/user-management/user-groups",
+                                                    {
+                                                        "group": "Rolle",
+                                                        "pages": [
+                                                            "no/admin/user-management/role/index",
+                                                            "no/admin/user-management/role/create-role",
+                                                            "no/admin/user-management/role/update-role",
+                                                            "no/admin/user-management/role/set-data-rights-for-role",
+                                                            "no/admin/user-management/role/functional-rights"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "group": "Lokale brukere",
+                                                        "pages": [
+                                                            "no/admin/user-management/onsite/other-users",
+                                                            "no/admin/user-management/onsite/import-users",
+                                                            "no/admin/user-management/onsite/other-users",
+                                                            "no/admin/user-management/onsite/managing-external-users",
+                                                            "no/admin/user-management/onsite/logging-users-off"
+                                                        ]
+                                                    },
+                                                    "no/admin/import/index",
+                                                    "no/admin/import/create-spreadsheet",
+                                                    "no/admin/import/from-excel",
+                                                    "no/admin/import/from-outlook",
+                                                    "no/admin/import/from-mac-address-book",
+                                                    "no/admin/import/from-gmail",
+                                                    "no/admin/import/from-erp",
+                                                    "no/admin/import/products-from-excel",
+                                                    "no/admin/import/settings"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "no/admin/user-management/onsite/other-users",
+                                    "no/admin/import/index",
+                                    {
+                                        "group": "Lokalt",
+                                        "pages": [
+                                            "no/admin/onsite/data-exchange",
+                                            "no/admin/onsite/configure-soap",
+                                            "no/admin/onsite/add-system-event"
+                                        ]
+                                    }
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "Språk, oversettelse og tidssoner",
-                        "pages": [
-                            "no/localization/admin/enable-time-zones",
-                            "no/localization/learn/customer-languages",
-                            "no/localization/learn/translate-fields",
-                            "no/localization/learn/time-zones",
+                            },
                             {
-                                "group": "For administratorer",
+                                "group": "Språk, oversettelse og tidssoner",
                                 "pages": [
                                     "no/localization/admin/enable-time-zones",
-                                    "no/localization/admin/select-time-zones",
-                                    "no/localization/admin/add-customer-language"
+                                    "no/localization/learn/customer-languages",
+                                    "no/localization/learn/translate-fields",
+                                    "no/localization/learn/time-zones",
+                                    {
+                                        "group": "For administratorer",
+                                        "pages": [
+                                            "no/localization/admin/enable-time-zones",
+                                            "no/localization/admin/select-time-zones",
+                                            "no/localization/admin/add-customer-language"
+                                        ]
+                                    }
                                 ]
                             }
                         ]
                     }
                 ]
-            }
-        ]
             }
         ],
         "global": {
@@ -2825,12 +3023,7 @@
                 "label": "Log in",
                 "href": "https://online.superoffice.com/login"
             }
-        ],
-        "primary": {
-            "type": "button",
-            "label": "Talk to a CRM expert",
-            "href": "https://www.superoffice.com/crm/demo"
-        }
+        ]
     },
     "contextual": {
         "options": [
@@ -5273,6 +5466,1294 @@
         {
             "source": "/no/search-options/selection/learn/howto/mass-delete",
             "destination": "/no/security/privacy/learn/mass-delete"
+        },
+        {
+            "source": "/en/document/cloud/g-suite/getting-started",
+            "destination": "/integrations/g-suite/getting-started"
+        },
+        {
+            "source": "/de/document/cloud/g-suite/learn/index",
+            "destination": "/integrations/g-suite/index"
+        },
+        {
+            "source": "/da/document/cloud/g-suite/learn/index",
+            "destination": "/integrations/g-suite/index"
+        },
+        {
+            "source": "/no/document/cloud/g-suite/learn/index",
+            "destination": "/integrations/g-suite/index"
+        },
+        {
+            "source": "/sv/document/cloud/g-suite/learn/index",
+            "destination": "/integrations/g-suite/index"
+        },
+        {
+            "source": "/nl/document/cloud/g-suite/learn/index",
+            "destination": "/integrations/g-suite/index"
+        },
+        {
+            "source": "/en/document/cloud/g-suite/learn/index",
+            "destination": "/integrations/g-suite/index"
+        },
+        {
+            "source": "/en/document/cloud/g-suite/index",
+            "destination": "/integrations/g-suite/index"
+        },
+        {
+            "source": "/en/document/cloud/g-suite/requirements",
+            "destination": "/integrations/g-suite/requirements"
+        },
+        {
+            "source": "/en/document/cloud/g-suite/security",
+            "destination": "/integrations/g-suite/security"
+        },
+        {
+            "source": "/en/document/cloud/g-suite/set-up",
+            "destination": "/integrations/g-suite/set-up"
+        },
+        {
+            "source": "/en/email/gmail-link/learn/archive-attachments",
+            "destination": "/integrations/gmail-link/archive-attachments"
+        },
+        {
+            "source": "/da/email/gmail-link/learn/archive-attachments",
+            "destination": "/integrations/gmail-link/archive-attachments"
+        },
+        {
+            "source": "/de/email/gmail-link/learn/archive-attachments",
+            "destination": "/integrations/gmail-link/archive-attachments"
+        },
+        {
+            "source": "/nl/email/gmail-link/learn/archive-attachments",
+            "destination": "/integrations/gmail-link/archive-attachments"
+        },
+        {
+            "source": "/no/email/gmail-link/learn/archive-attachments",
+            "destination": "/integrations/gmail-link/archive-attachments"
+        },
+        {
+            "source": "/sv/email/gmail-link/learn/archive-attachments",
+            "destination": "/integrations/gmail-link/archive-attachments"
+        },
+        {
+            "source": "/en/email/gmail-link/learn/archive-emails-as-activities",
+            "destination": "/integrations/gmail-link/archive-emails-as-activities"
+        },
+        {
+            "source": "/da/email/gmail-link/learn/archive-emails-as-activities",
+            "destination": "/integrations/gmail-link/archive-emails-as-activities"
+        },
+        {
+            "source": "/de/email/gmail-link/learn/archive-emails-as-activities",
+            "destination": "/integrations/gmail-link/archive-emails-as-activities"
+        },
+        {
+            "source": "/nl/email/gmail-link/learn/archive-emails-as-activities",
+            "destination": "/integrations/gmail-link/archive-emails-as-activities"
+        },
+        {
+            "source": "/no/email/gmail-link/learn/archive-emails-as-activities",
+            "destination": "/integrations/gmail-link/archive-emails-as-activities"
+        },
+        {
+            "source": "/sv/email/gmail-link/learn/archive-emails-as-activities",
+            "destination": "/integrations/gmail-link/archive-emails-as-activities"
+        },
+        {
+            "source": "/en/email/gmail-link/learn/archive-emails-as-requests",
+            "destination": "/integrations/gmail-link/archive-emails-as-requests"
+        },
+        {
+            "source": "/da/email/gmail-link/learn/archive-emails-as-requests",
+            "destination": "/integrations/gmail-link/archive-emails-as-requests"
+        },
+        {
+            "source": "/de/email/gmail-link/learn/archive-emails-as-requests",
+            "destination": "/integrations/gmail-link/archive-emails-as-requests"
+        },
+        {
+            "source": "/nl/email/gmail-link/learn/archive-emails-as-requests",
+            "destination": "/integrations/gmail-link/archive-emails-as-requests"
+        },
+        {
+            "source": "/no/email/gmail-link/learn/archive-emails-as-requests",
+            "destination": "/integrations/gmail-link/archive-emails-as-requests"
+        },
+        {
+            "source": "/sv/email/gmail-link/learn/archive-emails-as-requests",
+            "destination": "/integrations/gmail-link/archive-emails-as-requests"
+        },
+        {
+            "source": "/en/email/gmail-link/learn/email-archive-incoming",
+            "destination": "/integrations/gmail-link/email-archive-incoming"
+        },
+        {
+            "source": "/da/email/gmail-link/learn/email-archive-incoming",
+            "destination": "/integrations/gmail-link/email-archive-incoming"
+        },
+        {
+            "source": "/de/email/gmail-link/learn/email-archive-incoming",
+            "destination": "/integrations/gmail-link/email-archive-incoming"
+        },
+        {
+            "source": "/nl/email/gmail-link/learn/email-archive-incoming",
+            "destination": "/integrations/gmail-link/email-archive-incoming"
+        },
+        {
+            "source": "/no/email/gmail-link/learn/email-archive-incoming",
+            "destination": "/integrations/gmail-link/email-archive-incoming"
+        },
+        {
+            "source": "/sv/email/gmail-link/learn/email-archive-incoming",
+            "destination": "/integrations/gmail-link/email-archive-incoming"
+        },
+        {
+            "source": "/en/email/gmail-link/learn/email-archive-outgoing",
+            "destination": "/integrations/gmail-link/email-archive-outgoing"
+        },
+        {
+            "source": "/da/email/gmail-link/learn/email-archive-outgoing",
+            "destination": "/integrations/gmail-link/email-archive-outgoing"
+        },
+        {
+            "source": "/de/email/gmail-link/learn/email-archive-outgoing",
+            "destination": "/integrations/gmail-link/email-archive-outgoing"
+        },
+        {
+            "source": "/nl/email/gmail-link/learn/email-archive-outgoing",
+            "destination": "/integrations/gmail-link/email-archive-outgoing"
+        },
+        {
+            "source": "/no/email/gmail-link/learn/email-archive-outgoing",
+            "destination": "/integrations/gmail-link/email-archive-outgoing"
+        },
+        {
+            "source": "/sv/email/gmail-link/learn/email-archive-outgoing",
+            "destination": "/integrations/gmail-link/email-archive-outgoing"
+        },
+        {
+            "source": "/en/email/gmail-link/learn/index",
+            "destination": "/integrations/gmail-link/index"
+        },
+        {
+            "source": "/da/email/gmail-link/learn/index",
+            "destination": "/integrations/gmail-link/index"
+        },
+        {
+            "source": "/de/email/gmail-link/learn/index",
+            "destination": "/integrations/gmail-link/index"
+        },
+        {
+            "source": "/nl/email/gmail-link/learn/index",
+            "destination": "/integrations/gmail-link/index"
+        },
+        {
+            "source": "/no/email/gmail-link/learn/index",
+            "destination": "/integrations/gmail-link/index"
+        },
+        {
+            "source": "/sv/email/gmail-link/learn/index",
+            "destination": "/integrations/gmail-link/index"
+        },
+        {
+            "source": "/en/email/gmail-link/learn/install",
+            "destination": "/integrations/gmail-link/install"
+        },
+        {
+            "source": "/da/email/gmail-link/learn/install",
+            "destination": "/integrations/gmail-link/install"
+        },
+        {
+            "source": "/de/email/gmail-link/learn/install",
+            "destination": "/integrations/gmail-link/install"
+        },
+        {
+            "source": "/nl/email/gmail-link/learn/install",
+            "destination": "/integrations/gmail-link/install"
+        },
+        {
+            "source": "/no/email/gmail-link/learn/install",
+            "destination": "/integrations/gmail-link/install"
+        },
+        {
+            "source": "/sv/email/gmail-link/learn/install",
+            "destination": "/integrations/gmail-link/install"
+        },
+        {
+            "source": "/en/email/gmail-link/learn/manage-senders",
+            "destination": "/integrations/gmail-link/manage-senders"
+        },
+        {
+            "source": "/da/email/gmail-link/learn/manage-senders",
+            "destination": "/integrations/gmail-link/manage-senders"
+        },
+        {
+            "source": "/de/email/gmail-link/learn/manage-senders",
+            "destination": "/integrations/gmail-link/manage-senders"
+        },
+        {
+            "source": "/nl/email/gmail-link/learn/manage-senders",
+            "destination": "/integrations/gmail-link/manage-senders"
+        },
+        {
+            "source": "/no/email/gmail-link/learn/manage-senders",
+            "destination": "/integrations/gmail-link/manage-senders"
+        },
+        {
+            "source": "/sv/email/gmail-link/learn/manage-senders",
+            "destination": "/integrations/gmail-link/manage-senders"
+        },
+        {
+            "source": "/en/email/gmail-link/learn/settings",
+            "destination": "/integrations/gmail-link/settings"
+        },
+        {
+            "source": "/da/email/gmail-link/learn/settings",
+            "destination": "/integrations/gmail-link/settings"
+        },
+        {
+            "source": "/de/email/gmail-link/learn/settings",
+            "destination": "/integrations/gmail-link/settings"
+        },
+        {
+            "source": "/nl/email/gmail-link/learn/settings",
+            "destination": "/integrations/gmail-link/settings"
+        },
+        {
+            "source": "/no/email/gmail-link/learn/settings",
+            "destination": "/integrations/gmail-link/settings"
+        },
+        {
+            "source": "/sv/email/gmail-link/learn/settings",
+            "destination": "/integrations/gmail-link/settings"
+        },
+        {
+            "source": "/en/email/mail-link/learn/add-attachment",
+            "destination": "/integrations/mail-link/add-attachment"
+        },
+        {
+            "source": "/da/email/mail-link/learn/add-attachment",
+            "destination": "/integrations/mail-link/add-attachment"
+        },
+        {
+            "source": "/de/email/mail-link/learn/add-attachment",
+            "destination": "/integrations/mail-link/add-attachment"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/add-attachment",
+            "destination": "/integrations/mail-link/add-attachment"
+        },
+        {
+            "source": "/no/email/mail-link/learn/add-attachment",
+            "destination": "/integrations/mail-link/add-attachment"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/add-attachment",
+            "destination": "/integrations/mail-link/add-attachment"
+        },
+        {
+            "source": "/en/email/mail-link/learn/archive-as-activity",
+            "destination": "/integrations/mail-link/archive-as-activity"
+        },
+        {
+            "source": "/da/email/mail-link/learn/archive-as-activity",
+            "destination": "/integrations/mail-link/archive-as-activity"
+        },
+        {
+            "source": "/de/email/mail-link/learn/archive-as-activity",
+            "destination": "/integrations/mail-link/archive-as-activity"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/archive-as-activity",
+            "destination": "/integrations/mail-link/archive-as-activity"
+        },
+        {
+            "source": "/no/email/mail-link/learn/archive-as-activity",
+            "destination": "/integrations/mail-link/archive-as-activity"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/archive-as-activity",
+            "destination": "/integrations/mail-link/archive-as-activity"
+        },
+        {
+            "source": "/en/email/mail-link/learn/archive-as-request",
+            "destination": "/integrations/mail-link/archive-as-request"
+        },
+        {
+            "source": "/da/email/mail-link/learn/archive-as-request",
+            "destination": "/integrations/mail-link/archive-as-request"
+        },
+        {
+            "source": "/de/email/mail-link/learn/archive-as-request",
+            "destination": "/integrations/mail-link/archive-as-request"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/archive-as-request",
+            "destination": "/integrations/mail-link/archive-as-request"
+        },
+        {
+            "source": "/no/email/mail-link/learn/archive-as-request",
+            "destination": "/integrations/mail-link/archive-as-request"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/archive-as-request",
+            "destination": "/integrations/mail-link/archive-as-request"
+        },
+        {
+            "source": "/en/email/mail-link/learn/archive-attachment",
+            "destination": "/integrations/mail-link/archive-attachment"
+        },
+        {
+            "source": "/da/email/mail-link/learn/archive-attachment",
+            "destination": "/integrations/mail-link/archive-attachment"
+        },
+        {
+            "source": "/de/email/mail-link/learn/archive-attachment",
+            "destination": "/integrations/mail-link/archive-attachment"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/archive-attachment",
+            "destination": "/integrations/mail-link/archive-attachment"
+        },
+        {
+            "source": "/no/email/mail-link/learn/archive-attachment",
+            "destination": "/integrations/mail-link/archive-attachment"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/archive-attachment",
+            "destination": "/integrations/mail-link/archive-attachment"
+        },
+        {
+            "source": "/en/email/mail-link/learn/archive-on-contact",
+            "destination": "/integrations/mail-link/archive-on-contact"
+        },
+        {
+            "source": "/da/email/mail-link/learn/archive-on-contact",
+            "destination": "/integrations/mail-link/archive-on-contact"
+        },
+        {
+            "source": "/de/email/mail-link/learn/archive-on-contact",
+            "destination": "/integrations/mail-link/archive-on-contact"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/archive-on-contact",
+            "destination": "/integrations/mail-link/archive-on-contact"
+        },
+        {
+            "source": "/no/email/mail-link/learn/archive-on-contact",
+            "destination": "/integrations/mail-link/archive-on-contact"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/archive-on-contact",
+            "destination": "/integrations/mail-link/archive-on-contact"
+        },
+        {
+            "source": "/en/email/mail-link/learn/archive",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/da/email/mail-link/learn/archive",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/de/email/mail-link/learn/archive",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/archive",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/no/email/mail-link/learn/archive",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/archive",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/en/email/mail-link/learn/settings/archive-by-default",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/da/email/mail-link/learn/settings/archive-by-default",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/de/email/mail-link/learn/settings/archive-by-default",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/settings/archive-by-default",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/no/email/mail-link/learn/settings/archive-by-default",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/settings/archive-by-default",
+            "destination": "/integrations/mail-link/archive"
+        },
+        {
+            "source": "/en/email/mail-link/learn/create-in-outlook",
+            "destination": "/integrations/mail-link/create-in-outlook"
+        },
+        {
+            "source": "/da/email/mail-link/learn/create-in-outlook",
+            "destination": "/integrations/mail-link/create-in-outlook"
+        },
+        {
+            "source": "/de/email/mail-link/learn/create-in-outlook",
+            "destination": "/integrations/mail-link/create-in-outlook"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/create-in-outlook",
+            "destination": "/integrations/mail-link/create-in-outlook"
+        },
+        {
+            "source": "/no/email/mail-link/learn/create-in-outlook",
+            "destination": "/integrations/mail-link/create-in-outlook"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/create-in-outlook",
+            "destination": "/integrations/mail-link/create-in-outlook"
+        },
+        {
+            "source": "/en/email/mail-link/learn/create-in-superoffice",
+            "destination": "/integrations/mail-link/create-in-superoffice"
+        },
+        {
+            "source": "/da/email/mail-link/learn/create-in-superoffice",
+            "destination": "/integrations/mail-link/create-in-superoffice"
+        },
+        {
+            "source": "/de/email/mail-link/learn/create-in-superoffice",
+            "destination": "/integrations/mail-link/create-in-superoffice"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/create-in-superoffice",
+            "destination": "/integrations/mail-link/create-in-superoffice"
+        },
+        {
+            "source": "/no/email/mail-link/learn/create-in-superoffice",
+            "destination": "/integrations/mail-link/create-in-superoffice"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/create-in-superoffice",
+            "destination": "/integrations/mail-link/create-in-superoffice"
+        },
+        {
+            "source": "/en/email/mail-link/debug",
+            "destination": "/integrations/mail-link/debug"
+        },
+        {
+            "source": "/en/email/mail-link/index",
+            "destination": "/integrations/mail-link/index"
+        },
+        {
+            "source": "/en/email/mail-link/learn/index",
+            "destination": "/integrations/mail-link/index"
+        },
+        {
+            "source": "/da/email/mail-link/learn/index",
+            "destination": "/integrations/mail-link/index"
+        },
+        {
+            "source": "/de/email/mail-link/learn/index",
+            "destination": "/integrations/mail-link/index"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/index",
+            "destination": "/integrations/mail-link/index"
+        },
+        {
+            "source": "/no/email/mail-link/learn/index",
+            "destination": "/integrations/mail-link/index"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/index",
+            "destination": "/integrations/mail-link/index"
+        },
+        {
+            "source": "/en/email/mail-link/learn/install",
+            "destination": "/integrations/mail-link/install"
+        },
+        {
+            "source": "/da/email/mail-link/learn/install",
+            "destination": "/integrations/mail-link/install"
+        },
+        {
+            "source": "/de/email/mail-link/learn/install",
+            "destination": "/integrations/mail-link/install"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/install",
+            "destination": "/integrations/mail-link/install"
+        },
+        {
+            "source": "/no/email/mail-link/learn/install",
+            "destination": "/integrations/mail-link/install"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/install",
+            "destination": "/integrations/mail-link/install"
+        },
+        {
+            "source": "/en/email/mail-link/learn/manage-senders",
+            "destination": "/integrations/mail-link/manage-senders"
+        },
+        {
+            "source": "/da/email/mail-link/learn/manage-senders",
+            "destination": "/integrations/mail-link/manage-senders"
+        },
+        {
+            "source": "/de/email/mail-link/learn/manage-senders",
+            "destination": "/integrations/mail-link/manage-senders"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/manage-senders",
+            "destination": "/integrations/mail-link/manage-senders"
+        },
+        {
+            "source": "/no/email/mail-link/learn/manage-senders",
+            "destination": "/integrations/mail-link/manage-senders"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/manage-senders",
+            "destination": "/integrations/mail-link/manage-senders"
+        },
+        {
+            "source": "/en/email/mail-link/learn/select-recipients",
+            "destination": "/integrations/mail-link/select-recipients"
+        },
+        {
+            "source": "/da/email/mail-link/learn/select-recipients",
+            "destination": "/integrations/mail-link/select-recipients"
+        },
+        {
+            "source": "/de/email/mail-link/learn/select-recipients",
+            "destination": "/integrations/mail-link/select-recipients"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/select-recipients",
+            "destination": "/integrations/mail-link/select-recipients"
+        },
+        {
+            "source": "/no/email/mail-link/learn/select-recipients",
+            "destination": "/integrations/mail-link/select-recipients"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/select-recipients",
+            "destination": "/integrations/mail-link/select-recipients"
+        },
+        {
+            "source": "/en/email/mail-link/learn/settings/index",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/da/email/mail-link/learn/settings/index",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/de/email/mail-link/learn/settings/index",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/settings/index",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/no/email/mail-link/learn/settings/index",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/settings/index",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/en/email/mail-link/learn/settings/default",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/da/email/mail-link/learn/settings/default",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/de/email/mail-link/learn/settings/default",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/settings/default",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/no/email/mail-link/learn/settings/default",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/settings/default",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/en/email/mail-link/learn/settings/general",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/da/email/mail-link/learn/settings/general",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/de/email/mail-link/learn/settings/general",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/settings/general",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/no/email/mail-link/learn/settings/general",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/settings/general",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/en/email/mail-link/learn/settings/invitations",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/da/email/mail-link/learn/settings/invitations",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/de/email/mail-link/learn/settings/invitations",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/settings/invitations",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/no/email/mail-link/learn/settings/invitations",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/settings/invitations",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/en/email/mail-link/learn/settings/superoffice-account",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/da/email/mail-link/learn/settings/superoffice-account",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/de/email/mail-link/learn/settings/superoffice-account",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/nl/email/mail-link/learn/settings/superoffice-account",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/no/email/mail-link/learn/settings/superoffice-account",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/sv/email/mail-link/learn/settings/superoffice-account",
+            "destination": "/integrations/mail-link/settings"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/migrate/best-practices",
+            "destination": "/integrations/sharepoint-documents/migrate/best-practices"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/migrate/index",
+            "destination": "/integrations/sharepoint-documents/migrate/index"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/migrate/reference",
+            "destination": "/integrations/sharepoint-documents/migrate/reference"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/migrate/steps",
+            "destination": "/integrations/sharepoint-documents/migrate/steps"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/migrate/troubleshooting",
+            "destination": "/integrations/sharepoint-documents/migrate/troubleshooting"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/configure-permissions-documents",
+            "destination": "/integrations/sharepoint-documents/configure-permissions-documents"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/configure-permissions-templates",
+            "destination": "/integrations/sharepoint-documents/configure-permissions-templates"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/configure-superoffice",
+            "destination": "/integrations/sharepoint-documents/configure-superoffice"
+        },
+        {
+            "source": "/en/document/cloud/legacy/office-365/",
+            "destination": "/integrations/sharepoint-documents/index"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/index",
+            "destination": "/integrations/sharepoint-documents/index"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/permissions-app",
+            "destination": "/integrations/sharepoint-documents/permissions-app"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/permissions-in-sharepoint",
+            "destination": "/integrations/sharepoint-documents/permissions-in-sharepoint"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/requirements",
+            "destination": "/integrations/sharepoint-documents/requirements"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/set-up",
+            "destination": "/integrations/sharepoint-documents/set-up"
+        },
+        {
+            "source": "/en/document/cloud/sharepoint-documents/troubleshooting",
+            "destination": "/integrations/sharepoint-documents/troubleshooting"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+        },
+        {
+            "source": "/da/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+        },
+        {
+            "source": "/de/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+        },
+        {
+            "source": "/nl/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+        },
+        {
+            "source": "/no/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+        },
+        {
+            "source": "/sv/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+            "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+        },
+        {
+            "source": "/da/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+            "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+        },
+        {
+            "source": "/de/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+            "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+        },
+        {
+            "source": "/nl/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+            "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+        },
+        {
+            "source": "/no/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+            "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+        },
+        {
+            "source": "/sv/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+            "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/learn/create-follow-up",
+            "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+        },
+        {
+            "source": "/da/email/superoffice-for-outlook/learn/create-follow-up",
+            "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+        },
+        {
+            "source": "/de/email/superoffice-for-outlook/learn/create-follow-up",
+            "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+        },
+        {
+            "source": "/nl/email/superoffice-for-outlook/learn/create-follow-up",
+            "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+        },
+        {
+            "source": "/no/email/superoffice-for-outlook/learn/create-follow-up",
+            "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+        },
+        {
+            "source": "/sv/email/superoffice-for-outlook/learn/create-follow-up",
+            "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/learn/create-request",
+            "destination": "/integrations/superoffice-for-outlook/create-request"
+        },
+        {
+            "source": "/da/email/superoffice-for-outlook/learn/create-request",
+            "destination": "/integrations/superoffice-for-outlook/create-request"
+        },
+        {
+            "source": "/de/email/superoffice-for-outlook/learn/create-request",
+            "destination": "/integrations/superoffice-for-outlook/create-request"
+        },
+        {
+            "source": "/nl/email/superoffice-for-outlook/learn/create-request",
+            "destination": "/integrations/superoffice-for-outlook/create-request"
+        },
+        {
+            "source": "/no/email/superoffice-for-outlook/learn/create-request",
+            "destination": "/integrations/superoffice-for-outlook/create-request"
+        },
+        {
+            "source": "/sv/email/superoffice-for-outlook/learn/create-request",
+            "destination": "/integrations/superoffice-for-outlook/create-request"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/learn/create-sale",
+            "destination": "/integrations/superoffice-for-outlook/create-sale"
+        },
+        {
+            "source": "/da/email/superoffice-for-outlook/learn/create-sale",
+            "destination": "/integrations/superoffice-for-outlook/create-sale"
+        },
+        {
+            "source": "/de/email/superoffice-for-outlook/learn/create-sale",
+            "destination": "/integrations/superoffice-for-outlook/create-sale"
+        },
+        {
+            "source": "/nl/email/superoffice-for-outlook/learn/create-sale",
+            "destination": "/integrations/superoffice-for-outlook/create-sale"
+        },
+        {
+            "source": "/no/email/superoffice-for-outlook/learn/create-sale",
+            "destination": "/integrations/superoffice-for-outlook/create-sale"
+        },
+        {
+            "source": "/sv/email/superoffice-for-outlook/learn/create-sale",
+            "destination": "/integrations/superoffice-for-outlook/create-sale"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/deploy-centrally",
+            "destination": "/integrations/superoffice-for-outlook/deploy"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/it/deploy",
+            "destination": "/integrations/superoffice-for-outlook/deploy"
+        },
+        {
+            "source": "/da/email/superoffice-for-outlook/it/deploy",
+            "destination": "/integrations/superoffice-for-outlook/deploy"
+        },
+        {
+            "source": "/de/email/superoffice-for-outlook/it/deploy",
+            "destination": "/integrations/superoffice-for-outlook/deploy"
+        },
+        {
+            "source": "/nl/email/superoffice-for-outlook/it/deploy",
+            "destination": "/integrations/superoffice-for-outlook/deploy"
+        },
+        {
+            "source": "/no/email/superoffice-for-outlook/it/deploy",
+            "destination": "/integrations/superoffice-for-outlook/deploy"
+        },
+        {
+            "source": "/sv/email/superoffice-for-outlook/it/deploy",
+            "destination": "/integrations/superoffice-for-outlook/deploy"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/deploy-office-add-in",
+            "destination": "/integrations/superoffice-for-outlook/get"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/learn/get",
+            "destination": "/integrations/superoffice-for-outlook/get"
+        },
+        {
+            "source": "/da/email/superoffice-for-outlook/learn/get",
+            "destination": "/integrations/superoffice-for-outlook/get"
+        },
+        {
+            "source": "/de/email/superoffice-for-outlook/learn/get",
+            "destination": "/integrations/superoffice-for-outlook/get"
+        },
+        {
+            "source": "/nl/email/superoffice-for-outlook/learn/get",
+            "destination": "/integrations/superoffice-for-outlook/get"
+        },
+        {
+            "source": "/no/email/superoffice-for-outlook/learn/get",
+            "destination": "/integrations/superoffice-for-outlook/get"
+        },
+        {
+            "source": "/sv/email/superoffice-for-outlook/learn/get",
+            "destination": "/integrations/superoffice-for-outlook/get"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/index",
+            "destination": "/integrations/superoffice-for-outlook/index"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/learn/index",
+            "destination": "/integrations/superoffice-for-outlook/index"
+        },
+        {
+            "source": "/da/email/superoffice-for-outlook/learn/index",
+            "destination": "/integrations/superoffice-for-outlook/index"
+        },
+        {
+            "source": "/de/email/superoffice-for-outlook/learn/index",
+            "destination": "/integrations/superoffice-for-outlook/index"
+        },
+        {
+            "source": "/nl/email/superoffice-for-outlook/learn/index",
+            "destination": "/integrations/superoffice-for-outlook/index"
+        },
+        {
+            "source": "/no/email/superoffice-for-outlook/learn/index",
+            "destination": "/integrations/superoffice-for-outlook/index"
+        },
+        {
+            "source": "/sv/email/superoffice-for-outlook/learn/index",
+            "destination": "/integrations/superoffice-for-outlook/index"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/requirements",
+            "destination": "/integrations/superoffice-for-outlook/requirements"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/learn/requirements",
+            "destination": "/integrations/superoffice-for-outlook/requirements"
+        },
+        {
+            "source": "/da/email/superoffice-for-outlook/learn/requirements",
+            "destination": "/integrations/superoffice-for-outlook/requirements"
+        },
+        {
+            "source": "/de/email/superoffice-for-outlook/learn/requirements",
+            "destination": "/integrations/superoffice-for-outlook/requirements"
+        },
+        {
+            "source": "/nl/email/superoffice-for-outlook/learn/requirements",
+            "destination": "/integrations/superoffice-for-outlook/requirements"
+        },
+        {
+            "source": "/no/email/superoffice-for-outlook/learn/requirements",
+            "destination": "/integrations/superoffice-for-outlook/requirements"
+        },
+        {
+            "source": "/sv/email/superoffice-for-outlook/learn/requirements",
+            "destination": "/integrations/superoffice-for-outlook/requirements"
+        },
+        {
+            "source": "/en/email/superoffice-for-outlook/learn/save-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/save-to-superoffice"
+        },
+        {
+            "source": "/da/email/superoffice-for-outlook/learn/save-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/save-to-superoffice"
+        },
+        {
+            "source": "/de/email/superoffice-for-outlook/learn/save-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/save-to-superoffice"
+        },
+        {
+            "source": "/nl/email/superoffice-for-outlook/learn/save-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/save-to-superoffice"
+        },
+        {
+            "source": "/no/email/superoffice-for-outlook/learn/save-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/save-to-superoffice"
+        },
+        {
+            "source": "/sv/email/superoffice-for-outlook/learn/save-to-superoffice",
+            "destination": "/integrations/superoffice-for-outlook/save-to-superoffice"
+        },
+        {
+            "source": "/en/diary/video-meetings/google-meet/index",
+            "destination": "/integrations/video-meetings/google-meet/index"
+        },
+        {
+            "source": "/en/diary/video-meetings/howto/configure-email-invitations",
+            "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+        },
+        {
+            "source": "/en/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+            "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+        },
+        {
+            "source": "/da/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+            "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+        },
+        {
+            "source": "/sv/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+            "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+        },
+        {
+            "source": "/no/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+            "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+        },
+        {
+            "source": "/nl/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+            "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+        },
+        {
+            "source": "/de/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+            "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+        },
+        {
+            "source": "/en/diary/video-meetings/howto/connect-provider",
+            "destination": "/integrations/video-meetings/howto/connect-provider"
+        },
+        {
+            "source": "/en/admin/preferences/learn/video-meetings/configure-video-meetings",
+            "destination": "/integrations/video-meetings/howto/connect-provider"
+        },
+        {
+            "source": "/da/admin/preferences/learn/video-meetings/configure-video-meetings",
+            "destination": "/integrations/video-meetings/howto/connect-provider"
+        },
+        {
+            "source": "/sv/admin/preferences/learn/video-meetings/configure-video-meetings",
+            "destination": "/integrations/video-meetings/howto/connect-provider"
+        },
+        {
+            "source": "/no/admin/preferences/learn/video-meetings/configure-video-meetings",
+            "destination": "/integrations/video-meetings/howto/connect-provider"
+        },
+        {
+            "source": "/nl/admin/preferences/learn/video-meetings/configure-video-meetings",
+            "destination": "/integrations/video-meetings/howto/connect-provider"
+        },
+        {
+            "source": "/de/admin/preferences/learn/video-meetings/configure-video-meetings",
+            "destination": "/integrations/video-meetings/howto/connect-provider"
+        },
+        {
+            "source": "/en/diary/video-meetings/howto/create",
+            "destination": "/integrations/video-meetings/howto/create"
+        },
+        {
+            "source": "/en/diary/video-meetings/howto/disconnect-provider",
+            "destination": "/integrations/video-meetings/howto/disconnect-provider"
+        },
+        {
+            "source": "/en/diary/video-meetings/howto/disconnect-user",
+            "destination": "/integrations/video-meetings/howto/disconnect-user"
+        },
+        {
+            "source": "/en/diary/video-meetings/howto/join",
+            "destination": "/integrations/video-meetings/howto/join"
+        },
+        {
+            "source": "/en/diary/video-meetings/jitsi/index",
+            "destination": "/integrations/video-meetings/jitsi/index"
+        },
+        {
+            "source": "/en/diary/video-meetings/ms-teams/index",
+            "destination": "/integrations/video-meetings/ms-teams/index"
+        },
+        {
+            "source": "/en/diary/video-meetings/webex/index",
+            "destination": "/integrations/video-meetings/webex/index"
+        },
+        {
+            "source": "/en/diary/video-meetings/zoom/index",
+            "destination": "/integrations/video-meetings/zoom/index"
+        },
+        {
+            "source": "/en/diary/video-meetings/index",
+            "destination": "/integrations/video-meetings/index"
+        },
+        {
+            "source": "/en/diary/video-meetings/troubleshooting",
+            "destination": "/integrations/video-meetings/troubleshooting"
+        },
+        {
+            "source": "/en/document/webtools/config",
+            "destination": "/integrations/webtools/config"
+        },
+        {
+            "source": "/en/document/webtools/debug",
+            "destination": "/integrations/webtools/debug"
+        },
+        {
+            "source": "/en/document/webtools/deploy",
+            "destination": "/integrations/webtools/deploy"
+        },
+        {
+            "source": "/en/document/webtools/index",
+            "destination": "/integrations/webtools/index"
+        },
+        {
+            "source": "/en/document/webtools/learn/index",
+            "destination": "/integrations/webtools/index"
+        },
+        {
+            "source": "/da/document/webtools/learn/index",
+            "destination": "/integrations/webtools/index"
+        },
+        {
+            "source": "/de/document/webtools/learn/index",
+            "destination": "/integrations/webtools/index"
+        },
+        {
+            "source": "/nl/document/webtools/learn/index",
+            "destination": "/integrations/webtools/index"
+        },
+        {
+            "source": "/no/document/webtools/learn/index",
+            "destination": "/integrations/webtools/index"
+        },
+        {
+            "source": "/sv/document/webtools/learn/index",
+            "destination": "/integrations/webtools/index"
+        },
+        {
+            "source": "/en/document/webtools/install",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/en/document/webtools/learn/install",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/da/document/webtools/learn/install",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/de/document/webtools/learn/install",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/nl/document/webtools/learn/install",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/no/document/webtools/learn/install",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/sv/document/webtools/learn/install",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/en/document/webtools/learn/install-mac",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/da/document/webtools/learn/install-mac",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/de/document/webtools/learn/install-mac",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/nl/document/webtools/learn/install-mac",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/no/document/webtools/learn/install-mac",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/sv/document/webtools/learn/install-mac",
+            "destination": "/integrations/webtools/install"
+        },
+        {
+            "source": "/en/document/webtools/system-requirements",
+            "destination": "/integrations/webtools/system-requirements"
+        },
+        {
+            "source": "/en/document/webtools/technical-overview",
+            "destination": "/integrations/webtools/technical-overview"
+        },
+        {
+            "source": "/en/document/webtools/troubleshooting",
+            "destination": "/integrations/webtools/troubleshooting"
+        },
+        {
+            "source": "/en/document/webtools/upgrade",
+            "destination": "/integrations/webtools/upgrade"
+        },
+        {
+            "source": "/en/automation/zapier/get-started/create-zap",
+            "destination": "/integrations/zapier/get-started/create-zap"
+        },
+        {
+            "source": "/en/automation/zapier/get-started/index",
+            "destination": "/integrations/zapier/get-started/index"
+        },
+        {
+            "source": "/en/automation/zapier/get-started/set-up-account",
+            "destination": "/integrations/zapier/get-started/set-up-account"
+        },
+        {
+            "source": "/integrations/zapier/howto/find-company",
+            "destination": "/integrations/zapier/howto/actions/search-company"
+        },
+        {
+            "source": "/integrations/zapier/howto/find-request",
+            "destination": "/integrations/zapier/howto/actions/search-request"
+        },
+        {
+            "source": "/integrations/zapier/howto/appointment-updated-action",
+            "destination": "/integrations/zapier/howto/actions/update-appointment"
+        },
+        {
+            "source": "/integrations/zapier/howto/update-project",
+            "destination": "/integrations/zapier/howto/actions/update-project"
+        },
+        {
+            "source": "/integrations/zapier/howto/appointment-updated-trigger",
+            "destination": "/integrations/zapier/howto/triggers/changed"
+        },
+        {
+            "source": "/integrations/zapier/howto/project-member-changed",
+            "destination": "/integrations/zapier/howto/triggers/changed"
+        },
+        {
+            "source": "/integrations/zapier/howto/triggers/index",
+            "destination": "/integrations/zapier/howto/triggers/new"
+        },
+        {
+            "source": "/en/automation/zapier/howto/datetime",
+            "destination": "/integrations/zapier/howto/datetime"
+        },
+        {
+            "source": "/en/automation/zapier/howto/gdpr",
+            "destination": "/integrations/zapier/howto/gdpr"
+        },
+        {
+            "source": "en/automation/zapier/howto/index",
+            "destination": "/integrations/zapier/howto/index"
+        },
+        {
+            "source": "/en/automation/zapier/howto/listsource",
+            "destination": "/integrations/zapier/howto/listsource"
+        },
+        {
+            "source": "/en/automation/zapier/index",
+            "destination": "/integrations/zapier/index"
+        },
+        {
+            "source": "/en/automation/zapier/reference",
+            "destination": "/integrations/zapier/reference"
         }
     ]
 }

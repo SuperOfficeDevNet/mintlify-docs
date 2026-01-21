@@ -61,10 +61,10 @@ if ($isFile) {
 # Function to check if file needs mdx conversion (multiple block quotes)
 function Test-NeedsMdxConversion {
     param([string[]]$Lines)
-    
+
     $blockQuoteCount = 0
     $inBlockQuote = $false
-    
+
     foreach ($line in $Lines) {
         if ($line -match '^\s*>') {
             if (-not $inBlockQuote) {
@@ -80,20 +80,20 @@ function Test-NeedsMdxConversion {
             $inBlockQuote = $false
         }
     }
-    
+
     return $blockQuoteCount -gt 1
 }
 
 # Function to repair <br> tags based on context
 function Repair-BrTags {
     param([string[]]$Lines)
-    
+
     $result = @()
     $inBlockQuote = $false
-    
+
     for ($i = 0; $i -lt $Lines.Length; $i++) {
         $line = $Lines[$i]
-        
+
         # Detect block quote context
         if ($line -match '^\s*>') {
             $inBlockQuote = $true
@@ -101,7 +101,7 @@ function Repair-BrTags {
         elseif (-not [string]::IsNullOrWhiteSpace($line) -and $line -notmatch '^\s*>') {
             $inBlockQuote = $false
         }
-        
+
         # Repair <br> based on context
         if ($inBlockQuote -and $line -match '<br>') {
             # In block quote: split on <br> and add > on new lines
@@ -126,41 +126,41 @@ function Repair-BrTags {
             $result += $line
         }
     }
-    
+
     return $result
 }
 
 # Function to convert Unicode characters to ASCII equivalents
 function Convert-UnicodeCharacters {
     param([string]$Text)
-    
+
     # Replace smart quotes with straight quotes
     $Text = $Text -replace '[\u2018\u2019]', "'"  # Single quotes
     $Text = $Text -replace '[\u201C\u201D]', '"'  # Double quotes
-    
+
     # Replace em-dash and en-dash with hyphen
     $Text = $Text -replace '[\u2013\u2014]', '-'
-    
+
     # Replace non-breaking spaces with regular spaces
     $Text = $Text -replace '\u00A0', ' '
-    
+
     # Remove invisible characters (zero-width spaces, etc.)
     $Text = $Text -replace '[\u200B-\u200D\uFEFF]', ''
-    
+
     return $Text
 }
 
 # Function to protect MDX special characters by escaping
 function Protect-MdxCharacters {
     param([string[]]$Lines)
-    
+
     $result = @()
     $inCodeBlock = $false
     $inFrontmatter = $false
-    
+
     for ($i = 0; $i -lt $Lines.Length; $i++) {
         $line = $Lines[$i]
-        
+
         # Track frontmatter
         if ($i -eq 0 -and $line -eq '---') {
             $inFrontmatter = $true
@@ -172,48 +172,48 @@ function Protect-MdxCharacters {
             $result += $line
             continue
         }
-        
+
         # Track code blocks
         if ($line -match '^```') {
             $inCodeBlock = -not $inCodeBlock
             $result += $line
             continue
         }
-        
+
         # Skip escaping in frontmatter, code blocks
         if ($inFrontmatter -or $inCodeBlock) {
             $result += $line
             continue
         }
-        
+
         # Skip import statements
         if ($line -match '^import\s+') {
             $result += $line
             continue
         }
-        
+
         # Skip block quotes (lines starting with >)
         if ($line -match '^\s*>') {
             $result += $line
             continue
         }
-        
+
         # Check if line is ONLY an HTML/JSX tag (opening, closing, or self-closing)
         if ($line -match '^\s*<[A-Za-z/][^>]*>\s*$') {
             $result += $line
             continue
         }
-        
+
         # For all other lines, escape curly braces and standalone angle brackets
         # BUT preserve inline code (content between backticks)
         # Split on backticks to find inline code segments
         $segments = $line -split '(`)'
         $processedLine = ''
         $inInlineCode = $false
-        
+
         for ($j = 0; $j -lt $segments.Length; $j++) {
             $segment = $segments[$j]
-            
+
             if ($segment -eq '`') {
                 # Toggle inline code state
                 $inInlineCode = -not $inInlineCode
@@ -227,33 +227,33 @@ function Protect-MdxCharacters {
                 # Outside inline code - escape curly braces and angle brackets
                 $segment = $segment -replace '(?<!\\)\{', '\{'
                 $segment = $segment -replace '(?<!\\)\}', '\}'
-                
+
                 # Escape < that is NOT starting an HTML/JSX tag
                 # (not followed by letter, /, or !)
                 $segment = $segment -replace '(?<!\\)<(?![A-Za-z/!])', '\<'
-                
+
                 # Escape > that is NOT ending an HTML/JSX tag
                 # Don't escape if preceded by: letter, digit, quote, slash, or whitespace (typical tag endings)
                 $segment = $segment -replace '(?<![A-Za-z0-9"''/\s])(?<!\\)>', '\>'
-                
+
                 $processedLine += $segment
             }
         }
-        
+
         $line = $processedLine
-        
+
         $line = $processedLine
-        
+
         $result += $line
     }
-    
+
     return $result
 }
 
 # Function to remove trailing whitespace
 function Remove-TrailingWhitespace {
     param([string[]]$Lines)
-    
+
     $result = @()
     foreach ($line in $Lines) {
         $result += $line.TrimEnd()
@@ -264,14 +264,14 @@ function Remove-TrailingWhitespace {
 # Function to remove consecutive blank lines (keep only one)
 function Remove-ConsecutiveBlankLines {
     param([string[]]$Lines)
-    
+
     $result = @()
     $previousLineWasBlank = $false
-    
+
     for ($i = 0; $i -lt $Lines.Count; $i++) {
         $line = $Lines[$i]
         $isBlank = [string]::IsNullOrWhiteSpace($line)
-        
+
         if ($isBlank) {
             # Only add blank line if previous wasn't blank
             if (-not $previousLineWasBlank) {
@@ -284,24 +284,24 @@ function Remove-ConsecutiveBlankLines {
             $previousLineWasBlank = $false
         }
     }
-    
+
     return $result
 }
 
 # Function to ensure exactly one blank line at end of file
 function Repair-FileEnding {
     param([string[]]$Lines)
-    
+
     if ($Lines.Count -eq 0) {
         return @()
     }
-    
+
     # Check if this is a redirect-only file
     $isRedirectOnly = $false
     if ($Lines.Count -le 5 -and ($Lines -join "`n") -match 'redirect_url:') {
         $inFrontmatter = $false
         $hasOtherContent = $false
-        
+
         for ($i = 0; $i -lt $Lines.Count; $i++) {
             if ($i -eq 0 -and $Lines[$i] -eq '---') {
                 $inFrontmatter = $true
@@ -318,17 +318,17 @@ function Repair-FileEnding {
                 break
             }
         }
-        
+
         if (-not $hasOtherContent) {
             $isRedirectOnly = $true
         }
     }
-    
+
     # Skip redirect-only files
     if ($isRedirectOnly) {
         return $Lines
     }
-    
+
     # Remove all trailing blank lines
     # WriteAllLines adds a final newline, so we don't include any blank lines at the end
     $lastNonBlankIndex = -1
@@ -338,18 +338,18 @@ function Repair-FileEnding {
             break
         }
     }
-    
+
     # If all lines are blank, return empty array
     if ($lastNonBlankIndex -eq -1) {
         return @()
     }
-    
+
     # Return content up to last non-blank line (WriteAllLines will add final newline)
     $result = @()
     for ($i = 0; $i -le $lastNonBlankIndex; $i++) {
         $result += $Lines[$i]
     }
-    
+
     return $result
 }
 
@@ -359,30 +359,30 @@ function Update-ImportStatements {
         [string]$OldPath,
         [string]$NewPath
     )
-    
+
     $oldFileName = [System.IO.Path]::GetFileNameWithoutExtension($OldPath)
     $oldExt = [System.IO.Path]::GetExtension($OldPath)
     $newExt = [System.IO.Path]::GetExtension($NewPath)
-    
+
     # Only update if extension changed
     if ($oldExt -eq $newExt) {
         return
     }
-    
+
     # Find all files that might import this
     $searchPath = Split-Path -Parent $OldPath
     $parentPath = Split-Path -Parent $searchPath
     $allFiles = Get-ChildItem -Path $parentPath -Include "*.md", "*.mdx" -Recurse -File
-    
+
     $updatedCount = 0
-    
+
     foreach ($file in $allFiles) {
         $content = [System.IO.File]::ReadAllText($file.FullName)
-        
+
         if ([string]::IsNullOrWhiteSpace($content)) {
             continue
         }
-        
+
         # Check for import of this file with old extension
         $pattern = "(import\s+\w+\s+from\s+[""'].*/$oldFileName)$oldExt([""'])"
         if ($content -match $pattern) {
@@ -394,7 +394,7 @@ function Update-ImportStatements {
             $updatedCount++
         }
     }
-    
+
     return $updatedCount
 }
 
@@ -414,12 +414,12 @@ foreach ($file in $files) {
     $originalContent = $content
     $needsRename = $false
     $changes = @()
-    
+
     # Check if needs mdx conversion
     if ($file.Extension -eq '.md' -and (Test-NeedsMdxConversion -Lines $content)) {
         $needsRename = $true
     }
-    
+
     # Repair <br> tags
     $newContent = Repair-BrTags -Lines $content
     if (($newContent -join "`n") -ne ($content -join "`n")) {
@@ -427,7 +427,7 @@ foreach ($file in $files) {
         $changes += "Fixed <br> tags"
         $fixedBrTags++
     }
-    
+
     # Convert Unicode characters
     $text = $content -join "`n"
     $newText = Convert-UnicodeCharacters -Text $text
@@ -436,7 +436,7 @@ foreach ($file in $files) {
         $changes += "Fixed Unicode characters"
         $fixedUnicode++
     }
-    
+
     # Protect MDX special characters (escape curly braces, angle brackets)
     $newContent = Protect-MdxCharacters -Lines $content
     if (($newContent -join "`n") -ne ($content -join "`n")) {
@@ -444,7 +444,7 @@ foreach ($file in $files) {
         $changes += "Escaped MDX special characters"
         $fixedMdxChars++
     }
-    
+
     # Remove trailing whitespace
     $newContent = Remove-TrailingWhitespace -Lines $content
     if (($newContent -join "`n") -ne ($content -join "`n")) {
@@ -452,7 +452,7 @@ foreach ($file in $files) {
         $changes += "Removed trailing whitespace"
         $fixedWhitespace++
     }
-    
+
     # Remove consecutive blank lines
     $newContent = Remove-ConsecutiveBlankLines -Lines $content
     if (($newContent -join "`n") -ne ($content -join "`n")) {
@@ -460,7 +460,7 @@ foreach ($file in $files) {
         $changes += "Removed consecutive blank lines"
         $fixedBlankLines++
     }
-    
+
     # Ensure exactly one blank line at end of file
     $newContent = Repair-FileEnding -Lines $content
     if (($newContent -join "`n") -ne ($content -join "`n")) {
@@ -468,32 +468,32 @@ foreach ($file in $files) {
         $changes += "Fixed file ending"
         $fixedEndings++
     }
-    
+
     # Save if modified
     $modified = ($content -join "`n") -ne ($originalContent -join "`n")
-    
+
     if ($modified -or $needsRename) {
         Write-Host "`n$($file.Name)" -ForegroundColor Yellow
-        
+
         # Save changes
         $utf8 = New-Object System.Text.UTF8Encoding $false
         [System.IO.File]::WriteAllLines($file.FullName, $content, $utf8)
-        
+
         foreach ($change in $changes) {
             Write-Host "  - $change" -ForegroundColor Green
         }
-        
+
         $processedFiles++
-        
+
         # Rename to .mdx if needed
         if ($needsRename) {
             $newPath = [System.IO.Path]::ChangeExtension($file.FullName, '.mdx')
-            
+
             # Update import statements if in includes folder
             if ($file.DirectoryName -match 'includes$') {
                 Update-ImportStatements -OldPath $file.FullName -NewPath $newPath | Out-Null
             }
-            
+
             # Rename (moves the file)
             Move-Item -Path $file.FullName -Destination $newPath -Force
             Write-Host "  - Converted to .mdx" -ForegroundColor Green

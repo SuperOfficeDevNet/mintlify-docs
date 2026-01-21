@@ -71,10 +71,36 @@ param(
     [string]$OutputFile = ""
 )
 
-# Resolve TocPath - if it's a directory, append toc.yml
+# Resolve TocPath - if it's a directory, find toc.yml
 if (Test-Path $TocPath -PathType Container) {
-    $TocPath = Join-Path $TocPath "toc.yml"
-    Write-Host "Resolved to: $TocPath" -ForegroundColor DarkGray
+    $dirPath = $TocPath
+    $langFolders = @('no', 'sv', 'da', 'de', 'nl')
+    $folderName = Split-Path -Leaf $dirPath
+
+    # For non-English language folders, look in learn subfolder
+    if ($langFolders -contains $folderName) {
+        $learnToc = Join-Path $dirPath "learn\toc.yml"
+        if (Test-Path $learnToc) {
+            $TocPath = $learnToc
+            Write-Host "Found language folder TOC: $TocPath" -ForegroundColor DarkGray
+        }
+        else {
+            Write-Error "TOC file not found at expected location: $learnToc"
+            exit 1
+        }
+    }
+    else {
+        # For English or other folders, look for toc.yml in root
+        $rootToc = Join-Path $dirPath "toc.yml"
+        if (Test-Path $rootToc) {
+            $TocPath = $rootToc
+            Write-Host "Resolved to: $TocPath" -ForegroundColor DarkGray
+        }
+        else {
+            Write-Error "TOC file not found: $rootToc"
+            exit 1
+        }
+    }
 }
 
 if (-not (Test-Path $TocPath)) {
@@ -99,6 +125,25 @@ if ([string]::IsNullOrWhiteSpace($BasePath)) {
 }
 
 
+function Resolve-RelativePath {
+    param([string]$Path)
+
+    $parts = $Path -split '[/\\]'
+    $resolved = [System.Collections.ArrayList]@()
+
+    foreach ($part in $parts) {
+        if ($part -eq '..') {
+            if ($resolved.Count -gt 0) {
+                $resolved.RemoveAt($resolved.Count - 1)
+            }
+        } elseif ($part -and $part -ne '.') {
+            [void]$resolved.Add($part)
+        }
+    }
+
+    return $resolved -join '/'
+}
+
 function Convert-YamlPath {
     param([string]$href)
 
@@ -111,7 +156,24 @@ function Convert-YamlPath {
         return $null
     }
 
-    # Clean up path - remove extension, normalize slashes
+    # Check if this is a .yml landing page that has been converted to .mdx
+    if ($href -match '\.yml$') {
+        # Convert href to file path to check if .mdx exists
+        $basePath = if ($BasePath) { $BasePath -replace '\\', '/' } else { '' }
+        $checkPath = if ($basePath) { "$basePath/$href" } else { $href }
+        $checkPath = $checkPath -replace '^/', '' -replace '\\', '/'
+        $mdxPath = ($checkPath -replace '\.yml$', '.mdx') -replace '/', '\'
+
+        if (Test-Path $mdxPath) {
+            # .mdx file exists, remove .yml extension so it references the .mdx
+            $href = $href -replace '\.yml$', ''
+        } else {
+            # .mdx doesn't exist, keep .yml as-is (will be converted later)
+            # No change to $href
+        }
+    }
+
+    # Clean up path - remove .md extension, normalize slashes
     $path = $href -replace '\.md$', '' -replace '^/', '' -replace '\\', '/'
 
     # Add base path if provided
@@ -119,6 +181,9 @@ function Convert-YamlPath {
         $cleanBase = $BasePath -replace '\\', '/'
         $path = "$cleanBase/$path" -replace '//', '/'
     }
+
+    # Resolve relative paths (../) using proper normalization
+    $path = Resolve-RelativePath $path
 
     return $path
 }
@@ -142,7 +207,9 @@ function Expand-NestedToc {
         return @()
     }
 
-    $lines = Get-Content $TocPath
+    # Use ReadAllLines to preserve UTF-8 encoding (Norwegian characters)
+    # Wrap in @() to convert to PowerShell array for proper .Count behavior
+    $lines = @([System.IO.File]::ReadAllLines($TocPath))
     $tocDir = Split-Path -Parent $TocPath
     $relativePrefix = if ($ParentDir) {
         # Calculate relative path manually (PS 5.1 doesn't have GetRelativePath)
@@ -366,7 +433,9 @@ function Expand-NestedToc {
 function Read-YamlFile {
     param([string]$FilePath)
 
-    $lines = Get-Content $FilePath
+    # Use ReadAllLines to preserve UTF-8 encoding (Norwegian characters)
+    # Wrap in @() to convert to PowerShell array for proper .Count behavior
+    $lines = @([System.IO.File]::ReadAllLines($FilePath))
     $result = @()
 
     for ($i = 0; $i -lt $lines.Count; $i++) {
@@ -602,7 +671,9 @@ if ($env:DEBUG_TOC_EXPANDED) {
 }
 
 # Parse the expanded YAML
+Write-Host "DEBUG: About to parse YAML from: $tempTocPath" -ForegroundColor Yellow
 $items = Read-YamlFile $tempTocPath
+Write-Host "DEBUG: Parsed items count: $($items.Count)" -ForegroundColor Yellow
 
 # Clean up temp file
 Remove-Item $tempTocPath -Force
@@ -625,12 +696,35 @@ foreach ($item in $items) {
 
 Write-Host "Created $($groups.Count) groups" -ForegroundColor Cyan
 
+# Detect if we're processing a language folder
+$langFolders = @('no', 'sv', 'da', 'de', 'nl')
+$tocBaseDir = Split-Path -Parent $TocPath
+$folderName = Split-Path -Leaf (Split-Path -Parent $tocBaseDir)  # Get parent of 'learn' folder
+$isLanguageFolder = $langFolders -contains $folderName
+
 # Create output based on type
 if ($OutputType -eq "Tab") {
     # Auto-generate TabName from first item if not provided
     if ([string]::IsNullOrWhiteSpace($TabName)) {
         if ($items.Count -gt 0 -and $items[0].name) {
-            $TabName = $items[0].name
+            # Check if this is a language folder and use proper translation for "User Guide"
+            if ($isLanguageFolder -and $items[0].name -match '^(Oversikt|Overview|Übersicht|Overzicht|Översikt)$') {
+                $userGuideTranslations = @{
+                    'no' = 'Brukerveiledning'
+                    'da' = 'Brugervejledning'
+                    'sv' = 'Användarguide'
+                    'de' = 'Benutzerleitfaden'
+                    'nl' = 'Handleidingen'
+                }
+                if ($userGuideTranslations.ContainsKey($folderName)) {
+                    $TabName = $userGuideTranslations[$folderName]
+                    Write-Host "Using translated tab name for ${folderName}: $TabName" -ForegroundColor DarkGray
+                } else {
+                    $TabName = $items[0].name
+                }
+            } else {
+                $TabName = $items[0].name
+            }
             Write-Host "Auto-detected TabName: $TabName" -ForegroundColor DarkGray
         }
         else {
@@ -640,11 +734,26 @@ if ($OutputType -eq "Tab") {
     }
 
     # Use ordered hashtable to maintain property order (Mintlify convention)
-    $output = [ordered]@{
+    $tabStructure = [ordered]@{
         tab = $TabName
         icon = $TabIcon
         groups = $groups
     }
+
+    # If processing a language folder, wrap in language object
+    if ($isLanguageFolder) {
+        Write-Host "Detected language folder: $folderName - wrapping in language object" -ForegroundColor Cyan
+        $output = [ordered]@{
+            language = $folderName
+            tabs = @($tabStructure)
+        }
+        Write-Host "DEBUG: Created output with language wrapper" -ForegroundColor Yellow
+    }
+    else {
+        $output = $tabStructure
+        Write-Host "DEBUG: Created tab structure output" -ForegroundColor Yellow
+    }
+    Write-Host "DEBUG: Output is null: $($null -eq $output)" -ForegroundColor Yellow
 }
 elseif ($OutputType -eq "Groups") {
     # Output the groups array
@@ -752,18 +861,70 @@ function Remove-DuplicatesFromStructure {
 }
 
 # Remove any duplicate entries from the output structure
-$output = Remove-DuplicatesFromStructure $output
+# Wrap in try-catch because deduplication can fail on complex nested structures
+Write-Host "DEBUG: Before deduplication - output is null: $($null -eq $output)" -ForegroundColor Yellow
+try {
+    $deduplicated = Remove-DuplicatesFromStructure $output
+    if ($null -ne $deduplicated) {
+        $output = $deduplicated
+        Write-Host "DEBUG: After deduplication - success" -ForegroundColor Yellow
+    } else {
+        Write-Host "DEBUG: Deduplication returned null, keeping original output" -ForegroundColor Yellow
+    }
+} catch {
+    Write-Host "DEBUG: Deduplication failed: $_" -ForegroundColor Red
+    Write-Verbose "Deduplication failed, using original output: $_"
+}
 
 # Convert to JSON
-$json = $output | ConvertTo-Json -Depth 20
+Write-Host "DEBUG: Converting to JSON - output is null: $($null -eq $output)" -ForegroundColor Yellow
+$json = $output | ConvertTo-Json -Depth 20 -Compress
+Write-Host "DEBUG: JSON length: $($json.Length)" -ForegroundColor Yellow
+
+# Pretty-print with consistent 4-space indentation
+$indent = 0
+$prettyJson = ""
+$inString = $false
+$escaped = $false
+
+for ($i = 0; $i -lt $json.Length; $i++) {
+    $char = $json[$i]
+
+    # Track if we're inside a string
+    if ($char -eq '"' -and -not $escaped) {
+        $inString = -not $inString
+        $prettyJson += $char
+    }
+    elseif ($inString) {
+        $prettyJson += $char
+        $escaped = ($char -eq '\' -and -not $escaped)
+    }
+    elseif ($char -eq '{' -or $char -eq '[') {
+        $prettyJson += $char + "`n" + (' ' * 4 * ++$indent)
+    }
+    elseif ($char -eq '}' -or $char -eq ']') {
+        $prettyJson += "`n" + (' ' * 4 * --$indent) + $char
+    }
+    elseif ($char -eq ',') {
+        $prettyJson += $char + "`n" + (' ' * 4 * $indent)
+    }
+    elseif ($char -eq ':') {
+        $prettyJson += $char + ' '
+    }
+    elseif ($char -ne ' ' -or $json[$i-1] -ne ':') {
+        $prettyJson += $char
+    }
+}
 
 # Write to file (always write to file now, OutputFile is auto-generated if not specified)
 # Use UTF8 without BOM for consistency (PS 5.1 adds BOM with -Encoding UTF8)
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
-[System.IO.File]::WriteAllText($OutputFile, $json, $utf8NoBom)
+[System.IO.File]::WriteAllText($OutputFile, $prettyJson, $utf8NoBom)
 Write-Host "Converted to Mintlify format: $OutputFile" -ForegroundColor Green
 
 # Delete all toc.yml files in the processed directory tree after successful conversion
+# COMMENTED OUT FOR DEBUGGING - uncomment when ready to clean up
+<#
 Write-Host "Cleaning up toc.yml files..." -ForegroundColor Cyan
 $tocBaseDir = Split-Path -Parent $TocPath
 $allTocFiles = Get-ChildItem -Path $tocBaseDir -Filter "toc.yml" -Recurse -File
@@ -776,6 +937,7 @@ foreach ($tocFile in $allTocFiles) {
 }
 
 Write-Host "Deleted $deletedCount toc.yml file(s)" -ForegroundColor Green
+#>
 
 # Check and fix BOM in docs.json if this conversion modified it
 if (Test-Path "$PSScriptRoot\..\docs.json") {

@@ -10,7 +10,7 @@
        - For docs.superoffice.com: just deletes (redirect_from handles it)
     2. Processes redirect_from frontmatter and adds entries to docs.json
        - Supports both string and array formats
-    
+
     Also performs validation and cleanup:
     - Cleans up empty directories after file deletion
     - Prevents duplicate redirect entries
@@ -87,9 +87,9 @@ $navigationPages = [System.Collections.Generic.HashSet[string]]::new()
 
 function Get-PagesFromNavigation {
     param($navObject)
-    
+
     if ($null -eq $navObject) { return }
-    
+
     # Handle different navigation structures
     if ($navObject.PSObject.Properties.Name -contains 'pages') {
         foreach ($page in $navObject.pages) {
@@ -98,7 +98,7 @@ function Get-PagesFromNavigation {
             }
         }
     }
-    
+
     # Recurse into nested structures
     foreach ($prop in $navObject.PSObject.Properties) {
         $value = $prop.Value
@@ -120,7 +120,7 @@ if ($docsJson.PSObject.Properties.Name -contains 'navigation') {
 
 function Get-FilePathRelativeToRoot {
     param([string]$filePath)
-    
+
     $relativePath = $filePath.Replace($repoRoot, '').TrimStart('\', '/')
     $relativePath = $relativePath -replace '\\', '/'
     # Strip .md/.mdx extension
@@ -130,7 +130,7 @@ function Get-FilePathRelativeToRoot {
 
 function Test-RedirectExists {
     param([string]$source, [string]$destination)
-    
+
     foreach ($redirect in $redirectsList) {
         if ($redirect.source -eq $source -and $redirect.destination -eq $destination) {
             return $true
@@ -141,25 +141,31 @@ function Test-RedirectExists {
 
 function Add-Redirect {
     param([string]$source, [string]$destination)
-    
+
+    # Validate source is not empty
+    if ([string]::IsNullOrWhiteSpace($source)) {
+        Write-Verbose "  Skipping redirect with empty source"
+        return $false
+    }
+
     # Check if exact same redirect already exists
     if (Test-RedirectExists -source $source -destination $destination) {
         return $false
     }
-    
+
     # Check for A->A loop
     if ($source -eq $destination) {
         $script:warnings += "Loop detected: $source -> $destination (skipped)"
         return $false
     }
-    
+
     # Check if source already exists with different destination
     $existingRedirect = $redirectsList | Where-Object { $_.source -eq $source } | Select-Object -First 1
     if ($existingRedirect) {
         $existingDest = $existingRedirect.destination
         $isNewExternal = $destination -match '^https?://'
         $isExistingExternal = $existingDest -match '^https?://'
-        
+
         # Apply precedence rules
         if ($isNewExternal -and -not $isExistingExternal) {
             # New external URL overrides existing internal path
@@ -178,24 +184,24 @@ function Add-Redirect {
             return $false
         }
     }
-    
+
     # Check if source exists in navigation pages
     if ($navigationPages.Contains($source)) {
         $script:warnings += "Source exists in navigation: $source (should be removed from pages array)"
     }
-    
+
     # Add redirect (source before destination per Mintlify convention)
-    $redirectsList.Add([ordered]@{
+    $redirectsList.Add([PSCustomObject]@{
         source = $source
         destination = $destination
     }) | Out-Null
-    
+
     return $true
 }
 
 function Test-EmptyDirectory {
     param([string]$dirPath)
-    
+
     $items = Get-ChildItem -Path $dirPath -Force
     return $items.Count -eq 0
 }
@@ -208,29 +214,29 @@ Write-Host "Found $($files.Count) markdown files" -ForegroundColor Cyan
 
 foreach ($file in $files) {
     $content = Get-Content $file.FullName -Raw
-    
+
     # Check for frontmatter (handle both \r\n and \n)
     if ($content -notmatch '(?s)^---\s*[\r\n]+(.*?)[\r\n]+---') {
         continue
     }
-    
+
     $frontmatter = $matches[1]
     $hasRedirectUrl = $false
     $hasRedirectFrom = $false
     $redirectUrl = $null
     $redirectFromValues = @()
-    
+
     # Parse frontmatter line by line
     $frontmatterLines = $frontmatter -split '\r?\n'
     $inRedirectFrom = $false
-    
+
     foreach ($line in $frontmatterLines) {
         # Check for redirect_url
         if ($line -match '^\s*redirect_url\s*:\s*(.+)$') {
             $hasRedirectUrl = $true
             $redirectUrl = $matches[1].Trim().Trim('"', '''')
         }
-        
+
         # Check for redirect_from (string)
         if ($line -match '^\s*redirect_from\s*:\s*(.+)$') {
             $hasRedirectFrom = $true
@@ -240,45 +246,45 @@ foreach ($file in $files) {
             }
             $inRedirectFrom = $false
         }
-        
+
         # Check for redirect_from (array start)
         if ($line -match '^\s*redirect_from\s*:\s*$') {
             $hasRedirectFrom = $true
             $inRedirectFrom = $true
         }
-        
+
         # Array item
         if ($inRedirectFrom -and $line -match '^\s*-\s*(.+)$') {
             $value = $matches[1].Trim().Trim('"', '''')
             $redirectFromValues += $value
         }
     }
-    
+
     # Handle redirect_url files (delete them)
     if ($hasRedirectUrl) {
         $isExternal = $redirectUrl -notmatch 'docs\.superoffice\.com'
-        
+
         if ($isExternal) {
             # Add redirect to docs.json for external domains
             $source = Get-FilePathRelativeToRoot -filePath $file.FullName
             $destination = $redirectUrl
-            
+
             if (Add-Redirect -source $source -destination $destination) {
                 $redirectsAdded++
                 Write-Host "  External redirect: $source -> $destination" -ForegroundColor Yellow
             }
         }
-        
+
         # Delete the file
         Remove-Item $file.FullName -Force
         $filesDeleted++
         Write-Verbose "  Deleted: $($file.Name)"
     }
-    
+
     # Handle redirect_from (add to docs.json)
     if ($hasRedirectFrom -and $redirectFromValues.Count -gt 0) {
         $destination = Get-FilePathRelativeToRoot -filePath $file.FullName
-        
+
         foreach ($source in $redirectFromValues) {
             if (Add-Redirect -source $source -destination $destination) {
                 $redirectsAdded++
@@ -309,12 +315,12 @@ foreach ($redirect in $redirectsList) {
 foreach ($redirect in $redirectsList) {
     $source = $redirect.source
     $dest = $redirect.destination
-    
+
     # Check for A->B->A
     if ($redirectMap.ContainsKey($dest) -and $redirectMap[$dest] -eq $source) {
         $warnings += "Circular redirect detected: $source <-> $dest"
     }
-    
+
     # Warn about A->B->C chains
     if ($redirectMap.ContainsKey($dest) -and $redirectMap[$dest] -ne $source) {
         $nextDest = $redirectMap[$dest]
@@ -328,9 +334,13 @@ $sourceCounts = $redirectsList | Group-Object -Property source | Where-Object { 
 if ($sourceCounts) {
     Write-Host "`nERROR: Duplicate sources found in redirects array:" -ForegroundColor Red
     foreach ($duplicate in $sourceCounts) {
-        Write-Host "  $($duplicate.Name) appears $($duplicate.Count) times:" -ForegroundColor Red
-        $redirectsList | Where-Object { $_.source -eq $duplicate.Name } | ForEach-Object {
+        $sourceName = if ([string]::IsNullOrWhiteSpace($duplicate.Name)) { "(empty/whitespace)" } else { $duplicate.Name }
+        Write-Host "  '$sourceName' appears $($duplicate.Count) times:" -ForegroundColor Red
+        $redirectsList | Where-Object { $_.source -eq $duplicate.Name } | Select-Object -First 5 | ForEach-Object {
             Write-Host "    -> $($_.destination)" -ForegroundColor Yellow
+        }
+        if ($duplicate.Count -gt 5) {
+            Write-Host "    ... and $($duplicate.Count - 5) more" -ForegroundColor Gray
         }
     }
     Write-Host "`nPlease resolve duplicate sources before proceeding." -ForegroundColor Red
@@ -347,6 +357,9 @@ if ($hasRedirects) {
 $docsJsonContent = $docsJson | ConvertTo-Json -Depth 100
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
 [System.IO.File]::WriteAllText($docsJsonPath, $docsJsonContent, $utf8NoBom)
+
+# Check and fix BOM in docs.json
+& "$PSScriptRoot\check-bom.ps1" -Path $docsJsonPath -RemoveBOM | Out-Null
 
 # Report
 Write-Host "`nComplete!" -ForegroundColor Green

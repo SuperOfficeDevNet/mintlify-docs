@@ -10,14 +10,15 @@
     3. Convert callouts
     4. Convert videos
     5. Convert tabs
-    6. Convert includes
-    7. Inline code snippets
-    8. Inline mermaid diagrams
-    9. Convert links (strip .md/.mdx extensions)
-    10. Convert YAML landing pages to MDX with language-specific labels
-    11. Sanitize markup (br tags, unicode, whitespace, .md→.mdx)
-    12. Add sidebar titles
-    13. Process redirects (delete redirect_url files, update docs.json)
+    6. Convert details/summary to accordions
+    7. Convert includes
+    8. Inline code snippets
+    9. Inline mermaid diagrams
+    10. Convert links (strip .md/.mdx extensions)
+    11. Convert YAML landing pages to MDX with language-specific labels
+    12. Sanitize markup (br tags, unicode, whitespace, .md→.mdx)
+    13. Add sidebar titles
+    14. Process redirects (delete redirect_url files, update docs.json)
     (Future: Update TOC/navigation)
 
 .PARAMETER Path
@@ -42,7 +43,7 @@
 param(
     [Parameter(Mandatory=$true, Position=0)]
     [string]$Path,
-    
+
     [Parameter(Mandatory=$false)]
     [switch]$SkipToc
 )
@@ -67,6 +68,7 @@ $scripts = @(
     @{ Name = "convert-callouts.ps1"; Description = "Converting callouts" }
     @{ Name = "convert-videos.ps1"; Description = "Converting video embeds" }
     @{ Name = "convert-tabs.ps1"; Description = "Converting tabs" }
+    @{ Name = "convert-details.ps1"; Description = "Converting details to accordions" }
     @{ Name = "convert-includes.ps1"; Description = "Converting includes" }
     @{ Name = "inline-code.ps1"; Description = "Inlining code snippets" }
     @{ Name = "inline-mermaid.ps1"; Description = "Inlining mermaid diagrams" }
@@ -94,7 +96,7 @@ if (-not $SkipToc) {
     Write-Host "---------------------------------------------------------" -ForegroundColor DarkGray
     Write-Host "> Step 0: Converting TOC to Mintlify navigation" -ForegroundColor Cyan
     Write-Host "---------------------------------------------------------" -ForegroundColor DarkGray
-    
+
     $tocScript = Join-Path $toolsDir "convert-toc-to-mintlify.ps1"
     try {
         & $tocScript $Path
@@ -116,21 +118,21 @@ for ($i = 0; $i -lt $scripts.Count; $i++) {
     $script = $scripts[$i]
     $stepNum = $i + 1
     $scriptPath = Join-Path $toolsDir $script.Name
-    
+
     Write-Host "---------------------------------------------------------" -ForegroundColor DarkGray
     Write-Host "> Step $stepNum/$($scripts.Count): $($script.Description)" -ForegroundColor Cyan
     Write-Host "---------------------------------------------------------" -ForegroundColor DarkGray
-    
+
     if (-not (Test-Path $scriptPath)) {
         Write-Warning "Script not found: $($script.Name)"
         $failedScripts += $script.Name
         Write-Host ""
         continue
     }
-    
+
     try {
         $output = & $scriptPath $Path 2>&1
-        
+
         if ($LASTEXITCODE -eq 0 -or $null -eq $LASTEXITCODE) {
             # Show the output from the script
             $output | Write-Host
@@ -147,7 +149,7 @@ for ($i = 0; $i -lt $scripts.Count; $i++) {
         Write-Error "Failed to run $($script.Name): $_"
         $failedScripts += $script.Name
     }
-    
+
     Write-Host ""
 }
 
@@ -172,6 +174,12 @@ if ($failedScripts.Count -gt 0) {
 }
 else {
     Write-Host "`n* All migration steps completed successfully!" -ForegroundColor Green
+
+    # Final BOM check on docs.json
+    Write-Host ""
+    Write-Host "Checking docs.json for BOM..." -ForegroundColor Cyan
+    & "$toolsDir\check-bom.ps1" -Path "$repoRoot\docs.json" -RemoveBOM
+
     Write-Host ""
     Write-Host "Next steps:" -ForegroundColor Cyan
     Write-Host "  1. Review the changes" -ForegroundColor White

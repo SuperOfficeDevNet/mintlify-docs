@@ -8,6 +8,7 @@
     - Converts md to mdx when needed (multiple block quotes)
     - Fixes unclosed <br> tags (context-aware: quotes vs tables)
     - Replaces Unicode quotes, dashes, and invisible characters
+    - Escapes MDX special characters ({ } < >) while preserving JSX components, code blocks, and inline code
     - Removes trailing whitespace
     - Removes consecutive blank lines (keeps only one)
     - Cleans up frontmatter spacing
@@ -24,6 +25,11 @@
     - Modifies files in place
     - Uses UTF-8 without BOM encoding
     - Updates import statements when renaming files in includes folders
+    - Escapes curly braces and angle brackets in plain text but preserves them in:
+      * Code blocks (triple backticks)
+      * Inline code (single backticks)
+      * JSX/MDX component tags
+      * Already-escaped sequences
 #>
 
 param(
@@ -199,17 +205,44 @@ function Protect-MdxCharacters {
         }
         
         # For all other lines, escape curly braces and standalone angle brackets
-        # Escape { and }
-        $line = $line -replace '(?<!\\)\{', '\{'
-        $line = $line -replace '(?<!\\)\}', '\}'
+        # BUT preserve inline code (content between backticks)
+        # Split on backticks to find inline code segments
+        $segments = $line -split '(`)'
+        $processedLine = ''
+        $inInlineCode = $false
         
-        # Escape < that is NOT starting an HTML/JSX tag
-        # (not followed by letter, /, or !)
-        $line = $line -replace '(?<!\\)<(?![A-Za-z/!])', '\<'
+        for ($j = 0; $j -lt $segments.Length; $j++) {
+            $segment = $segments[$j]
+            
+            if ($segment -eq '`') {
+                # Toggle inline code state
+                $inInlineCode = -not $inInlineCode
+                $processedLine += $segment
+            }
+            elseif ($inInlineCode) {
+                # Inside inline code - don't escape
+                $processedLine += $segment
+            }
+            else {
+                # Outside inline code - escape curly braces and angle brackets
+                $segment = $segment -replace '(?<!\\)\{', '\{'
+                $segment = $segment -replace '(?<!\\)\}', '\}'
+                
+                # Escape < that is NOT starting an HTML/JSX tag
+                # (not followed by letter, /, or !)
+                $segment = $segment -replace '(?<!\\)<(?![A-Za-z/!])', '\<'
+                
+                # Escape > that is NOT ending an HTML/JSX tag
+                # Don't escape if preceded by: letter, digit, quote, slash, or whitespace (typical tag endings)
+                $segment = $segment -replace '(?<![A-Za-z0-9"''/\s])(?<!\\)>', '\>'
+                
+                $processedLine += $segment
+            }
+        }
         
-        # Escape > that is NOT ending an HTML/JSX tag
-        # (not preceded by tag-like content - look for letter/digit/"/' before it)
-        $line = $line -replace '(?<![A-Za-z0-9"''\s])(?<!\\)>', '\>'
+        $line = $processedLine
+        
+        $line = $processedLine
         
         $result += $line
     }
@@ -371,6 +404,7 @@ $processedFiles = 0
 $renamedFiles = 0
 $fixedBrTags = 0
 $fixedUnicode = 0
+$fixedMdxChars = 0
 $fixedWhitespace = 0
 $fixedBlankLines = 0
 $fixedEndings = 0
@@ -401,6 +435,14 @@ foreach ($file in $files) {
         $content = $newText -split "`n"
         $changes += "Fixed Unicode characters"
         $fixedUnicode++
+    }
+    
+    # Protect MDX special characters (escape curly braces, angle brackets)
+    $newContent = Protect-MdxCharacters -Lines $content
+    if (($newContent -join "`n") -ne ($content -join "`n")) {
+        $content = $newContent
+        $changes += "Escaped MDX special characters"
+        $fixedMdxChars++
     }
     
     # Remove trailing whitespace
@@ -470,6 +512,9 @@ if ($fixedBrTags -gt 0) {
 }
 if ($fixedUnicode -gt 0) {
     Write-Host "  Files with fixed Unicode: $fixedUnicode" -ForegroundColor Cyan
+}
+if ($fixedMdxChars -gt 0) {
+    Write-Host "  Files with escaped MDX characters: $fixedMdxChars" -ForegroundColor Cyan
 }
 if ($fixedWhitespace -gt 0) {
     Write-Host "  Files with fixed whitespace: $fixedWhitespace" -ForegroundColor Cyan

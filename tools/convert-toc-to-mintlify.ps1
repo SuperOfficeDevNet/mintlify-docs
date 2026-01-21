@@ -1,4 +1,4 @@
-#!/usr/bin/env pwsh
+﻿#!/usr/bin/env pwsh
 <#
 .SYNOPSIS
     Converts a DocFx toc.yml file to Mintlify navigation JSON format.
@@ -759,22 +759,10 @@ if ($OutputType -eq "Tab") {
     # Auto-generate TabName from first item if not provided
     if ([string]::IsNullOrWhiteSpace($TabName)) {
         if ($items.Count -gt 0 -and $items[0].name) {
-            # Check if first item is generic (Overview, Introduction, etc.)
-            $genericNames = @('Overview', 'Introduction', 'Oversikt', 'Übersicht', 'Overzicht', 'Översikt', 'Introduktion', 'Einführung', 'Inleiding')
             $firstItemName = $items[0].name
 
-            # If first item is generic, try to use folder name instead
-            if ($genericNames -contains $firstItemName) {
-                # Get the folder name (e.g., "integrations" from "integrations/toc.yml")
-                $folderPath = Split-Path -Parent $TocPath
-                $folderBaseName = Split-Path -Leaf $folderPath
-
-                # Capitalize first letter for display
-                $TabName = (Get-Culture).TextInfo.ToTitleCase($folderBaseName)
-                Write-Host "First item is generic ('$firstItemName'), using folder name: $TabName" -ForegroundColor DarkGray
-            }
-            # Check if this is a language folder and use proper translation for "User Guide"
-            elseif ($isLanguageFolder -and $firstItemName -match '^(Oversikt|Overview|Übersicht|Overzicht|Översikt)$') {
+            # For language folders, always use the proper translation for "User Guide"
+            if ($isLanguageFolder) {
                 $userGuideTranslations = @{
                     'no' = 'Brukerveiledning'
                     'da' = 'Brugervejledning'
@@ -788,6 +776,16 @@ if ($OutputType -eq "Tab") {
                 } else {
                     $TabName = $firstItemName
                 }
+            }
+            # Check if first item is generic (Overview, Introduction, etc.)
+            elseif ($firstItemName -match '(?i)^(overview|introduction|oversikt|übersicht|overzicht|översikt|introduktion|einführung|inleiding)$') {
+                # Get the folder name (e.g., "integrations" from "integrations/toc.yml")
+                $folderPath = Split-Path -Parent $TocPath
+                $folderBaseName = Split-Path -Leaf $folderPath
+
+                # Capitalize first letter for display
+                $TabName = (Get-Culture).TextInfo.ToTitleCase($folderBaseName)
+                Write-Host "First item is generic ('$firstItemName'), using folder name: $TabName" -ForegroundColor DarkGray
             } else {
                 $TabName = $firstItemName
             }

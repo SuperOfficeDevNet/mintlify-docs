@@ -1,4 +1,4 @@
-#!/usr/bin/env pwsh
+﻿#!/usr/bin/env pwsh
 <#
 .SYNOPSIS
     Converts DocFx YAML landing pages to Mintlify MDX format.
@@ -259,7 +259,7 @@ function New-Frontmatter {
     $frontmatter += "mode: `"custom`"`n"
     $frontmatter += "title: $title`n"
     $frontmatter += "sidebarTitle: `"$sidebarTitle`"`n"
-    $frontmatter += "description: $description`n"
+    $frontmatter += "description: `"$description`"`n"
     $frontmatter += "author: $author`n"
     $frontmatter += "date: $currentDate`n"
     $frontmatter += "language: $lang`n"

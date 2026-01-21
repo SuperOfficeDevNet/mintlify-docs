@@ -1,0 +1,1 @@
+Klicka på knappen **Listor** i navigatorn (<i class="ph ph-list-bullets" aria-hidden="true"></i>).

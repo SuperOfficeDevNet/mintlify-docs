@@ -8,7 +8,11 @@
     navigation structure, outputting JSON that can be inserted into docs.json.
 
     Supports recursive expansion of nested toc.yml files and creates nested
-    group structures in Mintlify format.
+    group structures in Mintlify format. Handles both groups with children and
+    single-page leaf items at the top level.
+
+    Note: topicHref properties are intentionally ignored during conversion, as
+    Mintlify automatically expands groups to their first child page.
 
     For more information about Mintlify navigation structure, see:
     https://www.mintlify.com/docs/organize/navigation
@@ -35,10 +39,12 @@
     Path to write the JSON output (optional, outputs to console if not specified).
 
 .NOTES
-    Known Issues:
-    - May generate duplicate entries when topicHref matches child hrefs. Review and deduplicate manually if needed.
-    - Complex nesting with variable indentation (2-space and 4-space mixed) may have edge cases in parent-finding.
-      The script handles most cases by finding the closest ancestor at lower indent.
+    Behavior Notes:
+    - topicHref properties are ignored because Mintlify auto-expands groups to their first child page.
+      This is the intended behavior and eliminates duplicate page references.
+    - Top-level items without children are converted to groups containing a single page.
+    - Complex nesting with variable indentation (2-space and 4-space mixed) is supported up to 3 levels deep.
+    - UTF-8 encoding is preserved for non-English language content (Norwegian, Swedish, Danish, German, Dutch).
 
 .EXAMPLE
     .\convert-toc-to-mintlify.ps1 -TocPath "en\developer-portal\toc.yml" -TabName "Developer Portal" -TabIcon "laptop-code" -BasePath "en/developer-portal"
@@ -438,6 +444,12 @@ function Read-YamlFile {
     $lines = @([System.IO.File]::ReadAllLines($FilePath))
     $result = @()
 
+    # Track the context stack to handle nested items: sections
+    # Each entry is [parentItem, expectedChildIndent]
+    $contextStack = @()
+    $inItemsSection = $false
+    $itemsSectionIndent = -1
+
     for ($i = 0; $i -lt $lines.Count; $i++) {
         $line = $lines[$i]
 
@@ -456,6 +468,71 @@ function Read-YamlFile {
         # Skip root "items:" declaration
         if ($content -eq 'items:' -and $indent -eq 0) {
             continue
+        }
+
+        # Check if we're entering an items: section
+        if ($content -eq 'items:' -and $indent -gt 0) {
+            # Find the parent item this items: belongs to
+            # It should be the most recent item at indent-2
+            $parentIndent = $indent - 2
+            $parentItem = $null
+
+            # Search backwards through context stack
+            for ($k = $contextStack.Count - 1; $k -ge 0; $k--) {
+                if ($contextStack[$k][0].indent -eq $parentIndent) {
+                    $parentItem = $contextStack[$k][0]
+                    break
+                }
+            }
+
+            # Also check top-level results
+            if (-not $parentItem) {
+                for ($k = $result.Count - 1; $k -ge 0; $k--) {
+                    if ($result[$k].indent -eq $parentIndent) {
+                        $parentItem = $result[$k]
+                        break
+                    }
+                }
+            }
+
+            # Also check children of items in context stack (for 3-level nesting)
+            if (-not $parentItem -and $contextStack.Count -gt 0) {
+                for ($k = $contextStack.Count - 1; $k -ge 0; $k--) {
+                    $stackItem = $contextStack[$k][0]
+                    if ($stackItem.items) {
+                        for ($m = $stackItem.items.Count - 1; $m -ge 0; $m--) {
+                            if ($stackItem.items[$m].indent -eq $parentIndent) {
+                                $parentItem = $stackItem.items[$m]
+                                break
+                            }
+                        }
+                        if ($parentItem) { break }
+                    }
+                }
+            }
+
+            if ($parentItem) {
+                # Push this context onto the stack
+                # Children are at the same indent as the items: line (not +2)
+                $expectedChildIndent = $indent
+                $contextStack += ,@($parentItem, $expectedChildIndent)
+                $inItemsSection = $true
+                $itemsSectionIndent = $indent
+            }
+            continue
+        }
+
+        # Pop contexts from stack if we've moved back to lower indent than expected children
+        while ($contextStack.Count -gt 0 -and $indent -lt $contextStack[-1][1]) {
+            if ($contextStack.Count -eq 1) {
+                $contextStack = @()
+            } else {
+                $contextStack = $contextStack[0..($contextStack.Count - 2)]
+            }
+            if ($contextStack.Count -eq 0) {
+                $inItemsSection = $false
+                $itemsSectionIndent = -1
+            }
         }
 
         # Handle list item with name
@@ -488,9 +565,17 @@ function Read-YamlFile {
                 }
                 $nextContent = $nextLine.Trim()
 
-                # If we're back to same or lower indent level, stop
-                if ($nextIndent -lt $itemIndent) {
+                # If we're back to same or lower indent level than the item, stop
+                if ($nextIndent -le $indent) {
                     break
+                }
+
+                # If we're not at the expected child property indent (item indent + 2), stop
+                if ($nextIndent -ne $itemIndent) {
+                    # Unless it's deeper (nested items:), in which case we'll handle it later
+                    if ($nextIndent -lt $itemIndent) {
+                        break
+                    }
                 }
 
                 # Parse href
@@ -501,63 +586,41 @@ function Read-YamlFile {
                 elseif ($nextContent -match '^topicHref:\s*(.+)$') {
                     $item.topicHref = $Matches[1].Trim()
                 }
-                # Parse nested items
+                # Parse nested items: marker
                 elseif ($nextContent -eq 'items:') {
-                    # Mark that this item has children
+                    # Mark that this item has children (they'll be parsed separately)
                     $item.hasChildren = $true
+                    # Don't break - we want to continue past the items: line
                 }
 
                 $j++
             }
 
-            # Add to appropriate parent based on indentation
-            if ($indent -eq 2) {
-                # Top level item (child of root)
+            # Determine where to add this item
+            if ($contextStack.Count -gt 0 -and $indent -eq $contextStack[-1][1]) {
+                # We're inside an items: section at the expected child indent
+                $parentItem = $contextStack[-1][0]
+                $parentItem.items += $item
+            }
+            elseif ($contextStack.Count -eq 0) {
+                # Top level item (no active items: context)
                 $result += $item
             }
             else {
-                # Find the parent - look for most recent item at lower indent (recursive search)
-                function Find-Recent-Parent {
-                    param($Items, $ChildIndent)
-
-                    $bestParent = $null
-                    $bestIndent = -1
-
-                    for ($k = $Items.Count - 1; $k -ge 0; $k--) {
-                        $candidateIndent = $Items[$k].indent
-
-                        # Parent must have lower indent than child
-                        if ($candidateIndent -lt $ChildIndent) {
-                            # Found a potential parent - prefer the one with highest indent (closest ancestor)
-                            if ($candidateIndent -gt $bestIndent) {
-                                $bestParent = $Items[$k]
-                                $bestIndent = $candidateIndent
-                            }
-                        }
-
-                        # Also search recursively in this item's children
-                        if ($Items[$k].items.Count -gt 0) {
-                            $nestedParent = Find-Recent-Parent -Items $Items[$k].items -ChildIndent $ChildIndent
-                            if ($nestedParent -and $nestedParent.indent -gt $bestIndent -and $nestedParent.indent -lt $ChildIndent) {
-                                $bestParent = $nestedParent
-                                $bestIndent = $nestedParent.indent
-                            }
-                        }
+                # Check if this indent matches any parent in the stack (for 3+ level nesting)
+                $added = $false
+                for ($k = $contextStack.Count - 1; $k -ge 0; $k--) {
+                    if ($indent -eq $contextStack[$k][1]) {
+                        $parentItem = $contextStack[$k][0]
+                        $parentItem.items += $item
+                        $added = $true
+                        break
                     }
-
-                    return $bestParent
                 }
-
-                $parent = Find-Recent-Parent -Items $result -ChildIndent $indent
-
-                if ($parent) {
-                    $parent.items += $item
-                }
-                else {
-                    # Fallback: add to last top-level item
-                    if ($result.Count -gt 0) {
-                        $result[$result.Count - 1].items += $item
-                    }
+                if (-not $added) {
+                    # Couldn't find matching context - add to top level with warning
+                    Write-Warning "Unexpected indent $indent for item '$name' (expected $($contextStack[-1][1]) or top-level)"
+                    $result += $item
                 }
             }
         }
@@ -575,38 +638,9 @@ function Convert-ToMintlifyGroup {
         pages = @()
     }
 
-    # Add main page if exists (prefer topicHref over href)
-    # Skip if topicHref matches first child's href (Mintlify drilldown handles this)
-    $mainPath = $null
-    $skipTopicHref = $false
-
-    if ($Item.topicHref -and $Item.items.Count -gt 0) {
-        # Check if topicHref matches first child's href
-        $firstChildHref = $null
-        if ($Item.items[0].href) {
-            $firstChildHref = $Item.items[0].href
-        }
-        elseif ($Item.items[0].topicHref) {
-            $firstChildHref = $Item.items[0].topicHref
-        }
-
-        if ($firstChildHref -and $Item.topicHref -eq $firstChildHref) {
-            $skipTopicHref = $true
-        }
-    }
-
-    if (-not $skipTopicHref) {
-        if ($Item.topicHref) {
-            $mainPath = Convert-YamlPath $Item.topicHref
-        }
-        elseif ($Item.href) {
-            $mainPath = Convert-YamlPath $Item.href
-        }
-
-        if ($mainPath) {
-            $group.pages += $mainPath
-        }
-    }
+    # Note: We ignore topicHref because Mintlify auto-expands groups to their first child.
+    # DocFx used topicHref to specify the landing page for a parent with children,
+    # but Mintlify handles this automatically.
 
     # Add child items
     foreach ($child in $Item.items) {
@@ -619,12 +653,9 @@ function Convert-ToMintlifyGroup {
             $group.pages += $nestedGroup
         }
         else {
-            # Leaf item, add as page
+            # Leaf item, add as page (use href only, ignore topicHref)
             $childPath = $null
-            if ($child.topicHref) {
-                $childPath = Convert-YamlPath $child.topicHref
-            }
-            elseif ($child.href) {
+            if ($child.href) {
                 $childPath = Convert-YamlPath $child.href
             }
 
@@ -671,9 +702,7 @@ if ($env:DEBUG_TOC_EXPANDED) {
 }
 
 # Parse the expanded YAML
-Write-Host "DEBUG: About to parse YAML from: $tempTocPath" -ForegroundColor Yellow
 $items = Read-YamlFile $tempTocPath
-Write-Host "DEBUG: Parsed items count: $($items.Count)" -ForegroundColor Yellow
 
 # Clean up temp file
 Remove-Item $tempTocPath -Force
@@ -690,8 +719,31 @@ Write-Host "Found $($items.Count) top-level items" -ForegroundColor Cyan
 # Build groups array
 $groups = @()
 foreach ($item in $items) {
-    $group = Convert-ToMintlifyGroup $item
-    $groups += $group
+    # Check if this is a leaf item (no children) or a group
+    $hasChildren = ($item.items -and $item.items.Count -gt 0)
+
+    if ($hasChildren) {
+        # Has children, convert to group
+        $group = Convert-ToMintlifyGroup $item
+        $groups += $group
+    }
+    else {
+        # Leaf item at top level - create a group with single page
+        $group = [ordered]@{
+            group = $item.name
+            pages = @()
+        }
+
+        # Add the href as the only page in the group
+        if ($item.href) {
+            $path = Convert-YamlPath $item.href
+            if ($path) {
+                $group.pages += $path
+            }
+        }
+
+        $groups += $group
+    }
 }
 
 Write-Host "Created $($groups.Count) groups" -ForegroundColor Cyan
@@ -707,8 +759,22 @@ if ($OutputType -eq "Tab") {
     # Auto-generate TabName from first item if not provided
     if ([string]::IsNullOrWhiteSpace($TabName)) {
         if ($items.Count -gt 0 -and $items[0].name) {
+            # Check if first item is generic (Overview, Introduction, etc.)
+            $genericNames = @('Overview', 'Introduction', 'Oversikt', 'Übersicht', 'Overzicht', 'Översikt', 'Introduktion', 'Einführung', 'Inleiding')
+            $firstItemName = $items[0].name
+
+            # If first item is generic, try to use folder name instead
+            if ($genericNames -contains $firstItemName) {
+                # Get the folder name (e.g., "integrations" from "integrations/toc.yml")
+                $folderPath = Split-Path -Parent $TocPath
+                $folderBaseName = Split-Path -Leaf $folderPath
+
+                # Capitalize first letter for display
+                $TabName = (Get-Culture).TextInfo.ToTitleCase($folderBaseName)
+                Write-Host "First item is generic ('$firstItemName'), using folder name: $TabName" -ForegroundColor DarkGray
+            }
             # Check if this is a language folder and use proper translation for "User Guide"
-            if ($isLanguageFolder -and $items[0].name -match '^(Oversikt|Overview|Übersicht|Overzicht|Översikt)$') {
+            elseif ($isLanguageFolder -and $firstItemName -match '^(Oversikt|Overview|Übersicht|Overzicht|Översikt)$') {
                 $userGuideTranslations = @{
                     'no' = 'Brukerveiledning'
                     'da' = 'Brugervejledning'
@@ -720,10 +786,10 @@ if ($OutputType -eq "Tab") {
                     $TabName = $userGuideTranslations[$folderName]
                     Write-Host "Using translated tab name for ${folderName}: $TabName" -ForegroundColor DarkGray
                 } else {
-                    $TabName = $items[0].name
+                    $TabName = $firstItemName
                 }
             } else {
-                $TabName = $items[0].name
+                $TabName = $firstItemName
             }
             Write-Host "Auto-detected TabName: $TabName" -ForegroundColor DarkGray
         }
@@ -747,13 +813,10 @@ if ($OutputType -eq "Tab") {
             language = $folderName
             tabs = @($tabStructure)
         }
-        Write-Host "DEBUG: Created output with language wrapper" -ForegroundColor Yellow
     }
     else {
         $output = $tabStructure
-        Write-Host "DEBUG: Created tab structure output" -ForegroundColor Yellow
     }
-    Write-Host "DEBUG: Output is null: $($null -eq $output)" -ForegroundColor Yellow
 }
 elseif ($OutputType -eq "Groups") {
     # Output the groups array
@@ -782,104 +845,8 @@ else {
     }
 }
 
-function Remove-DuplicatesFromStructure {
-    param(
-        $obj,
-        [int]$depth = 0,
-        [int]$maxDepth = 100,
-        [System.Collections.Generic.HashSet[object]]$visited = $null
-    )
-
-    # Initialize visited set on first call
-    if ($null -eq $visited) {
-        $visited = [System.Collections.Generic.HashSet[object]]::new()
-    }
-
-    # Prevent infinite recursion - bail out if we go too deep
-    if ($depth -ge $maxDepth) {
-        Write-Warning "Maximum recursion depth ($maxDepth) reached in Remove-DuplicatesFromStructure"
-        return $obj
-    }
-
-    if ($obj -is [System.Collections.IEnumerable] -and $obj -isnot [string]) {
-        # Check if we've already visited this object (circular reference detection)
-        if ($visited.Contains($obj)) {
-            Write-Verbose "Circular reference detected at depth $depth"
-            return @()  # Return empty array to break the cycle
-        }
-        $visited.Add($obj) | Out-Null
-
-        # Handle arrays - remove duplicate strings, recursively process objects
-        $seen = @{}
-        $result = @()
-
-        foreach ($item in $obj) {
-            if ($item -is [string]) {
-                # For strings, check if we've seen this exact value
-                if (-not $seen.ContainsKey($item)) {
-                    $seen[$item] = $true
-                    $result += $item
-                }
-            }
-            elseif ($item -is [hashtable] -or $item -is [System.Collections.Specialized.OrderedDictionary]) {
-                # Recursively clean hashtables/ordered dictionaries
-                $result += Remove-DuplicatesFromStructure -obj $item -depth ($depth + 1) -maxDepth $maxDepth -visited $visited
-            }
-            else {
-                # Keep other types as-is
-                $result += $item
-            }
-        }
-
-        return $result
-    }
-    elseif ($obj -is [hashtable] -or $obj -is [System.Collections.Specialized.OrderedDictionary]) {
-        # Check if we've already visited this object (circular reference detection)
-        if ($visited.Contains($obj)) {
-            Write-Verbose "Circular reference detected at depth $depth"
-            return [ordered]@{}  # Return empty ordered dict to break the cycle
-        }
-        $visited.Add($obj) | Out-Null
-
-        # Handle hashtables and ordered dictionaries
-        $result = if ($obj -is [System.Collections.Specialized.OrderedDictionary]) {
-            [ordered]@{}
-        } else {
-            @{}
-        }
-
-        foreach ($key in $obj.Keys) {
-            $result[$key] = Remove-DuplicatesFromStructure -obj $obj[$key] -depth ($depth + 1) -maxDepth $maxDepth -visited $visited
-        }
-
-        return $result
-    }
-    else {
-        # Return primitives as-is
-        return $obj
-    }
-}
-
-# Remove any duplicate entries from the output structure
-# Wrap in try-catch because deduplication can fail on complex nested structures
-Write-Host "DEBUG: Before deduplication - output is null: $($null -eq $output)" -ForegroundColor Yellow
-try {
-    $deduplicated = Remove-DuplicatesFromStructure $output
-    if ($null -ne $deduplicated) {
-        $output = $deduplicated
-        Write-Host "DEBUG: After deduplication - success" -ForegroundColor Yellow
-    } else {
-        Write-Host "DEBUG: Deduplication returned null, keeping original output" -ForegroundColor Yellow
-    }
-} catch {
-    Write-Host "DEBUG: Deduplication failed: $_" -ForegroundColor Red
-    Write-Verbose "Deduplication failed, using original output: $_"
-}
-
 # Convert to JSON
-Write-Host "DEBUG: Converting to JSON - output is null: $($null -eq $output)" -ForegroundColor Yellow
 $json = $output | ConvertTo-Json -Depth 20 -Compress
-Write-Host "DEBUG: JSON length: $($json.Length)" -ForegroundColor Yellow
 
 # Pretty-print with consistent 4-space indentation
 $indent = 0

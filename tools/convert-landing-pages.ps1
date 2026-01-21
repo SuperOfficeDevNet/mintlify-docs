@@ -277,7 +277,7 @@ function ParseSubCategoryYaml {
         sections = @()
     }
 
-    $lines = $content -split "`n"
+    $lines = $content -split "`r?`n"
     $currentSection = $null
     $currentLinkList = $null
     $currentLink = $null

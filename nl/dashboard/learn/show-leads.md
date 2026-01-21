@@ -2,7 +2,7 @@
 uid: help-nl-dashboard-tile-leads
 title: Dashboard voor leads
 description: Maak dashboards voor uw salesleads om prestaties, trends en productiviteit over alle leadactiviteiten te volgen en te analyseren.
-keywords: ["dashboard", "leads", "sales", "UTM-gegevens", "leadtegel"]
+keywords: dashboard, leads, sales, UTM-gegevens, leadtegel
 author: digitaldiina
 date: 11.18.2025
 version: 11.6
@@ -79,11 +79,11 @@ Als u UTM-tracking gebruikt (vereist Marketing Premium), helpen extra tegels u b
 * [Conversietracking (UTM-gegevens)][8]
 * [Meer informatie over criteria][2]
 
-[2]: ../../search-options/learn/search-criteria.md
-[5]: create.md
-[6]: working-with-tiles.md
-[7]: ../../lead/learn/index.md
-[8]: ../../marketing/utm/learn/index.md
+[2]: ../../search-options/learn/search-criteria
+[5]: ./create
+[6]: ./working-with-tiles
+[7]: ../../lead/learn/index
+[8]: ../../marketing/utm/learn/index
 
 [img1]: ../../../media/loc/en/dashboard/lead-qualification.png
 [img2]: ../../../media/loc/en/dashboard/conversion-dashboard.png

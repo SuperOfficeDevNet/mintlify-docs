@@ -12,6 +12,10 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
+import ClearCriteria from "./includes/clear-criteria.md";
+import SelectField from "./includes/select-field.md";
+import RunSearch from "./includes/run-search.md";
+
 # Het scherm Zoeken <i class="ph ph-list-magnifying-glass" aria-hidden="true"></i>
 
 Gebruik het scherm **Zoeken** voor het zoeken in SuperOffice CRM naar records en gegevens.
@@ -47,8 +51,9 @@ Als u een licentie hebt voor Developer Tools, kunt u naar producten zoeken in be
 
 1. Wanneer u alle gewenste zoekcriteria hebt opgegeven en geactiveerd, klikt u op de knop **Zoeken**. Het **tabblad Resultaten** opent met de resultaten die overeenkomen met de zoekcriteria.
 
-[!TIP]
+<Tip>
 Als u bijvoorbeeld naar alle bedrijven wilt zoeken, kunt u het percentageteken (%) opgeven wanneer u [zoekcriteria invoert][3] voor **Bedrijf**.
+</Tip>
 
 ## <a id="or"></a>Verbreed uw zoekopdracht met behulp van de OR-functie
 
@@ -56,9 +61,18 @@ Met de functie Zoeken kunt u een zoekopdracht uitvoeren door zoekcriteria te com
 
 Laten we eens kijken hoe u de OR-functie kunt gebruiken. U kunt zoeken naar alle klanten die "Product A" hebben gekocht en klanten die "Product B" niet hebben gekocht om uw cross-verkopen te stimuleren. Of u kunt zoeken naar alle grote klanten in Rotterdam of Eindhoven, zodat u contact met hen kunt opnemen over een aankomende gebeurtenis in een van deze steden.
 
-Bekijk deze video om te zien hoe u een zoekopdracht maakt met de OF-functie:
-
-[!Video https://www.youtube.com/embed/Z-fSLJSdp2k]
+<Frame caption="Bekijk deze video om te zien hoe u een zoekopdracht maakt met de OF-functie">
+  <iframe
+    width="100%"
+    height="420"
+    src="https://www.youtube-nocookie.com/embed/Z-fSLJSdp2k"
+    title="Bekijk deze video om te zien hoe u een zoekopdracht maakt met de OF-functie"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</Frame>
 
 (duur van de video - 4:08)
 
@@ -93,13 +107,13 @@ Als manager van een verkoopafdeling wilt u een presentatie geven voor de rest va
 
 1. Klik op **Bedrijf zoeken**.
 
-1. [!include[Clear criteria](includes/clear-criteria.md)]
+1. <ClearCriteria />
 
 1. Klik op **Toev.**
 
-1. [!include[Select field](includes/select-field.md)]. Klik eerst op **Verkoop** (<i class="ph ph-currency-circle-dollar" aria-hidden="true"></i>) en vervolgens op **Bedrag**.
+1. <SelectField />. Klik eerst op **Verkoop** (<i class="ph ph-currency-circle-dollar" aria-hidden="true"></i>) en vervolgens op **Bedrag**.
 
-1. Klik in de keuzelijst rechts van **Bedrag** op <i class="ph ph-caret-down" aria-label="Chevron"></i> en selecteer **>** (groter dan).
+1. Klik in de keuzelijst rechts van **Bedrag** op <i class="ph ph-caret-down" aria-label="Chevron"></i> en selecteer **\>** (groter dan).
 
 1. Voer in het laatste veld op de regel het minimumbedrag in. Bijvoorbeeld, "100 000".
 
@@ -107,7 +121,7 @@ Als manager van een verkoopafdeling wilt u een presentatie geven voor de rest va
 
 1. Klik op **Toevoegen**.
 
-1. [!include[Select field](includes/select-field.md)]. Klik eerst op **Verkoop** en vervolgens op **Geregistreerde datum**.
+1. <SelectField />. Klik eerst op **Verkoop** en vervolgens op **Geregistreerde datum**.
 
 1. Klik in de tweede keuzelijst op de pijl en selecteer **Tussen**.
 
@@ -127,7 +141,7 @@ Als manager van een verkoopafdeling wilt u een presentatie geven voor de rest va
 
 1. U hebt nu opgegeven dat u bedrijven wilt vinden met een omzet boven een bepaald bedrag binnen een bepaalde periode en met status **Verkocht**.
 
-1. [!include[Click Find](includes/run-search.md)]
+1. <RunSearch />
 
 ## <a id="ex2"></a>Voorbeeld 2: zoeken naar klanten in Denemarken waarvoor u verantwoordelijk bent
 
@@ -137,11 +151,11 @@ Stelt u zich voor dat u deelneemt aan een conferentie in Denemarken. Als u daar 
 
 1. Klik op **Bedrijf zoeken**.
 
-1. [!include[Clear criteria](includes/clear-criteria.md)]
+1. <ClearCriteria />
 
 1. Klik op **Toev.**
 
-1. [!include[Select field](includes/select-field.md)]: Klik eerst op **Bedrijf** (<i class="ph ph-buildings" aria-hidden="true"></i>) en vervolgens op **Land**.
+1. <SelectField />: Klik eerst op **Bedrijf** (<i class="ph ph-buildings" aria-hidden="true"></i>) en vervolgens op **Land**.
 
 1. Selecteer in de tweede keuzelijst **Is een van**.
 
@@ -151,13 +165,13 @@ Stelt u zich voor dat u deelneemt aan een conferentie in Denemarken. Als u daar 
 
 1. Klik op **Toevoegen**.
 
-1. [!include[Select field](includes/select-field.md)]: Klik eerst op **Bedrijf** en vervolgens op **Onze contactpersoon**.
+1. <SelectField />: Klik eerst op **Bedrijf** en vervolgens op **Onze contactpersoon**.
 
 1. Selecteer **Huidige gebruiker** in de tweede keuzelijst. Uw naam wordt weergegeven in het laatste veld op de regel.
 
 1. U hebt nu opgegeven dat u bedrijven in Denemarken wilt zoeken waarvoor u de contactpersoon bent.
 
-1. [!include[Click Find](includes/run-search.md)]
+1. <RunSearch />
 
 ## <a id="ex3"></a>Voorbeeld 3: zoeken naar verkochte verkopen
 
@@ -167,17 +181,17 @@ Veronderstel, u bent manager van een bedrijf en wilt weten welke typen verkoop g
 
 1. Klik op **Verkoop zoeken**.
 
-1. [!include[Clear criteria](includes/clear-criteria.md)]
+1. <ClearCriteria />
 
 1. Klik op **Toev.**
 
-1. [!include[Select field](includes/select-field.md)]: Klik eerst op **Verkoop** en vervolgens op **Status**.
+1. <SelectField />: Klik eerst op **Verkoop** en vervolgens op **Status**.
 
 1. Selecteer in de tweede keuzelijst **Is een van**.
 
 1. Klik op het veld **Items selecteren** rechts van het veld **Is een van** en selecteer **Verkocht**. U hebt nu opgegeven dat u naar voltooide verkopen wilt zoeken.
 
-1. [!include[Click Find](includes/run-search.md)]
+1. <RunSearch />
 
 ## <a id="ex4"></a>Voorbeeld 4: zoeken naar projecten waaraan u het afgelopen jaar hebt deelgenomen
 
@@ -187,11 +201,11 @@ Stelt u zich voor dat de tijd voor uw betalingsoverzicht nadert en u denkt dat u
 
 1. Klik op **Verkoop zoeken**.
 
-1. [!include[Clear criteria](includes/clear-criteria.md)] gevens te wissen.
+1. <ClearCriteria /> gevens te wissen.
 
 1. Klik op **Toev.**
 
-1. [!include[Select field](includes/select-field.md)]: Klik eerst op <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoon** en vervolgens op **Achternaam**.
+1. <SelectField />: Klik eerst op <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoon** en vervolgens op **Achternaam**.
 
 1. Selecteer **Is gelijk aan** in de tweede keuzelijst.
 
@@ -201,7 +215,7 @@ Stelt u zich voor dat de tijd voor uw betalingsoverzicht nadert en u denkt dat u
 
 1. Klik op **Toevoegen**.
 
-1. [!include[Select field](includes/select-field.md)]: Klik eerst op <i class="ph ph-clipboard-text" aria-hidden="true"></i> **Project** en vervolgens op **Datum vanaf**.
+1. <SelectField />: Klik eerst op <i class="ph ph-clipboard-text" aria-hidden="true"></i> **Project** en vervolgens op **Datum vanaf**.
 
 1. Selecteer **Na** in de tweede keuzelijst.
 
@@ -209,7 +223,7 @@ Stelt u zich voor dat de tijd voor uw betalingsoverzicht nadert en u denkt dat u
 
 1. U hebt opgegeven dat u projecten wilt vinden waaraan u hebt deelgenomen, vanaf een bepaalde datum tot vandaag.
 
-1. [!include[Click Find](includes/run-search.md)]
+1. <RunSearch />
 
 ## <a id="ex5"></a>Voorbeeld 5: zoeken naar ondernomen marketinginitiatieven
 
@@ -219,11 +233,11 @@ Stelt u zich voor dat u manager van een marketingafdeling bent en wilt brainstor
 
 1. Klik op **Verkoop zoeken**.
 
-1. [!include[Clear criteria](includes/clear-criteria.md)]
+1. <ClearCriteria />
 
 1. Klik op **Toev.**
 
-1. [!include[Select field](includes/select-field.md)]: Klik eerst op <i class="ph ph-calendar-blank" aria-hidden="true"></i> **Vervolgactiviteit** en vervolgens op **Intentie**.
+1. <SelectField />: Klik eerst op <i class="ph ph-calendar-blank" aria-hidden="true"></i> **Vervolgactiviteit** en vervolgens op **Intentie**.
 
 1. Selecteer in de tweede keuzelijst **Is een van**.
 
@@ -233,7 +247,7 @@ Stelt u zich voor dat u manager van een marketingafdeling bent en wilt brainstor
 
 1. Klik op **Toevoegen**.
 
-1. [!include[Select field](includes/select-field.md)]. Klik eerst op **Vervolgactiviteit** en vervolgens op **Einddatum**.
+1. <SelectField />. Klik eerst op **Vervolgactiviteit** en vervolgens op **Einddatum**.
 
 1. Selecteer **Vorige** in de tweede keuzelijst.
 
@@ -249,7 +263,7 @@ Stelt u zich voor dat u manager van een marketingafdeling bent en wilt brainstor
 
 1. Selecteer **Ja**. U hebt nu opgegeven dat u wilt zoeken naar vervolgactiviteiten met de status **Voltooid**.
 
-1. [!include[Click Find](includes/run-search.md)]
+1. <RunSearch />
 
 ## Gerelateerde inhoud
 
@@ -259,13 +273,14 @@ Stelt u zich voor dat u manager van een marketingafdeling bent en wilt brainstor
 * [De historielijst gebruiken][6]
 * [Zoekcriteria gebruiken][3]
 
-[1]: ../../learn/getting-started/main-screen/buttons-in-menu-bar.md
-[4]: ../../learn/getting-started/main-screen/side-panel.md
-[2]: in-navigator.md
-[3]: search-criteria.md
-[5]: freetext-search.md
-[6]: ../../learn/basics/history.md
-[7]: ../selection/learn/howto/index.md
-[8]: ../selection/learn/create.md
-[9]: ../selection/learn/add-remove-members-static.md
+[1]: ../../learn/getting-started/main-screen/buttons-in-menu-bar
+[4]: ../../learn/getting-started/main-screen/side-panel
+[2]: ./in-navigator
+[3]: ./search-criteria
+[5]: ./freetext-search
+[6]: ../../learn/basics/history
+[7]: ../selection/learn/howto/index
+[8]: ../selection/learn/create
+[9]: ../selection/learn/add-remove-members-static
+
 [img10]: ../../../media/loc/en/search-options/task-menu.png

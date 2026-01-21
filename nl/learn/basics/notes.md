@@ -32,4 +32,4 @@ Een stip op het tabblad **Opmerking** geeft aan dat er een notitie is toegevoegd
 
 Om een notitie te verwijderen, verwijdert u simpelweg alle tekst in de opmerking. De stip verdwijnt dan uit het tabblad **Opmerking**.
 
-[1]: ../../search-options/learn/freetext-search.md
+[1]: ../../search-options/learn/freetext-search

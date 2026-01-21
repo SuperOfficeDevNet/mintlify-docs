@@ -18,6 +18,8 @@ redirect_from:
   - /nl/search-options/admin/index
 ---
 
+import GotoFreetext from "./includes/goto-freetext.md";
+
 # Configureren van zoeken op vrije tekst
 
 Met de functie Vrije-tekstzoekbewerking van SuperOffice CRM kunnen gebruikers overal in de toepassing zoeken naar tekst. Dit kan gaan om tekst die zij zelf hebben toegevoegd aan de database, bijvoorbeeld bedrijfsnamen, afdelingen, en tekst uit de schermen Contactpersoon en Document.
@@ -26,7 +28,7 @@ Met het tabblad **Vrije-tekstzoekbewerking** in Instellingen en onderhoud kunt u
 
 ## Deactiveren van zoeken op vrije tekst (lokaal)
 
-1. [!include[Go to freetext search tab](includes/goto-freetext.md)]
+1. <GotoFreetext />
 
 1. Schakel het selectievakje **Zoeken op vrije tekst inschakelen** uit.
 
@@ -36,7 +38,7 @@ Standaard is zoeken op vrije tekst ingeschakeld. Als uw organisatie systeembronn
 
 U kunt zoekcriteria opgeven voor zowel losse woorden (bijvoorbeeld *Peter*) als voor fragmenten die bestaan uit meerdere woorden (bijvoorbeeld *Jan Peter Brouwers*).
 
-1. [!include[Go to freetext search tab](includes/goto-freetext.md)]
+1. <GotoFreetext />
 
 1. Controleer of zoeken op vrije tekst is ingeschakeld.
 
@@ -47,7 +49,7 @@ U kunt zoekcriteria opgeven voor zowel losse woorden (bijvoorbeeld *Peter*) als 
     * **100% overeenkomst**: wanneer u deze optie kiest, geeft de zoekopdracht *Peter* als resultaat enkel *Peter*.
 
     <Note>
-    De optie **100% overeenkomst** vergt tijdens een zoekbewerking de minste systeembronnen, de optie **Bevat** vergt de meeste.
+    de optie **100% overeenkomst** vergt tijdens een zoekbewerking de minste systeembronnen, de optie **Bevat** vergt de meeste.
     </Note>
 
 1. Schakel een van de volgende opties in voor **Operator voor zoeken naar meerdere woorden**:
@@ -55,13 +57,14 @@ U kunt zoekcriteria opgeven voor zowel losse woorden (bijvoorbeeld *Peter*) als 
     * **Bevat**: wanneer u deze optie kiest, kan de zoekopdracht *pet* bijvoorbeeld *Jan Peter Brouwers* en *Erik Petersen* als resultaat geven.
     * **100% overeenkomst**: wanneer u deze optie kiest, geeft de zoekopdracht *Jan Peter Brouwers* als resultaat enkel *Jan Peter Brouwers*.
 
-[!NOTE]
-wanneer u zoekt op fragmenten van meerdere woorden, wordt er gezocht naar alle woorden samen.
+    <Note>
+    wanneer u zoekt op fragmenten van meerdere woorden, wordt er gezocht naar alle woorden samen.
+    </Note>
 
 ## Gerelateerde inhoud
 
 * [Stopwoorden toevoegen][3]
 * [Een vrije-tekstindex opnieuw genereren][4]
 
-[3]: stopwords.md
-[4]: regenerate-index.md
+[3]: ./stopwords
+[4]: ./regenerate-index

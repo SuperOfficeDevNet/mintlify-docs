@@ -14,6 +14,8 @@ language: nl
 redirect_from: /nl/admin/options/learn/freetext-search/stopwords
 ---
 
+import GotoFreetext from "./includes/goto-freetext.md";
+
 # Stopwoorden
 
 Een stopwoord is een woord dat niet is geïndexeerd (niet opgenomen in een vrije-tekstzoekbewerking). Dit kunnen woorden zijn als *en*, *of*, *als* en *voor*. Wanneer u stopwoorden definieert, kost het minder tijd om de vrije-tekstindex te doorzoeken, omdat overbodige woorden worden uitgesloten. Bovendien wordt door de definitie van stopwoorden minder ruimte in de database gebruikt.
@@ -22,7 +24,7 @@ De woorden die zijn gedefinieerd als stopwoorden voor vrije-tekstzoekbewerkingen
 
 ## Voordat u begint
 
-1. [!include[Go to freetext search tab](includes/goto-freetext.md)]
+1. <GotoFreetext />
 
 1. Zorg er bij on-premises installaties voor dat de optie **Freetekst zoeken inschakelen** is geselecteerd. In CRM Online is deze optie altijd ingeschakeld.
 
@@ -62,4 +64,4 @@ U verwijdert stopwoorden als u ze bij nader inzien toch wilt gebruiken voor vrij
 
 1. Klik op de knop **Verwijderen** onder de lijst met stopwoorden.
 
-[3]: regenerate-index.md
+[3]: ./regenerate-index

@@ -48,13 +48,13 @@ if (-not (Test-Path $Path)) {
 # Reusable function to remove consecutive blank lines
 function Remove-ConsecutiveBlankLines {
     param([string[]]$Lines)
-    
+
     $result = @()
     $lastWasBlank = $false
-    
+
     foreach ($line in $Lines) {
         $isBlank = [string]::IsNullOrWhiteSpace($line)
-        
+
         if ($isBlank) {
             if (-not $lastWasBlank) {
                 $result += $line
@@ -66,55 +66,55 @@ function Remove-ConsecutiveBlankLines {
             $lastWasBlank = $false
         }
     }
-    
+
     return $result
 }
 
 # Convert filename to PascalCase import name
 function Get-ImportName {
     param([string]$FileName)
-    
+
     # Remove extension
     $name = [System.IO.Path]::GetFileNameWithoutExtension($FileName)
-    
+
     # Split on hyphens and underscores, capitalize each word
     $parts = $name -split '[-_]'
-    $pascalCase = ($parts | ForEach-Object { 
-        $_.Substring(0,1).ToUpper() + $_.Substring(1).ToLower() 
+    $pascalCase = ($parts | ForEach-Object {
+        $_.Substring(0,1).ToUpper() + $_.Substring(1).ToLower()
     }) -join ''
-    
+
     return $pascalCase
 }
 
 # Check if include file needs .mdx extension (contains Mintlify components)
 function Get-IncludeExtension {
     param([string]$IncludePath)
-    
+
     if (-not (Test-Path $IncludePath)) {
         Write-Warning "Include file not found: $IncludePath"
         return ".md"
     }
-    
+
     # Read file content
     $content = Get-Content $IncludePath -Raw -Encoding UTF8
-    
+
     # Check if file contains Mintlify components
     if ($content -match '<(Note|Tip|Caution|Warning|Frame)(\s|>)') {
         return ".mdx"
     }
-    
+
     return ".md"
 }
 
 function Convert-IncludesInFile {
     param([string]$FilePath)
-    
+
     $content = [System.IO.File]::ReadAllLines($FilePath)
     $newContent = @()
     $modified = $false
     $imports = @()
     $importNames = @{}
-    
+
     # Find frontmatter end
     $frontmatterEnd = -1
     $inFrontmatter = $false
@@ -129,92 +129,95 @@ function Convert-IncludesInFile {
             }
         }
     }
-    
+
     # Process content line by line
     for ($i = 0; $i -lt $content.Length; $i++) {
         $line = $content[$i]
-        
+
         # Check for text includes (skip code includes)
         # Pattern: [!include[ALT](path/to/file.md)]
         # Not: [!code-*[...]]
         if ($line -match '\[!include\[([^\]]*)\]\(([^)]+\.md)\)\]' -and $line -notmatch '\[!code-') {
             $includePath = $Matches[2]
-            
+
             # Resolve include path relative to current file
             $fileDir = Split-Path -Parent $FilePath
             $fullIncludePath = Join-Path $fileDir $includePath
             $fullIncludePath = [System.IO.Path]::GetFullPath($fullIncludePath)
-            
+
             # Check if include needs .mdx extension
             $extension = Get-IncludeExtension -IncludePath $fullIncludePath
             $includePath = $includePath -replace '\.md$', $extension
-            
+
             # Ensure relative paths start with ./ or ../
             if ($includePath -notmatch '^\.\.?[/\\]') {
                 $includePath = "./$includePath"
             }
-            
+
             # Generate import name
             $fileName = [System.IO.Path]::GetFileName($includePath)
             $importName = Get-ImportName -FileName $fileName
-            
+
             # Track import (avoid duplicates)
             if (-not $importNames.ContainsKey($includePath)) {
                 $importNames[$includePath] = $importName
                 $imports += "import $importName from `"$includePath`";"
             }
-            
+
             # Replace include with component reference
             $componentRef = "<$importName />"
             $newLine = $line -replace '\[!include\[[^\]]*\]\([^)]+\.mdx?\)\]', $componentRef
-            
+
             $newContent += $newLine
             $modified = $true
         }
         else {
             # Check for markdownlint wrappers around includes
-            if ($line -match '<!--\s*markdownlint-(disable|restore)' -and 
-                $i + 1 -lt $content.Length -and 
+            if ($line -match '<!--\s*markdownlint-(disable|restore)' -and
+                $i + 1 -lt $content.Length -and
                 $content[$i + 1] -match '\[!include\[') {
                 # Skip markdownlint line
                 $modified = $true
                 continue
             }
-            
+
             $newContent += $line
         }
     }
-    
+
     if (-not $modified) {
         return $false
     }
-    
+
     # Insert imports after frontmatter
     if ($frontmatterEnd -ge 0 -and $imports.Count -gt 0) {
         $finalContent = @()
-        
+
         # Add frontmatter
         $finalContent += $content[0..$frontmatterEnd]
-        
+
         # Add blank line
         $finalContent += ''
-        
+
         # Add imports
         $finalContent += $imports
-        
+
+        # Add blank line after imports
+        $finalContent += ''
+
         # Add rest of content (skip to after frontmatter)
         $finalContent += $newContent[($frontmatterEnd + 1)..($newContent.Count - 1)]
-        
+
         $newContent = $finalContent
     }
-    
+
     # Clean up consecutive blank lines
     $newContent = Remove-ConsecutiveBlankLines -Lines $newContent
-    
+
     # Write back with UTF-8 without BOM
     $utf8 = New-Object System.Text.UTF8Encoding $false
     [System.IO.File]::WriteAllLines($FilePath, $newContent, $utf8)
-    
+
     return $true
 }
 

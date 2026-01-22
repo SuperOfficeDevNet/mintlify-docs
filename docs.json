@@ -1860,13 +1860,13 @@
                                 "icon":  "book",
                                 "groups":  [
                                       {
-                                        "group":  "ÃƒÅ“bersicht",
+                                        "group":  "ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“bersicht",
                                         "pages":  [
                                                 "de/learn/index"
                                               ]
                                       },
                                       {
-                                        "group":  "EinfÃƒÂ¼hrung",
+                                        "group":  "EinfÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼hrung",
                                         "pages":  [
                                                 "de/learn/intro"
                                               ]
@@ -1947,7 +1947,7 @@
                                                 "de/search-options/learn/in-navigator",
                                                 "de/search-options/learn/in-dialogs",
                                                 {
-                                                  "group":  "FÃƒÂ¼r Administratoren",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Administratoren",
                                                   "pages":  [
                                                         "de/search-options/admin/configure-free-text-search",
                                                         "de/search-options/admin/stopwords",
@@ -2029,7 +2029,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "FÃƒÂ¼r Admins",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Admins",
                                                   "pages":  [
                                                         "de/diary/admin/add-follow-up-type",
                                                         "de/diary/admin/add-resource"
@@ -2135,7 +2135,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "FÃƒÂ¼r Admins",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Admins",
                                                   "pages":  [
                                                         "de/email/admin/add-email-template",
                                                         {
@@ -2189,7 +2189,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "FÃƒÂ¼r Admins",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Admins",
                                                   "pages":  [
                                                         "de/sale/admin/index",
                                                         "de/sale/admin/sale-stage",
@@ -2233,7 +2233,7 @@
                                                 "de/project/learn/project-guides",
                                                 "de/project/learn/tutorial",
                                                 {
-                                                  "group":  "FÃƒÂ¼r Admins",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Admins",
                                                   "pages":  [
                                                         "de/project/admin/index",
                                                         "de/project/admin/project-status",
@@ -2266,7 +2266,7 @@
                                                 "de/request/learn/close",
                                                 "de/request/learn/delete",
                                                 {
-                                                  "group":  "FÃƒÂ¼r Admins",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Admins",
                                                   "pages":  [
                                                         "de/request/admin/index",
                                                         {
@@ -2287,7 +2287,7 @@
                                                                 ]
                                                         },
                                                         {
-                                                          "group":  "PrioritÃƒÂ¤ten",
+                                                          "group":  "PrioritÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¤ten",
                                                           "pages":  [
                                                                   "de/request/admin/priority/index",
                                                                   "de/request/admin/priority/create",
@@ -2351,7 +2351,7 @@
                                                 "de/search-options/selection/learn/copy-members-to",
                                                 "de/search-options/selection/learn/board-view",
                                                 {
-                                                  "group":  "Aufgaben in der Ansicht Selektion ausfÃƒÂ¼hren",
+                                                  "group":  "Aufgaben in der Ansicht Selektion ausfÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼hren",
                                                   "pages":  [
                                                         "de/search-options/selection/learn/howto/index",
                                                         "de/search-options/selection/learn/howto/create-mailings",
@@ -2376,7 +2376,7 @@
                                                 "de/chat/learn/transfer-to-agent",
                                                 "de/chat/learn/as-customer",
                                                 {
-                                                  "group":  "FÃƒÂ¼r Admins",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Admins",
                                                   "pages":  [
                                                         "de/chat/admin/index",
                                                         "de/chat/admin/channel-create",
@@ -2428,7 +2428,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "EmpfÃƒÂ¤nger (Zielliste)",
+                                                  "group":  "EmpfÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¤nger (Zielliste)",
                                                   "pages":  [
                                                         "de/marketing/recipients/learn/index",
                                                         "de/marketing/recipients/learn/manage-email-subscriptions",
@@ -2438,7 +2438,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "ÃƒÅ“berwachten Links",
+                                                  "group":  "ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“berwachten Links",
                                                   "pages":  [
                                                         "de/marketing/tracked-links/learn/index",
                                                         "de/marketing/tracked-links/learn/create-links",
@@ -2485,7 +2485,7 @@
                                                         "de/marketing/utm/learn/index",
                                                         "de/marketing/utm/learn/parameters",
                                                         {
-                                                          "group":  "FÃƒÂ¼r Admins",
+                                                          "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Admins",
                                                           "pages":  [
                                                                   "de/marketing/utm/admin/set-up"
                                                                 ]
@@ -2500,7 +2500,7 @@
                                                 "de/lead/learn/index",
                                                 "de/lead/learn/work-with-leads",
                                                 {
-                                                  "group":  "FÃƒÂ¼r Admins",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Admins",
                                                   "pages":  [
                                                         "de/lead/admin/index",
                                                         "de/lead/admin/add-company-category",
@@ -2554,7 +2554,7 @@
                                                 "de/security/privacy/learn/generate-personal-data-report",
                                                 "de/security/privacy/learn/mass-delete",
                                                 {
-                                                  "group":  "FÃƒÂ¼r Administratoren",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Administratoren",
                                                   "pages":  [
                                                         "de/security/privacy/admin/index",
                                                         "de/security/privacy/admin/add-purpose",
@@ -2586,7 +2586,7 @@
                                         "pages":  [
                                                 "de/saint/learn/index",
                                                 {
-                                                  "group":  "FÃƒÂ¼r Admins",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Admins",
                                                   "pages":  [
                                                         "de/saint/admin/index",
                                                         "de/saint/admin/set-up",
@@ -2604,7 +2604,7 @@
                                                 "de/erp/learn/connect",
                                                 "de/erp/learn/disconnect",
                                                 {
-                                                  "group":  "FÃƒÂ¼r Admins",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Admins",
                                                   "pages":  [
                                                         "de/erp/admin/index",
                                                         "de/erp/admin/add-connection",
@@ -2663,7 +2663,7 @@
                                                         "de/customer-center/learn/enable-chat",
                                                         "de/customer-center/learn/link-form",
                                                         {
-                                                          "group":  "FÃƒÂ¼r Administratoren",
+                                                          "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Administratoren",
                                                           "pages":  [
                                                                   "de/customer-center/admin/password-policy"
                                                                 ]
@@ -2687,7 +2687,7 @@
                                                         "de/ui/blogic/learn/screen-definition",
                                                         "de/ui/blogic/learn/screen-properties",
                                                         {
-                                                          "group":  "ZusatzmenÃƒÂ¼s",
+                                                          "group":  "ZusatzmenÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼s",
                                                           "pages":  [
                                                                   "de/ui/blogic/learn/extra-menus/index",
                                                                   "de/ui/blogic/learn/extra-menus/actions",
@@ -2803,13 +2803,13 @@
                                               ]
                                       },
                                       {
-                                        "group":  "Sprache, ÃƒÅ“bersetzung und Zeitzonen",
+                                        "group":  "Sprache, ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“bersetzung und Zeitzonen",
                                         "pages":  [
                                                 "de/localization/learn/customer-languages",
                                                 "de/localization/learn/translate-fields",
                                                 "de/localization/learn/time-zones",
                                                 {
-                                                  "group":  "FÃƒÂ¼r Administratoren",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼r Administratoren",
                                                   "pages":  [
                                                         "de/localization/admin/enable-time-zones",
                                                         "de/localization/admin/select-time-zones",
@@ -3248,7 +3248,7 @@
                                                                 ]
                                                         },
                                                         {
-                                                          "group":  "CategorieÃƒÂ«n",
+                                                          "group":  "CategorieÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«n",
                                                           "pages":  [
                                                                   "nl/request/admin/category/index",
                                                                   "nl/request/admin/category/create",
@@ -3840,7 +3840,7 @@
                                                 },
                                                 "no/learn/getting-started/edit-email-signature",
                                                 {
-                                                  "group":  "Endre aktivt sprÃƒÂ¥k",
+                                                  "group":  "Endre aktivt sprÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¥k",
                                                   "pages":  [
                                                         "no/learn/getting-started/change-language",
                                                         "no/learn/basics/index",
@@ -3879,13 +3879,13 @@
                                               ]
                                       },
                                       {
-                                        "group":  "LÃƒÂ¦r det grunnleggende",
+                                        "group":  "LÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦r det grunnleggende",
                                         "pages":  [
                                                 "no/learn/section-tabs/index"
                                               ]
                                       },
                                       {
-                                        "group":  "SÃƒÂ¸kealternativer",
+                                        "group":  "SÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸kealternativer",
                                         "pages":  [
                                                 "no/search-options/learn/index",
                                                 "no/search-options/learn/find-screen",
@@ -3899,7 +3899,7 @@
                                                         "no/search-options/admin/configure-free-text-search",
                                                         "no/search-options/admin/stopwords",
                                                         {
-                                                          "group":  "Bygge fritekstindeks pÃƒÂ¥ nytt",
+                                                          "group":  "Bygge fritekstindeks pÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¥ nytt",
                                                           "pages":  [
                                                                   "no/search-options/admin/regenerate-index",
                                                                   "no/diary/learn/recurrence/index",
@@ -4118,7 +4118,7 @@
                                                 },
                                                 "no/sale/learn/forecasting",
                                                 {
-                                                  "group":  "SalgsmÃƒÂ¥l",
+                                                  "group":  "SalgsmÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¥l",
                                                   "pages":  [
                                                         "no/sale/learn/sales-targets/index",
                                                         "no/sale/learn/sales-targets/create",
@@ -4331,7 +4331,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "MarkedsfÃƒÂ¸ring",
+                                        "group":  "MarkedsfÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ring",
                                         "pages":  [
                                                 "no/marketing/utm/admin/set-up",
                                                 "no/marketing/learn/index",
@@ -4757,7 +4757,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "SprÃƒÂ¥k, oversettelse og tidssoner",
+                                        "group":  "SprÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¥k, oversettelse og tidssoner",
                                         "pages":  [
                                                 "no/localization/admin/enable-time-zones",
                                                 "no/localization/learn/customer-languages",
@@ -4781,11 +4781,11 @@
                       "language":  "sv",
                       "tabs":  [
                             {
-                                "tab":  "Användarguide",
+                                "tab":  "AnvÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ndarguide",
                                 "icon":  "book",
                                 "groups":  [
                                       {
-                                        "group":  "Översikt",
+                                        "group":  "ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“versikt",
                                         "pages":  [
                                                 "sv/learn/index"
                                               ]
@@ -4797,7 +4797,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "Komma igång",
+                                        "group":  "Komma igÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ng",
                                         "pages":  [
                                                 "sv/learn/getting-started/index",
                                                 {
@@ -4827,7 +4827,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "Lär dig grunderna",
+                                        "group":  "LÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤r dig grunderna",
                                         "pages":  [
                                                 "sv/learn/basics/index",
                                                 "sv/learn/basics/notifications",
@@ -4863,7 +4863,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "Sökfunktioner",
+                                        "group":  "SÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶kfunktioner",
                                         "pages":  [
                                                 "sv/search-options/learn/index",
                                                 "sv/search-options/learn/find-screen",
@@ -4872,7 +4872,7 @@
                                                 "sv/search-options/learn/in-navigator",
                                                 "sv/search-options/learn/in-dialogs",
                                                 {
-                                                  "group":  "För administratörer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                   "pages":  [
                                                         "sv/search-options/admin/configure-free-text-search",
                                                         "sv/search-options/admin/stopwords",
@@ -4895,7 +4895,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "Företag",
+                                        "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶retag",
                                         "pages":  [
                                                 "sv/company/index",
                                                 "sv/company/learn/index",
@@ -4954,7 +4954,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "För administratörer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                   "pages":  [
                                                         "sv/diary/admin/add-follow-up-type",
                                                         "sv/diary/admin/add-resource"
@@ -5060,11 +5060,11 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "För administratörer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                   "pages":  [
                                                         "sv/email/admin/add-email-template",
                                                         {
-                                                          "group":  "Postlådeadministration",
+                                                          "group":  "PostlÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥deadministration",
                                                           "pages":  [
                                                                   "sv/email/admin/mailbox/index",
                                                                   "sv/email/admin/mailbox/create-mailbox",
@@ -5078,7 +5078,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "Försäljning",
+                                        "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rsÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ljning",
                                         "pages":  [
                                                 "sv/sale/index",
                                                 "sv/sale/learn/index",
@@ -5095,7 +5095,7 @@
                                                 },
                                                 "sv/sale/learn/forecasting",
                                                 {
-                                                  "group":  "Försäljningsmål",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rsÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ljningsmÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥l",
                                                   "pages":  [
                                                         "sv/sale/learn/sales-targets/index",
                                                         "sv/sale/learn/sales-targets/create",
@@ -5114,7 +5114,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "För administratörer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                   "pages":  [
                                                         "sv/sale/admin/index",
                                                         "sv/sale/admin/sale-stage",
@@ -5158,7 +5158,7 @@
                                                 "sv/project/learn/project-guides",
                                                 "sv/project/learn/tutorial",
                                                 {
-                                                  "group":  "För administratörer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                   "pages":  [
                                                         "sv/project/admin/index",
                                                         "sv/project/admin/project-status",
@@ -5170,7 +5170,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "Ärenden",
+                                        "group":  "ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾renden",
                                         "pages":  [
                                                 "sv/request/index",
                                                 "sv/request/learn/index",
@@ -5191,11 +5191,11 @@
                                                 "sv/request/learn/close",
                                                 "sv/request/learn/delete",
                                                 {
-                                                  "group":  "För administratörer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                   "pages":  [
                                                         "sv/request/admin/index",
                                                         {
-                                                          "group":  "Ärendetyper",
+                                                          "group":  "ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾rendetyper",
                                                           "pages":  [
                                                                   "sv/request/admin/type/index",
                                                                   "sv/request/admin/type/create",
@@ -5221,7 +5221,7 @@
                                                                 ]
                                                         },
                                                         {
-                                                          "group":  "Ärendestatus",
+                                                          "group":  "ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾rendestatus",
                                                           "pages":  [
                                                                   "sv/request/admin/status/index",
                                                                   "sv/request/admin/status/create",
@@ -5240,7 +5240,7 @@
                                                 "sv/custom-objects/learn/index",
                                                 "sv/custom-objects/learn/more-tab",
                                                 {
-                                                  "group":  "Användardefinierade fält",
+                                                  "group":  "AnvÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ndardefinierade fÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤lt",
                                                   "pages":  [
                                                         "sv/custom-objects/learn/udef",
                                                         "sv/custom-objects/admin/add-udef",
@@ -5256,7 +5256,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "Extrafält",
+                                                  "group":  "ExtrafÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤lt",
                                                   "pages":  [
                                                         "sv/custom-objects/learn/extra-field",
                                                         "sv/custom-objects/admin/create-extra-field",
@@ -5276,7 +5276,7 @@
                                                 "sv/search-options/selection/learn/copy-members-to",
                                                 "sv/search-options/selection/learn/board-view",
                                                 {
-                                                  "group":  "Utföra uppgifter för urval",
+                                                  "group":  "UtfÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶ra uppgifter fÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r urval",
                                                   "pages":  [
                                                         "sv/search-options/selection/learn/howto/index",
                                                         "sv/search-options/selection/learn/howto/create-mailings",
@@ -5301,7 +5301,7 @@
                                                 "sv/chat/learn/transfer-to-agent",
                                                 "sv/chat/learn/as-customer",
                                                 {
-                                                  "group":  "För administratörer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                   "pages":  [
                                                         "sv/chat/admin/index",
                                                         "sv/chat/admin/channel-create",
@@ -5311,7 +5311,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "Marknadsföring",
+                                        "group":  "MarknadsfÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶ring",
                                         "pages":  [
                                                 "sv/marketing/learn/index",
                                                 "sv/marketing/learn/create-folder",
@@ -5340,7 +5340,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "Dra och släpp-redigerare",
+                                                  "group":  "Dra och slÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤pp-redigerare",
                                                   "pages":  [
                                                         "sv/marketing/editor/learn/index",
                                                         "sv/marketing/editor/learn/add-content",
@@ -5353,7 +5353,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "Mottagare (mållista)",
+                                                  "group":  "Mottagare (mÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥llista)",
                                                   "pages":  [
                                                         "sv/marketing/recipients/learn/index",
                                                         "sv/marketing/recipients/learn/manage-email-subscriptions",
@@ -5363,7 +5363,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "Spårade länkar",
+                                                  "group":  "SpÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥rade lÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤nkar",
                                                   "pages":  [
                                                         "sv/marketing/tracked-links/learn/index",
                                                         "sv/marketing/tracked-links/learn/create-links",
@@ -5375,7 +5375,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "Formulär",
+                                                  "group":  "FormulÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤r",
                                                   "pages":  [
                                                         "sv/marketing/forms/learn/index",
                                                         "sv/marketing/forms/learn/create",
@@ -5390,7 +5390,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "Flöden",
+                                                  "group":  "FlÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶den",
                                                   "pages":  [
                                                         "sv/marketing/flows/learn/index",
                                                         "sv/marketing/flows/learn/create",
@@ -5405,12 +5405,12 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "Konverteringsspårning",
+                                                  "group":  "KonverteringsspÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥rning",
                                                   "pages":  [
                                                         "sv/marketing/utm/learn/index",
                                                         "sv/marketing/utm/learn/parameters",
                                                         {
-                                                          "group":  "För administratörer",
+                                                          "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                           "pages":  [
                                                                   "sv/marketing/utm/admin/set-up"
                                                                 ]
@@ -5425,7 +5425,7 @@
                                                 "sv/lead/learn/index",
                                                 "sv/lead/learn/work-with-leads",
                                                 {
-                                                  "group":  "För administratörer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                   "pages":  [
                                                         "sv/lead/admin/index",
                                                         "sv/lead/admin/add-company-category",
@@ -5471,7 +5471,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "Integritetsinställningar och GDPR",
+                                        "group":  "IntegritetsinstÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤llningar och GDPR",
                                         "pages":  [
                                                 "sv/security/privacy/learn/index",
                                                 "sv/security/privacy/learn/edit-legal-base",
@@ -5479,7 +5479,7 @@
                                                 "sv/security/privacy/learn/generate-personal-data-report",
                                                 "sv/security/privacy/learn/mass-delete",
                                                 {
-                                                  "group":  "För administratorer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratorer",
                                                   "pages":  [
                                                         "sv/security/privacy/admin/index",
                                                         "sv/security/privacy/admin/add-purpose",
@@ -5491,7 +5491,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "AI-tjänster",
+                                        "group":  "AI-tjÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤nster",
                                         "pages":  [
                                                 "sv/ai/learn/index",
                                                 "sv/ai/learn/text-analysis",
@@ -5507,11 +5507,11 @@
                                               ]
                                       },
                                       {
-                                        "group":  "SAINT (försäljningsintelligens)",
+                                        "group":  "SAINT (fÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rsÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ljningsintelligens)",
                                         "pages":  [
                                                 "sv/saint/learn/index",
                                                 {
-                                                  "group":  "För administratörer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                   "pages":  [
                                                         "sv/saint/admin/index",
                                                         "sv/saint/admin/set-up",
@@ -5529,7 +5529,7 @@
                                                 "sv/erp/learn/connect",
                                                 "sv/erp/learn/disconnect",
                                                 {
-                                                  "group":  "För administratörer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                   "pages":  [
                                                         "sv/erp/admin/index",
                                                         "sv/erp/admin/add-connection",
@@ -5545,7 +5545,7 @@
                                         "pages":  [
                                                 "sv/customization/index",
                                                 {
-                                                  "group":  "Skärmdesigner",
+                                                  "group":  "SkÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤rmdesigner",
                                                   "pages":  [
                                                         "sv/customization/screen-designer/admin/index",
                                                         "sv/customization/screen-designer/admin/add-layout",
@@ -5588,7 +5588,7 @@
                                                         "sv/customer-center/learn/enable-chat",
                                                         "sv/customer-center/learn/link-form",
                                                         {
-                                                          "group":  "För administratörer",
+                                                          "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                           "pages":  [
                                                                   "sv/customer-center/admin/password-policy"
                                                                 ]
@@ -5628,7 +5628,7 @@
                                               ]
                                       },
                                       {
-                                        "group":  "Inställningar och underhåll",
+                                        "group":  "InstÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤llningar och underhÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ll",
                                         "pages":  [
                                                 "sv/admin/index",
                                                 "sv/admin/getting-started",
@@ -5644,7 +5644,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "Inställningar",
+                                                  "group":  "InstÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤llningar",
                                                   "pages":  [
                                                         "sv/admin/preferences/index",
                                                         "sv/admin/preferences/update",
@@ -5675,7 +5675,7 @@
                                                       ]
                                                 },
                                                 {
-                                                  "group":  "Administrering av användare",
+                                                  "group":  "Administrering av anvÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ndare",
                                                   "pages":  [
                                                         "sv/admin/user-management/index",
                                                         "sv/admin/user-management/add-associate",
@@ -5693,7 +5693,7 @@
                                                                 ]
                                                         },
                                                         {
-                                                          "group":  "Lokala användare",
+                                                          "group":  "Lokala anvÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ndare",
                                                           "pages":  [
                                                                   "sv/admin/user-management/onsite/import-users",
                                                                   "sv/admin/user-management/onsite/other-users",
@@ -5728,13 +5728,13 @@
                                               ]
                                       },
                                       {
-                                        "group":  "Språk, översättning och tidszoner",
+                                        "group":  "SprÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥k, ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶versÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ttning och tidszoner",
                                         "pages":  [
                                                 "sv/localization/learn/customer-languages",
                                                 "sv/localization/learn/translate-fields",
                                                 "sv/localization/learn/time-zones",
                                                 {
-                                                  "group":  "För administratörer",
+                                                  "group":  "FÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶r administratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rer",
                                                   "pages":  [
                                                         "sv/localization/admin/enable-time-zones",
                                                         "sv/localization/admin/select-time-zones",
@@ -11153,6 +11153,230 @@
             {
             "source":  "/de/search-options/selection/learn/howto/mass-delete",
             "destination":  "/de/security/privacy/learn/mass-delete"
+            },
+            {
+            "source":  "/en/document/learn/upload",
+            "destination":  "/en/document/learn/create"
+            },
+            {
+            "source":  "/en/document/learn/screen/index",
+            "destination":  "/en/document/learn/create"
+            },
+            {
+            "source":  "/en/document/learn/delete",
+            "destination":  "/en/document/learn/edit"
+            },
+            {
+            "source":  "/en/document/learn/open",
+            "destination":  "/en/document/learn/index"
+            },
+            {
+            "source":  "/en/document/cloud/overview",
+            "destination":  "/en/document/library/it/index"
+            },
+            {
+            "source":  "/en/document/cloud/index",
+            "destination":  "/en/document/library/it/index"
+            },
+            {
+            "source":  "/en/document/odf",
+            "destination":  "/en/document/library/it/odf"
+            },
+            {
+            "source":  "/en/admin/preferences/learn/document-library/change-to-sharepoint",
+            "destination":  "/en/document/library/learn/index"
+            },
+            {
+            "source":  "/en/admin/preferences/learn/document-library/index",
+            "destination":  "/en/document/library/learn/index"
+            },
+            {
+            "source":  "/en/document/cloud/sharepoint-documents/learn/index",
+            "destination":  "/en/document/library/learn/index"
+            },
+            {
+            "source":  "/en/document/cloud/sharepoint-documents/learn/set-up-folders",
+            "destination":  "/en/document/library/learn/index"
+            },
+            {
+            "source":  "/en/admin/options/learn/number-allocation/document-template-defaults",
+            "destination":  "/en/document/templates/admin/document-template-defaults"
+            },
+            {
+            "source":  "/en/admin/lists/learn/add-template",
+            "destination":  "/en/document/templates/admin/link-template"
+            },
+            {
+            "source":  "/en/document/cloud/g-suite/configure",
+            "destination":  "/en/document/templates/admin/link-template"
+            },
+            {
+            "source":  "/en/admin/lists/learn/replace-existing-template",
+            "destination":  "/en/document/templates/admin/update-template"
+            },
+            {
+            "source":  "/en/admin/lists/learn/using-standard-templates",
+            "destination":  "/en/document/templates/admin/update-template"
+            },
+            {
+            "source":  "/en/onsite/win-client/learn/using-document-templates-for-multiple-languages",
+            "destination":  "/en/document/templates/admin/using-document-templates-for-multiple-languages"
+            },
+            {
+            "source":  "/en/admin/lists/learn/creating-template-document",
+            "destination":  "/en/document/templates/learn/create"
+            },
+            {
+            "source":  "/en/document/templates/quote/add-template-var",
+            "destination":  "/en/document/templates/learn/create"
+            },
+            {
+            "source":  "/en/document/templates/document-types",
+            "destination":  "/en/document/templates/learn/document-types"
+            },
+            {
+            "source":  "/en/admin/lists/learn/document-template",
+            "destination":  "/en/document/templates/learn/index"
+            },
+            {
+            "source":  "/en/document/templates/quote/index",
+            "destination":  "/en/document/templates/learn/quote-templates"
+            },
+            {
+            "source":  "/en/document/templates/quote/lang-culture",
+            "destination":  "/en/document/templates/learn/quote-templates"
+            },
+            {
+            "source":  "/en/document/learn/template-variables",
+            "destination":  "/en/document/templates/learn/template-variables"
+            },
+            {
+            "source":  "/en/document/templates/troubleshooting",
+            "destination":  "/en/document/templates/learn/troubleshooting"
+            },
+            {
+            "source":  "/en/document/templates/quote/mergefields",
+            "destination":  "/en/document/templates/merge-fields/quote"
+            },
+            {
+            "source":  "/en/document/templates/index",
+            "destination":  "/en/document/templates/variables/index"
+            },
+            {
+            "source":  "/en/email/service/learn/email-filters/delete-email-filter",
+            "destination":  "/en/email/admin/mailbox/create-email-filter"
+            },
+            {
+            "source":  "/en/email/service/learn/email-filters/create-email-filter",
+            "destination":  "/en/email/admin/mailbox/create-email-filter"
+            },
+            {
+            "source":  "/en/email/service/learn/create-mailbox",
+            "destination":  "/en/email/admin/mailbox/create-mailbox"
+            },
+            {
+            "source":  "/en/email/service/learn/create-sms-mailbox",
+            "destination":  "/en/email/admin/mailbox/create-sms-mailbox"
+            },
+            {
+            "source":  "/en/email/service/learn/delete-mailbox",
+            "destination":  "/en/email/admin/mailbox/delete-mailbox"
+            },
+            {
+            "source":  "/en/email/service/learn/index",
+            "destination":  "/en/email/admin/mailbox/index"
+            },
+            {
+            "source":  "/en/email/service/learn/screen/tab-inbox-for-email",
+            "destination":  "/en/email/admin/mailbox/index"
+            },
+            {
+            "source":  "/en/email/service/learn/screen/tab-outbox-for-email",
+            "destination":  "/en/email/admin/mailbox/index"
+            },
+            {
+            "source":  "/en/email/service/learn/screen/tab-blocked-email",
+            "destination":  "/en/email/admin/mailbox/index"
+            },
+            {
+            "source":  "/en/email/service/learn/screen/sms-inbox",
+            "destination":  "/en/email/admin/mailbox/index"
+            },
+            {
+            "source":  "/en/email/service/learn/screen/sms-outbox",
+            "destination":  "/en/email/admin/mailbox/index"
+            },
+            {
+            "source":  "/en/email/service/learn/email-filters/index",
+            "destination":  "/en/email/admin/mailbox/index"
+            },
+            {
+            "source":  "/en/admin/lists/learn/email-template",
+            "destination":  "/en/email/admin/add-email-template"
+            },
+            {
+            "source":  "/en/admin/lists/learn/add-email-template",
+            "destination":  "/en/email/admin/add-email-template"
+            },
+            {
+            "source":  "/en/admin/lists/learn/create-email-template",
+            "destination":  "/en/email/admin/add-email-template"
+            },
+            {
+            "source":  "/en/email/admin/index",
+            "destination":  "/en/email/admin/add-email-template"
+            },
+            {
+            "source":  "/en/email/inbox/index",
+            "destination":  "/en/email/inbox/it/index"
+            },
+            {
+            "source":  "/en/email/learn/compose",
+            "destination":  "/en/email/inbox/learn/compose"
+            },
+            {
+            "source":  "/en/email/inbox/learn/inbox-options",
+            "destination":  "/en/email/inbox/learn/index"
+            },
+            {
+            "source":  "/en/email/inbox/learn/mark-as-read",
+            "destination":  "/en/email/inbox/learn/preview"
+            },
+            {
+            "source":  "/en/email/inbox/learn/move-email-to-folder",
+            "destination":  "/en/email/inbox/learn/preview"
+            },
+            {
+            "source":  "/en/email/inbox/learn/print",
+            "destination":  "/en/email/inbox/learn/preview"
+            },
+            {
+            "source":  "/en/service/config/set-up-facebook-integration",
+            "destination":  "https://community.superoffice.com/en/technical/forums/api-forums/service-crmscript/our-facebook-integration-and-cambridge-analytica/"
+            },
+            {
+            "source":  "/en/admin/lists/learn/privacy-legal-base-add",
+            "destination":  "/en/security/privacy/admin/add-legal-base"
+            },
+            {
+            "source":  "/en/security/privacy/learn/admin/add-consent-purpose",
+            "destination":  "/en/security/privacy/admin/add-purpose"
+            },
+            {
+            "source":  "/en/admin/lists/learn/privacy-source-add",
+            "destination":  "/en/security/privacy/admin/add-source"
+            },
+            {
+            "source":  "/en/security/privacy/learn/edit-privacy-confirmation-email",
+            "destination":  "/en/security/privacy/admin/edit-privacy-confirmation-email"
+            },
+            {
+            "source":  "/en/security/privacy/learn/implementation-guide",
+            "destination":  "/en/security/privacy/admin/index"
+            },
+            {
+            "source":  "/en/search-options/selection/learn/howto/mass-delete",
+            "destination":  "/en/security/privacy/learn/mass-delete"
             }
         ]
 }

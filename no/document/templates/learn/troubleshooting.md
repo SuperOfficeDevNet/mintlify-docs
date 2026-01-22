@@ -15,7 +15,7 @@ language: no
 
 Når vi oppretter et dokument i SuperOffice, trekker vi ut alt innholdet i dokumentet som ren tekst, som vårt malutskiftingssystem bruker for å identifisere og erstatte malvariabler.
 
-Vi søker etter en starttagg ( `{` eller `<`) og deretter en slutttagg (`}` eller `>`). Teksten mellom taggene sjekkes deretter for å se om det er en malvariabel. For eksempel vil `{atit}` bli gjenkjent som malvariabelen **atit,** mens `{thisisnotatag}` ikke gjenkjennes som en gyldig tagg og vil ikke bli erstattet.
+Vi søker etter en starttagg ( `{` eller `<`) og deretter en slutttagg (`}` eller `>`). Teksten mellom taggene sjekkes deretter for å se om det er en malvariabel. For eksempel vil \{**atit**\} bli gjenkjent som malvariabelen **atit,** mens **\{thisisnotatag\}** ikke gjenkjennes som en gyldig tagg og vil ikke bli erstattet.
 
 Hvis en malvariabel gjenkjennes, vil den bli erstattet med sin respektive verdi, selv når den er tom. Hvis en malvariabel fortsatt er synlig i det ferdige opprettede dokumentet, betyr det at systemet vårt ikke har gjenkjent det som en gyldig malvariabel.
 
@@ -93,7 +93,7 @@ Men av en eller annen grunn kan xml rundt våre malvariabler ende opp med å se 
 {</a:t><a:rPr lang="en-US" dirty="0" smtClean="0"/><a:t>onam</a:t></a:r><a:r><a:rPr lang="en-US" smtClean="0"/><a:t>}
 ```
 
-Som du kan se, er start- "{" og slutt- "}" taggene plassert langt fra malvariabelidentifikatoren "onam", så systemet vårt vil ikke gjenkjenne dette som en gyldig malvariabel. Sluttresultatet er at dokumentet etter opprettelse fortsatt vil vise teksten {onam}.
+Som du kan se, er start- "\{" og slutt- "\}" taggene plassert langt fra malvariabelidentifikatoren "onam", så systemet vårt vil ikke gjenkjenne dette som en gyldig malvariabel. Sluttresultatet er at dokumentet etter opprettelse fortsatt vil vise teksten \{onam\}.
 
 ## Hva kan jeg gjøre når dette skjer?
 

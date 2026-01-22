@@ -63,7 +63,7 @@ For å vise hvordan du kan bruke Finn-funksjonen til salgsprognoser, er her et e
 
 3. Når du klikker på **Legg til**, vises en rullegardinmeny. Klikk på **Salg** i menyen, og velg deretter feltet **Beløp**.
 
-4. Klikk på det andre feltet som for øyeblikket viser =-tegnet. Velg tegnet **>**.
+4. Klikk på det andre feltet som for øyeblikket viser =-tegnet. Velg tegnet **\>**.
 
 5. Angi verdien som skal oppfylles. I dette tilfellet, større enn €5000. Klikk i det tredje feltet og skriv inn 5000.
 

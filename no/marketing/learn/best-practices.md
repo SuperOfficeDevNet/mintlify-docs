@@ -70,7 +70,7 @@ En av de viktigste aspektene av disse tekniske delene er **[SPF-posten i domenet
 
 ## Bruk e-postdomenevalidering
 
-Forhåpentligvis bruker du allerede de fleksible alternativene for å tilpasse og spesifisere Fra- og Svar-til-feltene når du setter opp en utsendelse i SuperOffice. Dette er flott når du vil legge til egendefinert tekst som **< Jeanette fra SuperOffice >** for å vises som avsender. Eller hvis du sender en e-post på vegne av kollegaen din eller sjefen din.
+Forhåpentligvis bruker du allerede de fleksible alternativene for å tilpasse og spesifisere Fra- og Svar-til-feltene når du setter opp en utsendelse i SuperOffice. Dette er flott når du vil legge til egendefinert tekst som **\< Jeanette fra SuperOffice >** for å vises som avsender. Eller hvis du sender en e-post på vegne av kollegaen din eller sjefen din.
 
 Men hvis du legger til en ikke-validerbar eller feilstavet e-postadresse, kan det skade e-postleverbarheten din.
 

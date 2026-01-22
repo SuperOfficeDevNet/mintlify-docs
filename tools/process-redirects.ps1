@@ -354,7 +354,31 @@ if ($hasRedirects) {
     $docsJson | Add-Member -MemberType NoteProperty -Name 'redirects' -Value $redirectsList.ToArray() -Force
 }
 
-$docsJsonContent = $docsJson | ConvertTo-Json -Depth 100
+# Convert to JSON with proper depth
+if ($PSVersionTable.PSVersion.Major -ge 6) {
+    $docsJsonContent = $docsJson | ConvertTo-Json -Depth 100 -EscapeHandling EscapeNonAscii
+} else {
+    # PS 5.1 - use large depth value
+    $docsJsonContent = $docsJson | ConvertTo-Json -Depth 100
+    # Fix Unicode escapes for PS 5.1
+    $docsJsonContent = $docsJsonContent -replace '\\u0027', "'"
+}
+
+# Normalize indentation to 2 spaces
+$lines = $docsJsonContent -split "`n"
+$docsJsonContent = ($lines | ForEach-Object {
+    if ($_ -match '^( +)(.*)$') {
+        $indent = $matches[1]
+        $content = $matches[2]
+        # Convert groups of 4 spaces to 2 spaces
+        $newIndent = '  ' * ($indent.Length / 4)
+        "$newIndent$content"
+    } else {
+        $_
+    }
+}) -join "`n"
+
+# Write with UTF-8 encoding without BOM
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
 [System.IO.File]::WriteAllText($docsJsonPath, $docsJsonContent, $utf8NoBom)
 

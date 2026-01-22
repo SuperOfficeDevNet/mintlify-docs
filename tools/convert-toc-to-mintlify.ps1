@@ -179,8 +179,8 @@ function Convert-YamlPath {
         }
     }
 
-    # Clean up path - remove .md extension, normalize slashes
-    $path = $href -replace '\.md$', '' -replace '^/', '' -replace '\\', '/'
+    # Clean up path - remove file extensions, normalize slashes
+    $path = $href -replace '\.(md|mdx|yml)$', '' -replace '^/', '' -replace '\\', '/'
 
     # Add base path if provided
     if ($BasePath) {

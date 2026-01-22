@@ -90,15 +90,22 @@ function Get-ImportName {
 function Get-IncludeExtension {
     param([string]$IncludePath)
 
+    # Check if .mdx version exists (may have been converted already)
+    $mdxPath = $IncludePath -replace '\.md$', '.mdx'
+    if (Test-Path $mdxPath) {
+        return ".mdx"
+    }
+
+    # Check original .md path
     if (-not (Test-Path $IncludePath)) {
         Write-Warning "Include file not found: $IncludePath"
         return ".md"
     }
 
-    # Read file content
+    # Read file content to detect Mintlify components
     $content = Get-Content $IncludePath -Raw -Encoding UTF8
 
-    # Check if file contains Mintlify components
+    # Check if file contains Mintlify components (will be converted to .mdx later)
     if ($content -match '<(Note|Tip|Caution|Warning|Frame)(\s|>)') {
         return ".mdx"
     }

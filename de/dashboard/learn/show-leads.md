@@ -79,11 +79,11 @@ Wenn Sie UTM-Tracking (erfordert Marketing Premium) verwenden, helfen zusätzlic
 * [Konversionstracking (UTM-Daten)][8]
 * [Mehr über Kriterien][2]
 
-[2]: ../../search-options/learn/search-criteria.md
-[5]: create.md
-[6]: working-with-tiles.md
-[7]: ../../lead/learn/index.md
-[8]: ../../marketing/utm/learn/index.md
+[2]: ../../search-options/learn/search-criteria
+[5]: ./create
+[6]: ./working-with-tiles
+[7]: ../../lead/learn/index
+[8]: ../../marketing/utm/learn/index
 
 [img1]: ../../../media/loc/en/dashboard/lead-qualification.png
 [img2]: ../../../media/loc/en/dashboard/conversion-dashboard.png

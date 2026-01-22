@@ -18,6 +18,8 @@ redirect_from:
   - /de/search-options/admin/index
 ---
 
+import GotoFreetext from "./includes/goto-freetext.md";
+
 # Volltextsuche konfigurieren
 
 Mit der Funktion Volltextsuche in SuperOffice CRM können Benutzer die gesamte Anwendung nach Text durchsuchen. Dies gilt für Text, den die Benutzer selbst in die Datenbank eingefügt haben, wie zum Beispiel Firmennamen, Abteilungen und Text aus den Ansichten Person und Dokument.
@@ -26,7 +28,7 @@ Mit der Funktion Volltextsuche in SuperOffice CRM können Benutzer die gesamte A
 
 ## Deaktivieren Sie die Volltextsuche (Vor Ort)
 
-1. [!include[Go to freetext search tab](includes/goto-freetext.md)]
+1. <GotoFreetext />
 
 1. Deaktivieren Sie das Kontrollkästchen **Volltextsuche ermöglichen**.
 
@@ -36,7 +38,7 @@ Standardmäßig ist die Volltextsuche aktiviert. Wenn Ihr Unternehmen Systemress
 
 Sie können Suchkriterien für Einzelwörter (zum Beispiel *Peter*) und Phrasen aus mehreren Wörtern (zum Beispiel *Oliver Peter Gruber*) festlegen.
 
-1. [!include[Go to freetext search tab](includes/goto-freetext.md)]
+1. <GotoFreetext />
 
 1. Überprüfen Sie, ob die Volltextsuche aktiviert ist.
 
@@ -63,5 +65,5 @@ Bei der Suche nach Phrasen, die aus mehreren Wörtern bestehen, werden alle Wör
 * [Stoppwörter hinzufügen][3]
 * [Volltextindex neu generieren][4]
 
-[3]: stopwords.md
-[4]: regenerate-index.md
+[3]: ./stopwords
+[4]: ./regenerate-index

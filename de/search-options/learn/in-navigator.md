@@ -33,7 +33,7 @@ The Navigator FastSearcher runs two parallel searches:
 
 * Sie können im Schnellsuchfeld für **Firmen** im Navigator nach einer Person suchen.
 
-[1]: ../../learn/basics/history.md
-[2]: ../../../en/api/osql/soundx.md
+[1]: ../../learn/basics/history
+[2]: ../../../en/api/osql/soundx
 
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

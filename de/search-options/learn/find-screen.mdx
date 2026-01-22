@@ -12,6 +12,10 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
+import ClearCriteria from "./includes/clear-criteria.md";
+import SelectField from "./includes/select-field.md";
+import RunSearch from "./includes/run-search.md";
+
 # Die Ansicht Suchen <i class="ph ph-list-magnifying-glass" aria-hidden="true"></i>
 
 Verwenden Sie die Ansicht **Suchen**, um in SuperOffice CRM nach Datensätzen und Daten zu suchen.
@@ -55,9 +59,18 @@ Mit der Funktion Suchen können Sie eine Suche durchführen, indem Sie Suchkrite
 
 Schauen wir uns einige praktische Beispiele an, wie Sie die ODER-Funktion verwenden können. Sie können nach allen Kunden suchen, die das "Produkt A" gekauft haben, und nach Kunden, die "Produkt B" nicht gekauft haben, um Ihre Querverkäufe zu steigern. Sie können aber auch nach allen Großkunden mit Sitz in Liverpool oder Manchester suchen, damit Sie sie wegen eines bevorstehenden Ereignisses in einer dieser Orte kontaktieren können.
 
-Sehen Sie sich dieses Video an, um zu lernen, wie Sie eine Suche mit der ODER-Funktion erstellen:
-
-[!Video https://www.youtube.com/embed/Z-fSLJSdp2k]
+<Frame caption="Sehen Sie sich dieses Video an, um zu lernen, wie Sie eine Suche mit der ODER-Funktion erstellen">
+  <iframe
+    width="100%"
+    height="420"
+    src="https://www.youtube-nocookie.com/embed/Z-fSLJSdp2k"
+    title="Sehen Sie sich dieses Video an, um zu lernen, wie Sie eine Suche mit der ODER-Funktion erstellen"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</Frame>
 
 (Videolänge - 4:08)
 
@@ -92,13 +105,13 @@ Als Geschäftsführer der Vertriebsabteilung möchten Sie eine Präsentation fü
 
 1. Klicken Sie auf **Firma suchen**.
 
-1. [!include[Clear criteria](includes/clear-criteria.md)]
+1. <ClearCriteria />
 
 1. Klicken Sie auf **Hinzufügen**.
 
-1. [!include[Select field](includes/select-field.md)]. Klicken Sie zuerst auf **Verkauf** (<i class="ph ph-currency-circle-dollar" aria-hidden="true"></i>) und dann auf **Betrag**.
+1. <SelectField />. Klicken Sie zuerst auf **Verkauf** (<i class="ph ph-currency-circle-dollar" aria-hidden="true"></i>) und dann auf **Betrag**.
 
-1. Klicken Sie im Listenfeld rechts neben **Betrag** auf <i class="ph ph-caret-down" aria-label="Chevron"></i> und wählen Sie die Option **>** (größer als) aus.
+1. Klicken Sie im Listenfeld rechts neben **Betrag** auf <i class="ph ph-caret-down" aria-label="Chevron"></i> und wählen Sie die Option **\>** (größer als) aus.
 
 1. Geben Sie im letzten Feld in der Linie den Mindestbetrag ein. Zum Beispiel, "100 000".
 
@@ -106,7 +119,7 @@ Als Geschäftsführer der Vertriebsabteilung möchten Sie eine Präsentation fü
 
 1. Klicken Sie auf **Hinzufügen**.
 
-1. [!include[Select field](includes/select-field.md)]. Klicken Sie zuerst auf **Verkauf** und dann auf **Erfasstes Datum**.
+1. <SelectField />. Klicken Sie zuerst auf **Verkauf** und dann auf **Erfasstes Datum**.
 
 1. Klicken Sie im zweiten Listenfeld auf den Pfeil und wählen Sie **Zwischen** aus.
 
@@ -118,7 +131,7 @@ Als Geschäftsführer der Vertriebsabteilung möchten Sie eine Präsentation fü
 
 1. Geben Sie in der angezeigten Liste "Status" ein, um eine Schnellsuche in dem Feld durchzuführen.
 
-1. Wählen Sie in der angezeigten Liste **Verkauf** – **Status** (mit dem Verkaufssymbol davor).
+1. Wählen Sie in der angezeigten Liste **Verkauf** - **Status** (mit dem Verkaufssymbol davor).
 
 1. Wählen Sie im zweiten Listenfeld **Ist eines von** aus.
 
@@ -126,7 +139,7 @@ Als Geschäftsführer der Vertriebsabteilung möchten Sie eine Präsentation fü
 
 1. Sie haben nun angegeben, dass Sie Firmen mit Verkäufen über einem bestimmten Betrag, innerhalb eines bestimmten Datumsbereichs und mit dem Status **Verkauft** suchen möchten.
 
-1. [!include[Click Find](includes/run-search.md)]
+1. <RunSearch />
 
 ## <a id="ex2"></a>Beispiel 2: Nach Kunden in Dänemark suchen, für die Sie verantwortlich sind
 
@@ -136,11 +149,11 @@ Angenommen, Sie nehmen an einer Konferenz in Dänemark teil. Wenn Sie dorthin re
 
 1. Klicken Sie auf **Firma suchen**.
 
-1. [!include[Clear criteria](includes/clear-criteria.md)]
+1. <ClearCriteria />
 
 1. Klicken Sie auf **Hinzufügen**.
 
-1. [!include[Select field](includes/select-field.md)]: Klicken Sie zuerst auf **Firma** (<i class="ph ph-buildings" aria-hidden="true"></i>) und anschließend auf **Land**.
+1. <SelectField />: Klicken Sie zuerst auf **Firma** (<i class="ph ph-buildings" aria-hidden="true"></i>) und anschließend auf **Land**.
 
 1. Wählen Sie im zweiten Listenfeld **Ist eines von** aus.
 
@@ -156,7 +169,7 @@ Angenommen, Sie nehmen an einer Konferenz in Dänemark teil. Wenn Sie dorthin re
 
 1. Sie haben nun angegeben, dass Sie Firmen in Dänemark suchen möchten, für die Sie verantwortlich sind.
 
-1. [!include[Click Find](includes/run-search.md)]
+1. <RunSearch />
 
 ## <a id="ex3"></a>Beispiel 3: Nach Verkäufen mit dem Status Verkauft suchen
 
@@ -166,17 +179,17 @@ Angenommen, Sie sind der Manager einer Firma und möchten herausfinden, welche V
 
 2. Klicken Sie auf **Verkauf suchen**.
 
-3. [!include[Clear criteria](includes/clear-criteria.md)]
+3. <ClearCriteria />
 
 4. Klicken Sie auf **Hinzufügen**.
 
-5. [!include[Select field](includes/select-field.md)]: Klicken Sie zuerst auf **Verkauf** und anschließend auf **Status**.
+5. <SelectField />: Klicken Sie zuerst auf **Verkauf** und anschließend auf **Status**.
 
 6. Wählen Sie im zweiten Listenfeld **Ist eines von** aus.
 
 7. Klicken Sie auf das Feld **Objekte auswählen** rechts neben dem Feld **Ist eines von** und wählen Sie **Verkauft** aus. Sie haben nun angegeben, dass Sie abgeschlossene Verkäufe suchen möchten.
 
-8. [!include[Click Find](includes/run-search.md)]
+8. <RunSearch />
 
 ## <a id="ex4"></a>Beispiel 4: Nach Projekten suchen, an denen Sie im letzten Jahr beteiligt waren
 
@@ -186,11 +199,11 @@ Angenommen, Sie sind mit Ihrem Gehalt nicht mehr zufrieden und wollen um eine Ge
 
 1. Klicken Sie auf **Verkauf suchen**.
 
-1. [!include[Clear criteria](includes/clear-criteria.md)]
+1. <ClearCriteria />
 
 1. Klicken Sie auf **Hinzufügen**.
 
-1. [!include[Select field](includes/select-field.md)]: Klicken Sie zuerst auf <i class="ph ph-user-circle" aria-hidden="true"></i> **Person** und anschließend auf **Nachname**.
+1. <SelectField />: Klicken Sie zuerst auf <i class="ph ph-user-circle" aria-hidden="true"></i> **Person** und anschließend auf **Nachname**.
 
 1. Wählen Sie im zweiten Listenfeld **Ist gleich** aus.
 
@@ -208,7 +221,7 @@ Angenommen, Sie sind mit Ihrem Gehalt nicht mehr zufrieden und wollen um eine Ge
 
 1. Sie haben nun angegeben, dass Sie Projekte ab einem bestimmten Datum bis heute finden möchten, an denen Sie beteiligt waren.
 
-1. [!include[Click Find](includes/run-search.md)]
+1. <RunSearch />
 
 ## <a id="ex5"></a>Beispiel 5: Nach ergriffenen Marketing-Initiativen suchen
 
@@ -218,11 +231,11 @@ Angenommen, Sie arbeiten als Geschäftsführer der Marketing-Abteilung, und Sie 
 
 1. Klicken Sie auf **Verkauf suchen**.
 
-1. [!include[Clear criteria](includes/clear-criteria.md)]
+1. <ClearCriteria />
 
 1. Klicken Sie auf **Hinzufügen**.
 
-1. [!include[Select field](includes/select-field.md)]: Klicken Sie zuerst auf <i class="ph ph-calendar-blank" aria-hidden="true"></i> **Folgeaufgabe** und anschließend auf **Zweck**.
+1. <SelectField />: Klicken Sie zuerst auf <i class="ph ph-calendar-blank" aria-hidden="true"></i> **Folgeaufgabe** und anschließend auf **Zweck**.
 
 1. Wählen Sie im zweiten Listenfeld **Ist eines von** aus.
 
@@ -232,7 +245,7 @@ Angenommen, Sie arbeiten als Geschäftsführer der Marketing-Abteilung, und Sie 
 
 1. Klicken Sie auf **Hinzufügen**.
 
-1. [!include[Select field](includes/select-field.md)]. Klicken Sie zuerst auf **Folgeaufgabe** und anschließend auf **Enddatum**.
+1. <SelectField />. Klicken Sie zuerst auf **Folgeaufgabe** und anschließend auf **Enddatum**.
 
 1. Wählen Sie im zweiten Listenfeld **vorherige/r/s** aus.
 
@@ -244,11 +257,11 @@ Angenommen, Sie arbeiten als Geschäftsführer der Marketing-Abteilung, und Sie 
 
 1. Klicken Sie auf **Hinzufügen**.
 
-1. [!include[Select field](includes/select-field.md)]. Klicken Sie zuerst auf **Folgeaufgabe** und anschließend auf **Abgeschlossen**.
+1. <SelectField />. Klicken Sie zuerst auf **Folgeaufgabe** und anschließend auf **Abgeschlossen**.
 
 1. Aktivieren Sie das Kontrollkästchen **Ja**. Sie haben nun festgelegt, dass Sie nach Folgeaufgaben suchen möchten, die als **Abgeschlossen** angegeben sind.
 
-1. [!include[Click Find](includes/run-search.md)]
+1. <RunSearch />
 
 ## Was möchten Sie jetzt tun?
 
@@ -258,13 +271,13 @@ Angenommen, Sie arbeiten als Geschäftsführer der Marketing-Abteilung, und Sie 
 * [Verlaufsliste verwenden][6]
 * [Suchkriterien verwenden][3]
 </Note>
-[1]: ../../learn/getting-started/main-screen/buttons-in-menu-bar.md
-[4]: ../../learn/getting-started/main-screen/side-panel.md
-[2]: in-navigator.md
-[3]: search-criteria.md
-[5]: freetext-search.md
-[6]: ../../learn/basics/history.md
-[7]: ../selection/learn/howto/index.md
-[8]: ../selection/learn/create.md
-[9]: ../selection/learn/add-remove-members-static.md
+[1]: ../../learn/getting-started/main-screen/buttons-in-menu-bar
+[4]: ../../learn/getting-started/main-screen/side-panel
+[2]: ./in-navigator
+[3]: ./search-criteria
+[5]: ./freetext-search
+[6]: ../../learn/basics/history
+[7]: ../selection/learn/howto/index
+[8]: ../selection/learn/create
+[9]: ../selection/learn/add-remove-members-static
 [img10]: ../../../media/loc/en/search-options/task-menu.png

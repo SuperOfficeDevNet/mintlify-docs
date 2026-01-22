@@ -15,6 +15,8 @@ deployment: onsite
 redirect_from: /de/admin/options/learn/freetext-search/regenerate-index
 ---
 
+import GotoFreetext from "./includes/goto-freetext.md";
+
 # Volltextindex erneuern (Vor Ort)
 
 <Note>
@@ -26,7 +28,7 @@ Wenn Sie [neue Stoppwörter hinzufügen oder löschen][1], haben Ihre Änderunge
 
 ## Um den Volltextindex zu erneuern
 
-1. [!include[Go to freetext search tab](includes/goto-freetext.md)]
+1. <GotoFreetext />
 
 1. Stellen Sie sicher, dass die Option **Volltextsuche ermöglichen** ausgewählt ist.
 
@@ -34,4 +36,4 @@ Wenn Sie [neue Stoppwörter hinzufügen oder löschen][1], haben Ihre Änderunge
 
 1. Sie erhalten nun die Mitteilung, dass es einige Zeit dauern kann, einen neuen Index zu erstellen, und dass die Benutzer in diesem Zeitraum nicht auf die Volltextsuchfunktion zugreifen können. Klicken Sie auf **OK**. Daraufhin wird ein Fenster geöffnet, das den Status der Generierung anzeigt. Wenn dieses Fenster verschwindet, ist der neue Volltextindex erstellt.
 </Note>
-[1]: stopwords.md
+[1]: ./stopwords

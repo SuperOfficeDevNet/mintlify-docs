@@ -1,7 +1,7 @@
 ---
 uid: help-de-selection-board-view
 title: Board-Ansicht in Selektionen verwenden
-description: Selektionen mit der Board-Ansicht visualisieren – mit Gruppierung, Filtern und Drag-and-Drop-Karten
+description: Selektionen mit der Board-Ansicht visualisieren - mit Gruppierung, Filtern und Drag-and-Drop-Karten
 keywords: Board-Ansicht, Selektionsansicht, Selektion, Verkaufsboard, Projektboard, Anfrageboard, Kanban, gruppieren nach, Filterleiste, Verkaufsdatum-Badge, Tage in Phase, Tage seit Registrierung
 author: digitaldiina
 date: 12.02.2025
@@ -46,7 +46,7 @@ Die Funktionalität ist für alle unterstützten Selektionstypen gleich: Sie kö
 
     ![Seitenleiste mit Projektdetails -screenshot][img12]
 
-* Um eine Karte zu bearbeiten, bewegen Sie die Maus darüber und klicken Sie auf **Bearbeiten** (<i class="ph ph-pencil" aria-hidden="true"></i>). Dies öffnet denselben Bearbeitungsdialog wie an anderer Stelle in SuperOffice CRM – ohne die Board-Ansicht zu verlassen.
+* Um eine Karte zu bearbeiten, bewegen Sie die Maus darüber und klicken Sie auf **Bearbeiten** (<i class="ph ph-pencil" aria-hidden="true"></i>). Dies öffnet denselben Bearbeitungsdialog wie an anderer Stelle in SuperOffice CRM - ohne die Board-Ansicht zu verlassen.
 
   ![Cursor zeigt auf die Schaltfläche Bearbeiten auf einer Verkaufskarte -screenshot][img4]
 
@@ -140,7 +140,7 @@ Der Gesamtwert wird **neben jedem Spaltennamen** angezeigt und hilft Ihnen, die 
 
 ### Verkaufsdatum-Badge (nur Verkäufe)
 
-Sie können steuern, was das **graue Badge** auf jeder Verkaufskarte in der Board-Ansicht anzeigt. Dies hilft Ihnen, das Alter auf einen Blick zu verstehen – entweder wie lange ein Verkauf geöffnet war oder wie lange er sich in seiner aktuellen Phase befindet.
+Sie können steuern, was das **graue Badge** auf jeder Verkaufskarte in der Board-Ansicht anzeigt. Dies hilft Ihnen, das Alter auf einen Blick zu verstehen - entweder wie lange ein Verkauf geöffnet war oder wie lange er sich in seiner aktuellen Phase befindet.
 
 1. Klicken Sie auf <i class="ph ph-gear-six" aria-hidden="true"></i>, um das **Einstellungen**-Panel zu öffnen.
 
@@ -238,17 +238,17 @@ Nutzen Sie Gruppierung kreativ, um Daten effizient zu organisieren und zu nutzen
 * [Projektstatus konfigurieren][18]
 * [Projekttypen konfigurieren][19]
 
-[1]: create.md
-[2]: index.md
-[11]: ../../../learn/getting-started/main-screen/side-panel.md
-[12]: ../../../sale/learn/create.md
-[13]: ../../../sale/admin/sale-stage.md
-[14]: ../../../request/learn/create.md
-[15]: ../../../request/admin/status/create.md
-[16]: ../../../request/admin/category/create.md
-[17]: ../../../project/learn/create.md
-[18]: ../../../project/admin/project-status.md
-[19]: ../../../project/admin/project-type.md
+[1]: ./create
+[2]: ./index
+[11]: ../../../learn/getting-started/main-screen/side-panel
+[12]: ../../../sale/learn/create
+[13]: ../../../sale/admin/sale-stage
+[14]: ../../../request/learn/create
+[15]: ../../../request/admin/status/create
+[16]: ../../../request/admin/category/create
+[17]: ../../../project/learn/create
+[18]: ../../../project/admin/project-status
+[19]: ../../../project/admin/project-type
 
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png

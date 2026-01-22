@@ -14,6 +14,8 @@ language: de
 redirect_from: /de/admin/options/learn/freetext-search/stopwords
 ---
 
+import GotoFreetext from "./includes/goto-freetext.md";
+
 # Stoppwörter
 
 Ein Stoppwort ist ein Wort, das nicht indiziert ist (d.h. nicht in eine Volltextsuche aufgenommen wird). Dies können beispielsweise Wörter wie *und*, *oder*, *es* und *für* sein. Stoppwörter werden definiert, damit es nicht so lange dauert, den Volltextindex zu durchsuchen, da unnötige Wörter ausgeschlossen werden und somit weniger Platz in der Datenbank belegt wird.
@@ -22,7 +24,7 @@ Die als Stoppwörter für Volltextsuchen definierten Wörter werden in der Ansic
 
 ## Bevor Sie beginnen
 
-1. [!include[Go to freetext search tab](includes/goto-freetext.md)]
+1. <GotoFreetext />
 
 1. Stellen Sie bei lokalen Installationen sicher, dass die Option **Freetext-Suche aktivieren** ausgewählt ist. In CRM Online ist diese Option immer aktiviert.
 
@@ -61,4 +63,4 @@ Stoppwörter werden gelöscht, damit sie nach dem Ausschließen doch in die Voll
 
 1. Klicken Sie unter der Firmenliste auf die Schaltfläche **Löschen**.
 </Tip>
-[3]: regenerate-index.md
+[3]: ./regenerate-index

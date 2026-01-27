@@ -77,8 +77,11 @@ function Get-ImportName {
     # Remove extension
     $name = [System.IO.Path]::GetFileNameWithoutExtension($FileName)
 
-    # Split on hyphens and underscores, capitalize each word
-    $parts = $name -split '[-_]'
+    # Replace dots with underscores (dots not valid in JavaScript identifiers)
+    $name = $name -replace '\.', '_'
+
+    # Split on hyphens, capitalize each word, keep underscores
+    $parts = $name -split '-'
     $pascalCase = ($parts | ForEach-Object {
         $_.Substring(0,1).ToUpper() + $_.Substring(1).ToLower()
     }) -join ''
@@ -155,6 +158,9 @@ function Convert-IncludesInFile {
             # Check if include needs .mdx extension
             $extension = Get-IncludeExtension -IncludePath $fullIncludePath
             $includePath = $includePath -replace '\.md$', $extension
+
+            # Replace ../common/includes with snippets
+            $includePath = $includePath -replace '\.\./common/includes', 'snippets'
 
             # Ensure relative paths start with ./ or ../
             if ($includePath -notmatch '^\.\.?[/\\]') {

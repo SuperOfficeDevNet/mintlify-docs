@@ -47,15 +47,15 @@ $converted = 0
 
 foreach ($file in $mdFiles) {
     $content = Get-Content $file.FullName -Raw -Encoding UTF8
-    
+
     # Check if file contains JSX components (with or without attributes) OR import statements
     # Use multiline mode for import detection
     if ($content -match '<(Note|Tip|Caution|Warning|Frame|Tabs?)(\s|>)' -or $content -match '(?m)^import\s+\w+\s+from\s+') {
         $newPath = $file.FullName -replace '\.md$', '.mdx'
-        
+
         # Rename the file
         Rename-Item -Path $file.FullName -NewName $newPath -Force
-        
+
         $converted++
         Write-Host "  $($file.Name) -> $([System.IO.Path]::GetFileName($newPath))" -ForegroundColor Green
     }

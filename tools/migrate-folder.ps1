@@ -19,33 +19,22 @@
     12. Sanitize markup (br tags, unicode, whitespace, .md→.mdx)
     13. Add sidebar titles
     14. Process redirects (delete redirect_url files, update docs.json)
-    (Future: Update TOC/navigation)
 
 .PARAMETER Path
     Path to folder to migrate (relative to repo root or absolute).
     This is a positional parameter - can be used without the -Path flag.
 
-.PARAMETER SkipToc
-    Skip the TOC conversion step (useful if TOC already converted or doesn't exist).
-
 .EXAMPLE
     .\migrate-folder.ps1 en/mobile
 
-.EXAMPLE
-    .\migrate-folder.ps1 en/automation -SkipToc
-
 .NOTES
     - Run convert-toc-to-mintlify.ps1 separately for now (updates docs.json)
-    - TODO: Integrate TOC updates as final step in pipeline
     - Scripts run in specific order for dependencies
 #>
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$Path,
-
-    [Parameter(Mandatory=$false)]
-    [switch]$SkipToc
+    [string]$Path
 )
 
 # Resolve paths
@@ -77,7 +66,6 @@ $scripts = @(
     @{ Name = "sanitize-markup.ps1"; Description = "Sanitizing markup" }
     @{ Name = "add-sidebar-title.ps1"; Description = "Adding sidebar titles" }
     @{ Name = "process-redirects.ps1"; Description = "Processing redirects and updating docs.json" }
-    # TODO: Add TOC update step here once implemented
 )
 
 Write-Host "`n=========================================================" -ForegroundColor Cyan
@@ -90,28 +78,6 @@ Write-Host ""
 $startTime = Get-Date
 $failedScripts = @()
 $successCount = 0
-
-# Optionally run TOC conversion first
-if (-not $SkipToc) {
-    Write-Host "---------------------------------------------------------" -ForegroundColor DarkGray
-    Write-Host "> Step 0: Converting TOC to Mintlify navigation" -ForegroundColor Cyan
-    Write-Host "---------------------------------------------------------" -ForegroundColor DarkGray
-
-    $tocScript = Join-Path $toolsDir "convert-toc-to-mintlify.ps1"
-    try {
-        & $tocScript $Path
-        if ($LASTEXITCODE -eq 0) {
-            Write-Host "* TOC conversion completed" -ForegroundColor Green
-        }
-        else {
-            Write-Warning "TOC conversion completed with warnings"
-        }
-    }
-    catch {
-        Write-Warning "TOC conversion failed: $_"
-    }
-    Write-Host ""
-}
 
 # Run each script in order
 for ($i = 0; $i -lt $scripts.Count; $i++) {

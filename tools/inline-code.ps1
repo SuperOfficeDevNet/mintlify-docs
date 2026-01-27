@@ -46,13 +46,13 @@ if (-not (Test-Path $Path)) {
 # Reusable function to remove consecutive blank lines
 function Remove-ConsecutiveBlankLines {
     param([string[]]$Lines)
-    
+
     $result = @()
     $lastWasBlank = $false
-    
+
     foreach ($line in $Lines) {
         $isBlank = [string]::IsNullOrWhiteSpace($line)
-        
+
         if ($isBlank) {
             if (-not $lastWasBlank) {
                 $result += $line
@@ -64,7 +64,7 @@ function Remove-ConsecutiveBlankLines {
             $lastWasBlank = $false
         }
     }
-    
+
     return $result
 }
 
@@ -74,36 +74,36 @@ function Get-CodeBlock {
         [string]$FilePath,
         [string]$Range
     )
-    
+
     if (-not (Test-Path $FilePath)) {
         Write-Warning "Code file not found: $FilePath"
         return @()
     }
-    
+
     $content = [System.IO.File]::ReadAllLines($FilePath)
-    
+
     # If no range, return all content
     if ([string]::IsNullOrWhiteSpace($Range)) {
         return $content
     }
-    
+
     # Parse range (format: "1-8" or "10-34")
     if ($Range -match '^(\d+)-(\d+)$') {
         $startLine = [int]$matches[1]
         $endLine = [int]$matches[2]
-        
+
         # Convert to 0-based index
         $startIdx = $startLine - 1
         $endIdx = $endLine - 1
-        
+
         if ($startIdx -lt 0) { $startIdx = 0 }
         if ($endIdx -ge $content.Length) { $endIdx = $content.Length - 1 }
-        
+
         if ($startIdx -le $endIdx) {
             return $content[$startIdx..$endIdx]
         }
     }
-    
+
     Write-Warning "Invalid range format: $Range"
     return $content
 }
@@ -114,31 +114,31 @@ function Find-CodeIncludeReferences {
         [string]$IncludeFileName,
         [string]$SearchPath
     )
-    
+
     $references = @{}
     $allFiles = Get-ChildItem -Path $SearchPath -Include "*.md", "*.mdx" -Recurse -File
-    
+
     $baseFileName = [System.IO.Path]::GetFileName($IncludeFileName)
     $escapedFileName = [regex]::Escape($baseFileName)
-    
+
     foreach ($file in $allFiles) {
         $content = Get-Content $file.FullName -Raw -Encoding UTF8
-        
+
         # Skip empty files
         if ([string]::IsNullOrWhiteSpace($content)) {
             continue
         }
-        
+
         # Check for code includes: [!code-LANG[ALT](path/file.ext)] or [!code-LANG[ALT](path/file.ext?range=X-Y)]
-        $pattern = "\[!code-([a-z]+)\[([^\]]*)\]\(([^)]*$escapedFileName(?:\?range=([0-9-]+))?)\)\]"
-        
+        $pattern = "\[!code-([a-z-]+)\[([^\]]*)\]\(([^)]*$escapedFileName(?:\?range=([0-9-]+))?)\)\]"
+
         $matchCollection = [regex]::Matches($content, $pattern)
         if ($matchCollection.Count -gt 0) {
             foreach ($regexMatch in $matchCollection) {
                 $lang = $regexMatch.Groups[1].Value
                 $alt = $regexMatch.Groups[2].Value
                 $range = $regexMatch.Groups[4].Value
-                
+
                 $key = "$baseFileName|$range"
                 if (-not $references.ContainsKey($key)) {
                     $references[$key] = @{
@@ -152,7 +152,7 @@ function Find-CodeIncludeReferences {
             }
         }
     }
-    
+
     return $references
 }
 
@@ -166,43 +166,43 @@ function Expand-CodeInclude {
         [string]$Alt,
         [string[]]$CodeBlock
     )
-    
+
     $content = [System.IO.File]::ReadAllLines($FilePath)
     $newContent = @()
     $modified = $false
-    
+
     $escapedFileName = [regex]::Escape($IncludeFileName)
     $rangePattern = if ($Range) { "\?range=$([regex]::Escape($Range))" } else { "" }
     $pattern = "\[!code-$Language\[[^\]]*\]\([^)]*$escapedFileName$rangePattern\)\]"
-    
+
     for ($i = 0; $i -lt $content.Length; $i++) {
         $line = $content[$i]
-        
+
         # Check for the code include pattern
         if ($line -match $pattern) {
             $modified = $true
-            
+
             # Remove markdownlint wrapper before if present
             if ($newContent.Count -gt 0 -and $newContent[-1] -match '<!--\s*markdownlint-disable') {
                 $newContent = $newContent[0..($newContent.Count - 2)]
             }
-            
+
             # Ensure blank line before code block
             if ($newContent.Count -gt 0 -and -not [string]::IsNullOrWhiteSpace($newContent[-1])) {
                 $newContent += ''
             }
-            
+
             # Add code block with title
             $title = if ($Alt) { " $Alt" } else { "" }
             $newContent += "``````$Language$title"
             $newContent += $CodeBlock
             $newContent += "``````"
-            
+
             # Ensure blank line after (will be added if next line isn't blank)
             if (($i + 1) -lt $content.Length -and -not [string]::IsNullOrWhiteSpace($content[$i + 1])) {
                 $newContent += ''
             }
-            
+
             # Skip markdownlint restore if present on next line
             if (($i + 1) -lt $content.Length -and $content[$i + 1] -match '<!--\s*markdownlint-restore') {
                 $i++
@@ -212,20 +212,20 @@ function Expand-CodeInclude {
             $newContent += $line
         }
     }
-    
+
     if ($modified) {
         $newContent = Remove-ConsecutiveBlankLines -Lines $newContent
         $utf8 = New-Object System.Text.UTF8Encoding $false
         [System.IO.File]::WriteAllLines($FilePath, $newContent, $utf8)
     }
-    
+
     return $modified
 }
 
 Write-Host "Processing: $Path" -ForegroundColor Cyan
 
 # Find all code include files in includes folders
-$includeFiles = Get-ChildItem -Path $Path -Include "*.cs", "*.js", "*.ts", "*.py", "*.java", "*.php", "*.rb", "*.go", "*.rs", "*.cpp", "*.c", "*.h" -Recurse -File | 
+$includeFiles = Get-ChildItem -Path $Path -Include "*.cs", "*.js", "*.ts", "*.py", "*.java", "*.php", "*.rb", "*.go", "*.rs", "*.cpp", "*.c", "*.h", "*.aspx", "*.html", "*.xml", "*.json", "*.sql" -Recurse -File |
     Where-Object { $_.DirectoryName -match 'includes$' }
 
 Write-Host "Found $($includeFiles.Count) code include file(s)" -ForegroundColor Cyan
@@ -236,37 +236,37 @@ $deletedIncludes = @()
 
 foreach ($includeFile in $includeFiles) {
     Write-Host "`nProcessing: $($includeFile.Name)" -ForegroundColor Yellow
-    
+
     # Find all files that reference this include (grouped by range)
     $referenceGroups = Find-CodeIncludeReferences -IncludeFileName $includeFile.Name -SearchPath $repoRoot
-    
+
     if ($referenceGroups.Count -eq 0) {
         Write-Host "  No references found" -ForegroundColor Gray
         continue
     }
-    
+
     Write-Host "  Found $($referenceGroups.Count) reference group(s)" -ForegroundColor Cyan
-    
+
     $fileProcessed = $false
-    
+
     # Process each unique range reference
     foreach ($key in $referenceGroups.Keys) {
         $group = $referenceGroups[$key]
         $range = $group.Range
         $language = $group.Language
         $alt = $group.Alt
-        
+
         # Extract code block with range
         $codeBlock = Get-CodeBlock -FilePath $includeFile.FullName -Range $range
-        
+
         if ($codeBlock.Count -eq 0) {
             Write-Host "  No code extracted for range: $range" -ForegroundColor Gray
             continue
         }
-        
+
         $rangeText = if ($range) { " (range: $range)" } else { "" }
         Write-Host "  Processing$rangeText - $($group.Files.Count) file(s)" -ForegroundColor Cyan
-        
+
         # Inline in all referencing files
         foreach ($refFile in $group.Files) {
             if (Expand-CodeInclude -FilePath $refFile -IncludeFileName $includeFile.Name -Range $range -Language $language -Alt $alt -CodeBlock $codeBlock) {
@@ -274,10 +274,10 @@ foreach ($includeFile in $includeFiles) {
                 Write-Host "    Inlined in: $([System.IO.Path]::GetFileName($refFile))$rangeText" -ForegroundColor Green
             }
         }
-        
+
         $fileProcessed = $true
     }
-    
+
     if ($fileProcessed) {
         # Delete the include file
         Remove-Item $includeFile.FullName -Force

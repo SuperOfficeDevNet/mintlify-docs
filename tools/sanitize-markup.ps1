@@ -8,6 +8,7 @@
     - Converts md to mdx when needed (multiple block quotes)
     - Fixes unclosed <br> tags (context-aware: quotes vs tables)
     - Replaces Unicode quotes, dashes, and invisible characters
+    - Converts HTML bold/italic tags to markdown syntax (<b> to **, <i> to *)
     - Escapes MDX special characters ({ } < >) while preserving JSX components, code blocks, and inline code
     - Removes trailing whitespace
     - Removes consecutive blank lines (keeps only one)
@@ -148,6 +149,60 @@ function Convert-UnicodeCharacters {
     $Text = $Text -replace '[\u200B-\u200D\uFEFF]', ''
 
     return $Text
+}
+
+# Function to convert HTML bold/italic tags to markdown
+function Convert-HtmlToMarkdown {
+    param([string[]]$Lines)
+
+    $result = @()
+    $inCodeBlock = $false
+    $inFrontmatter = $false
+
+    for ($i = 0; $i -lt $Lines.Length; $i++) {
+        $line = $Lines[$i]
+
+        # Track frontmatter
+        if ($i -eq 0 -and $line -eq '---') {
+            $inFrontmatter = $true
+            $result += $line
+            continue
+        }
+        if ($inFrontmatter -and $line -eq '---') {
+            $inFrontmatter = $false
+            $result += $line
+            continue
+        }
+
+        # Track code blocks
+        if ($line -match '^```') {
+            $inCodeBlock = -not $inCodeBlock
+            $result += $line
+            continue
+        }
+
+        # Skip conversion in frontmatter and code blocks
+        if ($inFrontmatter -or $inCodeBlock) {
+            $result += $line
+            continue
+        }
+
+        # Convert <b>text</b> to **text**
+        $line = $line -replace '<b>(.*?)</b>', '**$1**'
+
+        # Convert <strong>text</strong> to **text**
+        $line = $line -replace '<strong>(.*?)</strong>', '**$1**'
+
+        # Convert <i>text</i> to *text*
+        $line = $line -replace '<i>(.*?)</i>', '*$1*'
+
+        # Convert <em>text</em> to *text*
+        $line = $line -replace '<em>(.*?)</em>', '*$1*'
+
+        $result += $line
+    }
+
+    return $result
 }
 
 # Function to protect MDX special characters by escaping
@@ -404,6 +459,7 @@ $processedFiles = 0
 $renamedFiles = 0
 $fixedBrTags = 0
 $fixedUnicode = 0
+$fixedHtmlTags = 0
 $fixedMdxChars = 0
 $fixedWhitespace = 0
 $fixedBlankLines = 0
@@ -435,6 +491,14 @@ foreach ($file in $files) {
         $content = $newText -split "`n"
         $changes += "Fixed Unicode characters"
         $fixedUnicode++
+    }
+
+    # Convert HTML tags to markdown
+    $newContent = Convert-HtmlToMarkdown -Lines $content
+    if (($newContent -join "`n") -ne ($content -join "`n")) {
+        $content = $newContent
+        $changes += "Converted HTML tags to markdown"
+        $fixedHtmlTags++
     }
 
     # Protect MDX special characters (escape curly braces, angle brackets)
@@ -512,6 +576,9 @@ if ($fixedBrTags -gt 0) {
 }
 if ($fixedUnicode -gt 0) {
     Write-Host "  Files with fixed Unicode: $fixedUnicode" -ForegroundColor Cyan
+}
+if ($fixedHtmlTags -gt 0) {
+    Write-Host "  Files with HTML tags converted to markdown: $fixedHtmlTags" -ForegroundColor Cyan
 }
 if ($fixedMdxChars -gt 0) {
     Write-Host "  Files with escaped MDX characters: $fixedMdxChars" -ForegroundColor Cyan

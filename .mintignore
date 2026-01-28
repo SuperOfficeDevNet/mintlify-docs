@@ -19,4 +19,5 @@ transform-*.ps1
 # Exclude specific files
 private-notes.md
 bergfrid-tmp/
-release-notes/11/core-crm/index
+release-notes/poc
+redirects.json

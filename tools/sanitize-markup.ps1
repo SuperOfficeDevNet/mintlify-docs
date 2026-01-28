@@ -259,6 +259,33 @@ function Protect-MdxCharacters {
             continue
         }
 
+        # Special handling for headings - escape angle brackets BUT preserve whitelisted MDX components
+        if ($line -match '^#+\s+') {
+            # Check if already escaped (contains \< or \>)
+            if ($line -notmatch '\\<' -and $line -notmatch '\\>') {
+                # Whitelist of MDX components to preserve in headings: a, Badge, Icon
+                # Temporarily replace whitelisted tags with placeholders
+                $line = $line -replace '<a\s+([^>]+)>', 'AOPEN___$1___AOPEN'
+                $line = $line -replace '</a>', 'ACLOSE___ACLOSE'
+                $line = $line -replace '<Badge\s+([^>]+)>', 'BADGEOPEN___$1___BADGEOPEN'
+                $line = $line -replace '</Badge>', 'BADGECLOSE___BADGECLOSE'
+                $line = $line -replace '<Icon\s+([^>]+)/>', 'ICONSELF___$1___ICONSELF'
+
+                # Now escape remaining angle brackets
+                $line = $line -replace '<', '\<'
+                $line = $line -replace '>', '\>'
+
+                # Restore whitelisted tags
+                $line = $line -replace 'AOPEN___([^_]+)___AOPEN', '<a $1>'
+                $line = $line -replace 'ACLOSE___ACLOSE', '</a>'
+                $line = $line -replace 'BADGEOPEN___([^_]+)___BADGEOPEN', '<Badge $1>'
+                $line = $line -replace 'BADGECLOSE___BADGECLOSE', '</Badge>'
+                $line = $line -replace 'ICONSELF___([^_]+)___ICONSELF', '<Icon $1/>'
+            }
+            $result += $line
+            continue
+        }
+
         # For all other lines, escape curly braces and standalone angle brackets
         # BUT preserve inline code (content between backticks)
         # Split on backticks to find inline code segments
@@ -337,6 +364,58 @@ function Remove-ConsecutiveBlankLines {
         else {
             $result += $line
             $previousLineWasBlank = $false
+        }
+    }
+
+    return $result
+}
+
+# Function to ensure blank line after headings
+function Ensure-BlankLineAfterHeadings {
+    param([string[]]$Lines)
+
+    $result = @()
+    $inCodeBlock = $false
+    $inFrontmatter = $false
+
+    for ($i = 0; $i -lt $Lines.Length; $i++) {
+        $line = $Lines[$i]
+
+        # Track frontmatter
+        if ($i -eq 0 -and $line -eq '---') {
+            $inFrontmatter = $true
+            $result += $line
+            continue
+        }
+        if ($inFrontmatter -and $line -eq '---') {
+            $inFrontmatter = $false
+            $result += $line
+            continue
+        }
+
+        # Track code blocks
+        if ($line -match '^```') {
+            $inCodeBlock = -not $inCodeBlock
+            $result += $line
+            continue
+        }
+
+        # Skip in frontmatter and code blocks
+        if ($inFrontmatter -or $inCodeBlock) {
+            $result += $line
+            continue
+        }
+
+        # Add current line
+        $result += $line
+
+        # Check if this is a heading and next line is not blank
+        if ($line -match '^#+\s+' -and $i + 1 -lt $Lines.Length) {
+            $nextLine = $Lines[$i + 1]
+            if (-not [string]::IsNullOrWhiteSpace($nextLine)) {
+                # Insert blank line after heading
+                $result += ''
+            }
         }
     }
 
@@ -461,6 +540,7 @@ $fixedBrTags = 0
 $fixedUnicode = 0
 $fixedHtmlTags = 0
 $fixedMdxChars = 0
+$fixedHeadingSpacing = 0
 $fixedWhitespace = 0
 $fixedBlankLines = 0
 $fixedEndings = 0
@@ -507,6 +587,14 @@ foreach ($file in $files) {
         $content = $newContent
         $changes += "Escaped MDX special characters"
         $fixedMdxChars++
+    }
+
+    # Ensure blank line after headings
+    $newContent = Ensure-BlankLineAfterHeadings -Lines $content
+    if (($newContent -join "`n") -ne ($content -join "`n")) {
+        $content = $newContent
+        $changes += "Added blank lines after headings"
+        $fixedHeadingSpacing++
     }
 
     # Remove trailing whitespace
@@ -582,6 +670,9 @@ if ($fixedHtmlTags -gt 0) {
 }
 if ($fixedMdxChars -gt 0) {
     Write-Host "  Files with escaped MDX characters: $fixedMdxChars" -ForegroundColor Cyan
+}
+if ($fixedHeadingSpacing -gt 0) {
+    Write-Host "  Files with blank lines added after headings: $fixedHeadingSpacing" -ForegroundColor Cyan
 }
 if ($fixedWhitespace -gt 0) {
     Write-Host "  Files with fixed whitespace: $fixedWhitespace" -ForegroundColor Cyan

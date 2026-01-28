@@ -3391,6 +3391,15 @@
                         ]
                       },
                       {
+                        "group": "Categorieën",
+                        "pages": [
+                          "nl/request/admin/category/index",
+                          "nl/request/admin/category/create",
+                          "nl/request/admin/category/delete",
+                          "nl/request/admin/category/external-categories"
+                        ]
+                      },
+                      {
                         "group": "Prioriteiten",
                         "pages": [
                           "nl/request/admin/priority/index",

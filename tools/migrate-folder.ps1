@@ -15,10 +15,11 @@
     8. Inline code snippets
     9. Inline mermaid diagrams
     10. Convert links (strip .md/.mdx extensions)
-    11. Convert YAML landing pages to MDX with language-specific labels
-    12. Sanitize markup (br tags, unicode, whitespace, .md→.mdx)
-    13. Add sidebar titles
-    14. Process redirects (delete redirect_url files, update docs.json)
+    11. Convert SuperOffice form script tags to SOForm component
+    12. Convert YAML landing pages to MDX with language-specific labels
+    13. Sanitize markup (br tags, unicode, whitespace, .md→.mdx)
+    14. Add sidebar titles
+    15. Process redirects (delete redirect_url files, update docs.json)
 
 .PARAMETER Path
     Path to folder to migrate (relative to repo root or absolute).
@@ -62,6 +63,7 @@ $scripts = @(
     @{ Name = "inline-code.ps1"; Description = "Inlining code snippets" }
     @{ Name = "inline-mermaid.ps1"; Description = "Inlining mermaid diagrams" }
     @{ Name = "convert-links.ps1"; Description = "Converting links" }
+    @{ Name = "convert-forms.ps1"; Description = "Converting form script tags" }
     @{ Name = "convert-landing-pages.ps1"; Description = "Converting YAML landing pages" }
     @{ Name = "sanitize-markup.ps1"; Description = "Sanitizing markup" }
     @{ Name = "add-sidebar-title.ps1"; Description = "Adding sidebar titles" }

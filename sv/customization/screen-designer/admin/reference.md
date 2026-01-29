@@ -15,6 +15,7 @@ topic: screen designer
 language: sv
 index: true
 redirect_from: /sv/customization/screen-designer/reference
+timestamp: true
 ---
 
 # Referens

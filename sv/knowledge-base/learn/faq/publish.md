@@ -15,6 +15,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: sv
 redirect_from: /sv/faq/learn/publish
+timestamp: true
 ---
 
 # Publicera FAQ-poster

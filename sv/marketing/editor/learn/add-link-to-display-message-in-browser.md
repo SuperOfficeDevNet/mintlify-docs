@@ -1,4 +1,4 @@
-﻿---
+---
 uid: help-sv-mailing-open-in-browser
 title: Lägga in en länk för att visa meddelandet i en webbläsare
 description: Lägga in en länk för att visa meddelandet i en webbläsare
@@ -12,6 +12,7 @@ license: marketingessentials
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: sv
+timestamp: true
 ---
 
 # Lägga in en länk för att visa meddelandet i en webbläsare

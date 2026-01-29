@@ -14,6 +14,7 @@ audience_tooltip: Settings and maintenance
 language: sv
 index: true
 redirect_from: /sv/admin/lists/learn/privacy-source-add
+timestamp: true
 ---
 
 # Lägga till poster i listan Integritet - Källa

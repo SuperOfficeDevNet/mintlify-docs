@@ -17,6 +17,7 @@ language: sv
 redirect_from:
   - /sv/request/reply-templates/learn/delete
   - /sv/request/reply-templates/learn/edit
+timestamp: true
 ---
 
 # Redigera eller ta bort svarsmallar

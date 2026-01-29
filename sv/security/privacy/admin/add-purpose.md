@@ -14,6 +14,7 @@ audience_tooltip: Inställningar och underhåll
 language: sv
 index: true
 redirect_from: /sv/security/privacy/learn/admin/add-consent-purpose
+timestamp: true
 ---
 
 # Ställ in integritetsinställningar för GDPR - Lägg till syfte

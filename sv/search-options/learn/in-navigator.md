@@ -7,6 +7,7 @@ date: 05.25.2023
 keywords: söka, Snabbsökning, navigatorn
 content_type: howto
 language: sv
+timestamp: true
 ---
 
 # Använda snabbsökning i navigatorn

@@ -10,6 +10,7 @@ audience: settings
 audience_tooltip: Settings and maintenance
 language: no
 redirect_from: /no/admin/preferences/learn/global-preferences/password
+timestamp: true
 ---
 
 # Passordregler for Kundesenter

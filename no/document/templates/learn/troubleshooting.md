@@ -7,6 +7,7 @@ author: Bergfrid Dias
 date: 07.16.2024
 content_type: howto
 language: no
+timestamp: true
 ---
 
 # Feilsøking

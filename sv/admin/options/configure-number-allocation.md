@@ -16,6 +16,7 @@ redirect_from:
   - /sv/admin/options/learn/number-allocation/index
   - /sv/admin/options/learn/number-allocation/configure
 language: sv
+timestamp: true
 ---
 
 # Ange nummertilldelning

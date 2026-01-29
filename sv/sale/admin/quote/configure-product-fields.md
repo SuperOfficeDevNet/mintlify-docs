@@ -13,6 +13,7 @@ audience_tooltip: Settings and maintenance
 language: sv
 redirect_from: /sv/quote/learn/admin/product/configure
 index: true
+timestamp: true
 ---
 
 # Konfigurera fält i dialogrutan Lägg till/redigera produkt

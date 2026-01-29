@@ -7,6 +7,7 @@ date: 03.16.2023
 keywords: FAQ, Kundcenter
 content_type: howto
 language: sv
+timestamp: true
 ---
 
 # Publicera FAQ i Kundcenter

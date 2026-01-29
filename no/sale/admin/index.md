@@ -12,6 +12,7 @@ audience: settings
 audience_tooltip: Innstillinger og vedlikehold
 language: no
 index: true
+timestamp: true
 ---
 
 # Administrere salgstyper, faser og guider

@@ -7,6 +7,7 @@ date: 03.16.2023
 keywords: FAQ, Kundesenter
 content_type: howto
 language: no
+timestamp: true
 ---
 
 # Publisere FAQ-er til kundesenteret

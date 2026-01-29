@@ -13,6 +13,7 @@ topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
 language: sv
+timestamp: true
 ---
 
 # Koppla chatt till befintlig kontakt

@@ -12,6 +12,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: no
 redirect_from: /no/contact/learn/screen/index
+timestamp: true
 ---
 
 # Person

@@ -7,6 +7,7 @@ date: 01.25.2023
 keywords: hjälp, i appen, i appen
 content_type: concept
 language: sv
+timestamp: true
 ---
 
 # Använda hjälp i appen

@@ -10,6 +10,7 @@ content_type: howto
 audience: person
 audience_tooltip: SuperOffice Service
 language: sv
+timestamp: true
 ---
 
 # Använda ärenden i paneler

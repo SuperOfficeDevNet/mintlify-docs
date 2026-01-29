@@ -11,6 +11,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: sv
 redirect_from: /sv/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm
+timestamp: true
 ---
 
 # Skapa genvägar till poster i SuperOffice CRM

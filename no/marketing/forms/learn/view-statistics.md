@@ -14,6 +14,7 @@ audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /no/marketing/forms/learn/submissions/track
 language: no
+timestamp: true
 ---
 
 # Spore skjemainnsendinger og vise statistikk

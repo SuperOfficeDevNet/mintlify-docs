@@ -10,6 +10,7 @@ category: marketing
 topic: mailing
 license: marketingessentials
 language: sv
+timestamp: true
 ---
 
 # Skicka ett testmejl för e-postutskick och formulärsvar

@@ -12,6 +12,7 @@ license: salesessentials, serviceessentials, marketingessentials
 audience: person
 audience_tooltip: SuperOffice CRM
 language: no
+timestamp: true
 ---
 
 # Repeterende oppfølginger <i class="ph ph-arrows-clockwise" aria-hidden="true"></i>

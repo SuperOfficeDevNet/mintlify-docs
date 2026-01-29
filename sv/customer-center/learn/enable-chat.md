@@ -9,6 +9,7 @@ content_type: howto
 audience: settings
 audience_tooltip: Settings and maintenance
 language: sv
+timestamp: true
 ---
 
 # Anslut en chatt till ditt Kundcenter

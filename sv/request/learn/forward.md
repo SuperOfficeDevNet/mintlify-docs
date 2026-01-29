@@ -12,6 +12,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: sv
 redirect_from: /sv/request/learn/howto/forward
+timestamp: true
 ---
 
 # Vidarebefordra ärende till extern kontakt

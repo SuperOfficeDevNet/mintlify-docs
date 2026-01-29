@@ -7,6 +7,7 @@ date: 06.29.2022
 keywords: skärm
 content_type: reference
 language: sv
+timestamp: true
 ---
 
 # Egenskaper för skärmbild

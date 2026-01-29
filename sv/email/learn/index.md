@@ -12,6 +12,7 @@ license: salesessentials, serviceessentials, marketingessentials
 audience: person
 audience_tooltip: SuperOffice CRM
 language: sv
+timestamp: true
 ---
 
 # E-post

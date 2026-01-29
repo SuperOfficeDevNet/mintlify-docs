@@ -13,6 +13,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: no
 redirect_from: /no/request/reply-templates/learn/template-variables
+timestamp: true
 ---
 
 # Malvariabler (Service)

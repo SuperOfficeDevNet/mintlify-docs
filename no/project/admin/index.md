@@ -12,6 +12,7 @@ license: salespremium, servicepremium, marketingessentials
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
 language: no
+timestamp: true
 ---
 
 # Administrere prosjekttyper, statuser og guider

@@ -12,6 +12,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: sv
 redirect_from: /sv/request/learn/howto/accept
+timestamp: true
 ---
 
 # Ta över ansvaret för ett ärende

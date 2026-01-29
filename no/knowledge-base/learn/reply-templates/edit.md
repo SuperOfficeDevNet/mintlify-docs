@@ -17,6 +17,7 @@ language: no
 redirect_from:
   - /no/request/reply-templates/learn/delete
   - /no/request/reply-templates/learn/edit
+timestamp: true
 ---
 
 # Rediger eller slett svarmaler

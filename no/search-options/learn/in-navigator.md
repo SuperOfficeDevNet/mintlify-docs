@@ -7,6 +7,7 @@ date: 05.25.2023
 keywords: søk, hurtigsøk
 content_type: howto
 language: no
+timestamp: true
 ---
 
 # Bruke hurtigsøk i Navigator

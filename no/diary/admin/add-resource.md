@@ -14,6 +14,7 @@ redirect_from:
   - /no/admin/lists/learn/resource
   - /no/admin/lists/learn/adding-items-to-resource-list
 language: no
+timestamp: true
 ---
 
 # Legg til ressurs

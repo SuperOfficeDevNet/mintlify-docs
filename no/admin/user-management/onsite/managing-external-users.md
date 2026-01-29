@@ -19,6 +19,7 @@ redirect_from:
   - /no/onsite/win-client/learn/managing-external-users
   - /no/admin/user-management/learn/managing-external-users
 language: no
+timestamp: true
 ---
 
 # Håndtere eksterne brukere

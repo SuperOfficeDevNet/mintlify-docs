@@ -12,6 +12,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: no
 redirect_from: /no/request/learn/howto/split-message
+timestamp: true
 ---
 
 # Dele melding

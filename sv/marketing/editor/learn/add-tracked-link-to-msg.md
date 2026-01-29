@@ -13,6 +13,7 @@ audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /sv/marketing/tracked-links/learn/add-tracked-link-to-msg
 language: sv
+timestamp: true
 ---
 
 # Lägga till spårade länkar i meddelandet

@@ -16,6 +16,7 @@ redirect_from:
   - /no/admin/options/learn/number-allocation/index
   - /no/admin/options/learn/number-allocation/configure
 language: no
+timestamp: true
 ---
 
 # Angi nummertildeling

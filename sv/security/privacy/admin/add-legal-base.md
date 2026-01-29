@@ -14,6 +14,7 @@ audience_tooltip: Settings and maintenance
 language: sv
 index: true
 redirect_from: /sv/admin/lists/learn/privacy-legal-base-add
+timestamp: true
 ---
 
 # Lägga till poster i listan Integritet - Rättslig grund

@@ -12,6 +12,7 @@ audience: settings
 audience_tooltip: Inställningar och underhåll
 language: sv
 index: true
+timestamp: true
 ---
 
 # Hantering av försäljningstyper, faser och guider

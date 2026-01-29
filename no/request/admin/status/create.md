@@ -13,6 +13,7 @@ audience_tooltip: Innstillinger og vedlikehold
 language: no
 redirect_from: /no/request/learn/status/create
 index: true
+timestamp: true
 ---
 
 # Opprette saksstatus

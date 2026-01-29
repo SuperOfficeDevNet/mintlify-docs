@@ -10,6 +10,7 @@ version: 10.3
 content_type: concept
 language: sv
 redirect_from: /sv/admin/lists/learn/document-template
+timestamp: true
 ---
 
 # Dokumentmall

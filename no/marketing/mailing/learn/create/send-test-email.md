@@ -10,6 +10,7 @@ category: marketing
 topic: mailing
 license: marketingessentials
 language: no
+timestamp: true
 ---
 
 # Sende en test-e-post for e-postutsendelser og skjemasvar

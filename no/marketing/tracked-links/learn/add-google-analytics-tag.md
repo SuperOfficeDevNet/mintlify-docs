@@ -13,6 +13,7 @@ license: marketingessentials
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: no
+timestamp: true
 ---
 
 # Slik legger du til emneknaggen Google Analytics i en utsendelse

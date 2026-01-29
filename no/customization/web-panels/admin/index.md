@@ -17,6 +17,7 @@ index: true
 redirect_from:
   - /no/ui/web-panels/learn/index
   - /no/admin/lists/learn/web-panel
+timestamp: true
 ---
 
 # Nettleserfaner

@@ -17,6 +17,7 @@ language: no
 redirect_from:
   - /no/faq/learn/delete
   - /no/faq/learn/edit
+timestamp: true
 ---
 
 # Redigere eller slette FAQ-oppføringer

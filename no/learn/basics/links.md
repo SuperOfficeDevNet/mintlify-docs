@@ -13,6 +13,7 @@ language: no
 redirect_from:
   - /no/diary/learn/linking-documents-to-follow-ups
   - /no/project/learn/add-links
+timestamp: true
 ---
 
 # Koblinger

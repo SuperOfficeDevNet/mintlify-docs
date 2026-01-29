@@ -11,6 +11,7 @@ license: salesessentials
 audience: person
 audience_tooltip: SuperOffice CRM
 language: sv
+timestamp: true
 ---
 
 # Övervaka din pipeline och prognostisera försäljning

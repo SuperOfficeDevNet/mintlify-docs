@@ -9,6 +9,7 @@ content_type: howto
 audience: settings
 audience_tooltip: Settings and maintenance
 language: sv
+timestamp: true
 ---
 
 # Använd webbformulär i ditt Kundcenter

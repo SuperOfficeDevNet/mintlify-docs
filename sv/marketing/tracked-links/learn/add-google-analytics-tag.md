@@ -13,6 +13,7 @@ license: marketingessentials
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: sv
+timestamp: true
 ---
 
 # Så här lägger du till din Google Analytics-tagg i ett utskick

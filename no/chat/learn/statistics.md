@@ -13,6 +13,7 @@ topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
 language: no
+timestamp: true
 ---
 
 # Vise chatstatistikk

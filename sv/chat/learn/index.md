@@ -12,6 +12,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: sv
 redirect_from: /sv/chat/learn/screen/index
+timestamp: true
 ---
 
 # Chatt

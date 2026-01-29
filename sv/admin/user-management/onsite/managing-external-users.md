@@ -19,6 +19,7 @@ redirect_from:
   - /sv/onsite/win-client/learn/managing-external-users
   - /sv/admin/user-management/learn/managing-external-users
 language: sv
+timestamp: true
 ---
 
 # Hantera externa användare

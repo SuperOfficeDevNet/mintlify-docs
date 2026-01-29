@@ -7,6 +7,7 @@ date: 06.29.2022
 keywords: bilde
 content_type: reference
 language: no
+timestamp: true
 ---
 
 # Egenskaper for bilde

@@ -12,6 +12,7 @@ topic: lead
 audience: person
 audience_tooltip: SuperOffice Sales
 language: sv
+timestamp: true
 ---
 
 # Dashboard för leads

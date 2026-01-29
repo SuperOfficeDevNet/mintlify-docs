@@ -14,6 +14,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /no/globalization-and-localization/learn/translate-fields
 language: no
+timestamp: true
 ---
 
 # Oversettelse <i class="ph ph-translate" aria-hidden="true"></i>

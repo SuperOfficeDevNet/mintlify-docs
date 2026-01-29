@@ -10,6 +10,7 @@ audience: settings
 audience_tooltip: Settings and maintenance
 language: sv
 redirect_from: /sv/admin/preferences/learn/global-preferences/password
+timestamp: true
 ---
 
 # Lösenordspolicy för Kundcenter

@@ -15,6 +15,7 @@ audience: settings
 audience_tooltip: Settings and maintenance
 index: true
 language: no
+timestamp: true
 ---
 
 # SuperOffice brukerplaner og abonnementer

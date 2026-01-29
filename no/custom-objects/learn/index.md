@@ -11,6 +11,7 @@ content_type: concept
 audience: user
 audience_tooltip: SuperOffice CRM
 language: no
+timestamp: true
 ---
 
 # Egendefinerte objekter og felt

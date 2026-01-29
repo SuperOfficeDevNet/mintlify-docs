@@ -90,4 +90,3 @@ In the following example, cust34506 is the sandbox environment, cust21513 is the
 [img9]: ../../../media/loc/en/online/replace6.png
 [img10]: ../../../media/loc/en/online/replace7.png
 [img11]: ../../../media/loc/en/online/image9vgqg.png
-

@@ -11,6 +11,7 @@ content_type: howto
 language: no
 audience: person
 audience_tooltip: SuperOffice CRM
+timestamp: true
 ---
 
 # Koble til e-post, dokumenter og kalender

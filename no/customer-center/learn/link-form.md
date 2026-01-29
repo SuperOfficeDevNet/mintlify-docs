@@ -10,6 +10,7 @@ audience: settings
 audience_tooltip: Settings and maintenance
 
 language: no
+timestamp: true
 ---
 
 # Bruke webskjemaer i kundesenteret

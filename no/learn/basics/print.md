@@ -14,6 +14,7 @@ redirect_from:
   - /no/company/learn/print
   - /no/contact/learn/print
   - /no/diary/learn/print
+timestamp: true
 ---
 
 # Utskrift av poster i SuperOffice CRM

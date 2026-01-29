@@ -10,6 +10,7 @@ content_type: howto
 audience: person
 audience_tooltip: SuperOffice CRM
 language: no
+timestamp: true
 ---
 
 # Invitere prosjektdeltakere til et møte (oppfølging)

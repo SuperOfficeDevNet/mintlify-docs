@@ -17,6 +17,7 @@ index: true
 redirect_from:
   - /sv/ui/web-panels/learn/index
   - /sv/admin/lists/learn/web-panel
+timestamp: true
 ---
 
 # Webbpaneler

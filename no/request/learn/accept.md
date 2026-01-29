@@ -12,6 +12,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: no
 redirect_from: /no/request/learn/howto/accept
+timestamp: true
 ---
 
 # Overta (ta ansvar for) en sak

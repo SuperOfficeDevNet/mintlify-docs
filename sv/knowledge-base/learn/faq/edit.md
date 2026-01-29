@@ -17,6 +17,7 @@ language: sv
 redirect_from:
   - /sv/faq/learn/delete
   - /sv/faq/learn/edit
+timestamp: true
 ---
 
 # Redigera eller ta bort FAQ-poster

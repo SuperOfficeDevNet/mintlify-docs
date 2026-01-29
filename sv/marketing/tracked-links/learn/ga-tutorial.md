@@ -14,6 +14,7 @@ audience: person
 audience_tooltip: SuperOffice Marketing
 language: sv
 translation_type: MT
+timestamp: true
 ---
 
 # Guide - enkel spårning av Google Analytics e-post

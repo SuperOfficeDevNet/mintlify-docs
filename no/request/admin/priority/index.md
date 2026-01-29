@@ -14,6 +14,7 @@ audience_tooltip: Innstillinger og vedlikehold
 language: no
 redirect_from: /no/request/learn/priority/index
 index: true
+timestamp: true
 ---
 
 # Saksprioriteter

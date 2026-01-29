@@ -11,6 +11,7 @@ license: salesessentials
 audience: person
 audience_tooltip: SuperOffice CRM
 language: no
+timestamp: true
 ---
 
 # Overvåk salgstrakten og prognostiser salg

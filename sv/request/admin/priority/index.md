@@ -12,6 +12,7 @@ audience_tooltip: Settings and maintenance
 language: sv
 redirect_from: /sv/request/learn/priority/index
 index: true
+timestamp: true
 ---
 
 # Ärendeprioriteter

@@ -13,6 +13,7 @@ category: customization
 topic: web panel
 language: sv
 index: true
+timestamp: true
 ---
 
 # Url-kodning

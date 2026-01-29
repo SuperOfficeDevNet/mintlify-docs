@@ -13,6 +13,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: no
 redirect_from: /no/request/learn/howto/edit-message
+timestamp: true
 ---
 
 # Redigere melding

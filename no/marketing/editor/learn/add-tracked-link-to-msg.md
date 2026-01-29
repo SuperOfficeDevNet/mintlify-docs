@@ -13,6 +13,7 @@ audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /no/marketing/tracked-links/learn/add-tracked-link-to-msg
 language: no
+timestamp: true
 ---
 
 # Legge til sporede koblinger i meldinger

@@ -12,6 +12,7 @@ license: marketingessentials
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: no
+timestamp: true
 ---
 
 # Hvordan opprette en mappe

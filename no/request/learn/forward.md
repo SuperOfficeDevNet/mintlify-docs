@@ -12,6 +12,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: no
 redirect_from: /no/request/learn/howto/forward
+timestamp: true
 ---
 
 # Videresend sak til ekstern person

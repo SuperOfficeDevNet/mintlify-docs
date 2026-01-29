@@ -14,6 +14,7 @@ audience_tooltip: Settings and maintenance
 language: no
 index: true
 redirect_from: /no/security/privacy/learn/edit-privacy-confirmation-email
+timestamp: true
 ---
 
 # Rediger e-post med personvernbekreftelse

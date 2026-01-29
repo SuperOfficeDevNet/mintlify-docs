@@ -12,6 +12,7 @@ license: salesessentials, serviceessentials, marketingessentials
 audience: person
 audience_tooltip: SuperOffice CRM
 language: no
+timestamp: true
 ---
 
 # Invitere andre medarbeidere til en oppfølging

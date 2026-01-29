@@ -14,6 +14,7 @@ topic: role
 index: true
 redirect_from: /no/admin/user-management/learn/role/functional-rights
 language: no
+timestamp: true
 ---
 
 # Functional rights in SuperOffice

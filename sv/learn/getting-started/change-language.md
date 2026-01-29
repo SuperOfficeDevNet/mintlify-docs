@@ -14,6 +14,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /sv/globalization-and-localization/learn/change-language
 language: sv
+timestamp: true
 ---
 
 # Ändra aktivt språk

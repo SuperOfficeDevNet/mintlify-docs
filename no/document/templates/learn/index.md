@@ -10,6 +10,7 @@ version: 10.3
 content_type: concept
 language: no
 redirect_from: /no/admin/lists/learn/document-template
+timestamp: true
 ---
 
 # Dokumentmal

@@ -11,6 +11,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: no
 redirect_from: /no/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm
+timestamp: true
 ---
 
 # Lage snarveier til oppføringer i SuperOffice CRM

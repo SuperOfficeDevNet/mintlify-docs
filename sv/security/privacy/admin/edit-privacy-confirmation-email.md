@@ -13,6 +13,7 @@ audience_tooltip: Settings and maintenance
 language: sv
 index: true
 redirect_from: /sv/security/privacy/learn/edit-privacy-confirmation-email
+timestamp: true
 ---
 
 # Redigera e-postbekräftelse om personskydd

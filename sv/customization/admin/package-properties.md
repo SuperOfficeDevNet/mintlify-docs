@@ -16,6 +16,7 @@ redirect_from:
   - /no/admin/learn/screen/package-properties
   - /no/admin/learn/package-properties
   - /no/customization/admin/index
+timestamp: true
 ---
 
 # Egenskaper för paket

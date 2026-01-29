@@ -10,6 +10,7 @@ content_type: howto
 audience: person
 audience_tooltip: SuperOffice Service
 language: no
+timestamp: true
 ---
 
 # Bruke saker i figurer

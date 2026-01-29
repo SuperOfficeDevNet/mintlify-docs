@@ -13,6 +13,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: sv
 redirect_from: /sv/request/reply-templates/learn/template-variables
+timestamp: true
 ---
 
 # Mallvariabler (Service)

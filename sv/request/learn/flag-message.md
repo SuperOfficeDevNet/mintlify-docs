@@ -12,6 +12,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: sv
 redirect_from: /sv/request/learn/howto/flag-message
+timestamp: true
 ---
 
 # Hålla koll på meddelanden

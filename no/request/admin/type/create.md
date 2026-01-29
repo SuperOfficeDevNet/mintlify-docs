@@ -13,6 +13,7 @@ audience_tooltip: Innstillinger og vedlikehold
 language: no
 redirect_from: /no/request/learn/type/create
 index: true
+timestamp: true
 ---
 
 # Legg til sakstype

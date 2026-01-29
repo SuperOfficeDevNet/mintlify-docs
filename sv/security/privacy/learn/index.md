@@ -12,6 +12,7 @@ category: privacy
 audience: person
 audience_tooltip: SuperOffice CRM
 language: sv
+timestamp: true
 ---
 
 # Integritet <i class="ph ph-shield" aria-label="Shield icon"></i>

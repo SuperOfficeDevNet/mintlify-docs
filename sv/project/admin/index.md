@@ -12,6 +12,7 @@ license: salespremium, servicepremium, marketingessentials
 audience: settings
 audience_tooltip: Inställningar och underhåll
 language: sv
+timestamp: true
 ---
 
 # Hantering av projekttyper, statusar och guider

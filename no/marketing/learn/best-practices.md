@@ -13,6 +13,7 @@ audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /no/marketing/learn/customize-for-mobile
 language: no
+timestamp: true
 ---
 
 # Beste praksis

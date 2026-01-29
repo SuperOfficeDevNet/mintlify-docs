@@ -16,6 +16,7 @@ audience_tooltip: Settings and maintenance
 index: true
 language: no
 redirect_from: /no/admin/preferences/learn/global-preferences/settings
+timestamp: true
 ---
 
 # Globale preferanser for systeminnstillinger for SuperOffice Service

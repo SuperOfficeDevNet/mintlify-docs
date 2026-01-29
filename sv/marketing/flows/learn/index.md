@@ -14,6 +14,7 @@ license: marketingpremium
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: sv
+timestamp: true
 ---
 
 # Marknadsföringsautomatisering - flöden

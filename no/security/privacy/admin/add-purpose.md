@@ -14,6 +14,7 @@ audience_tooltip: Innstillinger og vedlikehold
 language: no
 index: true
 redirect_from: /no/security/privacy/learn/admin/add-consent-purpose
+timestamp: true
 ---
 
 # Konfigurer personverninnstillinger for GDPR - Legg til formål

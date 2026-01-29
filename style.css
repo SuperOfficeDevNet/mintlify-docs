@@ -279,3 +279,14 @@
   padding-inline-start: 0 !important;
   margin-left: 0 !important;
 }
+
+/* Hide description (from metadata) under page title */
+#header > div.prose,
+#header > div[class*="prose"] {
+  display: none !important;
+}
+
+/* Hide H1 in content area (title already shown in header) */
+#content > h1 {
+  display: none !important;
+}

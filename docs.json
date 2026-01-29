@@ -37,6 +37,9 @@
   "styling": {
     "eyebrows": "breadcrumbs"
   },
+  "metadata": {
+    "timestamp": false
+  },
   "navigation": {
     "languages": [
       {

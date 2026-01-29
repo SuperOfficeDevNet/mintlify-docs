@@ -5923,6 +5923,32 @@
       "x": "https://x.com/SuperOffice",
       "instagram": "https://www.instagram.com/superofficecrm",
       "linkedin": "https://www.linkedin.com/company/superoffice-as"
-    }
+    },
+    "links": [
+      {
+        "items": [
+          {
+            "label": "Community",
+            "href": "https://community.superoffice.com"
+          },
+          {
+            "label": "Privacy",
+            "href": "https://www.superoffice.com/company/privacy/"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "label": "Site feedback",
+            "href": "https://github.com/SuperOfficeDocs/feedback/issues/new?title=Feedback-@Source%3A%20%5Bdocs.superoffice.com%5D(https%3A%2F%2Fdocs.superoffice.com)"
+          },
+          {
+            "label": "Contribute",
+            "href": "/contribute/"
+          }
+        ]
+      }
+    ]
   }
 }

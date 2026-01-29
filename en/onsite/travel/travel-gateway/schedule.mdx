@@ -10,7 +10,11 @@ deployment: onsite
 platform: win
 ---
 
+import SOMetadata from "/components/so-metadata.jsx";
+
 # Schedule tasks for Travel gateway
+
+<SOMetadata platform="win" deployment="onsite" />
 
 <Note>
 Unless you run Travel gateway as a service, you must not close the Travel gateway program. If you do, the activities will not be performed until you start the program again.

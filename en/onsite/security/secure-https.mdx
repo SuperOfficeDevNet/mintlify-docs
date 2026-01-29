@@ -9,7 +9,11 @@ deployment: onsite
 platform: web
 ---
 
+import SOMetadata from "/components/so-metadata.jsx";
+
 # Securing HTTPS configuration on Windows Server
+
+<SOMetadata platform="web" deployment="onsite" />
 
 To apply the best practice HTTPS configuration on a Windows server, we can run a Powershell script written by NSM (Nasjonal Sikkerhetsmyndighet). This script will make changes to the Windows registry to enable the latest encryption algorithms and disable old and insecure algorithms and ciphers.
 

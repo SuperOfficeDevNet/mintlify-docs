@@ -13,8 +13,11 @@ deployment: onsite
 
 import WarnWinClientDiscontinued from "../../includes/warn-win-client-discontinued.mdx";
 import RemoteNetserverWeb from "../../includes/remote-netserver-web.mdx";
+import SOMetadata from "/components/so-metadata.jsx";
 
 # Upgrade to SuperOffice 11
+
+<SOMetadata version="11" deployment="onsite" />
 
 You can upgrade to SuperOffice 11 from SuperOffice 8.0 or newer. The recommended installation scenarios and setup requirements are the same as from SuperOffice 8.1.
 
@@ -49,7 +52,11 @@ Example argument file for upgrade:
 
 ```dos
 # crmsetup --arg-file CRMSetupUpgrade.txt
+
+<SOMetadata version="11" deployment="onsite" />
 # replace the values
+
+<SOMetadata version="11" deployment="onsite" />
 upgrade-existing
 --database-server SQL-server
 --database-name SO85

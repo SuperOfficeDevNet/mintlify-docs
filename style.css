@@ -290,3 +290,44 @@
 #content > h1 {
   display: none !important;
 }
+
+/* Metadata display in callouts */
+.metadata-display {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Add border to bottom of callout containing metadata */
+[class*="callout"]:has(.metadata-display) {
+  border-bottom: 1px solid #000;
+}
+
+.metadata-display ul {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  list-style: none !important;
+  list-style-type: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #333 !important;
+}
+
+.metadata-display li {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+  list-style-type: none !important;
+}
+
+.metadata-display li::before {
+  display: none !important;
+}
+
+.metadata-display i.ph {
+  font-size: 1.1rem;
+}

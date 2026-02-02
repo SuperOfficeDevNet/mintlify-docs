@@ -22,12 +22,12 @@ Not quite obsolete preference table; historical info mostly. From 6.1 this table
 |type|Preference type|ShortId| |
 |pdata|Changed to string[255]|String(254)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![preference table relationship diagram](./media/preference.png)
+![preference table relationship diagram](/media/loc/en/database/preference.png)
 
 <Preference />
 
@@ -42,7 +42,7 @@ Not quite obsolete preference table; historical info mostly. From 6.1 this table
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

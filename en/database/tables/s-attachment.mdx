@@ -19,10 +19,10 @@ A connector between a message and attachments. One message can contain many atta
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|Primary key|PK| |
-|attachment\_id|The id of the attachment|FK [attachment](attachment.md)| |
-|message\_id|The id of the message|FK [s_message](s-message.md)| |
+|attachment\_id|The id of the attachment|FK [attachment](./attachment)| |
+|message\_id|The id of the message|FK [s_message](./s-message)| |
 
-![s_attachment table relationship diagram](./media/s_attachment.png)
+![s_attachment table relationship diagram](/media/loc/en/database/s_attachment.png)
 
 <SAttachment />
 
@@ -38,8 +38,8 @@ A connector between a message and attachments. One message can contain many atta
 
 | Table|  Description |
 |------|-------------|
-|[attachment](attachment.md)  |This table contains metadata for attachments. The actual attachments are stored directly on disk, with filenames based on the the primary key for this table. |
-|[s\_message](s-message.md)  |A message used in a shipment. Can be html and/or plain text |
+|[attachment](./attachment)  |This table contains metadata for attachments. The actual attachments are stored directly on disk, with filenames based on the the primary key for this table. |
+|[s\_message](./s-message)  |A message used in a shipment. Can be html and/or plain text |
 
 ## Replication Flags
 

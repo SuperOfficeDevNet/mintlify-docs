@@ -25,12 +25,12 @@ Role a stakeholder has in a sale
 |tooltip|Tooltip or other description|String(254)|&#x25CF;|
 |deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![StakeholderRole table relationship diagram](./media/StakeholderRole.png)
+![StakeholderRole table relationship diagram](/media/loc/en/database/StakeholderRole.png)
 
 <Stakeholderrole />
 
@@ -45,10 +45,10 @@ Role a stakeholder has in a sale
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[SaleStakeholder](salestakeholder.md)  |Stakeholders in the sale, very similar to project members |
-|[StakeholderRoleGroupLink](stakeholderrolegrouplink.md)  |User group link table for StakeholderRole, for MDO item hiding |
-|[StakeholderRoleHeadingLink](stakeholderroleheadinglink.md)  |Heading link table for StakeholderRole, for MDO headers |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SaleStakeholder](./salestakeholder)  |Stakeholders in the sale, very similar to project members |
+|[StakeholderRoleGroupLink](./stakeholderrolegrouplink)  |User group link table for StakeholderRole, for MDO item hiding |
+|[StakeholderRoleHeadingLink](./stakeholderroleheadinglink)  |Heading link table for StakeholderRole, for MDO headers |
 
 ## Replication Flags
 

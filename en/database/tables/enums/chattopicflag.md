@@ -14,4 +14,4 @@ Flags for this topic: show popup alert?, collect consent first?, use custom mess
 
 ## Usage
 
-* [chat_topic](../chat-topic.md).flags - This table contains chat topics.
+* [chat_topic](../chat-topic).flags - This table contains chat topics.

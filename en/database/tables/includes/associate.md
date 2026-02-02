@@ -3,12 +3,12 @@
 This enumeration consists of flag values that can be combined.
 
 | Type | Comment |
- |---|---|
- | 0 | User / Employee |
- | 1 | Associates with this bit is not associated with any person. Disregard the PersonId for associates with this bit set. |
- | 2 | Associates of this type is not authenticated for SuperOffice |
- | 4 | Associates with this bit do not have a calendar |
- | 8 | Associates with this bit has full access rights, and the Sentry mechanism is bypassed |
+|---|---|
+| 0 | User / Employee |
+| 1 | Associates with this bit is not associated with any person. Disregard the PersonId for associates with this bit set. |
+| 2 | Associates of this type is not authenticated for SuperOffice |
+| 4 | Associates with this bit do not have a calendar |
+| 8 | Associates with this bit has full access rights, and the Sentry mechanism is bypassed |
 
 A resource like meeting room or projector would typically be type = 1
 

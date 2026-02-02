@@ -19,15 +19,15 @@ Heading link table for Currency, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |currencyheadinglink\_id|Primary key|PK| |
-|currency\_id|Link to Currency list table|FK [Currency](currency.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|currency\_id|Link to Currency list table|FK [Currency](./currency)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![CurrencyHeadingLink table relationship diagram](./media/CurrencyHeadingLink.png)
+![CurrencyHeadingLink table relationship diagram](/media/loc/en/database/CurrencyHeadingLink.png)
 
 <Currencyheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for Currency, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Currency](currency.md)  |Currency list table |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Currency](./currency)  |Currency list table |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
 ## Replication Flags
 

@@ -19,15 +19,15 @@ Heading link table for Credited, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |creditedheadinglink\_id|Primary key|PK| |
-|credited\_id|Link to Credited list table|FK [Credited](credited.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|credited\_id|Link to Credited list table|FK [Credited](./credited)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![CreditedHeadingLink table relationship diagram](./media/CreditedHeadingLink.png)
+![CreditedHeadingLink table relationship diagram](/media/loc/en/database/CreditedHeadingLink.png)
 
 <Creditedheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for Credited, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Credited](credited.md)  |Credited list table. List of who is to be credited for the sale. |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Credited](./credited)  |Credited list table. List of who is to be credited for the sale. |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
 ## Replication Flags
 

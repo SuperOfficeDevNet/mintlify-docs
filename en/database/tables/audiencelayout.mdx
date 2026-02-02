@@ -22,12 +22,12 @@ One layout (of webparts and other stuff) for an audience instance
 |instanceName|The name of the installed instance of Audience - must match the web.config file|String(239)| |
 |instanceLayout|The layout, as a serialized string via the Provider architecture|String(2047)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![AudienceLayout table relationship diagram](./media/AudienceLayout.png)
+![AudienceLayout table relationship diagram](/media/loc/en/database/AudienceLayout.png)
 
 <Audiencelayout />
 
@@ -42,9 +42,9 @@ One layout (of webparts and other stuff) for an audience instance
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[AudienceConfig](audienceconfig.md)  |Configuration data for Audience core and webparts |
-|[AudienceLayoutLink](audiencelayoutlink.md)  |Link between an audience layout and some target grouping table - might be Role or Category |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[AudienceConfig](./audienceconfig)  |Configuration data for Audience core and webparts |
+|[AudienceLayoutLink](./audiencelayoutlink)  |Link between an audience layout and some target grouping table - might be Role or Category |
 
 ## Replication Flags
 

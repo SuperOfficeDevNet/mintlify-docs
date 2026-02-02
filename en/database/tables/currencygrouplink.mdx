@@ -19,15 +19,15 @@ User group link table for Currency, for MDO item hiding
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |currencygrouplink\_id|Primary key|PK| |
-|currency\_id|Link to Currency list table|FK [Currency](currency.md)| |
-|group\_id|Link to Group table|FK [UserGroup](usergroup.md)| |
+|currency\_id|Link to Currency list table|FK [Currency](./currency)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![CurrencyGroupLink table relationship diagram](./media/CurrencyGroupLink.png)
+![CurrencyGroupLink table relationship diagram](/media/loc/en/database/CurrencyGroupLink.png)
 
 <Currencygrouplink />
 
@@ -43,9 +43,9 @@ User group link table for Currency, for MDO item hiding
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Currency](currency.md)  |Currency list table |
-|[UserGroup](usergroup.md)  |Secondary user groups |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Currency](./currency)  |Currency list table |
+|[UserGroup](./usergroup)  |Secondary user groups |
 
 ## Replication Flags
 

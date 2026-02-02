@@ -19,15 +19,15 @@ User group link table for QuoteApprReason, for MDO item hiding
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |quoteapprreasongrouplink\_id|Primary key|PK| |
-|quoteapprreason\_id|Link to QuoteApprReason list table|FK [QuoteApprReason](quoteapprreason.md)| |
-|group\_id|Link to Group table|FK [UserGroup](usergroup.md)| |
+|quoteapprreason\_id|Link to QuoteApprReason list table|FK [QuoteApprReason](./quoteapprreason)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![QuoteApprReasonGroupLink table relationship diagram](./media/QuoteApprReasonGroupLink.png)
+![QuoteApprReasonGroupLink table relationship diagram](/media/loc/en/database/QuoteApprReasonGroupLink.png)
 
 <Quoteapprreasongrouplink />
 
@@ -43,9 +43,9 @@ User group link table for QuoteApprReason, for MDO item hiding
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[QuoteApprReason](quoteapprreason.md)  |Predefined reasons for quote approval |
-|[UserGroup](usergroup.md)  |Secondary user groups |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[QuoteApprReason](./quoteapprreason)  |Predefined reasons for quote approval |
+|[UserGroup](./usergroup)  |Secondary user groups |
 
 ## Replication Flags
 

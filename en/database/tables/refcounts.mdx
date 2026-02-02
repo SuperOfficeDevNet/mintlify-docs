@@ -24,14 +24,14 @@ Number counter for all tables that generate numbers, e.g. templates, contacts...
 |currentValue|Current value of counter|Id| |
 |travelPrefix|size of prefix for Travel use of ths counter|UInt| |
 |satPrefix|size of prefix for Satellite use of this counter|UInt| |
-|flags|Unique, active, read-only, allow blank, …|Enum [RefcountFlags](enums/refcountflags.md)| |
+|flags|Unique, active, read-only, allow blank, …|Enum [RefcountFlags](./enums/refcountflags)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![RefCounts table relationship diagram](./media/RefCounts.png)
+![RefCounts table relationship diagram](/media/loc/en/database/RefCounts.png)
 
 <Refcounts />
 
@@ -48,8 +48,8 @@ Number counter for all tables that generate numbers, e.g. templates, contacts...
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[RefCountRange](refcountrange.md)  |Number allocation system, for keeping track of ranges of numbers loaned out to travel and satellite databases |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[RefCountRange](./refcountrange)  |Number allocation system, for keeping track of ranges of numbers loaned out to travel and satellite databases |
 
 ## Replication Flags
 

@@ -25,12 +25,12 @@ Echo and track information about Online Apps and their usage
 |authorizationRevoked|Has the authorization for this app been revoked|Bool|&#x25CF;|
 |lastUsed|Last app use date (not time, to reduce number of writes)|DateTime|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![OnlineApp table relationship diagram](./media/OnlineApp.png)
+![OnlineApp table relationship diagram](/media/loc/en/database/OnlineApp.png)
 
 <Onlineapp />
 
@@ -45,8 +45,8 @@ Echo and track information about Online Apps and their usage
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Message](message.md)  |Definition of a message, corresponding to the header of a protocol |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Message](./message)  |Definition of a message, corresponding to the header of a protocol |
 
 ## Replication Flags
 

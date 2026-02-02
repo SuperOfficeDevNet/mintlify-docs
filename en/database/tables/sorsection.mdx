@@ -19,17 +19,17 @@ SuperOffice reporter data
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |SORSection\_id|Primary key|PK| |
-|SORTemplate\_id|Template ID|FK [SORTemplate](sortemplate.md)| |
+|SORTemplate\_id|Template ID|FK [SORTemplate](./sortemplate)| |
 |sectionType|reportheader, reportfooter, pageheader, pagefooter, detail, groupheader(1-3), groupfooter(1-3)|String(19)| |
 |height|Section height in twips|UInt| |
 |groupingField|Name of field used for grouping, ig group section|String(29)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![SORSection table relationship diagram](./media/SORSection.png)
+![SORSection table relationship diagram](/media/loc/en/database/SORSection.png)
 
 <Sorsection />
 
@@ -44,10 +44,10 @@ SuperOffice reporter data
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[SORFCT](sorfct.md)  |SuperOffice reporter data |
-|[SORField](sorfield.md)  |SuperOffice reporter data |
-|[SORTemplate](sortemplate.md)  |SuperOffice reporter data |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SORFCT](./sorfct)  |SuperOffice reporter data |
+|[SORField](./sorfield)  |SuperOffice reporter data |
+|[SORTemplate](./sortemplate)  |SuperOffice reporter data |
 
 ## Replication Flags
 

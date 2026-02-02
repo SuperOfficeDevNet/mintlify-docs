@@ -31,5 +31,5 @@ The Record Type is used to classify the Task - The classification is used by the
 
 ### See also
 
-[\{CounterValue Table\}](../countervalue.md))
-[task Table](../task.md)
+[\{CounterValue Table\}](../countervalue))
+[task Table](../task)

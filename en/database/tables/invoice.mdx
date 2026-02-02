@@ -21,12 +21,12 @@ This table contains invoice entries, normally created when an invoice is sent to
 |id|The primary key (auto-incremented)|PK| |
 |time\_charged|The amount of time (minutes) charged. From version 2.8 this field is no longer in use|Int|&#x25CF;|
 |price\_charged|The amount (money) charged.|Double|&#x25CF;|
-|customer\_id|The reference to the customer entry this entry is connected to. NULL or -1 if not connected.|FK [person](person.md)| |
-|company\_id|The reference to the company entry this entry is connected to. NULL or -1 if not connected.|FK [contact](contact.md)| |
+|customer\_id|The reference to the customer entry this entry is connected to. NULL or -1 if not connected.|FK [person](./person)| |
+|company\_id|The reference to the company entry this entry is connected to. NULL or -1 if not connected.|FK [contact](./contact)| |
 |created\_at|When the invoice entry was created.|DateTime|&#x25CF;|
 |description|A string describing the invoice entry.|String(255)|&#x25CF;|
 
-![invoice table relationship diagram](./media/invoice.png)
+![invoice table relationship diagram](/media/loc/en/database/invoice.png)
 
 <Invoice />
 
@@ -42,8 +42,8 @@ This table contains invoice entries, normally created when an invoice is sent to
 
 | Table|  Description |
 |------|-------------|
-|[contact](contact.md)  |Companies and Organizations. |
-|[person](person.md)  |Persons |
+|[contact](./contact)  |Companies and Organizations. |
+|[person](./person)  |Persons |
 
 ## Replication Flags
 

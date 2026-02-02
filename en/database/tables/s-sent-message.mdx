@@ -19,14 +19,14 @@ Emarketeer message control
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|shipment\_id|Which shipment the customer received.|FK [s_shipment](s-shipment.md)| |
-|message\_id|The id of the message that is sent in this shipment|FK [s_message](s-message.md)| |
-|customer\_id|The id of the customer that received the message|FK [person](person.md)| |
+|shipment\_id|Which shipment the customer received.|FK [s_shipment](./s-shipment)| |
+|message\_id|The id of the message that is sent in this shipment|FK [s_message](./s-message)| |
+|customer\_id|The id of the customer that received the message|FK [person](./person)| |
 |email|The email-adresse the received the message|String(255)|&#x25CF;|
 |when\_sent|When the email was sent.|DateTime|&#x25CF;|
 |when\_read|When the email was read or link was clicked.|DateTime|&#x25CF;|
 
-![s_sent_message table relationship diagram](./media/s_sent_message.png)
+![s_sent_message table relationship diagram](/media/loc/en/database/s_sent_message.png)
 
 <SSentMessage />
 
@@ -43,9 +43,9 @@ Emarketeer message control
 
 | Table|  Description |
 |------|-------------|
-|[person](person.md)  |Persons |
-|[s\_message](s-message.md)  |A message used in a shipment. Can be html and/or plain text |
-|[s\_shipment](s-shipment.md)  |Contains info about one shipment. The addresses are stored in s_shipment_addr |
+|[person](./person)  |Persons |
+|[s\_message](./s-message)  |A message used in a shipment. Can be html and/or plain text |
+|[s\_shipment](./s-shipment)  |Contains info about one shipment. The addresses are stored in s_shipment_addr |
 
 ## Replication Flags
 

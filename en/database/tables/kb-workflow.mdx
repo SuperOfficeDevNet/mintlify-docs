@@ -19,11 +19,11 @@ Knowledge base workflow steps
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|next|The next workflow phase.|FK [kb_workflow](kb-workflow.md)| |
-|previous|The previous workflow phase.|FK [kb_workflow](kb-workflow.md)| |
+|next|The next workflow phase.|FK [kb_workflow](./kb-workflow)| |
+|previous|The previous workflow phase.|FK [kb_workflow](./kb-workflow)| |
 |name||String(255)|&#x25CF;|
 
-![kb_workflow table relationship diagram](./media/kb_workflow.png)
+![kb_workflow table relationship diagram](/media/loc/en/database/kb_workflow.png)
 
 <KbWorkflow />
 
@@ -39,10 +39,10 @@ Knowledge base workflow steps
 
 | Table|  Description |
 |------|-------------|
-|[kb\_entry](kb-entry.md)  |This table contains FAQ entries. |
-|[kb\_workflow](kb-workflow.md)  |Knowledge base workflow steps |
-|[kb\_workflow\_access](kb-workflow-access.md)  |Control of who can do what in a knowledge base workflow step |
-|[role\_workflow](role-workflow.md)  |Knowledge base workflow access rights associated with a role |
+|[kb\_entry](./kb-entry)  |This table contains FAQ entries. |
+|[kb\_workflow](./kb-workflow)  |Knowledge base workflow steps |
+|[kb\_workflow\_access](./kb-workflow-access)  |Control of who can do what in a knowledge base workflow step |
+|[role\_workflow](./role-workflow)  |Knowledge base workflow access rights associated with a role |
 
 ## Replication Flags
 

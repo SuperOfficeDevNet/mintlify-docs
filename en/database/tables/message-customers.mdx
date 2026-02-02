@@ -19,11 +19,11 @@ This table contains all cutomers who are involved in a message
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|message\_id|The id of the message the customer is involved in|FK [ej_message](ej-message.md)| |
-|customer\_id|The id of the customer who has received this message, or another message in this ticket|FK [person](person.md)| |
+|message\_id|The id of the message the customer is involved in|FK [ej_message](./ej-message)| |
+|customer\_id|The id of the customer who has received this message, or another message in this ticket|FK [person](./person)| |
 |email|The email-adresse used in this message|String(255)|&#x25CF;|
 
-![message_customers table relationship diagram](./media/message_customers.png)
+![message_customers table relationship diagram](/media/loc/en/database/message_customers.png)
 
 <MessageCustomers />
 
@@ -39,8 +39,8 @@ This table contains all cutomers who are involved in a message
 
 | Table|  Description |
 |------|-------------|
-|[ej\_message](ej-message.md)  |This table contains the messages listed under tickets. |
-|[person](person.md)  |Persons |
+|[ej\_message](./ej-message)  |This table contains the messages listed under tickets. |
+|[person](./person)  |Persons |
 
 ## Replication Flags
 

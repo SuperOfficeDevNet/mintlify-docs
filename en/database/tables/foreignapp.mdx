@@ -21,12 +21,12 @@ Top level of Foreign Key system
 |foreignapp\_id|Primary key|PK| |
 |name|Name of foreign application|String(254)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![foreignapp table relationship diagram](./media/foreignapp.png)
+![foreignapp table relationship diagram](/media/loc/en/database/foreignapp.png)
 
 <Foreignapp />
 
@@ -40,8 +40,8 @@ Top level of Foreign Key system
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[foreigndevice](foreigndevice.md)  |Middle level of Foreign Key system |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[foreigndevice](./foreigndevice)  |Middle level of Foreign Key system |
 
 ## Replication Flags
 

@@ -19,7 +19,7 @@ SuperOffice reporter data
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |SORFCT\_id|Primary key|PK| |
-|SORSection\_id|Foreign key to Section|FK [SORSection](sorsection.md)| |
+|SORSection\_id|Foreign key to Section|FK [SORSection](./sorsection)| |
 |fieldType|-1=NULL, 0=hidden, 1=Column, 2=Row, 3=Data, 6=pagenr, 7=title, 8=associatename|Short| |
 |content|if field type in (0,1,2,3) then Field name from db to be selected|String(29)|&#x25CF;|
 |groupFooterType|-1=NULL, 0=none, 1=Sum, 2=Avg, 3=Count|Short| |
@@ -31,12 +31,12 @@ SuperOffice reporter data
 |displayType|-1=NULL, 0=Normal, 1=column|Short| |
 |numberFormat|Formatting for data strings, like #0, #000.00 etc|String(19)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![SORFCT table relationship diagram](./media/SORFCT.png)
+![SORFCT table relationship diagram](/media/loc/en/database/SORFCT.png)
 
 <Sorfct />
 
@@ -52,8 +52,8 @@ SuperOffice reporter data
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[SORSection](sorsection.md)  |SuperOffice reporter data |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SORSection](./sorsection)  |SuperOffice reporter data |
 
 ## Replication Flags
 

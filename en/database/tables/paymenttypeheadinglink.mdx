@@ -19,15 +19,15 @@ Heading link table for PaymentType, for MDO item headings
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |paymenttypeheadinglink\_id|Primary key|PK| |
-|paymenttype\_id|Link to PaymentType list table|FK [PaymentType](paymenttype.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|paymenttype\_id|Link to PaymentType list table|FK [PaymentType](./paymenttype)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![PaymentTypeHeadingLink table relationship diagram](./media/PaymentTypeHeadingLink.png)
+![PaymentTypeHeadingLink table relationship diagram](/media/loc/en/database/PaymentTypeHeadingLink.png)
 
 <Paymenttypeheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for PaymentType, for MDO item headings
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
-|[PaymentType](paymenttype.md)  |The list of payment types, in the internal product register |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[PaymentType](./paymenttype)  |The list of payment types, in the internal product register |
 
 ## Replication Flags
 

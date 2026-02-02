@@ -19,7 +19,7 @@ Criteria storage for Selection and other Find mechanisms
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |SearchCriterionValue\_id|Primary key|PK| |
-|SearchCriterion\_id|Owning group|FK [SearchCriterion](searchcriterion.md)| |
+|SearchCriterion\_id|Owning group|FK [SearchCriterion](./searchcriterion)| |
 |longValue|Value for long type|Int|&#x25CF;|
 |doubleValue|Value for double type|Double|&#x25CF;|
 |stringValue|Value for String type|String(254)|&#x25CF;|
@@ -27,13 +27,13 @@ Criteria storage for Selection and other Find mechanisms
 |listTableId|List table ID, 0 if this is not a reference to a list|TableNumber|&#x25CF;|
 |listItemId|List item ID: the primary key of the list table identified above, or 0.|RecordId|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 |valueType|The RestrictionType that describes this value; might vary between values connected to the same criterion|String(128)|&#x25CF;|
 
-![SearchCriterionValue table relationship diagram](./media/SearchCriterionValue.png)
+![SearchCriterionValue table relationship diagram](/media/loc/en/database/SearchCriterionValue.png)
 
 <Searchcriterionvalue />
 
@@ -48,8 +48,8 @@ Criteria storage for Selection and other Find mechanisms
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[SearchCriterion](searchcriterion.md)  |Criteria storage for Selection and other Find mechanisms |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SearchCriterion](./searchcriterion)  |Criteria storage for Selection and other Find mechanisms |
 
 ## Replication Flags
 

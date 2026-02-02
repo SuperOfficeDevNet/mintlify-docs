@@ -19,15 +19,15 @@ ShipmentTypes a person has reserved against. Note that the absense of a record h
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |ShipmentTypeReservation\_id|Primary key|PK| |
-|person\_id|Owning person|FK [person](person.md)| |
-|ShipmentType\_id|Shipment type to reserve against|FK [ShipmentType](shipmenttype.md)| |
+|person\_id|Owning person|FK [person](./person)| |
+|ShipmentType\_id|Shipment type to reserve against|FK [ShipmentType](./shipmenttype)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ShipmentTypeReservation table relationship diagram](./media/ShipmentTypeReservation.png)
+![ShipmentTypeReservation table relationship diagram](/media/loc/en/database/ShipmentTypeReservation.png)
 
 <Shipmenttypereservation />
 
@@ -43,9 +43,9 @@ ShipmentTypes a person has reserved against. Note that the absense of a record h
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[person](person.md)  |Persons |
-|[ShipmentType](shipmenttype.md)  |Shipment type list table. Classification of a mailing, allowing recipients to subscribe to lists |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[person](./person)  |Persons |
+|[ShipmentType](./shipmenttype)  |Shipment type list table. Classification of a mailing, allowing recipients to subscribe to lists |
 
 ## Replication Flags
 

@@ -32,13 +32,13 @@ SuperOffice reporter data
 |printWidth|Calculated: (paperWidth - leftMargin - rightMargin) / countColumns|UInt| |
 |labelHeight|Calculated: (paperHeight - topMargin - bottomMargin) / countRows|UInt| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 |description|Description|String(2047)| |
 
-![SORLabelLayout table relationship diagram](./media/SORLabelLayout.png)
+![SORLabelLayout table relationship diagram](/media/loc/en/database/SORLabelLayout.png)
 
 <Sorlabellayout />
 
@@ -53,8 +53,8 @@ SuperOffice reporter data
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[SORPublish](sorpublish.md)  |SuperOffice reporter data |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SORPublish](./sorpublish)  |SuperOffice reporter data |
 
 ## Replication Flags
 

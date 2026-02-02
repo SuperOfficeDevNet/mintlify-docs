@@ -23,12 +23,12 @@ Represents a temporary lock on a resource identified by table_id and key
 |key|The key/id of the locked resource|RecordId|&#x25CF;|
 |timeout\_at|When this lock times out. Refreshing this while working is a good idea.|UtcDateTime|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![temp_db_lock table relationship diagram](./media/temp_db_lock.png)
+![temp_db_lock table relationship diagram](/media/loc/en/database/temp_db_lock.png)
 
 <TempDbLock />
 
@@ -44,7 +44,7 @@ Represents a temporary lock on a resource identified by table_id and key
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

@@ -19,7 +19,7 @@ Control data table for the OLE DB Provider
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |OLEField\_id|Primary key|PK| |
-|OLEView\_id|Owner subject|FK [OLEView](oleview.md)| |
+|OLEView\_id|Owner subject|FK [OLEView](./oleview)| |
 |fieldId|SODBIF field ID (including table!)|FieldId| |
 |predefined|1 = predefined subject, do not change|UShort| |
 |datatype|Data type, same as in dictionary|UShort| |
@@ -28,12 +28,12 @@ Control data table for the OLE DB Provider
 |algoData|Source field or other parameter to algorithm in AlgoType. |UInt|&#x25CF;|
 |searchable|Is the field searchable (and shown as such in the reporter)|UShort|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![OLEField table relationship diagram](./media/OLEField.png)
+![OLEField table relationship diagram](/media/loc/en/database/OLEField.png)
 
 <Olefield />
 
@@ -50,9 +50,9 @@ Control data table for the OLE DB Provider
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[OLEView](oleview.md)  |Control data table for the OLE DB Provider |
-|[ReporterListDef](reporterlistdef.md)  |Reporter definitions |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[OLEView](./oleview)  |Control data table for the OLE DB Provider |
+|[ReporterListDef](./reporterlistdef)  |Reporter definitions |
 
 ## Replication Flags
 

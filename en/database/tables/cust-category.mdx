@@ -20,12 +20,12 @@ This table contains entries for categories exposed through a customer language.
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
 |name|The external name for this category.|String(255)|&#x25CF;|
-|language\_id|The reference to the associated customer language.|FK [cust_lang](cust-lang.md)|&#x25CF;|
-|category\_id|The reference to the associated category.|FK [ej_category](ej-category.md)|&#x25CF;|
-|parent\_id|The parent category for this cust_category. -1 if this is a toplevel cust_category.|FK [cust_category](cust-category.md)|&#x25CF;|
+|language\_id|The reference to the associated customer language.|FK [cust_lang](./cust-lang)|&#x25CF;|
+|category\_id|The reference to the associated category.|FK [ej_category](./ej-category)|&#x25CF;|
+|parent\_id|The parent category for this cust_category. -1 if this is a toplevel cust_category.|FK [cust_category](./cust-category)|&#x25CF;|
 |fullname|The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.|String(255)|&#x25CF;|
 
-![cust_category table relationship diagram](./media/cust_category.png)
+![cust_category table relationship diagram](/media/loc/en/database/cust_category.png)
 
 <CustCategory />
 
@@ -42,9 +42,9 @@ This table contains entries for categories exposed through a customer language.
 
 | Table|  Description |
 |------|-------------|
-|[cust\_category](cust-category.md)  |This table contains entries for categories exposed through a customer language. |
-|[cust\_lang](cust-lang.md)  |This table contains entries for customer languages. |
-|[ej\_category](ej-category.md)  |This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner. |
+|[cust\_category](./cust-category)  |This table contains entries for categories exposed through a customer language. |
+|[cust\_lang](./cust-lang)  |This table contains entries for customer languages. |
+|[ej\_category](./ej-category)  |This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner. |
 
 ## Replication Flags
 

@@ -20,13 +20,13 @@ Usage statistics for web applications
 |------|-------------|------|:----:|
 |WebAppUsage\_id|Primary key|PK| |
 |version|Version number of usage stats|UInt| |
-|assocId|ID of associate|FK [associate](associate.md)| |
+|assocId|ID of associate|FK [associate](./associate)| |
 |timestamp|Time stamp of operation|DateTime| |
 |viewState|Current view state, excluding data|String(254)| |
 |aggregateBin|Bin no. If this is aggregated data|UInt|&#x25CF;|
 |aggregateCount|Bin count, if this is aggregated data|UInt|&#x25CF;|
 
-![WebAppUsage table relationship diagram](./media/WebAppUsage.png)
+![WebAppUsage table relationship diagram](/media/loc/en/database/WebAppUsage.png)
 
 <Webappusage />
 
@@ -41,7 +41,7 @@ Usage statistics for web applications
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

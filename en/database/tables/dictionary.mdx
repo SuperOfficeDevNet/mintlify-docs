@@ -19,12 +19,12 @@ User added dictionary words
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|base\_id|The reference to the dictionary base.|FK [dictionary_base](dictionary-base.md)| |
-|user\_id|The reference to the user.|FK [ejuser](ejuser.md)| |
+|base\_id|The reference to the dictionary base.|FK [dictionary_base](./dictionary-base)| |
+|user\_id|The reference to the user.|FK [ejuser](./ejuser)| |
 |include|Include/Exclude word.|Int| |
 |word|User word|String(32)| |
 
-![dictionary table relationship diagram](./media/dictionary.png)
+![dictionary table relationship diagram](/media/loc/en/database/dictionary.png)
 
 <Dictionary />
 
@@ -42,8 +42,8 @@ User added dictionary words
 
 | Table|  Description |
 |------|-------------|
-|[dictionary\_base](dictionary-base.md)  |Language catalog for the ejournal dictionaries (automatic proof reading of message text etc) |
-|[ejuser](ejuser.md)  |This table contains entries for the users of the system. |
+|[dictionary\_base](./dictionary-base)  |Language catalog for the ejournal dictionaries (automatic proof reading of message text etc) |
+|[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 
 ## Replication Flags
 

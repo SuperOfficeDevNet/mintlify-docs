@@ -29,12 +29,12 @@ Binary objects, i.e., blobs. Used for images, documents, SuperOffice inbox mail 
 |extraInfo|Extra information, spare field, can be used for anything that makes sense. Should not refer to any particular context, that is something for the BinaryObjectLInk|String(254)|&#x25CF;|
 |binaryData|The binary data itself. Length is limited by the database, generally 1GB seems to be reliably available. Beyond that is database dependent.|Blob|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![BinaryObject table relationship diagram](./media/BinaryObject.png)
+![BinaryObject table relationship diagram](/media/loc/en/database/BinaryObject.png)
 
 <Binaryobject />
 
@@ -51,9 +51,9 @@ Binary objects, i.e., blobs. Used for images, documents, SuperOffice inbox mail 
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[BinaryObjectLink](binaryobjectlink.md)  |Link table, connects a BinaryObject with one or more owners |
-|[extra\_tables](extra-tables.md)  |This table contains entries for the extra tables in the system. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[BinaryObjectLink](./binaryobjectlink)  |Link table, connects a BinaryObject with one or more owners |
+|[extra\_tables](./extra-tables)  |This table contains entries for the extra tables in the system. |
 
 ## Replication Flags
 

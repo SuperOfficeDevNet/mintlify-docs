@@ -19,20 +19,20 @@ Link between License and Satellite, for per-database licenses
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |LicenseSatlLink\_id|Primary key|PK| |
-|moduleLicenseId|The license being linked|FK [ModuleLicense](modulelicense.md)| |
-|satelliteId|The Satellite who occupies one instance of this license|FK [satellite](satellite.md)| |
+|moduleLicenseId|The license being linked|FK [ModuleLicense](./modulelicense)| |
+|satelliteId|The Satellite who occupies one instance of this license|FK [satellite](./satellite)| |
 |validFrom|Reserved field: Valid from date|DateTime| |
 |validTo|Reserved field: Valid to date|DateTime| |
 |licenseNumber|Number of license items occupied by this satellite|UInt| |
 |comment|Optional comment field|String(254)| |
 |encryptedCheck|Encrypted checksum; tampering will block system usage|String(254)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![LicenseSatlLink table relationship diagram](./media/LicenseSatlLink.png)
+![LicenseSatlLink table relationship diagram](/media/loc/en/database/LicenseSatlLink.png)
 
 <Licensesatllink />
 
@@ -47,9 +47,9 @@ Link between License and Satellite, for per-database licenses
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ModuleLicense](modulelicense.md)  |Module licenses, belonging to one single owner |
-|[satellite](satellite.md)  |Definition of Satellites |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ModuleLicense](./modulelicense)  |Module licenses, belonging to one single owner |
+|[satellite](./satellite)  |Definition of Satellites |
 
 ## Replication Flags
 

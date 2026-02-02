@@ -19,15 +19,15 @@ Heading link table for ProductFamily, for MDO item headings
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |productfamilyheadinglink\_id|Primary key|PK| |
-|productfamily\_id|Link to ProductFamily list table|FK [ProductFamily](productfamily.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|productfamily\_id|Link to ProductFamily list table|FK [ProductFamily](./productfamily)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ProductFamilyHeadingLink table relationship diagram](./media/ProductFamilyHeadingLink.png)
+![ProductFamilyHeadingLink table relationship diagram](/media/loc/en/database/ProductFamilyHeadingLink.png)
 
 <Productfamilyheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for ProductFamily, for MDO item headings
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
-|[ProductFamily](productfamily.md)  |List for the ProductFamily field of the Product table (Quote Management) |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[ProductFamily](./productfamily)  |List for the ProductFamily field of the Product table (Quote Management) |
 
 ## Replication Flags
 

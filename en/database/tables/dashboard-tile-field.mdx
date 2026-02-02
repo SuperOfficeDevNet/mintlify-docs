@@ -20,14 +20,14 @@ Describes the contents of a tile field
 |------|-------------|------|:----:|
 |dashboard\_tile\_field\_id|Primary key|PK| |
 |colname|Column to be fetched from provider, can be aggregate like Sum() or CurrencyConvert() or even nested aggregate functions|String(512)|&#x25CF;|
-|dashboard\_tile\_definition\_id|Link to dashboard tile definition|FK [dashboard_tile_definition](dashboard-tile-definition.md)|&#x25CF;|
+|dashboard\_tile\_definition\_id|Link to dashboard tile definition|FK [dashboard_tile_definition](./dashboard-tile-definition)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![dashboard_tile_field table relationship diagram](./media/dashboard_tile_field.png)
+![dashboard_tile_field table relationship diagram](/media/loc/en/database/dashboard_tile_field.png)
 
 <DashboardTileField />
 
@@ -42,8 +42,8 @@ Describes the contents of a tile field
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[dashboard\_tile\_definition](dashboard-tile-definition.md)  |Describes the contents of a tile |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[dashboard\_tile\_definition](./dashboard-tile-definition)  |Describes the contents of a tile |
 
 ## Replication Flags
 

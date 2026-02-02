@@ -25,12 +25,12 @@ ContInt list table. List-text of all valid contact interest types.
 |tooltip|Tooltip or other description|String(254)|&#x25CF;|
 |deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ContInt table relationship diagram](./media/ContInt.png)
+![ContInt table relationship diagram](/media/loc/en/database/ContInt.png)
 
 <Contint />
 
@@ -45,11 +45,11 @@ ContInt list table. List-text of all valid contact interest types.
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[contactinterest](contactinterest.md)  |Link-table between contact and interests in ContInt |
-|[ContIntGroupLink](contintgrouplink.md)  |User group link table for ContInt, for MDO item hiding |
-|[ContIntHeadingLink](contintheadinglink.md)  |Heading link table for ContInt, for MDO headers |
-|[s\_link](s-link.md)  |Links in messages to measure success rate of a campaign. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[contactinterest](./contactinterest)  |Link-table between contact and interests in ContInt |
+|[ContIntGroupLink](./contintgrouplink)  |User group link table for ContInt, for MDO item hiding |
+|[ContIntHeadingLink](./contintheadinglink)  |Heading link table for ContInt, for MDO headers |
+|[s\_link](./s-link)  |Links in messages to measure success rate of a campaign. |
 
 ## Replication Flags
 

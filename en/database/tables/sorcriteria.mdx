@@ -19,21 +19,21 @@ SuperOffice reporter data
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |SORCriteria\_id|Primary key|PK| |
-|SORPublish\_id|Owning publish name|FK [SORPublish](sorpublish.md)| |
+|SORPublish\_id|Owning publish name|FK [SORPublish](./sorpublish)| |
 |fieldName|Database field name|String(29)| |
-|SOROperators\_id|Operator foreign key|FK [SOROperators](soroperators.md)| |
+|SOROperators\_id|Operator foreign key|FK [SOROperators](./soroperators)| |
 |value1|First part of value|String(254)|&#x25CF;|
 |value2|Second part of value|String(254)|&#x25CF;|
 |useIt|1=criterion is in use, otherwise 0|UShort| |
 |whereOrder|relative order in where clause|UShort| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 |locked|If 1, then this crierion is locked and its value cannot be changed outside of Reporter Studio|Bool|&#x25CF;|
 
-![SORCriteria table relationship diagram](./media/SORCriteria.png)
+![SORCriteria table relationship diagram](/media/loc/en/database/SORCriteria.png)
 
 <Sorcriteria />
 
@@ -51,9 +51,9 @@ SuperOffice reporter data
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[SOROperators](soroperators.md)  |SuperOffice reporter data |
-|[SORPublish](sorpublish.md)  |SuperOffice reporter data |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SOROperators](./soroperators)  |SuperOffice reporter data |
+|[SORPublish](./sorpublish)  |SuperOffice reporter data |
 
 ## Replication Flags
 

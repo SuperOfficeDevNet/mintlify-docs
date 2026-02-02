@@ -25,12 +25,12 @@ ProjStatus list table. Project status
 |tooltip|Tooltip or other description|String(254)|&#x25CF;|
 |deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ProjStatus table relationship diagram](./media/ProjStatus.png)
+![ProjStatus table relationship diagram](/media/loc/en/database/ProjStatus.png)
 
 <Projstatus />
 
@@ -45,11 +45,11 @@ ProjStatus list table. Project status
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[project](project.md)  |Projects |
-|[ProjectTypeStatusLink](projecttypestatuslink.md)  |Many-many link table between project type and status, similar to sale type-stage link; and an anchor point for guide items |
-|[ProjStatusGroupLink](projstatusgrouplink.md)  |User group link table for ProjStatus, for MDO item hiding |
-|[ProjStatusHeadingLink](projstatusheadinglink.md)  |Heading link table for ProjStatus, for MDO headers |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[project](./project)  |Projects |
+|[ProjectTypeStatusLink](./projecttypestatuslink)  |Many-many link table between project type and status, similar to sale type-stage link; and an anchor point for guide items |
+|[ProjStatusGroupLink](./projstatusgrouplink)  |User group link table for ProjStatus, for MDO item hiding |
+|[ProjStatusHeadingLink](./projstatusheadinglink)  |Heading link table for ProjStatus, for MDO headers |
 
 ## Replication Flags
 

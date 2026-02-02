@@ -19,10 +19,10 @@ Elements in a customer list.
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|Primary key|PK| |
-|list\_id|Which list this element belongs to|FK [s_list](s-list.md)| |
-|customer\_id||FK [person](person.md)| |
+|list\_id|Which list this element belongs to|FK [s_list](./s-list)| |
+|customer\_id||FK [person](./person)| |
 
-![s_list_customer table relationship diagram](./media/s_list_customer.png)
+![s_list_customer table relationship diagram](/media/loc/en/database/s_list_customer.png)
 
 <SListCustomer />
 
@@ -38,8 +38,8 @@ Elements in a customer list.
 
 | Table|  Description |
 |------|-------------|
-|[person](person.md)  |Persons |
-|[s\_list](s-list.md)  |A list, dynamic or static |
+|[person](./person)  |Persons |
+|[s\_list](./s-list)  |A list, dynamic or static |
 
 ## Replication Flags
 

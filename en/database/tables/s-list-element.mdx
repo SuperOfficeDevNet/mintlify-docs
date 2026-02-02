@@ -19,13 +19,13 @@ Elements in a static list.
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|Primary key|PK| |
-|list\_id|Which list this element belongs to|FK [s_list](s-list.md)| |
+|list\_id|Which list this element belongs to|FK [s_list](./s-list)| |
 |address|The email address of this element|String(255)| |
 |name|The name of the recipient|String(255)|&#x25CF;|
 |sms|The sms number for this element|String(255)| |
-|status|Status for the statical list element|Enum [ElementStatus](enums/elementstatus.md)| |
+|status|Status for the statical list element|Enum [ElementStatus](./enums/elementstatus)| |
 
-![s_list_element table relationship diagram](./media/s_list_element.png)
+![s_list_element table relationship diagram](/media/loc/en/database/s_list_element.png)
 
 <SListElement />
 
@@ -42,7 +42,7 @@ Elements in a static list.
 
 | Table|  Description |
 |------|-------------|
-|[s\_list](s-list.md)  |A list, dynamic or static |
+|[s\_list](./s-list)  |A list, dynamic or static |
 
 ## Replication Flags
 

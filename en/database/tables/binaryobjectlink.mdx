@@ -19,19 +19,19 @@ Link table, connects a BinaryObject with one or more owners
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |BinaryObjectLink\_id|Primary key|PK| |
-|binaryObjectId|The binary object we link to|FK [BinaryObject](binaryobject.md)| |
+|binaryObjectId|The binary object we link to|FK [BinaryObject](./binaryobject)| |
 |ownerTable|The owner table|TableNumber| |
 |ownerRecord|The owner record|RecordId| |
 |linkComment|Link comment, optional|String(254)|&#x25CF;|
-|linkType|The link type|Enum [BlobLinkType](enums/bloblinktype.md)| |
+|linkType|The link type|Enum [BlobLinkType](./enums/bloblinktype)| |
 |rank|Link rank, in case there are more of one type to one owner|UShort| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![BinaryObjectLink table relationship diagram](./media/BinaryObjectLink.png)
+![BinaryObjectLink table relationship diagram](/media/loc/en/database/BinaryObjectLink.png)
 
 <Binaryobjectlink />
 
@@ -46,8 +46,8 @@ Link table, connects a BinaryObject with one or more owners
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[BinaryObject](binaryobject.md)  |Binary objects, i.e., blobs. Used for images, documents, SuperOffice inbox mail  and other large binary items |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[BinaryObject](./binaryobject)  |Binary objects, i.e., blobs. Used for images, documents, SuperOffice inbox mail  and other large binary items |
 
 ## Replication Flags
 

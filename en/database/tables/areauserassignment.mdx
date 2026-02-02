@@ -19,15 +19,15 @@ Link table indicating which users actually reside in this area.
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |areauserassignment\_id|Primary key|PK| |
-|area\_id|Parent area id|FK [area](area.md)| |
-|associate\_id|Id of associate assigned to this area|FK [associate](associate.md)| |
+|area\_id|Parent area id|FK [area](./area)| |
+|associate\_id|Id of associate assigned to this area|FK [associate](./associate)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![areauserassignment table relationship diagram](./media/areauserassignment.png)
+![areauserassignment table relationship diagram](/media/loc/en/database/areauserassignment.png)
 
 <Areauserassignment />
 
@@ -43,8 +43,8 @@ Link table indicating which users actually reside in this area.
 
 | Table|  Description |
 |------|-------------|
-|[area](area.md)  |Definition of an Area (database subset for satellite and travel) |
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[area](./area)  |Definition of an Area (database subset for satellite and travel) |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

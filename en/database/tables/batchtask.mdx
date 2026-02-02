@@ -19,7 +19,7 @@ Batch task request details, corresponding to the message body of a batch request
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |BatchTask\_id|Primary key|PK| |
-|BatchTaskDefinition\_id|Batch task definition, which is populated from code attributes|FK [BatchTaskDefinition](batchtaskdefinition.md)|&#x25CF;|
+|BatchTaskDefinition\_id|Batch task definition, which is populated from code attributes|FK [BatchTaskDefinition](./batchtaskdefinition)|&#x25CF;|
 |description|Description of task (for monitoring and debugging)|String(254)| |
 |dbTag|Database tag that this task applies to, to ensure tasks are execute on the correct database only|String(39)| |
 |state|0=Unknown; 1=New; 2=Assigned; 3=Started; 4=Succeeded; 5=Failed|Int| |
@@ -32,13 +32,13 @@ Batch task request details, corresponding to the message body of a batch request
 |progressPercent|Task progress, in percent of estimated total|UShort|&#x25CF;|
 |progressDescription|Descriptive text for the current stage|String(254)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|&apos;heartbeat&apos; that is updated once a minute by the batch task process|UtcDateTime| |
-|updated\_associate\_id|&apos;heartbeat&apos; that is updated once a minute by the batch task process|FK [associate](associate.md)| |
+|updated\_associate\_id|&apos;heartbeat&apos; that is updated once a minute by the batch task process|FK [associate](./associate)| |
 |updatedCount|&apos;heartbeat&apos; that is updated once a minute by the batch task process|UShort| |
 |FileName|The filename related to the batchtask.|String(260)|&#x25CF;|
 
-![BatchTask table relationship diagram](./media/BatchTask.png)
+![BatchTask table relationship diagram](/media/loc/en/database/BatchTask.png)
 
 <Batchtask />
 
@@ -54,8 +54,8 @@ Batch task request details, corresponding to the message body of a batch request
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[BatchTaskDefinition](batchtaskdefinition.md)  |Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.BatchTask attribute |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[BatchTaskDefinition](./batchtaskdefinition)  |Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.BatchTask attribute |
 
 ## Replication Flags
 

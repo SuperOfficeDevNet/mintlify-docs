@@ -19,15 +19,15 @@ A set of triggers related to a workflow.
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |workflow\_trigger\_id|Primary key|PK| |
-|workflow\_id|The flow this trigger belongs to|FK [workflow](workflow.md)|&#x25CF;|
-|trigger\_type|What kind of trigger is this|Enum [WorkflowTriggerType](enums/workflowtriggertype.md)|&#x25CF;|
+|workflow\_id|The flow this trigger belongs to|FK [workflow](./workflow)|&#x25CF;|
+|trigger\_type|What kind of trigger is this|Enum [WorkflowTriggerType](./enums/workflowtriggertype)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![workflow_trigger table relationship diagram](./media/workflow_trigger.png)
+![workflow_trigger table relationship diagram](/media/loc/en/database/workflow_trigger.png)
 
 <WorkflowTrigger />
 
@@ -41,8 +41,8 @@ A set of triggers related to a workflow.
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[workflow](workflow.md)  |SuperOffice specific info about a workflow |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[workflow](./workflow)  |SuperOffice specific info about a workflow |
 
 ## Replication Flags
 

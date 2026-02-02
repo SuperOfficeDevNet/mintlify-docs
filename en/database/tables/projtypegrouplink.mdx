@@ -19,15 +19,15 @@ User group link table for ProjType, for MDO item hiding
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |projtypegrouplink\_id|Primary key|PK| |
-|projtype\_id|Link to ProjType list table|FK [ProjType](projtype.md)| |
-|group\_id|Link to Group table|FK [UserGroup](usergroup.md)| |
+|projtype\_id|Link to ProjType list table|FK [ProjType](./projtype)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ProjTypeGroupLink table relationship diagram](./media/ProjTypeGroupLink.png)
+![ProjTypeGroupLink table relationship diagram](/media/loc/en/database/ProjTypeGroupLink.png)
 
 <Projtypegrouplink />
 
@@ -43,9 +43,9 @@ User group link table for ProjType, for MDO item hiding
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ProjType](projtype.md)  |ProjType list table. List of valid Project types. |
-|[UserGroup](usergroup.md)  |Secondary user groups |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ProjType](./projtype)  |ProjType list table. List of valid Project types. |
+|[UserGroup](./usergroup)  |Secondary user groups |
 
 ## Replication Flags
 

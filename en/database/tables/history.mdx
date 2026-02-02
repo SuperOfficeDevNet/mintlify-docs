@@ -19,14 +19,14 @@ History lists for lists and searchable controls. Maintains history for Navigator
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |history\_id|Primary key|PK| |
-|associate\_id|Owner of history list|FK [associate](associate.md)| |
+|associate\_id|Owner of history list|FK [associate](./associate)| |
 |table\_id|Table this is a history of|TableNumber| |
 |record\_id|Record within the table|RecordId| |
 |extra\_id|Extra ID, used to manage multiple histories per table|Id| |
 |rank|Sort order, indexed so it can used for sorting in the query|UShort| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![History table relationship diagram](./media/History.png)
+![History table relationship diagram](/media/loc/en/database/History.png)
 
 <History />
 
@@ -42,7 +42,7 @@ History lists for lists and searchable controls. Maintains history for Navigator
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

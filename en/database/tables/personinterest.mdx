@@ -19,18 +19,18 @@ Note; If you add or remove rows in this table, you will need to update the inter
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |personinterest\_id|Primary key|PK| |
-|person\_id|Owning person|FK [person](person.md)| |
-|pinterest\_idx|Person interest link|FK [PersInt](persint.md)| |
+|person\_id|Owning person|FK [person](./person)| |
+|pinterest\_idx|Person interest link|FK [PersInt](./persint)| |
 |startDate|Start date for this interest - no GUI|DateTime|&#x25CF;|
 |endDate|End date for this interest - no GUI|DateTime|&#x25CF;|
 |flags|Spare flag field|UInt|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![personinterest table relationship diagram](./media/personinterest.png)
+![personinterest table relationship diagram](/media/loc/en/database/personinterest.png)
 
 <Personinterest />
 
@@ -49,9 +49,9 @@ Note; If you add or remove rows in this table, you will need to update the inter
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[PersInt](persint.md)  |PersInt list table. List of Person interests. |
-|[person](person.md)  |Persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[PersInt](./persint)  |PersInt list table. List of Person interests. |
+|[person](./person)  |Persons |
 
 ## Replication Flags
 

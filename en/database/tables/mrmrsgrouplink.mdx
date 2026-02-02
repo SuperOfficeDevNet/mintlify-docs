@@ -19,15 +19,15 @@ User group link table for MrMrs, for MDO item hiding
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |mrmrsgrouplink\_id|Primary key|PK| |
-|mrmrs\_id|Link to MrMrs list table|FK [MrMrs](mrmrs.md)| |
-|group\_id|Link to Group table|FK [UserGroup](usergroup.md)| |
+|mrmrs\_id|Link to MrMrs list table|FK [MrMrs](./mrmrs)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![MrMrsGroupLink table relationship diagram](./media/MrMrsGroupLink.png)
+![MrMrsGroupLink table relationship diagram](/media/loc/en/database/MrMrsGroupLink.png)
 
 <Mrmrsgrouplink />
 
@@ -43,9 +43,9 @@ User group link table for MrMrs, for MDO item hiding
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[MrMrs](mrmrs.md)  |MrMrs list table. List of salutations. |
-|[UserGroup](usergroup.md)  |Secondary user groups |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[MrMrs](./mrmrs)  |MrMrs list table. List of salutations. |
+|[UserGroup](./usergroup)  |Secondary user groups |
 
 ## Replication Flags
 

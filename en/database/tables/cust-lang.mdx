@@ -25,11 +25,11 @@ This table contains entries for customer languages.
 |web\_domains|The domains from where the user should originate (when surfing) in order to trigger this language. Commaseparated list.|String(255)|&#x25CF;|
 |email\_domains|Commaseparated list of toplevel domains from where an email should originate in order to trigger this language.|String(255)|&#x25CF;|
 |email\_header|The email header line for this language (&amp;apos;Please keep the subject in any replies...&amp;apos;).|String(255)|&#x25CF;|
-|kb\_root|The reference to the FAQ category which is the root category for this language (for separating the FAQ per language).|FK [kb_category](kb-category.md)|&#x25CF;|
+|kb\_root|The reference to the FAQ category which is the root category for this language (for separating the FAQ per language).|FK [kb_category](./kb-category)|&#x25CF;|
 |is\_default|Bool indicating whether this language is the default (fallback) language.|Bool|&#x25CF;|
 |iso\_code|A two letter iso code for this customer language|String(63)|&#x25CF;|
 
-![cust_lang table relationship diagram](./media/cust_lang.png)
+![cust_lang table relationship diagram](/media/loc/en/database/cust_lang.png)
 
 <CustLang />
 
@@ -44,14 +44,14 @@ This table contains entries for customer languages.
 
 | Table|  Description |
 |------|-------------|
-|[chat\_topic](chat-topic.md)  |This table contains chat topics. |
-|[contact](contact.md)  |Companies and Organizations. |
-|[cust\_category](cust-category.md)  |This table contains entries for categories exposed through a customer language. |
-|[cust\_config](cust-config.md)  |This table contains JSON structures used for customizing the customer center |
-|[kb\_category](kb-category.md)  |Knowledge base folder hierarchy |
-|[mail\_in\_filter](mail-in-filter.md)  |This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP). |
-|[person](person.md)  |Persons |
-|[reply\_template\_body](reply-template-body.md)  |Contains the body of the reply templates in different languages |
+|[chat\_topic](./chat-topic)  |This table contains chat topics. |
+|[contact](./contact)  |Companies and Organizations. |
+|[cust\_category](./cust-category)  |This table contains entries for categories exposed through a customer language. |
+|[cust\_config](./cust-config)  |This table contains JSON structures used for customizing the customer center |
+|[kb\_category](./kb-category)  |Knowledge base folder hierarchy |
+|[mail\_in\_filter](./mail-in-filter)  |This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP). |
+|[person](./person)  |Persons |
+|[reply\_template\_body](./reply-template-body)  |Contains the body of the reply templates in different languages |
 
 ## Replication Flags
 

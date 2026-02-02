@@ -19,10 +19,10 @@ This table contains the alias&amp;apos;es for each mailbox, one-to-many-relation
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|filter\_id|The mailbox which the alias belongs to|FK [mail_in_filter](mail-in-filter.md)| |
+|filter\_id|The mailbox which the alias belongs to|FK [mail_in_filter](./mail-in-filter)| |
 |alias|The alias for the mailbox|String(255)|&#x25CF;|
 
-![mail_alias table relationship diagram](./media/mail_alias.png)
+![mail_alias table relationship diagram](/media/loc/en/database/mail_alias.png)
 
 <MailAlias />
 
@@ -37,7 +37,7 @@ This table contains the alias&amp;apos;es for each mailbox, one-to-many-relation
 
 | Table|  Description |
 |------|-------------|
-|[mail\_in\_filter](mail-in-filter.md)  |This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP). |
+|[mail\_in\_filter](./mail-in-filter)  |This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP). |
 
 ## Replication Flags
 

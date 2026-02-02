@@ -19,15 +19,15 @@ User group link table for Comptr, for MDO item hiding
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |comptrgrouplink\_id|Primary key|PK| |
-|comptr\_id|Link to Comptr list table|FK [Comptr](comptr.md)| |
-|group\_id|Link to Group table|FK [UserGroup](usergroup.md)| |
+|comptr\_id|Link to Comptr list table|FK [Comptr](./comptr)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ComptrGroupLink table relationship diagram](./media/ComptrGroupLink.png)
+![ComptrGroupLink table relationship diagram](/media/loc/en/database/ComptrGroupLink.png)
 
 <Comptrgrouplink />
 
@@ -43,9 +43,9 @@ User group link table for Comptr, for MDO item hiding
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Comptr](comptr.md)  |Comptr list table. List of all possible competitors (sale). |
-|[UserGroup](usergroup.md)  |Secondary user groups |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Comptr](./comptr)  |Comptr list table. List of all possible competitors (sale). |
+|[UserGroup](./usergroup)  |Secondary user groups |
 
 ## Replication Flags
 

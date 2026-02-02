@@ -19,15 +19,15 @@ Table specifying which contacts can own associates.  All contacts that have rows
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |OwnerContactLink\_id|Primary key|PK| |
-|contact\_id|Contact reference|FK [contact](contact.md)| |
+|contact\_id|Contact reference|FK [contact](./contact)| |
 |remark|Comment text|String(254)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![OwnerContactLink table relationship diagram](./media/OwnerContactLink.png)
+![OwnerContactLink table relationship diagram](/media/loc/en/database/OwnerContactLink.png)
 
 <Ownercontactlink />
 
@@ -42,8 +42,8 @@ Table specifying which contacts can own associates.  All contacts that have rows
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[contact](contact.md)  |Companies and Organizations. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[contact](./contact)  |Companies and Organizations. |
 
 ## Replication Flags
 

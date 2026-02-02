@@ -20,18 +20,18 @@ Definition of a message, corresponding to the header of a protocol
 |------|-------------|------|:----:|
 |Message\_id|Primary key|PK| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
-|associateId|The associate that is the target of this message|FK [associate](associate.md)| |
-|onlineapp\_id|The online app that owns this message|FK [OnlineApp](onlineapp.md)| |
+|associateId|The associate that is the target of this message|FK [associate](./associate)| |
+|onlineapp\_id|The online app that owns this message|FK [OnlineApp](./onlineapp)| |
 |systemMessageId|Message identifier, used for message update or removal|String(255)| |
 |markdownMessage|Markdown message to be displayed to user|String(4000)| |
 |expire|The date and time the message expires|UtcDateTime| |
-|type|Type of message, example: info, warning, error|Enum [SystemMessageType](enums/systemmessagetype.md)| |
+|type|Type of message, example: info, warning, error|Enum [SystemMessageType](./enums/systemmessagetype)| |
 
-![Message table relationship diagram](./media/Message.png)
+![Message table relationship diagram](/media/loc/en/database/Message.png)
 
 <Message />
 
@@ -46,8 +46,8 @@ Definition of a message, corresponding to the header of a protocol
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[OnlineApp](onlineapp.md)  |Echo and track information about Online Apps and their usage |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[OnlineApp](./onlineapp)  |Echo and track information about Online Apps and their usage |
 
 ## Replication Flags
 

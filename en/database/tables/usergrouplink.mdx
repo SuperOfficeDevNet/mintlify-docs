@@ -19,19 +19,19 @@ Link table between associate and usergroup, specifies secondary group membership
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |UserGroupLink\_id|Primary key|PK| |
-|assoc\_id|Link to associate|FK [associate](associate.md)| |
-|UserGroup\_id|Link to group|FK [UserGroup](usergroup.md)| |
+|assoc\_id|Link to associate|FK [associate](./associate)| |
+|UserGroup\_id|Link to group|FK [UserGroup](./usergroup)| |
 |remark|Comment on why the assoc is linked to the group|String(254)|&#x25CF;|
 |validFrom|When the membership becomes valid|DateTime|&#x25CF;|
 |validTo|Last datetime this membership is valid|DateTime|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 |encryptedCheck|Encrypted data, to detect unwanted changes|String(254)|&#x25CF;|
 
-![UserGroupLink table relationship diagram](./media/UserGroupLink.png)
+![UserGroupLink table relationship diagram](/media/loc/en/database/UserGroupLink.png)
 
 <Usergrouplink />
 
@@ -47,8 +47,8 @@ Link table between associate and usergroup, specifies secondary group membership
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[UserGroup](usergroup.md)  |Secondary user groups |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[UserGroup](./usergroup)  |Secondary user groups |
 
 ## Replication Flags
 

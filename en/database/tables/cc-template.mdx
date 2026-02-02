@@ -21,14 +21,14 @@ This table contains templates for the customer center
 |cc\_template\_id|Primary key|PK| |
 |key|The key to this template, normally the local path and filename|String(255)| |
 |body|The HTML body for this template|Clob|&#x25CF;|
-|type|What kind of template is in this row|Enum [CcTemplateType](enums/cctemplatetype.md)|&#x25CF;|
+|type|What kind of template is in this row|Enum [CcTemplateType](./enums/cctemplatetype)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![cc_template table relationship diagram](./media/cc_template.png)
+![cc_template table relationship diagram](/media/loc/en/database/cc_template.png)
 
 <CcTemplate />
 
@@ -43,7 +43,7 @@ This table contains templates for the customer center
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

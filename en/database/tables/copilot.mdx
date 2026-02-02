@@ -21,12 +21,12 @@ Contains all available copilots
 |copilot\_id|Primary key|PK| |
 |name|The name of copilot|String(4000)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![copilot table relationship diagram](./media/copilot.png)
+![copilot table relationship diagram](/media/loc/en/database/copilot.png)
 
 <Copilot />
 
@@ -40,8 +40,8 @@ Contains all available copilots
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[copilot\_data\_source](copilot-data-source.md)  |Stores data sources for each copilot |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[copilot\_data\_source](./copilot-data-source)  |Stores data sources for each copilot |
 
 ## Replication Flags
 

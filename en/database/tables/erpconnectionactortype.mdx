@@ -19,17 +19,17 @@ Data about the configuration of one Erp Actor on one ErpConnection
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |erpconnectionactortype\_id|Primary key|PK| |
-|ErpConnectionId|The connection this actor is configured for|FK [ErpConnection](erpconnection.md)| |
-|ActorTypeErp|The actor type (ERP side)|Enum [ErpActorType](enums/erpactortype.md)| |
-|ActorTypeCrm|The actor type (CRM side)|Enum [CrmActorType](enums/crmactortype.md)|&#x25CF;|
+|ErpConnectionId|The connection this actor is configured for|FK [ErpConnection](./erpconnection)| |
+|ActorTypeErp|The actor type (ERP side)|Enum [ErpActorType](./enums/erpactortype)| |
+|ActorTypeCrm|The actor type (CRM side)|Enum [CrmActorType](./enums/crmactortype)|&#x25CF;|
 |IsActive|Is this mapping/synchronization configuration currently active|Bool| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ErpConnectionActorType table relationship diagram](./media/ErpConnectionActorType.png)
+![ErpConnectionActorType table relationship diagram](/media/loc/en/database/ErpConnectionActorType.png)
 
 <Erpconnectionactortype />
 
@@ -45,9 +45,9 @@ Data about the configuration of one Erp Actor on one ErpConnection
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ErpConnection](erpconnection.md)  |One connection to an ERP connector, specifying Client and other required information |
-|[ErpField](erpfield.md)  |Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ErpConnection](./erpconnection)  |One connection to an ERP connector, specifying Client and other required information |
+|[ErpField](./erpfield)  |Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector |
 
 ## Replication Flags
 

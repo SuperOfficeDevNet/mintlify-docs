@@ -19,15 +19,15 @@ This table contains FAQ groups. A group is a cluster of entries (potentially loc
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|kb\_category\_id|The id of the kb_category in which this group is located.|FK [kb_category](kb-category.md)| |
+|kb\_category\_id|The id of the kb_category in which this group is located.|FK [kb_category](./kb-category)| |
 |description|The description for this group.|Clob|&#x25CF;|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](dbi-agent.md)| |
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)| |
 |dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)| |
 |dbi\_last\_syncronized|Last external syncronization.|DateTime| |
 |dbi\_last\_modified|When the entry was last modified.|DateTime| |
-|parent\_id|The parent group for this group. -1 if this is a toplevel group.|FK [ej_category](ej-category.md)| |
+|parent\_id|The parent group for this group. -1 if this is a toplevel group.|FK [ej_category](./ej-category)| |
 
-![kb_group table relationship diagram](./media/kb_group.png)
+![kb_group table relationship diagram](/media/loc/en/database/kb_group.png)
 
 <KbGroup />
 
@@ -47,10 +47,10 @@ This table contains FAQ groups. A group is a cluster of entries (potentially loc
 
 | Table|  Description |
 |------|-------------|
-|[dbi\_agent](dbi-agent.md)  |DBI agent settings |
-|[ej\_category](ej-category.md)  |This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner. |
-|[kb\_category](kb-category.md)  |Knowledge base folder hierarchy |
-|[kb\_group\_entry](kb-group-entry.md)  |This table contains group entries for FAQ groups. |
+|[dbi\_agent](./dbi-agent)  |DBI agent settings |
+|[ej\_category](./ej-category)  |This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner. |
+|[kb\_category](./kb-category)  |Knowledge base folder hierarchy |
+|[kb\_group\_entry](./kb-group-entry)  |This table contains group entries for FAQ groups. |
 
 ## Replication Flags
 

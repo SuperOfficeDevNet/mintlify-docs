@@ -23,4 +23,4 @@ Email priority
 
 ## Usage
 
-* [email_item](../email-item.md).priority - Email data
+* [email_item](../email-item).priority - Email data

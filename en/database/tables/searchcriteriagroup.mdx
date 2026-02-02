@@ -19,19 +19,19 @@ Criteria storage for Selection and other Find mechanisms
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |SearchCriteriaGroup\_id|Primary key|PK| |
-|SearchCriteria\_id|Owning model|FK [SearchCriteria](searchcriteria.md)| |
+|SearchCriteria\_id|Owning model|FK [SearchCriteria](./searchcriteria)| |
 |name|The name of this criteria group|String(254)| |
-|textId|Extra information (descriptive) for this Criteria Group|FK [text](text.md)|&#x25CF;|
-|direction|0 = Add, 1 = Subtract this group from the total result|Enum [CriteriaGroupDirection](enums/criteriagroupdirection.md)| |
+|textId|Extra information (descriptive) for this Criteria Group|FK [text](./text)|&#x25CF;|
+|direction|0 = Add, 1 = Subtract this group from the total result|Enum [CriteriaGroupDirection](./enums/criteriagroupdirection)| |
 |rank|Rank order within this CriteriaModel|UShort| |
 |active|Should this group be executed|UShort| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![SearchCriteriaGroup table relationship diagram](./media/SearchCriteriaGroup.png)
+![SearchCriteriaGroup table relationship diagram](/media/loc/en/database/SearchCriteriaGroup.png)
 
 <Searchcriteriagroup />
 
@@ -46,10 +46,10 @@ Criteria storage for Selection and other Find mechanisms
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[SearchCriteria](searchcriteria.md)  |Criteria storage for Selection and other Find mechanisms |
-|[SearchCriterion](searchcriterion.md)  |Criteria storage for Selection and other Find mechanisms |
-|[text](text.md)  |Long text fields from all over the system |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SearchCriteria](./searchcriteria)  |Criteria storage for Selection and other Find mechanisms |
+|[SearchCriterion](./searchcriterion)  |Criteria storage for Selection and other Find mechanisms |
+|[text](./text)  |Long text fields from all over the system |
 
 ## Replication Flags
 

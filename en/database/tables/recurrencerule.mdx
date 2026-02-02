@@ -19,8 +19,8 @@ The recurrency pattern for a recurring event. Each recurring event has an appoin
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |RecurrenceRule\_id|Primary key|PK| |
-|pattern|Recurrence pattern (daily, weekly etc)|Enum [RecurrencePattern](enums/recurrencepattern.md)| |
-|subPattern|Subpattern (workday, everyday, weekday etc)|Enum [RecurrenceSubPattern](enums/recurrencesubpattern.md)| |
+|pattern|Recurrence pattern (daily, weekly etc)|Enum [RecurrencePattern](./enums/recurrencepattern)| |
+|subPattern|Subpattern (workday, everyday, weekday etc)|Enum [RecurrenceSubPattern](./enums/recurrencesubpattern)| |
 |weekdays|Weekdays used, bitmask based on  ERecurrenceWeekDays enumeration|UShort| |
 |startDate|Start date for repetition pattern|DateTime| |
 |endDate|End date for repetition pattern|DateTime| |
@@ -28,12 +28,12 @@ The recurrency pattern for a recurring event. Each recurring event has an appoin
 |cyclicWeek|Every nth week, in cyclic patterns|UShort| |
 |cyclicMonth|Every nth month, in cyclic patterns|UShort| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![RecurrenceRule table relationship diagram](./media/RecurrenceRule.png)
+![RecurrenceRule table relationship diagram](/media/loc/en/database/RecurrenceRule.png)
 
 <Recurrencerule />
 
@@ -47,8 +47,8 @@ The recurrency pattern for a recurring event. Each recurring event has an appoin
 
 | Table|  Description |
 |------|-------------|
-|[appointment](appointment.md)  |Tasks, appointments, followups, phone calls; and documents (document_id != 0). An appointment always has a corresponding record in VisibleFor specifying who may see this.  |
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[appointment](./appointment)  |Tasks, appointments, followups, phone calls; and documents (document_id != 0). An appointment always has a corresponding record in VisibleFor specifying who may see this.  |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

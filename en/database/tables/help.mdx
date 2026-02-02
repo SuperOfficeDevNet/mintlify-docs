@@ -21,7 +21,7 @@ This table contains the help pages.
 |id|The primary key (auto-incremented)|PK| |
 |name|The name for this help page.|String(64)|&#x25CF;|
 |title|The title for this help page.|String(255)|&#x25CF;|
-|parent\_id|The id of the parent help page. NULL or -1 if this is a toplevel helppage.|FK [help](help.md)|&#x25CF;|
+|parent\_id|The id of the parent help page. NULL or -1 if this is a toplevel helppage.|FK [help](./help)|&#x25CF;|
 |language|A string indicating the language for this helppage (&amp;apos;no&amp;apos; or &amp;apos;en&amp;apos;).|String(5)|&#x25CF;|
 |sort\_order|The sort-order for this helppage when listed among its siblings.|Int|&#x25CF;|
 |module\_id|The id of the module, if this page is the description for a module..|Int| |
@@ -29,7 +29,7 @@ This table contains the help pages.
 |screen\_id|The id of the screen, if this page is the description for a screen..|Int| |
 |body|The actual body for the helppage. HTML format.|Clob|&#x25CF;|
 
-![help table relationship diagram](./media/help.png)
+![help table relationship diagram](/media/loc/en/database/help.png)
 
 <Help />
 
@@ -47,7 +47,7 @@ This table contains the help pages.
 
 | Table|  Description |
 |------|-------------|
-|[help](help.md)  |This table contains the help pages. |
+|[help](./help)  |This table contains the help pages. |
 
 ## Replication Flags
 

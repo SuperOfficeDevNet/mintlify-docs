@@ -19,16 +19,16 @@ Actual attachments to a quote
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |quoteversionattachment\_id|Primary key|PK| |
-|QuoteVersionId|Link to QuoteVersion|FK [QuoteVersion](quoteversion.md)| |
-|DocumentId|Link to document|FK [document](document.md)| |
+|QuoteVersionId|Link to QuoteVersion|FK [QuoteVersion](./quoteversion)| |
+|DocumentId|Link to document|FK [document](./document)| |
 |Included|Will this attachment be included in the next &apos;Send Quote&apos; operation|Bool|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![QuoteVersionAttachment table relationship diagram](./media/QuoteVersionAttachment.png)
+![QuoteVersionAttachment table relationship diagram](/media/loc/en/database/QuoteVersionAttachment.png)
 
 <Quoteversionattachment />
 
@@ -43,9 +43,9 @@ Actual attachments to a quote
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[document](document.md)  |Documents, this table is an extension of the Appointment table.  There is always a corresponding appointment record; the relation between appointment and document is navigable in both directions. A document-type appointment record always has a corresponding document record and a record in VisibleFor specifying who may see this.   |
-|[QuoteVersion](quoteversion.md)  |There may be multiple Versions of a Quote, with one of them active |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[document](./document)  |Documents, this table is an extension of the Appointment table.  There is always a corresponding appointment record; the relation between appointment and document is navigable in both directions. A document-type appointment record always has a corresponding document record and a record in VisibleFor specifying who may see this.   |
+|[QuoteVersion](./quoteversion)  |There may be multiple Versions of a Quote, with one of them active |
 
 ## Replication Flags
 

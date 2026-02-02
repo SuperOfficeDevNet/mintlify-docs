@@ -23,12 +23,12 @@ Global settings for the Erp Integration Server
 |SyncInterval|Interval between successive pollings for changes, in seconds|Int|&#x25CF;|
 |SyncRunning|Is the sync currently running or not; reflects state of [On] [Off] buttons in the Admin GUI|Bool|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ErpConfiguration table relationship diagram](./media/ErpConfiguration.png)
+![ErpConfiguration table relationship diagram](/media/loc/en/database/ErpConfiguration.png)
 
 <Erpconfiguration />
 
@@ -42,7 +42,7 @@ Global settings for the Erp Integration Server
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

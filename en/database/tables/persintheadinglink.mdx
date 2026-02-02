@@ -19,15 +19,15 @@ Heading link table for PersInt, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |persintheadinglink\_id|Primary key|PK| |
-|persint\_id|Link to PersInt list table|FK [PersInt](persint.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|persint\_id|Link to PersInt list table|FK [PersInt](./persint)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![PersIntHeadingLink table relationship diagram](./media/PersIntHeadingLink.png)
+![PersIntHeadingLink table relationship diagram](/media/loc/en/database/PersIntHeadingLink.png)
 
 <Persintheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for PersInt, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
-|[PersInt](persint.md)  |PersInt list table. List of Person interests. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[PersInt](./persint)  |PersInt list table. List of Person interests. |
 
 ## Replication Flags
 

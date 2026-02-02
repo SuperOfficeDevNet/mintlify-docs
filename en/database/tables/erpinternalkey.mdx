@@ -23,12 +23,12 @@ The internal (superoffice-facing) key related to a synchronized record
 |recordId|ID of row this right applies to|RecordId| |
 |MostRecentTimestamp|Datetime, transaction number or other identification of the point in time of the most-recently seen actor in the ERP system|String(254)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ErpInternalKey table relationship diagram](./media/ErpInternalKey.png)
+![ErpInternalKey table relationship diagram](/media/loc/en/database/ErpInternalKey.png)
 
 <Erpinternalkey />
 
@@ -43,8 +43,8 @@ The internal (superoffice-facing) key related to a synchronized record
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ErpExternalKey](erpexternalkey.md)  |The external (ERP-facing) key related to a synchronized record / connection |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ErpExternalKey](./erpexternalkey)  |The external (ERP-facing) key related to a synchronized record / connection |
 
 ## Replication Flags
 

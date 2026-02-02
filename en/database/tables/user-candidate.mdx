@@ -19,11 +19,11 @@ This table will hold user candidate secrets
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|Primary key|PK| |
-|person\_id|Foreign key. Id of a person representing Customer Center User.|FK [person](person.md)| |
+|person\_id|Foreign key. Id of a person representing Customer Center User.|FK [person](./person)| |
 |secret\_key|Username of a Customer Centre User.|String(255)|&#x25CF;|
 |secret\_value|Password of a Customer Centre User.|String(255)|&#x25CF;|
 
-![user_candidate table relationship diagram](./media/user_candidate.png)
+![user_candidate table relationship diagram](/media/loc/en/database/user_candidate.png)
 
 <UserCandidate />
 
@@ -39,7 +39,7 @@ This table will hold user candidate secrets
 
 | Table|  Description |
 |------|-------------|
-|[person](person.md)  |Persons |
+|[person](./person)  |Persons |
 
 ## Replication Flags
 

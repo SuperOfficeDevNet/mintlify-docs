@@ -19,15 +19,15 @@ Heading link table for PMembType, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |pmembtypeheadinglink\_id|Primary key|PK| |
-|pmembtype\_id|Link to PMembType list table|FK [PMembType](pmembtype.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|pmembtype\_id|Link to PMembType list table|FK [PMembType](./pmembtype)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![PMembTypeHeadingLink table relationship diagram](./media/PMembTypeHeadingLink.png)
+![PMembTypeHeadingLink table relationship diagram](/media/loc/en/database/PMembTypeHeadingLink.png)
 
 <Pmembtypeheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for PMembType, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
-|[PMembType](pmembtype.md)  |PMembType list table. List text of titles (member types) for project members. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[PMembType](./pmembtype)  |PMembType list table. List text of titles (member types) for project members. |
 
 ## Replication Flags
 

@@ -19,15 +19,15 @@ A set of periods linked with target amounts for users/usergroups and the target 
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |target\_period\_id|Primary key|PK| |
-|target\_group\_id|The group this target belongs to|FK [target_group](target-group.md)|&#x25CF;|
+|target\_group\_id|The group this target belongs to|FK [target_group](./target-group)|&#x25CF;|
 |period\_number|Month number, 1...12 (or maybe quarter number 1...4 or half year number...)|Int|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![target_period table relationship diagram](./media/target_period.png)
+![target_period table relationship diagram](/media/loc/en/database/target_period.png)
 
 <TargetPeriod />
 
@@ -41,9 +41,9 @@ A set of periods linked with target amounts for users/usergroups and the target 
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[target\_assignment\_value](target-assignment-value.md)  |A set of values linked to assignment info and a period in a target group. |
-|[target\_group](target-group.md)  |Info about a set of (sales, project, selection...) targets |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[target\_assignment\_value](./target-assignment-value)  |A set of values linked to assignment info and a period in a target group. |
+|[target\_group](./target-group)  |Info about a set of (sales, project, selection...) targets |
 
 ## Replication Flags
 

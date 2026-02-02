@@ -19,15 +19,15 @@ Heading link table for Salutation, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |salutationheadinglink\_id|Primary key|PK| |
-|salutation\_id|Link to Salutation list table|FK [Salutation](salutation.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|salutation\_id|Link to Salutation list table|FK [Salutation](./salutation)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![SalutationHeadingLink table relationship diagram](./media/SalutationHeadingLink.png)
+![SalutationHeadingLink table relationship diagram](/media/loc/en/database/SalutationHeadingLink.png)
 
 <Salutationheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for Salutation, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
-|[Salutation](salutation.md)  |Academic title for Person |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[Salutation](./salutation)  |Academic title for Person |
 
 ## Replication Flags
 

@@ -19,16 +19,16 @@ Visible for rights
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |CounterValue\_id|Primary key|PK| |
-|contact\_id|Link to contact, 0 if this counter is not for contacts|FK [contact](contact.md)| |
-|person\_id|Link to person, 0 if this counter is not for person (always 0 in 6.0)|FK [person](person.md)| |
-|project\_id|Link to project, 0 if this counter is not for project|FK [project](project.md)| |
+|contact\_id|Link to contact, 0 if this counter is not for contacts|FK [contact](./contact)| |
+|person\_id|Link to person, 0 if this counter is not for person (always 0 in 6.0)|FK [person](./person)| |
+|project\_id|Link to project, 0 if this counter is not for project|FK [project](./project)| |
 |extra1\_id|Spare ID for future links|Id| |
 |extra2\_id|Spare ID for future links|Id| |
-|record\_type|Same as task.record_type: 1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo - see EAppntRecordTypes|Enum [AppntRecordType](enums/appntrecordtype.md)| |
-|direction|Same as task.direction: Direction: 0 = none, 1 = incoming, 2 = outgoing|Enum [AppntDirection](enums/appntdirection.md)| |
-|intent\_id|Link to Intent list|FK [Intent](intent.md)| |
-|sale\_status|Sale status: 0 = Unknown, 1 = open, 2 = closed, 3 = lost, 4 = all sales|Enum [SaleStatus](enums/salestatus.md)| |
-|amountClassId|Sale amount class, for splitting sale counters by amounts|FK [AmountClass](amountclass.md)| |
+|record\_type|Same as task.record_type: 1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo - see EAppntRecordTypes|Enum [AppntRecordType](./enums/appntrecordtype)| |
+|direction|Same as task.direction: Direction: 0 = none, 1 = incoming, 2 = outgoing|Enum [AppntDirection](./enums/appntdirection)| |
+|intent\_id|Link to Intent list|FK [Intent](./intent)| |
+|sale\_status|Sale status: 0 = Unknown, 1 = open, 2 = closed, 3 = lost, 4 = all sales|Enum [SaleStatus](./enums/salestatus)| |
+|amountClassId|Sale amount class, for splitting sale counters by amounts|FK [AmountClass](./amountclass)| |
 |totalReg|Total registered records of this type|UInt| |
 |totalRegInPeriod|Total registered records of this type in the first period (there are up to three period definitions)|UInt| |
 |notCompleted|Total records with status Not Completed|UInt| |
@@ -41,12 +41,12 @@ Visible for rights
 |extra3\_count|Total registered records of this type in the third period (there are up to three period definitions)|UInt|&#x25CF;|
 |extra4\_count|Total records with status Not Completed in the third period (there are up to three period definitions)|UInt|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![CounterValue table relationship diagram](./media/CounterValue.png)
+![CounterValue table relationship diagram](/media/loc/en/database/CounterValue.png)
 
 <Countervalue />
 
@@ -66,12 +66,12 @@ Visible for rights
 
 | Table|  Description |
 |------|-------------|
-|[AmountClass](amountclass.md)  |Amount Class list for SuperOffice Sales Intelligence (Saint) - used to group sales by amounts, into bins (low --&gt; high) called amount classes. More information regarding SuperOffice Sales Intelligence on http://techdoc.superoffice.com  |
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[contact](contact.md)  |Companies and Organizations. |
-|[Intent](intent.md)  |Intent list for SAINT. More information regarding SuperOffice Sales Intelligence on http://techdoc.superoffice.com  |
-|[person](person.md)  |Persons |
-|[project](project.md)  |Projects |
+|[AmountClass](./amountclass)  |Amount Class list for SuperOffice Sales Intelligence (Saint) - used to group sales by amounts, into bins (low --&gt; high) called amount classes. More information regarding SuperOffice Sales Intelligence on http://techdoc.superoffice.com  |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[contact](./contact)  |Companies and Organizations. |
+|[Intent](./intent)  |Intent list for SAINT. More information regarding SuperOffice Sales Intelligence on http://techdoc.superoffice.com  |
+|[person](./person)  |Persons |
+|[project](./project)  |Projects |
 
 ## Replication Flags
 

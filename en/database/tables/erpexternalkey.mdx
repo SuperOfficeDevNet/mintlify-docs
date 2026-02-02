@@ -19,18 +19,18 @@ The external (ERP-facing) key related to a synchronized record / connection
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |erpexternalkey\_id|Primary key|PK| |
-|ErpInternalKeyId|Link to the internal key and thus the original table/record in SuperOffice that is being synchronized|FK [ErpInternalKey](erpinternalkey.md)| |
-|ErpConnectionId|Link to the Erp connection the key relates to|FK [ErpConnection](erpconnection.md)| |
+|ErpInternalKeyId|Link to the internal key and thus the original table/record in SuperOffice that is being synchronized|FK [ErpInternalKey](./erpinternalkey)| |
+|ErpConnectionId|Link to the Erp connection the key relates to|FK [ErpConnection](./erpconnection)| |
 |ErpKey|The primary key from the ERP system|String(254)| |
-|ActorType|The actor type within the ERP system of this synchronized record|Enum [ErpActorType](enums/erpactortype.md)| |
+|ActorType|The actor type within the ERP system of this synchronized record|Enum [ErpActorType](./enums/erpactortype)| |
 |MostRecentTimestamp|Datetime, transaction number or other identification of the point in time of the most-recently seen actor in the ERP system|String(254)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ErpExternalKey table relationship diagram](./media/ErpExternalKey.png)
+![ErpExternalKey table relationship diagram](/media/loc/en/database/ErpExternalKey.png)
 
 <Erpexternalkey />
 
@@ -47,10 +47,10 @@ The external (ERP-facing) key related to a synchronized record / connection
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ErpConnection](erpconnection.md)  |One connection to an ERP connector, specifying Client and other required information |
-|[ErpInternalKey](erpinternalkey.md)  |The internal (superoffice-facing) key related to a synchronized record |
-|[ErpSyncLog](erpsynclog.md)  |Record all field changes done by the Erp Sync |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ErpConnection](./erpconnection)  |One connection to an ERP connector, specifying Client and other required information |
+|[ErpInternalKey](./erpinternalkey)  |The internal (superoffice-facing) key related to a synchronized record |
+|[ErpSyncLog](./erpsynclog)  |Record all field changes done by the Erp Sync |
 
 ## Replication Flags
 

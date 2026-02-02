@@ -19,15 +19,15 @@ Link table incidated whose data should be included in this area. If Include all 
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |areauserinclusion\_id|Primary key|PK| |
-|area\_id|Parent area ID|FK [area](area.md)| |
-|associate\_id|ID of associate whose data should be in this area|FK [associate](associate.md)| |
+|area\_id|Parent area ID|FK [area](./area)| |
+|associate\_id|ID of associate whose data should be in this area|FK [associate](./associate)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![areauserinclusion table relationship diagram](./media/areauserinclusion.png)
+![areauserinclusion table relationship diagram](/media/loc/en/database/areauserinclusion.png)
 
 <Areauserinclusion />
 
@@ -43,8 +43,8 @@ Link table incidated whose data should be included in this area. If Include all 
 
 | Table|  Description |
 |------|-------------|
-|[area](area.md)  |Definition of an Area (database subset for satellite and travel) |
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[area](./area)  |Definition of an Area (database subset for satellite and travel) |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

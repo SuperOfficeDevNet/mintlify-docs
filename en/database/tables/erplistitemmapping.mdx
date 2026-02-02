@@ -19,16 +19,16 @@ Defines a mapping of ERP to CRM fields, per connection and actor type
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |erplistitemmapping\_id|Primary key|PK| |
-|ErpFieldId|Link to the Erp field (and implicitly to crm list and Erp Connection)|FK [ErpField](erpfield.md)| |
+|ErpFieldId|Link to the Erp field (and implicitly to crm list and Erp Connection)|FK [ErpField](./erpfield)| |
 |ErpItemKey|The unique key in the ERP system for this list item|String(254)| |
 |CrmItemKey|The unique key in the CRM database for this list item (list/table is identified by the ListReference in ErpField)|Int|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ErpListItemMapping table relationship diagram](./media/ErpListItemMapping.png)
+![ErpListItemMapping table relationship diagram](/media/loc/en/database/ErpListItemMapping.png)
 
 <Erplistitemmapping />
 
@@ -43,8 +43,8 @@ Defines a mapping of ERP to CRM fields, per connection and actor type
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ErpField](erpfield.md)  |Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ErpField](./erpfield)  |Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector |
 
 ## Replication Flags
 

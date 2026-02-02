@@ -19,7 +19,7 @@ This table contains entries for customer sessions. At first only used for Soap l
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|customer\_id|The id of the customer this entry references.|FK [person](person.md)| |
+|customer\_id|The id of the customer this entry references.|FK [person](./person)| |
 |session\_key|A random 32 characters value used as authentication key for the session.|String(32)| |
 |expire|The last time this session was active.|DateTime|&#x25CF;|
 |seconds\_to\_live|The session key will expire after a given number of seconds.|Int| |
@@ -29,7 +29,7 @@ This table contains entries for customer sessions. At first only used for Soap l
 |origin|1=soap call, 2=customer pages|Int| |
 |created\_at|When the entry was created|DateTime|&#x25CF;|
 
-![login_customer table relationship diagram](./media/login_customer.png)
+![login_customer table relationship diagram](/media/loc/en/database/login_customer.png)
 
 <LoginCustomer />
 
@@ -46,7 +46,7 @@ This table contains entries for customer sessions. At first only used for Soap l
 
 | Table|  Description |
 |------|-------------|
-|[person](person.md)  |Persons |
+|[person](./person)  |Persons |
 
 ## Replication Flags
 

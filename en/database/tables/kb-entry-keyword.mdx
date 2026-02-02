@@ -19,10 +19,10 @@ This table contains all keywords for the faq entries
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|kb\_entry\_id|The id of the kb_entry which this keyword belongs to.|FK [kb_entry](kb-entry.md)| |
+|kb\_entry\_id|The id of the kb_entry which this keyword belongs to.|FK [kb_entry](./kb-entry)| |
 |keyword|A keyword for the given entry.|String(255)| |
 
-![kb_entry_keyword table relationship diagram](./media/kb_entry_keyword.png)
+![kb_entry_keyword table relationship diagram](/media/loc/en/database/kb_entry_keyword.png)
 
 <KbEntryKeyword />
 
@@ -38,7 +38,7 @@ This table contains all keywords for the faq entries
 
 | Table|  Description |
 |------|-------------|
-|[kb\_entry](kb-entry.md)  |This table contains FAQ entries. |
+|[kb\_entry](./kb-entry)  |This table contains FAQ entries. |
 
 ## Replication Flags
 

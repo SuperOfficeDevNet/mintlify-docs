@@ -19,15 +19,15 @@ Heading link table for Comptr, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |comptrheadinglink\_id|Primary key|PK| |
-|comptr\_id|Link to Comptr list table|FK [Comptr](comptr.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|comptr\_id|Link to Comptr list table|FK [Comptr](./comptr)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ComptrHeadingLink table relationship diagram](./media/ComptrHeadingLink.png)
+![ComptrHeadingLink table relationship diagram](/media/loc/en/database/ComptrHeadingLink.png)
 
 <Comptrheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for Comptr, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Comptr](comptr.md)  |Comptr list table. List of all possible competitors (sale). |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Comptr](./comptr)  |Comptr list table. List of all possible competitors (sale). |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
 ## Replication Flags
 

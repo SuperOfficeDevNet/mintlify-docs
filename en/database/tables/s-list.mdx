@@ -26,12 +26,12 @@ A list, dynamic or static
 |flag|Not used|Short|&#x25CF;|
 |number\_of\_elements|How many elements this list contains|Int|&#x25CF;|
 |folder\_id|The folder which this link belongs to. -1 indicates that the link is on the root|Int| |
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](dbi-agent.md)| |
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)| |
 |dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)| |
 |dbi\_last\_syncronized|Last external syncronization.|DateTime| |
 |dbi\_last\_modified|When the entry was last modified.|DateTime| |
 
-![s_list table relationship diagram](./media/s_list.png)
+![s_list table relationship diagram](/media/loc/en/database/s_list.png)
 
 <SList />
 
@@ -49,12 +49,12 @@ A list, dynamic or static
 
 | Table|  Description |
 |------|-------------|
-|[dbi\_agent](dbi-agent.md)  |DBI agent settings |
-|[s\_dyn\_criteria](s-dyn-criteria.md)  |Contains criterias for a dynamic list. |
-|[s\_list\_customer](s-list-customer.md)  |Elements in a customer list. |
-|[s\_list\_element](s-list-element.md)  |Elements in a static list. |
-|[s\_list\_shipment](s-list-shipment.md)  |A connector between shipment and list so that one shipment can have many lists, and one list can have many shipments |
-|[s\_washing\_list](s-washing-list.md)  |Unused table that is ment to be used for active washing in spm v2 |
+|[dbi\_agent](./dbi-agent)  |DBI agent settings |
+|[s\_dyn\_criteria](./s-dyn-criteria)  |Contains criterias for a dynamic list. |
+|[s\_list\_customer](./s-list-customer)  |Elements in a customer list. |
+|[s\_list\_element](./s-list-element)  |Elements in a static list. |
+|[s\_list\_shipment](./s-list-shipment)  |A connector between shipment and list so that one shipment can have many lists, and one list can have many shipments |
+|[s\_washing\_list](./s-washing-list)  |Unused table that is ment to be used for active washing in spm v2 |
 
 ## Replication Flags
 

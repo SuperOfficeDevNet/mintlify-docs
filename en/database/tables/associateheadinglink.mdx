@@ -19,15 +19,15 @@ Heading link table for associate for display only. Supportive table, used for gr
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |associateheadinglink\_id|Primary key|PK| |
-|associate\_id|Link to Associate list table|FK [associate](associate.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|associate\_id|Link to Associate list table|FK [associate](./associate)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![AssociateHeadingLink table relationship diagram](./media/AssociateHeadingLink.png)
+![AssociateHeadingLink table relationship diagram](/media/loc/en/database/AssociateHeadingLink.png)
 
 <Associateheadinglink />
 
@@ -43,8 +43,8 @@ Heading link table for associate for display only. Supportive table, used for gr
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
 ## Replication Flags
 

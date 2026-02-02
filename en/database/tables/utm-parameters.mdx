@@ -19,9 +19,9 @@ Table for utm parameters collected from visits and formsubmissions
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |utm\_parameters\_id|Primary key|PK| |
-|created\_person\_id|Id of the created person|FK [person](person.md)|&#x25CF;|
-|created\_contact\_id|Id of the created contact|FK [contact](contact.md)|&#x25CF;|
-|form\_submission\_id|Id of formsubmission|FK [form_submission](form-submission.md)|&#x25CF;|
+|created\_person\_id|Id of the created person|FK [person](./person)|&#x25CF;|
+|created\_contact\_id|Id of the created contact|FK [contact](./contact)|&#x25CF;|
+|form\_submission\_id|Id of formsubmission|FK [form_submission](./form-submission)|&#x25CF;|
 |firsttouch\_source|First touch UTM Source|String(255)|&#x25CF;|
 |firsttouch\_medium|First touch UTM Medium|String(255)|&#x25CF;|
 |firsttouch\_campaign|First touch UTM Campaign|String(255)|&#x25CF;|
@@ -37,12 +37,12 @@ Table for utm parameters collected from visits and formsubmissions
 |referrerdomain|Referrer domain|String(255)|&#x25CF;|
 |when|Date of the visit or form submission|DateTime|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![utm_parameters table relationship diagram](./media/utm_parameters.png)
+![utm_parameters table relationship diagram](/media/loc/en/database/utm_parameters.png)
 
 <UtmParameters />
 
@@ -59,10 +59,10 @@ Table for utm parameters collected from visits and formsubmissions
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[contact](contact.md)  |Companies and Organizations. |
-|[form\_submission](form-submission.md)  |A form submission |
-|[person](person.md)  |Persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[contact](./contact)  |Companies and Organizations. |
+|[form\_submission](./form-submission)  |A form submission |
+|[person](./person)  |Persons |
 
 ## Replication Flags
 

@@ -19,7 +19,7 @@ SuperOffice reporter data
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |SORField\_id|Primary key|PK| |
-|SORSection\_id|Foreign key to Section|FK [SORSection](sorsection.md)| |
+|SORSection\_id|Foreign key to Section|FK [SORSection](./sorsection)| |
 |fieldType|field, label, line, image, pagenr, pages, date, associatename|String(14)| |
 |content|Field: db field name; Label: caption; image: file name; otherwise - empty|String(254)|&#x25CF;|
 |contentResId|resource id if translatable resource|UInt| |
@@ -42,12 +42,12 @@ SuperOffice reporter data
 |alignment|0=left, 1=right, 2=center|UShort| |
 |dataFormat|Field format mask|String(19)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![SORField table relationship diagram](./media/SORField.png)
+![SORField table relationship diagram](/media/loc/en/database/SORField.png)
 
 <Sorfield />
 
@@ -64,8 +64,8 @@ SuperOffice reporter data
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[SORSection](sorsection.md)  |SuperOffice reporter data |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SORSection](./sorsection)  |SuperOffice reporter data |
 
 ## Replication Flags
 

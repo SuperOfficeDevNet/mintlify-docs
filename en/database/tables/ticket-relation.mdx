@@ -19,17 +19,17 @@ A relation between 2 tickets
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |ticket\_relation\_id|Primary key|PK| |
-|source\_ticket\_id|Source ticket in this relation|FK [ticket](ticket.md)| |
-|destination\_ticket\_id|Destination ticket in this relation|FK [ticket](ticket.md)| |
-|ticket\_relation\_def\_id|The (optional) relation definition where this relation originated from|FK [ticket_relation_def](ticket-relation-def.md)| |
+|source\_ticket\_id|Source ticket in this relation|FK [ticket](./ticket)| |
+|destination\_ticket\_id|Destination ticket in this relation|FK [ticket](./ticket)| |
+|ticket\_relation\_def\_id|The (optional) relation definition where this relation originated from|FK [ticket_relation_def](./ticket-relation-def)| |
 |comment|Comment for relation|String(255)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ticket_relation table relationship diagram](./media/ticket_relation.png)
+![ticket_relation table relationship diagram](/media/loc/en/database/ticket_relation.png)
 
 <TicketRelation />
 
@@ -45,9 +45,9 @@ A relation between 2 tickets
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ticket](ticket.md)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
-|[ticket\_relation\_def](ticket-relation-def.md)  |Ticket relation definition |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ticket](./ticket)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
+|[ticket\_relation\_def](./ticket-relation-def)  |Ticket relation definition |
 
 ## Replication Flags
 

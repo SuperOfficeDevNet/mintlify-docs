@@ -19,16 +19,16 @@ Functional right definition
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |FunctionRightRoleLink\_id|Primary key|PK| |
-|roleId|Role id|FK [Role](role.md)| |
-|functionRightId|Functional right id|FK [FunctionRight](functionright.md)| |
+|roleId|Role id|FK [Role](./role)| |
+|functionRightId|Functional right id|FK [FunctionRight](./functionright)| |
 |encryptedCheck|Encrypted data, to detect unwanted changes|String(254)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![FunctionRightRoleLink table relationship diagram](./media/FunctionRightRoleLink.png)
+![FunctionRightRoleLink table relationship diagram](/media/loc/en/database/FunctionRightRoleLink.png)
 
 <Functionrightrolelink />
 
@@ -45,9 +45,9 @@ Functional right definition
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[FunctionRight](functionright.md)  |Functional right definition |
-|[Role](role.md)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[FunctionRight](./functionright)  |Functional right definition |
+|[Role](./role)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
 
 ## Replication Flags
 

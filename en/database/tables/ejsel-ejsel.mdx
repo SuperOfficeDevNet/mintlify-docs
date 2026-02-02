@@ -19,12 +19,12 @@ This table defines sources for complex selections in a many/many relationship
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|Primary key|PK| |
-|parent|The id of the selection for which this item is a source|FK [ejselection](ejselection.md)| |
-|child|The id of the child item selection|FK [ejselection](ejselection.md)| |
+|parent|The id of the selection for which this item is a source|FK [ejselection](./ejselection)| |
+|child|The id of the child item selection|FK [ejselection](./ejselection)| |
 |operation|The operation to be performed when this source is added to the selection|Int| |
 |order\_pos|The order in which the operations are performed|Int| |
 
-![ejsel_ejsel table relationship diagram](./media/ejsel_ejsel.png)
+![ejsel_ejsel table relationship diagram](/media/loc/en/database/ejsel_ejsel.png)
 
 <EjselEjsel />
 
@@ -42,7 +42,7 @@ This table defines sources for complex selections in a many/many relationship
 
 | Table|  Description |
 |------|-------------|
-|[ejselection](ejselection.md)  |This table stores selections, dynamic groups. |
+|[ejselection](./ejselection)  |This table stores selections, dynamic groups. |
 
 ## Replication Flags
 

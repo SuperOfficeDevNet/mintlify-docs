@@ -19,19 +19,19 @@ Foreign Key - enables storage of arbitrary extra key information for every table
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |foreignkey\_id|Primary key|PK| |
-|foreigndevice\_id|Reference to device definition|FK [foreigndevice](foreigndevice.md)| |
+|foreigndevice\_id|Reference to device definition|FK [foreigndevice](./foreigndevice)| |
 |table\_id|SuperOffice table reference|TableNumber| |
 |record\_id|Record in the referenced table|RecordId| |
 |seqno|Sequence number, order of subkeys within one key|Id| |
 |subkey|Subkey (optional)|String(239)|&#x25CF;|
 |subvalue|Key value|String(239)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![foreignkey table relationship diagram](./media/foreignkey.png)
+![foreignkey table relationship diagram](/media/loc/en/database/foreignkey.png)
 
 <Foreignkey />
 
@@ -50,8 +50,8 @@ Foreign Key - enables storage of arbitrary extra key information for every table
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[foreigndevice](foreigndevice.md)  |Middle level of Foreign Key system |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[foreigndevice](./foreigndevice)  |Middle level of Foreign Key system |
 
 ## Replication Flags
 

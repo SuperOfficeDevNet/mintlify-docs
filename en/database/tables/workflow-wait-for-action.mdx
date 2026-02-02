@@ -19,16 +19,16 @@ Some steps wait for actions, this is info about those actions
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |workflow\_wait\_for\_action\_id|Primary key|PK| |
-|workflow\_step\_id|The workflow step this instance belongs to|FK [workflow_step](workflow-step.md)|&#x25CF;|
-|ActionType|The type of action|Enum [WorkflowWaitForActionType](enums/workflowwaitforactiontype.md)|&#x25CF;|
+|workflow\_step\_id|The workflow step this instance belongs to|FK [workflow_step](./workflow-step)|&#x25CF;|
+|ActionType|The type of action|Enum [WorkflowWaitForActionType](./enums/workflowwaitforactiontype)|&#x25CF;|
 |rank|The rank of this action|Int|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![workflow_wait_for_action table relationship diagram](./media/workflow_wait_for_action.png)
+![workflow_wait_for_action table relationship diagram](/media/loc/en/database/workflow_wait_for_action.png)
 
 <WorkflowWaitForAction />
 
@@ -42,8 +42,8 @@ Some steps wait for actions, this is info about those actions
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[workflow\_step](workflow-step.md)  |A set of steps related to a workflow. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[workflow\_step](./workflow-step)  |A set of steps related to a workflow. |
 
 ## Replication Flags
 

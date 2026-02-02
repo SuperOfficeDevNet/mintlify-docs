@@ -19,19 +19,19 @@ Record all field changes done by the Erp Sync
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |erpsynclog\_id|Primary key|PK| |
-|ErpExternalKeyId|Link to the external key, indirectly also to the connection and internal key|FK [ErpExternalKey](erpexternalkey.md)|&#x25CF;|
+|ErpExternalKeyId|Link to the external key, indirectly also to the connection and internal key|FK [ErpExternalKey](./erpexternalkey)|&#x25CF;|
 |ErpFieldKey|ERP field name/key|String(254)|&#x25CF;|
 |CrmFieldKey|CRM field name/key|String(254)|&#x25CF;|
 |TargetIsCrm|Was the CRM field the target of the change? If false, then it was the ERP field that was changed by this sync operation|Bool|&#x25CF;|
 |OldValue|The old value of the target field|String(254)|&#x25CF;|
 |NewValue|The new value of the target field|String(254)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ErpSyncLog table relationship diagram](./media/ErpSyncLog.png)
+![ErpSyncLog table relationship diagram](/media/loc/en/database/ErpSyncLog.png)
 
 <Erpsynclog />
 
@@ -45,8 +45,8 @@ Record all field changes done by the Erp Sync
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ErpExternalKey](erpexternalkey.md)  |The external (ERP-facing) key related to a synchronized record / connection |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ErpExternalKey](./erpexternalkey)  |The external (ERP-facing) key related to a synchronized record / connection |
 
 ## Replication Flags
 

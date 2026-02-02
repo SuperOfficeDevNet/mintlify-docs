@@ -19,16 +19,16 @@ Control data table for the OLE DB Provider
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |OLEView\_id|Primary key|PK| |
-|OLESubject\_id|Owner subject|FK [OLESubject](olesubject.md)| |
+|OLESubject\_id|Owner subject|FK [OLESubject](./olesubject)| |
 |progId|GUID of the module that can perform this join|String(59)|&#x25CF;|
 |predefined|1 = predefined subject, do not change|UShort|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![OLEView table relationship diagram](./media/OLEView.png)
+![OLEView table relationship diagram](/media/loc/en/database/OLEView.png)
 
 <Oleview />
 
@@ -43,10 +43,10 @@ Control data table for the OLE DB Provider
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[OLEField](olefield.md)  |Control data table for the OLE DB Provider |
-|[OLESubject](olesubject.md)  |Control data table for the OLE DB Provider |
-|[ReporterListDef](reporterlistdef.md)  |Reporter definitions |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[OLEField](./olefield)  |Control data table for the OLE DB Provider |
+|[OLESubject](./olesubject)  |Control data table for the OLE DB Provider |
+|[ReporterListDef](./reporterlistdef)  |Reporter definitions |
 
 ## Replication Flags
 

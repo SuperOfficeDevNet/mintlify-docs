@@ -19,11 +19,11 @@ Contains the smtp server for a shipment
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|Primary key|PK| |
-|shipment\_id|Reference to the shipment which this smtp server belongs to|FK [s_shipment](s-shipment.md)| |
+|shipment\_id|Reference to the shipment which this smtp server belongs to|FK [s_shipment](./s-shipment)| |
 |smtp\_server|The actual smtp server|String(255)|&#x25CF;|
 |smtp\_port|The port of the SMTP server.|Int| |
 
-![s_smtp_servers table relationship diagram](./media/s_smtp_servers.png)
+![s_smtp_servers table relationship diagram](/media/loc/en/database/s_smtp_servers.png)
 
 <SSmtpServers />
 
@@ -38,7 +38,7 @@ Contains the smtp server for a shipment
 
 | Table|  Description |
 |------|-------------|
-|[s\_shipment](s-shipment.md)  |Contains info about one shipment. The addresses are stored in s_shipment_addr |
+|[s\_shipment](./s-shipment)  |Contains info about one shipment. The addresses are stored in s_shipment_addr |
 
 ## Replication Flags
 

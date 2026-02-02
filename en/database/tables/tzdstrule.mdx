@@ -19,7 +19,7 @@ Time zone rule for daylight saving time
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |TZDstRule\_id|Primary key|PK| |
-|TZLocationId|Location that this rule is valid for - one location may have one or more rules; multiple rules are discerned by their validFrom dates|FK [TZLocation](tzlocation.md)| |
+|TZLocationId|Location that this rule is valid for - one location may have one or more rules; multiple rules are discerned by their validFrom dates|FK [TZLocation](./tzlocation)| |
 |validFrom|Date this rule is valid from|DateTime| |
 |bias|number of minutes bias relative to UTC time|Short| |
 |startRule|DST start rule, such as 0200 1ST-SUN-APR; limited to rules that we have parse code for; use dayOfMonth etc for custom rules|String(254)|&#x25CF;|
@@ -31,12 +31,12 @@ Time zone rule for daylight saving time
 |description|Description, for identifying the rule in SoAdmin|String(2047)|&#x25CF;|
 |isBuiltIn|Is this row part of SuperOffice priming data|Bool|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![TZDstRule table relationship diagram](./media/TZDstRule.png)
+![TZDstRule table relationship diagram](/media/loc/en/database/TZDstRule.png)
 
 <Tzdstrule />
 
@@ -51,8 +51,8 @@ Time zone rule for daylight saving time
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[TZLocation](tzlocation.md)  |Time zone location |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[TZLocation](./tzlocation)  |Time zone location |
 
 ## Replication Flags
 

@@ -19,29 +19,29 @@ Documents, this table is an extension of the Appointment table.  There is always
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |document\_id|Primary key|PK| |
-|application\_id|Application this document was made with|FK [ExtApp](extapp.md)| |
+|application\_id|Application this document was made with|FK [ExtApp](./extapp)| |
 |name|File name|String(511)| |
 |header|Visible document name|String(219)|&#x25CF;|
 |our\_ref|Our reference, searchable field from freetext search|String(99)|&#x25CF;|
 |your\_ref|Your reference|String(99)|&#x25CF;|
 |searchname|Searchable name (not used?)|String(99)|&#x25CF;|
 |attention|Attention/salutation|String(99)|&#x25CF;|
-|text\_id|Pointer to optional long description|FK [text](text.md)|&#x25CF;|
+|text\_id|Pointer to optional long description|FK [text](./text)|&#x25CF;|
 |archiveProvider|Document plugin id copied from the DocTmpl.autoevent_id - tells us where the document content is stored|Id|&#x25CF;|
-|appointment\_id|points back to owning appointment|FK [appointment](appointment.md)|&#x25CF;|
+|appointment\_id|points back to owning appointment|FK [appointment](./appointment)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 |extref|External reference (notes ID, email ID, URL, whatever) for use by document plugin in locating document content|String(511)|&#x25CF;|
-|userdef\_id|User-defined fields|FK [uddocsmall](uddocsmall.md)|&#x25CF;|
-|userdef2\_id|User-defined fields|FK [uddoclarge](uddoclarge.md)|&#x25CF;|
+|userdef\_id|User-defined fields|FK [uddocsmall](./uddocsmall)|&#x25CF;|
+|userdef2\_id|User-defined fields|FK [uddoclarge](./uddoclarge)|&#x25CF;|
 |snum|The sequence number allocated from refcount on used template when creating the document|Int|&#x25CF;|
 |ExtUrl|For DocPlugin-internal use only. Used to optionally cache URL of external documents.|String(1023)|&#x25CF;|
 |contentSetCount|Number of times content has been set on this document.|Int| |
 
-![document table relationship diagram](./media/document.png)
+![document table relationship diagram](/media/loc/en/database/document.png)
 
 <Document />
 
@@ -62,18 +62,18 @@ Documents, this table is an extension of the Appointment table.  There is always
 
 | Table|  Description |
 |------|-------------|
-|[appointment](appointment.md)  |Tasks, appointments, followups, phone calls; and documents (document_id != 0). An appointment always has a corresponding record in VisibleFor specifying who may see this.  |
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[email\_item](email-item.md)  |Email data |
-|[ExtApp](extapp.md)  |ExtApp list table. Applications startable from SuperOffice |
-|[Quote](quote.md)  |Quote root level, at most one per Sale, always connected to one Sale |
-|[QuoteVersionAttachment](quoteversionattachment.md)  |Actual attachments to a quote |
-|[s\_message](s-message.md)  |A message used in a shipment. Can be html and/or plain text |
-|[s\_shipment](s-shipment.md)  |Contains info about one shipment. The addresses are stored in s_shipment_addr |
-|[SaleTypeQuoteAttachment](saletypequoteattachment.md)  |Default attachments to quotes linked to sales of this type |
-|[text](text.md)  |Long text fields from all over the system |
-|[uddoclarge](uddoclarge.md)  |User-defined fields |
-|[uddocsmall](uddocsmall.md)  |User-defined fields |
+|[appointment](./appointment)  |Tasks, appointments, followups, phone calls; and documents (document_id != 0). An appointment always has a corresponding record in VisibleFor specifying who may see this.  |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[email\_item](./email-item)  |Email data |
+|[ExtApp](./extapp)  |ExtApp list table. Applications startable from SuperOffice |
+|[Quote](./quote)  |Quote root level, at most one per Sale, always connected to one Sale |
+|[QuoteVersionAttachment](./quoteversionattachment)  |Actual attachments to a quote |
+|[s\_message](./s-message)  |A message used in a shipment. Can be html and/or plain text |
+|[s\_shipment](./s-shipment)  |Contains info about one shipment. The addresses are stored in s_shipment_addr |
+|[SaleTypeQuoteAttachment](./saletypequoteattachment)  |Default attachments to quotes linked to sales of this type |
+|[text](./text)  |Long text fields from all over the system |
+|[uddoclarge](./uddoclarge)  |User-defined fields |
+|[uddocsmall](./uddocsmall)  |User-defined fields |
 
 ## Replication Flags
 

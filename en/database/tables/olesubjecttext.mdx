@@ -19,16 +19,16 @@ Control data table for the OLE DB Provider
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |OLESubjectText\_id|Primary key|PK| |
-|OLESubject\_id|OLE Subject|FK [OLESubject](olesubject.md)| |
+|OLESubject\_id|OLE Subject|FK [OLESubject](./olesubject)| |
 |languageId|LCID (see locale help) of language|Id| |
 |name|OLE Subject name|String(79)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![OLESubjectText table relationship diagram](./media/OLESubjectText.png)
+![OLESubjectText table relationship diagram](/media/loc/en/database/OLESubjectText.png)
 
 <Olesubjecttext />
 
@@ -46,8 +46,8 @@ Control data table for the OLE DB Provider
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[OLESubject](olesubject.md)  |Control data table for the OLE DB Provider |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[OLESubject](./olesubject)  |Control data table for the OLE DB Provider |
 
 ## Replication Flags
 

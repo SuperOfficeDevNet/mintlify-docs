@@ -26,7 +26,7 @@ Generic scheduled tasked handling time scheduling, locking and error messages
 |disabled|Disable the schedule|Bool| |
 |stop|Signal to stop schedule|Bool| |
 |name|Name of the schedule|String(255)|&#x25CF;|
-|after\_schedule\_id|Run after another schedule have completed|FK [schedule](schedule.md)|&#x25CF;|
+|after\_schedule\_id|Run after another schedule have completed|FK [schedule](./schedule)|&#x25CF;|
 |minute\_interval|Interval in minutes, used by Minutely|Int|&#x25CF;|
 |weekdays|Bitfield: which days of the week to run|Int|&#x25CF;|
 |months|Bitfield: which months of the year to run|Int|&#x25CF;|
@@ -45,7 +45,7 @@ Generic scheduled tasked handling time scheduling, locking and error messages
 |retries|Number of retries since last successfull execution|Int| |
 |retry\_interval|Number of minutes between each retry|Int|&#x25CF;|
 
-![schedule table relationship diagram](./media/schedule.png)
+![schedule table relationship diagram](/media/loc/en/database/schedule.png)
 
 <Schedule />
 
@@ -60,9 +60,9 @@ Generic scheduled tasked handling time scheduling, locking and error messages
 
 | Table|  Description |
 |------|-------------|
-|[dbi\_agent\_schedule](dbi-agent-schedule.md)  |DBI agent schedule settings |
-|[schedule](schedule.md)  |Generic scheduled tasked handling time scheduling, locking and error messages |
-|[scheduled\_task](scheduled-task.md)  |A scheduled entry executing a script at certain times |
+|[dbi\_agent\_schedule](./dbi-agent-schedule)  |DBI agent schedule settings |
+|[schedule](./schedule)  |Generic scheduled tasked handling time scheduling, locking and error messages |
+|[scheduled\_task](./scheduled-task)  |A scheduled entry executing a script at certain times |
 
 ## Replication Flags
 

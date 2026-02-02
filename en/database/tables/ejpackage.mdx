@@ -23,13 +23,13 @@ This table stores packages on the system.
 |ej\_version|The oldest eJournal version this package can be installed on|String(255)|&#x25CF;|
 |package\_version|Version of the created package|String(255)|&#x25CF;|
 |description|Description/comment|String(255)|&#x25CF;|
-|attachment\_id|The attachment.id for the attachment containing the xml|FK [attachment](attachment.md)| |
+|attachment\_id|The attachment.id for the attachment containing the xml|FK [attachment](./attachment)| |
 |uploaded\_at|Time of upload of this package|DateTime|&#x25CF;|
-|uploaded\_by|Uploaded by|FK [ejuser](ejuser.md)| |
+|uploaded\_by|Uploaded by|FK [ejuser](./ejuser)| |
 |install\_script|Installation script|Clob|&#x25CF;|
 |locked|Locked package - components should not be modified by users|Bool| |
 
-![ejpackage table relationship diagram](./media/ejpackage.png)
+![ejpackage table relationship diagram](/media/loc/en/database/ejpackage.png)
 
 <Ejpackage />
 
@@ -45,9 +45,9 @@ This table stores packages on the system.
 
 | Table|  Description |
 |------|-------------|
-|[attachment](attachment.md)  |This table contains metadata for attachments. The actual attachments are stored directly on disk, with filenames based on the the primary key for this table. |
-|[ejpackage\_item](ejpackage-item.md)  |This table stores info on installed packages in the system |
-|[ejuser](ejuser.md)  |This table contains entries for the users of the system. |
+|[attachment](./attachment)  |This table contains metadata for attachments. The actual attachments are stored directly on disk, with filenames based on the the primary key for this table. |
+|[ejpackage\_item](./ejpackage-item)  |This table stores info on installed packages in the system |
+|[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 
 ## Replication Flags
 

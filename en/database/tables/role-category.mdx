@@ -19,11 +19,11 @@ Category membership associated with a role
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|role|The id of the group. Deprecated.|FK [ej_role](ej-role.md)| |
-|category|The id of the category.|FK [ej_category](ej-category.md)| |
-|crm\_role|Link to Role|FK [Role](role.md)|&#x25CF;|
+|role|The id of the group. Deprecated.|FK [ej_role](./ej-role)| |
+|category|The id of the category.|FK [ej_category](./ej-category)| |
+|crm\_role|Link to Role|FK [Role](./role)|&#x25CF;|
 
-![role_category table relationship diagram](./media/role_category.png)
+![role_category table relationship diagram](/media/loc/en/database/role_category.png)
 
 <RoleCategory />
 
@@ -40,9 +40,9 @@ Category membership associated with a role
 
 | Table|  Description |
 |------|-------------|
-|[ej\_category](ej-category.md)  |This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner. |
-|[ej\_role](ej-role.md)  |Define access rights, memberships and other properties for role user members |
-|[Role](role.md)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
+|[ej\_category](./ej-category)  |This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner. |
+|[ej\_role](./ej-role)  |Define access rights, memberships and other properties for role user members |
+|[Role](./role)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
 
 ## Replication Flags
 

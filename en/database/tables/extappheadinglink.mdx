@@ -19,15 +19,15 @@ Heading link table for ExtApp, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |extappheadinglink\_id|Primary key|PK| |
-|extapp\_id|Link to ExtApp list table|FK [ExtApp](extapp.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|extapp\_id|Link to ExtApp list table|FK [ExtApp](./extapp)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ExtAppHeadingLink table relationship diagram](./media/ExtAppHeadingLink.png)
+![ExtAppHeadingLink table relationship diagram](/media/loc/en/database/ExtAppHeadingLink.png)
 
 <Extappheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for ExtApp, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ExtApp](extapp.md)  |ExtApp list table. Applications startable from SuperOffice |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ExtApp](./extapp)  |ExtApp list table. Applications startable from SuperOffice |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
 ## Replication Flags
 

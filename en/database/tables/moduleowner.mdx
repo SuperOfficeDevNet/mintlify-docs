@@ -37,12 +37,12 @@ Unique owner of a set of licensed modules
 |adminWarningDate|When should nagging begin (for instance, during login to SoAdmin)|DateTime|&#x25CF;|
 |encryptedCheck|Encrypted checksum that stops tampering and copying between databases|String(254)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ModuleOwner table relationship diagram](./media/ModuleOwner.png)
+![ModuleOwner table relationship diagram](/media/loc/en/database/ModuleOwner.png)
 
 <Moduleowner />
 
@@ -57,8 +57,8 @@ Unique owner of a set of licensed modules
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ModuleLicense](modulelicense.md)  |Module licenses, belonging to one single owner |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ModuleLicense](./modulelicense)  |Module licenses, belonging to one single owner |
 
 ## Replication Flags
 

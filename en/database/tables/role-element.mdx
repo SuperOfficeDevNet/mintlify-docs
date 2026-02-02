@@ -19,11 +19,11 @@ Profiles associated with a role
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|role|The id of the group. Deprecated.|FK [ej_role](ej-role.md)| |
-|element\_profile|The id of the element_profile.|FK [element_profile](element-profile.md)| |
-|crm\_role|Link to Role|FK [Role](role.md)|&#x25CF;|
+|role|The id of the group. Deprecated.|FK [ej_role](./ej-role)| |
+|element\_profile|The id of the element_profile.|FK [element_profile](./element-profile)| |
+|crm\_role|Link to Role|FK [Role](./role)|&#x25CF;|
 
-![role_element table relationship diagram](./media/role_element.png)
+![role_element table relationship diagram](/media/loc/en/database/role_element.png)
 
 <RoleElement />
 
@@ -40,9 +40,9 @@ Profiles associated with a role
 
 | Table|  Description |
 |------|-------------|
-|[ej\_role](ej-role.md)  |Define access rights, memberships and other properties for role user members |
-|[element\_profile](element-profile.md)  |The new (4.0) profile table. Contains profile for a single Html-element. Connected through element_profile_link |
-|[Role](role.md)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
+|[ej\_role](./ej-role)  |Define access rights, memberships and other properties for role user members |
+|[element\_profile](./element-profile)  |The new (4.0) profile table. Contains profile for a single Html-element. Connected through element_profile_link |
+|[Role](./role)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
 
 ## Replication Flags
 

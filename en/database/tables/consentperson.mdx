@@ -19,18 +19,18 @@ Link table that defines who has which consents
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |consentperson\_id|Primary key|PK| |
-|person\_id|Person who gave consent|FK [person](person.md)|&#x25CF;|
-|consentPurpose\_id|Legal base|FK [ConsentPurpose](consentpurpose.md)|&#x25CF;|
-|legalBase\_id|Legal base|FK [LegalBase](legalbase.md)|&#x25CF;|
-|consentSource\_id|Consent source|FK [ConsentSource](consentsource.md)|&#x25CF;|
+|person\_id|Person who gave consent|FK [person](./person)|&#x25CF;|
+|consentPurpose\_id|Legal base|FK [ConsentPurpose](./consentpurpose)|&#x25CF;|
+|legalBase\_id|Legal base|FK [LegalBase](./legalbase)|&#x25CF;|
+|consentSource\_id|Consent source|FK [ConsentSource](./consentsource)|&#x25CF;|
 |comment|A comment describing why this GDPR change was made|String(255)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ConsentPerson table relationship diagram](./media/ConsentPerson.png)
+![ConsentPerson table relationship diagram](/media/loc/en/database/ConsentPerson.png)
 
 <Consentperson />
 
@@ -47,11 +47,11 @@ Link table that defines who has which consents
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ConsentPurpose](consentpurpose.md)  |GDPR purpose alternatives |
-|[ConsentSource](consentsource.md)  |Consent source for GDPR |
-|[LegalBase](legalbase.md)  |Legal base for GDPR (Article 6) |
-|[person](person.md)  |Persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ConsentPurpose](./consentpurpose)  |GDPR purpose alternatives |
+|[ConsentSource](./consentsource)  |Consent source for GDPR |
+|[LegalBase](./legalbase)  |Legal base for GDPR (Article 6) |
+|[person](./person)  |Persons |
 
 ## Replication Flags
 

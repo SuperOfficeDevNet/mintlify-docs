@@ -19,7 +19,7 @@ Form field values saved in a searchable format
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |form\_field\_value\_id|Primary key|PK| |
-|form\_submission\_id|The form submission this set of values belong to|FK [form_submission](form-submission.md)|&#x25CF;|
+|form\_submission\_id|The form submission this set of values belong to|FK [form_submission](./form-submission)|&#x25CF;|
 |rank|The rank of this form field within the form|Int|&#x25CF;|
 |label|The label of this form field|String(4000)|&#x25CF;|
 |type|The type of this form field|String(4000)|&#x25CF;|
@@ -30,12 +30,12 @@ Form field values saved in a searchable format
 |bool\_value|The boolean value of this form field|Bool|&#x25CF;|
 |datetime\_value|The datetime value of this form field|DateTime|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![form_field_value table relationship diagram](./media/form_field_value.png)
+![form_field_value table relationship diagram](/media/loc/en/database/form_field_value.png)
 
 <FormFieldValue />
 
@@ -58,8 +58,8 @@ Form field values saved in a searchable format
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[form\_submission](form-submission.md)  |A form submission |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[form\_submission](./form-submission)  |A form submission |
 
 ## Replication Flags
 

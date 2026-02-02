@@ -74,14 +74,14 @@ Address formats for GUI and labels. See more information; Addressformat on http;
 |extraFlags|OBSOLETE: Extra flags for tag substitution mechanism, see idb.h. This function has been taken over by the tag-based formatting, controlled by the labelLayout and labelLayout2 fields|UInt| |
 |labelLayout|Format specification for labels, uses standard tags|String(254)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 |labelLayout2|Part two of format specification, concatenated with part one above|String(254)|&#x25CF;|
 |isBuiltIn|Is this row populated by SuperOffice?|Bool|&#x25CF;|
 
-![AddressFormat table relationship diagram](./media/AddressFormat.png)
+![AddressFormat table relationship diagram](/media/loc/en/database/AddressFormat.png)
 
 <Addressformat />
 
@@ -95,7 +95,7 @@ Address formats for GUI and labels. See more information; Addressformat on http;
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

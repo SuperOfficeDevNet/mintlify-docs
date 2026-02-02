@@ -19,14 +19,14 @@ This table contains log entries for the tickets.
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|ticket\_id|The id of the ticket this entry is connected to.|FK [ticket](ticket.md)| |
+|ticket\_id|The id of the ticket this entry is connected to.|FK [ticket](./ticket)| |
 |log\_code|An enum indicating what kind of log-entry this is.|log_code|&#x25CF;|
 |log\_who|The username/alias of the user performing the action.|String(255)|&#x25CF;|
 |log\_when|When the action occured.|DateTime|&#x25CF;|
 |log\_description|A string describing the event (or part of such) to be logged.|Clob|&#x25CF;|
 |log\_what\_value2|A reference to various tables, depending on the log_code.|Int|&#x25CF;|
 
-![ticket_log table relationship diagram](./media/ticket_log.png)
+![ticket_log table relationship diagram](/media/loc/en/database/ticket_log.png)
 
 <TicketLog />
 
@@ -44,7 +44,7 @@ This table contains log entries for the tickets.
 
 | Table|  Description |
 |------|-------------|
-|[ticket](ticket.md)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
+|[ticket](./ticket)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
 
 ## Replication Flags
 

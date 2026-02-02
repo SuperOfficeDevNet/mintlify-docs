@@ -19,15 +19,15 @@ Heading link table for SaleType, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |saletypeheadinglink\_id|Primary key|PK| |
-|saletype\_id|Link to SaleType list table|FK [SaleType](saletype.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|saletype\_id|Link to SaleType list table|FK [SaleType](./saletype)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![SaleTypeHeadingLink table relationship diagram](./media/SaleTypeHeadingLink.png)
+![SaleTypeHeadingLink table relationship diagram](/media/loc/en/database/SaleTypeHeadingLink.png)
 
 <Saletypeheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for SaleType, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
-|[SaleType](saletype.md)  |Type of sale - large solution, incremental, whatever fits the organization |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[SaleType](./saletype)  |Type of sale - large solution, incremental, whatever fits the organization |
 
 ## Replication Flags
 

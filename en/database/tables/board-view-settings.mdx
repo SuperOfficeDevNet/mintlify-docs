@@ -19,9 +19,9 @@ Settings for selection board view
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |board\_view\_settings\_id|Primary key|PK| |
-|selection\_id|The selection this board view settings belongs to|FK [selection](selection.md)|&#x25CF;|
-|associate\_id|The associate this board view settings belongs to (0 for all)|FK [associate](associate.md)|&#x25CF;|
-|entity\_type|The kind of board view entity these settings belong to|Enum [BoardViewEntityType](enums/boardviewentitytype.md)|&#x25CF;|
+|selection\_id|The selection this board view settings belongs to|FK [selection](./selection)|&#x25CF;|
+|associate\_id|The associate this board view settings belongs to (0 for all)|FK [associate](./associate)|&#x25CF;|
+|entity\_type|The kind of board view entity these settings belong to|Enum [BoardViewEntityType](./enums/boardviewentitytype)|&#x25CF;|
 |group\_by|Column name to group on|String(255)|&#x25CF;|
 |sub\_group\_by|Column name to group on|String(255)|&#x25CF;|
 |sort\_by|Column name to sort on|String(255)|&#x25CF;|
@@ -32,12 +32,12 @@ Settings for selection board view
 |filters|Column names to filter on, comma separated|String(255)|&#x25CF;|
 |settings|Settings that are not common to all board views. These are the unique properties of the sub carriers. Stored in json format.|Clob|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![board_view_settings table relationship diagram](./media/board_view_settings.png)
+![board_view_settings table relationship diagram](/media/loc/en/database/board_view_settings.png)
 
 <BoardViewSettings />
 
@@ -52,8 +52,8 @@ Settings for selection board view
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[selection](selection.md)  |Selections |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[selection](./selection)  |Selections |
 
 ## Replication Flags
 

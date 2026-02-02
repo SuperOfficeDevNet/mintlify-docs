@@ -23,16 +23,16 @@ This table stores selections, dynamic groups.
 |include\_id|A unique name used for refering to selections in scripts, url&amp;apos;s etc.|String(255)| |
 |ej\_table|The source table|String(255)|&#x25CF;|
 |display\_properties|The display properties of this selection|Clob|&#x25CF;|
-|hierarchy\_id|This extra table is inside this hierarchy folder|FK [hierarchy](hierarchy.md)| |
+|hierarchy\_id|This extra table is inside this hierarchy folder|FK [hierarchy](./hierarchy)| |
 |source\_type|The source type of this selection|Int| |
 |source\_id|The id of the source we links to|Int| |
 |access\_level|Access level for this selection|Int| |
 |left\_menu|Will this selection be listed in the left menu?|Bool|&#x25CF;|
-|creator|The user who created this selection|FK [ejuser](ejuser.md)| |
+|creator|The user who created this selection|FK [ejuser](./ejuser)| |
 |last\_count|Last result count|Int|&#x25CF;|
 |result\_config|XML data|Clob|&#x25CF;|
 
-![ejselection table relationship diagram](./media/ejselection.png)
+![ejselection table relationship diagram](/media/loc/en/database/ejselection.png)
 
 <Ejselection />
 
@@ -51,11 +51,11 @@ This table stores selections, dynamic groups.
 
 | Table|  Description |
 |------|-------------|
-|[ejsel\_ejsel](ejsel-ejsel.md)  |This table defines sources for complex selections in a many/many relationship |
-|[ejsel\_meta\_result](ejsel-meta-result.md)  |This table stores result meta data |
-|[ejuser](ejuser.md)  |This table contains entries for the users of the system. |
-|[hierarchy](hierarchy.md)  |This table contains folders used to group the extra tables in the system. |
-|[s\_link](s-link.md)  |Links in messages to measure success rate of a campaign. |
+|[ejsel\_ejsel](./ejsel-ejsel)  |This table defines sources for complex selections in a many/many relationship |
+|[ejsel\_meta\_result](./ejsel-meta-result)  |This table stores result meta data |
+|[ejuser](./ejuser)  |This table contains entries for the users of the system. |
+|[hierarchy](./hierarchy)  |This table contains folders used to group the extra tables in the system. |
+|[s\_link](./s-link)  |Links in messages to measure success rate of a campaign. |
 
 ## Replication Flags
 

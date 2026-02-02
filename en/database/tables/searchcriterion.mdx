@@ -19,25 +19,25 @@ Criteria storage for Selection and other Find mechanisms
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |SearchCriterion\_id|Primary key|PK| |
-|SearchCriteriaGroup\_id|Owning group|FK [SearchCriteriaGroup](searchcriteriagroup.md)| |
+|SearchCriteriaGroup\_id|Owning group|FK [SearchCriteriaGroup](./searchcriteriagroup)| |
 |criterionId|Usually DbFieldId of field to be searched|FieldId| |
 |extraId|Extra info, forms part of the internal unique identification of the criterion|Id|&#x25CF;|
 |udefIdentity|Extra info for searching udef fields, to keep track of actual field across layout changes|Id|&#x25CF;|
-|operatorId|Operator ID|Enum [CriterionOperator](enums/criterionoperator.md)| |
-|linkType|Link type, AND or OR|Enum [CriterionLinkType](enums/criterionlinktype.md)| |
+|operatorId|Operator ID|Enum [CriterionOperator](./enums/criterionoperator)| |
+|linkType|Link type, AND or OR|Enum [CriterionLinkType](./enums/criterionlinktype)| |
 |active|Should this criterion be executed|UShort| |
 |rank|Ordering within this group|UShort| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 |columnName|Column name from archive provider in NetServer/SIX.web|String(254)|&#x25CF;|
 |operatorName|Operator name from archive provider|String(254)|&#x25CF;|
 |uniqueKey|Unique key (hash) from ArchiveRestrictionInfo|Id|&#x25CF;|
 |parenthesis|Parenthesis value, positive is number of opening parentheses to prepend to this criterion, negative is the number of closing parentheses to append|Short|&#x25CF;|
 
-![SearchCriterion table relationship diagram](./media/SearchCriterion.png)
+![SearchCriterion table relationship diagram](/media/loc/en/database/SearchCriterion.png)
 
 <Searchcriterion />
 
@@ -53,9 +53,9 @@ Criteria storage for Selection and other Find mechanisms
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[SearchCriteriaGroup](searchcriteriagroup.md)  |Criteria storage for Selection and other Find mechanisms |
-|[SearchCriterionValue](searchcriterionvalue.md)  |Criteria storage for Selection and other Find mechanisms |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SearchCriteriaGroup](./searchcriteriagroup)  |Criteria storage for Selection and other Find mechanisms |
+|[SearchCriterionValue](./searchcriterionvalue)  |Criteria storage for Selection and other Find mechanisms |
 
 ## Replication Flags
 

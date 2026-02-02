@@ -51,6 +51,6 @@ The saint counters with the corresponding record type (and the ALL type) are upd
 
 ### See Also
 
-[task Table](../task.md)
-[doctmpl Table](../doctmpl.md)
-[countervalue Table](../countervalue.md)
+[task Table](../task)
+[doctmpl Table](../doctmpl)
+[countervalue Table](../countervalue)

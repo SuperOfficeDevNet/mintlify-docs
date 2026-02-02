@@ -19,19 +19,19 @@ Mapping of primary keys between Travel databases and the mother database  All tr
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |travelidmapping\_id|Primary key|PK| |
-|associate\_id|Associate id (traveller)|FK [associate](associate.md)| |
+|associate\_id|Associate id (traveller)|FK [associate](./associate)| |
 |table\_number|Database table number|TableNumber| |
 |local\_id|ID on traveller|Id| |
 |parent\_id|ID on parent database|Id| |
 |counter|How many consecutive ID&apos;s|UInt|&#x25CF;|
 |cdbName|Conceptual database name if != standard database|String(29)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![travelidmapping table relationship diagram](./media/travelidmapping.png)
+![travelidmapping table relationship diagram](/media/loc/en/database/travelidmapping.png)
 
 <Travelidmapping />
 
@@ -47,7 +47,7 @@ Mapping of primary keys between Travel databases and the mother database  All tr
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

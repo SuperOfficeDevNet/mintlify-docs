@@ -19,15 +19,15 @@ Heading link table for Country, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |countryheadinglink\_id|Primary key|PK| |
-|country\_id|Link to Country list table|FK [country](country.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|country\_id|Link to Country list table|FK [country](./country)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![CountryHeadingLink table relationship diagram](./media/CountryHeadingLink.png)
+![CountryHeadingLink table relationship diagram](/media/loc/en/database/CountryHeadingLink.png)
 
 <Countryheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for Country, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[country](country.md)  |Country information |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[country](./country)  |Country information |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
 ## Replication Flags
 

@@ -20,7 +20,7 @@ Contact and Person addresses
 |------|-------------|------|:----:|
 |address\_id|Primary key|PK| |
 |owner\_id|Record id of owner: Contact or Person|Id| |
-|atype\_idx|Bit mask, combines address type (EAddressType) and owner type (EOwnerType)|Enum [AddressType](enums/addresstype.md)| |
+|atype\_idx|Bit mask, combines address type (EAddressType) and owner type (EOwnerType)|Enum [AddressType](./enums/addresstype)| |
 |zipcode|Zip code, alphanumeric|String(11)| |
 |city|City corresponding to zip code|String(79)|&#x25CF;|
 |state|State|String(5)|&#x25CF;|
@@ -29,16 +29,16 @@ Contact and Person addresses
 |address2|Address line 2|String(79)|&#x25CF;|
 |address3|Address line 3|String(79)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 |validFrom|Valid from date for this record|DateTime|&#x25CF;|
 |validTo|Valid to date for this record|DateTime|&#x25CF;|
 |wgs84latitude|Latitude (that&apos;s north/south), decimal degrees, relative to WGS 84 ellipsoid. SuperOffice ASA is at 59.91892. This value needs no further grid reference or other qualifying information.|Double|&#x25CF;|
 |wgs84longitude|Longitude (that&apos;s East/west), decimal degrees, relative to WGS 84 ellipsoid. SuperOffice ASA is at 10.73159. This value needs no further grid reference or other qualifying information.|Double|&#x25CF;|
 
-![address table relationship diagram](./media/address.png)
+![address table relationship diagram](/media/loc/en/database/address.png)
 
 <Address />
 
@@ -55,9 +55,9 @@ Contact and Person addresses
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[contact](contact.md)  |Companies and Organizations. |
-|[person](person.md)  |Persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[contact](./contact)  |Companies and Organizations. |
+|[person](./person)  |Persons |
 
 ## Replication Flags
 

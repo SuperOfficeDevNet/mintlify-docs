@@ -19,17 +19,17 @@ Time zone location for the database (how tz-related datetimes should be stored i
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |BaseTZLocation\_id|Primary key|PK| |
-|TZLocation\_id|Country that this timezone location is defined for|FK [TZLocation](tzlocation.md)| |
+|TZLocation\_id|Country that this timezone location is defined for|FK [TZLocation](./tzlocation)| |
 |validFrom|When is this tzLocation valid from, as THE database timezonelocation|DateTime| |
 |databaseId|Actually travelcurrent.current_id, the id of the database this basetimezonelocation is meant for|Id| |
 |description|Descriptive text|String(254)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![BaseTZLocation table relationship diagram](./media/BaseTZLocation.png)
+![BaseTZLocation table relationship diagram](/media/loc/en/database/BaseTZLocation.png)
 
 <Basetzlocation />
 
@@ -43,8 +43,8 @@ Time zone location for the database (how tz-related datetimes should be stored i
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[TZLocation](tzlocation.md)  |Time zone location |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[TZLocation](./tzlocation)  |Time zone location |
 
 ## Replication Flags
 

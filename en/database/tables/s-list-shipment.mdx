@@ -19,12 +19,12 @@ A connector between shipment and list so that one shipment can have many lists, 
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|Primary key|PK| |
-|list\_id|Reference to the list|FK [s_list](s-list.md)| |
-|shipment\_id|Reference to the shipment|FK [s_shipment](s-shipment.md)| |
+|list\_id|Reference to the list|FK [s_list](./s-list)| |
+|shipment\_id|Reference to the shipment|FK [s_shipment](./s-shipment)| |
 |type|Indicates if this is a static/dynamic spmlist or a selection|Int|&#x25CF;|
-|status|Status of shipment list|Enum [ShipmentListStatus](enums/shipmentliststatus.md)|&#x25CF;|
+|status|Status of shipment list|Enum [ShipmentListStatus](./enums/shipmentliststatus)|&#x25CF;|
 
-![s_list_shipment table relationship diagram](./media/s_list_shipment.png)
+![s_list_shipment table relationship diagram](/media/loc/en/database/s_list_shipment.png)
 
 <SListShipment />
 
@@ -40,8 +40,8 @@ A connector between shipment and list so that one shipment can have many lists, 
 
 | Table|  Description |
 |------|-------------|
-|[s\_list](s-list.md)  |A list, dynamic or static |
-|[s\_shipment](s-shipment.md)  |Contains info about one shipment. The addresses are stored in s_shipment_addr |
+|[s\_list](./s-list)  |A list, dynamic or static |
+|[s\_shipment](./s-shipment)  |Contains info about one shipment. The addresses are stored in s_shipment_addr |
 
 ## Replication Flags
 

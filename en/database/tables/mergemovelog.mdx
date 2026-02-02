@@ -25,12 +25,12 @@ Log of merge and move operations (person, contact, project)
 |destinationRecord|Destination record id|Id| |
 |options|Options relating to move of activities and other side effects|String(2047)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![MergeMoveLog table relationship diagram](./media/MergeMoveLog.png)
+![MergeMoveLog table relationship diagram](/media/loc/en/database/MergeMoveLog.png)
 
 <Mergemovelog />
 
@@ -46,7 +46,7 @@ Log of merge and move operations (person, contact, project)
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

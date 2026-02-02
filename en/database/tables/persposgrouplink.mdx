@@ -19,15 +19,15 @@ User group link table for PersPos, for MDO item hiding
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |persposgrouplink\_id|Primary key|PK| |
-|perspos\_id|Link to PersPos list table|FK [PersPos](perspos.md)| |
-|group\_id|Link to Group table|FK [UserGroup](usergroup.md)| |
+|perspos\_id|Link to PersPos list table|FK [PersPos](./perspos)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![PersPosGroupLink table relationship diagram](./media/PersPosGroupLink.png)
+![PersPosGroupLink table relationship diagram](/media/loc/en/database/PersPosGroupLink.png)
 
 <Persposgrouplink />
 
@@ -43,9 +43,9 @@ User group link table for PersPos, for MDO item hiding
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[PersPos](perspos.md)  |PersPos list table. Contact person position list |
-|[UserGroup](usergroup.md)  |Secondary user groups |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[PersPos](./perspos)  |PersPos list table. Contact person position list |
+|[UserGroup](./usergroup)  |Secondary user groups |
 
 ## Replication Flags
 

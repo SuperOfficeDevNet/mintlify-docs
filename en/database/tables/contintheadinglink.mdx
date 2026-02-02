@@ -19,15 +19,15 @@ Heading link table for ContInt, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |contintheadinglink\_id|Primary key|PK| |
-|contint\_id|Link to ContInt list table|FK [ContInt](contint.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|contint\_id|Link to ContInt list table|FK [ContInt](./contint)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![ContIntHeadingLink table relationship diagram](./media/ContIntHeadingLink.png)
+![ContIntHeadingLink table relationship diagram](/media/loc/en/database/ContIntHeadingLink.png)
 
 <Contintheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for ContInt, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ContInt](contint.md)  |ContInt list table. List-text of all valid contact interest types. |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ContInt](./contint)  |ContInt list table. List-text of all valid contact interest types. |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
 ## Replication Flags
 

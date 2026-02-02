@@ -19,11 +19,11 @@ This table contains web-domains associated with a certain cust_company entry.
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|company\_id|The cust_company entry this domain is associated with.|FK [contact](contact.md)| |
+|company\_id|The cust_company entry this domain is associated with.|FK [contact](./contact)| |
 |domain\_name|The domain. E.g. &amp;apos;www.ejournal.no&amp;apos;, &amp;apos;company.com&amp;apos;, &amp;apos;http://some.domain.net&amp;apos;|String(255)| |
 |rank|The rank|Int| |
 
-![company_domain table relationship diagram](./media/company_domain.png)
+![company_domain table relationship diagram](/media/loc/en/database/company_domain.png)
 
 <CompanyDomain />
 
@@ -38,7 +38,7 @@ This table contains web-domains associated with a certain cust_company entry.
 
 | Table|  Description |
 |------|-------------|
-|[contact](contact.md)  |Companies and Organizations. |
+|[contact](./contact)  |Companies and Organizations. |
 
 ## Replication Flags
 

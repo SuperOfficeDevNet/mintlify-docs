@@ -29,12 +29,12 @@ Configuration of quote lines - which fields are in use, rights, labels etc
 |PreventHide|If true, then this field cannot be hidden from the GUI|Bool|&#x25CF;|
 |RestrictEdit|If true, then this field cannot be set readwrite or mandatory: It&apos;s bound to be readonly|Bool|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![QuoteLineConfiguration table relationship diagram](./media/QuoteLineConfiguration.png)
+![QuoteLineConfiguration table relationship diagram](/media/loc/en/database/QuoteLineConfiguration.png)
 
 <Quotelineconfiguration />
 
@@ -48,7 +48,7 @@ Configuration of quote lines - which fields are in use, rights, labels etc
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

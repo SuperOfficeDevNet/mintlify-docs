@@ -19,15 +19,15 @@ User group link table for TaskMenu, for MDO item hiding
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |taskmenugrouplink\_id|Primary key|PK| |
-|taskMenu\_id|Link to TaskMenu list table|FK [TaskMenu](taskmenu.md)| |
-|group\_id|Link to Group table|FK [UserGroup](usergroup.md)| |
+|taskMenu\_id|Link to TaskMenu list table|FK [TaskMenu](./taskmenu)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![TaskMenuGroupLink table relationship diagram](./media/TaskMenuGroupLink.png)
+![TaskMenuGroupLink table relationship diagram](/media/loc/en/database/TaskMenuGroupLink.png)
 
 <Taskmenugrouplink />
 
@@ -43,9 +43,9 @@ User group link table for TaskMenu, for MDO item hiding
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[TaskMenu](taskmenu.md)  |List items to merge into menues |
-|[UserGroup](usergroup.md)  |Secondary user groups |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[TaskMenu](./taskmenu)  |List items to merge into menues |
+|[UserGroup](./usergroup)  |Secondary user groups |
 
 ## Replication Flags
 

@@ -19,15 +19,15 @@ Heading link table for DeliveryTerms, for MDO item headings
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |deliverytermsheadinglink\_id|Primary key|PK| |
-|deliveryterms\_id|Link to DeliveryTerms list table|FK [DeliveryTerms](deliveryterms.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|deliveryterms\_id|Link to DeliveryTerms list table|FK [DeliveryTerms](./deliveryterms)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![DeliveryTermsHeadingLink table relationship diagram](./media/DeliveryTermsHeadingLink.png)
+![DeliveryTermsHeadingLink table relationship diagram](/media/loc/en/database/DeliveryTermsHeadingLink.png)
 
 <Deliverytermsheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for DeliveryTerms, for MDO item headings
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[DeliveryTerms](deliveryterms.md)  |The list of Delivery terms, in the internal product register |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[DeliveryTerms](./deliveryterms)  |The list of Delivery terms, in the internal product register |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
 ## Replication Flags
 

@@ -20,18 +20,18 @@ Record of all generated replication data files from this database (*.dwn files f
 |------|-------------|------|:----:|
 |travelgeneratedtransaction\_id|Primary key|PK| |
 |travel\_id|Central=0, Departm.=H01000000-H7F000000, Travel=assoc_id|Id|&#x25CF;|
-|tranlogfirst\_id|This up/dwnfile holds transaction from traveltransactionlog_id = this number|FK [traveltransactionlog](traveltransactionlog.md)|&#x25CF;|
-|tranloglast\_id|This up/dwnfile holds transaction to traveltransactionlog_id = this number|FK [traveltransactionlog](traveltransactionlog.md)|&#x25CF;|
+|tranlogfirst\_id|This up/dwnfile holds transaction from traveltransactionlog_id = this number|FK [traveltransactionlog](./traveltransactionlog)|&#x25CF;|
+|tranloglast\_id|This up/dwnfile holds transaction to traveltransactionlog_id = this number|FK [traveltransactionlog](./traveltransactionlog)|&#x25CF;|
 |recordstatus|gen, sent, ack.|UShort|&#x25CF;|
 |transmissionnumber|sequence pr. user|UInt|&#x25CF;|
 |transmissiontype|File or direct communication|UShort|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![travelgeneratedtransaction table relationship diagram](./media/travelgeneratedtransaction.png)
+![travelgeneratedtransaction table relationship diagram](/media/loc/en/database/travelgeneratedtransaction.png)
 
 <Travelgeneratedtransaction />
 
@@ -47,8 +47,8 @@ Record of all generated replication data files from this database (*.dwn files f
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[traveltransactionlog](traveltransactionlog.md)  |Log of all updates made to the database, that need to be replicated. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[traveltransactionlog](./traveltransactionlog)  |Log of all updates made to the database, that need to be replicated. |
 
 ## Replication Flags
 

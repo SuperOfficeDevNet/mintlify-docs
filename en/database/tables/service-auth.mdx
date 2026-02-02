@@ -25,15 +25,15 @@ Authentication for a service (imap, smtp...)
 |username|The username|String(255)|&#x25CF;|
 |password|The (encrypted) password or token|String(255)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
-|associate\_id|Associate who owns this authentication entry|FK [associate](associate.md)|&#x25CF;|
-|auth\_status|The status of this authentication entry|Enum [ServiceAuthStatus](enums/serviceauthstatus.md)|&#x25CF;|
+|associate\_id|Associate who owns this authentication entry|FK [associate](./associate)|&#x25CF;|
+|auth\_status|The status of this authentication entry|Enum [ServiceAuthStatus](./enums/serviceauthstatus)|&#x25CF;|
 |encryptedCheck|Encrypted hash checksum|String(254)| |
 
-![service_auth table relationship diagram](./media/service_auth.png)
+![service_auth table relationship diagram](/media/loc/en/database/service_auth.png)
 
 <ServiceAuth />
 
@@ -47,8 +47,8 @@ Authentication for a service (imap, smtp...)
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[email\_account](email-account.md)  |Email account information |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[email\_account](./email-account)  |Email account information |
 
 ## Replication Flags
 

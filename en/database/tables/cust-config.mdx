@@ -19,16 +19,16 @@ This table contains JSON structures used for customizing the customer center
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |cust\_config\_id|Primary key|PK| |
-|type|What kind of data is in this row|Enum [ConfigType](enums/configtype.md)|&#x25CF;|
+|type|What kind of data is in this row|Enum [ConfigType](./enums/configtype)|&#x25CF;|
 |config|A JSON-formatted config|Clob|&#x25CF;|
-|cust\_lang\_id|The customer language which this config belongs to. 0 indicates that the config is global|FK [cust_lang](cust-lang.md)| |
+|cust\_lang\_id|The customer language which this config belongs to. 0 indicates that the config is global|FK [cust_lang](./cust-lang)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![cust_config table relationship diagram](./media/cust_config.png)
+![cust_config table relationship diagram](/media/loc/en/database/cust_config.png)
 
 <CustConfig />
 
@@ -42,8 +42,8 @@ This table contains JSON structures used for customizing the customer center
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[cust\_lang](cust-lang.md)  |This table contains entries for customer languages. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[cust\_lang](./cust-lang)  |This table contains entries for customer languages. |
 
 ## Replication Flags
 

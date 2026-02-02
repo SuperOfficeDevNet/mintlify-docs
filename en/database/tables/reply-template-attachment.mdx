@@ -19,10 +19,10 @@ This table is used to connect attachments to reply templates (many-to-many).
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|entry\_id|The id of the reply_template this entry is connected to.|FK [reply_template](reply-template.md)| |
-|attachment\_id|The id of the attachment this entry is connected to.|FK [attachment](attachment.md)| |
+|entry\_id|The id of the reply_template this entry is connected to.|FK [reply_template](./reply-template)| |
+|attachment\_id|The id of the attachment this entry is connected to.|FK [attachment](./attachment)| |
 
-![reply_template_attachment table relationship diagram](./media/reply_template_attachment.png)
+![reply_template_attachment table relationship diagram](/media/loc/en/database/reply_template_attachment.png)
 
 <ReplyTemplateAttachment />
 
@@ -38,8 +38,8 @@ This table is used to connect attachments to reply templates (many-to-many).
 
 | Table|  Description |
 |------|-------------|
-|[attachment](attachment.md)  |This table contains metadata for attachments. The actual attachments are stored directly on disk, with filenames based on the the primary key for this table. |
-|[reply\_template](reply-template.md)  |Templates for automatic and manual replies to emails/sms organized hierachically |
+|[attachment](./attachment)  |This table contains metadata for attachments. The actual attachments are stored directly on disk, with filenames based on the the primary key for this table. |
+|[reply\_template](./reply-template)  |Templates for automatic and manual replies to emails/sms organized hierachically |
 
 ## Replication Flags
 

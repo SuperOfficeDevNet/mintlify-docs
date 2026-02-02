@@ -14,4 +14,4 @@ The type of the message.
 
 ## Usage
 
-* [chat_message](../chat-message.md).type - This table contains messages in a chat session.
+* [chat_message](../chat-message).type - This table contains messages in a chat session.

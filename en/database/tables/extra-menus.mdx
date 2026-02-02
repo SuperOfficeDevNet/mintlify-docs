@@ -28,10 +28,10 @@ This table contains entries for the extra menus in the system.
 |order\_pos|Used to order elements when listed.|Int|&#x25CF;|
 |flags|Flags|UInt|&#x25CF;|
 |base\_program|Base program used in url (ticket, rms, ...)|base_program|&#x25CF;|
-|extra\_table|ExtraTable that the menu is connected to|FK [extra_tables](extra-tables.md)|&#x25CF;|
-|group\_id|Link to extra_menus table if this menu item is to be shown in a custom menu group|FK [extra_menus](extra-menus.md)|&#x25CF;|
+|extra\_table|ExtraTable that the menu is connected to|FK [extra_tables](./extra-tables)|&#x25CF;|
+|group\_id|Link to extra_menus table if this menu item is to be shown in a custom menu group|FK [extra_menus](./extra-menus)|&#x25CF;|
 
-![extra_menus table relationship diagram](./media/extra_menus.png)
+![extra_menus table relationship diagram](/media/loc/en/database/extra_menus.png)
 
 <ExtraMenus />
 
@@ -46,9 +46,9 @@ This table contains entries for the extra menus in the system.
 
 | Table|  Description |
 |------|-------------|
-|[ejscript](ejscript.md)  |ejscript |
-|[extra\_menus](extra-menus.md)  |This table contains entries for the extra menus in the system. |
-|[extra\_tables](extra-tables.md)  |This table contains entries for the extra tables in the system. |
+|[ejscript](./ejscript)  |ejscript |
+|[extra\_menus](./extra-menus)  |This table contains entries for the extra menus in the system. |
+|[extra\_tables](./extra-tables)  |This table contains entries for the extra tables in the system. |
 
 ## Replication Flags
 

@@ -19,15 +19,15 @@ User group link table for Task, for MDO item hiding
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |taskgrouplink\_id|Primary key|PK| |
-|task\_id|Link to Task list table|FK [Task](task.md)| |
-|group\_id|Link to Group table|FK [UserGroup](usergroup.md)| |
+|task\_id|Link to Task list table|FK [Task](./task)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![TaskGroupLink table relationship diagram](./media/TaskGroupLink.png)
+![TaskGroupLink table relationship diagram](/media/loc/en/database/TaskGroupLink.png)
 
 <Taskgrouplink />
 
@@ -43,9 +43,9 @@ User group link table for Task, for MDO item hiding
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Task](task.md)  |Task list table, activity types, like Phone, Meeting |
-|[UserGroup](usergroup.md)  |Secondary user groups |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Task](./task)  |Task list table, activity types, like Phone, Meeting |
+|[UserGroup](./usergroup)  |Secondary user groups |
 
 ## Replication Flags
 

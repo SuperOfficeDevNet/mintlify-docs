@@ -25,16 +25,16 @@ Primary key in the CRM database. Definition of a connection to an external syste
 |Rank|Rank order |Int|&#x25CF;|
 |ConnectorName|Programmatic name of the Connector plugin that implements this kind of connection|String(254)| |
 |ExtraData|Optional extra data, in XML format, for configuring the connector. Connector-specific!|String(3999)|&#x25CF;|
-|ErpConnectionId|The ERP Connection that this Quote connection is an extension of|FK [ErpConnection](erpconnection.md)|&#x25CF;|
+|ErpConnectionId|The ERP Connection that this Quote connection is an extension of|FK [ErpConnection](./erpconnection)|&#x25CF;|
 |AllAccess|Is this connection accessible to everyone?  If not, then the QuoteConnectionAccess table tells us who can access it|Bool|&#x25CF;|
 |Deleted|If set, then this is a row that has been &apos;deleted&apos;; we do not physically delete rows to avoid disaster|Bool|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![QuoteConnection table relationship diagram](./media/QuoteConnection.png)
+![QuoteConnection table relationship diagram](/media/loc/en/database/QuoteConnection.png)
 
 <Quoteconnection />
 
@@ -48,12 +48,12 @@ Primary key in the CRM database. Definition of a connection to an external syste
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[ConnectionConfigField](connectionconfigfield.md)  |Configuration data for Erp and Quote Connections |
-|[ErpConnection](erpconnection.md)  |One connection to an ERP connector, specifying Client and other required information |
-|[PriceList](pricelist.md)  |List of prices, cached from an ERP system |
-|[Quote](quote.md)  |Quote root level, at most one per Sale, always connected to one Sale |
-|[QuoteConnectionAccess](quoteconnectionaccess.md)  |Access control for Quote Connections |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ConnectionConfigField](./connectionconfigfield)  |Configuration data for Erp and Quote Connections |
+|[ErpConnection](./erpconnection)  |One connection to an ERP connector, specifying Client and other required information |
+|[PriceList](./pricelist)  |List of prices, cached from an ERP system |
+|[Quote](./quote)  |Quote root level, at most one per Sale, always connected to one Sale |
+|[QuoteConnectionAccess](./quoteconnectionaccess)  |Access control for Quote Connections |
 
 ## Replication Flags
 

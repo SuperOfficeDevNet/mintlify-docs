@@ -21,18 +21,18 @@ Publishing system for external users
 |Publish\_id|Primary key|PK| |
 |tableNumber|Table number this record refers to|TableNumber| |
 |recordId|Record number that has been published|RecordId|&#x25CF;|
-|publishType|Type of publishing action, 0 = Unknown, 1 = to external persons|Enum [PublishType](enums/publishtype.md)|&#x25CF;|
+|publishType|Type of publishing action, 0 = Unknown, 1 = to external persons|Enum [PublishType](./enums/publishtype)|&#x25CF;|
 |publishFrom|Publication valid from (inclusive)|DateTime|&#x25CF;|
 |publishTo|Publication valid to (inclusive)|DateTime|&#x25CF;|
 |eventDate|The date an event actually happens; you may want to have some special processing around that date|DateTime|&#x25CF;|
 |encryptedCheck|Encrypted data, to detect unwanted changes|String(254)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![Publish table relationship diagram](./media/Publish.png)
+![Publish table relationship diagram](/media/loc/en/database/Publish.png)
 
 <Publish />
 
@@ -48,7 +48,7 @@ Publishing system for external users
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

@@ -20,7 +20,7 @@ Red letter days for calendar (holidays, birthday of king etc)
 |------|-------------|------|:----:|
 |redletterday\_id|Primary key|PK| |
 |reddate|The date |DateTime| |
-|country\_id|Which country does this red letter day belong to. It will show up in the diary for associates with this country as homecountry.|FK [country](country.md)| |
+|country\_id|Which country does this red letter day belong to. It will show up in the diary for associates with this country as homecountry.|FK [country](./country)| |
 |reds|The n´th bit corresponding to the date in dates month, is true if the color is active.|UInt|&#x25CF;|
 |colored|The n´th bit corresponding to the date in dates month, is true if the color is active.|UInt|&#x25CF;|
 |color|color can be one of the following: RLD_COLOR_BLACK, RLD_COLOR_RED, RLD_COLOR_SPES|UShort|&#x25CF;|
@@ -29,7 +29,7 @@ Red letter days for calendar (holidays, birthday of king etc)
 |rgbColour|Actual RGB colour index|UInt|&#x25CF;|
 |extraFlags|Extra flags, spare field|UInt|&#x25CF;|
 
-![redletterday table relationship diagram](./media/redletterday.png)
+![redletterday table relationship diagram](/media/loc/en/database/redletterday.png)
 
 <Redletterday />
 
@@ -44,7 +44,7 @@ Red letter days for calendar (holidays, birthday of king etc)
 
 | Table|  Description |
 |------|-------------|
-|[country](country.md)  |Country information |
+|[country](./country)  |Country information |
 
 ## Replication Flags
 

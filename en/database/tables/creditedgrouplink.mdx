@@ -19,15 +19,15 @@ User group link table for Credited, for MDO item hiding
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |creditedgrouplink\_id|Primary key|PK| |
-|credited\_id|Link to Credited list table|FK [Credited](credited.md)| |
-|group\_id|Link to Group table|FK [UserGroup](usergroup.md)| |
+|credited\_id|Link to Credited list table|FK [Credited](./credited)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![CreditedGroupLink table relationship diagram](./media/CreditedGroupLink.png)
+![CreditedGroupLink table relationship diagram](/media/loc/en/database/CreditedGroupLink.png)
 
 <Creditedgrouplink />
 
@@ -43,9 +43,9 @@ User group link table for Credited, for MDO item hiding
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Credited](credited.md)  |Credited list table. List of who is to be credited for the sale. |
-|[UserGroup](usergroup.md)  |Secondary user groups |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Credited](./credited)  |Credited list table. List of who is to be credited for the sale. |
+|[UserGroup](./usergroup)  |Secondary user groups |
 
 ## Replication Flags
 

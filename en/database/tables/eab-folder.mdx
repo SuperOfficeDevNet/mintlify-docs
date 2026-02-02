@@ -19,12 +19,12 @@ This table contains eab (email address book) folders, used for containing email 
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|folder\_id|The id of the parent folder for this folder. NULL or -1 if this is a toplevel folder.|FK [eab_folder](eab-folder.md)| |
+|folder\_id|The id of the parent folder for this folder. NULL or -1 if this is a toplevel folder.|FK [eab_folder](./eab-folder)| |
 |name|The folder&amp;apos;s name.|String(64)| |
 |description|The folder&amp;apos;s description.|String(255)|&#x25CF;|
 |fullname|The full name of this category, i.e. Foo/bar/test.|Clob|&#x25CF;|
 
-![eab_folder table relationship diagram](./media/eab_folder.png)
+![eab_folder table relationship diagram](/media/loc/en/database/eab_folder.png)
 
 <EabFolder />
 
@@ -40,8 +40,8 @@ This table contains eab (email address book) folders, used for containing email 
 
 | Table|  Description |
 |------|-------------|
-|[eab\_entry](eab-entry.md)  |This table contains eab (email address book) entries, i.e. an alias (&amp;apos;Ola Hansen&amp;apos;) and an address (&amp;apos;ola@hansen.as&amp;apos;). |
-|[eab\_folder](eab-folder.md)  |This table contains eab (email address book) folders, used for containing email addresses. |
+|[eab\_entry](./eab-entry)  |This table contains eab (email address book) entries, i.e. an alias (&amp;apos;Ola Hansen&amp;apos;) and an address (&amp;apos;ola@hansen.as&amp;apos;). |
+|[eab\_folder](./eab-folder)  |This table contains eab (email address book) folders, used for containing email addresses. |
 
 ## Replication Flags
 

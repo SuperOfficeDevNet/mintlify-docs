@@ -19,8 +19,8 @@ Info and status for safe email import
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|Primary key|PK| |
-|mail\_in\_filter|A reference to the id of the mail box|FK [mail_in_filter](mail-in-filter.md)| |
-|locking\_id|A reference to the id of lock|FK [locking](locking.md)| |
+|mail\_in\_filter|A reference to the id of the mail box|FK [mail_in_filter](./mail-in-filter)| |
+|locking\_id|A reference to the id of lock|FK [locking](./locking)| |
 |uidl|The uidl of the message. Stored before the retrieval starts to prevent double import. For locking purposes|String(2047)|&#x25CF;|
 |created|When the mail was created|DateTime|&#x25CF;|
 |imported|When the mail was imported|DateTime| |
@@ -30,7 +30,7 @@ Info and status for safe email import
 |plugin|Name of plugin that created this inbox entry|String(255)| |
 |format|Format of the inbox entry|String(255)| |
 
-![inbox table relationship diagram](./media/inbox.png)
+![inbox table relationship diagram](/media/loc/en/database/inbox.png)
 
 <Inbox />
 
@@ -48,9 +48,9 @@ Info and status for safe email import
 
 | Table|  Description |
 |------|-------------|
-|[ej\_message](ej-message.md)  |This table contains the messages listed under tickets. |
-|[locking](locking.md)  |Generic locking and error messages |
-|[mail\_in\_filter](mail-in-filter.md)  |This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP). |
+|[ej\_message](./ej-message)  |This table contains the messages listed under tickets. |
+|[locking](./locking)  |Generic locking and error messages |
+|[mail\_in\_filter](./mail-in-filter)  |This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP). |
 
 ## Replication Flags
 

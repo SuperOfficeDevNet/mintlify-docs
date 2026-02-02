@@ -19,12 +19,12 @@ This table shows which word are used in which FAQ entry, and how many times     
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|Primary key|PK| |
-|entry\_word\_id|A reference to the id of the word|FK [kb_entry_words](kb-entry-words.md)| |
-|entry\_id|A reference to the id of the entry|FK [kb_entry](kb-entry.md)| |
+|entry\_word\_id|A reference to the id of the word|FK [kb_entry_words](./kb-entry-words)| |
+|entry\_id|A reference to the id of the entry|FK [kb_entry](./kb-entry)| |
 |used|Indicates how many times this word is used in the FAQ entry|Int| |
 |origin|Indicates if it is an entry word (0) or a category word (1).|Short| |
 
-![word_relations table relationship diagram](./media/word_relations.png)
+![word_relations table relationship diagram](/media/loc/en/database/word_relations.png)
 
 <WordRelations />
 
@@ -40,8 +40,8 @@ This table shows which word are used in which FAQ entry, and how many times     
 
 | Table|  Description |
 |------|-------------|
-|[kb\_entry](kb-entry.md)  |This table contains FAQ entries. |
-|[kb\_entry\_words](kb-entry-words.md)  |This table contains all the words and how many times the are refered                  to in the FAQ entires |
+|[kb\_entry](./kb-entry)  |This table contains FAQ entries. |
+|[kb\_entry\_words](./kb-entry-words)  |This table contains all the words and how many times the are refered                  to in the FAQ entires |
 
 ## Replication Flags
 

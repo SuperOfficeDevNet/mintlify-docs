@@ -19,10 +19,10 @@ Users linked to a role. Deprecated.
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK| |
-|role|The id of the group.|FK [ej_role](ej-role.md)| |
-|ejuser|The id of the user.|FK [ejuser](ejuser.md)| |
+|role|The id of the group.|FK [ej_role](./ej-role)| |
+|ejuser|The id of the user.|FK [ejuser](./ejuser)| |
 
-![role_member table relationship diagram](./media/role_member.png)
+![role_member table relationship diagram](/media/loc/en/database/role_member.png)
 
 <RoleMember />
 
@@ -38,8 +38,8 @@ Users linked to a role. Deprecated.
 
 | Table|  Description |
 |------|-------------|
-|[ej\_role](ej-role.md)  |Define access rights, memberships and other properties for role user members |
-|[ejuser](ejuser.md)  |This table contains entries for the users of the system. |
+|[ej\_role](./ej-role)  |Define access rights, memberships and other properties for role user members |
+|[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 
 ## Replication Flags
 

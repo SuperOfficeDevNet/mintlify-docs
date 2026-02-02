@@ -24,12 +24,12 @@ Webhook usage statistics - tracks call+error statistics. Same primary key as the
 |consecutive\_errors|Number of consecutive errors. Reset to 0 when an non-error is received. If too many errors, webhook.state is changed to TooManyErrors(3) to deactivate webhook.|Int| |
 |last\_error|Most recent error message received from target. HTTP Headers + body. To help with debugging webhooks.|String(4000)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![Webhook_usage table relationship diagram](./media/Webhook_usage.png)
+![Webhook_usage table relationship diagram](/media/loc/en/database/Webhook_usage.png)
 
 <WebhookUsage />
 
@@ -43,7 +43,7 @@ Webhook usage statistics - tracks call+error statistics. Same primary key as the
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
 
 ## Replication Flags
 

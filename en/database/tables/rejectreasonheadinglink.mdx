@@ -19,15 +19,15 @@ Heading link table for RejectReason, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |rejectreasonheadinglink\_id|Primary key|PK| |
-|rejectreason\_id|Link to RejectReason list table|FK [RejectReason](rejectreason.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|rejectreason\_id|Link to RejectReason list table|FK [RejectReason](./rejectreason)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![RejectReasonHeadingLink table relationship diagram](./media/RejectReasonHeadingLink.png)
+![RejectReasonHeadingLink table relationship diagram](/media/loc/en/database/RejectReasonHeadingLink.png)
 
 <Rejectreasonheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for RejectReason, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
-|[RejectReason](rejectreason.md)  |Rejection reason (suggested) for bookings |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[RejectReason](./rejectreason)  |Rejection reason (suggested) for bookings |
 
 ## Replication Flags
 

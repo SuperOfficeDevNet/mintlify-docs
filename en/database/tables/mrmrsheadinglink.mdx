@@ -19,15 +19,15 @@ Heading link table for MrMrs, for MDO headers
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |mrmrsheadinglink\_id|Primary key|PK| |
-|mrmrs\_id|Link to MrMrs list table|FK [MrMrs](mrmrs.md)| |
-|heading\_id|Link to Heading table|FK [Heading](heading.md)| |
+|mrmrs\_id|Link to MrMrs list table|FK [MrMrs](./mrmrs)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![MrMrsHeadingLink table relationship diagram](./media/MrMrsHeadingLink.png)
+![MrMrsHeadingLink table relationship diagram](/media/loc/en/database/MrMrsHeadingLink.png)
 
 <Mrmrsheadinglink />
 
@@ -43,9 +43,9 @@ Heading link table for MrMrs, for MDO headers
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Heading](heading.md)  |Heading items for all MDO lists, lists that are grouped and filtered. |
-|[MrMrs](mrmrs.md)  |MrMrs list table. List of salutations. |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[MrMrs](./mrmrs)  |MrMrs list table. List of salutations. |
 
 ## Replication Flags
 

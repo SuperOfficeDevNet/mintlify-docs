@@ -20,20 +20,20 @@ Criteria storage for Selection and other Find mechanisms
 |------|-------------|------|:----:|
 |SearchCriteria\_id|Primary key|PK| |
 |name|Name of this criteria collection|String(254)| |
-|textId|Extra information (descriptive) for this Criteria set|FK [text](text.md)|&#x25CF;|
-|ownerType|Selection, Reporter, FindProject, ...|Enum [OwnerType](enums/ownertype.md)|&#x25CF;|
+|textId|Extra information (descriptive) for this Criteria set|FK [text](./text)|&#x25CF;|
+|ownerType|Selection, Reporter, FindProject, ...|Enum [OwnerType](./enums/ownertype)|&#x25CF;|
 |ownerTable|Table number of table that owns these criteria|TableNumber|&#x25CF;|
 |ownerId|Record ID in ownerTable that owns these criteria|RecordId|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 |ownerName|Name of owner; this is the archive provider name in NetServer/SIX.web|String(254)|&#x25CF;|
 |ownerGuiName|Name of the owner GUI control, this is the GUI XML id in SIX.web|String(254)|&#x25CF;|
 |displayName|Display name when these criteria are a saved archive filter|String(254)|&#x25CF;|
 
-![SearchCriteria table relationship diagram](./media/SearchCriteria.png)
+![SearchCriteria table relationship diagram](/media/loc/en/database/SearchCriteria.png)
 
 <Searchcriteria />
 
@@ -49,9 +49,9 @@ Criteria storage for Selection and other Find mechanisms
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[SearchCriteriaGroup](searchcriteriagroup.md)  |Criteria storage for Selection and other Find mechanisms |
-|[text](text.md)  |Long text fields from all over the system |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SearchCriteriaGroup](./searchcriteriagroup)  |Criteria storage for Selection and other Find mechanisms |
+|[text](./text)  |Long text fields from all over the system |
 
 ## Replication Flags
 

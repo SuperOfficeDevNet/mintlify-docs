@@ -25,13 +25,13 @@ Information about languages, from ISO standards and related information
 |englishName|English name of this language (Norwegian)|String(254)| |
 |nativeName|The native name of this language (Norsk Bokmål)|String(254)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 |isBuiltIn|Has this row been inserted by SuperOffice priming data|UShort| |
 
-![LanguageInfo table relationship diagram](./media/LanguageInfo.png)
+![LanguageInfo table relationship diagram](/media/loc/en/database/LanguageInfo.png)
 
 <Languageinfo />
 
@@ -45,8 +45,8 @@ Information about languages, from ISO standards and related information
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[LanguageInfoCountry](languageinfocountry.md)  |Many-many link between countries and languages, to give intelligent choices for language |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[LanguageInfoCountry](./languageinfocountry)  |Many-many link between countries and languages, to give intelligent choices for language |
 
 ## Replication Flags
 

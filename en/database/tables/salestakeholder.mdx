@@ -19,19 +19,19 @@ Stakeholders in the sale, very similar to project members
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |salestakeholder\_id|Primary key|PK| |
-|sale\_id|Parent sale|FK [sale](sale.md)|&#x25CF;|
-|contact\_id|Contact ID of person or contact who is the sale stakeholder|FK [contact](contact.md)|&#x25CF;|
-|person\_id|Person ID of person who is the sale stakeholder, or 0 if it&apos;s just a contact|FK [person](person.md)|&#x25CF;|
+|sale\_id|Parent sale|FK [sale](./sale)|&#x25CF;|
+|contact\_id|Contact ID of person or contact who is the sale stakeholder|FK [contact](./contact)|&#x25CF;|
+|person\_id|Person ID of person who is the sale stakeholder, or 0 if it&apos;s just a contact|FK [person](./person)|&#x25CF;|
 |rank|Rank in list|UShort|&#x25CF;|
-|stakeholderrole\_id|Member type link|FK [StakeholderRole](stakeholderrole.md)|&#x25CF;|
+|stakeholderrole\_id|Member type link|FK [StakeholderRole](./stakeholderrole)|&#x25CF;|
 |comment|Optional comment|String(2047)|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![SaleStakeholder table relationship diagram](./media/SaleStakeholder.png)
+![SaleStakeholder table relationship diagram](/media/loc/en/database/SaleStakeholder.png)
 
 <Salestakeholder />
 
@@ -47,11 +47,11 @@ Stakeholders in the sale, very similar to project members
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[contact](contact.md)  |Companies and Organizations. |
-|[person](person.md)  |Persons |
-|[sale](sale.md)  |Sales  For every Sale record edited through the SuperOffice GUI, a copy of the current version of the record will be saved in the SaleHist table. This also applies to editing done through the SaleModel COM interface, but not to editing done through the OLE DB Provider or other channels.   |
-|[StakeholderRole](stakeholderrole.md)  |Role a stakeholder has in a sale |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[contact](./contact)  |Companies and Organizations. |
+|[person](./person)  |Persons |
+|[sale](./sale)  |Sales  For every Sale record edited through the SuperOffice GUI, a copy of the current version of the record will be saved in the SaleHist table. This also applies to editing done through the SaleModel COM interface, but not to editing done through the OLE DB Provider or other channels.   |
+|[StakeholderRole](./stakeholderrole)  |Role a stakeholder has in a sale |
 
 ## Replication Flags
 

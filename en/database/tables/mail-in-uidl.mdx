@@ -19,13 +19,13 @@ This table is used to avoid spamming the system by importing the same message se
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |id|Primary key|PK| |
-|filter\_id|The mailbox for this UIDL entry.|FK [mail_in_filter](mail-in-filter.md)| |
+|filter\_id|The mailbox for this UIDL entry.|FK [mail_in_filter](./mail-in-filter)| |
 |uidl|The actual UIDL (i.e. the unique string identifying a specific message).|String(2047)|&#x25CF;|
 |last\_checked|The last time this message was attempted to be imported.|DateTime|&#x25CF;|
 |status|The status of this UIDL entry (enum).|status|&#x25CF;|
 |retries|The number of attempts for importing this message.|Int|&#x25CF;|
 
-![mail_in_uidl table relationship diagram](./media/mail_in_uidl.png)
+![mail_in_uidl table relationship diagram](/media/loc/en/database/mail_in_uidl.png)
 
 <MailInUidl />
 
@@ -40,7 +40,7 @@ This table is used to avoid spamming the system by importing the same message se
 
 | Table|  Description |
 |------|-------------|
-|[mail\_in\_filter](mail-in-filter.md)  |This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP). |
+|[mail\_in\_filter](./mail-in-filter)  |This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP). |
 
 ## Replication Flags
 

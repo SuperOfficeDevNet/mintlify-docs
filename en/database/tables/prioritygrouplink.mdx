@@ -19,15 +19,15 @@ User group link table for Priority, for MDO item hiding
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |prioritygrouplink\_id|Primary key|PK| |
-|priority\_id|Link to Priority list table|FK [Priority](priority.md)| |
-|group\_id|Link to Group table|FK [UserGroup](usergroup.md)| |
+|priority\_id|Link to Priority list table|FK [Priority](./priority)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 
-![PriorityGroupLink table relationship diagram](./media/PriorityGroupLink.png)
+![PriorityGroupLink table relationship diagram](/media/loc/en/database/PriorityGroupLink.png)
 
 <Prioritygrouplink />
 
@@ -43,9 +43,9 @@ User group link table for Priority, for MDO item hiding
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[Priority](priority.md)  |Priority list table. Used with appointments: low, high. |
-|[UserGroup](usergroup.md)  |Secondary user groups |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Priority](./priority)  |Priority list table. Used with appointments: low, high. |
+|[UserGroup](./usergroup)  |Secondary user groups |
 
 ## Replication Flags
 

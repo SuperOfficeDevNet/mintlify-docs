@@ -19,18 +19,18 @@ Corresponds to an email folder on a mail server
 | Name | Description | Type | Null |
 |------|-------------|------|:----:|
 |email\_folder\_id|Primary key|PK| |
-|account\_id|Account id|FK [email_account](email-account.md)|&#x25CF;|
-|parent\_folder\_id|Parent folder|FK [email_folder](email-folder.md)|&#x25CF;|
+|account\_id|Account id|FK [email_account](./email-account)|&#x25CF;|
+|parent\_folder\_id|Parent folder|FK [email_folder](./email-folder)|&#x25CF;|
 |name|Folder name|String(255)|&#x25CF;|
 |attributes|Folder attributes like Subscribed, HasChildren, Junk, Sent...|Int|&#x25CF;|
 |registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](associate.md)| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
 |updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](associate.md)| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
 |updatedCount|Number of updates made to this record|UShort| |
 |folder\_separator|Character separating subfolders|String(255)|&#x25CF;|
 
-![email_folder table relationship diagram](./media/email_folder.png)
+![email_folder table relationship diagram](/media/loc/en/database/email_folder.png)
 
 <EmailFolder />
 
@@ -45,10 +45,10 @@ Corresponds to an email folder on a mail server
 
 | Table|  Description |
 |------|-------------|
-|[associate](associate.md)  |Employees, resources and other users - except for External persons |
-|[email\_account](email-account.md)  |Email account information |
-|[email\_folder](email-folder.md)  |Corresponds to an email folder on a mail server |
-|[email\_item](email-item.md)  |Email data |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[email\_account](./email-account)  |Email account information |
+|[email\_folder](./email-folder)  |Corresponds to an email folder on a mail server |
+|[email\_item](./email-item)  |Email data |
 
 ## Replication Flags
 

@@ -237,6 +237,15 @@ function Get-ItemTypeIcon {
     return 'circle'
 }
 
+function TrimMatch {
+    param([string]$value)
+    # Strip inline YAML comments (everything after # outside of quotes)
+    if ($value -match '^([^#]*?)\s*#') {
+        $value = $matches[1]
+    }
+    return $value.Trim().Trim('"').Trim("'")
+}
+
 function Test-LandingPageYaml {
     param([string]$content)
 
@@ -409,13 +418,13 @@ function ParseCategoryYaml {
             $result.yamlMime = $matches[1].Trim()
         }
         elseif ($line -match '^title:\s*(.+)$') {
-            $result.title = $matches[1].Trim('"''').Trim()
+            $result.title = TrimMatch $matches[1]
         }
         elseif ($line -match '^summary:\s*(.+)$') {
-            $result.summary = $matches[1].Trim('"''').Trim()
+            $result.summary = TrimMatch $matches[1]
         }
         elseif ($line -match '^\s*author:\s*(.+)$') {
-            $result.author = $matches[1].Trim('"''').Trim()
+            $result.author = TrimMatch $matches[1]
         }
         # Section detection
         elseif ($line -match '^highlightedContent:') {
@@ -439,7 +448,7 @@ function ParseCategoryYaml {
             elseif ($spaces -eq 4 -and $line -match '^\s*-\s*title:\s*(.+)$') {
                 # New item
                 $currentItem = @{
-                    title = $matches[1].Trim('"''').Trim()
+                    title = TrimMatch $matches[1]
                     itemType = ''
                     typeDesc = ''
                     url = ''
@@ -449,17 +458,17 @@ function ParseCategoryYaml {
             }
             elseif ($spaces -eq 6 -and $line -match '^\s*itemType:\s*(.+)$') {
                 if ($currentItem) {
-                    $currentItem.itemType = $matches[1].Trim('"''').Trim()
+                    $currentItem.itemType = TrimMatch $matches[1]
                 }
             }
             elseif ($spaces -eq 6 -and $line -match '^\s*typeDesc:\s*(.+)$') {
                 if ($currentItem) {
-                    $currentItem.typeDesc = $matches[1].Trim('"''').Trim()
+                    $currentItem.typeDesc = TrimMatch $matches[1]
                 }
             }
             elseif ($spaces -eq 6 -and $line -match '^\s*url:\s*(.+)$') {
                 if ($currentItem) {
-                    $currentItem.url = $matches[1].Trim('"''').Trim()
+                    $currentItem.url = TrimMatch $matches[1]
                 }
             }
             elseif ($spaces -eq 6 -and $line -match '^\s*isImage:\s*(.+)$') {
@@ -471,70 +480,84 @@ function ParseCategoryYaml {
         }
         # Parse conceptualContent
         elseif ($inSection -eq 'conceptualContent') {
-            if ($spaces -eq 0 -and $line -match '^\s*title:\s*(.*)$') {
-                $result.conceptualContent.title = $matches[1].Trim('"''').Trim()
-            }
-            elseif ($spaces -eq 0 -and $line -match '^\s*summary:\s*(.*)$') {
-                $result.conceptualContent.summary = $matches[1].Trim('"''').Trim()
-            }
-            elseif ($line -match '^\s*items:') {
-                continue
-            }
-            elseif ($spaces -eq 4 -and $line -match '^\s*-\s*title:\s*(.+)$') {
-                # New conceptual content card
-                $currentItem = @{
-                    title = $matches[1].Trim('"''').Trim()
-                    summary = ''
-                    links = @()
+            # Track parsing context: 'section-meta' | 'card-list' | 'link-list'
+            $parseContext = $null
+
+            # Section metadata (title/summary at 0 or 2 spaces)
+            if ($spaces -le 2) {
+                if ($line -match '^\s*title:\s*(.*)$') {
+                    $result.conceptualContent.title = TrimMatch $matches[1]
+                    continue
                 }
-                $result.conceptualContent.items += $currentItem
-            }
-            elseif ($spaces -eq 6 -and $line -match '^\s*summary:\s*(.*)$') {
-                if ($currentItem) {
-                    $currentItem.summary = $matches[1].Trim('"''').Trim()
+                elseif ($line -match '^\s*summary:\s*(.*)$') {
+                    $result.conceptualContent.summary = TrimMatch $matches[1]
+                    continue
+                }
+                elseif ($line -match '^\s*items:') {
+                    $parseContext = 'card-list'
+                    continue
                 }
             }
-            elseif ($spaces -eq 6 -and $line -match '^\s*links:') {
-                continue
+
+            # Card metadata (4-6 spaces: title, summary, links keyword)
+            if ($spaces -ge 4 -and $spaces -le 6) {
+                if ($line -match '^\s*-\s*title:\s*(.+)$') {
+                    # New card
+                    $currentItem = @{
+                        title = TrimMatch $matches[1]
+                        summary = ''
+                        links = @()
+                    }
+                    $result.conceptualContent.items += $currentItem
+                    $parseContext = 'card-meta'
+                    continue
+                }
+                elseif ($currentItem -and $line -match '^\s*summary:\s*(.*)$') {
+                    $currentItem.summary = TrimMatch $matches[1]
+                    continue
+                }
+                elseif ($line -match '^\s*links:') {
+                    $parseContext = 'link-list'
+                    continue
+                }
             }
-            # Support both 6-space and 8-space indentation for link items (YAML inconsistency)
-            elseif (($spaces -eq 6 -or $spaces -eq 8) -and $line -match '^\s*-\s*(?:url|text):\s*(.+)$') {
-                # New link (can start with either url or text)
-                $currentLink = @{
-                    url = ''
-                    text = ''
-                    itemType = ''
-                    typeDesc = ''
+
+            # Link items (6+ spaces: new link with dash, or properties of current link)
+            if ($spaces -ge 6) {
+                # New link (starts with dash)
+                if ($line -match '^\s*-\s*(?:url|text):\s*(.+)$') {
+                    $currentLink = @{
+                        url = ''
+                        text = ''
+                        itemType = ''
+                        typeDesc = ''
+                    }
+                    if ($currentItem) {
+                        $currentItem.links += $currentLink
+                    }
+                    # Parse first property
+                    if ($line -match '^\s*-\s*url:\s*(.+)$') {
+                        $currentLink.url = TrimMatch $matches[1]
+                    } elseif ($line -match '^\s*-\s*text:\s*(.+)$') {
+                        $currentLink.text = TrimMatch $matches[1]
+                    }
+                    continue
                 }
-                if ($currentItem) {
-                    $currentItem.links += $currentLink
-                }
-                # Parse the first property
-                if ($line -match '^\s*-\s*url:\s*(.+)$') {
-                    $currentLink.url = $matches[1].Trim('"''').Trim()
-                } elseif ($line -match '^\s*-\s*text:\s*(.+)$') {
-                    $currentLink.text = $matches[1].Trim('"''').Trim()
-                }
-            }
-            # Support both 8-space and 10-space indentation for link properties
-            elseif (($spaces -eq 8 -or $spaces -eq 10) -and $line -match '^\s*url:\s*(.+)$') {
+
+                # Link properties (no dash)
                 if ($currentLink) {
-                    $currentLink.url = $matches[1].Trim('"''').Trim()
-                }
-            }
-            elseif (($spaces -eq 8 -or $spaces -eq 10) -and $line -match '^\s*text:\s*(.+)$') {
-                if ($currentLink) {
-                    $currentLink.text = $matches[1].Trim('"''').Trim()
-                }
-            }
-            elseif (($spaces -eq 8 -or $spaces -eq 10) -and $line -match '^\s*itemType:\s*(.+)$') {
-                if ($currentLink) {
-                    $currentLink.itemType = $matches[1].Trim('"''').Trim()
-                }
-            }
-            elseif (($spaces -eq 8 -or $spaces -eq 10) -and $line -match '^\s*typeDesc:\s*(.+)$') {
-                if ($currentLink) {
-                    $currentLink.typeDesc = $matches[1].Trim('"''').Trim()
+                    if ($line -match '^\s*url:\s*(.+)$') {
+                        $currentLink.url = TrimMatch $matches[1]
+                    }
+                    elseif ($line -match '^\s*text:\s*(.+)$') {
+                        $currentLink.text = TrimMatch $matches[1]
+                    }
+                    elseif ($line -match '^\s*itemType:\s*(.+)$') {
+                        $currentLink.itemType = TrimMatch $matches[1]
+                    }
+                    elseif ($line -match '^\s*typeDesc:\s*(.+)$') {
+                        $currentLink.typeDesc = TrimMatch $matches[1]
+                    }
                 }
             }
         }

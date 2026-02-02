@@ -50,8 +50,8 @@ if (-not (Test-Path $Path)) {
     exit 1
 }
 
-# Image extensions to process
-$imageExtensions = @('.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp')
+# Image and diagram extensions to process
+$imageExtensions = @('.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.dot')
 
 # Extract topic from path
 function Get-TopicFromPath {
@@ -205,9 +205,8 @@ foreach ($mdFile in $markdownFiles) {
     $lang = $topicInfo.Lang
     $topic = $topicInfo.Topic
     
-    # Calculate relative path to media/loc
-    $targetMediaDir = Join-Path $repoRoot "media\loc\$lang\$topic"
-    $relativePath = Get-RelativePath -FromFile $mdFile.FullName -ToFile $targetMediaDir
+    # Use absolute path from repo root for Mintlify
+    $absolutePath = "/media/loc/$lang/$topic"
     
     foreach ($line in $content) {
         $updatedLine = $line
@@ -215,7 +214,7 @@ foreach ($mdFile in $markdownFiles) {
         # Process each mapping
         foreach ($oldPath in $fileMappings.Keys) {
             $newFileName = $fileMappings[$oldPath]
-            $newPath = "$relativePath/$newFileName"
+            $newPath = "$absolutePath/$newFileName"
             
             # Handle reference-style: [img1]: media/file.png
             if ($updatedLine -match "\[([^\]]+)\]:\s*$([regex]::Escape($oldPath))") {

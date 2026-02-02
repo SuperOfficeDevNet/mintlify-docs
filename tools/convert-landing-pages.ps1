@@ -246,6 +246,47 @@ function TrimMatch {
     return $value.Trim().Trim('"').Trim("'")
 }
 
+function Resolve-UrlPath {
+    param(
+        [string]$url,
+        [string]$currentFilePath
+    )
+
+    # Only process URLs with ../ parent references
+    if ($url -notmatch '\.\.') {
+        return $url
+    }
+
+    # Get the directory path relative to repo root
+    $repoRoot = Split-Path -Parent $PSScriptRoot
+    $relativePath = $currentFilePath.Replace($repoRoot, '').TrimStart('\', '/')
+    $currentDir = Split-Path -Parent $relativePath -ErrorAction SilentlyContinue
+    if ([string]::IsNullOrEmpty($currentDir)) {
+        $currentDir = ''
+    }
+    $currentDir = $currentDir -replace '\\', '/'
+
+    # Combine current directory with relative URL
+    $combined = "$currentDir/$url" -replace '\\', '/'
+
+    # Resolve ../ sequences
+    $parts = $combined -split '/'
+    $resolved = [System.Collections.ArrayList]@()
+
+    foreach ($part in $parts) {
+        if ($part -eq '..') {
+            if ($resolved.Count -gt 0) {
+                [void]$resolved.RemoveAt($resolved.Count - 1)
+            }
+        } elseif ($part -and $part -ne '.') {
+            [void]$resolved.Add($part)
+        }
+    }
+
+    # Return absolute path from repo root
+    return '/' + ($resolved -join '/')
+}
+
 function Test-LandingPageYaml {
     param([string]$content)
 
@@ -702,8 +743,9 @@ function ConvertTo-CategoryMdx {
 
                 foreach ($link in $item.links) {
                     $icon = Get-ItemTypeIcon -itemType $link.itemType
-                    $linkText = $link.text.Trim('"''').Trim()
-                    $url = $link.url.Trim('"''').Trim() -replace '\.md$', '' -replace '\.mdx$', '' -replace '\.yml$', ''
+                    $linkText = $link.text.Trim()
+                    $url = $link.url.Trim() -replace '\.md$', '' -replace '\.mdx$', '' -replace '\.yml$', ''
+                    $url = Resolve-UrlPath -url $url -currentFilePath $filePath
 
                     $mdx += "  <li><Icon icon=`"$icon`" /> <a href=`"$url`">$linkText</a></li>`n"
                 }
@@ -743,8 +785,9 @@ function ConvertTo-CategoryMdx {
                     $mdx += "<ul className=`"additional-links`">`n"
 
                     foreach ($link in $item.links) {
-                        $linkText = $link.text.Trim('`"''').Trim()
-                        $url = $link.url.Trim('`"''').Trim() -replace '\.md$', '' -replace '\.mdx$', '' -replace '\.yml$', ''
+                        $linkText = $link.text.Trim()
+                        $url = $link.url.Trim() -replace '\.md$', '' -replace '\.mdx$', '' -replace '\.yml$', ''
+                        $url = Resolve-UrlPath -url $url -currentFilePath $filePath
 
                         $mdx += "  <li><a href=`"$url`">$linkText</a></li>`n"
                     }
@@ -821,7 +864,8 @@ function ConvertTo-SubCategoryMdx {
             $mdx += "  <ul>`n"
             foreach ($link in $linkList.links) {
                 # Strip any quotes first, then remove file extensions
-                $url = $link.url.Trim('"''').Trim() -replace '\.md$', '' -replace '\.mdx$', ''
+                $url = $link.url.Trim() -replace '\.md$', '' -replace '\.mdx$', ''
+                $url = Resolve-UrlPath -url $url -currentFilePath $filePath
                 $mdx += "    <li><a href=`"$url`">$($link.text)</a></li>`n"
             }
             $mdx += "  </ul>`n"

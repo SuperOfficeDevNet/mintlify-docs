@@ -157,7 +157,7 @@ function Convert-LinksInFile {
         
         # Process inline links: [text](path/file.md) or [text](path/file.md#anchor)
         # But skip in-file anchors: [text](#anchor)
-        $line = [regex]::Replace($line, '\[([^\]]+)\]\(([^\)#]+)(\.mdx?)?(\#[^\)]*)?(\))', {
+        $line = [regex]::Replace($line, '\[([^\]]+)\]\(([^\)#]+?)(\.mdx?)?(\#[^\)]*)?(\))', {
             param($match)
             $text = $match.Groups[1].Value
             $path = $match.Groups[2].Value

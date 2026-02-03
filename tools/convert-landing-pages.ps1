@@ -38,7 +38,9 @@
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$Path
+    [string]$Path,
+    
+    [switch]$SkipReference
 )
 
 # Icon mapping from DocFx itemType to FontAwesome icons
@@ -904,6 +906,10 @@ if ($isFile) {
     # Find all .yml files recursively, excluding toc.yml
     $files = Get-ChildItem -Path $Path -Filter "*.yml" -Recurse -File |
         Where-Object { $_.Name -ne 'toc.yml' }
+    
+    if ($SkipReference) {
+        $files = $files | Where-Object { $_.FullName -notmatch '[\\/]reference[\\/]' }
+    }
 }
 
 Write-Host "Found $($files.Count) YAML file(s) to check" -ForegroundColor Cyan

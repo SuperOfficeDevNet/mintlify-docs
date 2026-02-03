@@ -35,7 +35,9 @@
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$Path
+    [string]$Path,
+    
+    [switch]$SkipReference
 )
 
 # Resolve path
@@ -57,6 +59,13 @@ if ($isFile) {
     $files = @($item)
 } else {
     $files = Get-ChildItem -Path $Path -Include "*.md", "*.mdx" -Recurse -File
+}
+
+if ($SkipReference -and $files.Count -gt 1) {
+    $allFiles = $files.Count
+    $files = $files | Where-Object { $_.FullName -notmatch '[\\/]reference[\\/]' }
+    $skipped = $allFiles - $files.Count
+    Write-Host "Found $($files.Count) markdown file(s) ($skipped skipped in reference folders)" -ForegroundColor Yellow
 }
 
 # Function to check if file needs mdx conversion (multiple block quotes)

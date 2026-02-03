@@ -28,7 +28,9 @@
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$Path
+    [string]$Path,
+    
+    [switch]$SkipReference
 )
 
 # Resolve path (handle relative paths from repo root)
@@ -45,7 +47,14 @@ if (-not (Test-Path $Path)) {
 # Get all index.md and index.mdx files
 $files = Get-ChildItem -Path $Path -Recurse -File | Where-Object { $_.Name -eq "index.md" -or $_.Name -eq "index.mdx" }
 
-Write-Host "Processing $($files.Count) index files in: $Path" -ForegroundColor Cyan
+if ($SkipReference) {
+    $allFiles = $files.Count
+    $files = $files | Where-Object { $_.FullName -notmatch '[\\/]reference[\\/]' }
+    $skipped = $allFiles - $files.Count
+    Write-Host "Processing $($files.Count) index files ($skipped skipped in reference folders) in: $Path" -ForegroundColor Cyan
+} else {
+    Write-Host "Processing $($files.Count) index files in: $Path" -ForegroundColor Cyan
+}
 
 $filesModified = 0
 $filesSkipped = 0

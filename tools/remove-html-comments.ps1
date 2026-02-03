@@ -32,7 +32,9 @@ param(
     [string]$Path,
     
     [Parameter(Mandatory=$false)]
-    [switch]$KeepMarkdownlint
+    [switch]$KeepMarkdownlint,
+    
+    [switch]$SkipReference
 )
 
 # Function to remove consecutive blank lines (max 1 blank line allowed)
@@ -75,7 +77,14 @@ if (-not (Test-Path $Path)) {
 # Get all markdown files
 $files = Get-ChildItem -Path $Path -Include "*.md", "*.mdx" -Recurse -File
 
-Write-Host "Processing $($files.Count) markdown files in: $Path" -ForegroundColor Cyan
+if ($SkipReference) {
+    $allFiles = $files.Count
+    $files = $files | Where-Object { $_.FullName -notmatch '[\\/]reference[\\/]' }
+    $skipped = $allFiles - $files.Count
+    Write-Host "Found $($files.Count) markdown file(s) ($skipped skipped in reference folders)" -ForegroundColor Cyan
+} else {
+    Write-Host "Processing $($files.Count) markdown files in: $Path" -ForegroundColor Cyan
+}
 Write-Host "Keep markdownlint directives: $KeepMarkdownlint" -ForegroundColor Cyan
 
 $totalRemoved = 0

@@ -29,7 +29,9 @@
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$Path
+    [string]$Path,
+    
+    [switch]$SkipReference
 )
 
 # Resolve path
@@ -117,6 +119,10 @@ function Find-IncludeReferences {
     
     $references = @()
     $allFiles = Get-ChildItem -Path $SearchPath -Include "*.md", "*.mdx" -Recurse -File
+    
+    if ($SkipReference) {
+        $allFiles = $allFiles | Where-Object { $_.FullName -notmatch '[\\/]reference[\\/]' }
+    }
     
     $baseFileName = [System.IO.Path]::GetFileNameWithoutExtension($IncludeFileName)
     

@@ -31,7 +31,9 @@
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$Path
+    [string]$Path,
+    
+    [switch]$SkipReference
 )
 
 # Resolve path
@@ -239,7 +241,15 @@ Write-Host "Processing: $Path" -ForegroundColor Cyan
 # Find all markdown/mdx files
 $files = Get-ChildItem -Path $Path -Include "*.md", "*.mdx" -Recurse -File
 
-Write-Host "Found $($files.Count) markdown file(s)" -ForegroundColor Cyan
+if ($SkipReference) {
+    $allFiles = $files.Count
+    $files = $files | Where-Object { $_.FullName -notmatch '[\\/]reference[\\/]' }
+    $skipped = $allFiles - $files.Count
+    Write-Host "Found $($files.Count) markdown file(s) ($skipped skipped in reference folders)" -ForegroundColor Cyan
+}
+else {
+    Write-Host "Found $($files.Count) markdown file(s)" -ForegroundColor Cyan
+}
 
 $processed = 0
 

@@ -11,8 +11,14 @@
     Path to the folder containing markdown files (relative to repo root or absolute).
     This is a positional parameter - can be used without the -Path flag.
 
+.PARAMETER SkipReference
+    Skip processing files in 'reference' folders at any level.
+
 .EXAMPLE
     .\convert-md-to-mdx.ps1 en/developer-portal
+
+.EXAMPLE
+    .\convert-md-to-mdx.ps1 en/api -SkipReference
 
 .NOTES
     - Renames files in place (no backup created - use git to revert if needed)
@@ -22,7 +28,9 @@
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$Path
+    [string]$Path,
+    
+    [switch]$SkipReference
 )
 
 # Resolve path
@@ -41,7 +49,14 @@ Write-Host "Processing: $Path" -ForegroundColor Cyan
 # Find all .md files
 $mdFiles = Get-ChildItem -Path $Path -Filter "*.md" -Recurse -File
 
-Write-Host "Found $($mdFiles.Count) .md file(s)" -ForegroundColor Cyan
+if ($SkipReference) {
+    $allFiles = $mdFiles.Count
+    $mdFiles = $mdFiles | Where-Object { $_.FullName -notmatch '[\\/]reference[\\/]' }
+    $skipped = $allFiles - $mdFiles.Count
+    Write-Host "Found $($mdFiles.Count) .md file(s) ($skipped skipped in reference folders)" -ForegroundColor Cyan
+} else {
+    Write-Host "Found $($mdFiles.Count) .md file(s)" -ForegroundColor Cyan
+}
 
 $converted = 0
 

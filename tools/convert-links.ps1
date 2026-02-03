@@ -27,7 +27,9 @@
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$Path
+    [string]$Path,
+    
+    [switch]$SkipReference
 )
 
 # Resolve path
@@ -49,6 +51,10 @@ if ($isFile) {
     $files = @($item)
 } else {
     $files = Get-ChildItem -Path $Path -Include "*.md", "*.mdx" -Recurse -File
+    
+    if ($SkipReference) {
+        $files = $files | Where-Object { $_.FullName -notmatch '[\\/]reference[\\/]' }
+    }
 }
 
 # Media extensions to skip

@@ -25,8 +25,16 @@
     Path to folder to migrate (relative to repo root or absolute).
     This is a positional parameter - can be used without the -Path flag.
 
+.PARAMETER SkipReference
+    Skip processing files in 'reference' folders at any level.
+    Useful when reference files have already been migrated and you want to
+    process only non-reference content faster.
+
 .EXAMPLE
     .\migrate-folder.ps1 en/mobile
+
+.EXAMPLE
+    .\migrate-folder.ps1 en/api -SkipReference
 
 .NOTES
     - Run convert-toc-to-mintlify.ps1 separately for now (updates docs.json)
@@ -35,7 +43,9 @@
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$Path
+    [string]$Path,
+    
+    [switch]$SkipReference
 )
 
 # Resolve paths
@@ -99,7 +109,7 @@ for ($i = 0; $i -lt $scripts.Count; $i++) {
     }
 
     try {
-        $output = & $scriptPath $Path 2>&1
+        $output = & $scriptPath $Path -SkipReference:$SkipReference 2>&1
 
         if ($LASTEXITCODE -eq 0 -or $null -eq $LASTEXITCODE) {
             # Show the output from the script

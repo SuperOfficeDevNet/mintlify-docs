@@ -40,6 +40,20 @@
   "metadata": {
     "timestamp": false
   },
+  "api": {
+    "playground": {
+      "display": "none"
+    },
+    "examples": {
+      "languages": [
+        "csharp",
+        "javascript",
+        "php",
+        "python"
+      ],
+      "defaults": "required"
+    }
+  },
   "navigation": {
     "languages": [
       {
@@ -1317,8 +1331,380 @@
                       {
                         "group": "Endpoints",
                         "pages": [
-                          "en/api/web-services/endpoints/agents-webapi/index",
-                          "en/api/web-services/endpoints/rest-webapi/index",
+                          {
+                            "group": "HTTP RPC Agent API",
+                            "pages": [
+                              "en/api/web-services/endpoints/agents-webapi/index",
+                              {
+                                "group": "Reference",
+                                "openapi": {
+                                  "source": "en/api/web-services/endpoints/agents-webapi/reference/openapi-v3-AppointmentAgent.json",
+                                  "directory": "api/reference/restful/agent"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "group": "RESTful REST API",
+                            "pages": [
+                              "en/api/web-services/endpoints/rest-webapi/index",
+                              {
+                                "group": "Reference",
+                                "pages": [
+                                  {
+                                    "group": "Appointment",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Appointment.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Archive",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Archive.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Attachment",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Attachment.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "BatchTask",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-BatchTask.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "ChatSession",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-ChatSession.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "ChatTopic",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-ChatTopic.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Contact",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Contact.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Copilot",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Copilot.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "CopilotDataSource",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-CopilotDataSource.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "CRMScript",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-CRMScript.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Dash",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Dash.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "DashTheme",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-DashTheme.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "DashTile",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-DashTile.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "DashTileDefinition",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-DashTileDefinition.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Document",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Document.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "ForeignApp",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-ForeignApp.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Hierarchy",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Hierarchy.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "License",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-License.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "List",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-List.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "MDOList",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-MDOList.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Person",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Person.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Preference",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Preference.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "PreferenceDescription",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-PreferenceDescription.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "PreferenceDescriptionLine",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-PreferenceDescriptionLine.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Presence",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Presence.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Pricelist",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Pricelist.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Product",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Product.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Project",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Project.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "ProjectMember",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-ProjectMember.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Relation",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Relation.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "RelationDefinition",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-RelationDefinition.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Role",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Role.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Sale",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Sale.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "SaleStakeholder",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-SaleStakeholder.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Schema",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Schema.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Script",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Script.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "ShipmentMessage",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-ShipmentMessage.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "ShipmentMessageBlock",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-ShipmentMessageBlock.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "String",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-String.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "SystemEvent",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-SystemEvent.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Table",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Table.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Ticket",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Ticket.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "TicketMessage",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-TicketMessage.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "TicketRelation",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-TicketRelation.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "TicketRelationDefinition",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-TicketRelationDefinition.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "TicketType",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-TicketType.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "TimeZone",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-TimeZone.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "TriggerScript",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-TriggerScript.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "User",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-User.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  },
+                                  {
+                                    "group": "Webhook",
+                                    "openapi": {
+                                      "source": "en/api/web-services/endpoints/rest-webapi/reference/openapi-v3-Webhook.json",
+                                      "directory": "api-reference/restful/rest"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
                           "en/api/web-services/endpoints/get-webapi-version",
                           "en/api/web-services/endpoints/http-headers",
                           {

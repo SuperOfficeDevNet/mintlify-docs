@@ -1,4 +1,4 @@
-### YamlMime:SubCategory 
+### YamlMime:SubCategory
 
 yamlMime: SubCategory
 title: Ärende
@@ -167,7 +167,7 @@ landingContent:
         - text: REST
           url: ../../en/api/reference/restful/rest/Ticket/index.md
         - text: SOAP (services88)
-          url: ../../en/api/reference/soap/Services88/Ticket/index.md
+          url: ../../en/api/web-services/endpoints/soap/reference/Services88/Ticket/index.md
         - text: SOAP (ticket-port)
           url: ../../en/api/reference/soap/customer-service/ports/ticket/index.md
       - itemType: list

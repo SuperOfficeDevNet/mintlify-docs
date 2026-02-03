@@ -170,7 +170,7 @@ landingContent:
         - text: REST
           url: ../api/reference/restful/rest/Project/index.md
         - text: SOAP (services88)
-          url: ../api/reference/soap/Services88/Project/index.md
+          url: ../api/web-services/endpoints/soap/reference/Services88/Project/index.md
       - itemType: list
         typeDesc: how-to-guide
         links:

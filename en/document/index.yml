@@ -115,7 +115,7 @@ landingContent:
         typeDesc: video
         links:
         - text: Getting started with SharePoint for documents storage
-          url: https://www.youtube.com/watch?v=9QHJKkqDlzY 
+          url: https://www.youtube.com/watch?v=9QHJKkqDlzY
 
   - title: Google Workspace
     linkLists:
@@ -207,7 +207,7 @@ landingContent:
         - text: REST
           url: ../api/reference/restful/rest/Document/index.md
         - text: SOAP (services88)
-          url: ../api/reference/soap/Services88/Document/index.md
+          url: ../api/web-services/endpoints/soap/reference/Services88/Document/index.md
 
   - title: Database tables
     linkLists:

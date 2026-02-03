@@ -1,4 +1,4 @@
-﻿### YamlMime:SubCategory 
+﻿### YamlMime:SubCategory
 
 yamlMime: SubCategory
 title: Salg og tilbud
@@ -41,7 +41,7 @@ landingContent:
         - text: Legge til salgstype (liste)
           url: admin/sale-type.md
         - text: Legge til salgsfase (liste)
-          url: admin/sale-stage.md 
+          url: admin/sale-stage.md
         - text: Legge til valuta (liste)
           url: admin/add-currency.md
       - itemType: library_books
@@ -198,7 +198,7 @@ landingContent:
         - text: REST
           url: ../../en/api/reference/restful/rest/Sale/index.md
         - text: SOAP (services88)
-          url: ../../en/api/reference/soap/Services88/Sale/index.md
+          url: ../../en/api/web-services/endpoints/soap/reference/Services88/Sale/index.md
       - itemType: list
         typeDesc: how-to-guide
         links:

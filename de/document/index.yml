@@ -207,7 +207,7 @@ landingContent:
         - text: REST
           url: ../../en/api/reference/restful/rest/Document/index.md
         - text: SOAP (services88)
-          url: ../../en/api/reference/soap/Services88/Document/index.md
+          url: ../../en/api/web-services/endpoints/soap/reference/Services88/Document/index.md
 
   - title: Datenbanktabellen
     linkLists:

@@ -1,4 +1,4 @@
-﻿### YamlMime:SubCategory 
+﻿### YamlMime:SubCategory
 
 yamlMime: SubCategory
 title: Verkoop en offerte
@@ -41,7 +41,7 @@ landingContent:
         - text: Verkooptype toevoegen (lijst)
           url: admin/sale-type.md
         - text: Verkoopfase toevoegen (lijst)
-          url: admin/sale-stage.md 
+          url: admin/sale-stage.md
         - text: Valuta toevoegen (lijst)
           url: admin/add-currency.md
       - itemType: library_books
@@ -198,7 +198,7 @@ landingContent:
         - text: REST
           url: ../../en/api/reference/restful/rest/Sale/index.md
         - text: SOAP (services88)
-          url: ../../en/api/reference/soap/Services88/Sale/index.md
+          url: ../../en/api/web-services/endpoints/soap/reference/Services88/Sale/index.md
       - itemType: list
         typeDesc: how-to-guide
         links:

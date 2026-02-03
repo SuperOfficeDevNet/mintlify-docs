@@ -41,7 +41,7 @@ landingContent:
         - text: Add sale type (list)
           url: admin/sale-type.md
         - text: Add sale stage (list)
-          url: admin/sale-stage.md 
+          url: admin/sale-stage.md
         - text: Add currency (list)
           url: admin/add-currency.md
       - itemType: library_books
@@ -198,7 +198,7 @@ landingContent:
         - text: REST
           url: ../api/reference/restful/rest/Sale/index.md
         - text: SOAP (services88)
-          url: ../api/reference/soap/Services88/Sale/index.md
+          url: ../api/web-services/endpoints/soap/reference/Services88/Sale/index.md
       - itemType: list
         typeDesc: how-to-guide
         links:

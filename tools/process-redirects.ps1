@@ -39,7 +39,9 @@
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$Path
+    [string]$Path,
+    
+    [switch]$SkipReference
 )
 
 # Resolve paths
@@ -66,8 +68,9 @@ $foldersDeleted = 0
 $redirectsAdded = 0
 $warnings = @()
 
-# Load docs.json
-$docsJson = Get-Content $docsJsonPath -Raw | ConvertFrom-Json
+# Load docs.json - use System.IO.File to preserve UTF-8 encoding
+$docsJsonText = [System.IO.File]::ReadAllText($docsJsonPath)
+$docsJson = $docsJsonText | ConvertFrom-Json
 
 # Ensure redirects array exists
 $hasRedirects = $docsJson.PSObject.Properties.Name -contains 'redirects'
@@ -209,8 +212,16 @@ function Test-EmptyDirectory {
 # Process all .md and .mdx files
 $files = Get-ChildItem -Path $Path -Recurse -File -Include "*.md", "*.mdx"
 
-Write-Host "Processing redirects in: $Path" -ForegroundColor Cyan
-Write-Host "Found $($files.Count) markdown files" -ForegroundColor Cyan
+if ($SkipReference) {
+    $allFiles = $files.Count
+    $files = $files | Where-Object { $_.FullName -notmatch '[\\/]reference[\\/]' }
+    $skipped = $allFiles - $files.Count
+    Write-Host "Processing redirects in: $Path" -ForegroundColor Cyan
+    Write-Host "Found $($files.Count) markdown files ($skipped skipped in reference folders)" -ForegroundColor Cyan
+} else {
+    Write-Host "Processing redirects in: $Path" -ForegroundColor Cyan
+    Write-Host "Found $($files.Count) markdown files" -ForegroundColor Cyan
+}
 
 foreach ($file in $files) {
     $content = Get-Content $file.FullName -Raw

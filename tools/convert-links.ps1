@@ -60,39 +60,39 @@ function Test-RelativeFileExists {
         [string]$BasePath,
         [string]$RelativePath
     )
-    
+
     # Remove anchor if present
     $pathWithoutAnchor = $RelativePath -replace '#.*$', ''
-    
+
     # Try with .md
     $testPath = Join-Path $BasePath ($pathWithoutAnchor + '.md')
     if (Test-Path $testPath) {
         return $true
     }
-    
+
     # Try with .mdx
     $testPath = Join-Path $BasePath ($pathWithoutAnchor + '.mdx')
     if (Test-Path $testPath) {
         return $true
     }
-    
+
     return $false
 }
 
 # Function to convert links in a file
 function Convert-LinksInFile {
     param([string[]]$Lines, [string]$FilePath)
-    
+
     $result = @()
     $inCodeBlock = $false
     $inFrontmatter = $false
     $modified = $false
     $baseDir = Split-Path -Parent $FilePath
-    
+
     for ($i = 0; $i -lt $Lines.Length; $i++) {
         $line = $Lines[$i]
         $originalLine = $line
-        
+
         # Track frontmatter
         if ($i -eq 0 -and $line -eq '---') {
             $inFrontmatter = $true
@@ -104,20 +104,25 @@ function Convert-LinksInFile {
             $result += $line
             continue
         }
-        
+
         # Track code blocks
         if ($line -match '^```') {
             $inCodeBlock = -not $inCodeBlock
             $result += $line
             continue
         }
-        
+
         # Skip frontmatter, code blocks, import statements, xref
         if ($inFrontmatter -or $inCodeBlock -or $line -match '^import\s+' -or $line -match '<xref') {
             $result += $line
             continue
         }
-        
+
+        # Convert XML see cref tags to inline code: <see cref="...">Text</see> -> `Text`
+        if ($line -match '<see cref=') {
+            $line = $line -replace '<see cref="[^"]+">([^<]+)</see>', '`$1`'
+        }
+
         # Process reference-style links: [1]: path/file.md or [1]: path/file.md#anchor
         # Pattern: [ref]: path with optional extension and anchor
         $line = [regex]::Replace($line, '\[([^\]]+)\]:\s+([^\s#]+?)(\.mdx?)?(\#[^\s]*)?(\s|$)', {
@@ -127,17 +132,17 @@ function Convert-LinksInFile {
             $ext = $match.Groups[3].Value
             $anchor = $match.Groups[4].Value
             $trailing = $match.Groups[5].Value
-            
+
             # Skip if absolute URL
             if ($path -match '^https?://') {
                 return $match.Value
             }
-            
+
             # Skip if .yml reference
             if ($ext -match '\.yml$') {
                 return $match.Value
             }
-            
+
             # If it's not a relative path and doesn't have an extension, skip it
             # (it's likely an absolute path or external reference)
             if ([string]::IsNullOrEmpty($ext) -and $path -notmatch '^\.\.?/' -and $path -notmatch '/') {
@@ -146,15 +151,15 @@ function Convert-LinksInFile {
                     return $match.Value
                 }
             }
-            
+
             # Add ./ prefix if not present and not starting with ../
             if ($path -notmatch '^\.\.?/') {
                 $path = './' + $path
             }
-            
+
             return "[$ref]: $path$anchor$trailing"
         })
-        
+
         # Process inline links: [text](path/file.md) or [text](path/file.md#anchor)
         # But skip in-file anchors: [text](#anchor)
         $line = [regex]::Replace($line, '\[([^\]]+)\]\(([^\)#]+?)(\.mdx?)?(\#[^\)]*)?(\))', {
@@ -163,29 +168,29 @@ function Convert-LinksInFile {
             $path = $match.Groups[2].Value
             $ext = $match.Groups[3].Value
             $anchor = $match.Groups[4].Value
-            
+
             # Skip if no extension (means it's not a .md/.mdx link)
             if ([string]::IsNullOrEmpty($ext)) {
                 return $match.Value
             }
-            
+
             # Skip if absolute URL
             if ($path -match '^https?://') {
                 return $match.Value
             }
-            
+
             # Skip if media file
             $fullPath = $path + $ext
             $extension = [System.IO.Path]::GetExtension($fullPath).ToLower()
             if ($mediaExtensions -contains $extension) {
                 return $match.Value
             }
-            
+
             # Skip .yml files
             if ($ext -match '\.yml$') {
                 return $match.Value
             }
-            
+
             # Add ./ prefix if not present and not starting with ../
             if ($path -notmatch '^\.\.?/') {
                 # Check if this is actually a relative path by testing if file exists
@@ -197,17 +202,17 @@ function Convert-LinksInFile {
                     return $match.Value
                 }
             }
-            
+
             return "[$text]($path$anchor)"
         })
-        
+
         if ($line -ne $originalLine) {
             $modified = $true
         }
-        
+
         $result += $line
     }
-    
+
     return @{
         Lines = $result
         Modified = $modified
@@ -221,13 +226,13 @@ $modifiedCount = 0
 
 foreach ($file in $files) {
     $content = [System.IO.File]::ReadAllLines($file.FullName)
-    
+
     $convertResult = Convert-LinksInFile -Lines $content -FilePath $file.FullName
-    
+
     if ($convertResult.Modified) {
         $utf8 = New-Object System.Text.UTF8Encoding $false
         [System.IO.File]::WriteAllLines($file.FullName, $convertResult.Lines, $utf8)
-        
+
         Write-Host "  $($file.Name)" -ForegroundColor Yellow
         $processedFiles++
         $modifiedCount++

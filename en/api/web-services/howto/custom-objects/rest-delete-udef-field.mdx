@@ -1,0 +1,66 @@
+---
+uid: ws-delete-custom-field
+title: How to delete a user-defined field
+description: Describes how to delete a user-defined field using web services
+keywords: udef, user-defined field, custom field
+author: AnthonyYates
+date: 03.11.2022
+content_type: howto
+audience: api
+audience_tooltip: SuperOffice APIs and database
+redirect_from:
+  - /en/custom-objects/udef/howto/services/rest-delete-udef-field
+  - /en/api/netserver/web-services/howto/custom-objects/rest-delete-udef-field
+---
+
+import HowToGuideStepsIntro from "./includes/how-to-guide-steps-intro.md";
+
+# How to delete a user-defined field using the web services API
+
+This guide describes how to delete a user-defined field using the web services API.
+
+## Steps
+
+<HowToGuideStepsIntro />
+
+<Tabs>
+<Tab title="RESTful REST API">
+Describes how-to delete a Contact user-defined field details by prog-id or label. This deletes the admin version of the field. The layout needs to be published before the change is visible.
+
+1. Delete the user-defined field:
+
+    **Delete by ProgId**
+
+    ```http
+    DELETE https://\{\{env\}\}.superoffice.com/\{\{tenant\}\}/api/v1/Contact/UdefLayout/SuperOffice:11
+    Authorization: Bearer \{\{token\}\}
+    Accept: application/json; charset=utf-8
+    ```
+
+    **Delete by FieldLabel**
+
+    ```http
+    DELETE https://\{\{env\}\}.superoffice.com/\{\{tenant\}\}/api/v1/Contact/UdefLayout/My New Number
+    Authorization: Bearer \{\{token\}\}
+    Accept: application/json; charset=utf-8
+    ```
+
+1. Make sure the Contact user-defined fields are not currently being updated.
+
+    ```http
+    GET https://\{\{env\}\}.superoffice.com/\{\{tenant\}\}/api/v1/Contact/UdefLayout/Publish HTTP/1.1
+    Authorization: Bearer \{\{token\}\}
+    Accept: application/json; charset=utf-8
+    ```
+
+    Only if the response is False, proceed to publish and complete the delete operation.
+
+1. Publish to finalize the delete changes.
+
+    ```http
+    POST https://\{\{env\}\}.superoffice.com/\{\{tenant\}\}/api/v1/Contact/UdefLayout/Publish HTTP/1.1
+    Authorization: Bearer \{\{token\}\}
+    Accept: application/json; charset=utf-8
+    ```
+</Tab>
+</Tabs>

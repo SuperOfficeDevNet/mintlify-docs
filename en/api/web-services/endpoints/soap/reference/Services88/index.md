@@ -1,3 +1,8 @@
+---
+title: Services88 reference
+sidebarTitle: Services88
+---
+
 # SOAP web services for Services88
 
 Agent listing contains request and response examples, and WSDL files for **Services88**

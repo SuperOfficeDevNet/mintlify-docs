@@ -548,9 +548,26 @@ function Read-YamlFile {
             }
 
             if ($parentItem) {
+                # Detect the actual child indent by looking ahead for the first list item
+                $expectedChildIndent = $indent + 2  # Default: standard YAML (items: + 2)
+                for ($lookahead = $i + 1; $lookahead -lt $lines.Count; $lookahead++) {
+                    $nextLine = $lines[$lookahead]
+                    if ([string]::IsNullOrWhiteSpace($nextLine)) { continue }
+                    
+                    $nextIndent = 0
+                    if ($nextLine -match '^(\s*)') { $nextIndent = $Matches[1].Length }
+                    $nextContent = $nextLine.Trim()
+                    
+                    # Found a list item - use its indent
+                    if ($nextContent -match '^- name:') {
+                        $expectedChildIndent = $nextIndent
+                        break
+                    }
+                    # Stop if we hit something at same/lower indent (end of this section)
+                    if ($nextIndent -le $indent) { break }
+                }
+                
                 # Push this context onto the stack
-                # Children are at the same indent as the items: line (not +2)
-                $expectedChildIndent = $indent
                 $contextStack += ,@($parentItem, $expectedChildIndent)
                 $inItemsSection = $true
                 $itemsSectionIndent = $indent

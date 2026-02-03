@@ -13,8 +13,14 @@
     Path to the folder containing markdown files (relative to repo root or absolute).
     This is a positional parameter - can be used without the -Path flag.
 
+.PARAMETER SkipReference
+    Skip processing files in 'reference' folders at any level.
+
 .EXAMPLE
     .\convert-tabs.ps1 en/developer-portal
+
+.EXAMPLE
+    .\convert-tabs.ps1 en/api -SkipReference
 
 .NOTES
     - Modifies files in place (no backup created - use git to revert if needed)
@@ -27,7 +33,9 @@
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$Path
+    [string]$Path,
+    
+    [switch]$SkipReference
 )
 
 # Resolve path
@@ -165,10 +173,7 @@ function Convert-TabsInFile {
             for ($t = 0; $t -lt $tabs.Count; $t++) {
                 $tab = $tabs[$t]
                 
-                # Add tab opening
-                $newContent += "<Tab title=`"$($tab.Title)`">"
-                
-                # Clean up tab content
+                # Clean up tab content first
                 $tabContent = $tab.Content
                 
                 # Remove leading blank lines
@@ -180,6 +185,15 @@ function Convert-TabsInFile {
                 while ($tabContent.Count -gt 0 -and [string]::IsNullOrWhiteSpace($tabContent[-1])) {
                     $tabContent = $tabContent[0..($tabContent.Count - 2)]
                 }
+                
+                # Skip empty tabs with warning
+                if ($tabContent.Count -eq 0) {
+                    Write-Warning "Skipping empty tab: '$($tab.Title)' in file: $FilePath"
+                    continue
+                }
+                
+                # Add tab opening
+                $newContent += "<Tab title=`"$($tab.Title)`">"
                 
                 # Add content
                 $newContent += $tabContent
@@ -228,11 +242,20 @@ Write-Host "Processing: $Path" -ForegroundColor Cyan
 # Find all markdown/mdx files
 $files = Get-ChildItem -Path $Path -Include "*.md", "*.mdx" -Recurse -File
 
-Write-Host "Found $($files.Count) markdown file(s)" -ForegroundColor Cyan
+if ($SkipReference) {
+    $allFiles = $files.Count
+    $files = $files | Where-Object { $_.FullName -notmatch '[\\/]reference[\\/]' }
+    $skipped = $allFiles - $files.Count
+    Write-Host "Found $($files.Count) markdown file(s) ($skipped skipped in reference folders)" -ForegroundColor Cyan
+}
+else {
+    Write-Host "Found $($files.Count) markdown file(s)" -ForegroundColor Cyan
+}
 
 $processed = 0
 
 foreach ($file in $files) {
+    Write-Host "  Processing: $($file.Name)" -ForegroundColor Gray
     if (Convert-TabsInFile -FilePath $file.FullName) {
         $processed++
         Write-Host "  Converted: $($file.Name)" -ForegroundColor Green
@@ -248,7 +271,7 @@ if ($processed -gt 0) {
     Write-Host "`nRunning convert-md-to-mdx.ps1..." -ForegroundColor Cyan
     $mdxScript = Join-Path (Split-Path -Parent $PSScriptRoot) "tools\convert-md-to-mdx.ps1"
     if (Test-Path $mdxScript) {
-        & $mdxScript $Path
+        & $mdxScript $Path -SkipReference:$SkipReference
     }
 }
 

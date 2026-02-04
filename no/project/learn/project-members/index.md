@@ -1,7 +1,6 @@
 ---
 uid: help-no-project-members
 title: Prosjektdeltakere
-sidebarTitle: "Overview"
 description: Prosjektdeltakere
 keywords: prosjektdeltake, detaljkortet Prosjektdeltakere, prosjekt, deltaker
 author: SuperOffice RnD

@@ -1,7 +1,6 @@
 ---
 uid: help-no-service-settings
 title: System settings
-sidebarTitle: "Overview"
 description: System settings
 keywords: Service
 author: Bergfrid Dias

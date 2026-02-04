@@ -1,7 +1,6 @@
 ---
 uid: help-no-request-priority
 title: Saksprioriteter
-sidebarTitle: "Overview"
 description: Saksprioriteter
 keywords: saksprioritet, prioritet, eskalering, sak
 author: Hanne Gunnarsson

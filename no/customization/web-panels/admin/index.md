@@ -1,7 +1,6 @@
 ---
 uid: help-no-ui-web-panels
 title: Nettleserfaner
-sidebarTitle: "Overview"
 description: Nettleserfaner
 keywords: nettleserfane, www fane
 author: digitaldiina

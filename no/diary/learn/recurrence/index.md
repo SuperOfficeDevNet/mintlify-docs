@@ -1,7 +1,6 @@
 ---
 uid: help-no-recurrence
 title: Repeterende oppfølginger
-sidebarTitle: "Overview"
 description: Repeterende oppfølginger
 keywords: repeterende oppfølging, repeterende møte, repeterende avtale, repeter, gjenta, møtefrekvens, oppfølgingsmønster, møteserie, dagbok, oppfølging, gjenta
 author: Bergfrid Dias

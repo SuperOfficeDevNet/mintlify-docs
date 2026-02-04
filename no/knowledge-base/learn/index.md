@@ -1,7 +1,7 @@
 ---
 uid: help-no-knowledge-base
 title: Kunnskapsbase
-sidebarTitle: "Overview"
+sidebarTitle: "Innledning"
 description: Kunnskapsbase
 keywords: sak, kunnskapsbase
 author: SuperOffice Product and Engineering

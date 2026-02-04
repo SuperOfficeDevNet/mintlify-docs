@@ -1,7 +1,7 @@
 ---
 uid: help-no-custom-objects
 title: Egendefinerte objekter og felt
-sidebarTitle: "Overview"
+sidebarTitle: "Innledning"
 description: Egendefinerte objekter og felt
 keywords: egendefinert objekt, felt, brukerdefinert, udef, ekstrafelt, ekstratabell
 author: Bergfrid Dias

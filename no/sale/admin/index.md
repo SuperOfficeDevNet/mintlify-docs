@@ -1,7 +1,6 @@
 ---
 uid: help-no-sale-configuration
 title: Administrere salgstyper, faser og guider
-sidebarTitle: "Overview"
 description: Lær hvordan du administrerer salgsprosesser i SuperOffice CRM med salgstyper, faser og guider. Konfigurer disse verktøyene i Innstillinger og vedlikehold for å standardisere oppfølging, oppgaver og dokumentasjon.
 keywords: salgsguide, salgsfase, salgstype, arbeidsflyt, salg
 author: digitaldiina

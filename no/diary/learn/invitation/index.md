@@ -1,7 +1,6 @@
 ---
 uid: help-no-invitation
 title: Opprette oppfølginger med medarbeiderne dine
-sidebarTitle: "Overview"
 description: Opprette oppfølginger med medarbeiderne dine
 keywords: dagbok, oppfølging, invitasjon, møte, deltager, kalender
 author: Bergfrid Dias

@@ -1,7 +1,6 @@
 ---
 uid: help-no-document-template
 title: Dokumentmal
-sidebarTitle: "Overview"
 description: Introduksjon til dokumentmaler
 keywords: dokumentmal, document, mal
 author: Bergfrid Dias

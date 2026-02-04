@@ -1,7 +1,6 @@
 ---
 uid: help-no-request-status
 title: Saksstatus
-sidebarTitle: "Overview"
 description: Saksstatus
 keywords: saksstatus, Saksstatus-fanen, sak, status
 author: Hanne Gunnarsson

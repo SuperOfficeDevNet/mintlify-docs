@@ -1,7 +1,6 @@
 ---
 uid: help-no-connect-email-doc-cal
 title: Koble til e-post, dokumenter og kalender
-sidebarTitle: "Overview"
 description: Lær hvilke integrasjonsalternativer du trenger basert på operativsystemet ditt, e-postklienten og dokumentprogrammene du bruker, i denne veiledningen.
 keywords: epost, dokument, kalender, invitasjon
 author: Bergfrid Dias

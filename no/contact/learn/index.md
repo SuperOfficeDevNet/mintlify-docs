@@ -1,7 +1,7 @@
 ---
 uid: help-no-contact
 title: Person
-sidebarTitle: "Overview"
+sidebarTitle: "Innledning"
 description: Skjermbildet Person gir et øyeblikksbilde av all kommunikasjon og samhandling med en person. Her kan du administrere kontaktopplysninger, spore aktiviteter og få tilgang til GDPR-relatert dokumentasjon.
 keywords: Person-bildet, person, kontakt
 author: Bergfrid Dias

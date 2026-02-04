@@ -1,7 +1,7 @@
 ---
 uid: help-no-chat
 title: Chat
-sidebarTitle: "Overview"
+sidebarTitle: "Innledning"
 description: Kommunisere med og hjelpe eksisterende eller potensielle kunder ved hjelp av en chat-widget på nettstedet ditt.
 keywords: chat, pågående chats
 author: SuperOffice Product and Engineering

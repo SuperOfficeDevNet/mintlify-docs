@@ -274,7 +274,7 @@
           },
           {
             "tab": "Integrations",
-            "icon": "book",
+            "icon": "plus",
             "groups": [
               {
                 "group": "Overview",
@@ -5613,6 +5613,13 @@
         "language": "de",
         "tabs": [
           {
+            "tab": "Startseite",
+            "icon": "house",
+            "pages": [
+              "index"
+            ]
+          },
+          {
             "tab": "Benutzerleitfaden",
             "icon": "book",
             "groups": [
@@ -6576,12 +6583,40 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "Mobile",
+            "icon": "mobile-screen",
+            "pages": [
+              "en/mobile/index"
+            ]
+          },
+          {
+            "tab": "Integrationen",
+            "icon": "plus",
+            "pages": [
+              "integrations/index"
+            ]
+          },
+          {
+            "tab": "Versionshinweise",
+            "icon": "bullhorn",
+            "pages": [
+              "release-notes/11/index"
+            ]
           }
         ]
       },
       {
         "language": "nl",
         "tabs": [
+          {
+            "tab": "Home",
+            "icon": "house",
+            "pages": [
+              "index"
+            ]
+          },
           {
             "tab": "Handleidingen",
             "icon": "book",
@@ -7546,12 +7581,40 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "Mobile",
+            "icon": "mobile-screen",
+            "pages": [
+              "en/mobile/index"
+            ]
+          },
+          {
+            "tab": "Integraties",
+            "icon": "plus",
+            "pages": [
+              "integrations/index"
+            ]
+          },
+          {
+            "tab": "Versie-opmerkingen",
+            "icon": "bullhorn",
+            "pages": [
+              "release-notes/11/index"
+            ]
           }
         ]
       },
       {
         "language": "no",
         "tabs": [
+          {
+            "tab": "Hjem",
+            "icon": "house",
+            "pages": [
+              "index"
+            ]
+          },
           {
             "tab": "Brukerveiledning",
             "icon": "book",
@@ -8516,12 +8579,40 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "Mobile",
+            "icon": "mobile-screen",
+            "pages": [
+              "en/mobile/index"
+            ]
+          },
+          {
+            "tab": "Integrasjoner",
+            "icon": "plus",
+            "pages": [
+              "integrations/index"
+            ]
+          },
+          {
+            "tab": "Utgivelsesnotater",
+            "icon": "bullhorn",
+            "pages": [
+              "release-notes/11/index"
+            ]
           }
         ]
       },
       {
         "language": "sv",
         "tabs": [
+          {
+            "tab": "Hem",
+            "icon": "house",
+            "pages": [
+              "index"
+            ]
+          },
           {
             "tab": "Användarguide",
             "icon": "book",
@@ -9486,6 +9577,27 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "Mobile",
+            "icon": "mobile-screen",
+            "pages": [
+              "en/mobile/index"
+            ]
+          },
+          {
+            "tab": "Integrationer",
+            "icon": "plus",
+            "pages": [
+              "integrations/index"
+            ]
+          },
+          {
+            "tab": "Versionshistorik",
+            "icon": "bullhorn",
+            "pages": [
+              "release-notes/11/index"
+            ]
           }
         ]
       }
@@ -9498,9 +9610,9 @@
           "icon": "headset"
         },
         {
-          "anchor": "Blog",
-          "href": "https://www.superoffice.com/blog",
-          "icon": "newspaper"
+          "anchor": "Log in to SuperOffice",
+          "href": "https://online.superoffice.com/login",
+          "icon": "arrow-right-to-bracket"
         }
       ]
     }
@@ -9511,12 +9623,7 @@
     "href": "https://www.superoffice.com"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Log in",
-        "href": "https://online.superoffice.com/login"
-      }
-    ]
+    "links": []
   },
   "contextual": {
     "options": [

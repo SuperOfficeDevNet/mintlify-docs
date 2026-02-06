@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.DeleteAppointmentEntity SOAP
+sidebarTitle: DeleteAppointmentEntity
 generated: true
 uid: Services88-Appointment-DeleteAppointmentEntity
 content_type: reference

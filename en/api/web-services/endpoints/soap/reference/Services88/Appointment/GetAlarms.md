@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetAlarms SOAP
+sidebarTitle: GetAlarms
 generated: true
 uid: Services88-Appointment-GetAlarms
 content_type: reference

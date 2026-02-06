@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Document
 title: Services88.DocumentAgent WSDL

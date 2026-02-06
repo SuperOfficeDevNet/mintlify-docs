@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.CleanUpBookingDeleted SOAP
+sidebarTitle: CleanUpBookingDeleted
 generated: true
 uid: Services88-Appointment-CleanUpBookingDeleted
 content_type: reference

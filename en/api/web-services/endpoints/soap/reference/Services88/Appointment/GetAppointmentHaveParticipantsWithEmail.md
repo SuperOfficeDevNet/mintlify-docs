@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetAppointmentHaveParticipantsWithEmail SOAP
+sidebarTitle: GetAppointmentHaveParticipantsWithEmail
 generated: true
 uid: Services88-Appointment-GetAppointmentHaveParticipantsWithEmail
 content_type: reference

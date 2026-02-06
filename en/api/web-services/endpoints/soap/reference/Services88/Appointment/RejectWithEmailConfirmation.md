@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.RejectWithEmailConfirmation SOAP
+sidebarTitle: RejectWithEmailConfirmation
 generated: true
 uid: Services88-Appointment-RejectWithEmailConfirmation
 content_type: reference

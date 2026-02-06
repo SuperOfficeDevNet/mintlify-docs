@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Previews
 title: Services88.PreviewsAgent WSDL

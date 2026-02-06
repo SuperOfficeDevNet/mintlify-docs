@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-FreeText
 title: Services88.FreeTextAgent WSDL

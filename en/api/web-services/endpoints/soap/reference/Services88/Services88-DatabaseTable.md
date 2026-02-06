@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-DatabaseTable
 title: Services88.DatabaseTableAgent WSDL

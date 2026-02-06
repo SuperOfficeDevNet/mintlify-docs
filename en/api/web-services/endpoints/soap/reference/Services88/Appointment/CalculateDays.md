@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.CalculateDays SOAP
+sidebarTitle: CalculateDays
 generated: true
 uid: Services88-Appointment-CalculateDays
 content_type: reference

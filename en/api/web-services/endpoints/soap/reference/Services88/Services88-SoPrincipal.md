@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-SoPrincipal
 title: Services88.SoPrincipalAgent WSDL

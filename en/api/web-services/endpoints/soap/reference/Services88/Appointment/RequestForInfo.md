@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.RequestForInfo SOAP
+sidebarTitle: RequestForInfo
 generated: true
 uid: Services88-Appointment-RequestForInfo
 content_type: reference

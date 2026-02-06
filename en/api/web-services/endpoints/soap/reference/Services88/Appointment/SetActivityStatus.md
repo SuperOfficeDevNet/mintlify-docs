@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.SetActivityStatus SOAP
+sidebarTitle: SetActivityStatus
 generated: true
 uid: Services88-Appointment-SetActivityStatus
 content_type: reference

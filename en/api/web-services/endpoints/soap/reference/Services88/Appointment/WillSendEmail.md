@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.WillSendEmail SOAP
+sidebarTitle: WillSendEmail
 generated: true
 uid: Services88-Appointment-WillSendEmail
 content_type: reference

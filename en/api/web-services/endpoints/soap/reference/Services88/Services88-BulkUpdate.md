@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-BulkUpdate
 title: Services88.BulkUpdateAgent WSDL

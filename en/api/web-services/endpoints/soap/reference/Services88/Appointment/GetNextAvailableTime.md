@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetNextAvailableTime SOAP
+sidebarTitle: GetNextAvailableTime
 generated: true
 uid: Services88-Appointment-GetNextAvailableTime
 content_type: reference

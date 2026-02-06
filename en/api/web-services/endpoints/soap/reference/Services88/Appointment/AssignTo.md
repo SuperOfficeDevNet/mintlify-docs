@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.AssignTo SOAP
+sidebarTitle: AssignTo
 generated: true
 uid: Services88-Appointment-AssignTo
 content_type: reference

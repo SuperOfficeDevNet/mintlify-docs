@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Sentry
 title: Services88.SentryAgent WSDL

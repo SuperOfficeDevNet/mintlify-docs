@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetCanInsertForAssociates SOAP
+sidebarTitle: GetCanInsertForAssociates
 generated: true
 uid: Services88-Appointment-GetCanInsertForAssociates
 content_type: reference

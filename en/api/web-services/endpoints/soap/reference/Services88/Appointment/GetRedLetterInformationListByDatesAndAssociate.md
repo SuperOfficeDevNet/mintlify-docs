@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetRedLetterInformationListByDatesAndAssociate SOAP
+sidebarTitle: GetRedLetterInformationListByDatesAndAssociate
 generated: true
 uid: Services88-Appointment-GetRedLetterInformationListByDatesAndAssociate
 content_type: reference

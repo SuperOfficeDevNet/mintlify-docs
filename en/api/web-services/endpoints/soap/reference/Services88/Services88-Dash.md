@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Dash
 title: Services88.DashAgent WSDL

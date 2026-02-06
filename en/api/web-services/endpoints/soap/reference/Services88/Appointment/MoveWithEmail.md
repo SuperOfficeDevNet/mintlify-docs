@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.MoveWithEmail SOAP
+sidebarTitle: MoveWithEmail
 generated: true
 uid: Services88-Appointment-MoveWithEmail
 content_type: reference

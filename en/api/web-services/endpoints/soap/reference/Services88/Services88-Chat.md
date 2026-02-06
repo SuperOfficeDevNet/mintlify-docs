@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Chat
 title: Services88.ChatAgent WSDL

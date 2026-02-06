@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetMyAppointments SOAP
+sidebarTitle: GetMyAppointments
 generated: true
 uid: Services88-Appointment-GetMyAppointments
 content_type: reference

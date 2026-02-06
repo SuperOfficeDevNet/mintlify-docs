@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Diagnostics
 title: Services88.DiagnosticsAgent WSDL

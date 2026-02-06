@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetAppointmentEmailInvitation SOAP
+sidebarTitle: GetAppointmentEmailInvitation
 generated: true
 uid: Services88-Appointment-GetAppointmentEmailInvitation
 content_type: reference

@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-BlobManager
 title: Services88.BlobManagerAgent WSDL

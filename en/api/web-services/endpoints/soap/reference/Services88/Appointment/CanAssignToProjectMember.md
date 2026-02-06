@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.CanAssignToProjectMember SOAP
+sidebarTitle: CanAssignToProjectMember
 generated: true
 uid: Services88-Appointment-CanAssignToProjectMember
 content_type: reference

@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.ToggleAppointmentStatus SOAP
+sidebarTitle: ToggleAppointmentStatus
 generated: true
 uid: Services88-Appointment-ToggleAppointmentStatus
 content_type: reference

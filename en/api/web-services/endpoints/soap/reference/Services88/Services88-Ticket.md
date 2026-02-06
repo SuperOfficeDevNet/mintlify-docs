@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Ticket
 title: Services88.TicketAgent WSDL

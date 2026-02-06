@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.ValidateDays SOAP
+sidebarTitle: ValidateDays
 generated: true
 uid: Services88-Appointment-ValidateDays
 content_type: reference

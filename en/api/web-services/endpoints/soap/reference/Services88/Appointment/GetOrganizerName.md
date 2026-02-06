@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetOrganizerName SOAP
+sidebarTitle: GetOrganizerName
 generated: true
 uid: Services88-Appointment-GetOrganizerName
 content_type: reference

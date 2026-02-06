@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.ConvertAppointmentToTask SOAP
+sidebarTitle: ConvertAppointmentToTask
 generated: true
 uid: Services88-Appointment-ConvertAppointmentToTask
 content_type: reference

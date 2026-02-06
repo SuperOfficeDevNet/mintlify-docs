@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent SOAP
 sidebarTitle: "Overview"
 uid: Services88-Appointment-soap

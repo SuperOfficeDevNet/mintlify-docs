@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GenerateLead SOAP
+sidebarTitle: GenerateLead
 generated: true
 uid: Services88-Appointment-GenerateLead
 content_type: reference

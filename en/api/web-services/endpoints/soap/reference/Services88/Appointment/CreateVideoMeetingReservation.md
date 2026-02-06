@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.CreateVideoMeetingReservation SOAP
+sidebarTitle: CreateVideoMeetingReservation
 generated: true
 uid: Services88-Appointment-CreateVideoMeetingReservation
 content_type: reference

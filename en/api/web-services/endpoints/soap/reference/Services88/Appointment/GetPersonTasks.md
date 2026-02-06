@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetPersonTasks SOAP
+sidebarTitle: GetPersonTasks
 generated: true
 uid: Services88-Appointment-GetPersonTasks
 content_type: reference

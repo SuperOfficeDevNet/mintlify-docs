@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.CreateDefaultAppointmentEntity SOAP
+sidebarTitle: CreateDefaultAppointmentEntity
 generated: true
 uid: Services88-Appointment-CreateDefaultAppointmentEntity
 content_type: reference

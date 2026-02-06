@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Preference
 title: Services88.PreferenceAgent WSDL

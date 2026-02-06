@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Selection
 title: Services88.SelectionAgent WSDL

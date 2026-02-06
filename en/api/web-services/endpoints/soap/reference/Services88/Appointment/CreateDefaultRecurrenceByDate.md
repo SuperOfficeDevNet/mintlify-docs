@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.CreateDefaultRecurrenceByDate SOAP
+sidebarTitle: CreateDefaultRecurrenceByDate
 generated: true
 uid: Services88-Appointment-CreateDefaultRecurrenceByDate
 content_type: reference

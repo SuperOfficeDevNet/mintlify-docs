@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.DeclineInvitationFromEmailItem SOAP
+sidebarTitle: DeclineInvitationFromEmailItem
 generated: true
 uid: Services88-Appointment-DeclineInvitationFromEmailItem
 content_type: reference

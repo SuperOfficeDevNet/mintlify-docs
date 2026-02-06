@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.SetSeen SOAP
+sidebarTitle: SetSeen
 generated: true
 uid: Services88-Appointment-SetSeen
 content_type: reference

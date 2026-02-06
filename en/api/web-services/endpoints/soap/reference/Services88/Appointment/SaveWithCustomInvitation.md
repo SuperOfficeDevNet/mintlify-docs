@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.SaveWithCustomInvitation SOAP
+sidebarTitle: SaveWithCustomInvitation
 generated: true
 uid: Services88-Appointment-SaveWithCustomInvitation
 content_type: reference

@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.Move SOAP
+sidebarTitle: Move
 generated: true
 uid: Services88-Appointment-Move
 content_type: reference

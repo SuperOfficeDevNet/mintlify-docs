@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Webhook
 title: Services88.WebhookAgent WSDL

@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetSuggestedAppointmentEntity SOAP
+sidebarTitle: GetSuggestedAppointmentEntity
 generated: true
 uid: Services88-Appointment-GetSuggestedAppointmentEntity
 content_type: reference

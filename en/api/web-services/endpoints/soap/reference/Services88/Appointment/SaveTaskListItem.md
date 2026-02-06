@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.SaveTaskListItem SOAP
+sidebarTitle: SaveTaskListItem
 generated: true
 uid: Services88-Appointment-SaveTaskListItem
 content_type: reference

@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-ViewState
 title: Services88.ViewStateAgent WSDL

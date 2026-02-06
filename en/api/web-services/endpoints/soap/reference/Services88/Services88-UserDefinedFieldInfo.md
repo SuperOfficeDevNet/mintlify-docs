@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-UserDefinedFieldInfo
 title: Services88.UserDefinedFieldInfoAgent WSDL

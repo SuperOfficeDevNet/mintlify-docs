@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Associate
 title: Services88.AssociateAgent WSDL

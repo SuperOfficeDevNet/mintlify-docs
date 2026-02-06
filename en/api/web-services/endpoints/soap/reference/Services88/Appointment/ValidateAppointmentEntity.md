@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.ValidateAppointmentEntity SOAP
+sidebarTitle: ValidateAppointmentEntity
 generated: true
 uid: Services88-Appointment-ValidateAppointmentEntity
 content_type: reference

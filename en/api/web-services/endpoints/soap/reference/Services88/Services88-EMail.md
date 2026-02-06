@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-EMail
 title: Services88.EMailAgent WSDL

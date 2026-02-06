@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.UpdateAppointmentWithMode SOAP
+sidebarTitle: UpdateAppointmentWithMode
 generated: true
 uid: Services88-Appointment-UpdateAppointmentWithMode
 content_type: reference

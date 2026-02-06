@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Marketing
 title: Services88.MarketingAgent WSDL

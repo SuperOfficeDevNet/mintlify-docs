@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetDayInformationListByDatesAndAssociate SOAP
+sidebarTitle: GetDayInformationListByDatesAndAssociate
 generated: true
 uid: Services88-Appointment-GetDayInformationListByDatesAndAssociate
 content_type: reference

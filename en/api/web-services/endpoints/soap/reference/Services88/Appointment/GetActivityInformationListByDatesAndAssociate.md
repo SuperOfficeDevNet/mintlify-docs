@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetActivityInformationListByDatesAndAssociate SOAP
+sidebarTitle: GetActivityInformationListByDatesAndAssociate
 generated: true
 uid: Services88-Appointment-GetActivityInformationListByDatesAndAssociate
 content_type: reference

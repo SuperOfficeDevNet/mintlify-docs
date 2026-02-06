@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.CreateAndAcceptWithEmailConfirmation SOAP
+sidebarTitle: CreateAndAcceptWithEmailConfirmation
 generated: true
 uid: Services88-Appointment-CreateAndAcceptWithEmailConfirmation
 content_type: reference

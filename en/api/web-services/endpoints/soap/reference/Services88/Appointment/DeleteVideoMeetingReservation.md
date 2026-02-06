@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.DeleteVideoMeetingReservation SOAP
+sidebarTitle: DeleteVideoMeetingReservation
 generated: true
 uid: Services88-Appointment-DeleteVideoMeetingReservation
 content_type: reference

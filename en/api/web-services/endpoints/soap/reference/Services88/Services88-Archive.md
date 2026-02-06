@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Archive
 title: Services88.ArchiveAgent WSDL

@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-CRMScript
 title: Services88.CRMScriptAgent WSDL

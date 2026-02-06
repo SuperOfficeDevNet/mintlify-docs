@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetMyDiary SOAP
+sidebarTitle: GetMyDiary
 generated: true
 uid: Services88-Appointment-GetMyDiary
 content_type: reference

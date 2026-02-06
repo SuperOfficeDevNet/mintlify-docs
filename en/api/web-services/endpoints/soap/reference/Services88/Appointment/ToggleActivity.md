@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.ToggleActivity SOAP
+sidebarTitle: ToggleActivity
 generated: true
 uid: Services88-Appointment-ToggleActivity
 content_type: reference

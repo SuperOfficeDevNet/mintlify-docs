@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Appointment
 title: Services88.AppointmentAgent WSDL

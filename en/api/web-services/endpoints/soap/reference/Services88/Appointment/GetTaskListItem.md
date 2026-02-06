@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetTaskListItem SOAP
+sidebarTitle: GetTaskListItem
 generated: true
 uid: Services88-Appointment-GetTaskListItem
 content_type: reference

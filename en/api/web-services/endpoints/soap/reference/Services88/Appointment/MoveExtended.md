@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.MoveExtended SOAP
+sidebarTitle: MoveExtended
 generated: true
 uid: Services88-Appointment-MoveExtended
 content_type: reference

@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetDiaryByGroup SOAP
+sidebarTitle: GetDiaryByGroup
 generated: true
 uid: Services88-Appointment-GetDiaryByGroup
 content_type: reference

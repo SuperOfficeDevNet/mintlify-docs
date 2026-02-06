@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.GetVideoMeetingConnectedState SOAP
+sidebarTitle: GetVideoMeetingConnectedState
 generated: true
 uid: Services88-Appointment-GetVideoMeetingConnectedState
 content_type: reference

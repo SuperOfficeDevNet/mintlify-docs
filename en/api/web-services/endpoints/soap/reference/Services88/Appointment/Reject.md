@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.Reject SOAP
+sidebarTitle: Reject
 generated: true
 uid: Services88-Appointment-Reject
 content_type: reference

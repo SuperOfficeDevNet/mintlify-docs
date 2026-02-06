@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.CreateAppointmentEntityFromExisting SOAP
+sidebarTitle: CreateAppointmentEntityFromExisting
 generated: true
 uid: Services88-Appointment-CreateAppointmentEntityFromExisting
 content_type: reference

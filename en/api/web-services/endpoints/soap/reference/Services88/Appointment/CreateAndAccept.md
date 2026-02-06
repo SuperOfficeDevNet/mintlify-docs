@@ -1,5 +1,7 @@
 ---
+mode: "frame"
 title: Services88.AppointmentAgent.CreateAndAccept SOAP
+sidebarTitle: CreateAndAccept
 generated: true
 uid: Services88-Appointment-CreateAndAccept
 content_type: reference

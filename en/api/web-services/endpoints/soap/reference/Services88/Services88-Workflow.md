@@ -1,4 +1,5 @@
 ---
+mode: "frame"
 generated: true
 uid: wsdl-Services88-Workflow
 title: Services88.WorkflowAgent WSDL

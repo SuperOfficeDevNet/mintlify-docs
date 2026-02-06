@@ -7,6 +7,7 @@
     Recursively processes index.md and index.mdx files in a folder, adding
     sidebarTitle: "Overview" in the frontmatter directly after the title line.
     Only adds if sidebarTitle doesn't already exist anywhere in the frontmatter.
+    Only processes files that contain id="subcategory" or id="category" in the body.
 
 .PARAMETER Path
     Path to the folder containing markdown files (relative to repo root or absolute).
@@ -22,6 +23,7 @@
     - Modifies files in place (no backup created - use git to revert if needed)
     - Uses UTF-8 without BOM encoding
     - Skips files without title in frontmatter
+    - Only processes files with id="subcategory" or id="category"
     - Creates frontmatter if missing (with title and sidebarTitle)
     - Checks entire frontmatter for existing sidebarTitle (not just after title)
 #>
@@ -91,6 +93,15 @@ foreach ($file in $files) {
     
     # Extract frontmatter lines
     $frontmatter = $content[$frontmatterStart..$frontmatterEnd]
+    
+    # Check if file has id="subcategory" or id="category" in the body
+    $bodyContent = $content[($frontmatterEnd + 1)..($content.Length - 1)] -join "`n"
+    $hasSubcategoryOrCategory = $bodyContent -match 'id="(subcategory|category)"'
+    
+    if (-not $hasSubcategoryOrCategory) {
+        Write-Verbose "  $($file.Name): No id=`"subcategory`" or id=`"category`" found, skipping"
+        continue
+    }
     
     # Check if sidebarTitle already exists anywhere in frontmatter
     $hasSidebarTitle = $false

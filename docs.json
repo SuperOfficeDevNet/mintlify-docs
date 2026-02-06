@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "linden",
+  "theme": "aspen",
   "name": "SuperOffice",
   "colors": {
     "primary": "#06423E",

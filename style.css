@@ -117,7 +117,7 @@
 
 .conceptual-content .concept-links a,
 .additional-content .additional-links a {
-  color: #17645f;
+  color: var(--so-green);
   text-decoration: none !important;
   border-bottom: none !important;
   background-image: none !important;
@@ -126,7 +126,7 @@
 .conceptual-content .concept-links a:hover,
 .additional-content .additional-links a:hover {
   text-decoration-line: underline !important;
-  text-decoration-color: #17645f;
+  text-decoration-color: var(--so-green-hover);
   text-underline-offset: 0.15em;
   text-decoration-thickness: 1px;
 }
@@ -144,7 +144,7 @@
 
 /* Category landing pages with hero section */
 #category-hero {
-  background-color: #17645f;
+  background-color: var(--so-green);
   color: white;
   padding: 3rem 1.25rem;
   margin-bottom: 3rem;
@@ -203,7 +203,7 @@
 }
 
 .highlighted-content [class*="CardGroup"] > div > a:hover {
-  border-color: #17645f;
+  border-color: var(--so-green);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
@@ -216,7 +216,7 @@
 
 .highlighted-content i {
   flex-shrink: 0;
-  color: #17645f;
+  color: var(--so-green);
 }
 
 /* Dark mode for category */
@@ -230,7 +230,7 @@
 }
 
 .dark .highlighted-content [class*="CardGroup"] > div > a:hover {
-  border-color: #17645f;
+  border-color: var(--so-green);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
@@ -281,7 +281,7 @@
 
 .conceptual-content .concept-links i {
   flex-shrink: 0;
-  color: #17645f;
+  color: var(--so-green);
 }
 
 .dark .conceptual-content h2,

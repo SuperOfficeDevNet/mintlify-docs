@@ -139,7 +139,7 @@
 
 .dark #subcategory hr {
   border: none;
-  border-top: 1px solid var(--border, rgb(251, 237, 237));
+  border-top: 1px solid rgba(242, 239, 234, 0.2);
 }
 
 /* Category landing pages with hero section */
@@ -225,12 +225,12 @@
 }
 
 .dark .highlighted-content [class*="CardGroup"] > div > a {
-  background: #1f2937;
-  border-color: #374151;
+  background: #2a2a2a;
+  border-color: #3a3a3a;
 }
 
 .dark .highlighted-content [class*="CardGroup"] > div > a:hover {
-  border-color: var(--so-green);
+  border-color: var(--coast-blue);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
@@ -286,11 +286,11 @@
 
 .dark .conceptual-content h2,
 .dark .additional-content h2 {
-  color: #f9fafb;
+  color: var(--dune-white);
 }
 
 .dark .conceptual-content .concept-links i {
-  color: #10b981;
+  color: var(--coast-blue);
 }
 
 /* Additional content section */
@@ -331,7 +331,11 @@
 
 /* Add border to bottom of callout containing metadata */
 [class*="callout"]:has(.metadata-display) {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--charcoal);
+}
+
+.dark [class*="callout"]:has(.metadata-display) {
+  border-bottom: 1px solid var(--dune-white);
 }
 
 .metadata-display ul {
@@ -343,7 +347,11 @@
   list-style-type: none !important;
   padding: 0 !important;
   margin: 0 !important;
-  color: #333 !important;
+  color: var(--charcoal) !important;
+}
+
+.dark .metadata-display ul {
+  color: var(--dune-white) !important;
 }
 
 .metadata-display li {

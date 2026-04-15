@@ -30,6 +30,15 @@
   --white:                   #FFFFFF;
 }
 
+/* ─── BODY TEXT COLOR ─────────────────────────────────────── */
+body {
+  color: var(--charcoal);
+}
+
+.dark body {
+  color: var(--dune-white);
+}
+
 /* SubCategory landing pages */
 #subcategory {
   margin-top: 2rem;
@@ -284,6 +293,10 @@
 .conceptual-content .concept-links i {
   flex-shrink: 0;
   color: var(--so-green);
+}
+
+.dark .conceptual-content {
+  background-color: #1e2d2c;
 }
 
 .dark .conceptual-content h2,

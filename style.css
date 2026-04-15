@@ -1,3 +1,57 @@
+/* ─── CSS CUSTOM PROPERTIES ───────────────────────────────── */
+:root {
+  /* Primary */
+  --so-green:                #06423E;
+  --coast-blue:              #B2C7EB;
+  --dune-white:              #F2EFEA;
+
+  /* Secondary */
+  --so-green-hover:          #0F5C57;
+  --so-green-dark:           #002420;
+  --meadow-green:            #B7DEA9;
+  --heather-lilac:           #C5BAF8;
+  --plum-red:                #712F4A;
+  --coral-orange:            #F48A6D;
+  --charcoal:                #1C1C1E;
+
+  /* Tertiary – tints and shades */
+  --dune-white-darker-1:     #E7E4E0;
+  --dune-white-darker-2:     #D2CFCB;
+  --coast-blue-darker-1:     #6A8CB9;
+  --coast-blue-darker-2:     #395D9C;
+  --meadow-green-darker-1:   #61974E;
+  --meadow-green-darker-2:   #286712;
+  --heather-lilac-darker-1:  #8B7BD5;
+  --heather-lilac-darker-2:  #5C4BA9;
+  --plum-red-lighter:        #A4517A;
+  --plum-red-darker:         #491028;
+  --coral-orange-lighter:    #FFA88B;
+  --coral-orange-darker:     #DA6849;
+  --white:                   #FFFFFF;
+}
+
+/* ─── DARK MODE PRIMARY COLOR — INTENTIONAL DESIGN CHOICE ─── */
+/*
+ * colors.dark in docs.json is set to Coast blue (#B2C7EB), not Coral orange
+ * (#F48A6D) as the brand guide recommends for links and CTAs.
+ *
+ * Rationale: docs pages have high link density. The brand color hierarchy
+ * places Coral as the least-used color (narrowest bar in the hierarchy chart).
+ * Applying it to every link would invert that hierarchy and create visual noise.
+ * Coast blue is calm, readable, and appropriate for functional navigation at
+ * scale. Coral orange is intentionally reserved for primary CTA buttons only
+ * (e.g. "Book a demo" in the navbar).
+ */
+
+/* ─── BODY TEXT COLOR ─────────────────────────────────────── */
+body {
+  color: var(--charcoal);
+}
+
+.dark body {
+  color: var(--dune-white);
+}
+
 /* ─── HOME PAGE ───────────────────────────────────────────── */
 
 #home-hero {
@@ -66,6 +120,11 @@
   color: var(--dune-white);
 }
 
+/* Card border radius */
+#home-content .card {
+  border-radius: 8px;
+}
+
 /* Quick access shortcuts section */
 #home-quick-access {
   background-color: var(--meadow-green);
@@ -93,60 +152,6 @@
 
 .dark #home-quick-access a:hover {
   opacity: 0.85;
-}
-
-/* ─── CSS CUSTOM PROPERTIES ───────────────────────────────── */
-:root {
-  /* Primary */
-  --so-green:                #06423E;
-  --coast-blue:              #B2C7EB;
-  --dune-white:              #F2EFEA;
-
-  /* Secondary */
-  --so-green-hover:          #0F5C57;
-  --so-green-dark:           #002420;
-  --meadow-green:            #B7DEA9;
-  --heather-lilac:           #C5BAF8;
-  --plum-red:                #712F4A;
-  --coral-orange:            #F48A6D;
-  --charcoal:                #1C1C1E;
-
-  /* Tertiary – tints and shades */
-  --dune-white-darker-1:     #E7E4E0;
-  --dune-white-darker-2:     #D2CFCB;
-  --coast-blue-darker-1:     #6A8CB9;
-  --coast-blue-darker-2:     #395D9C;
-  --meadow-green-darker-1:   #61974E;
-  --meadow-green-darker-2:   #286712;
-  --heather-lilac-darker-1:  #8B7BD5;
-  --heather-lilac-darker-2:  #5C4BA9;
-  --plum-red-lighter:        #A4517A;
-  --plum-red-darker:         #491028;
-  --coral-orange-lighter:    #FFA88B;
-  --coral-orange-darker:     #DA6849;
-  --white:                   #FFFFFF;
-}
-
-/* ─── DARK MODE PRIMARY COLOR — INTENTIONAL DESIGN CHOICE ─── */
-/*
- * colors.dark in docs.json is set to Coast blue (#B2C7EB), not Coral orange
- * (#F48A6D) as the brand guide recommends for links and CTAs.
- *
- * Rationale: docs pages have high link density. The brand color hierarchy
- * places Coral as the least-used color (narrowest bar in the hierarchy chart).
- * Applying it to every link would invert that hierarchy and create visual noise.
- * Coast blue is calm, readable, and appropriate for functional navigation at
- * scale. Coral orange is intentionally reserved for primary CTA buttons only
- * (e.g. "Book a demo" in the navbar).
- */
-
-/* ─── BODY TEXT COLOR ─────────────────────────────────────── */
-body {
-  color: var(--charcoal);
-}
-
-.dark body {
-  color: var(--dune-white);
 }
 
 /* SubCategory landing pages */

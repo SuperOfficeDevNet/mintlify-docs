@@ -52,6 +52,215 @@ body {
   color: var(--dune-white);
 }
 
+/* ─── NAVBAR ──────────────────────────────────────────────── */
+
+/* Light mode: SO green background */
+#navbar [class*="bg-background-light"] {
+  background-color: var(--so-green) !important;
+}
+
+/* Dark mode: charcoal */
+.dark #navbar [class*="bg-background-light"] {
+  background-color: var(--charcoal) !important;
+}
+
+/* All text/icons inside the navbar: white on green (LM) and charcoal (DM).
+ * Specificity (1,0,0) — intentionally lower than .nav-tabs-item rules
+ * which follow. Covers language selector, search trigger, theme toggle. */
+#navbar * {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Nav icons: bridge both fill-based (FontAwesome) and stroke-based (Lucide)
+ * SVG icons to currentColor so they inherit the white from the rule above. */
+#navbar svg {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Nav tab icons specifically: higher specificity (1,2,1) to beat any Mintlify
+ * rule that forces primary color on nav icons. Targets SVG, FA <i>, Phosphor <i>. */
+#navbar .nav-tabs-item svg,
+#navbar .nav-tabs-item svg path,
+#navbar .nav-tabs-item i {
+  color: rgba(255, 255, 255, 0.85) !important;
+  fill: rgba(255, 255, 255, 0.85) !important;
+  stroke: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Mask-image icons: DOM inspection shows nav icons use CSS mask-image technique
+ * (SVG has bg-gray-600 as ink color + mask-image in style attr for the shape).
+ * fill/stroke/color are irrelevant here — background-color is the visible ink. */
+#navbar svg[style*="mask-image"] {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Bottom border: subtle white */
+#navbar .border-b {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Shadow for visual separation from content below */
+#navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Nav tabs: increase spacing between items */
+#navbar .nav-tabs {
+  gap: 2rem;
+}
+
+/* Nav item: 80% white at rest; position:relative + overflow:visible anchor
+ * the ::after underline without it being clipped by the container. */
+#navbar .nav-tabs-item {
+  color: rgba(255, 255, 255, 0.8) !important;
+  cursor: pointer;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  position: relative;
+  overflow: visible !important;
+}
+
+/* Nav item hover: full white */
+#navbar .nav-tabs-item:hover {
+  color: var(--white) !important;
+}
+
+/* Active nav item: full white */
+#navbar .nav-tabs-item[data-active="true"] {
+  color: var(--white) !important;
+}
+
+/* Active/hover underline via ::after — fully under our control, not reliant
+ * on Mintlify's bg-primary div rendering. Hover shows a dim indicator;
+ * active shows the full brand line. */
+#navbar .nav-tabs-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.15s ease;
+}
+
+#navbar .nav-tabs-item:hover::after {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+#navbar .nav-tabs-item[data-active="true"]::after {
+  background-color: var(--white);
+}
+
+.dark #navbar .nav-tabs-item[data-active="true"]::after {
+  background-color: var(--coast-blue);
+}
+
+/* Belt-and-suspenders: if Mintlify does render a bg-primary div, keep it
+ * positioned and sized consistently. */
+#navbar .nav-tabs-item > div[class*="bg-primary"] {
+  background-color: var(--white) !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 2px !important;
+  min-height: 2px !important;
+}
+
+.dark #navbar .nav-tabs-item > div[class*="bg-primary"] {
+  background-color: var(--coast-blue) !important;
+}
+
+/* Cursor pointer on all navbar interactive elements */
+#navbar a,
+#navbar button {
+  cursor: pointer;
+}
+
+/* Search trigger: pinned by DOM id (id="search-bar-entry").
+ * Darker inset + reduced radius so it reads as a distinct input field
+ * against the green nav rather than blending in. */
+#search-bar-entry {
+  background-color: rgba(0, 0, 0, 0.22) !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18) !important;
+  border-radius: 6px !important;
+}
+
+/* Search icon: outline/regular style — fill:none renders the magnifying-glass
+ * glyph as a stroke-only shape. stroke-width 1.5 matches the .com icon weight. */
+#search-bar-entry svg {
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 1.5 !important;
+}
+
+/* ─── NAVBAR DROPDOWNS ────────────────────────────────────── */
+/* Dropdown menus render as Radix portals outside #navbar in the DOM,
+ * so they don't inherit the white-text rule above.
+ *
+ * Radix uses [data-highlighted] for the focused/hovered item (keyboard
+ * and mouse) and [data-state="checked"] / [aria-selected="true"] for the
+ * selected item. These are NOT <a> tags, so :hover on <a> is not enough. */
+
+/* ── Light mode ── */
+[data-radix-popper-content-wrapper] a,
+[data-radix-popper-content-wrapper] a:visited,
+[data-radix-popper-content-wrapper] [role="menuitem"],
+[data-radix-popper-content-wrapper] [role="option"] {
+  color: var(--charcoal) !important;
+}
+
+[data-radix-popper-content-wrapper] a:hover,
+[data-radix-popper-content-wrapper] [data-highlighted] {
+  color: var(--so-green) !important;
+  background-color: rgba(6, 66, 62, 0.1) !important;
+}
+
+[data-radix-popper-content-wrapper] [data-state="checked"],
+[data-radix-popper-content-wrapper] [aria-selected="true"] {
+  color: var(--so-green) !important;
+}
+
+/* ── Dark mode ── */
+.dark [data-radix-popper-content-wrapper] a,
+.dark [data-radix-popper-content-wrapper] a:visited,
+.dark [data-radix-popper-content-wrapper] [role="menuitem"],
+.dark [data-radix-popper-content-wrapper] [role="option"] {
+  color: var(--dune-white) !important;
+}
+
+.dark [data-radix-popper-content-wrapper] a:hover,
+.dark [data-radix-popper-content-wrapper] [data-highlighted] {
+  color: var(--coast-blue) !important;
+  background-color: rgba(178, 199, 235, 0.12) !important;
+}
+
+/* DM selected item: coast blue text + subtle coast-blue row tint.
+ * The * child selector is required because Mintlify puts explicit
+ * "text-primary dark:text-primary-light" on the <p> label and checkmark <svg>
+ * inside the item — inherited color alone is overridden by those classes.
+ * background-color: transparent removes any green bg Mintlify applies. */
+.dark [data-radix-popper-content-wrapper] [data-state="checked"],
+.dark [data-radix-popper-content-wrapper] [data-state="checked"] *,
+.dark [data-radix-popper-content-wrapper] [aria-selected="true"],
+.dark [data-radix-popper-content-wrapper] [aria-selected="true"] *,
+.dark [data-radix-popper-content-wrapper] [data-selected="true"],
+.dark [data-radix-popper-content-wrapper] [data-selected="true"] * {
+  color: var(--coast-blue) !important;
+  background-color: transparent !important;
+}
+
+/* Dropdown panels: reduce corner radius to ~4 px to match .com */
+[data-radix-popper-content-wrapper] > div {
+  border-radius: 4px !important;
+}
+
+[data-radix-popper-content-wrapper] [class*="rounded"] {
+  border-radius: 4px !important;
+}
+
 /* ─── HOME PAGE ───────────────────────────────────────────── */
 
 #home-hero {

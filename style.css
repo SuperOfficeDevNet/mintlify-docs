@@ -100,15 +100,37 @@ body {
   border-radius: 8px;
 }
 
-/* Quick access shortcuts section */
-#home-quick-access {
-  background-color: var(--meadow-green);
+/* "What type of user are you?" — dune white bg, transparent border, shadow lift on hover */
+#home-user-types .card {
+  background-color: var(--dune-white);
+  border-color: transparent !important;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.dark #home-quick-access {
-  background-color: var(--so-green);
+#home-user-types .card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
 }
 
+/* Dark mode CTA: use coast blue on hover instead of green */
+.dark #home-user-types [data-component-part="card-cta"]:hover,
+.dark #home-user-types .card:hover [data-component-part="card-cta"] {
+  color: var(--coast-blue) !important;
+}
+
+/* Dark mode: no bg override (avoids transition blip), green border on hover only */
+.dark #home-user-types .card {
+  background-color: unset;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark #home-user-types .card:hover {
+  box-shadow: none;
+  transform: none;
+  border-color: var(--so-green) !important;
+}
+
+/* Quick access shortcuts section — no background, blends into page */
 #home-quick-access a,
 #home-quick-access a:visited {
   color: var(--so-green);

@@ -77,31 +77,6 @@ body {
   margin: 0.5rem auto 0;
 }
 
-#home-search-entry {
-  margin-top: 2rem;
-  background: var(--white);
-  box-shadow: 0px 1px 4px 0px rgba(8, 9, 10, 0.25),
-              0px 0px 0px 4px rgba(255, 255, 255, 0.20);
-  cursor: pointer;
-  text-align: left;
-}
-
-#home-search-icon {
-  margin-right: 0.5rem;
-  background-color: var(--so-green);
-  mask-image: url("https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg");
-  mask-repeat: no-repeat;
-  mask-position: center center;
-}
-
-#home-search-entry:hover #home-search-icon {
-  background-color: var(--so-green-hover);
-}
-
-.dark #home-search-entry:hover #home-search-icon {
-  background-color: var(--dune-white);
-}
-
 #home-content {
   margin-top: 2rem;
   margin-bottom: 8rem;

@@ -1,26 +1,18 @@
-﻿---
+---
 mode: "custom"
 title: "SuperOffice Docs"
 ---
 
-<div className="relative w-full flex items-center justify-center" style={{ height: '20rem', overflow: 'hidden'}}>
+<div id="home-hero" className="relative w-full flex items-center justify-center">
 
-<div id="background-div" className="absolute inset-0 h-full bg-[#06423E] bg-cover bg-center"></div>
+<div id="home-hero-bg" className="absolute inset-0 h-full bg-cover bg-center"></div>
 
-<div
-  id="background-div"
-  className="absolute inset-0 h-full bg-cover bg-center"
->
-</div>
-
-<div style={{ position: 'absolute', textAlign: 'center', padding: '0 1rem', width: '100%', maxWidth: '70rem' }}>
-  <div
-    className="text-5xl text-white font-bold w-full mt- leading-[1.2] tracking-tight"
-  >
+<div id="home-hero-content">
+  <div className="text-5xl text-white font-bold w-full leading-[1.2] tracking-tight">
    docs.superoffice.com
   </div>
 
-    <p className="text-lg text-white" style={{  fontWeight: '500' , maxWidth: '40rem', margin: '0 auto', marginTop: '0.5rem'}}>
+    <p className="text-lg text-white">
     The official documentation site for the SuperOffice Platform - the leading CRM & Customer Service available.
     </p>
 
@@ -29,25 +21,11 @@ title: "SuperOffice Docs"
         type="button"
         className="hidden w-full lg:flex items-center text-sm leading-6 py-4 pl-4 pr-4 text-gray-500 rounded-xl"
         id="home-search-entry"
-        style={{
-          marginTop: '2rem',
-          maxWidth: '70rem',
-          background: '#FFF',
-          boxShadow: '0px 1px 4px 0px rgba(8, 9, 10, 0.25), 0px 0px 0px 4px rgba(255, 255, 255, 0.20)',
-          cursor: 'pointer',
-          textAlign: 'left',
-        }}
         onClick={()=> document.getElementById('search-bar-entry-mobile').click()}
       >
         <svg
-          className="h-4 w-4 ml-1.5 flex-none bg-[#06423E] hover:bg-gray-600 #06423E dark:hover:bg-white/70"
-          style={{
-          marginRight: '0.5rem',
-          maskImage:
-            'url("https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg")',
-          maskRepeat: 'no-repeat',
-          maskPosition: 'center center',
-          }}
+          id="home-search-icon"
+          className="h-4 w-4 ml-1.5 flex-none"
         />
         Search or ask...
       </button>
@@ -55,11 +33,7 @@ title: "SuperOffice Docs"
   </div>
 </div>
 
-<div
-  style={{marginTop: '2rem', marginBottom: '8rem', maxWidth: '80rem', marginLeft: 'auto',
-  marginRight: 'auto', paddingLeft: '1.25rem',
-  paddingRight: '1.25rem' }}
->
+<div id="home-content">
 <CardGroup cols={4}>
 <Card title="Learn" href="/en/learn" icon="graduation-cap" >
 Product knowledge-base to learn concepts, features and solve issues.
@@ -123,7 +97,7 @@ Product knowledge-base to learn concepts, features and solve issues.
 </CardGroup>
 
 <div className='my-12'>
-<h2 className='text-4xl font-bold text-black dark:text-white'>Popular areas of interest</h2>
+<h2 className='text-4xl font-bold'>Popular areas of interest</h2>
 </div>
 <CardGroup cols={3}>
 <Card title="Admin" icon="user" horizontal href="https://docs.superoffice.com/en/admin/index.html"/>
@@ -250,7 +224,7 @@ Product knowledge-base to learn concepts, features and solve issues.
 </CardGroup>
 
 <div className='my-12'>
-<h2 className='text-4xl font-bold text-black dark:text-white'>What type of user are you?</h2>
+<h2 className='text-4xl font-bold'>What type of user are you?</h2>
 </div>
 
 <CardGroup cols={4}>
@@ -259,59 +233,59 @@ A person who has system administrative privilege's and special functional and da
 
 </Card>
 
-<Card 
-  title="Administrator" 
-  href="https://docs.superoffice.com/en/onsite/" 
-  cta="LEARN MORE" 
+<Card
+  title="Administrator"
+  href="https://docs.superoffice.com/en/onsite/"
+  cta="LEARN MORE"
   icon="shield"
 >
-  A person who is primarily responsible for the setup, configuration, and maintenance of SuperOffice in an organization.  
+  A person who is primarily responsible for the setup, configuration, and maintenance of SuperOffice in an organization.
   The guy you call when shit hits the fan!
 </Card>
 
-<Card 
-  title="Consultant" 
-  href="https://docs.superoffice.com/en/automation/" 
-  cta="LEARN MORE" 
+<Card
+  title="Consultant"
+  href="https://docs.superoffice.com/en/automation/"
+  cta="LEARN MORE"
   icon="briefcase"
 >
-  A person who works with companies to improve their use of SuperOffice to achieve business goals.  
+  A person who works with companies to improve their use of SuperOffice to achieve business goals.
   An expert in all technical aspects of SuperOffice—hired to provide advice, solve problems, and increase efficiency.
 </Card>
 
-<Card 
-  title="Developer" 
-  href="https://docs.superoffice.com/en/api/" 
-  cta="LEARN MORE" 
+<Card
+  title="Developer"
+  href="https://docs.superoffice.com/en/api/"
+  cta="LEARN MORE"
   icon="code"
 >
-  A software engineer responsible for implementing application or integration requirements,  
+  A software engineer responsible for implementing application or integration requirements,
   or providing consultancy on how integrations should be built using current industry trends.
 </Card>
 
 </CardGroup>
 
-<div className='p-20 bg-[#b7dea9] dark:bg-[#05423e] my-12 rounded-xl'>
+<div id="home-quick-access" className='p-20 my-12 rounded-xl'>
 <div className='mb-12'>
-<h2 className='text-4xl text-black dark:text-white font-bold'>Quick access shortcuts</h2>
+<h2 className='text-4xl font-bold'>Quick access shortcuts</h2>
 </div>
 <CardGroup cols={4}>
 <Card title="Getting Started" icon="rocket">
-<p className='mt-8 mb-4'><a className='hover:underline text-[#06423E] hover:opacity-80' href="/en/onsite/requirements">System requirements</a></p>
+<p className='mt-8 mb-4'><a href="/en/onsite/requirements">System requirements</a></p>
 <p className='my-4'>
-  <a className='hover:underline text-[#06423E] hover:opacity-80' href="/en/onsite/security/">
+  <a href="/en/onsite/security/">
     * Security concerns
   </a>
 </p>
 
 <p className='my-4'>
-  <a className='hover:underline text-[#06423E] hover:opacity-80' href="/en/onsite/">
+  <a href="/en/onsite/">
     * Onsite topics
   </a>
 </p>
 
 <p className='my-4'>
-  <a className='hover:underline text-[#06423E] hover:opacity-80' href="/en/online/migrate/">
+  <a href="/en/online/migrate/">
     * Online migration
   </a>
 </p>
@@ -322,37 +296,25 @@ A person who has system administrative privilege's and special functional and da
 <Card title="Installation" icon="download">
 
   <p className='mt-8 mb-4'>
-    <a
-      className='hover:underline text-[#06423E] hover:opacity-80'
-      href="/en/onsite/install/server/"
-    >
+    <a href="/en/onsite/install/server/">
       * CRM Server
     </a>
   </p>
 
   <p className='my-4'>
-    <a
-      className='hover:underline text-[#06423E] hover:opacity-80'
-      href="/en/onsite/install/web-client/"
-    >
+    <a href="/en/onsite/install/web-client/">
       * Web applications
     </a>
   </p>
 
   <p className='my-4'>
-    <a
-      className='hover:underline text-[#06423E] hover:opacity-80'
-      href="https://docs.superoffice.com/integrations/webtools/"
-    >
+    <a href="https://docs.superoffice.com/integrations/webtools/">
       * Web tools
     </a>
   </p>
 
   <p className='my-4'>
-    <a
-      className='hover:underline text-[#06423E] hover:opacity-80'
-      href="/en/mobile/overview.html"
-    >
+    <a href="/en/mobile/overview.html">
       * Mobile application
     </a>
   </p>
@@ -363,46 +325,31 @@ A person who has system administrative privilege's and special functional and da
 <Card title="Configuration" icon="gear">
 
   <p className='mt-8 mb-4'>
-    <a
-      className='hover:underline text-[#06423E] hover:opacity-80'
-      href="https://docs.superoffice.com/en/api/netserver/config/"
-    >
+    <a href="https://docs.superoffice.com/en/api/netserver/config/">
       * NetServer Configuration
     </a>
   </p>
 
   <p className='my-4'>
-    <a
-      className='hover:underline text-[#06423E] hover:opacity-80'
-      href="https://docs.superoffice.com/en/document/templates/variables/index.html"
-    >
+    <a href="https://docs.superoffice.com/en/document/templates/variables/index.html">
       * Document template variables
     </a>
   </p>
 
   <p className='my-4'>
-    <a
-      className='hover:underline text-[#06423E] hover:opacity-80'
-      href="https://docs.superoffice.com/en/knowledge-base/learn/reply-templates/index.html"
-    >
+    <a href="https://docs.superoffice.com/en/knowledge-base/learn/reply-templates/index.html">
       * Service reply templates
     </a>
   </p>
 
   <p className='my-4'>
-    <a
-      className='hover:underline text-[#06423E] hover:opacity-80'
-      href="/en/onsite/batch-task-server.html"
-    >
+    <a href="/en/onsite/batch-task-server.html">
       * Batch task service
     </a>
   </p>
 
   <p className='my-4'>
-    <a
-      className='hover:underline text-[#06423E] hover:opacity-80'
-      href="/en/onsite/config/"
-    >
+    <a href="/en/onsite/config/">
       * INI files
     </a>
   </p>
@@ -412,19 +359,13 @@ A person who has system administrative privilege's and special functional and da
 <Card title="Online Development" icon="cloud">
 
   <p className='mt-8 mb-4'>
-    <a
-      className='hover:underline text-[#06423E] hover:opacity-80'
-      href="/en/developer-portal/getting-started/get-access-to-sod.html"
-    >
+    <a href="/en/developer-portal/getting-started/get-access-to-sod.html">
       * Register online developer account
     </a>
   </p>
 
   <p className='my-4'>
-    <a
-      className='hover:underline text-[#06423E] hover:opacity-80'
-      href="https://dev.superoffice.com/"
-    >
+    <a href="https://dev.superoffice.com/">
       * Developer portal
     </a>
   </p>
@@ -435,5 +376,3 @@ A person who has system administrative privilege's and special functional and da
 </div>
 
 </div>
-
-

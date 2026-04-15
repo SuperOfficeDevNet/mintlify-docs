@@ -1,3 +1,100 @@
+/* ─── HOME PAGE ───────────────────────────────────────────── */
+
+#home-hero {
+  height: 20rem;
+  overflow: hidden;
+}
+
+#home-hero-bg {
+  background-color: var(--so-green);
+}
+
+#home-hero-content {
+  position: absolute;
+  text-align: center;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 70rem;
+}
+
+#home-hero-content p {
+  font-weight: 500;
+  max-width: 40rem;
+  margin: 0.5rem auto 0;
+}
+
+#home-search-entry {
+  margin-top: 2rem;
+  background: var(--white);
+  box-shadow: 0px 1px 4px 0px rgba(8, 9, 10, 0.25),
+              0px 0px 0px 4px rgba(255, 255, 255, 0.20);
+  cursor: pointer;
+  text-align: left;
+}
+
+#home-search-icon {
+  margin-right: 0.5rem;
+  background-color: var(--so-green);
+  mask-image: url("https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg");
+  mask-repeat: no-repeat;
+  mask-position: center center;
+}
+
+#home-search-entry:hover #home-search-icon {
+  background-color: var(--so-green-hover);
+}
+
+.dark #home-search-entry:hover #home-search-icon {
+  background-color: var(--dune-white);
+}
+
+#home-content {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+#home-content h2 {
+  color: var(--charcoal);
+}
+
+.dark #home-content h2 {
+  color: var(--dune-white);
+}
+
+/* Quick access shortcuts section */
+#home-quick-access {
+  background-color: var(--meadow-green);
+}
+
+.dark #home-quick-access {
+  background-color: var(--so-green);
+}
+
+#home-quick-access a,
+#home-quick-access a:visited {
+  color: var(--so-green);
+  text-decoration: none;
+}
+
+#home-quick-access a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.dark #home-quick-access a,
+.dark #home-quick-access a:visited {
+  color: var(--coast-blue);
+}
+
+.dark #home-quick-access a:hover {
+  opacity: 0.85;
+}
+
 /* ─── CSS CUSTOM PROPERTIES ───────────────────────────────── */
 :root {
   /* Primary */
@@ -29,6 +126,19 @@
   --coral-orange-darker:     #DA6849;
   --white:                   #FFFFFF;
 }
+
+/* ─── DARK MODE PRIMARY COLOR — INTENTIONAL DESIGN CHOICE ─── */
+/*
+ * colors.dark in docs.json is set to Coast blue (#B2C7EB), not Coral orange
+ * (#F48A6D) as the brand guide recommends for links and CTAs.
+ *
+ * Rationale: docs pages have high link density. The brand color hierarchy
+ * places Coral as the least-used color (narrowest bar in the hierarchy chart).
+ * Applying it to every link would invert that hierarchy and create visual noise.
+ * Coast blue is calm, readable, and appropriate for functional navigation at
+ * scale. Coral orange is intentionally reserved for primary CTA buttons only
+ * (e.g. "Book a demo" in the navbar).
+ */
 
 /* ─── BODY TEXT COLOR ─────────────────────────────────────── */
 body {

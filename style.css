@@ -1,3 +1,35 @@
+/* ─── CSS CUSTOM PROPERTIES ───────────────────────────────── */
+:root {
+  /* Primary */
+  --so-green:                #06423E;
+  --coast-blue:              #B2C7EB;
+  --dune-white:              #F2EFEA;
+
+  /* Secondary */
+  --so-green-hover:          #0F5C57;
+  --so-green-dark:           #002420;
+  --meadow-green:            #B7DEA9;
+  --heather-lilac:           #C5BAF8;
+  --plum-red:                #712F4A;
+  --coral-orange:            #F48A6D;
+  --charcoal:                #1C1C1E;
+
+  /* Tertiary – tints and shades */
+  --dune-white-darker-1:     #E7E4E0;
+  --dune-white-darker-2:     #D2CFCB;
+  --coast-blue-darker-1:     #6A8CB9;
+  --coast-blue-darker-2:     #395D9C;
+  --meadow-green-darker-1:   #61974E;
+  --meadow-green-darker-2:   #286712;
+  --heather-lilac-darker-1:  #8B7BD5;
+  --heather-lilac-darker-2:  #5C4BA9;
+  --plum-red-lighter:        #A4517A;
+  --plum-red-darker:         #491028;
+  --coral-orange-lighter:    #FFA88B;
+  --coral-orange-darker:     #DA6849;
+  --white:                   #FFFFFF;
+}
+
 /* SubCategory landing pages */
 #subcategory {
   margin-top: 2rem;

@@ -4,7 +4,7 @@
   "name": "SuperOffice",
   "colors": {
     "primary": "#06423E",
-    "light": "#136C60",
+    "light": "#0F5C57",
     "dark": "#F48A6D"
   },
   "appearance": {
@@ -13,7 +13,8 @@
   "background": {
     "decoration": "gradient",
     "color": {
-      "light": "#F2EFEA"
+      "light": "#F2EFEA",
+      "dark": "#1C1C1E"
     }
   },
   "fonts": {

@@ -52,6 +52,21 @@ body {
   color: var(--dune-white);
 }
 
+/* ─── ON THIS PAGE (right TOC) ────────────────────────────── */
+
+/* DM active TOC item: coast blue text + left border bar.
+ * data-active is on the <li>; border/text classes are on the child <a>. */
+.dark #table-of-contents-content [data-active="true"] > a {
+  color: var(--coast-blue) !important;
+  border-color: var(--coast-blue) !important;
+}
+
+/* Heading scroll offset: compensate for sticky navbar (~56px) so the
+ * intersection observer activates the correct TOC item on scroll */
+#content h1, #content h2, #content h3, #content h4 {
+  scroll-margin-top: 5rem;
+}
+
 /* ─── SIDEBAR NAV ─────────────────────────────────────────── */
 
 /* ── Link icons (mask-image SVGs above the tree): match text color ── */

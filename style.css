@@ -79,6 +79,15 @@ body {
   border-color: var(--coast-blue) !important;
 }
 
+/* DM subsection TOC items: active <li> elements at depth>0 carry
+ * border-primary / dark:border-primary-light directly on the <li> itself
+ * (classes like "border-1 pl-4 border-primary dark:border-primary-light").
+ * Override both the active deepest item and its parent active <li>. */
+.dark #table-of-contents-content li[data-active="true"],
+.dark #table-of-contents-content li[data-active-deepest="true"] {
+  border-color: var(--coast-blue) !important;
+}
+
 /* Heading scroll offset: compensate for sticky navbar (~56px) so the
  * intersection observer activates the correct TOC item on scroll */
 #content h1, #content h2, #content h3, #content h4 {

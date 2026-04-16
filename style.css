@@ -52,6 +52,43 @@ body {
   color: var(--dune-white);
 }
 
+/* ─── SIDEBAR NAV ─────────────────────────────────────────── */
+
+/* ── Link icons (mask-image SVGs above the tree): match text color ── */
+#sidebar-content a svg[style*="mask-image"] {
+  background-color: currentColor !important;
+}
+
+/* ── Hover: SO green text on all sidebar links ── */
+#sidebar-content a:hover {
+  color: var(--so-green) !important;
+}
+
+/* ── Top utility links (Contact us, Log in) only: pill bg on hover.
+ * Scoped to links NOT inside .sidebar-group to avoid overriding nav item hover. ── */
+#sidebar-content a:not([class*="rounded"]):hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border-radius: 6px !important;
+}
+
+/* ── Active/selected page: SO green in LM ── */
+#sidebar-content a[data-active="true"],
+#sidebar-content a[aria-current="page"] {
+  color: var(--so-green) !important;
+}
+
+/* ── Dark mode hover: coast blue ── */
+.dark #sidebar-content a:hover {
+  color: var(--coast-blue) !important;
+}
+
+/* ── Dark mode selected: coast blue text + tint bg.
+ * data-active is on the <li>, so target the <a> child. ── */
+.dark #sidebar-content [data-active="true"] > a {
+  color: var(--coast-blue) !important;
+  background-color: rgba(178, 199, 235, 0.1) !important;
+}
+
 /* ─── NAVBAR ──────────────────────────────────────────────── */
 
 /* Light mode: SO green background */

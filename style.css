@@ -848,8 +848,8 @@ body {
   opacity: 0.75;
 }
 
-.dark .prose a,
-.dark .prose a:visited {
+.dark .prose a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a),
+.dark .prose a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a):visited {
   color: var(--coast-blue) !important;
   background-image: linear-gradient(var(--coast-blue), var(--coast-blue)) !important;
   background-size: 100% 1px !important;
@@ -859,6 +859,27 @@ body {
 
 .dark .prose a:hover {
   opacity: 0.8;
+}
+
+/* Links inside admonitions: inherit callout text color, 1px underline only, no bold.
+ * Targets a.link (Mintlify's class on callout <a> tags) inside data-callout-type elements. */
+[data-callout-type] a.link,
+[data-callout-type] a.link:visited {
+  color: inherit !important;
+  font-weight: inherit !important;
+  text-decoration: none !important;
+  background-size: 100% 1px !important;
+  background-position: 0 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+.dark [data-callout-type] a.link,
+.dark [data-callout-type] a.link:visited {
+  text-decoration: none !important;
+  background-image: linear-gradient(currentColor, currentColor) !important;
+  background-size: 100% 1px !important;
+  background-position: 0 100% !important;
+  background-repeat: no-repeat !important;
 }
 
 /* ─── ADMONITIONS ──────────────────────────────────────────── */

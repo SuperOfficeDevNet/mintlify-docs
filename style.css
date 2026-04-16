@@ -861,6 +861,51 @@ body {
 }
 
 
+/* ─── TABLES ───────────────────────────────────────────────── */
+/* LM only: alternating row colours + green header.
+ * DM: explicit resets so none of the LM rules bleed through. */
+
+/* Spacing: applies in both LM and DM */
+.prose th,
+.prose td {
+  padding-left: 0.875rem !important;
+  padding-right: 0.875rem !important;
+}
+
+.prose thead th {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+/* LM only — html:not(.dark) pins the selector to the <html> root,
+ * so none of these rules fire when Mintlify adds .dark to <html>. */
+
+/* Header row: SO green bg + white text */
+html:not(.dark) .prose thead tr {
+  background-color: var(--so-green) !important;
+}
+
+html:not(.dark) .prose thead th {
+  color: var(--white) !important;
+  border-bottom-color: var(--so-green-hover) !important;
+}
+
+/* Body rows: odd = white, even = dune-white tint */
+html:not(.dark) .prose tbody tr:nth-child(odd) {
+  background-color: var(--white) !important;
+}
+
+html:not(.dark) .prose tbody tr:nth-child(even) {
+  background-color: var(--dune-white) !important;
+}
+
+/* Row + cell dividers */
+html:not(.dark) .prose tbody tr,
+html:not(.dark) .prose th,
+html:not(.dark) .prose td {
+  border-color: var(--dune-white-darker-1) !important;
+}
+
 /* ─── IMAGES ──────────────────────────────────────────────── */
 /* Ported from prod docs CSS. Alt text suffix drives styling:
  * -screenshot : desktop/browser screenshot, full prose width, bordered

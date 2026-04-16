@@ -11,7 +11,7 @@
     "default": "light"
   },
   "background": {
-    "decoration": "gradient",
+    "decoration": "none",
     "color": {
       "light": "#F2EFEA",
       "dark": "#1C1C1E"
@@ -9624,7 +9624,7 @@
     }
   },
   "logo": {
-    "light": "/logo/dark.svg",
+    "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
     "href": "https://www.superoffice.com"
   },

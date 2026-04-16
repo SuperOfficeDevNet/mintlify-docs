@@ -59,6 +59,12 @@ body {
   background-color: var(--so-green) !important;
 }
 
+/* Navbar logo: swap to white version in light mode (green bg needs white logo;
+ * docs.json light logo is the green version used by the footer) */
+#navbar img[src*="light.svg"] {
+  content: url("/logo/dark.svg");
+}
+
 /* Dark mode: charcoal */
 .dark #navbar [class*="bg-background-light"] {
   background-color: var(--charcoal) !important;
@@ -309,6 +315,16 @@ body {
   border-radius: 8px;
 }
 
+/* Dark mode card icons: coast blue instead of SO green.
+ * Covers both FontAwesome <i> and mask-image SVG rendering paths. */
+.dark #home-content i {
+  color: var(--coast-blue) !important;
+}
+
+.dark #home-content svg[style*="mask-image"] {
+  background-color: var(--coast-blue) !important;
+}
+
 /* "What type of user are you?" — dune white bg, transparent border, shadow lift on hover */
 #home-user-types .card {
   background-color: var(--dune-white);
@@ -360,6 +376,7 @@ body {
   opacity: 0.85;
 }
 
+
 /* SubCategory landing pages */
 #subcategory {
   margin-top: 2rem;
@@ -376,6 +393,19 @@ body {
   font-weight: bold;
   margin-bottom: 1rem;
   color: var(--so-green);
+}
+
+.dark #subcategory h1 {
+  color: var(--coast-blue);
+}
+
+/* linklist-header icon: inherit the text color so it matches the span beside it */
+#subcategory .linklist-header svg[style*="mask-image"] {
+  background-color: currentColor !important;
+}
+
+.dark #subcategory .linklist-header svg[style*="mask-image"] {
+  background-color: currentColor !important;
 }
 
 #subcategory p.description {
@@ -444,6 +474,17 @@ body {
   text-decoration-color: var(--so-green);
   text-underline-offset: 0.15em;
   text-decoration-thickness: 1px;
+}
+
+/* Subcategory links: coast blue in dark mode */
+.dark #subcategory .linklist a,
+.dark #subcategory .linklist a:visited {
+  color: var(--coast-blue);
+}
+
+.dark #subcategory .linklist a:hover,
+.dark #subcategory .linklist a:focus-visible {
+  text-decoration-color: var(--coast-blue);
 }
 
 .conceptual-content .concept-links a,
@@ -565,6 +606,17 @@ body {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
+/* Icon color in highlighted cards: coast blue in dark mode.
+ * Mintlify card icons can render as <i> (FontAwesome) or mask-image SVGs.
+ * Both color and background-color are set to cover both rendering paths. */
+.dark .highlighted-content i {
+  color: var(--coast-blue) !important;
+}
+
+.dark .highlighted-content svg[style*="mask-image"] {
+  background-color: var(--coast-blue) !important;
+}
+
 /* Conceptual content section */
 .conceptual-content {
   margin-top: 3rem;
@@ -599,11 +651,16 @@ body {
 
 .conceptual-content [class*="Card"] {
   background: white;
+  border-radius: 8px;
+}
+
+.conceptual-content [data-component-part="card-content"] {
+  margin-top: 1.25rem;
 }
 
 .conceptual-content .concept-links li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
   margin-bottom: 0.75rem;
   padding-left: 0 !important;
@@ -613,11 +670,13 @@ body {
 
 .conceptual-content .concept-links i {
   flex-shrink: 0;
+  margin-top: 0.2em;
   color: var(--so-green);
 }
 
+/* Dark mode: no special bg — inherit charcoal page background */
 .dark .conceptual-content {
-  background-color: #1e2d2c;
+  background-color: transparent;
 }
 
 .dark .conceptual-content h2,
@@ -629,9 +688,37 @@ body {
   color: var(--coast-blue);
 }
 
+/* Keep link text in its own flex column so wrapping lines don't bleed under the icon */
+.conceptual-content .concept-links a {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Concept links: coast blue in dark mode */
+.dark .conceptual-content .concept-links a,
+.dark .conceptual-content .concept-links a:visited {
+  color: var(--coast-blue);
+}
+
+.dark .conceptual-content .concept-links a:hover,
+.dark .conceptual-content .concept-links a:focus-visible {
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--coast-blue);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+  opacity: 0.85;
+}
+
 /* Additional content section */
 .additional-content {
   margin-top: 3rem;
+}
+
+/* Match card title size to conceptual-content cards */
+.additional-content [data-component-part="card-title"] {
+  font-size: 0.9375rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
 }
 
 .additional-content h2 {
@@ -647,6 +734,21 @@ body {
   padding-left: 0 !important;
   padding-inline-start: 0 !important;
   margin-left: 0 !important;
+}
+
+/* Additional links: coast blue in dark mode */
+.dark .additional-content .additional-links a,
+.dark .additional-content .additional-links a:visited {
+  color: var(--coast-blue);
+}
+
+.dark .additional-content .additional-links a:hover,
+.dark .additional-content .additional-links a:focus-visible {
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--coast-blue);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+  opacity: 0.85;
 }
 
 /* Hide description (from metadata) under page title */

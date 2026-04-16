@@ -814,6 +814,53 @@ body {
   display: none !important;
 }
 
+/* ─── PROSE CONTENT CARDS ─────────────────────────────────── */
+/* Scoped to cards inside prose (e.g. Related content sections).
+ * Does NOT affect category/home/subcategory card areas. */
+
+/* DM card icons in prose: override dark:bg-primary-light (green) with coast blue */
+.dark .prose svg[class*="bg-primary"] {
+  background-color: var(--coast-blue) !important;
+}
+
+/* External link arrow: give title enough right padding to not overlap the absolute arrow */
+.prose #card-link-arrow-icon {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.prose [data-component-part="card-title"] {
+  padding-right: 1.75rem;
+}
+
+/* ─── PROSE CONTENT LINKS ─────────────────────────────────── */
+/* Scoped to .prose to avoid touching nav, sidebar, cards, etc.
+ * LM: SO green + underline, no bold (matches .com style)
+ * DM: coast blue + underline */
+
+.prose a,
+.prose a:visited {
+  color: var(--so-green) !important;
+  font-weight: inherit !important;
+}
+
+.prose a:hover {
+  opacity: 0.75;
+}
+
+.dark .prose a,
+.dark .prose a:visited {
+  color: var(--coast-blue) !important;
+  background-image: linear-gradient(var(--coast-blue), var(--coast-blue)) !important;
+  background-size: 100% 1px !important;
+  background-position: 0 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+.dark .prose a:hover {
+  opacity: 0.8;
+}
+
 /* Metadata display in callouts */
 .metadata-display {
   padding-bottom: 0.5rem;

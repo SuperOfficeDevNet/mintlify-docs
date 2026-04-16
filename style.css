@@ -1,3 +1,21 @@
+/* ─── FONT FACES ───────────────────────────────────────────── */
+/* True italic variants — prevents browser synthetic italic (skewed glyphs) */
+@font-face {
+  font-family: "SuperOffice Sans";
+  src: url("/fonts/SuperOfficeSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SuperOfficeSans Bold";
+  src: url("/fonts/SuperOfficeSans-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* ─── CSS CUSTOM PROPERTIES ───────────────────────────────── */
 :root {
   /* Primary */
@@ -832,6 +850,7 @@ body {
 .prose [data-component-part="card-title"] {
   padding-right: 1.75rem;
 }
+
 
 /* ─── PROSE CONTENT LINKS ─────────────────────────────────── */
 /* Scoped to .prose to avoid touching nav, sidebar, cards, etc.

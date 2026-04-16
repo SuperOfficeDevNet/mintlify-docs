@@ -861,6 +861,95 @@ body {
   opacity: 0.8;
 }
 
+/* ─── ADMONITIONS ──────────────────────────────────────────── */
+/* Scoped via :has(svg[aria-label="..."]) — Mintlify sets aria-label on the icon SVG.
+ * LM: tinted bg + colored border + icon/title in matching brand shade.
+ * DM: low-opacity bg tint + muted border. */
+
+/* ── Note → Coast blue ── */
+[class*="callout"]:has(svg[aria-label="Note"]) {
+  background-color: rgba(178, 199, 235, 0.18) !important;
+  border-color: var(--coast-blue-darker-1) !important;
+}
+[class*="callout"]:has(svg[aria-label="Note"]) svg {
+  color: var(--coast-blue-darker-1) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Note"]) {
+  background-color: rgba(178, 199, 235, 0.08) !important;
+  border-color: rgba(178, 199, 235, 0.25) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Note"]) svg {
+  color: var(--coast-blue) !important;
+}
+
+/* ── Tip → Meadow green ── */
+[class*="callout"]:has(svg[aria-label="Tip"]) {
+  background-color: rgba(183, 222, 169, 0.2) !important;
+  border-color: var(--meadow-green-darker-1) !important;
+}
+[class*="callout"]:has(svg[aria-label="Tip"]) svg {
+  color: var(--meadow-green-darker-1) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Tip"]) {
+  background-color: rgba(183, 222, 169, 0.08) !important;
+  border-color: rgba(183, 222, 169, 0.25) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Tip"]) svg {
+  color: var(--meadow-green) !important;
+}
+
+/* ── Warning → Coral orange ──
+ * LM icon/text: coral-orange-darker (#DA6849) — passes WCAG AA on light bg.
+ * coral-orange (#F48A6D) fails AA on light; darker variant required.
+ * DM icon: coral-orange-lighter (#FFA88B) — passes AA on charcoal, more legible. */
+[class*="callout"]:has(svg[aria-label="Warning"]) {
+  background-color: rgba(218, 104, 73, 0.1) !important;
+  border-color: var(--coral-orange-darker) !important;
+}
+[class*="callout"]:has(svg[aria-label="Warning"]) svg,
+[class*="callout"]:has(svg[aria-label="Warning"]) [data-component-part="callout-content"] {
+  color: var(--coral-orange-darker) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Warning"]) {
+  background-color: rgba(244, 138, 109, 0.08) !important;
+  border-color: rgba(255, 168, 139, 0.3) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Warning"]) svg {
+  color: var(--coral-orange) !important;
+}
+
+/* ── Info → Heather lilac ── */
+[class*="callout"]:has(svg[aria-label="Info"]) {
+  background-color: rgba(197, 186, 248, 0.18) !important;
+  border-color: var(--heather-lilac-darker-1) !important;
+}
+[class*="callout"]:has(svg[aria-label="Info"]) svg {
+  color: var(--heather-lilac-darker-1) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Info"]) {
+  background-color: rgba(197, 186, 248, 0.08) !important;
+  border-color: rgba(197, 186, 248, 0.25) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Info"]) svg {
+  color: var(--heather-lilac) !important;
+}
+
+/* ── Check → Meadow green (same family as Tip) ── */
+[class*="callout"]:has(svg[aria-label="Check"]) {
+  background-color: rgba(183, 222, 169, 0.2) !important;
+  border-color: var(--meadow-green-darker-1) !important;
+}
+[class*="callout"]:has(svg[aria-label="Check"]) svg {
+  color: var(--meadow-green-darker-1) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Check"]) {
+  background-color: rgba(183, 222, 169, 0.08) !important;
+  border-color: rgba(183, 222, 169, 0.25) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Check"]) svg {
+  color: var(--meadow-green) !important;
+}
+
 /* Metadata display in callouts */
 .metadata-display {
   padding-bottom: 0.5rem;

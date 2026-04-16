@@ -180,14 +180,15 @@ body {
   background-color: rgba(255, 255, 255, 0.85) !important;
 }
 
-/* Bottom border: subtle white */
+/* No bottom border or shadow — navbar and green hero/category header
+ * blend seamlessly (same SO green). Green↔white contrast on content
+ * pages provides sufficient separation without a border. */
 #navbar .border-b {
-  border-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: transparent !important;
 }
 
-/* Shadow for visual separation from content below */
 #navbar {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: none !important;
 }
 
 /* Nav tabs: increase spacing between items */

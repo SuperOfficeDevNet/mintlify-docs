@@ -687,6 +687,9 @@ function ConvertTo-CategoryMdx {
     # Build frontmatter using helper
     $mdx = New-Frontmatter -title $data.title -description $data.summary -author $data.author -lang $lang
 
+    # Footer import (component lives in /components/custom-mode-footer.mdx)
+    $mdx += "import CustomFooter from '/components/custom-mode-footer.mdx'`n`n"
+
     # Hero section with green background
     $mdx += "<div id=`"category-hero`">`n"
     $mdx += "  <h1>$($data.title)</h1>`n"
@@ -808,6 +811,9 @@ function ConvertTo-CategoryMdx {
 
     # Close category-landing wrapper
     $mdx += "</div>`n"
+
+    # Footer component (custom-mode pages don't get Mintlify's native footer)
+    $mdx += "`n<CustomFooter />`n"
 
     return $mdx
 }

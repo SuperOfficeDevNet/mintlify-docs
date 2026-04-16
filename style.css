@@ -708,3 +708,103 @@ body {
 .metadata-display i.ph {
   font-size: 1.1rem;
 }
+
+/* ─── CUSTOM MODE FOOTER ───────────────────────────────────────── */
+/* Mirrors the native Mintlify footer (minus the "Powered by" bar).
+ * Used on mode:"custom" pages (home, category) that don't get the native footer.
+ * Full-width breakout matches the technique used by #category-hero so the
+ * footer spans the viewport even when inside a max-width content wrapper. */
+
+#custom-mode-footer {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 4rem;
+  padding: 3rem 1.25rem;
+  border-top: 1px solid rgba(127, 127, 127, 0.18);
+}
+
+.dark #custom-mode-footer {
+  border-top-color: rgba(242, 239, 234, 0.12);
+}
+
+#custom-mode-footer-inner {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Logo: green version on dune-white (LM), white version on charcoal (DM).
+ * Note: these intentionally differ from docs.json logo config, which uses
+ * dark.svg in LM because the navbar background is SO green. */
+#custom-mode-footer-brand { display: flex; }
+
+.cmf-logo-light { display: block; height: 1.75rem; width: auto; }
+.cmf-logo-dark  { display: none;  height: 1.75rem; width: auto; }
+.dark .cmf-logo-light { display: none; }
+.dark .cmf-logo-dark  { display: block; }
+
+/* Link columns */
+#custom-mode-footer-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.cmf-link-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.cmf-link-col a {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.dark .cmf-link-col a { color: #9ca3af; }
+
+.cmf-link-col a:hover       { color: var(--charcoal); }
+.dark .cmf-link-col a:hover { color: var(--dune-white); }
+
+/* Social icon circles */
+#custom-mode-footer-socials {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.cmf-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.06);
+  color: #6b7280;
+  text-decoration: none !important;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dark .cmf-social {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #9ca3af;
+}
+
+.cmf-social:hover       { background-color: rgba(0, 0, 0, 0.1);         color: var(--charcoal);    }
+.dark .cmf-social:hover { background-color: rgba(255, 255, 255, 0.12);  color: var(--dune-white);  }
+
+.cmf-social svg {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  fill: currentColor;
+}

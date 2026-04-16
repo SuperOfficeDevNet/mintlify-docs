@@ -852,6 +852,49 @@ body {
 }
 
 
+/* ─── IMAGES ──────────────────────────────────────────────── */
+/* Ported from prod docs CSS. Alt text suffix drives styling:
+ * -screenshot : desktop/browser screenshot, full prose width, bordered
+ * -app-screen : mobile screenshot, height-constrained, bordered */
+
+.prose img[alt$="-screenshot"] {
+  border: 2px solid var(--so-green);
+  padding: 4px;
+  height: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.prose img[alt$="-app-screen"] {
+  border: 2px solid var(--so-green);
+  padding: 4px;
+  max-height: 498px;
+  width: auto;
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+/* DM: soften border — coast blue, 1px on app screens, full width on screenshots */
+.dark .prose img[alt$="-screenshot"] {
+  border-color: var(--coast-blue-darker-1);
+}
+
+.dark .prose img[alt$="-app-screen"] {
+  border-width: 1px;
+  border-color: var(--coast-blue-darker-1);
+}
+
+/* Inside a Mintlify <Frame>: strip our border — Frame provides its own container */
+[data-name="frame"] img[alt$="-screenshot"],
+[data-name="frame"] img[alt$="-app-screen"] {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 /* ─── PROSE CONTENT LINKS ─────────────────────────────────── */
 /* Scoped to .prose to avoid touching nav, sidebar, cards, etc.
  * LM: SO green + underline, no bold (matches .com style)

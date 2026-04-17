@@ -113,10 +113,12 @@ body {
   border-radius: 6px !important;
 }
 
-/* ── Active/selected page: SO green in LM ── */
+/* ── Active/selected page: SO green in LM + dune-white-darker-1 bg
+ *    (same pill bg as version chip and filter pills for consistency) ── */
 #sidebar-content a[data-active="true"],
 #sidebar-content a[aria-current="page"] {
   color: var(--so-green) !important;
+  background-color: var(--dune-white-darker-1) !important;
 }
 
 /* ── Dark mode hover: coast blue ── */
@@ -958,6 +960,84 @@ html:not(.dark) .prose td {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
+}
+
+/* ─── RELEASE NOTES ───────────────────────────────────────── */
+
+/* Version chip (e.g. "11.8") — aligned with active TOC and filter pill treatment.
+ * LM: SO green text + same dune-white-darker-1 bg as filter pills.
+ * DM: coast blue text + same coast-blue tint as active TOC item. */
+[data-component-part="update-label"] {
+  color: var(--so-green) !important;
+  background-color: var(--dune-white-darker-1) !important;
+}
+
+.dark [data-component-part="update-label"] {
+  color: var(--coast-blue) !important;
+  background-color: rgba(178, 199, 235, 0.12) !important;
+}
+
+/* Badges — mapped to same brand color families as callouts for consistency.
+ * green  (Service)                → Meadow green  (same as Tip/Check)
+ * blue   (Core CRM, Sales)        → Coast blue    (same as Note)
+ * purple (Marketing)              → Heather lilac (same as Info)
+ * orange (Settings/maintenance)   → Coral orange  (same as Warning)
+ * Override Mintlify's --color-bg / --color-text CSS custom properties. */
+
+[data-badge="true"][data-color="green"] {
+  --color-bg: rgba(183, 222, 169, 0.3) !important;
+  --color-text: var(--meadow-green-darker-2) !important;
+}
+.dark [data-badge="true"][data-color="green"] {
+  --color-bg: rgba(183, 222, 169, 0.12) !important;
+  --color-text: var(--meadow-green) !important;
+}
+
+[data-badge="true"][data-color="blue"] {
+  --color-bg: rgba(178, 199, 235, 0.3) !important;
+  --color-text: var(--coast-blue-darker-2) !important;
+}
+.dark [data-badge="true"][data-color="blue"] {
+  --color-bg: rgba(178, 199, 235, 0.12) !important;
+  --color-text: var(--coast-blue) !important;
+}
+
+[data-badge="true"][data-color="purple"] {
+  --color-bg: rgba(197, 186, 248, 0.3) !important;
+  --color-text: var(--heather-lilac-darker-2) !important;
+}
+.dark [data-badge="true"][data-color="purple"] {
+  --color-bg: rgba(197, 186, 248, 0.12) !important;
+  --color-text: var(--heather-lilac) !important;
+}
+
+[data-badge="true"][data-color="orange"] {
+  --color-bg: rgba(218, 104, 73, 0.15) !important;
+  --color-text: var(--coral-orange-darker) !important;
+}
+.dark [data-badge="true"][data-color="orange"] {
+  --color-bg: rgba(244, 138, 109, 0.1) !important;
+  --color-text: var(--coral-orange-lighter) !important;
+}
+
+/* Filter pills — brand-aligned rest/hover states.
+ * LM: dune-white bg, charcoal text. DM: subtle white tint, dune-white text. */
+#changelog-filters-content button {
+  background-color: var(--dune-white-darker-1) !important;
+  color: var(--charcoal) !important;
+}
+
+#changelog-filters-content button:hover {
+  background-color: var(--dune-white-darker-2) !important;
+}
+
+.dark #changelog-filters-content button {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  color: var(--dune-white) !important;
+}
+
+.dark #changelog-filters-content button:hover {
+  background-color: rgba(255, 255, 255, 0.13) !important;
 }
 
 /* ─── PROSE CONTENT LINKS ─────────────────────────────────── */

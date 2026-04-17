@@ -1228,8 +1228,16 @@ html:not(.dark) .prose td {
   transition: opacity 0.2s ease;
 }
 
-.cmf-social:hover { opacity: 0.8; }
+.cmf-social:hover { opacity: 0.75; }
 
 .cmf-social img {
   display: block;
+}
+
+.dark .cmf-social img {
+  opacity: 0.65;
+}
+
+.dark .cmf-social:hover img {
+  opacity: 1;
 }

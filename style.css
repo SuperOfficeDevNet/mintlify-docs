@@ -1223,26 +1223,13 @@ html:not(.dark) .prose td {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.06);
-  color: #6b7280;
   text-decoration: none !important;
   flex-shrink: 0;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
-.dark .cmf-social {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #9ca3af;
-}
+.cmf-social:hover { opacity: 0.8; }
 
-.cmf-social:hover       { background-color: rgba(0, 0, 0, 0.1);         color: var(--charcoal);    }
-.dark .cmf-social:hover { background-color: rgba(255, 255, 255, 0.12);  color: var(--dune-white);  }
-
-.cmf-social svg {
-  width: 0.9375rem;
-  height: 0.9375rem;
-  fill: currentColor;
+.cmf-social img {
+  display: block;
 }

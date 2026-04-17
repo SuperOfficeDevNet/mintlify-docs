@@ -774,10 +774,17 @@ body {
   min-width: 0;
 }
 
-/* Concept links: coast blue in dark mode */
+/* Concept links: coast blue in dark mode.
+ * text-decoration/background-image/border-bottom must be re-asserted here
+ * (specificity 0,3,1) because .dark .prose a at line ~968 injects a
+ * background-image gradient underline at equal specificity (0,2,1) and
+ * later source order — so it would win without an explicit reset here. */
 .dark .conceptual-content .concept-links a,
 .dark .conceptual-content .concept-links a:visited {
   color: var(--coast-blue);
+  text-decoration: none !important;
+  background-image: none !important;
+  border-bottom: none !important;
 }
 
 .dark .conceptual-content .concept-links a:hover,
@@ -816,10 +823,13 @@ body {
   margin-left: 0 !important;
 }
 
-/* Additional links: coast blue in dark mode */
+/* Additional links: coast blue in dark mode. Same specificity fix as concept-links above. */
 .dark .additional-content .additional-links a,
 .dark .additional-content .additional-links a:visited {
   color: var(--coast-blue);
+  text-decoration: none !important;
+  background-image: none !important;
+  border-bottom: none !important;
 }
 
 .dark .additional-content .additional-links a:hover,
